@@ -1,0 +1,111 @@
+
+div.code {
+ background: #f7f7f7;
+ border: 1px solid #d7d7d7;
+ margin: 1em 1.75em;
+ padding: .25em;
+ overflow: auto
+}
+
+table.code {
+ border: 1px solid #ddd;
+ border-spacing: 0;
+ border-top: 0;
+ empty-cells: show;
+ font-size: 12px;
+ line-height: 130%;
+ padding: 0;
+ margin: 0 auto;
+ table-layout: fixed;
+ width: 100%;
+}
+table.code th {
+ border-right: 1px solid #d7d7d7;
+ border-bottom: 1px solid #998;
+ font-size: 11px;
+}
+table.code th.lineno { width: 4em }
+table.code thead th {
+ background: #eee;
+ border-top: 1px solid #d7d7d7;
+ color: #999;
+ padding: 0 .25em;
+ text-align: center;
+ white-space: nowrap;
+}
+table.code tbody th {
+ background: #eed;
+ color: #886;
+ font-weight: normal;
+ padding: 0 .5em;
+ text-align: right;
+ vertical-align: top;
+}
+table.code tbody th :link, table.code tbody th :visited {
+ border: none;
+ color: #886;
+ text-decoration: none;
+}
+table.code tbody th :link:hover, table.code tbody th :visited:hover {
+ color: #000;
+}
+table.code tbody td {
+ background: #fff;
+ font: normal 13px monospace;
+ overflow: hidden;
+ padding: 1px 2px;
+ vertical-align: top;
+}
+
+/* Default */
+.code-block span {
+ font-family: monospace;
+}
+
+/* Comments */
+.code-comment, .css_comment, .c_comment, .c_commentdoc, .c_commentline,
+.c_commentlinedoc, .h_comment,.pl_commentline, .p_commentblock,
+.p_commentline, .hphp_commentblock, .hphp_commentline,
+.yaml_comment {
+ color: #940; 
+ font-style: italic;
+}
+
+/* Language keyword */
+.code-keyword, .pl_word  { color: #949; font-weight: bold }
+
+/* Type */
+.code-type, .c_word, .c_word2, .p_classname, .hphp_classname{
+ color: #468;
+ font-weight: bold;
+}
+
+/* Function */
+.code-func, .p_defname {
+ color: #00F;
+ font-weight: bold;
+ border-bottom: none;
+}
+
+/* Pre-processor */
+.code-prep, .c_preprocessor, .pl_preprocessor, .yaml_identifier {
+ color: #999;
+ font-weight: bold;
+}
+
+/* Language construct */
+.code-lang, .p_word { color: #92D; font-weight: bold }
+
+/* String */
+.code-string, .c_string, .c_stringeol, .css_doublestring, .css_singlestring,
+.h_singlestring, .h_doublestring, .pl_string, .pl_string_q, .pl_string_qq,
+.pl_string_qr, .pl_string_qw, .pl_string_qx, .pl_backticks, .pl_character,
+.p_string, .p_stringeol, .hphp_string, .hphp_stringeol, .hphp_triple,
+.hphp_tripledouble, .p_character, .p_triple, .p_tripledouble {
+ color: #b87;
+ font-weight: normal;
+}
+
+/* Variable name */
+.code-var { color: #f9f }
+

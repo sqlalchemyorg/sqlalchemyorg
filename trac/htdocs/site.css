@@ -1,0 +1,30 @@
+/* Link styles */
+:link, :visited {
+ text-decoration: none;
+ color: #822;
+ border-bottom: 1px dotted #bbb;
+}
+:link:hover, :visited:hover {
+ background-color: #eee;
+ color: #555;
+}
+
+/* Browser */
+h1 { margin: 0; padding: 0 0 .5em }
+h1 :link, h1 :visited, h1 .filename { border: none; padding: 0 .2em }
+h1 :link, h1 :visited { color: #822 }
+h1 .first:link, h1 .first:visited { color: #998 }
+h1 .sep { color: #666; padding: 0 .1em }
+
+
+/* Timeline */
+dt em {
+ border-bottom: 1px dotted #bbb;
+ color: #822;
+ font-style: normal;
+ text-decoration: none;
+}
+
+/* roadmap */
+.milestone .info h2 em { color: #822; font-style: normal }
+

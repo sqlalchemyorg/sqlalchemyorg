@@ -1,0 +1,38 @@
+<%python scope="init">
+    in_docs = m.base_component.attributes.get('in_docs', False)
+
+    current_section = m.base_component.attributes.get('section','')
+    if not current_section and in_docs:
+        current_section = 'docs'
+
+</%python>
+
+<div id="wrap">
+
+<& /header.myc, section=current_section &>
+
+<div id="main-body">
+
+% if not in_docs:
+
+    <div id="content">
+    <div id="content-inner">
+%   m.call_next()
+    </div>
+    </div> <!-- end #content-inner, #content -->
+
+    <& sidebar.myc, section=current_section &>
+
+% else:
+
+    <div id="docs">
+%   m.call_next()
+    </div>
+
+% #end
+
+</div> <!-- end #main-body -->
+
+<& footer.myc &>
+
+</div> <!-- end #wrap -->

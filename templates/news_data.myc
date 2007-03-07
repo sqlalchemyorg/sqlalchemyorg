@@ -1,0 +1,126 @@
+<%global>
+	import datetime
+	def format_date(date):
+		return date.strftime("%a, %d %b %Y")
+</%global>
+<%init>
+	container = []
+</%init>
+
+<%closure newsitem>
+	<%args>
+		headline
+		date
+	</%args>
+	<%init>
+		id = "item_%d" % (len(container) + 1)
+		container.append({'id':id,'headline':headline, 'date':date, 'formatted_date':format_date(date), 'body':m.content()})	
+	</%init>
+</%closure>
+
+<&|newsitem, headline="GNU Mailman - Running SQLAlchemy", date=datetime.date(2007,01,05) &>
+Barry Warsaw is the author of an application you've probably used, <a href="http://www.gnu.org/software/mailman/">Gnu Mailman</a>; its probably the most common mailing-list application in use today.  Barry just announced that <a href="http://wiki.list.org/display/COM/2006/12/29/Pickles+Begone">SQLAlchemy-based persistence is now checked into the trunk</a>, for the purposes of migrating Mailman's persistence system from a series of pickled files to a relationally-backed approach.  As Barry comments, "it turns out that really, not much code had to be changed. I think this is a testiment to SQLAlchemy's approach."  
+
+</&>
+
+<&|newsitem, headline="SQLAlchemy at Pycon", date=datetime.date(2006,12,06) &>
+<p>SA will be featured at several events at the upcoming <a href="http://us.pycon.org/TX2007/HomePage">PyCon</a>.  Jonathan Ellis will be presenting <a href="http://us.pycon.org/TX2007/TutorialsPM#PM3">Advanced Databases with SQLAlchemy</a> and Mark Ramm will present <a href="http://us.pycon.org/apps07/talks/">SQLAlchemy - the Front-to-Back database toolkit</a> (item #47 on that page).  Hope to see you there !
+</p>
+</&>
+
+<&|newsitem, headline="SQLAlchemy 0.3.0 Released", date=datetime.date(2006,10,22) &>
+<p>The first release of the SQLAlchemy 0.3 series is now available.  The emphasis in this release is on a maturing of the underlying codebase and its methodologies, refinement of the API first introduced in the 0.2 series, as well as ongoing refinement and production of documentation.  API changes in this version are minimal, and are summarized on <a href="/trac/wiki/03Migration">the Wiki</a>.  Major improvements in this version include better connection management, improved and clarified unit-of-work behavior, many more querying capabilities, support for multi-column stored procedures, explicit database locking support at the SQL and ORM levels, comprehensive logging using Python's logging module, and dozens of bugfixes for all database modules as well as ORM and SQL construction.</p>
+<p>See whats new in 0.3 on the Wiki, including <a href="/trac/wiki/New03Tricks">new tricks</a>, <a href="/trac/wiki/03Migration">API changes</a>, and check out the <a href="/CHANGES">changelog.</a></p>
+<p>Get SQLAlchemy 0.3 via the <a href="/download.myt">downloads page.</a>
+</&>
+
+<&|newsitem, headline="SQLAlchemy in Print", date=datetime.date(2006,10,19) &>
+The second edition of <a href="http://www.amazon.com/Core-Python-Programming-Wesley-Chun/dp/0132269937/sr=8-1/qid=1161293018/ref=pd_bbs_sr_1/102-4143356-1896967?ie=UTF8">Core Python</a> is now available, and chapter 21 features discussion and sample applications for "the two most well-known Object-Relational Mappers for Python", SQLAlchemy and SQLObject, less than a year after SQLAlchemy's first release.  The example actually uses only SA's SQL expression capabilities and doesn't get into mapper creation, but its a simple example that's sure to lead more developers into the community.  Also coming soon is <a href="http://www.amazon.com/Rapid-Web-Applications-TurboGears-Ajax-Powered/dp/0132433885/sr=1-1/qid=1161293054/ref=sr_1_1/102-4143356-1896967?ie=UTF8&s=books">Rapid Web Applications with Turbogears</a>, which features an entire section on SQLAlchemy.
+</&>
+
+<&|newsitem, headline="Django to Integrate SQLAlchemy", date=datetime.date(2006,8,30) &>
+Python megaframework <a href="http://www.djangoproject.com">Django</a> has decided to take the plunge and <a href="http://tinyurl.com/htvwu">create a port of its ORM based on SQLAlchemy</a>.  Adrian Holovaty has skillfully led Django from an in-house project to Guido's favorite choice in a short time, and the move to allow full SQLAlchemy integration will help Django grow beyond its roots into a more broadly scoped system.  It will be interesting to see how the move comes to fruition. Adrian says Django's ORM interface will remain, and the SQLAlchemy API will be exposable for the purposes of doing something "truly complicated".  But SA fans know its not really about "complexity", its about embracing the idea of "rows and relations" instead of just tables.  Should Django's ORM layer itself start to adopt more of SA's style of thinking, Django users might decide that SA's view of databases works just great for everyday tasks as well.
+</&>
+
+<&|newsitem, headline="Zope Guru Jeff Shell on SQLAlchemy", date=datetime.date(2006,8,14) &>
+The <a href="http://www.zope.org">Zope</a> community has shown a great interest in SQLAlchemy ever since SA's early releases.  Zope's focus on in-depth architecture and open-ended design is a great match with SQLAlchemy, which shares a lot of the same values.  Notable Zoper <a href="http://griddlenoise.blogspot.com/">Jeff Shell</a> engages in an interesting <a href="http://mail.zope.org/pipermail/zope3-users/2006-August/004049.html">thread</a> about his experiences blending SQLAlchemy and Zope, touching upon <a href="http://svn.zope.org/z3c.zalchemy/">Zalchemy</a>, JÃ¼rgen Kartnaller's Zope/SQLAlchemy integration project, and how his own contrasting approach worked out in a recent in-house project.
+</&>
+
+<&|newsitem, headline="Frameworks, Frameworks, Frameworks", date=datetime.date(2006,8,9) &>
+In the news lately are a bunch of new (and not-so-new) frameworks that build upon or strongly support SQLAlchemy.  Closest to the SQLAlchemy family is <a href="http://www.pylonshq.com">Pylons</a>, the <a href="http://www.myghty.org">Myghty</a>-inspired framework that builds on WSGI and <a href="http://www.pythonpaste.org">Paste</a>, which has just released version 0.9.  Also new in the WSGI/Paste camp is <a href="http://www.cleverharold.org/">Clever Harold</a>, which encourages the usage of SQLAlchemy and includes adapters for SA both with and without the <a href="/docs/plugins.myt#plugins_activemapper">ActiveMapper</a> extension.  Prolific SQLAlchemy advocate Jonathan Ellis has just released <a href="http://spyce.sf.net">Spyce 2.1</a> (an early inspiration for Myghty), which introduces new tags interfacing directly to database tables via Jonathan's own <a href="/docs/plugins.myt#plugins_sqlsoup">SqlSoup</a> extension to SQLAlchemy.  Over at Adminspotting.net, a long series of <a href="http://adminspotting.net/building-web-pages-with-python/">articles</a> on how to build a dynamic website using SQLAlchemy, the Jinja template system, and <a href="http://wsgiarea.pocoo.org/colubrid/">Colubrid</a>, yet-another-WSGI frontend (originating from the <a href="http://trac.pocoo.org/">Pocoo</a> project, which has its *own* <a href="http://trac.pocoo.org/wiki/DatabaseApi">SQLAlchemy integration layer</a>). Finally, just dipping its toe in the water is the new <a href="http://orangoo.com/skeletonz/">Skeletonz</a> CMS system, which has integrated SQLAlchemy's connection pooling facilities with its own homegrown ORM layer.
+<br/>
+Update: and dont forget <a href="http://www.turbogears.org">Turbogears</a> ! 
+</&>
+
+<&|newsitem, headline="Trac to Integrate SQLAlchemy", date=datetime.date(2006,7,25) &>
+<a href="http://trac.edgewall.com">Trac</a>, arguably the most popular open source wiki/source code tracker suite, has finally put its <a href="http://trac.edgewall.org/milestone/0.11">SQLAlchemy integration branch</a> officially on the development roadmap for version 0.11, which will allow Trac to seamlessly integrate with a variety of database backends including Oracle.  The move by the Trac team to embrace SQLAlchemy highlights SA's effectiveness for applications that go beyond straight content delivery, allowing the flexibility required to implement highly public and collaborative applications.
+
+</&>
+
+<&|newsitem, headline="MyDrawings.com Runs SQLAlchemy", date=datetime.date(2006,7,02) &>
+Dennis Muhlestein's new site <a href="http://www.mydrawings.com">mydrawings.com</a> is a collaborative "doodling" site, where users can navigate a vast Google-Maps-like "world canvas", drop down and create their very own online sketch.  Users can browse other sketches, rate each other, and cross-contribute to each other's content.  Its a highly interactive site and it runs on SQLAlchemy.  
+</&>
+
+<&|newsitem, headline="SQLAlchemy 0.2.4 Released", date=datetime.date(2006,6,27) &>
+Release 0.2.4 fixes bugs in the new deferred mapper compilation feature introduced in 0.2.3.  Now you can define mappers in any order, and their relationships to each other are compiled when the mappers are first used.  Numerous fixes have been made with regards to transaction operation, connection pooling, inheritance mapping, and more.  Check out <a href="/CHANGES">CHANGES</a> for full details.
+</&>
+
+<&|newsitem, headline="SQLAlchemy 0.2.2 Released", date=datetime.date(2006,6,5) &>
+Release 0.2.2 fixes some small but critical bugs, and includes much enhanced support for structures that are both recursive and polymorphic at the same time.  Get it on the <a href="/download.myt">download</a> page.
+</&>
+
+<&|newsitem, headline="SQLAlchemy Tutorial Updated", date=datetime.date(2006,5,30) &>
+<p>Robin Munn's <a href="http://www.rmunn.com/sqlalchemy-tutorial/tutorial.html">SQLAlchemy Tutorial</a> has been updated for version 0.2.  While SA has a tutorial of its own in the documentation, Robin's takes a more in-depth take on things and is well worth checking out.</p>
+</&>
+
+<&|newsitem, headline="SQLAlchemy Releases Version 0.2.0", date=datetime.date(2006,5,27) &>
+<p>The first release of the anticipated 0.2 series is finally out.  0.2, whose primary goals were to remove all threadlocal behavior from the core (but keeping it all available as extensions), and to completely decouple all connection-aware state from schema, SQL and mapping objects, is an overhaul of virtually every aspect of SQLAlchemy.  Simpler and finer-grained APIs have been created for the engine/SQL execution system, the mapper/query system and the unit of work/session system.  Full support for inheritance as well as polymorphic loading and saving has been implemented.  The schema package gets a new MetaData object which can manage entire groups of tables in one pass.  The documentation has been updated and largely rewritten, adding a new tutorial section.</p>
+<p>
+Information on the changes is described in the <a href="/CHANGES">changelog</a>, and a high level overview of API changes is available <a href="http://www.sqlalchemy.org/trac/wiki/02Migration">on the wiki.</a>  
+</p>
+<p>
+<a href="/download.myt">Download SQLAlchemy 0.2</a><br/>
+<a href="/docs/">Read SQLAlchemy 0.2 Documentation</a>
+</p>
+
+</&>
+<&|newsitem, headline="SQLAlchemy-Based Project Approved for Google's Summer of Code", date=datetime.date(2006,5,23) &>
+Evan Rosson's <b>Schema Migration</b> project is among those picked to be mentored by the Python Software Foundation in Google's <a href="http://wiki.python.org/moin/SummerOfCode">Summer of Code</a>.  This tool will borrow from popular schema management tools such as Rails <a href="http://rubyonrails.com/rails/classes/ActiveRecord/Migration.html">Migrations</a>.  <a href="http://cleverdevil.org/">Jonathan LaCour</a>, contributor of <a href="/docs/plugins.myt#plugins_activemapper">ActiveMapper</a>, will be mentoring.  Congratulations to Evan !
+</&>
+
+<&|newsitem, headline="SQLAlchemy Tutorial Tops del.icio.us Python Popular List", date=datetime.date(2006, 5,3) &>
+Robin Munn's excellent <a href="http://www.rmunn.com/sqlalchemy-tutorial/tutorial.html">SQLAlchemy 0.1 Tutorial</a> comes in at <a href="http://del.icio.us/popular/python">number two</a> under the "Python Popular" tag at del.icio.us at the time of this writing, adding about 100 new links in the span of a week.
+</&>
+
+<&|newsitem, headline="SA 0.1.7 Released", date=datetime.date(2006,5,5)&>
+As Mr. Ellis so aptly reminded me that the post 0.1.6 bugfixes were piling up, I have recorded them in the changelog and released.  Includes topological sort fixes and many fixes to SQL construction and compilation.  See <a href="/CHANGES">the changelog</a> for details.
+
+</&>
+
+<&|newsitem, headline="Upcoming Changes in SA 0.2", date=datetime.date(2006,4,20)&>
+I have committed my work on the 0.2 series so far to a branch in SVN. this branch is available at: <a href="http://svn.sqlalchemy.org/sqlalchemy/branches/schema">http://svn.sqlalchemy.org/sqlalchemy/branches/schema</a>
+It's not all working yet. SQLite is up, Postgres is sort of up, the rest still need some conversion. unittests are 50/50.
+
+At the end of the day, there will be a few changes for everyone. I would encourage everyone to check it out, particularly those who:
+
+<ul>
+    <li>do stuff with explicit transactions</li>
+    <li>have written wrappers around SQLEngine, etc.</li>
+    <li>want to get into explicit connections and Sessions (the whole reason for the branchâ)</li>
+</ul>
+</&>
+
+<&|newsitem, headline="Now in SVN: Support for MS-SQL", date=datetime.date(2006, 4, 12)&>
+	Support for MS-SQL has been added to SVN courtesy Rick Morrison, Runar Petursson.
+</&>
+
+<&|newsitem, headline="SA 0.1.6 Released", date=datetime.date(2006, 4, 12)&>
+Support for MS-SQL added courtesy Rick Morrison, Runar Petursson, the latest SQLSoup from J. Ellis, ActiveMapper has preliminary support for inheritance (Jeff Watkins), added a "mods" system which allows pluggable modules that modify/augment core functionality, and more...
+</&>
+
+<&|newsitem, headline="Bittorrent.com Running Myghty", date=datetime.date(2006,3,23) &>
+SQLAlchemy's cousin project <a href="http://www.myghty.org">Myghty</a>, now at revision 1.0, has been rolled out as the full implementation behind <a href="http://www.bittorrent.com">Bittorrent.com</a>, an extremely popular and large scale website ranked in the mid thousands by Alexa.
+</&>
+<%python>
+	return container
+</%python>
