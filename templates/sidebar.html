@@ -1,11 +1,10 @@
-<%args>
-	section=None
-</%args>
-<%python>
-	news = m.comp('/news_data.myc')
+<%page args="section=None"/>
+<%namespace file="/news_data.html" name="newsdata"/>
+<%
+	news = newsdata.body()
 	max = 7
 	count = 0
-</%python>
+%>
 
 <div id="sidebar">
 
@@ -13,17 +12,18 @@
     <h3>Latest News</h3>
 	<ul>
 % for item in news:
-%	count += 1
-%	if count > max:
-%		break
-%
-	<li><a href="/news.myt#<% item['id'] %>"><% item['headline'] %></a><br/><span class="date"><% item['formatted_date'] %></span>
-%
+<%
+	count += 1
+	if count > max:
+		break
+%>
+	<li><a href="/news.myt#${item['id']}">${item['headline']}</a><br/><span class="date">${item['formatted_date']}</span>
+% endfor
     </ul>
 % if section != 'news':
 <br/>
 <a href="/news.myt">More news...</a>
-%
+% endif
 </div>
 
 <div class="box">

@@ -1,0 +1,39 @@
+
+<%
+in_docs = attributes.get('in_docs', False)
+
+current_section = attributes.get('section','')
+if not current_section and in_docs:
+    current_section = 'docs'
+%>
+
+
+<div id="wrap">
+
+<%include file="header.html" args="section=current_section" />
+
+<div id="main-body">
+
+% if not in_docs:
+
+    <div id="content">
+    <div id="content-inner">
+    ${next.body()}
+    </div>
+    </div> <!-- end #content-inner, #content -->
+
+    <%include file="sidebar.html" args="section=current_section" />
+
+% else:
+
+    <div id="docs">
+    ${next.body()}
+    </div>
+
+% endif
+
+</div> <!-- end #main-body -->
+
+<%include file="footer.html"/>
+
+</div> <!-- end #wrap -->

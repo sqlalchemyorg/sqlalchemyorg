@@ -4,15 +4,16 @@ from mako import exceptions
 
 import time
 
-root = '/www/hosts/www.sqlalchemy.org'
+root = len(sys.argv) > 1 and sys.argv[1] or '/www/hosts/www.sqlalchemy.org'
 
 htdocs = root + '/htdocs'
 templates = root + '/templates'
 lookup = TemplateLookup(directories=[templates, htdocs], filesystem_checks=True, module_directory=root+'/modules', output_encoding='utf-8')
 
+print "HTDOCS", htdocs
+
 def serve(environ, start_response):
     now = time.time()
-    req = environ['apache.request']
     fieldstorage = cgi.FieldStorage(
             fp = environ['wsgi.input'],
             environ = environ,
@@ -31,7 +32,7 @@ def serve(environ, start_response):
         try:
             template = lookup.get_template(uri)
             start_response("200 OK", [('Content-type','text/html')])
-            x= [template.render(req=d)]
+            x= [template.render(attributes={}, req=d)]
             return x
         except exceptions.TopLevelLookupException:
             start_response("404 Not Found", [])
