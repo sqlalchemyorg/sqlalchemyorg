@@ -1,8 +1,12 @@
+<%!
+    from mako.ext.autohandler import autohandler
+%>
+<%inherit file="${autohandler(template, context)}"/>
 
 <%
-in_docs = attributes.get('in_docs', False)
+in_docs = getattr(self.module, 'in_docs', False)
 
-current_section = attributes.get('section','')
+current_section = getattr(self.module, 'section', '')
 if not current_section and in_docs:
     current_section = 'docs'
 %>

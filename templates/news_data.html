@@ -1,11 +1,9 @@
 ## coding:utf-8
+<%page args="container"/>
 <%!
     import datetime
     def format_date(date):
         return date.strftime("%a, %d %b %Y")
-%>
-<%
-	container = []
 %>
 
 <%def name="newsitem(headline, date)">
@@ -98,6 +96,3 @@ At the end of the day, there will be a few changes for everyone. I would encoura
 
 <%call expr="newsitem(headline='Bittorrent.com Running Myghty', date=datetime.date(2006,3,23))">SQLAlchemy's cousin project <a href="http://www.myghty.org">Myghty</a>, now at revision 1.0, has been rolled out as the full implementation behind <a href="http://www.bittorrent.com">Bittorrent.com</a>, an extremely popular and large scale website ranked in the mid thousands by Alexa.
 </%call>
-<%
-return container
-%>

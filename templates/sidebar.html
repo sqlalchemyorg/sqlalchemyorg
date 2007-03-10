@@ -1,9 +1,9 @@
 <%page args="section=None"/>
-<%namespace file="/news_data.html" name="newsdata"/>
 <%
-	news = newsdata.body()
-	max = 7
-	count = 0
+    news = []
+    self.include_file("/news_data.html", container=news)
+    max = 7
+    count = 0
 %>
 
 <div id="sidebar">
@@ -17,12 +17,12 @@
 	if count > max:
 		break
 %>
-	<li><a href="/news.myt#${item['id']}">${item['headline']}</a><br/><span class="date">${item['formatted_date']}</span>
+	<li><a href="/news.html#${item['id']}">${item['headline']}</a><br/><span class="date">${item['formatted_date']}</span>
 % endfor
     </ul>
 % if section != 'news':
 <br/>
-<a href="/news.myt">More news...</a>
+<a href="/news.html">More news...</a>
 % endif
 </div>
 
@@ -34,7 +34,7 @@
   <li><a href="/trac/timeline">Timeline/Checkins</a></li>
   <li><a href="http://groups.google.com/group/sqlalchemy">Mailing List</a></li>
   <li><a href="/trac/browser">Browse SVN</a></li>
-  <li><a href="/download.myt">Download</a></li>
+  <li><a href="/download.html">Download</a></li>
   </ul>
 </div>
 
