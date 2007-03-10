@@ -1,0 +1,16 @@
+<%inherit file="/base.html"/>
+<%!
+    in_docs=True
+%>
+
+${next.body()}
+
+<%def name="style()">
+<link rel="stylesheet" type="text/css" media="all" href="docs.css"></link>
+<link rel="stylesheet" type="text/css" media="all" href="syntaxhighlight.css" ></link>
+<link rel="stylesheet" type="text/css" media="all" href="/css/site2.css" ></link>
+<link rel="stylesheet" type="text/css" media="print" href="/css/print.css"></link>
+</%def>
+<%def name="javascript()">
+    <script src="scripts.js"></script>
+</%def>

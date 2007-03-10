@@ -4,7 +4,7 @@
 <%inherit file="${autohandler(template, context)}"/>
 
 <%
-in_docs = getattr(self.module, 'in_docs', False)
+in_docs = getattr(next.module, 'in_docs', False)
 
 current_section = getattr(self.module, 'section', '')
 if not current_section and in_docs:

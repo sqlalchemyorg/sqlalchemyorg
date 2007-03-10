@@ -1,12 +1,10 @@
-<%flags>
-	inherit='base.myc'
-</%flags>
-<%attr>
-	section='download'
-</%attr>
-<%method title>
+<%inherit file="/base.html"/>
+<%!
+    section = 'download'
+%>
+<%def name="title()">
 Download - SQLAlchemy
-</%method>
+</%def>
 
 <h1>Get SQLAlchemy</h1>
 
