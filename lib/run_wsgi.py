@@ -2,18 +2,15 @@ import cgi, re, os, posixpath, mimetypes, sys
 from mako.lookup import TemplateLookup
 from mako import exceptions
 
-import time
 
-root = len(sys.argv) > 1 and sys.argv[1] or '/www/hosts/www.sqlalchemy.org'
+root = len(sys.argv) > 1 and sys.argv[1] or '/www/hosts/www.sqlalchemy.org/staging'
 
 htdocs = root + '/htdocs'
 templates = root + '/templates'
 lookup = TemplateLookup(directories=[templates, htdocs], filesystem_checks=True, module_directory=root+'/modules', output_encoding='utf-8')
 
-print "HTDOCS", htdocs
 
 def serve(environ, start_response):
-    now = time.time()
     fieldstorage = cgi.FieldStorage(
             fp = environ['wsgi.input'],
             environ = environ,
