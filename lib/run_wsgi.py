@@ -2,6 +2,7 @@ import cgi, re, os, posixpath, mimetypes, sys
 from mako.lookup import TemplateLookup
 from mako import exceptions
 
+import framework
 
 root = len(sys.argv) > 1 and sys.argv[1] or '/www/hosts/www.sqlalchemy.org/staging'
 
@@ -18,7 +19,7 @@ def serve(environ, start_response):
     )
     d = dict([(k, getfield(fieldstorage[k])) for k in fieldstorage])
 
-    uri = environ.get('PATH_INFO', environ.get('SCRIPT_URL', '/'))
+    uri = environ.get('PATH_INFO', environ.get('SCRIPT_URL', environ.get('SCRIPT_NAME', '/')))
 
     if not uri:
         uri = '/index.html'
@@ -28,12 +29,15 @@ def serve(environ, start_response):
     if re.match(r'.*\.html$', uri):
         try:
             template = lookup.get_template(uri)
+            x= [template.render(attributes={}, req=d, environ=environ)]
             start_response("200 OK", [('Content-type','text/html')])
-            x= [template.render(attributes={}, req=d)]
             return x
         except exceptions.TopLevelLookupException:
             start_response("404 Not Found", [])
             return ["Cant find template '%s'" % uri]
+        except framework.AbortException, e:
+            start_response("%s %s" % (e.responsecode, e.message), [])
+            return [e.message]
         except:
             start_response("200 OK", [('Content-type','text/html')])
             return [exceptions.html_error_template().render()]
