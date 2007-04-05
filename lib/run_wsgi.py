@@ -4,7 +4,7 @@ from mako import exceptions
 
 import framework
 
-root = len(sys.argv) > 1 and sys.argv[1] or '/www/hosts/www.sqlalchemy.org/staging'
+root = len(sys.argv) > 1 and sys.argv[1] or '/www/hosts/www.sqlalchemy.org'
 
 htdocs = root + '/htdocs'
 templates = root + '/templates'
@@ -29,9 +29,10 @@ def serve(environ, start_response):
     if re.match(r'.*\.html$', uri):
         try:
             template = lookup.get_template(uri)
+            start_response("200 OK", [('Content-type','text/html; charset=UTF-8')])
             x= [template.render(attributes={}, req=d, environ=environ)]
-            start_response("200 OK", [('Content-type','text/html')])
             return x
+            #return ["URI: " + uri + " " + repr(environ)]
         except exceptions.TopLevelLookupException:
             start_response("404 Not Found", [])
             return ["Cant find template '%s'" % uri]
