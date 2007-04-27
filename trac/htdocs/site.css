@@ -9,6 +9,45 @@
  color: #555;
 }
 
+
+body {
+	margin:0px 0px 0px 0px;
+}
+
+#content {
+	margin:10px;
+}
+
+#header img {
+}
+
+#logo img {
+	margin:5pt 0px 0px 16px;
+}
+
+#search {
+	float:right;
+}
+
+#banner {
+  background: #FFFFFF
+  url(/_img/symbols-bg5.gif) no-repeat scroll right top;
+  padding:0px 20px 0px 0px;
+}
+
+#metanav {
+  padding-top:10px;
+  color: #000;
+}
+
+#guestlogin {
+  float:right;
+  color: #ddd;
+  font-weight:bold;
+  margin:20px 0px 0px 20px;
+}
+#guestlogin b {color:#FFF}
+
 /* Browser */
 h1 { margin: 0; padding: 0 0 .5em }
 h1 :link, h1 :visited, h1 .filename { border: none; padding: 0 .2em }
