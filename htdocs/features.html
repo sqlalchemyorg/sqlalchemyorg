@@ -17,7 +17,7 @@ Features - SQLAlchemy
 		Supported Databases
 	</td>
 	<td class="featuredesc">
-		<p>Strong support is provided for SQLite, Postgres, MySQL, and Oracle, as well as developmental support for MS-SQL, Firebird, and Informix.  The corresponding <a href="http://www.python.org/dev/peps/pep-0249/">DB-API 2.0</a> implementation (or sometimes one of several available) is required to use each particular database. <a href="/docs/dbengine.html#dbengine_supported">[More]</a></p>
+		<p>Strong support is provided for SQLite, Postgres, MySQL, MS-SQL and Oracle, as well as developmental support for Firebird and Informix.  The corresponding <a href="http://www.python.org/dev/peps/pep-0249/">DB-API 2.0</a> implementation (or sometimes one of several available) is required to use each particular database. <a href="/docs/dbengine.html#dbengine_supported">[More]</a></p>
 	</td>
   </tr>
   
@@ -53,7 +53,7 @@ Features - SQLAlchemy
     Eager-loading of objects
     </td>
     <td class="featuredesc">
-        <p>Whole graphs of related objects can often be loaded with a single query that is automatically generated to join the appropriate tables together, known as <em>eager loading</em>.  The alternative to eager loading, <em>lazy loading</em>, loads related objects via distinct query executions.  Each type of loading produces identical results and are interchangeable, allowing configuration at any level as well as runtime selection of the relationship-loading method to be used.
+        <p>Whole graphs of related objects can often be loaded with a single query that is automatically generated to join the appropriate tables together, known as <em>eager loading</em>.  The alternative to eager loading, <em>lazy loading</em>, loads related objects via distinct query executions.  Each type of loading produces identical results and are interchangeable, allowing configuration at any level as well as query-time selection of the relationship-loading method to be used.
   <a href="/docs/datamapping.html#datamapping_selectrelations_eagerload">[More]</a></p>
       </td>
   </tr>
@@ -72,7 +72,7 @@ Features - SQLAlchemy
      Self-referential tables and mappers
      </td>
      <td class="featuredesc">
-  <p>Self-referential tables and mappers are supported. Adjacency list structures can be created, saved, and deleted with proper cascading, with no code overhead beyond that of non-self-referential structures. <a href="/docs/adv_datamapping.html#advdatamapping_recursive">[More]</a></p>
+  <p>Self-referential tables and mappers are supported. Adjacency list structures can be created, saved, and deleted with proper cascading, with no code overhead beyond that of non-self-referential structures. <a href="docs/adv_datamapping.html#advdatamapping_selfreferential">[More]</a></p>
        </td>
    </tr>
 	<tr class="feature">
