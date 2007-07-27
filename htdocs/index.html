@@ -30,6 +30,8 @@
             <li>Map objects to not just tables but to any arbitrary join or select statement</li>
             <li>Combine multiple tables together to load whole sets of otherwise unrelated objects from a single result set</li>
             <li>Commit entire graphs of object changes in one step</li>
+            <li>Interface with multiple databases simultaneously</li>
+            <li>Use real two phased transactions as well as "nested" transactions via savepoints, in a database-agnostic manner (upcoming in 0.4 for MySQL, Postgres and Oracle)</li>
             </ul>
 
         </td>
@@ -62,10 +64,10 @@
 
     <tr class="feature">
         <td class="featurename">
-            Highly Modular
+            Highly Modular / Non-Opinionated
         </td>
         <td class="featuredesc">
-            <p>Different parts of SQLAlchemy can be used independently of the rest.  You can use the connection pool by itself and deal with raw connections; or you can use the SQL construction language by itself, either in direct conjunction with one or more database connections or as standalone constructs which return their string-compiled contents.  While SQLAlchemy has a great ORM provided, the other parts have no dependency on it; its usage is completely optional.  Simpler facades for the ORM can be used as well, such as the ActiveMapper and SqlSoup extension modules.  SQLAlchemy is architected in an open style that allows plenty of customization, supporting user-defined datatypes, custom SQL extensions, and a plugin system which can augment or extend any functionality including SQL expressions and ORM behavior.</p>
+            <p>Different parts of SQLAlchemy can be used independently of the rest.  You can use the connection pool by itself and deal with raw connections; or you can use the SQL construction language by itself, either in direct conjunction with one or more database connections or as standalone constructs which return their string-compiled contents.  While SQLAlchemy has a great ORM provided, the other parts have no dependency on it; its usage is completely optional.  Simpler facades for the ORM can be used as well, such as the popular <a href="http://elixir.ematia.de/">Elixir</a> Declarative Layer and the <a href="/trac/wiki/SqlSoup">SqlSoup</a> Row Gateway.  SQLAlchemy is architected in an open style that allows plenty of customization, supporting user-defined datatypes, custom SQL extensions, and a plugin system which can augment or extend any functionality including SQL expressions and ORM behavior.</p>
             
         </td>
     </tr>
@@ -74,7 +76,8 @@
 			Community Supported
 		</td>
 		<td class="featuredesc">
-		<p>SQLAlchemy has a strong community, which provides patches and updates on a regular basis.  Included with SQLAlchemy are several user-supplied extensions, including <a href="http://cleverdevil.org/computing/35/">ActiveMapper</a> (now superceded by <a href="http://elixir.ematia.de/">Elixir</a>), <a href="/trac/wiki/SqlSoup">SqlSoup</a> and SelectResults.  The <a href="http://trac.erosson.com/migrate/">Migrate</a> project provides schema migration support as well.</p>
+		<p>SQLAlchemy has an active user community.  The communities of both <a href="http://www.pylonshq.com">Pylons</a> and <a href="http://www.turbogears.org">Turbogears</a> are largely involved with SQLAlchemy as it's the central ORM platform used by both frameworks; not to mention that there are no less than three integration frameworks available for <a href="http://www.zope.org">Zope</a>.  The popular <a href="http://elixir.ematia.de/">Elixir</a> project provides a so-called "declarative" layer on top of SQLAlchemy which retains the feel of popular <a href="http://www.martinfowler.com/eaaCatalog/activeRecord.html">active record</a> tools.  SQLAlchemy itself includes several user-provided extensions, such as <a href="/trac/wiki/SqlSoup">SqlSoup</a> and <a href="http://www.sqlalchemy.org/docs/plugins.html#plugins_orderinglist">orderinglist</a>.  The <a href="http://trac.erosson.com/migrate/">Migrate</a> project, which is currently seeking developers, intends to provide schema migration support as well.</p>
+
 	<p>SQLAlchemy is currently involved in integration projects (or is integrated) with the following systems:
 
 		<ul>
@@ -87,8 +90,7 @@
 			<li><a href="http://spyce.sf.net">Spyce</a></li>
 			<li><a href="http://www.gnu.org/software/mailman/index.html">GNU Mailman</a></li>
 		</ul>
-<p>
-<a href="/trac/wiki/SAApps">Read about who's using SQLAlchemy.</a>
+<p>The <a href="/trac/wiki/SAApps">SQLAlchemy in the Wild</a> page tracks a listing of all known integration tools as well as notable applications and websites which use SQLAlchemy.
 </p>
 
 		</p>
