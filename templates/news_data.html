@@ -13,6 +13,18 @@
 	%>
 </%def>
 
+<%call expr="newsitem(headline='SQLAlchemy 0.4.0 Released', date=datetime.date(2007,10,17))">
+<p>The first production release of 0.4 is now available.  After six separate beta releases, the final 0.4 represents the hard work of many contributors with over a hundred new fixes and improvements after the the initial 0.4 beta1 release.  0.4 overall represents the largest overhaul SQLAlchemy has had yet, with its most refined and feature-filled ORM, SQL expression, and transactional APIs ever, all new documentation, a rewritten compiler, massive refactorings and speed refinements to the execution system and ORM, and more support for more databases, including experimental support for Sybase and MS Access.</p>
+<p>Dozens of users have already upgraded their SQLAlchemy 0.3 applications to 0.4, and the upgrade path has been carefully tailored to be as painless as possible.  Typical performance increases are between 30% and 50% depending on usage.  To get started, visit the <a href="/docs/04">docs</a> and <a href="/download.html">download</a>.</p>
+</%call>
+
+<%call expr="newsitem(headline='First Beta of SQLAlchemy 0.4 Released', date=datetime.date(2007,8,12))">
+<p>The <a href="/download.html">first beta release</a> of SQLAlchemy's 0.4 series is released.  Version 0.4 is the biggest new version of SA ever, featuring a <a href="/trac/wiki/WhatsNewIn04">huge</a> list of new capabilities and features.  SQLAlchemy is now very community owned with more developers, users and contributors then ever;  and we've responded to user needs across a wide number of areas and rolled out new capabilities far beyond SA's original scope.</p>
+<p>Check out the <a href="/docs/04">rewritten docs</a> and 0.3 migration guide then <a href="/download.html">download
+!</a></p>
+</%call>
+
+
 <%call expr="newsitem(headline='SQLAlchemy: The Book', date=datetime.date(2007,06,21))">
 <p>Due for publishing by Pycon 2008, <b>Database Access with SQLAlchemy</b> is being written for Prentice Hall by Mark Ramm and Michael Bayer.  The book will feature front-to-back coverage of SQLAlchemy's full list of capabilities, including in-depth studies of engine/metadata configuration strategies, advanced mapping scenarios, and case histories.  Code examples and concepts will be against the upcoming <b>0.4</b> release of SQLAlchemy, which includes lots of new features such as configuration-free polymorphic loading and a simplified, all generative Query interface.
 </p>

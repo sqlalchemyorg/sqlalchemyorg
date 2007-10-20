@@ -35,7 +35,7 @@ def serve(environ, start_response):
             #return ["URI: " + uri + " " + repr(environ)]
         except exceptions.TopLevelLookupException:
             start_response("404 Not Found", [])
-            return ["Cant find template '%s'" % uri]
+            return ["<h2>404 Not Found</h2>\nCan't find template '%s'" % uri]
         except framework.AbortException, e:
             start_response("%s %s" % (e.responsecode, e.message), [])
             return [e.message]
