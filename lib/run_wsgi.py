@@ -45,8 +45,13 @@ def serve(environ, start_response):
     else:
         u = re.sub(r'^\/+', '', uri)
         filename = os.path.join(htdocs, u)
-        start_response("200 OK", [('Content-type',guess_type(uri))])
-        return [file(filename).read()]
+        try:
+            f = file(filename)
+            start_response("200 OK", [('Content-type',guess_type(uri))])
+            return [f.read()]
+        except IOError:
+            start_response("404 Not Found", [])
+            return ["<h2>404 Not Found</h2>"]
         
 def getfield(f):
     if isinstance(f, list):
