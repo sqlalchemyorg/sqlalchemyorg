@@ -3,12 +3,18 @@
     in_docs=True
 %>
 
+<div style="text-align:right">
+<b>Quick Select:</b> <a href="/docs/05/">0.5</a> | <a href="/docs/04/">0.4</a> | <a href="/docs/03/">0.3</a>
+</div>
+
 ${next.body()}
 
 <%def name="style()">
+   <link rel="stylesheet" href="style.css"></link>
     <link rel="stylesheet" href="docs.css"></link>
     <link href="syntaxhighlight.css" rel="stylesheet" type="text/css"></link>
     <script src="scripts.js"></script>
     ${parent.style()}
-</%def>
+    <link href="/css/site_docs.css" rel="stylesheet" type="text/css"></link>
+ </%def>
 

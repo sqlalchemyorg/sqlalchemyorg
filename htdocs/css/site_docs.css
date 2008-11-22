@@ -1,0 +1,22 @@
+/* this css mediates between the doc-bundled docs.css and style.css, and the
+   website's site2.css
+*/
+
+#docs {
+    font-size:1.25em;
+}
+
+a {
+   line-height:1.4em;
+}
+
+code {
+    font-family:"Deja Vu Sans Mono","Vera Sans Mono",Courier,"Courier New",fixed;
+    font-size:0.95em;
+}
+
+pre {
+   font-size:0.90em;
+}
+
+
