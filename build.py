@@ -12,12 +12,21 @@ SPHINX_DOCS = [
     ('/Users/classic/dev/sasphinx2/doc/build/output/site', 'sphinxtest')
 ]
 
+import sys
 import os
 import shutil
 import stat
+from optparse import OptionParser
+
+parser = OptionParser()
+parser.add_option("-o", "--output", dest="output",
+                  help="output directory", default='./output')
+
+(options, args) = parser.parse_args()
+
 
 # create work, output directories
-for dir in ['./output', './work', './work/templates', './work/htdocs']:
+for dir in [options.output, './work', './work/templates', './work/htdocs']:
     if not os.path.exists(dir):
         os.makedirs(dir)
 
@@ -72,19 +81,19 @@ for root, dirs, files in os.walk(todo):
         continue
     
     for dir in dirs:
-        if not os.path.exists(os.path.join('output', relative, dir)):
-            os.makedirs(os.path.join('output', relative, dir))
+        if not os.path.exists(os.path.join(options.output, relative, dir)):
+            os.makedirs(os.path.join(options.output, relative, dir))
             
     html = set([fname for fname in files if fname.endswith('.html')])
     nonhtml = set(files).difference(html)
     
     for fname in nonhtml:
-        conditional_copy(os.path.join(root, fname), os.path.join('output', relative, fname))
+        conditional_copy(os.path.join(root, fname), os.path.join(options.output, relative, fname))
     
     for fname in html:
-        if isnewer(os.path.join(root, fname), os.path.join('output', relative, fname)):
-            print os.path.join(relative, fname), "->", os.path.join('output', relative, fname)
+        if isnewer(os.path.join(root, fname), os.path.join(options.output, relative, fname)):
+            print os.path.join(relative, fname), "->", os.path.join(options.output, relative, fname)
             txt = lookup.get_template(os.path.join(relative, fname)).render(req={}, attributes={})
-            outfile = file(os.path.join('output', relative, fname), 'w')
+            outfile = file(os.path.join(options.output, relative, fname), 'w')
             outfile.write(txt)
             outfile.close()
