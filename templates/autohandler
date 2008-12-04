@@ -15,7 +15,7 @@
 
 <body>
 
-${next.body()}
+${next.body(**pageargs)}
 
 </body>
 </html>

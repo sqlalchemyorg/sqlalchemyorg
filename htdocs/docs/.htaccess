@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule !(03/|04/|05/|05test/|sphinxtest) /docs/05/index.html [L,R]
+

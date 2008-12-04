@@ -1,10 +1,10 @@
 <%inherit file="/base.html"/>
-<%page args="all=0"/>
+<%page args="all=False"/>
 <%!
     section = 'news'
 %>
+
 <%
-    all = req.get('all', all)
     news = []
     self.include_file("/news_data.html", container=news)
     max = 7
@@ -35,6 +35,6 @@ ${entry['body']}
 % endfor
 
 % if not all:
-<a href="news.html?all=1#older"><b>View Older News</b></a>
+<a href="allnews.html#older"><b>View Older News</b></a>
 % endif
 </div>
