@@ -1,8 +1,13 @@
+# for the standard docs, go into each doc/build directory and run ./genhtml.py
+# to generate mako templates
 STANDARD_DOCS = [
     ('/Users/classic/dev/sa03/doc/', '03'),
     ('/Users/classic/dev/sa04/doc/', '04'),
     ('/Users/classic/dev/sqlalchemy/doc/', '05')
 ]
+
+# for the sphinx docs, go into the ./build directory
+# and run "make site-mako"
 SPHINX_DOCS = [
     ('/Users/classic/dev/sasphinx2/doc/build/output/site', 'sphinxtest')
 ]
