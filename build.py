@@ -24,6 +24,8 @@ def copydir(name, dest, htmlonly=False):
         relative = root[len(name + "/"):]
 
         for dir in dirs:
+            if ".svn" in dir:
+                continue
             if not os.path.exists(os.path.join(dest, relative, dir)):
                 os.makedirs(os.path.join(dest, relative, dir))
 
@@ -69,6 +71,8 @@ for root, dirs, files in os.walk(todo):
         continue
     
     for dir in dirs:
+        if ".svn" in dir:
+            continue
         if not os.path.exists(os.path.join(options.output, relative, dir)):
             os.makedirs(os.path.join(options.output, relative, dir))
             
