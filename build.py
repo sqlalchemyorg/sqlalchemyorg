@@ -1,6 +1,7 @@
 from buildconf import *
 
 import sys
+sys.path.insert(0, './lib/')
 import os
 import shutil
 import stat
