@@ -22,6 +22,22 @@ Download - SQLAlchemy
 <div style="padding:10px;background-color:#dFdFdF;"><p><b>Note:</b> You may need to install the latest version of <a href="http://cheeseshop.python.org/pypi/setuptools">setuptools</a> in order to install SQLAlchemy.   While SQLAlchemy includes the easy install bootloader to automatically install Setuptools, it apparently cannot download any version of Setuptools that is newer than the script itself (sort of defeats the purpose of an auto-installer...).</p>
 </div>
 
+<h2>0.6 Development</h2>
+
+<p>The next major version of SQLAlchemy will be 0.6.  This series is currently in a development branch:</p>
+<p>
+<code>
+svn checkout http://svn.sqlalchemy.org/sqlalchemy/branches/rel_0_6 sa06
+</code>
+</p>
+
+<p>0.6 addresses these major areas:</p>
+<ul>
+  <li>Python 3 Compatibility.  The codebase can be converted using an enhanced 2to3 tool, and a py3k release will be available on cheeseshop.</li>
+  <li>Effective re-use of database dialects among multiple DBAPI implementations, including pyodbc, zxjdbc, pg8000, psycopg2.  Connection strings now take on the form of dialect+dbapi, such as <code>postgres+pg8000://</code>.  New DBAPIs can be supported on a module-drop-in basis.</li>
+  <li>Consolidation of all SQL/DDL generation into a common compiler framework.  DDL operations like CREATE TABLE and such are now represented in the same way as other SQL expression constructs.  User-defined compilation operations may be defined for any custom element/backend combination.  Generation of type specifications moves into the compiler framework as well cutting down on the need for dialect-specific TypeEngine subclasses.</li>
+</ul>
+<p>0.6 is expected to move into the trunk soon.</p>
 
 <h2>0.5 Development</h2>
 
