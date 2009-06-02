@@ -13,6 +13,19 @@
 	%>
 </%def>
 
+<%call expr="newsitem(headline='Python 3K, pg8000 Support in SQLAlchemy 0.6', date=datetime.date(2009, 06, 02))">
+As of this past weekend, <a href="http://twitter.com/zzzeek/status/1984474807">100% of tests pass</a> on Python 3000 using
+the up-and-coming 0.6 series of SQLAlchemy, while running on sqlite via the sqlite3 adapter
+as well as Postgresql via the <a href="http://pybrary.net/pg8000/">pg8000</a> DBAPI.   
+Jython compatibility is largely present as well.   The 0.6 series has
+a special focus on environment and dialect compatibility, as well as on schema construct and DDL improvements.  
+Developers will have full access to new expression constructs such as CREATE TABLE and ADD CONSTRAINT, with the ability
+to define new ones.  It is now possible to construct custom create/drop sequences which add constraints, triggers 
+and other DDL using rules that are sensitive to the underlying database in use - and will allow smoother integration
+with <a href="http://code.google.com/p/sqlalchemy-migrate/">sqlalchemy-migrate</a> too.  0.6 should be merged to trunk
+soon with alpha releases by mid-summer.
+</%call>
+
 <%call expr="newsitem(headline='SQLAlchemy 0.5.0 Released', date=datetime.date(2009, 01, 06))">
 In progress since Pycon 2008, the first official release of the 0.5 series is now available.  This version packs a huge amount of change since 0.4 including multiple paradigm shifts in usage as well as countless bugfixes and behavioral and speed improvements.  Through a series of prereleases, 0.5 is already on production systems and has been extensively tested by dozens of users.  With the first 0.5 release, 0.6 is underway as well and will be where Py3k support is targeted.  SQLAlchemy 0.5 is available for download on the <a href="/download.html">download page</a>.  A comprehensive migration document is at <a href="/trac/wiki/05Migration">05Migration</a>.
 </%call>
