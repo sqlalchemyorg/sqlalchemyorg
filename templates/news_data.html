@@ -13,7 +13,26 @@
 	%>
 </%def>
 
-<%call expr="newsitem(headline='Python 3K, pg8000 Support in SQLAlchemy 0.6', date=datetime.date(2009, 06, 02))">
+<%call expr="newsitem(headline='SQLAlchemy 0.6 On Its Way', date=datetime.date(2009, 8, 7))">
+
+<p>SQLAlchemy 0.6 is now on trunk, with release candidates to come soon.   Jython compatibility
+is near 100% for MySQL and Postgresql, with work being done for Oracle + JDBC as well.
+Oracle tests using cPython pass at 100% and compatibility is also introduced for MSSQL
+via PyODBC with FreeTDS, allowing any unix platform to access MSSQL (one user is testing
+it against Sybase ASE as well with a good deal of success).  INSERT RETURNING support
+is also implemented natively for Postgresql, Oracle, MSSQL and Firebird and is used when
+available to fetch newly generated primary key identifiers.</p>
+<p>
+The release of 0.6 will solidify the best architecture yet for maximum Python platform, DBAPI,
+and database backend compatibility, allowing new DBAPIs and architectures to be plugged in
+with minimal hacking.
+</p>
+<p>The in-progress documentation of what's new is at <a href="/trac/wiki/06Migration">06Migration</a>.
+</p>
+</%call>
+
+
+<%call expr="newsitem(headline='Python 3K, pg8000 Support in SQLAlchemy 0.6', date=datetime.date(2009, 6, 2))">
 As of this past weekend, <a href="http://twitter.com/zzzeek/status/1984474807">100% of tests pass</a> on Python 3000 using
 the up-and-coming 0.6 series of SQLAlchemy, while running on sqlite via the sqlite3 adapter
 as well as Postgresql via the <a href="http://pybrary.net/pg8000/">pg8000</a> DBAPI.   
