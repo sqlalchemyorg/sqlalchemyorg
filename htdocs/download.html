@@ -10,31 +10,25 @@ Download - SQLAlchemy
 
 <h2>Releases</h2>
 
-<p>Latest 0.5 Release:  <b>0.5.7</b> <a href="http://prdownloads.sourceforge.net/sqlalchemy/SQLAlchemy-0.5.7.tar.gz?download"><b>(0.5.7 via Sourceforge)</b></a> <a href="http://www.python.org/pypi/SQLAlchemy/0.5.7"><b>(0.5.7 via Cheeseshop)</b></a> <a href="/trac/browser/sqlalchemy/tags/rel_0_5_7/CHANGES"><b>(CHANGES)</b></a> <a href="/trac/wiki/05Migration"><b>(migration guide)</b></a></p>
+<p>Latest 0.6 Release:  <b>0.6beta1</b> <a href="http://prdownloads.sourceforge.net/sqlalchemy/SQLAlchemy-0.6beta1.tar.gz?download"><b>(0.6beta1 via Sourceforge)</b></a> <a href="http://www.python.org/pypi/SQLAlchemy/0.6beta1"><b>(0.6beta1 via Cheeseshop)</b></a> <a href="/trac/browser/sqlalchemy/tags/rel_0_6beta1/CHANGES"><b>(CHANGES)</b></a> <a href="/trac/wiki/06Migration"><b>(migration guide)</b></a></p>
+
+<p>Latest 0.5 Release:  <b>0.5.8</b> <a href="http://prdownloads.sourceforge.net/sqlalchemy/SQLAlchemy-0.5.8.tar.gz?download"><b>(0.5.8 via Sourceforge)</b></a> <a href="http://www.python.org/pypi/SQLAlchemy/0.5.8"><b>(0.5.8 via Cheeseshop)</b></a> <a href="/trac/browser/sqlalchemy/tags/rel_0_5_8/CHANGES"><b>(CHANGES)</b></a> <a href="/trac/wiki/05Migration"><b>(migration guide)</b></a></p>
 
 <p>
 <a href="http://sourceforge.net/project/showfiles.php?group_id=140060&package_id=153732">(View all releases on Sourceforge)</a>
 </p>
 
-<h2>0.6 Development</h2>
+<h2>Development</h2>
 
-<p>The next major version of SQLAlchemy will be 0.6.</p>
-<p>A document in describing the 0.6 release is in <a href="/trac/wiki/06Migration"><b>06Migration</b></a>.   <b>Please read this document for guidelines on porting 0.5 code to 0.6, as some APIs have changed.</b>   Please do not post bug reports without first being familiar with these changes !
+<p>The current development version of SQLAlchemy is 0.6.</p>
+<p>A document in describing major changes in the 0.6 release is in <a href="/trac/wiki/06Migration"><b>06Migration</b></a>.   <b>Please read this document for guidelines on porting 0.5 code to 0.6, as some APIs have changed.</b>   Please do not post bug reports without first being familiar with these changes !
 
-
-<p>Sourcecode for 0.6 is now in trunk:</p>
+<p>the latest trunk of SQLAlchemy is available at:</p>
 <p>
 <code>
 svn checkout http://svn.sqlalchemy.org/sqlalchemy/trunk sqlalchemy
 </code>
 </p>
-
-<p>0.6 addresses these major areas:</p>
-<ul>
-  <li>Python 3 Compatibility.  The codebase can be converted using an enhanced 2to3 tool, and a py3k release will be available on cheeseshop.</li>
-  <li>Effective re-use of database dialects among multiple DBAPI implementations, including pyodbc, zxjdbc, pg8000, psycopg2.  Connection strings now take on the form of dialect+dbapi, such as <code>postgres+pg8000://</code>.  New DBAPIs can be supported on a module-drop-in basis.</li>
-  <li>Consolidation of all SQL/DDL generation into a common compiler framework.  DDL operations like CREATE TABLE and such are now represented in the same way as other SQL expression constructs.  User-defined compilation operations may be defined for any custom element/backend combination.  Generation of type specifications moves into the compiler framework as well cutting down on the need for dialect-specific TypeEngine subclasses.</li>
-</ul>
 
 <p>
   A Mercurial mirror of the trunk is also available on <a
@@ -60,6 +54,7 @@ svn checkout http://svn.sqlalchemy.org/sqlalchemy/trunk sqlalchemy
   </code>
 </p>
 
+Note that maintenance branches must maintain 100% backwards compatibility with previous releases in that series.  No new feature requests are accepted for maintenance branches.
 
 <h2>License</h2>
 
