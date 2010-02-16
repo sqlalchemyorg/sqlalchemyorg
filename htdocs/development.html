@@ -1,0 +1,63 @@
+<%inherit file="/base.html"/>
+<%!
+section='development'
+%>
+<%def name="title()">
+Development - SQLAlchemy
+</%def>
+
+<h1>Development</h1>
+
+<h2>REPORTING BUGS</h2>
+
+Fully descriptive bug reports and feature requests may be posted on the <a href="/trac">wiki</a>, by logging in as "guest"/"guest".  Please review the
+<a href="/trac/query">current list</a> of reports before posting.
+
+<h2>DEVELOPMENT DISCUSSION</h2>
+
+<p>Most development discussion occurs on the main mailing list or IRC channel - further info is available on the <a href="community.html">community</a> page.</p>
+
+<h2>Tracking Activity</h2>
+
+<p>SVN Commits can be viewed via the <a href="/trac/timeline">timeline</a> (<a href="/trac/timeline?milestone=on&amp;ticket=on&amp;ticket_details=on&amp;changeset=on&amp;wiki=on&amp;max=50&amp;daysback=90&amp;format=rss">rss feed</a>) which also mails to the <a href="http://lists.sourceforge.net/lists/listinfo/sqlalchemy-commits">Commit List</a>.   Ticket changes are posted to <a href="http://lists.sourceforge.net/lists/listinfo/sqlalchemy-tickets">Ticket List</a> which also sends to the sqlalchemy-devel list.</p>
+
+<p>SQLAlchemy has a <a href="http://buildbot.net/">buildbot master</a> at <a href="http://buildbot.sqlalchemy.org/">http://buildbot.sqlalchemy.org/</a>.
+
+<p>A summary of the most recent features and bugfixes in trunk can always be viewed at
+<a href="/trac/browser/sqlalchemy/trunk/CHANGES">CHANGES</a>.</p>
+
+<h2>Current Trunk - 0.6</h2>
+
+<p>The current development version of SQLAlchemy is 0.6.</p>
+
+<p>The latest trunk of SQLAlchemy is available at:</p>
+<p>
+<code>
+svn checkout http://svn.sqlalchemy.org/sqlalchemy/trunk sqlalchemy
+</code>
+</p>
+
+<p>
+  A Mercurial mirror of the trunk is also available on <a
+    href="http://bitbucket.org/mirror/sqlalchemy/">bitbucket.org</a>:
+</p>
+<p>
+  <code>
+  hg clone http://bitbucket.org/mirror/sqlalchemy/
+  </code>
+</p>
+
+
+<h2>Previous Maintenance Branch</h2>
+
+<p>
+Version 0.5:
+</p>
+<p>
+  <code>
+  svn checkout http://svn.sqlalchemy.org/sqlalchemy/branches/rel_0_5 sa05
+  </code>
+</p>
+
+<p>Note that maintenance branches must maintain 100% backwards compatibility with previous releases in that series.  No new feature requests are accepted for maintenance branches.</p>
+
