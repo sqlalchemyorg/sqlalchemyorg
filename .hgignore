@@ -1,0 +1,4 @@
+syntax:regexp
+^work/
+^output/
+.pyc$

@@ -1,0 +1,39 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:py="http://genshi.edgewall.org/"
+      py:strip="">
+
+  <!--! Add site-specific style sheet -->
+  <head py:match="head" py:attrs="select('@*')">
+    ${select('*|comment()|text()')}
+    <link rel="stylesheet" type="text/css"
+          href="${href.chrome('site/site.css')}" />
+    <link rel="stylesheet" type="text/css"
+          href="${href.chrome('site/code.css')}" />
+
+  </head>
+
+  <body py:match="body" py:attrs="select('@*')">
+    <!--! Add site-specific header -->
+
+<form py:match="div[@id='content' and @class='ticket']/form" py:attrs="select('@*')">
+  <py:if test="req.environ['PATH_INFO'] == '/newticket' and (not 'preview' in req.args)">
+  <h2>Guideline for tickets:</h2>
+
+    <ul>
+    <li>Your issue will be taken seriously if you take the creation of the ticket seriously.</li>
+    <li>If you do not take the ticket creation seriously, it wastes time for everyone.  These tickets will be closed.</li>
+    <li>Tickets which do not include test scripts, test scripts which cannot actually be run, or test scripts which don't illustrate the issue indicate someone not taking things very seriously.</li>
+    </ul>
+    </py:if>
+  ${select('*')} 
+</form>
+
+    ${select('*|text()')}
+
+    <!--! Add site-specific footer -->
+    <div id="sitefooter">
+      <!--! Place your footer content here... -->
+    </div>
+  </body>
+</html>
+
