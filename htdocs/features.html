@@ -17,7 +17,7 @@ Features - SQLAlchemy
 		Supported Databases
 	</td>
 	<td class="featuredesc">
-		<p>SQLAlchemy includes dialects for SQLite, Postgres, MySQL, Oracle, MS-SQL, Firebird, MaxDB, MS Access, Sybase and Informix; IBM has also released a DB2 driver.  The corresponding <a href="http://www.python.org/dev/peps/pep-0249/">DB-API 2.0</a> implementation (or sometimes one of several available) is required to use each particular database.</p>
+		<p>SQLAlchemy includes dialects for SQLite, Postgresql, MySQL, Oracle, MS-SQL, Firebird, Sybase and others, most of which support multiple DBAPIs; IBM has also released a DB2 dialect.  The corresponding <a href="http://www.python.org/dev/peps/pep-0249/">DB-API 2.0</a> implementation (or sometimes one of several available) is required to use each particular database. <a href="/docs/dbengine.html#supported-databases">View Current DBAPI Support</a></p>
 	</td>
   </tr>
   
@@ -26,7 +26,7 @@ Features - SQLAlchemy
    Unit Of Work 
    </td>
    <td class="featuredesc">
-     <p>The Unit Of Work system, a central part of SQLAlchemy's Object Relational Mapper (ORM), organizes pending create/insert/update/delete operations into queues and flushes them all in one batch. To accomplish this it performs a topological "dependency sort" of all modified items in the queue so as to honor foreign key constraints, and groups redundant statements together where they can sometimes be batched even further. This produces the maxiumum efficiency and transaction safety, and minimizes chances of deadlocks. Modeled after <a href="http://martinfowler.com/eaaCatalog/unitOfWork.html" title="martinfowler.com">Fowler's "Unit of Work" pattern</a> as well as <a href="http://hibernate.org/" title="hibernate.org">Hibernate</a>, Java's leading object-relational mapper.</p>
+     <p>The Unit Of Work system, a central part of SQLAlchemy's Object Relational Mapper (ORM), organizes pending create/insert/update/delete operations into queues and flushes them all in one batch. To accomplish this it performs a topological "dependency sort" of all modified items in the queue so as to honor inter-row dependencies, and groups redundant statements together where they can sometimes be batched even further. This produces the maxiumum efficiency and transaction safety, and minimizes chances of deadlocks. Modeled after <a href="http://martinfowler.com/eaaCatalog/unitOfWork.html" title="martinfowler.com">Fowler's "Unit of Work" pattern</a> as well as <a href="http://hibernate.org/" title="hibernate.org">Hibernate</a>, Java's leading object-relational mapper.</p>
      </td>
   </tr>   
 
@@ -53,7 +53,7 @@ Features - SQLAlchemy
     Eager-loading of objects
     </td>
     <td class="featuredesc">
-        <p>Whole graphs of related objects can often be loaded with a single query that is automatically generated to join the appropriate tables together, known as <em>eager loading</em>.  The alternative to eager loading, <em>lazy loading</em>, loads related objects via distinct query executions.  Each type of loading produces identical results and are interchangeable, allowing configuration at any level as well as query-time selection of the relationship-loading method to be used.
+        <p>Whole graphs of related objects can often be loaded with a single query or query-per-collection that is automatically generated to join the appropriate tables to the user-defined query, known as <em>eager loading</em>.  The alternative to eager loading, <em>lazy loading</em>, loads related objects via distinct query executions.  Each type of loading produces identical results and are interchangeable, allowing configuration at any level as well as query-time selection of the relationship-loading method to be used.
   </p>
       </td>
   </tr>
@@ -88,7 +88,7 @@ Features - SQLAlchemy
     Raw SQL statement mapping
     </td>
     <td class="featuredesc">
-  <p> SQLA's data mapper can accomodate raw SQL statements as well as plain result sets, and object instances can be generated from these results in the same manner as any other ORM operation.  Any hyper-optimized query that you or your DBA can cook up, you can run in SQLAlchemy, and as long as it returns the expected columns within a rowset, you can get your objects from it.  Statements which represent multiple kinds of objects can be used as well, with results received as named-tuples, or with dependent objects routed into collections on parent objects. </p>
+  <p> SQLA's object relational query facilities can accomodate raw SQL statements as well as plain result sets, and object instances can be generated from these results in the same manner as any other ORM operation.  Any hyper-optimized query that you or your DBA can cook up, you can run in SQLAlchemy, and as long as it returns the expected columns within a rowset, you can get your objects from it.  Statements which represent multiple kinds of objects can be used as well, with results received as named-tuples, or with dependent objects routed into collections on parent objects. </p>
       </td>
   </tr>
 
