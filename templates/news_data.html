@@ -13,6 +13,38 @@
 	%>
 </%def>
 
+<%call expr="newsitem(headline='SQLAlchemy 0.6 Released', date=datetime.date(2010, 4, 18))">
+<p>
+SQLAlchemy 0.6 is now released.   This release is the culmination of well over a year
+of effort towards restructuring and enhancements.   Highlights of SQLAlchemy 0.6 include:
+</p>
+<ul>
+<li>Support for Python 2.4+, Python 3, and Jython</li>
+<li>Decouping of DBAPI adapters and database dialects allow any number of DBAPIs to be 
+cleanly supported.</li>
+<li>Support for Sybase, mxODBC, pg8000, py-postgresql, OurSQL, 
+MySQL-Connector-Python, zxjdbc is added, including new options and capabilities for
+many dialects (see the <a href="/docs/dbengine.html?highlight=engines#supported-databases">compatibility chart</a>).
+</li>
+<li>Enhancements to "eager loading", including a new "subquery" eagerload that loads all collections
+using a maximally efficient query-per-relationship scheme.</li>
+<li>An entirely new unit of work system which runs more effectively and simply, using less memory and
+CPU.</li>
+<li>A flexible SQL compiler and execution system, now supporting RETURNING clauses 
+when available,  
+ clause constructs for DDL elements (i.e. CREATE TABLE) and type objects,
+ stricter SQL standard compliance where needed, and an extension system allowing the creation of new SQL 
+constructs and open-ended extension to those provided. 
+</li>
+<li>Query result caching capability, including an example illustrating integration with Beaker.</li>
+</ul>
+
+<p>SQLAlchemy 0.6 has already been in production usage for several months and has been tested by hundreds.
+Be sure to review the full list of whats new at <a href="/trac/wiki/06Migration">06Migration</a>.
+
+
+</%call>
+
 <%call expr="newsitem(headline='Pycon 2010 Sprints the Biggest Ever', date=datetime.date(2010, 2, 25))">
 <p>
 The sprinting continues today in Atlanta after a week where at least a dozen people got involved,
@@ -164,7 +196,7 @@ Information on the changes is described in the <a href="/CHANGES">changelog</a>,
 
 </%call>
 
-<%call expr="newsitem(headline='Upcoming Changes in SA 0.2', date=datetime.date(2006,4,20))">I have committed my work on the 0.2 series so far to a branch in SVN. this branch is available at: <a href="http://svn.sqlalchemy.org/sqlalchemy/branches/schema">http://svn.sqlalchemy.org/sqlalchemy/branches/schema</a>
+<%call expr="newsitem(headline='Upcoming Changes in SA 0.2', date=datetime.date(2006,4,20))">I have committed my work on the 0.2 series so far to a branch in SVN. this branch is available at: (link no longer available)
 It's not all working yet. SQLite is up, Postgres is sort of up, the rest still need some conversion. unittests are 50/50.
 
 At the end of the day, there will be a few changes for everyone. I would encourage everyone to check it out, particularly those who:
