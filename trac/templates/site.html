@@ -17,13 +17,14 @@
 
 <form py:match="div[@id='content' and @class='ticket']/form" py:attrs="select('@*')">
   <py:if test="req.environ['PATH_INFO'] == '/newticket' and (not 'preview' in req.args)">
-  <h2>Guideline for tickets:</h2>
+  <div style="color:red;">
+  <h1>Guideline for tickets:</h1>
 
-    <ul>
-    <li>Your issue will be taken seriously if you take the creation of the ticket seriously.</li>
-    <li>If you do not take the ticket creation seriously, it wastes time for everyone.  These tickets will be closed.</li>
-    <li>Tickets which do not include test scripts, test scripts which cannot actually be run, or test scripts which don't illustrate the issue indicate someone not taking things very seriously.</li>
+    <ul style="font-size:1.2em; font-weight:bold">
+    <li>Please attach a single-file, no-dependencies-needed test script illustrating the minimal steps to reproduce the problem!  No remote links or project checking out please, thanks !</li>
+    <li>Please avoid long winded explanations of the problem, we do not have time to read them !  Just the code, please, thank you !</li>
     </ul>
+    </div>
     </py:if>
   ${select('*')} 
 </form>
