@@ -4,10 +4,10 @@
 
 
 #docs {
-    font-size:1.2em;
 }
 
 #docs td {
+    font-size:1em;
 }
 
 li li { line-height: 1.2em; }
