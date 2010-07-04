@@ -2,8 +2,12 @@
    website's site2.css
 */
 
+
 #docs {
-    font-size:1.1em;
+    font-size:1.2em;
+}
+
+#docs td {
 }
 
 li li { line-height: 1.2em; }
