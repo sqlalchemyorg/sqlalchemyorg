@@ -280,7 +280,7 @@ strong {
 
 #sidebar .box {
     margin: 0 0 2em 0;
-    padding: 0 15px 1em 15px;
+    padding: 15px 15px 1em 15px;
     background-color: #f0f0f0;
     border-right: 1px solid #ccc;
     border-bottom: 1px solid #ccc;    
@@ -291,7 +291,6 @@ strong {
     }    
 #sidebar h3 {
 	margin: 0 0 10px 0;
-    padding: 15px 0 0 0;
 	font-size: 110%;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -312,8 +311,9 @@ strong {
 	line-height: 1.4em;
 	}
 
-#sidebar .donate {
-	color:#000000;
+#sidebar .donate form {
+    text-align:center;
+    padding:20px;
 }
 
 /* footer styles
