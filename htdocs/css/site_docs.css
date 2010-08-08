@@ -6,9 +6,11 @@
 #docs {
 }
 
-#docs td {
-    font-size:1em;
+#docs, td {
+    font-size:1.01em;
+    font-family: verdana, sans-serif;
 }
+
 
 li li { line-height: 1.2em; }
 
