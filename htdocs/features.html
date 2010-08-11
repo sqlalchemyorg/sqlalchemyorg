@@ -27,7 +27,7 @@ Features - SQLAlchemy
     </td>
     <td class="featuredesc">
        <p>Over five years of constant development, profiling, and refactoring has led to a toolkit that is high performing and accurate, well covered in tests, and deployed in thousands of environments.
-       With virtually every major component in its second or third full iteration, SQLAlchemy 0.6 is roughly twice the speed of older 0.4 versions from just a few years ago.   It's raw execution speed is competitive with comparable tools, and advanced ORM features like its unit of work, in-memory collections, eager loading of collections via joins or secondary subselects, and other loader optimizations allow SQLAlchemy's ORM to emit fewer and more efficient queries than in any previous version.
+       With virtually every major component in its second or third full iteration, SQLAlchemy 0.6 is roughly twice the speed of older 0.4 versions from just a few years ago.   It's raw execution speed is competitive with comparable tools, and advanced ORM features like its unit of work, in-memory collections, eager loading of collections via joins or secondary subselects, and other optimizations allow SQLAlchemy's ORM to emit fewer and more efficient queries than in any previous version.
        </p>
     </td>
    </tr>
@@ -89,10 +89,10 @@ Features - SQLAlchemy
 
    <tr class="feature">
      <td class="featurename">
-     Self-referential tables and mappers
+     Self-referential Object Mappings
      </td>
      <td class="featuredesc">
-  <p>Self-referential tables and mappers are supported. Adjacency list structures can be created, saved, and deleted with proper cascading, with no code overhead beyond that of non-self-referential structures.  Self-referential structures of any depth can be eagerly loaded in a single statement using joins; you set how deep you'd like to go. </p>
+  <p>Self-referential mappings are supported by the ORM. Adjacency list structures can be created, saved, and deleted with proper cascading, with no code overhead beyond that of non-self-referential structures.  Loading of self-referential structures of any depth can be tuned to load collections recursively via a single statement with a series of joins (i.e. a joinedload), or via multiple statements where each loads the full set of records at a distinct level of depth (i.e. subqueryload).  Persistence with tables that have mutually-dependent foreign key pairs (i.e. "many x"/"one particular x") are also supported natively using the "post update" feature.</p>
        </td>
    </tr>
 	<tr class="feature">
