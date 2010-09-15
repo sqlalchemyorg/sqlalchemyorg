@@ -1,5 +1,5 @@
 RewriteEngine On
 RewriteRule ^06/(.*) /docs/$1 [R,L]
-RewriteRule ^(?!03|04|05|_06)(.*) /docs/_06/$1 
+RewriteRule ^(?!04|05|_06)(.*) /docs/_06/$1 
 ErrorDocument 404 /docs/search.html
 
