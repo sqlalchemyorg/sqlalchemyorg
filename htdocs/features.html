@@ -37,7 +37,7 @@ Features - SQLAlchemy
 		Supported Databases
 	</td>
 	<td class="featuredesc">
-		<p>SQLAlchemy includes dialects for SQLite, Postgresql, MySQL, Oracle, MS-SQL, Firebird, Sybase and others, most of which support multiple DBAPIs; IBM has also released a DB2 dialect.  The corresponding <a href="http://www.python.org/dev/peps/pep-0249/">DB-API 2.0</a> implementation (or sometimes one of several available) is required to use each particular database. <a href="/docs/dbengine.html#supported-databases">View Current DBAPI Support</a></p>
+		<p>SQLAlchemy includes dialects for SQLite, Postgresql, MySQL, Oracle, MS-SQL, Firebird, Sybase and others, most of which support multiple DBAPIs; IBM has also released a DB2 dialect.  The corresponding <a href="http://www.python.org/dev/peps/pep-0249/">DB-API 2.0</a> implementation (or sometimes one of several available) is required to use each particular database. <a href="/docs/core/engines.html#supported-databases">View Current DBAPI Support</a></p>
 	</td>
   </tr>
   
@@ -55,7 +55,7 @@ Features - SQLAlchemy
    Function-based query construction
    </td>
    <td class="featuredesc">
-    <p>Function-based query construction allows SQL clauses to be built via Python functions and expressions.  The full range of what's possible includes boolean expressions, operators, functions, table aliases, selectable subqueries, create/update/insert/delete statements, correlated updates, correlated <code>EXISTS</code> clauses, <code>UNION</code> clauses, inner and outer joins, bind parameters, and free mixing of literal text within expressions.  Constructed expressions are compilable specific to any number of vendor database implementations (such as PostGres or Oracle), as determined by the combination of a <code>Dialect</code> and <code>Compiler</code> provided by the implementation.  </p>
+    <p>Function-based query construction allows SQL clauses to be built via Python functions and expressions.  The full range of what's possible includes boolean expressions, operators, functions, table aliases, selectable subqueries, create/update/insert/delete statements, correlated updates, correlated <code>EXISTS</code> clauses, <code>UNION</code> clauses, inner and outer joins, bind parameters, and free mixing of literal text within expressions.  Constructed expressions are compilable specific to any number of vendor database implementations (such as PostGres or Oracle), as determined by the combination of a "dialect" and "compiler" provided by the implementation.  </p>
      </td>
   </tr>   
 
@@ -64,7 +64,7 @@ Features - SQLAlchemy
    Separate mapping and class design
    </td>
    <td class="featuredesc">
-  <p> Database mapping and class design are totally separate. Persisted objects have no subclassing requirement (other than 'object') and are POPO's : plain old Python objects. They retain serializability (pickling) for usage in various caching systems and session objects. SQLAlchemy "decorates" classes with non-intrusive property accessors to automatically log object creates and modifications with the <code>UnitOfWork</code> engine, to lazyload related data, as well as to track attribute change histories.  </p>
+  <p> Database mapping and class design are totally separate. Persisted objects have no subclassing requirement (other than 'object') and are POPO's : plain old Python objects. They retain serializability (pickling) for usage in various caching systems and session objects. SQLAlchemy "decorates" classes with non-intrusive property accessors to automatically log object creates and modifications with the Unit of Work engine, to lazyload related data, as well as to track attribute change histories.  </p>
      </td>
   </tr>
 
