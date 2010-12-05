@@ -1,5 +1,5 @@
 RewriteEngine On
 RewriteRule ^06/(.*) /docs/$1 [R,L]
-RewriteRule ^(?!04|05|_06|notfound.html)(.*) /docs/_06/$1 
+RewriteRule ^(?!04|05|_06|07|notfound.html)(.*) /docs/_06/$1 
 ErrorDocument 404 /docs/notfound.html
 
