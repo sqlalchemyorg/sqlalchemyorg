@@ -1,4 +1,4 @@
-<%inherit file="/base.html"/>
+<%inherit file="/base.mako"/>
 <%page args="all=False"/>
 <%!
     section = 'news'
@@ -6,7 +6,7 @@
 
 <%
     news = []
-    self.include_file("/news_data.html", container=news)
+    self.include_file("/news_data.mako", container=news)
     max = 7
     count = 0
 %>
@@ -21,11 +21,11 @@ News - SQLAlchemy
 
 % for entry in news:
 <%
-	count += 1
-	if not all and count>max:
-		break
-	elif all and count == max + 1:
-		context.write("<a name='older'>")
+    count += 1
+    if not all and count>max:
+        break
+    elif all and count == max + 1:
+        context.write("<a name='older'>")
 %>
 <div class="entry">
 <h2><a name="${entry['id']}"></a><a href="#${entry['id']}">${entry['headline']}</a></h2>

@@ -68,7 +68,7 @@ a:hover {
     margin: 50px 0 20px 0;
     border-top: 1px solid #d9d9d9;
     padding: 2em 1em;
-    background: #fff url(../_img/nav-shadow2.gif) top left repeat-x;
+    background: #fff url(../img/nav-shadow2.gif) top left repeat-x;
 	}
 
 /* header
@@ -76,9 +76,9 @@ a:hover {
 
 #header {
     height: 65px;
-	background: #fff url(../_img/symbols-bg5.gif) top right no-repeat;
+	background: #fff url(../img/symbols-bg5.gif) top right no-repeat;
 
-	/*background: #c00 url(../_img/symbols-bg6.jpg) repeat-x top left;*/
+	/*background: #c00 url(../img/symbols-bg6.jpg) repeat-x top left;*/
 	}
 #logo {
 	padding: 0;
@@ -100,7 +100,7 @@ a:hover {
 
 #nav {
 	padding: 0px 15px 0px 15px;
-	background: #787 url(../_img/navbg1.gif) repeat-x top left;
+	background: #787 url(../img/navbg1.gif) repeat-x top left;
 	}
 #nav ul {
 	margin: 0;

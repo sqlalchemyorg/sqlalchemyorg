@@ -1,7 +1,7 @@
 <%page args="section=None"/>
 <%
     news = []
-    self.include_file("/news_data.html", container=news)
+    self.include_file("/news_data.mako", container=news)
     max = 7
     count = 0
 %>
@@ -40,7 +40,7 @@ Released October 24, 2010
 <div class="box">
 <p>The first of two SQLAlchemy books now available:</p>
 <div style="text-align:center">
-<a href="http://www.oreilly.com/catalog/9780596516147/"><img src="/_img/essential_sqla.gif" border="none"/></a>
+<a href="http://www.oreilly.com/catalog/9780596516147/"><img src="/img/essential_sqla.gif" border="none"/></a>
 </div>
 <p>Using the book with 0.5 or greater?  Please read the <a href="/trac/wiki/05Migration">0.5 Migration Guide</a> and if on 0.6 the <a href="/trac/wiki/06Migration">0.6 Migration Guide</a> for important notes regarding usage changes.</p>
 </div>
@@ -65,7 +65,7 @@ Released October 24, 2010
 <div class="box donate">
 <p>Donate to SQLAlchemy!</p> 
 
-  <%include file="/paypal.html"/>
+  <%include file="/paypal.mako"/>
 
 <p>Proceeds are applied to
       project hosting costs and as 

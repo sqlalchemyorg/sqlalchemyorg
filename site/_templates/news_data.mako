@@ -103,7 +103,7 @@ In progress since Pycon 2008, the first official release of the 0.5 series is no
 </%call>
 
 <%call expr="newsitem(headline='Checkout Now Available at the Apple Store', date=datetime.date(2008, 06, 02))">
-<a href="http://store.apple.com/us/product/TQ927LL/A"><img src="/_img/checkout.jpg"/></a><a href="http://www.checkoutapp.com/">Checkout</a> 2.0 is now available from every Apple store as well straight from <a href="http://www.madebysofa.com/">Madebysofa</a>; it's the software that turns any Mac into an event-driven networked cash register and inventory system.  Version 2.0 is built entirely on SQLAlchemy interfacing with SQLite.  The guys from Madebysofa just shipped me a free boxed copy (shown at left).  SQLAlchemy however has no plans to start charging ;) .
+<a href="http://store.apple.com/us/product/TQ927LL/A"><img src="/img/checkout.jpg"/></a><a href="http://www.checkoutapp.com/">Checkout</a> 2.0 is now available from every Apple store as well straight from <a href="http://www.madebysofa.com/">Madebysofa</a>; it's the software that turns any Mac into an event-driven networked cash register and inventory system.  Version 2.0 is built entirely on SQLAlchemy interfacing with SQLite.  The guys from Madebysofa just shipped me a free boxed copy (shown at left).  SQLAlchemy however has no plans to start charging ;) .
 </%call>
 
 

@@ -14,7 +14,7 @@ if not current_section and in_docs:
 
 <div id="wrap">
 
-<%include file="header.html" args="section=current_section" />
+<%include file="header.mako" args="section=current_section" />
 
 <div id="main-body">
 
@@ -26,7 +26,7 @@ if not current_section and in_docs:
     </div>
     </div> <!-- end #content-inner, #content -->
 
-    <%include file="sidebar.html" args="section=current_section" />
+    <%include file="sidebar.mako" args="section=current_section" />
 
 % else:
 
@@ -38,6 +38,6 @@ if not current_section and in_docs:
 
 </div> <!-- end #main-body -->
 
-<%include file="footer.html"/>
+<%include file="footer.mako"/>
 
 </div> <!-- end #wrap -->

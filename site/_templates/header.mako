@@ -9,9 +9,9 @@
 
 
 <div id="header">
-##	<div id="logo"><a href="/"><img src="/_img/sqla-logo7.gif" width="172" height="36" alt="SQL ALCHEMY" /></a></div>
-	<div id="logo"><a href="/"><img src="/_img/sqla-logo6.gif" width="188" height="52" alt="SQL ALCHEMY" /></a></div>
-	<div id="description"><img src="/_img/dbtoolkit6.gif" width="180" height="12" alt="The Database Toolkit for Python" /></div>
+##	<div id="logo"><a href="/"><img src="/img/sqla-logo7.gif" width="172" height="36" alt="SQL ALCHEMY" /></a></div>
+	<div id="logo"><a href="/"><img src="/img/sqla-logo6.gif" width="188" height="52" alt="SQL ALCHEMY" /></a></div>
+	<div id="description"><img src="/img/dbtoolkit6.gif" width="180" height="12" alt="The Database Toolkit for Python" /></div>
 	
 </div>
 
