@@ -1,6 +1,7 @@
 import os
 import shutil
 import stat
+import re
 import sys
 sys.path.insert(0, './_lib/')
 
@@ -8,17 +9,24 @@ from blogofile.cache import bf
 
 output = "_site"
 htdocs = "_work"
-templates = "_templates/work"
+templates = "_templates/_work"
 
+page_re = re.compile(r'<%page cache_type="file" cached="True"/>')
+def remove_page_tags(text):
+    return page_re.sub("", text)
 
 def run():
+    # blogofile isn't using any file_dir, so whack all those
+    # unneeded cache tags from doc templates.
+    bf.writer.template_lookup.template_args['preprocessor'] = remove_page_tags
+
     if not os.path.exists(htdocs):
         os.makedirs(htdocs)
 
     if not os.path.exists(templates):
         os.makedirs(templates)
 
-    # copy files from individual doc builds to work dir
+    # legacy docs...
     for docs, prefix in bf.config.docs.standard_docs:
         copydir(os.path.join(docs, 'build/templates'), os.path.join(templates, 'docs', prefix), True)
         copydir(os.path.join(docs, 'build/output'), os.path.join(htdocs, 'docs', prefix))
@@ -27,6 +35,7 @@ def run():
             if os.path.exists(os.path.join(docs, name)):
                 conditional_copy(os.path.join(docs, name), os.path.join(htdocs, 'docs', prefix, name))
 
+    # sphinx docs...
     for docs, prefix in bf.config.docs.sphinx_docs:
         copydir(docs, os.path.join(htdocs, 'docs', prefix))
 
@@ -48,16 +57,10 @@ def run():
         for fname in nonhtml:
             conditional_copy(os.path.join(root, fname), os.path.join(output, relative, fname))
 
-#        for fname in html:
-#            if isnewer(os.path.join(root, fname), os.path.join(output, relative, fname)):
-#                print os.path.join(relative, fname), "->", os.path.join(output, relative, fname)
-#                txt = lookup.get_template(os.path.join(relative, fname)).render(req={}, attributes={})
-#                outfile = file(os.path.join(output, relative, fname), 'w')
-#                outfile.write(txt)
-#                outfile.close()
-
-
-
+        for fname in html:
+            if isnewer(os.path.join(root, fname), os.path.join(relative, fname)):
+                print os.path.join(root, fname), "->", os.path.join(output, relative, fname)
+                bf.writer.materialize_template(os.path.join(root, fname), os.path.join(relative, fname), attrs={'req':{}, 'attributes':{}})
 
 # semi generic directory copy function
 def copydir(name, dest, htmlonly=False):
