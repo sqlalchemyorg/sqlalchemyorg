@@ -1,4 +1,4 @@
 syntax:regexp
-^work/
-^output/
+^site/_site
+^site/_work
 .pyc$

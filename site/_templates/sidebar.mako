@@ -1,10 +1,4 @@
 <%page args="section=None"/>
-<%
-    news = []
-    self.include_file("/news_data.mako", container=news)
-    max = 7
-    count = 0
-%>
 
 <div id="sidebar">
 
@@ -42,19 +36,15 @@ Released October 24, 2010
 <div style="text-align:center">
 <a href="http://www.oreilly.com/catalog/9780596516147/"><img src="/img/essential_sqla.gif" border="none"/></a>
 </div>
-<p>Using the book with 0.5 or greater?  Please read the <a href="/trac/wiki/05Migration">0.5 Migration Guide</a> and if on 0.6 the <a href="/trac/wiki/06Migration">0.6 Migration Guide</a> for important notes regarding usage changes.</p>
+<p>Using the book with 0.5 or greater? Please read the <a
+href="/trac/wiki/05Migration">0.5 Migration Guide</a> and if on 0.6 the <a
+href="/trac/wiki/06Migration">0.6 Migration Guide</a> for important notes
+regarding usage changes.</p>
 </div>
 <div class="box">
     <h3>Latest News</h3>
-	<ul>
-% for item in news:
-<%
-	count += 1
-	if count > max:
-		break
-%>
-	<li><a href="/news.html#${item['id']}">${item['headline']}</a><br/><span class="date">${item['formatted_date']}</span>
-% endfor
+    <ul>
+    <%include file="/news_data.mako" args="parent=self,max=4"/>
     </ul>
 % if section != 'news':
 <br/>
@@ -65,31 +55,18 @@ Released October 24, 2010
 <div class="box donate">
 <p>Donate to SQLAlchemy!</p> 
 
+<%def name="newsitem(headline, date, formatted_date, body, id)">
+	<li><a href="/news.html#${id}">${headline}</a><br/><span class="date">${formatted_date}</span>
+</%def>
+
   <%include file="/paypal.mako"/>
 
 <p>Proceeds are applied to
       project hosting costs and as 
       supplemental developer income.
-</p>  
+</p> 
 </div>
 
-
-<%doc>
-# no quicklinks for now
-<div class="box">
-  <h3>Quicklinks</h3>
-  <ul>
-  <li>Documentation: <a href="/docs/06/">0.6</a> | <a href="/docs/05/">0.5</a> | <a href="/docs/04/">0.4</a></li>
-  <li>Changelog:<br/>
- <a href="/CHANGES">Latest Release</a> | <a href="/trac/browser/sqlalchemy/trunk/CHANGES">SVN Trunk</a></li>
-  <li>Timelines:<br/>
-  <a href="/trac/timeline">Project</a> | <a href="/trac/log/sqlalchemyorg/trunk">Website</li>
-  <li><a href="http://groups.google.com/group/sqlalchemy">Mailing List</a></li>
-  <li><a href="/trac/browser">Browse SVN</a></li>
-  <li><a href="/download.html">Download</a></li>
-  </ul>
-</div>
-</%doc>
 
 
 </div> <!-- end #sidebar -->

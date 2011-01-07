@@ -10,7 +10,7 @@ docs.enabled = True
 dev_root = '/Users/classic/dev'
 
 docs.standard_docs = [
-    (dev_root + '/sa04/doc/', '04'),
+#    (dev_root + '/sa04/doc/', '04'),
 ]
 
 docs.sphinx_docs = [

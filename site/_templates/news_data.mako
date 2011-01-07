@@ -1,26 +1,28 @@
 ## coding:utf-8
-<%page args="container"/>
+<%page args="parent, max=None"/>
 <%!
     import datetime
-    def format_date(date):
-        return date.strftime("%a, %d %b %Y")
+%>
+<%
+    ctx = {'id':1, 'parent':parent, 'max':max}
 %>
 
-<%def name="newsitem(headline, date)">
-	<%
-		id = "item_%d" % (len(container) + 1)
-		container.append({'id':id,'headline':headline, 'date':date, 'formatted_date':format_date(date), 'body':capture(caller.body)})	
-	%>
-</%def>
+<%def name="newsitem(headline, date, ctx)"><%
+    if ctx['max'] and ctx['id'] > ctx['max']:
+        return ''
+    ctx['parent'].newsitem(headline, date, date.strftime("%a, %d %b %Y"), capture(caller.body), ctx['id'])
+    ctx['id'] += 1
+    return ''
+%></%def>
 
-<%call expr="newsitem(headline='SQLAlchemy 0.7 In Development', date=datetime.date(2010, 12, 5))">
+<%self:newsitem headline='SQLAlchemy 0.7 In Development' date="${datetime.date(2010, 12, 5)}" ctx="${ctx}">
 <p>SQLAlchemy 0.7 is in active development and close to beta releases, featuring an all new
 unified event model as well as a host of other ORM and SQL engine features and improvements.
 The "Whats New" page for SQLAlchemy 0.7 is under construction at <a href="/trac/wiki/07Migration">07Migration</a>.
 </p>
-</%call>
+</%self:newsitem>
 
-<%call expr="newsitem(headline='SQLAlchemy 0.6 Released', date=datetime.date(2010, 4, 18))">
+<%self:newsitem headline='SQLAlchemy 0.6 Released' date="${datetime.date(2010, 4, 18)}" ctx="${ctx}">
 <p>
 SQLAlchemy 0.6 is now released.   This release is the culmination of well over a year
 of effort towards restructuring and enhancements.   Highlights of SQLAlchemy 0.6 include:
@@ -48,11 +50,9 @@ constructs and open-ended extension to those provided.
 
 <p>SQLAlchemy 0.6 has already been in production usage for several months and has been tested by hundreds.
 Be sure to review the full list of whats new at <a href="/trac/wiki/06Migration">06Migration</a>.
+</%self:newsitem>
 
-
-</%call>
-
-<%call expr="newsitem(headline='Pycon 2010 Sprints the Biggest Ever', date=datetime.date(2010, 2, 25))">
+<%self:newsitem headline='Pycon 2010 Sprints the Biggest Ever' date="${datetime.date(2010, 2, 25)}" ctx="${ctx}">
 <p>
 The sprinting continues today in Atlanta after a week where at least a dozen people got involved,
 some new to SQLAlchemy, some veterans.   New things coming out include our <a href="http://buildbot.sqlalchemy.org/">all-new
@@ -64,9 +64,9 @@ links to SQLAlchemy related talks and tutorials from Pycon 2010 as they become a
 everyone for the huge amount of involvement and stay tuned for SQLAlchemy 0.6 !
 
 </p>
-</%call>
+</%self:newsitem>
 
-<%call expr="newsitem(headline='SQLAlchemy 0.6 On Its Way', date=datetime.date(2009, 8, 7))">
+<%self:newsitem headline='SQLAlchemy 0.6 On Its Way' date="${datetime.date(2009, 8, 7)}" ctx="${ctx}">
 
 <p>SQLAlchemy 0.6 is now on trunk, with release candidates to come soon.   Jython compatibility
 is near 100% for MySQL and Postgresql, with work being done for Oracle + JDBC as well.
@@ -82,28 +82,44 @@ with minimal hacking.
 </p>
 <p>The in-progress documentation of what's new is at <a href="/trac/wiki/06Migration">06Migration</a>.
 </p>
-</%call>
+</%self:newsitem>
 
 
-<%call expr="newsitem(headline='Python 3K, pg8000 Support in SQLAlchemy 0.6', date=datetime.date(2009, 6, 2))">
+<%self:newsitem headline='Python 3K, pg8000 Support in SQLAlchemy 0.6' date="${datetime.date(2009, 6, 2)}" ctx="${ctx}">
 As of this past weekend, <a href="http://twitter.com/zzzeek/status/1984474807">100% of tests pass</a> on Python 3000 using
 the up-and-coming 0.6 series of SQLAlchemy, while running on sqlite via the sqlite3 adapter
-as well as Postgresql via the <a href="http://pybrary.net/pg8000/">pg8000</a> DBAPI.   
+as well as Postgresql via the <a href="http://pybrary.net/pg8000/">pg8000</a> DBAPI.
 Jython compatibility is largely present as well.   The 0.6 series has
-a special focus on environment and dialect compatibility, as well as on schema construct and DDL improvements.  
+a special focus on environment and dialect compatibility, as well as on schema construct and DDL improvements.
 Developers will have full access to new expression constructs such as CREATE TABLE and ADD CONSTRAINT, with the ability
 to define new ones.  It is now possible to construct custom create/drop sequences which add constraints, triggers 
 and other DDL using rules that are sensitive to the underlying database in use - and will allow smoother integration
 with <a href="http://code.google.com/p/sqlalchemy-migrate/">sqlalchemy-migrate</a> too.  0.6 should be merged to trunk
 soon with alpha releases by mid-summer.
-</%call>
+</%self:newsitem>
 
-<%call expr="newsitem(headline='SQLAlchemy 0.5.0 Released', date=datetime.date(2009, 01, 06))">
-In progress since Pycon 2008, the first official release of the 0.5 series is now available.  This version packs a huge amount of change since 0.4 including multiple paradigm shifts in usage as well as countless bugfixes and behavioral and speed improvements.  Through a series of prereleases, 0.5 is already on production systems and has been extensively tested by dozens of users.  With the first 0.5 release, 0.6 is underway as well and will be where Py3k support is targeted.  SQLAlchemy 0.5 is available for download on the <a href="/download.html">download page</a>.  A comprehensive migration document is at <a href="/trac/wiki/05Migration">05Migration</a>.
-</%call>
+<%self:newsitem headline='SQLAlchemy 0.5.0 Released' date="${datetime.date(2009, 01, 06)}" ctx="${ctx}">
+In progress since Pycon 2008, the first official release of the 0.5 series is
+now available. This version packs a huge amount of change since 0.4 including
+multiple paradigm shifts in usage as well as countless bugfixes and behavioral
+and speed improvements. Through a series of prereleases, 0.5 is already on
+production systems and has been extensively tested by dozens of users. With
+the first 0.5 release, 0.6 is underway as well and will be where Py3k support
+is targeted. SQLAlchemy 0.5 is available for download on the <a
+href="/download.html">download page</a>. A comprehensive migration document is
+at <a href="/trac/wiki/05Migration">05Migration</a>.
+</%self:newsitem>
 
-<%call expr="newsitem(headline='Checkout Now Available at the Apple Store', date=datetime.date(2008, 06, 02))">
-<a href="http://store.apple.com/us/product/TQ927LL/A"><img src="/img/checkout.jpg"/></a><a href="http://www.checkoutapp.com/">Checkout</a> 2.0 is now available from every Apple store as well straight from <a href="http://www.madebysofa.com/">Madebysofa</a>; it's the software that turns any Mac into an event-driven networked cash register and inventory system.  Version 2.0 is built entirely on SQLAlchemy interfacing with SQLite.  The guys from Madebysofa just shipped me a free boxed copy (shown at left).  SQLAlchemy however has no plans to start charging ;) .
-</%call>
+<%self:newsitem headline='Checkout Now Available at the Apple Store' date="${datetime.date(2008, 06, 02)}" ctx="${ctx}">
+<a href="http://store.apple.com/us/product/TQ927LL/A"><img
+src="/img/checkout.jpg"/></a><a
+href="http://www.checkoutapp.com/">Checkout</a> 2.0 is now available from
+every Apple store as well straight from <a
+href="http://www.madebysofa.com/">Madebysofa</a>; it's the software that turns
+any Mac into an event-driven networked cash register and inventory system.
+Version 2.0 is built entirely on SQLAlchemy interfacing with SQLite. The guys
+from Madebysofa just shipped me a free boxed copy (shown at left). SQLAlchemy
+however has no plans to start charging ;) .
+</%self:newsitem>
 
 
