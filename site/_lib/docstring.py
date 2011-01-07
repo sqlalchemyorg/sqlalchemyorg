@@ -1,4 +1,6 @@
 """
+Legacy docstring parser lib for older SQLA docs.
+
 defines a pickleable, recursive "generated python documentation" datastructure.
 """
 
@@ -12,7 +14,7 @@ class AbstractDoc(object):
         self.id = id(obj)
         self.allobjects = allobjects
         self.toc_path = None
-        
+
 class ObjectDoc(AbstractDoc):
     def __init__(self, obj, functions=None, classes=None, include_all_classes=False):
         super(ObjectDoc, self).__init__(obj)
@@ -21,7 +23,7 @@ class ObjectDoc(AbstractDoc):
         self.include_all_classes = include_all_classes
         functions = functions
         classes= classes
-        
+
         if not self.isclass:
             if not include_all_classes and hasattr(obj, '__all__'):
                 objects = obj.__all__
@@ -63,7 +65,7 @@ class ObjectDoc(AbstractDoc):
                 functions.sort(_method_sort)
             if classes is None:
                 classes = []
-        
+
         if self.isclass:
             self.description = "class " + self.name
             self.classname = self.name
@@ -95,11 +97,11 @@ class ObjectDoc(AbstractDoc):
                     self.functions.append(MethodDoc(func, self))
                 elif isinstance(func, tuple):
                     self.functions.append(PropertyDoc(func[0], func[1]))
-                        
+
         self.classes = []
         for class_ in classes:
             self.classes.append(ObjectDoc(class_))
-    
+
     def _is_private_name(self, name):
         if name in ('__weakref__', '__repr__','__str__', '__unicode__',
                     '__getstate__', '__setstate__', '__reduce__',
@@ -124,7 +126,7 @@ class ObjectDoc(AbstractDoc):
 
 def _is_property(elem):
     return isinstance(elem, property) or (hasattr(elem, '__get__') and hasattr(elem, '__set__'))
-    
+
 class FunctionDoc(AbstractDoc):
     def __init__(self, func):
         super(FunctionDoc, self).__init__(func)
@@ -168,7 +170,7 @@ class PropertyDoc(AbstractDoc):
 def _method_sort(fna, fnb):
     a = getattr(fna, '__name__', None) or fna[0]
     b = getattr(fnb, '__name__', None) or fnb[0]
-    
+
     if a == '__init__': return -1
     if b == '__init__': return 1
 

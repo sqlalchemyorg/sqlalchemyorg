@@ -15,7 +15,7 @@ docs.standard_docs = [
 
 docs.sphinx_docs = [
     (dev_root + '/sa05/doc/build/output/site', '05'),
-    (dev_root + '/sa06/doc/build/output/site', '_06'),
+    (dev_root + '/sa06/doc/build/output/site', ''),
     (dev_root + '/sqlalchemy/doc/build/output/site', '07')
 ]
 

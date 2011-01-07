@@ -4,15 +4,15 @@
 %>
 
 
-<%def name="style()">    
-    
+<%def name="style()">
+
     <link rel="stylesheet" href="/docs/_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="/docs/_static/docs.css" type="text/css" />
 
     <link rel="index" title="Index" href="/docs/genindex.html" />
         <link rel="copyright" title="Copyright" href="/docs/copyright.html" />
     <link rel="top" title="SQLAlchemy Documentation" href="/docs/index.html" />
-    
+
     ${parent.style()}
         <link href="/css/site_docs.css" rel="stylesheet" type="text/css"></link>
 
@@ -23,21 +23,21 @@
         <div class="topnav">
             <div id="pagecontrol">
                 <a href="/docs/genindex.html">Index</a>
-            
+
             </div>
-            
+
             <div class="navbanner">
-                
+
                 <h2>
                      Page not found
                 </h2>
             </div>
             <div class="clearboth"></div>
         </div>
-        
+
         <div class="document">
             <div class="body">
-                
+
 
 
 
@@ -58,5 +58,5 @@
             </div>
         </div>
 
-        
-        
+
+

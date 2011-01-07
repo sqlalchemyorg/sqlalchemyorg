@@ -1,4 +1,6 @@
 """
+Legacy documentation lib for older SQLA docs.
+
 defines a pickleable, recursive "table of contents" datastructure.
 
 TOCElements define a name, a description, and also a uniquely-identifying "path" which is
@@ -11,7 +13,8 @@ toc_by_path = {}
 filenames = []
 
 class TOCElement(object):
-    def __init__(self, filename, name, description, parent=None, version=None, last_updated=None, doctitle=None, requires_paged=False, **kwargs):
+    def __init__(self, filename, name, description, parent=None, version=None, 
+                        last_updated=None, doctitle=None, requires_paged=False, **kwargs):
         self.filename = filename
         self.name = re.sub(r'[<>&;%]', '', name)
         self.description = description
@@ -30,13 +33,13 @@ class TOCElement(object):
             setattr(self, key, value)
 
         toc_by_path[self.path] = self
-            
+
         self.is_top = (self.parent is not None and self.parent.filename != self.filename) or self.parent is None
         if self.is_top:
             toc_by_file[self.filename] = self
             if self.filename:
                 filenames.append(self.filename)
-                
+
         self.root = self.parent and self.parent.root or self
 
         self.content = None
@@ -52,10 +55,10 @@ class TOCElement(object):
                 self.up = parent
             else:
                 self.up = None
-                
+
     def get_page_root(self):
         return self.toc_by_file[self.filename]
-        
+
     def get_by_path(self, path):
         return self.toc_by_path.get(path)
 

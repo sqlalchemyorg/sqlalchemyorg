@@ -3,9 +3,14 @@ import shutil
 import stat
 import re
 import sys
+# legacy docs lib
 sys.path.insert(0, './_lib/')
 
 from blogofile.cache import bf
+
+import logging
+# the -v -vv flags hardwired to 'blogofile.' - OK
+log = logging.getLogger('blogofile.controllers.docs')
 
 output = "_site"
 htdocs = "_work"
@@ -54,15 +59,15 @@ def run():
         html = set([fname for fname in files if fname.endswith('.html')])
         nonhtml = set(files).difference(html)
 
+        # blogofile unconditionally blows away everything in _site.   So for now
+        # we have to skip checking timestamps.
         for fname in nonhtml:
             conditional_copy(os.path.join(root, fname), os.path.join(output, relative, fname))
 
         for fname in html:
-            if isnewer(os.path.join(root, fname), os.path.join(relative, fname)):
-                print os.path.join(root, fname), "->", os.path.join(output, relative, fname)
-                bf.writer.materialize_template(os.path.join(root, fname), os.path.join(relative, fname), attrs={'req':{}, 'attributes':{}})
+            log.info("%s -> %s", os.path.join(root, fname), os.path.join(output, relative, fname))
+            bf.writer.materialize_template(os.path.join(root, fname), os.path.join(relative, fname), attrs={'req':{}, 'attributes':{}})
 
-# semi generic directory copy function
 def copydir(name, dest, htmlonly=False):
     for root, dirs, files in os.walk(name):
         relative = root[len(name + "/"):]
@@ -78,7 +83,7 @@ def copydir(name, dest, htmlonly=False):
 
 def conditional_copy(f1, f2):
     if isnewer(f1, f2):
-        print f1, "->", f2
+        log.info("%s -> %s", f1, f2)
         shutil.copyfile(f1, f2)
 
 def isnewer(f1, f2):

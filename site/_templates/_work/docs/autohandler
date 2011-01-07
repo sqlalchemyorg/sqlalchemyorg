@@ -1,3 +1,5 @@
+## autohandler for legacy docs, i.e. 0.4 docs
+
 <%inherit file="/base.mako"/>
 <%!
     in_docs=True
