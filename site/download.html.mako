@@ -26,7 +26,7 @@ these changes !</p>
 <h2>Older Releases</h2>
 
 <p>
-<a href="http://sourceforge.net/project/showfiles.php?group_id=140060&package_id=153732">View all releases on Sourceforge</a>
+<a href="http://sourceforge.net/projects/sqlalchemy/files/sqlalchemy/">View all releases on Sourceforge</a>
 </p>
 
 <h2>Development Versions</h2>
