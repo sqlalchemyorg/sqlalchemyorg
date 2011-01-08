@@ -10,8 +10,10 @@ Community - SQLAlchemy
 
 <h2>Mailing List</h2>
 
-<p>The central SQLAlchemy discussion list can be found at <a href="http://groups.google.com/group/sqlalchemy">Google Groups.</a>  The list is moderated
-for a new user's first post.
+<p>
+The central SQLAlchemy discussion list can be found at <a
+href="http://groups.google.com/group/sqlalchemy">Google Groups.</a> The list
+is moderated for a new user's first post.
 
 <div class="subscribe">
   <form action="http://groups.google.com/group/sqlalchemy/boxsubscribe">
@@ -30,13 +32,13 @@ href="http://dir.gmane.org/gmane.comp.python.sqlalchemy.user">Gmane</a>.
 
 <h2>Wiki</h2>
 
-<p>The <a href="/trac/">Trac Wiki</a> is a central point of information which
-includes the <a href="/trac/wiki/FAQ">FAQ</a> and <a
-href="/trac/wiki/DatabaseNotes">DatabaseNotes</a> sections, migration guides,
-a place to <a href="/trac/query">query bug reports</a> and <a
-href="/trac/newticket">log feature requests</a>, and to share <a
-href="/trac/wiki/UsageRecipes">design patterns and advice</a>. Log in with the
-username/password "guest"/"guest" to submit information.</p>
+<p>
+    The <a href="/trac/">Trac Wiki</a> is a central point of information which
+    includes a developer <a href="/trac/wiki/FAQ">FAQ</a>, a catalog of <a
+    href="/trac/wiki/UsageRecipes">design patterns and recipes</a>, migration
+    guides for each version of SQLAlchemy, as well as the bug tracker. Log in with the username/password
+    "guest"/"guest" to submit information.
+</p>
 
 
 
@@ -49,7 +51,7 @@ href="http://www.freenode.net">Freenode</a> IRC channel
 <h2>Twitter</h2>
 
 <p>Follow SQLAlchemy related musings and news at <a
-href="http://twitter.com/#search?q=%23sqlalchemy">#sqlalchemy</a>.
+href="http://twitter.com/#search?q=sqlalchemy">#sqlalchemy</a>.
 
 
 <h2>Stack Overflow</h2>
