@@ -39,13 +39,10 @@ Or use SQLAlchemy to write your own !</p>
 <p><a href="/quotes.html"><b>Read what people are saying about
 SQLAlchemy.</b></a></p>
 
-<table>
+<dl id="features">
 
-    <tr class="feature">
-        <td class="featurename">
-            Scales Up
-        </td>
-        <td class="featuredesc">
+    <dt>Scales Up</dt>
+    <dd>
             <p>Powerful enough for complicated tasks, such as:</p>
             <ul>
             <li>Load whole graphs of objects and their dependent objects in one step, with fine grained control over how many
@@ -60,16 +57,10 @@ SQLAlchemy.</b></a></p>
             <li>Work with transactionalized behavior from the ground up, including SAVEPOINT and two-phase transactions, 
                   in a high-level and database-agnostic manner</li>
             </ul>
-
-        </td>
-    </tr>
-
-    <tr class="feature">
-        <td class="featurename">
-            Scales Down
-        </td>
-        <td class="featuredesc">
-            <p>Extremely easy to use for all the basic tasks, such as:</p>
+    </dd>
+    <dt>Scales Down</dt>
+    <dd>
+        <p>Extremely easy to use for all the basic tasks, such as:</p>
             <ul>
             <li>Constructing SQL from Python expressions</li>
             <li>Loading a pre-existing schema into expression constructs and ORM mappings</li>
@@ -77,15 +68,10 @@ SQLAlchemy.</b></a></p>
             <li>Issuing DDL (i.e. CREATE / DROP statements)</li>
             <li>Loading objects from the database and saving changes back</li>
             </ul>
+    </dd>
 
-        </td>
-    </tr>
-
-    <tr class="feature">
-        <td class="featurename">
-            DBA Approved
-        </td>
-        <td class="featuredesc">
+    <dt>DBA Approved</dt>
+    <dd>
             <p>Built to conform to what DBAs demand, including the ability to
             swap out generated SQL with hand-optimized statements, full usage
             of bind parameters for all literal values, fully transactionalized
@@ -93,14 +79,10 @@ SQLAlchemy.</b></a></p>
             object-relational patterns are designed around the usage of proper
             referential integrity, and foreign keys are an integral part of
             its usage.</p>
-        </td>
-    </tr>
+    </dd>
 
-    <tr class="feature">
-        <td class="featurename">
-           Non-Opinionated
-        </td>
-        <td class="featuredesc">
+    <dt>Non-Opinionated</dt>
+    <dd>
            <p>SQLAlchemy places the highest value on not getting in the way of
            database and application architecture. Unlike many tools, it
            <b>never</b> "generates" schemas (not to be confused with issuing
@@ -109,13 +91,10 @@ SQLAlchemy.</b></a></p>
            in which it excels) or relies on naming conventions of any kind.
            SQLAlchemy supports the widest variety of database and
            architectural designs as is reasonably possible.
-        </td>
-    </tr>
-    <tr class="feature">
-        <td class="featurename">
-            Modular and Extensible
-        </td>
-        <td class="featuredesc">
+    </dd>
+
+    <dt>Modular and Extensible</dt>
+    <dd>
             <p>Different parts of SQLAlchemy can be used independently of the
             rest. Elements like connection pooling, SQL statement compilation
             and transactional services can be used independently of each
@@ -136,14 +115,10 @@ SQLAlchemy.</b></a></p>
               <li><a href="http://pypi.python.org/pypi/z3c.sqlalchemy/">z3c.sqlalchemy</a></li>
               <li><a href="http://pypi.python.org/pypi?%3Aaction=search&term=sqlalchemy&submit=search">See more on Pypi</a></li>
             </ul>
+    </dd>
 
-        </td>
-    </tr>
-    <tr class="feature">
-        <td class="featurename">
-            Community Supported
-        </td>
-        <td class="featuredesc">
+    <dt>Community Supported</dt>
+    <dd>
                 <p>SQLAlchemy has a substantially sized community, with over
                 2200 mailing list users and well over 10000 downloads a month.
                 It is the default ORM for most of the popular web frameworks,
@@ -159,10 +134,8 @@ SQLAlchemy.</b></a></p>
         every six months (see <a href="/trac">SQLAlchemy Trac</a> for
         development timeline and project information</a>).
         </p>
-        </td>
-    </tr>
-
-</table>
+    </dd>
+</dl>
 
 <p>Check out some of the <a href="/features.html">key features</a> or dive
 straight into the <a href="/docs/orm/tutorial.html">tutorial</a> &#8212; then
