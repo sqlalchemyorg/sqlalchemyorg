@@ -123,10 +123,11 @@ SQLAlchemy.</b></a></p>
                 2200 mailing list users and well over 10000 downloads a month.
                 It is the default ORM for most of the popular web frameworks,
                 including <a href="http://www.pylonshq.com">Pylons</a>, <a
-                href="http://www.turbogears.org">Turbogears</a> and <a
+                href="http://flask.pocoo.org">Flask</a> and <a
                 href="http://grok.zope.org/">Grok</a>. It's used in a growing
-                number of applications and third party add ons (see <a
-                href="/trac/wiki/SAApps">the current known list</a>).
+                number of applications and third party add ons (many are listed
+                <a
+                href="/trac/wiki/SAApps">on the wiki</a>).
         </p>
         <p>Development is similarly active, with an active developer count
         hovering around ten, between 150-500 commits per month and a typical

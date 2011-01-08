@@ -20,6 +20,7 @@ Released October 24, 2010
 <p>SQLAlchemy is used by organizations such as:
 <ul>
 	<li><a href="http://reddit.com">reddit</a></li>
+	<li><a href="http://www.openstack.org/">The OpenStack Project</a></li>
     <li><a href="http://public.web.cern.ch/public/en/lhc/lhc-en.html">CERN</a></li>
 	<li><a href="http://www.lolapps.com">lolapps</a></li>
     <li><a href="http://www.freshbooks.com/">Freshbooks</a></li>
