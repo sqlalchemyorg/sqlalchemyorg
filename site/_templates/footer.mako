@@ -8,7 +8,7 @@
     <div class="copyright">
         <p>Website content copyright &copy; by Michael Bayer.  SQLAlchemy and its documentation are licensed under the MIT license.</p>
         <p>All rights reserved. mike(&amp;)zzzcomputing.com</p>
-        <p>Website generation by <a href="http://www.blogofile.com">Blogfile</a> and <a href="http://www.makotemplates.org">Mako Templates for Python</a>.</p>
+        <p>Website generation by <a href="http://www.blogofile.com">Blogofile</a> and <a href="http://www.makotemplates.org">Mako Templates for Python</a>.</p>
      </div>
 
     <br clear="both" />
