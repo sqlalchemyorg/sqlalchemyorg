@@ -15,6 +15,17 @@
     return ''
 %></%def>
 
+<%self:newsitem headline='SQLAlchemy 0.7 Beta 1 Released' date="${datetime.date(2011, 2, 12)}" ctx="${ctx}">
+<p>The first beta release of SQLAlchemy 0.7 is now available.   This release features the past year's
+worth of new features, improvements, and usage patterns, including an all-new, unified event model,
+new extensions including so-called "hybrid" attributes as well as a new system of tracking changes on "mutable"
+scalar values, extensive performance improvements, new dialects, and a large number of other features
+and bug fixes.   A full catalog of changes can be reviewed at <a href="/trac/wiki/07Migration">07Migration</a>.
+Download SQLAlchemy 0.7 beta1 on the <a href="/download.html">download page</a>.
+
+</p>
+</%self:newsitem>
+
 <%self:newsitem headline='SQLAlchemy 0.7 In Development' date="${datetime.date(2010, 12, 5)}" ctx="${ctx}">
 <p>SQLAlchemy 0.7 is in active development and close to beta releases, featuring an all new
 unified event model as well as a host of other ORM and SQL engine features and improvements.
