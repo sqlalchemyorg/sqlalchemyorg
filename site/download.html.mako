@@ -17,7 +17,7 @@ href="/trac/wiki/07Migration"><b>(migration guide)</b></a></p>
 
 <p>A document in describing major changes in the 0.7 series is in <a
 href="/trac/wiki/07Migration"><b>07Migration</b></a>. <b>Please read this
-document for guidelines on porting 0.6 code to 0.5, as some APIs have
+document for guidelines on porting 0.6 code to 0.7, as some APIs have
 changed.</b> Please do not post bug reports without first being familiar with
 these changes !</p>
 
