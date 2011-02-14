@@ -12,9 +12,7 @@ Download - SQLAlchemy
 
 <p>Latest 0.7 Release: <b>0.7b1</b> <a
 href="http://prdownloads.sourceforge.net/sqlalchemy/SQLAlchemy-0.7b1.tar.gz?download"><b>(0.7b1
-via Sourceforge)</b></a> <a
-href="http://www.python.org/pypi/SQLAlchemy/0.7b1"><b>(0.7b1 via
-Cheeseshop)</b></a> <a href="/changelog/CHANGES_0_7b1"><b>(CHANGES)</b></a> <a
+via Sourceforge)</b></a>  <a href="/changelog/CHANGES_0_7b1"><b>(CHANGES)</b></a> <a
 href="/trac/wiki/07Migration"><b>(migration guide)</b></a></p>
 
 <p>A document in describing major changes in the 0.7 series is in <a
