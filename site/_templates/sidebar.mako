@@ -5,13 +5,13 @@
 <div class="box">
 <h3>Current Release</h3>
 
-<a href="/download.html"><b>0.7b1</b></a>
+<a href="/download.html"><b>0.7b2</b></a>
 <br/>
 <a href="/trac/wiki/07Migration">What's New?</a> | 
-<a href="/changelog/CHANGES_0_7b1">Changelog</a> | 
+<a href="/changelog/CHANGES_0_7b2">Changelog</a> | 
 <a href="/docs/07/">docs</a>
 <br/>
-Released February 12, 2011
+Released February 19, 2011
 
 <br/><br/>
 
