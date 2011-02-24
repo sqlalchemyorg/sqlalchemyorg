@@ -42,14 +42,22 @@ Released January 8, 2011
 </div>
 
 <div class="box">
-<p>The first of two SQLAlchemy books now available:</p>
+<p>Have the O'Reilly book ?</p>
 <div style="text-align:center">
 <a href="http://www.oreilly.com/catalog/9780596516147/"><img src="/img/essential_sqla.gif" border="none"/></a>
 </div>
-<p>Using the book with 0.5 or greater? Please read the <a
-href="/trac/wiki/05Migration">0.5 Migration Guide</a> and if on 0.6 the <a
-href="/trac/wiki/06Migration">0.6 Migration Guide</a> for important notes
-regarding usage changes.</p>
+<p>Please note it's largely out of date !   A new book 
+    is in the works.  Check out the 
+    <a href="/docs/">current documentation</a>,
+    most importantly the <a href="/docs/orm/tutorial.html">ORM tutorial</a>,
+    and read *each* of the following 
+    migration guides for an update:
+    <ul>
+    <li><a href="/trac/wiki/05Migration">What's new in 0.5?</a></li>
+    <li><a href="/trac/wiki/06Migration">What's new in 0.6?</a></li>
+    <li><a href="/trac/wiki/07Migration">What's new in 0.7?</a></li>
+    </ul>
+</p>
 </div>
 <div class="box">
     <h3>Latest News</h3>
