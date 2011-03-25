@@ -24,6 +24,10 @@ What People Are Saying - SQLAlchemy
     </blockquote>
 </%def>
 
+<%self:quote link="https://twitter.com/frostiebot/status/51352369291739136" author="frostiebot / Chris Goodnight">
+<p>#sqlalchemy is seriously the best ORM. No other ORM in any other language even comes close.</p>
+</%self:quote>
+
 <%self:quote link="http://griddlenoise.blogspot.com/2007/10/catching-up.html" author="Jeff Shell, Zope Wizard">
 <p>The only toolkit that's even better? SQLAlchemy. It's pretty much the only
 way I'll interact with RDBMS systems in Python from this point out. And I
