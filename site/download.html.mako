@@ -44,11 +44,19 @@ these changes !</p>
 
 <h2>Development Versions</h2>
 
-<p>A snapshot of the current default branch of SQLAlchemy: 
+<p>Snapshots from Mercurial:</p>
+<p>0.7:
 <a href="http://hg.sqlalchemy.org/sqlalchemy/archive/default.zip">zip</a> | 
 <a href="http://hg.sqlalchemy.org/sqlalchemy/archive/default.tar.gz">gz</a> |
 <a href="http://hg.sqlalchemy.org/sqlalchemy/archive/default.tar.bz2">bz2</a>
 </p>
+
+<p>0.6: 
+<a href="http://hg.sqlalchemy.org/sqlalchemy/archive/rel_0_6.zip">zip</a> | 
+<a href="http://hg.sqlalchemy.org/sqlalchemy/archive/rel_0_6.tar.gz">gz</a> |
+<a href="http://hg.sqlalchemy.org/sqlalchemy/archive/rel_0_6.tar.bz2">bz2</a>
+</p>
+
 <p>For further details on Mercurial repository access please see <a href="development.html">development</a>.</p>
 
 

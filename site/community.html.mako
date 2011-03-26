@@ -41,6 +41,11 @@ href="http://dir.gmane.org/gmane.comp.python.sqlalchemy.user">Gmane</a>.
 </p>
 
 
+<h2>Blog</h2>
+<p>
+    <a href="http://techspot.zzzeek.org/category/sqlalchemy/">zzzeek.org</a> contains SQLAlchemy-related
+    articles by SQLAlchemy's creator.
+</p>
 
 <h2>Irc</h2>
 
