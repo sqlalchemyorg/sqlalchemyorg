@@ -21,7 +21,7 @@ accommodate both of these principles.</p>
 <p>SQLAlchemy doesn't view databases as just collections of tables; it sees
 them as relational algebra engines. Its object relational mapper enables
 classes to be mapped against the database in more than one way. SQL constructs
-don't just select from just tables&#8212;you can also select from joins,
+don't select from just tables&#8212;you can also select from joins,
 subqueries, and unions. Thus database relationships and domain object models
 can be cleanly decoupled from the beginning, allowing both sides to develop to
 their full potential.</p>
