@@ -2,9 +2,10 @@
 <%!
     section = 'quotes'
 %>
-<%def name="title()">
+
+<%block name="head_title">
 What People Are Saying - SQLAlchemy
-</%def>
+</%block>
 
 <h1>What People are Saying about SQLAlchemy</h1>
 

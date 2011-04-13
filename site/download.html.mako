@@ -2,9 +2,9 @@
 <%!
     section = 'download'
 %>
-<%def name="title()">
+<%block name="head_title">
 Download - SQLAlchemy
-</%def>
+</%block>
 
 <h1>Get SQLAlchemy</h1>
 

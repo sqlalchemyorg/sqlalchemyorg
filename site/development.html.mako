@@ -2,9 +2,9 @@
 <%!
 section='development'
 %>
-<%def name="title()">
+<%block name="head_title">
 Development - SQLAlchemy
-</%def>
+</%block>
 
 <h1>Development</h1>
 

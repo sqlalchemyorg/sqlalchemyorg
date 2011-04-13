@@ -1,0 +1,9 @@
+---
+date: 2010/12/05 12:00:00
+title: SQLAlchemy 0.7 In Development
+---
+SQLAlchemy 0.7 is in active development and close to beta releases, featuring an all new
+unified event model as well as a host of other ORM and SQL engine features and improvements.
+The "Whats New" page for SQLAlchemy 0.7 is under construction at
+`07Migration </trac/wiki/07Migration>`_.
+

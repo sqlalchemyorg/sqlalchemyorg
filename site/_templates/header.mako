@@ -16,7 +16,7 @@
     <ul>
         <li><a ${ section_print('home') } href="/">home</a></li>
         <li><a ${ section_print('features') } href="/features.html">features</a></li>
-        <li><a ${ section_print('news') } href="/news.html">news</a></li>
+        <li><a ${ section_print('blog') } href="/blog/">blog</a></li>
         <li><a ${ section_print('docs') } href="/docs/">documentation</a></li>
         <li><a ${ section_print('wiki') } href="/trac/">wiki</a></li>
         <li><a ${ section_print('community') } href="/community.html">community</a></li>

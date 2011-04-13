@@ -2,9 +2,9 @@
 <%!
 section='community'
 %>
-<%def name="title()">
+<%block name="head_title">
 Community - SQLAlchemy
-</%def>
+</%block>
 
 <h1>Community</h1>
 

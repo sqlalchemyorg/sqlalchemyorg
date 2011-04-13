@@ -1,0 +1,15 @@
+---
+date: 2009/06/02 12:00:00
+title: Python 3K, pg8000 Support in SQLAlchemy 0.6
+---
+As of this past weekend, <a href="http://twitter.com/zzzeek/status/1984474807">100% of tests pass</a> on Python 3000 using
+the up-and-coming 0.6 series of SQLAlchemy, while running on sqlite via the sqlite3 adapter
+as well as Postgresql via the <a href="http://pybrary.net/pg8000/">pg8000</a> DBAPI.
+Jython compatibility is largely present as well.   The 0.6 series has
+a special focus on environment and dialect compatibility, as well as on schema construct and DDL improvements.
+Developers will have full access to new expression constructs such as CREATE TABLE and ADD CONSTRAINT, with the ability
+to define new ones.  It is now possible to construct custom create/drop sequences which add constraints, triggers 
+and other DDL using rules that are sensitive to the underlying database in use - and will allow smoother integration
+with <a href="http://code.google.com/p/sqlalchemy-migrate/">sqlalchemy-migrate</a> too.  0.6 should be merged to trunk
+soon with alpha releases by mid-summer.
+

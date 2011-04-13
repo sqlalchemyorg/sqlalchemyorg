@@ -2,9 +2,9 @@
 <%!
     section = 'features'
 %>
-<%def name="title()">
+<%block name="head_title">
 Features - SQLAlchemy
-</%def>
+</%block>
 
 <h1>Key Features of SQLAlchemy</h1>
 

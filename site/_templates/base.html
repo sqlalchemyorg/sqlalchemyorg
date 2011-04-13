@@ -1,2 +1,21 @@
+<%doc>
+    Base template inherited by documentation 
+    buildouts.  This template adapts the older
+    conventions in the doc builds to the 
+    current ones in base.mako.
+</%doc>
 <%inherit file="base.mako"/>
+
+<%block name="head_title">
+${self.title()}
+</%block>
+
+<%block name="head">
+${self.style()}
+${parent.head()}
+</%block>
+
+<%def name="style()"/>
+<%def name="title()"/>
+
 ${next.body(**pageargs)}

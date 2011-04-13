@@ -1,0 +1,28 @@
+---
+date: 2010/04/18 12:00:00
+title: SQLAlchemy 0.6 Released
+---
+SQLAlchemy 0.6 is now released.   This release is the culmination of well over a year
+of effort towards restructuring and enhancements.   Highlights of SQLAlchemy 0.6 include:
+
+* Support for Python 2.4+, Python 3, and Jython
+* Decouping of DBAPI adapters and database dialects allow any number of DBAPIs to be 
+  cleanly supported.
+* Support for Sybase, mxODBC, pg8000, py-postgresql, OurSQL, 
+  MySQL-Connector-Python, zxjdbc is added, including new options 
+  and capabilities for many dialects (see the 
+  <a href="/docs/dbengine.html?highlight=engines#supported-databases">compatibility chart</a>).
+* Enhancements to "eager loading", including a new "subquery" eagerload that loads all collections
+  using a maximally efficient query-per-relationship scheme.
+* An entirely new unit of work system which runs more effectively and simply, using less memory and
+  CPU.
+* A flexible SQL compiler and execution system, now supporting RETURNING clauses 
+  when available, clause constructs for DDL elements (i.e. CREATE
+  TABLE) and type objects, stricter SQL standard compliance where
+  needed, and an extension system allowing the creation of new SQL
+  constructs and open-ended extension to those provided.
+
+* Query result caching capability, including an example illustrating integration with Beaker.
+
+SQLAlchemy 0.6 has already been in production usage for several months and has been tested by hundreds.
+Be sure to review the full list of whats new at <a href="/trac/wiki/06Migration">06Migration</a>.

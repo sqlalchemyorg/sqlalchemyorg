@@ -1,0 +1,18 @@
+---
+date: 2009/08/07 12:00:00
+title: SQLAlchemy 0.6 On Its Way
+---
+SQLAlchemy 0.6 is now on trunk, with release candidates to come soon.   Jython compatibility
+is near 100% for MySQL and Postgresql, with work being done for Oracle + JDBC as well.
+Oracle tests using cPython pass at 100% and compatibility is also introduced for MSSQL
+via PyODBC with FreeTDS, allowing any unix platform to access MSSQL (one user is testing
+it against Sybase ASE as well with a good deal of success).  INSERT RETURNING support
+is also implemented natively for Postgresql, Oracle, MSSQL and Firebird and is used when
+available to fetch newly generated primary key identifiers.
+
+The release of 0.6 will solidify the best architecture yet for maximum Python platform, DBAPI,
+and database backend compatibility, allowing new DBAPIs and architectures to be plugged in
+with minimal hacking.
+
+The in-progress documentation of what's new is at <a href="/trac/wiki/06Migration">06Migration</a>.
+

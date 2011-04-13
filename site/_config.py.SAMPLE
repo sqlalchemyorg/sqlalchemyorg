@@ -19,3 +19,21 @@ docs.sphinx_docs = [
     (dev_root + '/sqlalchemy/doc/build/output/site', '07')
 ]
 
+# blog
+blog = controllers.blog
+blog.enabled = True
+blog.path = "/blog"
+
+blog.name = "Your Blog's Name"
+
+blog.description = "Your Blog's short description"
+
+blog.timezone = "US/Eastern"
+
+blog.post_default_filters = {
+    "markdown": "markdown",
+    "textile": "syntax_highlight, textile",
+    "org": "syntax_highlight, org",
+    "rst": "rst, syntax_highlight"
+}
+

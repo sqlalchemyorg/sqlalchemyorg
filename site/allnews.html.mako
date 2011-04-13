@@ -1,1 +1,0 @@
-<%include file="news.html.mako" args="all=True"/>
