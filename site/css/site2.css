@@ -196,7 +196,7 @@ strong {
   padding: 0px 0px 0px 0px;
   text-transform: none;
   border: 0;
-  font: normal 18px/24px Tahoma,Geneva,sans-serif;
+  font: normal 20px/24px Tahoma,Geneva,sans-serif;
   color:#000000;
 }
 
@@ -220,6 +220,7 @@ strong {
 
 #content div.blog_post .blog_post_byline {
   text-transform:none;
+  font-size:12px;
 }
 
 #content div.blog_post .blog_post_header {
