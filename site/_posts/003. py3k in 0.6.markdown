@@ -1,6 +1,7 @@
 ---
 date: 2009/06/02 12:00:00
 title: Python 3K, pg8000 Support in SQLAlchemy 0.6
+author: Mike B
 ---
 As of this past weekend, <a href="http://twitter.com/zzzeek/status/1984474807">100% of tests pass</a> on Python 3000 using
 the up-and-coming 0.6 series of SQLAlchemy, while running on sqlite via the sqlite3 adapter

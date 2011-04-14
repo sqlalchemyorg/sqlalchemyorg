@@ -1,6 +1,7 @@
 ---
 date: 2008/06/02 12:00:00
 title: Checkout Now Available at the Apple Store
+author: Mike B
 ---
 <a href="http://store.apple.com/us/product/TQ927LL/A"><img
 src="/img/checkout.jpg"/></a>

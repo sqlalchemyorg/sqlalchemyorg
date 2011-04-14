@@ -7,6 +7,5 @@
 
 </ul>
 % if section != 'news':
-<br/>
 <a href="/blog/">More news...</a>
 % endif

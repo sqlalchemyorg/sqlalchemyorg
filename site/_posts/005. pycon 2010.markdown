@@ -1,6 +1,7 @@
 ---
 date: 2010/02/25 12:00:00
 title: Pycon 2010 Sprints the Biggest Ever
+author: Mike B
 ---
 The sprinting continues today in Atlanta after a week where at least a dozen people got involved,
 some new to SQLAlchemy, some veterans.   New things coming out include our <a href="http://buildbot.sqlalchemy.org/">all-new

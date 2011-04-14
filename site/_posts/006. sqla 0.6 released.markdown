@@ -1,6 +1,7 @@
 ---
 date: 2010/04/18 12:00:00
 title: SQLAlchemy 0.6 Released
+author: Mike B
 ---
 SQLAlchemy 0.6 is now released.   This release is the culmination of well over a year
 of effort towards restructuring and enhancements.   Highlights of SQLAlchemy 0.6 include:

@@ -1,6 +1,7 @@
 ---
 date: 2009/08/07 12:00:00
 title: SQLAlchemy 0.6 On Its Way
+author: Mike B
 ---
 SQLAlchemy 0.6 is now on trunk, with release candidates to come soon.   Jython compatibility
 is near 100% for MySQL and Postgresql, with work being done for Oracle + JDBC as well.

@@ -218,6 +218,10 @@ strong {
   text-transform:none;
 }
 
+#content div.blog_post .blog_post_byline {
+  text-transform:none;
+}
+
 #content div.blog_post .blog_post_header {
     border-bottom: 1px solid #CCCCCC;
     padding: 0px 0px 10px 0px;
