@@ -32,8 +32,8 @@ List</a>. Ticket changes are posted to the <a
 href="http://lists.sourceforge.net/lists/listinfo/sqlalchemy-tickets">Ticket
 List</a>.</p>
 
-<p>SQLAlchemy has a <a href="http://buildbot.net/">buildbot master</a> at <a
-href="http://buildbot.sqlalchemy.org/">http://buildbot.sqlalchemy.org/</a>.
+<p>SQLAlchemy has a Jenkins server  at <a
+href="http://jenkins.sqlalchemy.org/">http://jenkins.sqlalchemy.org/</a>.
 
 <h2>Current Trunk - 0.7</h2>
 

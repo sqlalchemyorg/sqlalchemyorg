@@ -4,7 +4,7 @@ title: Pycon 2010 Sprints the Biggest Ever
 author: Mike B
 ---
 The sprinting continues today in Atlanta after a week where at least a dozen people got involved,
-some new to SQLAlchemy, some veterans.   New things coming out include our <a href="http://buildbot.sqlalchemy.org/">all-new
+some new to SQLAlchemy, some veterans.   New things coming out include our <a href="http://jenkins.sqlalchemy.org/">all-new
 buildbot</a>, as well as several new dialects which are Python 3 compatible - PyPostgreql, OurSQL, MySQL-connector-Python.  Python 3 tests
 are passing 100% for pg8000 and OurSQL, so Postgresql and MySQL are now covered for Python 3.  We also have mxODBC for MSSQL in the
 works and have made a great leap forward in getting real Sybase support.   Plus documentation updates galore, new
