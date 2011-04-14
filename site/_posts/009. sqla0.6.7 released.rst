@@ -5,13 +5,13 @@ author: Mike B
 ---
 SQLAlchemy release 0.6.7 is now available.  This is a bugfix
 release to the 0.6 series, which is now mostly feature frozen.
-The 0.7 series has been the focus of development and new
-features for several months and is very near to production 
+The 0.7 series has been the focus of new feature development 
+for several months and is very near to production 
 release - 0.6.7 represents all those bugfixes that were appropriate
-for an 0.6.7 backport.
+for a backport to the maintenance series.
 
 The 0.6 series has been SQLAlchemy's most popular ever, with 
-0.6.6 logging over 52,000 downloads in just four months.  
+0.6.6 alone logging over 52,000 downloads in just over three months.  
 
 For a full list of changes in 0.6.7, see `CHANGES </changelog/CHANGES_0_6_7>`_.   
 
