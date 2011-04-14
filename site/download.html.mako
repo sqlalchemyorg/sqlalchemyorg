@@ -23,11 +23,11 @@ these changes !</p>
 
 <h2>Version 0.6 (production / stable)</h2>
 
-<p>Latest 0.6 Release: <b>0.6.6</b> <a
-href="http://prdownloads.sourceforge.net/sqlalchemy/SQLAlchemy-0.6.6.tar.gz?download"><b>(0.6.6
-via Sourceforge)</b></a> <a
-href="http://www.python.org/pypi/SQLAlchemy/0.6.6"><b>(0.6.6 via
-Cheeseshop)</b></a> <a href="/changelog/CHANGES_0_6_6"><b>(CHANGES)</b></a> <a
+<p>Latest 0.6 Release: <b>0.6.7</b> 
+<a href="http://prdownloads.sourceforge.net/sqlalchemy/SQLAlchemy-0.6.7.tar.gz?download"><b>(0.6.7
+via Sourceforge)</b></a> 
+<a href="http://www.python.org/pypi/SQLAlchemy/0.6.7"><b>(0.6.7 via
+Cheeseshop)</b></a> <a href="/changelog/CHANGES_0_6_7"><b>(CHANGES)</b></a> <a
 href="/trac/wiki/06Migration"><b>(migration guide)</b></a></p>
 
 <p>A document in describing major changes in the 0.6 release is in <a

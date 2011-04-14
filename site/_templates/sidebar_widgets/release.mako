@@ -10,11 +10,11 @@ Released March 20, 2011
 
 <br/><br/>
 
-<a href="/download.html"><b>0.6.6</b></a>
+<a href="/download.html"><b>0.6.7</b></a>
 <br/>
 <a href="/trac/wiki/06Migration">What's New?</a> | 
-<a href="/changelog/CHANGES_0_6_6">Changelog</a> | 
+<a href="/changelog/CHANGES_0_6_7">Changelog</a> | 
 <a href="/docs/06/">docs</a>
 <br/>
-Released January 8, 2011
+Released April 13, 2011
 
