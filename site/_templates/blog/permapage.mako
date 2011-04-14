@@ -1,18 +1,21 @@
 <%inherit file="site.mako" />
 
+<div class="blog_nav">
 <%block name="prevnext">
-% if prev_post:
-<div class="prev">
-« <a href="${prev_post.permapath()}">${prev_post.title}</a>
-</div>
-% endif
+    % if prev_post:
+    <div class="prev">
+    « <a href="${prev_post.permapath()}">${prev_post.title}</a>
+    </div>
+    % endif
 
-% if next_post:
-<div class="next">
-<a href="${next_post.permapath()}">${next_post.title}</a>  »
-</div>
-% endif
+    % if next_post:
+    <div class="next">
+    <a href="${next_post.permapath()}">${next_post.title}</a>  »
+    </div>
+    % endif
 </%block>
+    &nbsp;
+</div>
 
 <%include file="post.mako" args="post=post" />
 <div id="disqus_thread"></div>

@@ -1,5 +1,6 @@
 <%inherit file="site.mako" />
 
+<div class="blog_nav">
 <%block name="prevnext">
     % if prev_link:
     <div class="prev">
@@ -12,11 +13,11 @@
      </div>
     % endif
 </%block>
+    &nbsp;
+</div>
 
 % for post in posts:
   <%include file="post.mako" args="post=post" />
-
-  <hr class="interblog" />
 % endfor
 ${prevnext()}
 

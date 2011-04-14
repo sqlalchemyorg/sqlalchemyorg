@@ -42,4 +42,7 @@ ${parent.scripts()}
 </script>
 % endif
 </%block>
+
+<h1>News and Updates</h1>
+
 ${next.body()}
