@@ -24,9 +24,9 @@ blog = controllers.blog
 blog.enabled = True
 blog.path = "/blog"
 
-blog.name = "Your Blog's Name"
+blog.path = "/blog"
 
-blog.description = "Your Blog's short description"
+blog.name = "SQLAlchemy Blog"
 
 blog.timezone = "US/Eastern"
 
