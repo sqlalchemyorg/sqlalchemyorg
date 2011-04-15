@@ -19,6 +19,8 @@ docs.sphinx_docs = [
     (dev_root + '/sqlalchemy/doc/build/output/site', '07')
 ]
 
+site.url = "http://www.sqlalchemy.org"
+
 # blog
 blog = controllers.blog
 blog.enabled = True
