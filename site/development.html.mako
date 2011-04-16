@@ -17,9 +17,11 @@ reports before posting.
 
 <h2>DEVELOPMENT DISCUSSION</h2>
 
-<p>Most development discussion occurs on the main mailing list or IRC channel
-- further info is available on the <a href="community.html">community</a>
-page.</p>
+<p>Developer mailing list on 
+<a href="http://groups.google.com/group/sqlalchemy-devel">Google Groups</a> - 
+<strong>please note:</strong> this is only for developer discussion.  Usage issues and 
+questions should be posted on the <a href="http://groups.google.com/group/sqlalchemy">main list</a>.
+</p>
 
 <h2>Tracking Activity</h2>
 
