@@ -10,16 +10,13 @@ Download - SQLAlchemy
 
 <h2>Version 0.7 (beta)</h2>
 
-<p>Latest 0.7 Release: <b>0.7b3</b> <a
-href="http://prdownloads.sourceforge.net/sqlalchemy/SQLAlchemy-0.7b3.tar.gz?download"><b>(0.7b3
-via Sourceforge)</b></a>  <a href="/changelog/CHANGES_0_7b3"><b>(CHANGES)</b></a> (note changes listed in 0.7b3 and 0.6.7 are included) <a
-href="/trac/wiki/07Migration"><b>(migration guide)</b></a></p>
+<p>Latest 0.7 Release: <b>0.7b4</b> <a
+href="http://prdownloads.sourceforge.net/sqlalchemy/SQLAlchemy-0.7b4.tar.gz?download"><b>(0.7b4
+via Sourceforge)</b></a>  <a href="/changelog/CHANGES_0_7b4"><b>(CHANGES)</b></a></p>
 
-<p>A document in describing major changes in the 0.7 series is in <a
-href="/trac/wiki/07Migration"><b>07Migration</b></a>. <b>Please read this
-document for guidelines on porting 0.6 code to 0.7, as some APIs have
-changed.</b> Please do not post bug reports without first being familiar with
-these changes !</p>
+<p>Please be sure to review the 0.6 to 0.7 migration guide, found at <a
+href="/trac/wiki/07Migration"><b>07Migration</b></a>, for full details on changes
+made since 0.6.</p>
 
 <h2>Version 0.6 (production / stable)</h2>
 
@@ -27,14 +24,11 @@ these changes !</p>
 <a href="http://prdownloads.sourceforge.net/sqlalchemy/SQLAlchemy-0.6.7.tar.gz?download"><b>(0.6.7
 via Sourceforge)</b></a> 
 <a href="http://www.python.org/pypi/SQLAlchemy/0.6.7"><b>(0.6.7 via
-Cheeseshop)</b></a> <a href="/changelog/CHANGES_0_6_7"><b>(CHANGES)</b></a> <a
-href="/trac/wiki/06Migration"><b>(migration guide)</b></a></p>
+Cheeseshop)</b></a> <a href="/changelog/CHANGES_0_6_7"><b>(CHANGES)</b></a></p>
 
-<p>A document in describing major changes in the 0.6 release is in <a
-href="/trac/wiki/06Migration"><b>06Migration</b></a>. <b>Please read this
-document for guidelines on porting 0.5 code to 0.6, as some APIs have
-changed.</b> Please do not post bug reports without first being familiar with
-these changes !</p>
+<p>Please be sure to review the 0.5 to 0.6 migration guide, found at <a
+href="/trac/wiki/06Migration"><b>06Migration</b></a>, for full details on changes
+made since 0.5.</p>
 
 <h2>Older Releases</h2>
 

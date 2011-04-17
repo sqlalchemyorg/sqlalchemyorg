@@ -1,0 +1,28 @@
+---
+date: 2011/04/17 12:00:00
+title: SQLAlchemy 0.7 Beta 4 Released
+author: Mike B
+---
+Beta 4 of SQLAlchemy 0.7 has been released.  This is most likely the last
+beta of version 0.7 before final release.   0.7 has been downloaded many hundreds
+of times and a small series of regressions have been fixed; it is used in at
+least a few production installations already.
+
+Of particular note in this release:
+
+* Support for psycopg2, the Postgresql driver, on Python 3
+* The C extensions now build by default for the Python 2 platform.
+* Support for Python 3 builds using plain Python Distutils, or Distribute.
+* Full test success for Pypy, Python 3.2
+* Lots of bugfixes and revised documentation, including the new 
+  `Revised index page </docs/07/>`_.
+
+0.7beta4 owes a lot to the sprinters at this year's Pycon; a subsequent blog post
+detailing the sprints for this year is coming soon.
+
+The SQLAlchemy 0.7 series represents a great leap forward in functionality 
+and performance - the upgrade path starts by reviewing the 
+`07Migration </trac/wiki/07Migration>`_ document.
+
+Changes can be reviewed at `CHANGES </changelog/CHANGES_0_7b4>`_; download
+SQLAlchemy 0.7beta4 on the `download page </download.html>`_.
