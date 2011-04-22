@@ -1,0 +1,30 @@
+---
+date: 2011/04/21 12:00:00
+title: Pycon 2011 Sprint Wrapup
+author: Mike B
+---
+Thanks to all who participated in this year's sprints at Pycon 2011.   
+The releases of 0.6.7 and 0.7b4 owe a lot to what the group got done, 
+including Pypy test coverage, unit test improvements, dialect
+fixes, lots of documentation tweaks and edits, some impressive 
+ORM fixes, and other features.   The sprints have also fostered
+an ongoing discussion on how we can keep the mailing lists diverse
+and increase the rate of communication - some website changes have
+already been made, including this blog, and more are in the works.
+
+If I left a name out, please let me know !
+
+* Brad Allen
+* Lukas Blakk
+* Tavvi Burns
+* Diana Clarke
+* Alex Gaynor
+* Denise Govindarajan
+* Toby Ho
+* Phil Jenvey
+* Jason Kirtland
+* Joel Mohler 
+* Jim Phares
+* Mark Sharp 
+* Michael Trier - co organizer
+
