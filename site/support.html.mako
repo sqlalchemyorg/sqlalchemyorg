@@ -8,6 +8,14 @@ Support - SQLAlchemy
 
 <h1>Get Support</h1>
 
+<ul>
+    <li><a href="#before">Before Requesting Support</a></li>
+    <li><a href="#mailinglist">Mailing List</a></li>
+    <li><a href="#irc">IRC Channel</a></li>
+    <li><a href="#stackoverflow">Stack Overflow</a></li>
+</ul>
+
+<a name="before"></a>
 <p>Before requesting support, please try to make use of the available online resources, where
 the answers to a large number of questions can already be found.
 The most important is the <a href="/docs">documentation</a>.   A great majority of questions
@@ -25,6 +33,7 @@ years.  An initial investment in careful study of the documentation is well wort
 the usage recipes at <a href="/trac/wiki/UsageRecipes">Theatrum Chemicum</a>, and <a
 href="http://stackoverflow.com/questions/tagged/sqlalchemy">Stack Overflow</a>.
 
+<a name="mailinglist"></a>
 <h2>Mailing List</h2>
 
 <p>Ready to post on the mailing list ?   This is the primary place for interactive support.
@@ -70,6 +79,7 @@ previous lists is available at <a
 href="http://dir.gmane.org/gmane.comp.python.sqlalchemy.user">Gmane</a>.
 </p>
 
+<a name="irc"></a>
 <h2>IRC Channel</h2>
 
 <p>Another support resource is the IRC channel.   In this forum, users of all skill levels
@@ -80,11 +90,11 @@ put some effort into understanding their problem ahead of time will tend to get 
 <p>Core developers are sometimes present on the channel, but please do not single them out for individual
 assistance!  There are usually about 80-100 members on at any given time - many of which can likely
 help with your issue.   If your issue is genuinely more intricate and requiring of more skillful help than 
-is currently available on the IRC channel, that's when it's time to post on the mailing list.</p>
+is currently available on the IRC channel, that's when it's time to post on the <a href="#mailinglist">mailing list</a>.</p>
 
 <p>The IRC channel is on the <a href="http://www.freenode.net">Freenode</a> network as <code>#sqlalchemy</code>.</p>
 
-
+<a name="stackoverflow"></a>
 <h2>Stack Overflow</h2>
 
 <p><a href="http://www.stackoverflow.com">Stack Overflow</a> is a great resource for developer help 

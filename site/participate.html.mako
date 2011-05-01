@@ -8,13 +8,25 @@ Participate - SQLAlchemy
 
 <h1>Participate</h1>
 
+<ul>
+    <li><a href="#status">Project Status</a></li>
+    <li><a href="#trac">Trac Access</a></li>
+    <li><a href="#bugs">Reporting Bugs</a></li>
+    <li><a href="#assistance">User Assistance</a></li>
+    <li><a href="#publicizing">Publicizing SQLAlchemy</a></li>
+</ul>
+<a name="status"></a>
 <h2>Project Status</h2>
 <p>A key to participation is being tuned in to the project's current status.   The current released version
     of SQLAlchemy is always at the top of the homepage on the right hand side.  Usually there are two 
-    branches released at a time, such as 0.6 and 0.7.  The more recent branch may or may not still be in 
-    "beta" mode, which means it may have further API or behavioral changes made before a final release.
-</p>
-<p>The overall status of development can also be gleaned by viewing the <a href="trac/roadmap">Roadmap</a> in Trac.  We try to
+    <strong>branches</strong> released at a time, such as "0.6" and "0.7".   The higher number, i.e. "0.7",
+    is the "default" branch, and "0.6" is the "maintenance" branch.  The movement to a new pair of 
+    major branches spans around 12-18 months.  Releases within each branch are between one and two months
+    apart.  At some point there will be a 1.0 release.  But our
+    approach of moving slowly and steadily has so far been very beneficial to the project, allowing 
+    great strides in architecture and usage before a larger pool of new users is taken on.</p>
+
+<p>The overall status of development can be gleaned by viewing the <a href="trac/roadmap">Roadmap</a> in Trac.  We try to
     assign all bugs and new features to a specific version.   A specific number, like "0.6.8", means we'd like
     to get the ticket completed as of that version (though this is not always guaranteed).
     An "open ended" number like "0.7.xx" means the ticket is
@@ -30,6 +42,7 @@ Participate - SQLAlchemy
     more in-depth posts can also be found at <a href="http://techspot.zzzeek.org/category/sqlalchemy/">techspot.zzzeek.org</a>.
 </p>
 
+<a name="trac"></a>
 <h2>Trac Access</h2>
 <p>SQLAlchemy uses Trac for bug reporting and issue tracking, Wiki pages, and source browsing.
 Anonymous users can post tickets and edit some wiki pages using a "guest" login, by logging 
@@ -37,24 +50,25 @@ in with the username "guest" password "guest".
 We may someday upgrade Trac to allow new user registration directly.
 </p>
 
-<a name="bugs">
+<a name="bugs"></a>
 <h2>Reporting Bugs</h2>
 
 <p>Bugs are reported using Trac at the <a href="/trac/newticket">new ticket</a> link 
 (note you have to be logged in to use it).</p>
 
-<p>Bugs are generally reported only against the two most recent major versions.   For example,
-            if SQLAlchemy is under development for 0.7 and the current released version is 0.6, 0.6 is the 
-            bugfix branch and 0.7 is the upcoming branch.   Bug reports regarding library behavior
-            as well as documentation issues are reported in nearly equal measure.</p>
+<p>Bugs are generally reported only against the two most recent release branches, which comprise
+    the <strong>default</strong> branch and the <strong>maintenance</strong> branch.   Branches
+    prior to these are rarely modified.   Bug reports regarding library behavior
+    as well as documentation issues are reported in nearly equal measure.</p>
 
 <p>When reporting a behavioral bug we ask that you:</p>
 
     <ul>
-        <li>Ensure that the issue is still present on the most recent released version of SQLAlchemy, and preferably
+        <li>Ensure that the issue is still present on the most recent released version of SQLAlchemy within either
+            the default branch or the maintance branch, and preferably
             against the latest development tip of the series in use.   SQLAlchemy provides easy download links of the 
             most recent development versions on the <a href="/download.html">download page.</a></li>
-        <li>Check that the issue doesn't already exist.  This can be a little tricky as Trac's search interface
+        <li>Check that the issue doesn't already exist in Trac.  This can be a little tricky as Trac's search interface
             isn't the best, but we ask that you give it a try.</li>
         <li>Only report issues that you're pretty sure is a bug.   It is perfectly OK to report a usage issue on the
             mailing list that may or may not be a bug - we'll escalate bugs to the bug tracker if it really
@@ -77,6 +91,7 @@ We may someday upgrade Trac to allow new user registration directly.
     </ul>
 <p>Ready?  Let's <a href="/trac/newticket">report a bug!</a></p>
 
+<a name="assistance"></a>
 <h2>User Assistance</h2>
 <p>SQLAlchemy always needs people to help answer questions, particularly from new users.</p>
 
@@ -88,6 +103,15 @@ Regular users can also volunteer to help with approval of new posters.
 <p>The IRC channel <code>#sqlalchemy</code> on Freenode is similarly busy most days. 
 There's a core set of "regulars" who are pretty friendly. </p>
 
+<p>SQLAlchemy places great emphasis on polite, thoughtful, and constructive communication between users and developers.
+    Rudeness, personal insults, or overly brusque answers are never appropriate, even for users with unreasonable requests. 
+    We also try to ensure that
+    no message on the mailing list goes unanswered, even if the answer is simply to politely direct the user towards
+    the appropriate section of documentation.   The core SQLAlchemy developers would like to encourage all users to help
+    with this task - if you see a very basic question sitting on the list for a few days, that's us hoping you'll respond
+    to it !  You have our permission :).</p>
+
+<a name="publicizing"></a>
 <h2>Publicizing SQLAlchemy</h2>
 
 <p>We love for people to spread the word about SQLAlchemy.    Some common venues:</p>
@@ -97,6 +121,11 @@ There's a core set of "regulars" who are pretty friendly. </p>
             - if the tweet contains "sqlalchemy" or a link to the site, it will show up under searches for the term.
             Expect SQLAlchemy developers to respond to provocative tweets!
         </li>
+        <li>The <a href="http://localhost:8080/trac/wiki/SAApps">"Who's Using SQLAlchemy?"</a> page - 
+            this page can be edited using "guest".   Please contact 
+            us if you think your organization belongs on the homepage sidebar!   We also would like to produce a
+            set of "case studies" for SQLAlchemy.  If you are able to provide somewhat detailed information for 
+            this section please contact us !</li>
         <li>Blog Posts - Users often write short tutorials or blog posts describing how to achieve something
             with SQLAlchemy.    It all becomes part of the larger collection of knowledge so share freely!
         </li>
