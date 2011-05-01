@@ -1,8 +1,8 @@
 <%page args="section='home'"/>
 <%
-    def section_print(sec):
+    def active(sec):
         if sec==section:
-            return 'class="active"'
+            return ' class="active"'
         else:
             return ''
 %>
@@ -14,14 +14,30 @@
 
 <div id="nav">
     <ul>
-        <li><a ${ section_print('home') } href="/">home</a></li>
-        <li><a ${ section_print('features') } href="/features.html">features</a></li>
-        <li><a ${ section_print('blog') } href="/blog/">blog</a></li>
-        <li><a ${ section_print('docs') } href="/docs/">documentation</a></li>
-        <li><a ${ section_print('wiki') } href="/trac/">wiki</a></li>
-        <li><a ${ section_print('community') } href="/community.html">community</a></li>
-        <li><a ${ section_print('development') } href="/development.html">development</a></li>
-        <li><a ${ section_print('download') } href="/download.html">download</a></li>
+        <li${active('home')}><a href="/">home</a></li>
+        <li${active('features')}><a href="/features.html">features</a></li>
+        <li${active('blog')}><a href="/blog/">blog</a></li>
+        <li${active('docs')}><a href="/docs/">documentation</a>
+            <ul>
+                <li><a href="/docs/07/">Version 0.7</a></li>
+                <li><a href="/docs/06/">Version 0.6</a></li>
+                <li><a href="/docs/05/">Version 0.5</a></li>
+            </ul>
+        </li>
+        <li${active('wiki')}><a href="/trac/">wiki</a>
+            <ul>
+                <li><a href="/trac/wiki/UsageRecipes">Theatrum Chemicum</a></li>
+                <li><a href="/trac/wiki/FAQ">FAQ</a></li>
+            </ul>
+        </li>
+        <li${active('involved')}><a href="/support.html">get involved</a>
+            <ul>
+                <li><a href="/support.html">get support</a></li>
+                <li><a href="/participate.html">participate</a></li>
+                <li><a href="/develop.html">develop</a></li>
+            </ul>
+        </li>
+        <li${active('download')}><a href="/download.html">download</a></li>
     </ul>
 
 </div>

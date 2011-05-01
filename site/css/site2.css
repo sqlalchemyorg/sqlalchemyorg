@@ -94,41 +94,66 @@ a:hover {
 #nav {
   padding: 0px 15px 0px 15px;
   background: #787 url(../img/navbg1.gif) repeat-x top left;
-  }
+  height:27px;
+}
+
 #nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  }
+}
+
 #nav li {
   float: left;
   margin: 0;
   padding: 0;
-  }
+}
+
 #nav li a {
   float: left;
   margin: 0;
-  padding: 4px 9px;
+  padding: 5px 12px;
   font-family: arial, verdana, sans-serif;
   font-size: 100%;
   font-weight: normal;
   text-decoration: none;
   color: #f0f0f0;
-  border-bottom: 1px solid #787;
-  border-right: 1px solid #787; 
-  }
-#nav li a:hover {
+}
+
+#nav li:hover, #nav li.active {
   color: #fff;
-  border-bottom: 1px solid #222;
-  border-right: 1px solid #222;
   background-color: #333;
-  }
-#nav li a.active {
+}
+
+#nav ul li ul {
+  display:none;
+  position:absolute;
+  top:92px;
+  min-width:140px;
+}
+
+#nav ul li ul li {
+  height:26px;
+  width:100%;
+  background-color: #787;
+  clear:left;
+  float:left;
+}
+
+#nav ul li ul li a {
+  width:100%; 
+}
+
+#nav ul li:hover ul {
+  display:block;
+}
+
+#nav ul li ul li:hover {
   color: #fff;
-  border-bottom: 1px solid #222;
-  border-right: 1px solid #222;
   background-color: #333;
-  }
+}
+
+
 
 /* content styles
 ---------------------------------------------------------- */
@@ -180,6 +205,26 @@ strong {
   font-weight: bold;
   }
 
+/* lists
+---------------------------------------------------------- */
+
+#content ul, #content ol, #content dl {
+  margin: 1em 0 1em 0;
+  padding: 0;
+  }
+#content ul, #content ol {
+  margin-left: 15px;
+  }
+#content ol {
+  padding-left: 20px;
+  }
+#content ul {
+  list-style: circle;
+  }
+#content ul li {
+  padding: 0 0 4px 0;
+  line-height: 1.3em;
+  }
 
 /* blog
 ---------------------------------------------------------- */
@@ -247,6 +292,21 @@ strong {
     font-size:13px;
 }
 
+/* get involved
+---------------------------------------------------------- */
+div.involved #content ul.nav {
+  padding:0;
+  margin:10px 0px 25px 0px;
+}
+
+div.involved #content ul.nav li {
+  display:inline;
+}
+
+div.involved #content div.pagecontrol {
+  text-align:right;
+}
+
 /* table styles
 ---------------------------------------------------------- */
 
@@ -297,26 +357,6 @@ strong {
 }    
 
 
-/* lists
----------------------------------------------------------- */
-
-#content ul, #content ol, #content dl {
-  margin: 1em 0 1em 0;
-  padding: 0;
-  }
-#content ul, #content ol {
-  margin-left: 15px;
-  }
-#content ol {
-  padding-left: 20px;
-  }
-#content ul {
-  list-style: circle;
-  }
-#content ul li {
-  padding: 0 0 4px 0;
-  line-height: 1.3em;
-  }
 
 /* sidebar styles
 ---------------------------------------------------------- */

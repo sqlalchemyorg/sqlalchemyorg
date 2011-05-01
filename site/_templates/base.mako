@@ -36,7 +36,7 @@ if not current_section and in_docs:
 
 <%include file="header.mako" args="section=current_section" />
 
-<div id="main-body">
+<div id="main-body" class="${current_section}">
 
 % if not in_docs:
 
