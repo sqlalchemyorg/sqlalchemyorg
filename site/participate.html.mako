@@ -135,5 +135,5 @@ There's a core set of "regulars" who are pretty friendly. </p>
     </ul>
 
 <div class="pagecontrol">
-<strong>Next ... <a href="/participate.html">Develop</a></strong>
+<strong>Next ... <a href="/develop.html">Develop</a></strong>
 </div>
