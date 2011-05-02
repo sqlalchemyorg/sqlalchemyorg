@@ -36,6 +36,14 @@ def write_pygments_css(style, formatter, location="/css"):
 
 from mako.filters import html_entities_unescape
 
+def highlight_site(code, lang="python"):
+    style = bf.config.filters.syntax_highlight.style
+    css_class = "pygments_"+style
+    formatter = formatters.HtmlFormatter(
+            linenos=False, cssclass=css_class, style=style)
+    write_pygments_css(style,formatter)
+    return highlight_code(code,lang,formatter)
+
 def run(src):
 
     style = bf.config.filters.syntax_highlight.style

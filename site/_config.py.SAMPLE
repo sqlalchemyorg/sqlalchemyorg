@@ -19,6 +19,9 @@ docs.sphinx_docs = [
     (dev_root + '/sqlalchemy/doc/build/output/site', '07')
 ]
 
+filters.syntax_highlight.style= "manni"
+filters.syntax_highlight.enabled = True
+
 site.url = "http://www.sqlalchemy.org"
 
 # blog

@@ -307,6 +307,21 @@ div.involved #content div.pagecontrol {
   text-align:right;
 }
 
+/* code highlight
+---------------------------------------------------- */
+
+pre {
+    margin: auto;
+    padding: 10px;
+}
+
+div.pygments_manni {
+    background-color: #EFEFEF;
+    border: 1px solid;
+    overflow: auto;
+    margin-bottom:10px;
+}
+
 /* table styles
 ---------------------------------------------------------- */
 

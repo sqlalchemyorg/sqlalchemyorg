@@ -51,7 +51,7 @@ made since 0.5.</p>
 <a href="http://hg.sqlalchemy.org/sqlalchemy/archive/rel_0_6.tar.bz2">bz2</a>
 </p>
 
-<p>For further details on Mercurial repository access please see <a href="development.html">development</a>.</p>
+<p>For further details on Mercurial repository access please see <a href="/develop.html">development</a>.</p>
 
 
 <h2>License</h2>

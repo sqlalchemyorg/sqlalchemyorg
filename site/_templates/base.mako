@@ -26,6 +26,7 @@ if not current_section and in_docs:
     <%block name="head">
     <link rel="stylesheet" type="text/css" media="all" href="/css/site2.css"></link>
     <link rel="stylesheet" type="text/css" media="print" href="/css/print.css"></link>
+    <link rel="stylesheet" type="text/css" media="all" href="/css/pygments_manni.css"></link>
     </%block>
 
 </head>
