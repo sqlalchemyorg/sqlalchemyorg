@@ -14,9 +14,19 @@ Features - SQLAlchemy
     <dt>Supported Platforms</dt>
     <dd>
         <p>SQLAlchemy supports Python 2.4 and above, including Python 3.x.
-        Jython is also supported, using zxjdbc-enabled dialects. SQLAlchemy is
-        also known to work with PyPy and some success using IronPython has
-        been reported.
+        Jython is also supported, using zxjdbc-enabled dialects as well as 
+        Pypy as of version 0.7.
+    </dd>
+     <dt>Supported Databases</dt>
+     <dd>
+        <p>SQLAlchemy includes dialects for SQLite, Postgresql, MySQL, Oracle,
+        MS-SQL, Firebird, Sybase and others, most of which support multiple
+        DBAPIs; IBM has also released a DB2 dialect. The corresponding <a
+        href="http://www.python.org/dev/peps/pep-0249/">DB-API 2.0</a>
+        implementation (or sometimes one of several available) is required to
+        use each particular database. <a
+        href="/docs/core/engines.html#supported-databases">View Current DBAPI
+        Support</a></p>
     </dd>
     <dt>Mature, High Performing Architecture</dt>
     <dd>
@@ -31,16 +41,27 @@ Features - SQLAlchemy
        subselects, and other optimizations allow SQLAlchemy's ORM to emit
        fewer and more efficient queries than in any previous version. </p>
      </dd>
-     <dt>Supported Databases</dt>
-     <dd>
-        <p>SQLAlchemy includes dialects for SQLite, Postgresql, MySQL, Oracle,
-        MS-SQL, Firebird, Sybase and others, most of which support multiple
-        DBAPIs; IBM has also released a DB2 dialect. The corresponding <a
-        href="http://www.python.org/dev/peps/pep-0249/">DB-API 2.0</a>
-        implementation (or sometimes one of several available) is required to
-        use each particular database. <a
-        href="/docs/core/engines.html#supported-databases">View Current DBAPI
-        Support</a></p>
+    <dt>DBA Approved</dt>
+    <dd>
+            <p>Built to conform to what DBAs demand, including the ability to
+            swap out generated SQL with hand-optimized statements, full usage
+            of bind parameters for all literal values, fully transactionalized
+            and batched database writes using the Unit of Work pattern. All
+            object-relational patterns are designed around the usage of proper
+            referential integrity, and foreign keys are an integral part of
+            its usage.</p>
+    </dd>
+
+    <dt>Non-Opinionated</dt>
+    <dd>
+           <p>SQLAlchemy places the highest value on not getting in the way of
+           database and application architecture. Unlike many tools, it
+           <b>never</b> "generates" schemas (not to be confused with issuing
+           user-defined <a
+           href="http://en.wikipedia.org/wiki/Data_Definition_Language">DDL</a>,
+           in which it excels) or relies on naming conventions of any kind.
+           SQLAlchemy supports the widest variety of database and
+           architectural designs as is reasonably possible.
     </dd>
     <dt>Unit Of Work</dt>
 
@@ -71,6 +92,17 @@ Features - SQLAlchemy
     specific to any number of vendor database implementations (such as
     PostGres or Oracle), as determined by the combination of a "dialect" and
     "compiler" provided by the implementation. </p>
+    </dd>
+
+    <dt>Modular and Extensible</dt>
+    <dd>
+            <p>Different parts of SQLAlchemy can be used independently of the
+            rest. Elements like connection pooling, SQL statement compilation
+            and transactional services can be used independently of each
+            other, and can also be extended through various plugin points. The
+            Object Relational Mapper (ORM) is a separate package which builds
+            on top of these, and itself has several extension systems for
+            modifying behavior at various levels.</p>
     </dd>
 
     <dt>Separate mapping and class design</dt>

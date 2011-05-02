@@ -47,7 +47,9 @@ if not current_section and in_docs:
     </div>
     </div> <!-- end #content-inner, #content -->
 
-    <%include file="sidebar.mako" args="section=current_section" />
+    <%block name="sidebar">
+        <%include file="sidebar.mako" args="section=current_section" />
+    </%block>
 
 % else:
 

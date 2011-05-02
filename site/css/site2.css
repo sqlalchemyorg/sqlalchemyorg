@@ -220,6 +220,7 @@ strong {
   }
 #content ul {
   list-style: circle;
+  margin-top:0;
   }
 #content ul li {
   padding: 0 0 4px 0;
