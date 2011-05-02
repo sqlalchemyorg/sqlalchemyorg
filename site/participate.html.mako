@@ -121,7 +121,7 @@ There's a core set of "regulars" who are pretty friendly. </p>
             - if the tweet contains "sqlalchemy" or a link to the site, it will show up under searches for the term.
             Expect SQLAlchemy developers to respond to provocative tweets!
         </li>
-        <li>The <a href="http://localhost:8080/trac/wiki/SAApps">"Who's Using SQLAlchemy?"</a> page - 
+        <li>The <a href="/trac/wiki/SAApps">"Who's Using SQLAlchemy?"</a> page - 
             this page can be edited using "guest".   Please contact 
             us if you think your organization belongs on the homepage sidebar!   We also would like to produce a
             set of "case studies" for SQLAlchemy.  If you are able to provide somewhat detailed information for 
