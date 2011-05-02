@@ -34,9 +34,9 @@
         </li>
         <li${active('involved')}><a href="/support.html">get involved</a>
             <ul>
-                <li><a href="/support.html">get support</a></li>
-                <li><a href="/participate.html">participate</a></li>
-                <li><a href="/develop.html">develop</a></li>
+                <li><a href="/support.html">Get Support</a></li>
+                <li><a href="/participate.html">Participate</a></li>
+                <li><a href="/develop.html">Develop</a></li>
             </ul>
         </li>
         <li${active('download')}><a href="/download.html">download</a></li>
