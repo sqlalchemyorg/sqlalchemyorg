@@ -6,7 +6,7 @@ section='involved'
 Get Involved - SQLAlchemy
 </%block>
 
-<h1>Get Involved</h1>
+<h1>Community Guide</h1>
 
 <p>A guide to getting involved with SQLAlchemy.</p>
 <ul class="nav">

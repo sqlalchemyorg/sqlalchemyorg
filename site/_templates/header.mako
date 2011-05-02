@@ -24,15 +24,15 @@
                 <li><a href="/docs/05/">Version 0.5</a></li>
             </ul>
         </li>
-        <li${active('wiki')}><a href="/trac/">trac</a>
+        <li${active('wiki')}><a href="/trac/">wiki</a>
             <ul>
-                <li><a href="/trac/wiki/UsageRecipes">Theatrum Chemicum</a></li>
+                <li><a href="/trac/wiki/UsageRecipes">Recipes</a></li>
                 <li><a href="/trac/wiki/FAQ">FAQ</a></li>
                 <li><a href="/trac/roadmap">Roadmap</a></li>
                 <li><a href="/trac/query?status=assigned&status=new&status=reopened&group=milestone&max=150&col=id&col=summary&col=status&col=type&col=priority&col=milestone&col=component&order=priority">Tickets by Milestone</a></li>
             </ul>
         </li>
-        <li${active('involved')}><a href="/support.html">get involved</a>
+        <li${active('involved')}><a href="/support.html">community</a>
             <ul>
                 <li><a href="/support.html">Get Support</a></li>
                 <li><a href="/participate.html">Participate</a></li>
