@@ -17,13 +17,11 @@
 
 <form py:match="div[@id='content' and @class='ticket']/form" py:attrs="select('@*')">
   <py:if test="req.environ['PATH_INFO'] == '/newticket' and (not 'preview' in req.args)">
-  <div style="color:red;">
-  <h1>Guideline for tickets:</h1>
+ <h1 style="color:red">Please read the guidelines at 
+    <a href="/participate.html#bugs">Reporting Bugs</a>
+    before posting a ticket.
+  </h1>
 
-    <ul style="font-size:1.2em; font-weight:bold">
-    <li>Please attach a single-file, no-dependencies-needed test script illustrating the minimal steps to reproduce the problem!  No remote links or project checking out please, thanks !</li>
-    <li>Please avoid long winded explanations of the problem, we do not have time to read them !  Just the code, please, thank you !</li>
-    </ul>
     </div>
     </py:if>
   ${select('*')} 
