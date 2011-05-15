@@ -373,7 +373,22 @@ div.pygments_manni {
     margin-left:0px;
 }    
 
+/* in production styles
+---------------------------------------------------------- */
 
+#content dl#inproduction  {
+    padding-top:10px;
+    border-top:1px solid #CCCCCC;
+}
+
+#content dl#inproduction dt {
+  padding-top:10px;
+}
+#content dl#inproduction dd {
+    border-bottom:1px solid #CCCCCC;
+    margin:0px 0px 10px 2px;
+    padding:0px 0px 10px 2px;
+}
 
 /* sidebar styles
 ---------------------------------------------------------- */

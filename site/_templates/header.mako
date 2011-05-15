@@ -15,7 +15,13 @@
 <div id="nav">
     <ul>
         <li${active('home')}><a href="/">home</a></li>
-        <li${active('features')}><a href="/features.html">features</a></li>
+        <li${active('features')}><a href="/features.html">features</a>
+            <ul>
+                <li><a href="/features.html">Feature Overview</a></li>
+                <li><a href="/organizations.html">Organizations</a></li>
+                <li><a href="/quotes.html">Testimonials</a></li>
+            </ul>
+        </li>
         <li${active('blog')}><a href="/blog/">blog</a></li>
         <li${active('docs')}><a href="/docs/">documentation</a>
             <ul>

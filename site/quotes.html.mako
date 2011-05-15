@@ -1,6 +1,6 @@
 <%inherit file="/base.mako"/>
 <%!
-    section = 'quotes'
+    section = 'features'
 %>
 
 <%block name="head_title">

@@ -40,22 +40,23 @@ and SQL! </p>
     <dd>
         <p>SQLAlchemy is used by organizations such as:
         <ul>
-            <li><a href="http://reddit.com">reddit</a></li>
-            <li><a href="http://www.openstack.org/">The OpenStack Project</a></li>
-            <li><a href="http://www.lolapps.com">lolapps</a></li>
-            <li><a href="http://www.freshbooks.com/">Freshbooks</a></li>
-            <li><a href="http://fedoraproject.org/wiki/Infrastructure/Services">Fedora Project</a></li>
-            <li><a href="http://www.creatureshop.com/">Jim Henson's Creature Shop</a></li>
-            <li><a href="http://lexmachina.stanford.edu/">Lexmachina at Stanford University</a></li>
+            <li><a href="/organizations.html#reddit">reddit</a></li>
+            <li><a href="/organizations.html#openstack">The OpenStack Project</a></li>
+            <li><a href="/organizations.html#lolapps">lolapps</a></li>
+            <li><a href="/organizations.html#freshbooks">Freshbooks</a></li>
+            <li><a href="/organizations.html#fedoraproject">Fedora Project</a></li>
+            <li><a href="/organizations.html#creatureshop">Jim Henson's Creature Shop</a></li>
+            <li><a href="/organizations.html#lexmachina">Lexmachina</a></li>
         </ul>
         </p>
-        <a href="/trac/wiki/SAApps">more...</a>
+        <a href="/organizations.html">more...</a>
     </dd>
     <dt>Learn More</dt>
     <dd>
         <ul>
-            <li><a href="/quotes.html">Testimonials</a></li>
             <li><a href="/features.html">Overview of Key Features</a></li>
+            <li><a href="/organizations.html">Organizations Using SQLAlchemy</a></li>
+            <li><a href="/quotes.html">Testimonials</a></li>
             <li><a href="/docs/07/">Version 0.7 Documentation</a></li>
             <li><a href="/docs/06/">Version 0.6 Documentation</a></li>
             <li><a href="/trac/wiki/UsageRecipes">Recipes</a></li>
