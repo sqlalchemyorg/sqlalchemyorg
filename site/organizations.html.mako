@@ -92,12 +92,24 @@ Organizations - SQLAlchemy
 </%self:user>
 
 <%self:user 
+        name="SurveyMonkey", 
+        logo="surveymonkey.png"
+        url="http://www.surveymonkey.com/"
+        anchor="surveymonkey">
+        <a href="http://www.surveymonkey.com/">SurveyMonkey</a>,
+        the leader in online surveys, is building its entire stack in Python.
+        SurveyMonkey is being built using Pylons/Pyramid, Jinja2 templating and
+        a backend data tier built entirely upon SQLAlchemy.
+</%self:user>
+
+<%self:user 
         name="FreshBooks", 
         logo="freshbooks.png"
         url="http://www.freshbooks.com/"
         anchor="freshbooks">
         <a href="http://www.freshbooks.com/">Freshbooks</a>
-        delivers fast and simple invoicing and time tracking services. Built on Pylons and SQLAlchemy. 
+        delivers fast and simple invoicing and time tracking services.  The data tier
+        is built entirely upon SQLAlchemy.
 </%self:user>
 
 <%self:user 
