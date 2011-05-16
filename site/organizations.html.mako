@@ -122,7 +122,7 @@ Organizations - SQLAlchemy
 
 <%self:user
         name="Naumen"
-        logo="Naumen.gif"
+        logo="naumen.gif"
         url="http://naumen.com/"
         anchor="naumen">
         <a href="http://naumen.com/">Naumen</a> 
