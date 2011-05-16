@@ -120,6 +120,17 @@ Organizations - SQLAlchemy
         faster because SQLAlchemy saves us so much time!"
 </%self:user>
 
+<%self:user
+        name="Naumen"
+        logo="Naumen.gif"
+        url="http://naumen.com/"
+        anchor="naumen">
+        <a href="http://naumen.com/">Naumen</a> 
+        is a leading Russian developer of software solutions for businesses and public authorities.
+        Areas of expertise include enterprise document management, call- and contact-centers, e-learning, CRM, Help Desk systems. 
+        SQLAlchemy is used extensively within the company's Call Center solution. 
+</%self:user>
+
 <%self:user 
         name="FanFeedr", 
         logo="fanfeedr.png"
