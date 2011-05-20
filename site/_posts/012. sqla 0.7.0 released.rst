@@ -4,7 +4,7 @@ title: SQLAlchemy 0.7.0 Released
 author: Mike B
 ---
 The SQLAlchemy project is pleased to announce version **0.7.0** of SQLAlchemy,
-the first production release within the 0.7.0 series.   0.7 represents the past
+the first production release within the 0.7 series.   0.7 represents the past
 year's worth of development, streamlining APIs, adding new features, solidifying
 the core and improving performance.   Key highlights of version 0.7 include:
 
@@ -12,14 +12,14 @@ the core and improving performance.   Key highlights of version 0.7 include:
   extending SQLAlchemy, both within the core and the ORM.   The previous system
   of ad-hoc "extension" and "listener" classes is replaced by a single 
   function ``event.listen()`` which can apply listeners to a wide variety of 
-  hooks.   `Intro to events </docs/07/core/event.html>`_.
+  hooks.   Read more at `Intro to events </docs/07/core/event.html>`_.
 * A new extension allows easy creation of "hybrid" attributes, attributes that
   provide Python expression behavior at the instance level and SQL expression
-  behavior at the declarative (class) level.  `Hybrid Attributes </docs/07/orm/extensions/hybrid.html>`_.
+  behavior at the declarative (class) level.  Read more at `Hybrid Attributes </docs/07/orm/extensions/hybrid.html>`_.
 * A new system of building so-called "mutable" attributes, column-mapped values
   which can change their value in-place.   Detection of changes now uses
   change events and solves the previous issue of full unit-of-work scans
-  for such attributes.  `Mutable Scalars </docs/07/orm/extensions/mutable.html>`_.
+  for such attributes.  Read more at `Mutable Scalars </docs/07/orm/extensions/mutable.html>`_.
 * Major speed improvements, including batching of INSERT statements when possible, 
   greatly reduced codepaths for many key operations.  Check out the RunSnakeRun diagrams
   at `A Tale of Three Profiles <http://techspot.zzzeek.org/2010/12/12/a-tale-of-three-profiles/>`_.
