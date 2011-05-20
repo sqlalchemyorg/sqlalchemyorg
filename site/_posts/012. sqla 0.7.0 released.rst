@@ -1,0 +1,38 @@
+---
+date: 2011/05/20 12:00:00
+title: SQLAlchemy 0.7.0 Released
+author: Mike B
+---
+The SQLAlchemy project is pleased to announce version **0.7.0** of SQLAlchemy,
+the first production release within the 0.7.0 series.   0.7 represents the past
+year's worth of development, streamlining APIs, adding new features, solidifying
+the core and improving performance.   Key highlights of version 0.7 include:
+
+* New event system applies a consistent and flexible approach to the task of 
+  extending SQLAlchemy, both within the core and the ORM.   The previous system
+  of ad-hoc "extension" and "listener" classes is replaced by a single 
+  function ``event.listen()`` which can apply listeners to a wide variety of 
+  hooks.   `Intro to events </docs/07/core/event.html>`_.
+* A new extension allows easy creation of "hybrid" attributes, attributes that
+  provide Python expression behavior at the instance level and SQL expression
+  behavior at the declarative (class) level.  `Hybrid Attributes </docs/07/orm/extensions/hybrid.html>`_.
+* A new system of building so-called "mutable" attributes, column-mapped values
+  which can change their value in-place.   Detection of changes now uses
+  change events and solves the previous issue of full unit-of-work scans
+  for such attributes.  `Mutable Scalars </docs/07/orm/extensions/mutable.html>`_.
+* Major speed improvements, including batching of INSERT statements when possible, 
+  greatly reduced codepaths for many key operations.  Check out the RunSnakeRun diagrams
+  at `A Tale of Three Profiles <http://techspot.zzzeek.org/2010/12/12/a-tale-of-three-profiles/>`_.
+* C extensions, battle tested after a year of use in 0.6, now build by default 
+  on install for CPython platforms.
+* Pypy is fully supported.
+* Dialect support for Psycopg2 on Python 3, Drizzle, pymysql added.
+* Documentation and example updates, including a `modernized, declarative version
+  of polymorphic associations </docs/07/orm/examples.html#examples-generic-associations>`_.
+* Many, many core and ORM behavioral improvements.   See the almost-full list at
+  `07Migration </trac/wiki/07Migration>`_.
+
+Thanks to everyone who's contributed via code, bug reports, infrastructure support,
+production testing.    SQLAlchemy 0.7.0 is available on the `download page </download.html>`_.
+ 
+

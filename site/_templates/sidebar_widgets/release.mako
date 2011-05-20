@@ -1,12 +1,12 @@
 <h3>Current Release</h3>
 
-<a href="/download.html"><b>0.7b4</b></a>
+<a href="/download.html"><b>0.7.0</b></a>
 <br/>
 <a href="/trac/wiki/07Migration">What's New?</a> | 
-<a href="/changelog/CHANGES_0_7b4">Changelog</a> | 
+<a href="/changelog/CHANGES_0_7_0">Changelog</a> | 
 <a href="/docs/07/">docs</a>
 <br/>
-Released April 17, 2011
+Released May 20, 2011
 
 <br/><br/>
 

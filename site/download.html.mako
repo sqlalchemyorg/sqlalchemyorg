@@ -10,9 +10,9 @@ Download - SQLAlchemy
 
 <h2>Version 0.7 (beta)</h2>
 
-<p>Latest 0.7 Release: <b>0.7b4</b> <a
-href="http://prdownloads.sourceforge.net/sqlalchemy/SQLAlchemy-0.7b4.tar.gz?download"><b>(0.7b4
-via Sourceforge)</b></a>  <a href="/changelog/CHANGES_0_7b4"><b>(CHANGES)</b></a></p>
+<p>Latest 0.7 Release: <b>0.7.0</b> <a
+href="http://prdownloads.sourceforge.net/sqlalchemy/SQLAlchemy-0.7.0.tar.gz?download"><b>(0.7.0
+via Sourceforge)</b></a>  <a href="/changelog/CHANGES_0_7.0"><b>(CHANGES)</b></a></p>
 
 <p>Please be sure to review the 0.6 to 0.7 migration guide, found at <a
 href="/trac/wiki/07Migration"><b>07Migration</b></a>, for full details on changes
