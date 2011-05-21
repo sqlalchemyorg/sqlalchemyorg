@@ -82,6 +82,16 @@ Organizations - SQLAlchemy
 </%self:user>
 
 <%self:user 
+        name="Yelp", 
+        logo="yelp.png"
+        url="http://www.yelp.com/"
+        anchor="yelp">
+        <a href="http://www.yelp.com/">Yelp</a>
+        is the fun and easy way to find and talk about great (and not so great) local businesses.
+        Yelp bases a large portion their MySQL data access code upon SQLAlchemy.
+</%self:user>
+
+<%self:user 
         name="LolApps", 
         logo="lolapps.png"
         url="http://www.lolapps.com"
@@ -90,6 +100,7 @@ Organizations - SQLAlchemy
         As presented in the Pycon 2010 talk <a href="http://us.pycon.org/2010/conference/schedule/event/135/">Scaling Python webapps from zero to 50 million users</a>,
         the SQLAlchemy ORM is at the core of their data access strategy.
 </%self:user>
+
 
 <%self:user 
         name="SurveyMonkey", 
