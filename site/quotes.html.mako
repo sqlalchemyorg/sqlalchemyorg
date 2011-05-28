@@ -25,6 +25,11 @@ What People Are Saying - SQLAlchemy
     </blockquote>
 </%def>
 
+<%self:quote link="https://twitter.com/#!/simonyun/status/74182857605652480" author="Simon Yun">
+<p>Then realized I have schema defined in SQLAlchemy. Used it to recreate my schema in PostgreSQL. Booyah. 
+Best ORM I've seen. In any language.</p>
+</%self:quote>
+
 <%self:quote link="https://twitter.com/frostiebot/status/51352369291739136" author="frostiebot / Chris Goodnight">
 <p>#sqlalchemy is seriously the best ORM. No other ORM in any other language even comes close.</p>
 </%self:quote>
