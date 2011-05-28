@@ -58,6 +58,16 @@ Organizations - SQLAlchemy
         "SQLAlchemy powers much of Fedora's Infrastructure. We pretty much worship it :)"
 </%self:user>
 
+<%self:user
+        name="Seagate",
+        logo="seagate.png",
+        url="http://seagate.com",
+        anchor="seagate">
+    <a href="http://seagate.com">Seagate</a> is the famous maker of hard drives
+    and storage devices.   Seagate uses Python with SQLAlchemy for a variety of
+    internal applications.
+</%self:user>
+
 <%self:user 
         name="SourceForge", 
         logo="sourceforge.png"
