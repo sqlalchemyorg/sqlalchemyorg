@@ -25,7 +25,7 @@ What People Are Saying - SQLAlchemy
     </blockquote>
 </%def>
 
-<%self:quote link="https://twitter.com/#!/simonyun/status/74182857605652480" author="Simon Yun">
+<%self:quote link="https://twitter.com/simonyun/status/74182857605652480" author="Simon Yun">
 <p>Then realized I have schema defined in SQLAlchemy. Used it to recreate my schema in PostgreSQL. Booyah. 
 Best ORM I've seen. In any language.</p>
 </%self:quote>
