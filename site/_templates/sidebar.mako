@@ -9,6 +9,10 @@
 </div>
 
 <div class="box">
+    <%include file="/sidebar_widgets/store.mako"/>
+</div>
+
+<div class="box">
     <%include file="/sidebar_widgets/book.mako"/>
 </div>
 
