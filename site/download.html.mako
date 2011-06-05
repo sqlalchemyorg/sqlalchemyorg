@@ -10,12 +10,12 @@ Download - SQLAlchemy
 
 <h2>Version 0.7 (production / stable)</h2>
 
-<p>Latest 0.7 Release: <b>0.7.0</b> <a
-href="http://prdownloads.sourceforge.net/sqlalchemy/SQLAlchemy-0.7.0.tar.gz?download"><b>(0.7.0
+<p>Latest 0.7 Release: <b>0.7.1</b> <a
+href="http://prdownloads.sourceforge.net/sqlalchemy/SQLAlchemy-0.7.1.tar.gz?download"><b>(0.7.1
 via Sourceforge)</b></a> 
-<a href="http://www.python.org/pypi/SQLAlchemy/0.7.0"><b>(0.7.0 via
+<a href="http://www.python.org/pypi/SQLAlchemy/0.7.1"><b>(0.7.1 via
 Cheeseshop)</b></a>
-<a href="/changelog/CHANGES_0_7_0"><b>(CHANGES)</b></a></p>
+<a href="/changelog/CHANGES_0_7_1"><b>(CHANGES)</b></a></p>
 
 <p>Please be sure to review the 0.6 to 0.7 migration guide, found at <a
 href="/trac/wiki/07Migration"><b>07Migration</b></a>, for full details on changes
@@ -23,11 +23,11 @@ made since 0.6.</p>
 
 <h2>Version 0.6 (previous production series)</h2>
 
-<p>Latest 0.6 Release: <b>0.6.7</b> 
-<a href="http://prdownloads.sourceforge.net/sqlalchemy/SQLAlchemy-0.6.7.tar.gz?download"><b>(0.6.7
+<p>Latest 0.6 Release: <b>0.6.8</b> 
+<a href="http://prdownloads.sourceforge.net/sqlalchemy/SQLAlchemy-0.6.8.tar.gz?download"><b>(0.6.8
 via Sourceforge)</b></a> 
-<a href="http://www.python.org/pypi/SQLAlchemy/0.6.7"><b>(0.6.7 via
-Cheeseshop)</b></a> <a href="/changelog/CHANGES_0_6_7"><b>(CHANGES)</b></a></p>
+<a href="http://www.python.org/pypi/SQLAlchemy/0.6.8"><b>(0.6.8 via
+Cheeseshop)</b></a> <a href="/changelog/CHANGES_0_6_8"><b>(CHANGES)</b></a></p>
 
 <p>Please be sure to review the 0.5 to 0.6 migration guide, found at <a
 href="/trac/wiki/06Migration"><b>06Migration</b></a>, for full details on changes
