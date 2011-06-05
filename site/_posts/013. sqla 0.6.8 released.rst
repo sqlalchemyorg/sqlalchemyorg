@@ -1,0 +1,16 @@
+---
+date: 2011/06/05 12:00:00
+title: SQLAlchemy 0.6.8 Released
+author: Mike B
+---
+SQLAlchemy release 0.6.8 is now available.   This is a maintenance
+release for the 0.6 series - the current series of SQLAlchemy is 0.7.
+
+The release includes a series of bugfixes, as well as a backport
+of 0.7's identity map implementation which fixes some stability
+issues.
+
+The full changelog for version 0.6.8 is at `CHANGES </changelog/CHANGES_0_6_8>`_.
+
+Download SQLAlchemy 0.6.8 on the `download page </download.html>`_.
+

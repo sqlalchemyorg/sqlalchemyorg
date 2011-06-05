@@ -1,0 +1,18 @@
+---
+date: 2011/06/05 12:01:00
+title: SQLAlchemy 0.7.1 Released
+author: Mike B
+---
+SQLAlchemy release 0.7.1 is now available.   This is a relatively
+small bugfix release for the new 0.7 series.
+
+The release includes a workaround for a C compilation issue on 64-bit Windows
+systems, and a variety of other fixes.  It also includes a new feature,
+in that the restriction on "delete-orphan" cascade for self-referential
+relationships has been lifted.
+
+The full changelog for version 0.7.1 is at `CHANGES </changelog/CHANGES_0_7_1>`_.
+
+Download SQLAlchemy 0.7.1 on the `download page </download.html>`_.
+
+
