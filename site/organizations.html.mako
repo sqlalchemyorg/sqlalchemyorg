@@ -69,6 +69,16 @@ Organizations - SQLAlchemy
 </%self:user>
 
 <%self:user 
+        name="Yelp", 
+        logo="yelp.png"
+        url="http://www.yelp.com/"
+        anchor="yelp">
+        <a href="http://www.yelp.com/">Yelp</a>
+        is the fun and easy way to find and talk about great (and not so great) local businesses.
+        Yelp bases a large portion their MySQL data access code upon SQLAlchemy.
+</%self:user>
+
+<%self:user 
         name="SourceForge", 
         logo="sourceforge.png"
         url="http://sourceforge.net"
@@ -91,15 +101,6 @@ Organizations - SQLAlchemy
         integration with backend storage.
 </%self:user>
 
-<%self:user 
-        name="Yelp", 
-        logo="yelp.png"
-        url="http://www.yelp.com/"
-        anchor="yelp">
-        <a href="http://www.yelp.com/">Yelp</a>
-        is the fun and easy way to find and talk about great (and not so great) local businesses.
-        Yelp bases a large portion their MySQL data access code upon SQLAlchemy.
-</%self:user>
 
 <%self:user 
         name="LolApps", 
@@ -140,6 +141,17 @@ Organizations - SQLAlchemy
         anchor="lexmachina">
         <a href="https://lexmachina.com/">Lex Machina</a> began as a joint project between Stanford Law School and the Stanford Computer Science Department seeking to address the dearth of reliable data on IP litigation. 
         Now a private venture, Lex Machina uses the SQLAlchemy ORM extensively as the gateway to their legal database.
+</%self:user>
+
+<%self:user
+        name="Powered By Tippr"
+        logo="poweredbytippr.gif"
+        url="http://www.poweredbytippr.com/"
+        anchor="poweredbytippr">
+        <a href="http://www.poweredbytippr.com/">Powered By Tippr</a> enables publishers to run group buying 
+        promotions on their websites, rewarding their loyal readers, attracting new audience 
+        groups and unlocking a new revenue stream through improved ad revenue.
+        Powered By Tippr uses SQLAlchemy for their analysis and reporting tools.
 </%self:user>
 
 <%self:user
