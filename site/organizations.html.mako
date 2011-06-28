@@ -58,16 +58,6 @@ Organizations - SQLAlchemy
         "SQLAlchemy powers much of Fedora's Infrastructure. We pretty much worship it :)"
 </%self:user>
 
-<%self:user
-        name="Seagate",
-        logo="seagate.png",
-        url="http://seagate.com",
-        anchor="seagate">
-    <a href="http://seagate.com">Seagate</a> is the famous maker of hard drives
-    and storage devices.   Seagate uses Python with SQLAlchemy for a variety of
-    internal applications.
-</%self:user>
-
 <%self:user 
         name="Yelp", 
         logo="yelp.png"
@@ -78,14 +68,34 @@ Organizations - SQLAlchemy
         Yelp bases a large portion their MySQL data access code upon SQLAlchemy.
 </%self:user>
 
+
 <%self:user 
-        name="SourceForge", 
-        logo="sourceforge.png"
-        url="http://sourceforge.net"
-        anchor="sourceforge">
-        <a href="http://sourceforge.net">SourceForge's</a> 
-        all new infrastructure uses SQLAlchemy where relational databases
-        are used.
+        name="SurveyMonkey", 
+        logo="surveymonkey.png"
+        url="http://www.surveymonkey.com/"
+        anchor="surveymonkey">
+        <a href="http://www.surveymonkey.com/">SurveyMonkey</a>,
+        the leader in online surveys, is building its entire stack in Python.
+        SurveyMonkey is being built using Pylons/Pyramid, Jinja2 templating and
+        a backend data tier built entirely upon SQLAlchemy.
+</%self:user>
+
+<%self:user
+    name="Urban Airship"
+    logo="urban_airship.jpg"
+    url="http://www.urbanairship.com"
+    anchor="urbanairship"
+>
+    <a href="http://www.urbanairship.com">Urban Airship</a>
+    is the engine behind thousands of the world’s most successful mobile apps,
+    providing a full suite of messaging and content delivery tools, including
+    Push Notifications, Rich Media Messaging, In-App Purchase and
+    Subscriptions.
+
+    Urban Airship began with a NoSQL backend based
+    on MongoDB, but ultimately replaced it with a sharded PostgreSQL system
+    using the SQLAlchemy ORM - a unique "YesSQL" event described in the talk
+    <a href="http://schmichael.com/files/schmongodb/Scaling%20with%20MongoDB%20%28with%20notes%29.pdf">Scaling with MongoDB (or how Urban Airship abandoned it for PostgreSQL)</a>.
 </%self:user>
 
 <%self:user 
@@ -114,17 +124,6 @@ Organizations - SQLAlchemy
 
 
 <%self:user 
-        name="SurveyMonkey", 
-        logo="surveymonkey.png"
-        url="http://www.surveymonkey.com/"
-        anchor="surveymonkey">
-        <a href="http://www.surveymonkey.com/">SurveyMonkey</a>,
-        the leader in online surveys, is building its entire stack in Python.
-        SurveyMonkey is being built using Pylons/Pyramid, Jinja2 templating and
-        a backend data tier built entirely upon SQLAlchemy.
-</%self:user>
-
-<%self:user 
         name="FreshBooks", 
         logo="freshbooks.png"
         url="http://www.freshbooks.com/"
@@ -142,6 +141,27 @@ Organizations - SQLAlchemy
         <a href="https://lexmachina.com/">Lex Machina</a> began as a joint project between Stanford Law School and the Stanford Computer Science Department seeking to address the dearth of reliable data on IP litigation. 
         Now a private venture, Lex Machina uses the SQLAlchemy ORM extensively as the gateway to their legal database.
 </%self:user>
+
+<%self:user 
+        name="SourceForge", 
+        logo="sourceforge.png"
+        url="http://sourceforge.net"
+        anchor="sourceforge">
+        <a href="http://sourceforge.net">SourceForge's</a> 
+        all new infrastructure uses SQLAlchemy where relational databases
+        are used.
+</%self:user>
+
+<%self:user
+        name="Seagate",
+        logo="seagate.png",
+        url="http://seagate.com",
+        anchor="seagate">
+    <a href="http://seagate.com">Seagate</a> is the famous maker of hard drives
+    and storage devices.   Seagate uses Python with SQLAlchemy for a variety of
+    internal applications.
+</%self:user>
+
 
 <%self:user
         name="Powered By Tippr"
