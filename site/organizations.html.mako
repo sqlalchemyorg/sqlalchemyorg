@@ -92,10 +92,8 @@ Organizations - SQLAlchemy
     Push Notifications, Rich Media Messaging, In-App Purchase and
     Subscriptions.
 
-    Urban Airship began with a NoSQL backend based
-    on MongoDB, but ultimately replaced it with a sharded PostgreSQL system
-    using the SQLAlchemy ORM - a unique "YesSQL" event described in the talk
-    <a href="http://schmichael.com/files/schmongodb/Scaling%20with%20MongoDB%20%28with%20notes%29.pdf">Scaling with MongoDB (or how Urban Airship abandoned it for PostgreSQL)</a>.
+    SQLAlchemy ORM is at the core of their data access strategy which is currently
+    based on a sharded Postgresql system.
 </%self:user>
 
 <%self:user 
