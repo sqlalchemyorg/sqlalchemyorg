@@ -27,6 +27,13 @@ What People Are Saying - SQLAlchemy
     </blockquote>
 </%def>
 
+<%self:quote link="http://tarekziade.wordpress.com/2011/07/12/firefox-sync-python/#comment-11602" author="Tarek Ziadé, core Firefox Sync developer">
+There’s a lot of Python libraries/frameworks out there we can use, and some of
+them are a big advantage to write web services. SQLAlchemy is one that comes
+in mind, that is one of the best ORM/DB tool out there, all languages
+included, to my knowledge.
+</%self:quote>
+
 <%self:quote link="https://twitter.com/christianwitts/status/88562051064147968" author="Christian Witts">
 Loving #SQLAlchemy for #Python right now. It just did 95% of the heavy lifting for me. "Lazy" programming is the best!
 </%self:quote>
