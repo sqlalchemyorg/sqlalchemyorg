@@ -65,7 +65,7 @@ Organizations - SQLAlchemy
         anchor="reddit">
         <a href="http://reddit.com">Reddit</a> is one of the biggest social 
         news aggregators on the internet. Reddit is built using Pylons, Mako templates,
-        and a custom database abstraction layer built on SQLAlchemy Core.
+        and a custom, non-ORM database abstraction layer built on SQLAlchemy Core.
 </%self:user>
 
 
