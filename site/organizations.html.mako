@@ -28,34 +28,15 @@ Organizations - SQLAlchemy
 
 <dl id="inproduction">
 
-<%self:user 
-        name="Reddit", 
-        logo="reddit.png"
-        url="http://reddit.com",
-        anchor="reddit">
-        <a href="http://reddit.com">Reddit</a> is one of the biggest social 
-        news aggregators on the internet. Reddit is built using Pylons, Mako templates,
-        and a custom database abstraction layer built on SQLAlchemy Core.
-</%self:user>
 
 <%self:user 
-        name="Firefox Sync", 
-        logo="firefox.png"
-        url="http://www.firefox.com/sync"
-        anchor="firefox">
-        <a href="http://www.firefox.com/sync">Firefox Sync</a> is Firefox's built in bookmark synchronization service.
-        Core server elements of Firefox Sync are written in Python using SQLAlchemy for backend storage.
-</%self:user>
-
-
-<%self:user 
-        name="Fedora Project", 
-        logo="fedora-logo.png"
-        url="http://fedoraproject.org"
-        anchor="fedoraproject">
-        <a href="http://fedoraproject.org">Fedora</a> is one of the most widely used Linux distributions.
-        According to their developers: 
-        "SQLAlchemy powers much of Fedora's Infrastructure. We pretty much worship it :)"
+        name="LolApps", 
+        logo="lolapps.png"
+        url="http://www.lolapps.com"
+        anchor="lolapps">
+        <a href="http://www.lolapps.com">LolApps</a> is one of the fastest growing social games companies.
+        As presented in the Pycon 2010 talk <a href="http://us.pycon.org/2010/conference/schedule/event/135/">Scaling Python webapps from zero to 50 million users</a>,
+        the SQLAlchemy ORM is at the core of their data access strategy.
 </%self:user>
 
 <%self:user 
@@ -68,6 +49,35 @@ Organizations - SQLAlchemy
         Yelp bases a large portion their MySQL data access code upon SQLAlchemy.
 </%self:user>
 
+<%self:user 
+        name="Firefox Sync", 
+        logo="firefox.png"
+        url="http://www.firefox.com/sync"
+        anchor="firefox">
+        <a href="http://www.firefox.com/sync">Firefox Sync</a> is Firefox's built in bookmark synchronization service.
+        Core server elements of Firefox Sync are written in Python using SQLAlchemy for backend storage.
+</%self:user>
+
+<%self:user 
+        name="Reddit", 
+        logo="reddit.png"
+        url="http://reddit.com",
+        anchor="reddit">
+        <a href="http://reddit.com">Reddit</a> is one of the biggest social 
+        news aggregators on the internet. Reddit is built using Pylons, Mako templates,
+        and a custom database abstraction layer built on SQLAlchemy Core.
+</%self:user>
+
+
+<%self:user 
+        name="Fedora Project", 
+        logo="fedora-logo.png"
+        url="http://fedoraproject.org"
+        anchor="fedoraproject">
+        <a href="http://fedoraproject.org">Fedora</a> is one of the most widely used Linux distributions.
+        According to their developers: 
+        "SQLAlchemy powers much of Fedora's Infrastructure. We pretty much worship it :)"
+</%self:user>
 
 <%self:user 
         name="SurveyMonkey", 
@@ -108,18 +118,6 @@ Organizations - SQLAlchemy
         Intel, and Spiceworks. OpenStack Compute uses the SQLAlchemy ORM for
         integration with backend storage.
 </%self:user>
-
-
-<%self:user 
-        name="LolApps", 
-        logo="lolapps.png"
-        url="http://www.lolapps.com"
-        anchor="lolapps">
-        <a href="http://www.lolapps.com">LolApps</a> is one of the fastest growing social games companies.
-        As presented in the Pycon 2010 talk <a href="http://us.pycon.org/2010/conference/schedule/event/135/">Scaling Python webapps from zero to 50 million users</a>,
-        the SQLAlchemy ORM is at the core of their data access strategy.
-</%self:user>
-
 
 <%self:user 
         name="FreshBooks", 
