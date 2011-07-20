@@ -1,0 +1,13 @@
+---
+date: 2011/07/20 12:01:00
+title: SQLAlchemy for Django Users
+author: Mike B
+---
+Armin Ronacher introduces SQLAlchemy to the `Django <http://www.djangoproject.com/>`_ community 
+in his latest post `SQLAlchemy and You <http://lucumr.pocoo.org/2011/7/19/sqlachemy-and-you/>`_,
+a gentle introduction to the differences in philosophy between the SQLAlchemy and Django
+ORMs, with a good deal of specifics.
+
+Armin is the creator of `Flask <http://flask.pocoo.org/>`_, a fast-growing
+web framework that places an emphasis on the SQLAlchemy ORM for relational database
+usage.
