@@ -10,7 +10,10 @@ The release includes a series of bugfixes, as well as a backport
 of 0.7's identity map implementation which fixes some stability
 issues.
 
-The full changelog for version 0.6.8 is at `CHANGES </changelog/CHANGES_0_6_8>`_.
+The full changelog for version 0.6.8 is at `CHANGES </changelog/CHANGES_0_6_8>`_.   
+
+For a full description of version 0.6 of SQLAlchemy including migration information,
+see `What's New in SQLAlchemy 0.6? </trac/wiki/06Migration>`_.
 
 Download SQLAlchemy 0.6.8 on the `download page </download.html>`_.
 

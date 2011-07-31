@@ -13,6 +13,9 @@ relationships has been lifted.
 
 The full changelog for version 0.7.1 is at `CHANGES </changelog/CHANGES_0_7_1>`_.
 
+For a full description of version 0.7 of SQLAlchemy including migration information,
+see `What's New in SQLAlchemy 0.7? </trac/wiki/07Migration>`_.
+
 Download SQLAlchemy 0.7.1 on the `download page </download.html>`_.
 
 

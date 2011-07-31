@@ -1,0 +1,31 @@
+---
+date: 2011/07/31 12:01:00
+title: SQLAlchemy 0.7.2 Released
+author: Mike B
+---
+SQLAlchemy release 0.7.2 is now available.   This release contains
+many bugfixes for bugs present in both the 0.6 and 0.7 series, as well
+as some 0.7 only fixes and a few new features.
+
+0.7.2 includes behavioral enhancements to joined- and subquery-eager
+loading, a new feature to the typing system called ``with_variant()``
+which allows a single type to act as a different type on selected
+backends, and improved string displays for several kinds of exceptions.
+The documentation has also been improved for clarity in many areas.
+
+More features and documentation improvements are on the way for 0.7.3,
+including some new Declarative features.   The current focus of development
+is on fully standardizing SQLAlchemy documentation and usage 
+patterns on Declarative, with most direct usage of the ``mapper()`` function 
+intended for special cases and custom ORM configurational layers, 
+created either in-house or as part of external open source extension
+layers.
+
+The full changelog for version 0.7.2 is at `CHANGES </changelog/CHANGES_0_7_2>`_.
+
+For a full description of version 0.7 of SQLAlchemy including migration information,
+see `What's New in SQLAlchemy 0.7? </trac/wiki/07Migration>`_.
+
+Download SQLAlchemy 0.7.2 on the `download page </download.html>`_.
+
+

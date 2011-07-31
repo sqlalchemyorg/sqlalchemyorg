@@ -15,4 +15,7 @@ The 0.6 series has been SQLAlchemy's most popular ever, with
 
 For a full list of changes in 0.6.7, see `CHANGES </changelog/CHANGES_0_6_7>`_.   
 
+For a full description of version 0.6 of SQLAlchemy including migration information,
+see `What's New in SQLAlchemy 0.6? </trac/wiki/06Migration>`_.
+
 `Download version 0.6.7 </download.html>`_.
