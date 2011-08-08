@@ -101,7 +101,7 @@ Regular users can also volunteer to help with approval of new posters.
 </p>
 
 <p>The IRC channel <code>#sqlalchemy</code> on Freenode is similarly busy most days. 
-There's a core set of "regulars" who are pretty friendly. </p>
+There's a core set of "regulars" who are pretty friendly, and more helpers are always welcome.  </p>
 
 <p>SQLAlchemy places great emphasis on polite, thoughtful, and constructive communication between users and developers.
     Rudeness, personal insults, or overly brusque answers are never appropriate, even for users with unreasonable requests. 
@@ -121,11 +121,9 @@ There's a core set of "regulars" who are pretty friendly. </p>
             - if the tweet contains "sqlalchemy" or a link to the site, it will show up under searches for the term.
             Expect SQLAlchemy developers to respond to provocative tweets!
         </li>
-        <li>The <a href="/trac/wiki/SAApps">"Who's Using SQLAlchemy?"</a> page - 
-            this page can be edited using "guest".   Please contact 
-            us if you think your organization belongs on the homepage sidebar!   We also would like to produce a
-            set of "case studies" for SQLAlchemy.  If you are able to provide somewhat detailed information for 
-            this section please contact us !</li>
+        <li>The <a href="/organizations.html">"Organizations Using SQLAlchemy"</a> page lists prominent
+            and not-so-prominent organizations who make use of SQLAlchemy.   Please contact 
+            us to have your organization added here.</li>
         <li>Blog Posts - Users often write short tutorials or blog posts describing how to achieve something
             with SQLAlchemy.    It all becomes part of the larger collection of knowledge so share freely!
         </li>
