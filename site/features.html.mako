@@ -11,22 +11,23 @@ Features - SQLAlchemy
 <p><em>Some of the key features at a glance:</em></p>
 
 <dl id="features">
-    <dt>Supported Platforms</dt>
+    <dt>No ORM Required</dt>
     <dd>
-        <p>SQLAlchemy supports Python 2.4 and above, including Python 3.x.
-        Jython is also supported, using zxjdbc-enabled dialects as well as 
-        Pypy as of version 0.7.
-    </dd>
-     <dt>Supported Databases</dt>
-     <dd>
-        <p>SQLAlchemy includes dialects for SQLite, Postgresql, MySQL, Oracle,
-        MS-SQL, Firebird, Sybase and others, most of which support multiple
-        DBAPIs; IBM has also released a DB2 dialect. The corresponding <a
-        href="http://www.python.org/dev/peps/pep-0249/">DB-API 2.0</a>
-        implementation (or sometimes one of several available) is required to
-        use each particular database. <a
-        href="/docs/core/engines.html#supported-databases">View Current DBAPI
-        Support</a></p>
+        <p>SQLAlchemy consists of two distinct components, known as the 
+        <strong>Core</strong> and the <strong>ORM</strong>.  The Core is itself
+        a fully featured SQL abstraction toolkit, providing a smooth
+        layer of abstraction over a wide variety of DBAPI implementations
+        and behaviors, as well as a SQL Expression Language which allows
+        expression of the SQL language via generative Python expressions.
+        A schema representation system that can both emit DDL
+        statements as well as introspect existing schemas, and a type
+        system that allows any mapping of Python types to database types,
+        rounds out the system.   The
+        Object Relational Mapper is then an optional package which 
+        builds upon the Core.  Many applications are built strictly
+        on the Core, using the SQL expression system to provide succinct
+        and exact control over database interactions.
+    </p>
     </dd>
     <dt>Mature, High Performing Architecture</dt>
     <dd>
@@ -56,7 +57,7 @@ Features - SQLAlchemy
     <dd>
            <p>SQLAlchemy places the highest value on not getting in the way of
            database and application architecture. Unlike many tools, it
-           <b>never</b> "generates" schemas (not to be confused with issuing
+           <strong>never</strong> "generates" schemas (not to be confused with issuing
            user-defined <a
            href="http://en.wikipedia.org/wiki/Data_Definition_Language">DDL</a>,
            in which it excels) or relies on naming conventions of any kind.
@@ -67,7 +68,7 @@ Features - SQLAlchemy
 
     <dd>
      <p>The Unit Of Work system, a central part of SQLAlchemy's Object
-     Relational Mapper (ORM), organizes pending create/insert/update/delete
+     Relational Mapper (ORM), organizes pending insert/update/delete
      operations into queues and flushes them all in one batch. To accomplish
      this it performs a topological "dependency sort" of all modified items in
      the queue so as to honor inter-row dependencies, and groups redundant
@@ -85,12 +86,12 @@ Features - SQLAlchemy
     <p>Function-based query construction allows SQL clauses to be built via
     Python functions and expressions. The full range of what's possible
     includes boolean expressions, operators, functions, table aliases,
-    selectable subqueries, create/update/insert/delete statements, correlated
-    updates, correlated <code>EXISTS</code> clauses, <code>UNION</code>
+    selectable subqueries, insert/update/delete statements, correlated
+    updates, selects, and <code>EXISTS</code> clauses, <code>UNION</code>
     clauses, inner and outer joins, bind parameters, and free mixing of
     literal text within expressions. Constructed expressions are compilable
     specific to any number of vendor database implementations (such as
-    PostGres or Oracle), as determined by the combination of a "dialect" and
+    PostgreSQL or Oracle), as determined by the combination of a "dialect" and
     "compiler" provided by the implementation. </p>
     </dd>
 
@@ -99,34 +100,46 @@ Features - SQLAlchemy
             <p>Different parts of SQLAlchemy can be used independently of the
             rest. Elements like connection pooling, SQL statement compilation
             and transactional services can be used independently of each
-            other, and can also be extended through various plugin points. The
-            Object Relational Mapper (ORM) is a separate package which builds
-            on top of these, and itself has several extension systems for
-            modifying behavior at various levels.</p>
+            other, and can also be extended through various plugin points.
+            An integrated event system allows custom code to be injected at
+            over fifty points of interaction, including within core
+            statement execution, schema generation and instrospection, 
+            connection pool operation, object relational configuration,
+            persistence operations, attribute mutation events, and 
+            transactional stages.   New SQL expression elements and custom
+            database types can be built and integrated seamlessly.
+
+            </p>
     </dd>
 
     <dt>Separate mapping and class design</dt>
     <dd>
-  <p> Database mapping and class design are totally separate. Persisted
-  objects have no subclassing requirement (other than 'object') and are POPO's
-  : plain old Python objects. They retain serializability (pickling) for usage
-  in various caching systems and session objects. SQLAlchemy "decorates"
-  classes with non-intrusive property accessors to automatically log object
-  creates and modifications with the Unit of Work engine, to lazyload related
-  data, as well as to track attribute change histories. </p>
+    <p>The ORM standardizes on a "Declarative" configurational system that
+        allows construction of user-defined classes inline with the table
+        metadata they map to, in the same way most other object-relational
+        tools provide.   However this system is totally optional - 
+        at its core, the ORM considers the user-defined class, the 
+        associated table metadata, and the mapping of the two to be entirely
+        separate.   Through the use of the <code>mapper()</code> function,
+        any arbitrary Python class can be mapped to a database table or view.
+        Mapped classes also retain serializability (pickling) for usage
+        in various caching systems.  </p>
   </dd>
 
-  <dt>Eager-loading of related objects and collections</dt>
+  <dt>Eager-loading and caching of related objects and collections</dt>
   <dd>
-        <p>Whole graphs of related objects can often be loaded with a single
-        query or query-per-collection that is automatically generated to join
-        the appropriate tables to the user-defined query, known as <em>eager
-        loading</em>. The alternative to eager loading, <em>lazy loading</em>,
-        loads related objects via distinct query executions. Each type of
-        loading produces identical results and are interchangeable, allowing
-        configuration at any level as well as query-time selection of the
-        relationship-loading method to be used.
-  </p>
+        <p>The ORM caches collections and references between objects once 
+            loaded, so that no SQL need be emitted on each access.
+            The eager loading feature allows entire graphs
+            of objects linked by collections and references to be loaded
+            with few or just one query, configurable
+            down to the exact statement count on a per-mapping or
+            per-query basis, with no changes to existing queries 
+            needed.   The "N+1" problem,
+            whereby an ORM needs to emit individual statements for 
+            all objects in a collection, is a thing of the
+            past with SQLAlchemy.
+        </p>
   </dd>
   <dt>Composite (multiple-column) primary keys</dt>
   <dd>
@@ -165,7 +178,7 @@ Features - SQLAlchemy
     </dd>
     <dt>Raw SQL statement mapping</dt>
     <dd>
-  <p> SQLA's object relational query facilities can accomodate raw SQL
+  <p> SQLA's object relational query facilities can accommodate raw SQL
   statements as well as plain result sets, and object instances can be
   generated from these results in the same manner as any other ORM operation.
   Any hyper-optimized query that you or your DBA can cook up, you can run in
@@ -182,5 +195,22 @@ Features - SQLAlchemy
   mixed with built-in types. Generic types as well as SQL-specific types are
   available. </p>
   </dd>
+    <dt>Supported Platforms</dt>
+    <dd>
+        <p>SQLAlchemy supports Python 2.4 and above, including Python 3.x.
+        Jython is also supported, using zxjdbc-enabled dialects as well as 
+        Pypy as of version 0.7.
+    </dd>
+     <dt>Supported Databases</dt>
+     <dd>
+        <p>SQLAlchemy includes dialects for SQLite, Postgresql, MySQL, Oracle,
+        MS-SQL, Firebird, Sybase and others, most of which support multiple
+        DBAPIs; IBM has also released a DB2 dialect. The corresponding <a
+        href="http://www.python.org/dev/peps/pep-0249/">DB-API 2.0</a>
+        implementation (or sometimes one of several available) is required to
+        use each particular database. <a
+        href="/docs/core/engines.html#supported-databases">View Current DBAPI
+        Support</a></p>
+    </dd>
 
 </dl>
