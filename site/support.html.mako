@@ -32,6 +32,7 @@ years.  An initial investment in careful study of the documentation is well wort
 <p>Other places to check for information include the <a href="/trac/wiki/FAQ">FAQ</a> (note the FAQ is undergoing an upgrade soon!), 
 the usage recipes at <a href="/trac/wiki/UsageRecipes">Theatrum Chemicum</a>, and <a
 href="http://stackoverflow.com/questions/tagged/sqlalchemy">Stack Overflow</a>.
+</p>
 
 <a name="mailinglist"></a>
 <h2>Mailing List</h2>
