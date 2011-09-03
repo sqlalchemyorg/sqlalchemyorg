@@ -21,9 +21,7 @@ Organizations - SQLAlchemy
         % endif
         <a href="${url}"><img src="/img/logos/${logo}" alt="${name}"></a>
     </dt>
-    <dd>
-        ${caller.body()}
-    </dd>
+    <dd>${caller.body()}</dd>
 </%def>
 
 <dl id="inproduction">
@@ -134,8 +132,11 @@ Organizations - SQLAlchemy
         logo="lexmachina.jpg"
         url="https://lexmachina.com/"
         anchor="lexmachina">
-        <a href="https://lexmachina.com/">Lex Machina</a> began as a joint project between Stanford Law School and the Stanford Computer Science Department seeking to address the dearth of reliable data on IP litigation. 
-        Now a private venture, Lex Machina uses the SQLAlchemy ORM extensively as the gateway to their legal database.
+        <a href="https://lexmachina.com/">Lex Machina</a> began as a joint
+        project between Stanford Law School and the Stanford Computer Science
+        Department seeking to address the dearth of reliable data on IP
+        litigation. Now a private venture, Lex Machina uses the SQLAlchemy ORM
+        extensively as the gateway to their legal database.
 </%self:user>
 
 <%self:user 
@@ -158,6 +159,15 @@ Organizations - SQLAlchemy
     internal applications.
 </%self:user>
 
+<%self:user
+    name="Amyris",
+    logo="amyris.png",
+    url="http://www.amyris.com",
+    anchor="amyris">
+    <a href="http://www.amyris.com">Amyris</a> is applying an industrial synthetic biology platform to provide
+high-performing alternatives to petroleum-sourced fuels and chemicals: 
+"We use sqlalchemy heavily at Amyris and it is a thing of beauty :)"
+</%self:user>
 
 <%self:user
         name="Powered By Tippr"

@@ -386,8 +386,8 @@ div.pygments_manni {
 }
 #content dl#inproduction dd {
     border-bottom:1px solid #CCCCCC;
-    margin:0px 0px 10px 2px;
-    padding:0px 0px 10px 2px;
+    margin:0px 0px 10px 0px;
+    padding:0px 0px 10px 0px;
 }
 
 /* sidebar styles
