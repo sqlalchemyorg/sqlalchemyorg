@@ -2,3 +2,4 @@ syntax:regexp
 ^site/_site
 ^site/_work
 .pyc$
+.DS_Store
