@@ -170,6 +170,15 @@ high-performing alternatives to petroleum-sourced fuels and chemicals:
 </%self:user>
 
 <%self:user
+    name="RedTurtle",
+    logo="redturtle.png",
+    url="http://www.redturtle.it",
+    anchor="redturtle">
+    <a href="http://www.redturtle.it">RedTurtle Technology</a> is an internet consultancy in Italy specializing in
+    Pyramid / Plone solutions, using SQLAlchemy in most of their Python projects.
+</%self:user>
+
+<%self:user
         name="Powered By Tippr"
         logo="poweredbytippr.gif"
         url="http://www.poweredbytippr.com/"
