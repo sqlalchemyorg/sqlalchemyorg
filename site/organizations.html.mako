@@ -159,14 +159,33 @@ Organizations - SQLAlchemy
     internal applications.
 </%self:user>
 
+
 <%self:user
-    name="Amyris",
-    logo="amyris.png",
-    url="http://www.amyris.com",
-    anchor="amyris">
-    <a href="http://www.amyris.com">Amyris</a> is applying an industrial synthetic biology platform to provide
-high-performing alternatives to petroleum-sourced fuels and chemicals: 
-"We use sqlalchemy heavily at Amyris and it is a thing of beauty :)"
+    name="Six Feet Up",
+    logo="sixfeetup.png",
+    url="http://www.sixfeetup.com",
+    anchor="sixfeetup">
+    Founded in 1999, <a
+    href="http://www.sixfeetup.com">Six Feet Up</a> is a
+    privately-held woman-owned company that develops and
+    hosts sophisticated web publishing and collaboration
+    projects. We specialize in Python solutions and are a
+    leading provider of Plone services. We leverage
+    SQLAlchemy to power web activity reports and access
+    object oriented data in an effortless fashion. Our
+    clients include top universities, growing and
+    distributed organizations, as well as Fortune 500
+    companies.
+</%self:user>
+
+<%self:user
+    name="Juju",
+    logo="juju.gif",
+    url="http://www.job-search-engine.com/",
+    anchor="juju">
+    <a href="http://www.job-search-engine.com/">Juju</a> is a job search engine that indexes job
+    listings from companies and job boards all over the web and makes them
+    searchable. 
 </%self:user>
 
 <%self:user
@@ -176,6 +195,16 @@ high-performing alternatives to petroleum-sourced fuels and chemicals:
     anchor="redturtle">
     <a href="http://www.redturtle.it">RedTurtle Technology</a> is an internet consultancy in Italy specializing in
     Pyramid / Plone solutions, using SQLAlchemy in most of their Python projects.
+</%self:user>
+
+<%self:user
+    name="Amyris",
+    logo="amyris.png",
+    url="http://www.amyris.com",
+    anchor="amyris">
+    <a href="http://www.amyris.com">Amyris</a> is applying an industrial synthetic biology platform to provide
+high-performing alternatives to petroleum-sourced fuels and chemicals: 
+"We use sqlalchemy heavily at Amyris and it is a thing of beauty :)"
 </%self:user>
 
 <%self:user
