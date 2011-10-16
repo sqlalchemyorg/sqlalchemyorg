@@ -1,12 +1,12 @@
 <h3>Current Release</h3>
 
-<a href="/download.html"><b>0.7.2</b></a>
+<a href="/download.html"><b>0.7.3</b></a>
 <br/>
-<a href="/blog/2011/07/31/sqlalchemy-0.7.2-released/">What's New?</a> | 
-<a href="/changelog/CHANGES_0_7_2">Changelog</a> | 
+<a href="/blog/2011/10/16/sqlalchemy-0.7.3-released/">What's New?</a> | 
+<a href="/changelog/CHANGES_0_7_3">Changelog</a> | 
 <a href="/docs/07/">docs</a>
 <br/>
-Released July 31, 2011
+Released October 16, 2011
 
 
 <br/><br/>

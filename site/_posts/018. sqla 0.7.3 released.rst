@@ -1,0 +1,24 @@
+---
+date: 2011/10/16 12:01:00
+title: SQLAlchemy 0.7.3 Released
+author: Mike B
+---
+SQLAlchemy release 0.7.3 is now available.   After a long delay since
+0.7.2, this release contains many new features and bugfixes, and fixes
+some remaining regressions left over since 0.7 was released.
+
+0.7.3 includes enhancements to the ``join()`` method of ``Query``,
+support for Python 3's enhanced function arguments when mapping
+classes, new Declarative features including helpers for so-called
+"concrete inheritance" configurations, new event hooks, improved
+logging of large parameter sets, new keyword arguments for 
+indexes specific to Postgresql and MySQL.
+
+The full changelog for version 0.7.3 is at `CHANGES </changelog/CHANGES_0_7_3>`_.
+
+For a full description of version 0.7 of SQLAlchemy including migration information,
+see `What's New in SQLAlchemy 0.7? </trac/wiki/07Migration>`_.
+
+Download SQLAlchemy 0.7.3 on the `download page </download.html>`_.
+
+
