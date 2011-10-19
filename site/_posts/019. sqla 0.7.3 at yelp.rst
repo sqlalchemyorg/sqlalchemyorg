@@ -1,0 +1,14 @@
+---
+date: 2011/10/18 12:01:00
+title: Yelp! Rolls SQLAlchemy 0.7.3 into Production
+author: Mike B
+---
+With the `release of SQLAlchemy 0.7.3 </blog/2011/10/16/sqlalchemy-0.7.3-released/>`_ just two days ago,
+fixing a few remaining regressions from 0.6, the well known review site `Yelp! <http://www.yelp.com>`_ has now successfully 
+rolled SQLAlchemy 0.7 into production usage, migrating their codebase from 0.6 to run 0.7.3.  
+
+SQLAlchemy 0.7 represents the culmination of over six years of constant development, enhancement, 
+and testing, forged by the invaluable feedback and field reports of hundreds of users and organizations.
+I'd like to thank everyone who's chipped in over the years from our core contributors to 
+new users reporting bugs and requesting clarification - every interaction goes directly towards
+improving the product, and there's many more on the way.  And congratulations to Yelp!
