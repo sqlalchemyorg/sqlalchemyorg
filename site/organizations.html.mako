@@ -28,6 +28,17 @@ Organizations - SQLAlchemy
 
 
 <%self:user 
+        name="Yelp", 
+        logo="yelp.png"
+        url="http://www.yelp.com/"
+        anchor="yelp">
+        <a href="http://www.yelp.com/">Yelp</a>
+        is the fun and easy way to find and talk about great (and not so great) local businesses.
+        An early adopter of SQLAlchemy, Yelp started out with a core-only approach as early as version 
+        0.4, later migrating to an ORM approach now in production at version 0.7.
+</%self:user>
+
+<%self:user 
         name="LolApps", 
         logo="lolapps.png"
         url="http://www.lolapps.com"
@@ -37,15 +48,6 @@ Organizations - SQLAlchemy
         the SQLAlchemy ORM is at the core of their data access strategy.
 </%self:user>
 
-<%self:user 
-        name="Yelp", 
-        logo="yelp.png"
-        url="http://www.yelp.com/"
-        anchor="yelp">
-        <a href="http://www.yelp.com/">Yelp</a>
-        is the fun and easy way to find and talk about great (and not so great) local businesses.
-        Yelp bases a large portion their MySQL data access code upon SQLAlchemy.
-</%self:user>
 
 <%self:user 
         name="Firefox Sync", 
