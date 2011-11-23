@@ -40,14 +40,15 @@ and SQL! </p>
     <dd>
         <p>SQLAlchemy is used by organizations such as:
         <ul>
+            <li><a href="/organizations.html#yelp">Yelp!</a></li>
             <li><a href="/organizations.html#reddit">reddit</a></li>
-            <li><a href="/organizations.html#openstack">The OpenStack Project</a></li>
+            <li><a href="/organizations.html#firefox">Mozilla</a></li>
             <li><a href="/organizations.html#urbanairship">Urban Airship</a></li>
+            <li><a href="/organizations.html#surveymonkey">Survey Monkey</a></li>
+            <li><a href="/organizations.html#openstack">The OpenStack Project</a></li>
             <li><a href="/organizations.html#lolapps">lolapps</a></li>
             <li><a href="/organizations.html#freshbooks">Freshbooks</a></li>
             <li><a href="/organizations.html#fedoraproject">Fedora Project</a></li>
-            <li><a href="/organizations.html#creatureshop">Jim Henson's Creature Shop</a></li>
-            <li><a href="/organizations.html#lexmachina">Lexmachina</a></li>
         </ul>
         </p>
         <a href="/organizations.html">more...</a>
