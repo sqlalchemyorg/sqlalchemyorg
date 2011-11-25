@@ -1,36 +1,6 @@
-/* this css mediates between the doc-bundled docs.css and style.css, and the
-   website's site2.css
-*/
 
-
-#docs {
-}
-
-#docs, td {
-    font-size:1.01em;
-    font-family: verdana, sans-serif;
-}
-
-
-li li { line-height: 1.2em; }
-
-code {
-    font-family:"Deja Vu Sans Mono","Vera Sans Mono",Courier,"Courier New",fixed;
-    font-size:.95em;
-}
-
-.totoc, .prevnext, .topnav .prevnext {
-  font-size:1em;
-}
-
-pre {
-}
-
-.codepop {
-   font-size:.95em;
-}
-
-div .versionwarning {
+div .versionwarning,
+div .version-warning {
   font-size:12px;
   font-color:red;
   border:1px solid;
@@ -38,3 +8,5 @@ div .versionwarning {
   margin:8px 0px 2px 0px;
   background:#FFBBBB;
 }
+
+
