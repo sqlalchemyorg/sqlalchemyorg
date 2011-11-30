@@ -1,0 +1,20 @@
+---
+date: 2011/11/30 12:01:00
+title: Alembic 0.1.0 Relased
+author: Mike B
+---
+`Alembic <http://pypi.python.org/pypi/alembic>`_ is a new migrations tool for SQLAlchemy.
+Building on the knowledge gained by the SQLAlchemy-Migrate project, Alembic is an up-to-date,
+semi-automated system of maintaining versioned database schemas.  Today marks the very
+first alpha-level release of 0.1.0, after an intense push to fill out the initial
+round of features and usage patterns.
+
+Alembic's key features include support for transactional DDL, automated generation of 
+candidate changesets,
+non-linear versioning, support for static SQL script generation, support for multiple databases, 
+and an extremely open-ended configurational system, based on an environmental API 
+in conjunction with pre-packaged sample environments.  It is currently used in one complex
+multi-database production environment against Postgresql and MS SQL Server; initial support for
+MySQL is also included.
+
+Alembic's documentation is at http://packages.python.org/alembic/.
