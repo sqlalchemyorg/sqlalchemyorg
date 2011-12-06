@@ -73,7 +73,7 @@ Features - SQLAlchemy
      this it performs a topological "dependency sort" of all modified items in
      the queue so as to honor inter-row dependencies, and groups redundant
      statements together where they can sometimes be batched even further.
-     This produces the maxiumum efficiency and transaction safety, and
+     This produces the maximum efficiency and transaction safety, and
      minimizes chances of deadlocks. Modeled after <a
      href="http://martinfowler.com/eaaCatalog/unitOfWork.html"
      title="martinfowler.com">Fowler's "Unit of Work" pattern</a> as well as
@@ -103,7 +103,7 @@ Features - SQLAlchemy
             other, and can also be extended through various plugin points.
             An integrated event system allows custom code to be injected at
             over fifty points of interaction, including within core
-            statement execution, schema generation and instrospection, 
+            statement execution, schema generation and introspection, 
             connection pool operation, object relational configuration,
             persistence operations, attribute mutation events, and 
             transactional stages.   New SQL expression elements and custom
@@ -171,7 +171,7 @@ Features - SQLAlchemy
   <dd>
             Explicit support is available for single-table, concrete-table,
             and joined table inheritance. Polymorphic loading (that is, a
-            query that returns objects of multple descendant types) is
+            query that returns objects of multiple descendant types) is
             supported for all three styles. The loading of each may be
             optimized such that only one round trip is used to fully load a
             polymorphic result set.
