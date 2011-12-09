@@ -1,0 +1,27 @@
+---
+date: 2011/12/09 12:01:00
+title: SQLAlchemy 0.7.4 Released
+author: Mike B
+---
+SQLAlchemy release 0.7.4 is now available.   This release
+contains a bunch of new features, including:
+
+* ``UPDATE..FROM`` support
+* more configuration options for ``polymorphic_on``
+* new schema options with ``MetaData``
+* new reflection options
+* new features with the ENUM type on Postgresql
+* SAVEPOINT for MS SQL Server
+* A new usage pattern with Hybrid attributes
+
+Like every point release, 0.7.4 also contains 
+plenty of bugfixes in all areas.
+
+The full changelog for version 0.7.4 is at `CHANGES </changelog/CHANGES_0_7_4>`_.
+
+For a full description of version 0.7 of SQLAlchemy including migration information,
+see `What's New in SQLAlchemy 0.7? </trac/wiki/07Migration>`_.
+
+Download SQLAlchemy 0.7.4 on the `download page </download.html>`_.
+
+
