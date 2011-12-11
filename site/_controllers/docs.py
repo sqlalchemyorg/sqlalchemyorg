@@ -12,7 +12,6 @@ import logging
 # the -v -vv flags hardwired to 'blogofile.' - OK
 log = logging.getLogger('blogofile.controllers.docs')
 
-output = "_site"
 htdocs = "_work"
 templates = "_templates/_work"
 
@@ -53,8 +52,8 @@ def run():
             relative = ''
 
         for dir in dirs:
-            if not os.path.exists(os.path.join(output, relative, dir)):
-                os.makedirs(os.path.join(output, relative, dir))
+            if not os.path.exists(os.path.join(bf.writer.output_dir, relative, dir)):
+                os.makedirs(os.path.join(bf.writer.output_dir, relative, dir))
 
         html = set([fname for fname in files if fname.endswith('.html')])
         nonhtml = set(files).difference(html)
@@ -62,10 +61,10 @@ def run():
         # blogofile unconditionally blows away everything in _site.   So for now
         # we have to skip checking timestamps.
         for fname in nonhtml:
-            conditional_copy(os.path.join(root, fname), os.path.join(output, relative, fname))
+            conditional_copy(os.path.join(root, fname), os.path.join(bf.writer.output_dir, relative, fname))
 
         for fname in html:
-            log.info("%s -> %s", os.path.join(root, fname), os.path.join(output, relative, fname))
+            log.info("%s -> %s", os.path.join(root, fname), os.path.join(bf.writer.output_dir, relative, fname))
             bf.writer.materialize_template(os.path.join(root, fname), os.path.join(relative, fname), attrs={'req':{}, 'attributes':{}})
 
 def copydir(name, dest, htmlonly=False):

@@ -24,7 +24,7 @@ def highlight_code(code, language, formatter):
     return highlighted
 
 def write_pygments_css(style, formatter, location="/css"):
-    path = bf.util.path_join("_site",bf.util.fs_site_path_helper(location))
+    path = bf.util.path_join(bf.writer.output_dir, bf.util.fs_site_path_helper(location))
     bf.util.mkdir(path)
     css_path = os.path.join(path,"pygments_"+style+".css")
     if css_path in css_files_written:
