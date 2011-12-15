@@ -119,6 +119,18 @@ Organizations - SQLAlchemy
         integration with backend storage.
 </%self:user>
 
+<%self:user
+    name="Beautylish",
+    logo="beautylish.jpg"
+    url="http://www.beautylish.com"
+    anchor="beautylish"
+>
+<a href="http://www.beautylish.com">Beautylish</a> is a dynamic online beauty
+resource featuring product reviews, video tutorials, tips and tricks, and
+more. Beautylish is built using Pylons and SQLAlchemy on top of a complete
+Amazon Web Services stack. Beauty is serious business ;)
+</%self:user>
+
 <%self:user 
         name="FreshBooks", 
         logo="freshbooks.png"
