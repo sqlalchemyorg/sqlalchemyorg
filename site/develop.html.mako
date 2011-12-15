@@ -13,6 +13,7 @@ Develop - SQLAlchemy
     <li><a href="#roster">Developer Roster</a></li>
     <li><a href="#developers">Development Community</a></li>
     <li><a href="#source">Source Access</a></li>
+    <li><a href="#mirrors">Bitbucket / GitHub Mirrors</a></li>
     <li><a href="#testing">Testing</a></li>
     <li><a href="#integration">Continuous Integration</a></li>
     <li><a href="#documentation">Documentation</a></li>
@@ -81,18 +82,20 @@ Downloadable snapshots of the current default and maintenance branches are avail
 on the <a href="/download.html">download</a> page.
 </p>
 
-<p>Mercurial is a distributed version control system - developers can share changes across individual development
-    repositories.   You can maintain your own series of changes locally, as well as on a remote host.  For a 
-    remote host we strongly recommend <a href="http://www.bitbucket.org">Bitbucket</a>.
-</p>
+<p>If you would like to share changes with SQLAlchemy core developers, it's common
+    to send us a simple patch file created as a unified diff, and attached to a <a href="/participate.html#trac">Trac ticket</a>.
+    Alternatively, a <b>pull request</b> can be made against a Bitbucket or Github repository - 
+    see <a href="#mirrors">mirrors</a> for background on this.</p>
 
-<p>If you would like to share changes with SQLAlchemy core developers, in most cases
-    we prefer a simple patch file created as a unified diff, and attached to a <a href="/participate.html#trac">Trac ticket</a>,
-    however you may also share your Bitbucket repo with us for larger sets of changes.</p>
+<a name="mirrors"></a>
+<h2>Bitbucket / GitHub Mirrors</h2>
 
-<p>Bitbucket itself also provides a mirror to the SQLAlchemy repository at 
-    <a href="https://bitbucket.org/sqlalchemy/sqlalchemy/overview">https://bitbucket.org/sqlalchemy/sqlalchemy/overview</a>.
-</p>
+<p>SQLAlchemy has mirrors hosted at both <a href="http://www.bitbucket.org">Bitbucket</a> using Mercurial 
+    and <a href="http://www.github.org">GitHub</a> using git.   Pull requests can be submitted on either platform
+    by forking the appropriate mirror and sending a pull request:</p>
+
+    <p><strong>SQLAlchemy on Bitbucket: <a href="https://bitbucket.org/zzzeek/sqlalchemy">https://bitbucket.org/zzzeek/sqlalchemy</a></strong></p>
+    <p><strong>SQLAlchemy on GitHub: <a href="https://github.com/zzzeek/sqlalchemy">https://github.com/zzzeek/sqlalchemy</a></strong></p>
 
 <a name="testing"></a>
 <h2>Testing</h2>
