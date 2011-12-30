@@ -30,8 +30,7 @@ on getting started.
     the current version of which can be seen at <a href="/trac/browser/AUTHORS">AUTHORS</a>.
 </p>
 <p>A list of all developers who have ever contributed to SQLAlchemy, even a single patch,
-     is maintained at <a href="/trac/wiki/Contributors">Contributors</a>.   Anyone can add themselves 
-    to this list in case we forgot! Log in as "guest"/"guest".
+     is maintained at <a href="/trac/wiki/Contributors">Contributors</a>.
 </p>
 
 <a name="#developers"></a>

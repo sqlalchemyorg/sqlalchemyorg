@@ -45,9 +45,8 @@ Participate - SQLAlchemy
 <a name="trac"></a>
 <h2>Trac Access</h2>
 <p>SQLAlchemy uses Trac for bug reporting and issue tracking, Wiki pages, and source browsing.
-Anonymous users can post tickets and edit some wiki pages using a "guest" login, by logging 
-in with the username "guest" password "guest".
-We may someday upgrade Trac to allow new user registration directly.
+Trac now uses a registration system, so create an account via the "registration" link 
+to log in and participate in tickets.
 </p>
 
 <a name="bugs"></a>
