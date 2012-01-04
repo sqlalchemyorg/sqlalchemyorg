@@ -13,6 +13,7 @@ Develop - SQLAlchemy
     <li><a href="#roster">Developer Roster</a></li>
     <li><a href="#developers">Development Community</a></li>
     <li><a href="#source">Source Access</a></li>
+    <li><a href="#bitbucket">Bitbucket Mirror</a></li>
     <li><a href="#testing">Testing</a></li>
     <li><a href="#integration">Continuous Integration</a></li>
     <li><a href="#documentation">Documentation</a></li>
@@ -54,8 +55,7 @@ on getting started.
     <a href="/support.html#irc">main IRC channel</a>.</li>
 </ul>
 
-<a name="#source"></a>
-
+<a name="source"></a>
 <h2>Source Access</h2>
 <p>SQLAlchemy self-hosts its sourcecode using <a href="http://mercurial.selenic.com/">Mercurial</a>.   A clone of 
     the repository is via:</p>
@@ -80,10 +80,14 @@ Downloadable snapshots of the current default and maintenance branches are avail
 on the <a href="/download.html">download</a> page.
 </p>
 
-<p>If you would like to share changes with SQLAlchemy core developers, it's common
-    to send us a simple patch file created as a unified diff, and attached to a <a href="/participate.html#trac">Trac ticket</a>.
-    Alternatively, create a fork of SQLAlchemy up on <a href="http://www.bitbucket.org">BitBucket</a> and share your
-    changes there.</p>
+<a name="bitbucket"></a>
+<h2>Bitbucket Mirror</h2>
+<p>Sharing changes with SQLAlchemy core developers can be done by either attaching patches to 
+    <a href="/participate.html#trac">Trac tickets</a>, or creating forks on <a href="http://www.bitbucket.org">BitBucket</a>.
+    The SQLAlchemy Mercurial repository automatically pushes out to the official <a href="https://bitbucket.org/zzzeek/sqlalchemy">BitBucket mirror
+    of SQLAlchemy</a>.  The "fork" button creates a new fork, where you can pull and push changes from.   When the patch is ready,
+    send off a "pull request", and/or link from a Trac ticket.
+</p>
 
 <a name="testing"></a>
 <h2>Testing</h2>
