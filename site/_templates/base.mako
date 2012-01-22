@@ -28,6 +28,7 @@ if not current_section and in_docs:
     <link rel="stylesheet" type="text/css" media="print" href="/css/print.css"></link>
     </%block>
 
+    <%include file="/tracking.mako"/>
 </head>
 
 <body>
