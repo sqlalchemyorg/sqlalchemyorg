@@ -28,7 +28,16 @@ if not current_section and in_docs:
 
     <%block name="head">
         <!-- sqlalchemy.org head -->
-        <%include file="/head.mako" args="site_base=self.attr.site_base, docs_base=self.attr.docs_base"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link rel="shortcut icon" href="${self.attr.site_base}/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" media="all" href="${self.attr.site_base}/css/site2.css"></link>
+        <link rel="stylesheet" type="text/css" media="print" href="${self.attr.site_base}/css/print.css"></link>
+        <script type="text/javascript" src="${self.attr.site_base}/js/doc_versions.js"></script>
+
+        <script type="text/javascript">
+        var site_base='${self.attr.site_base}';
+        var docs_base='${self.attr.docs_base}';
+        </script>
         <%include file="/tracking.mako"/>
         <!-- end sqlalchemy.org head -->
     </%block>
