@@ -1,5 +1,4 @@
 <%inherit file="site.mako" />
-
 <div class="blog_nav">
 <%block name="prevnext">
     % if prev_post:

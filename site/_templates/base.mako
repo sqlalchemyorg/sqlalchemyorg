@@ -3,7 +3,11 @@
 %>
 <%
 in_docs = self.attr.in_docs
-
+if in_docs:
+    self.attr.site_base = site_base = bf.config.site.url
+else:
+    self.attr.site_base = site_base = ""
+self.attr.docs_base = docs_base = bf.config.docs_url
 current_section = getattr(self.module, 'section', '')
 if not current_section and in_docs:
     current_section = 'docs'
@@ -14,28 +18,24 @@ if not current_section and in_docs:
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-
     <title>
         <%block name="head_title">
         SQLAlchemy - The Database Toolkit for Python
         </%block>
     </title>
 
-    <%block name="head">
-    <link rel="stylesheet" type="text/css" media="all" href="/css/site2.css"></link>
-    <link rel="stylesheet" type="text/css" media="print" href="/css/print.css"></link>
-    </%block>
-
+<%block name="head">
+    <%include file="/head.mako" args="site_base=self.attr.site_base, docs_base=self.attr.docs_base"/>
     <%include file="/tracking.mako"/>
+</%block>
+
 </head>
 
 <body>
 
 <div id="wrap">
 
-<%include file="header.mako" args="section=current_section" />
+<%include file="header.mako" args="section=current_section, docs_base=docs_base, site_base=site_base" />
 
 <div id="main-body" class="${current_section}">
 
