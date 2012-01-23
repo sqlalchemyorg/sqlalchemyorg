@@ -18,12 +18,16 @@ self.attr.docs_base = docs_base = bf.config.docs_url
         </%text>
     </title>
 
+    <!-- head pulled in from sphinx build -->
     <%text>
     <%block name="headers"/>
     </%text>
+    <!-- end head pulled in from sphinx build -->
 
+    <!-- sqlalchemy.org docs base head -->
     <%include file="/head.mako" args="site_base=self.attr.site_base, docs_base=self.attr.docs_base"/>
     <%include file="/tracking.mako"/>
+    <!-- end sqlalchemy.org docs base head -->
 
 </head>
 

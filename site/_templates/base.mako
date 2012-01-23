@@ -24,10 +24,14 @@ if not current_section and in_docs:
         </%block>
     </title>
 
-<%block name="head">
-    <%include file="/head.mako" args="site_base=self.attr.site_base, docs_base=self.attr.docs_base"/>
-    <%include file="/tracking.mako"/>
-</%block>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+
+    <%block name="head">
+        <!-- sqlalchemy.org head -->
+        <%include file="/head.mako" args="site_base=self.attr.site_base, docs_base=self.attr.docs_base"/>
+        <%include file="/tracking.mako"/>
+        <!-- end sqlalchemy.org head -->
+    </%block>
 
 </head>
 
