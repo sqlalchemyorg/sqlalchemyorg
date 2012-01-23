@@ -65,7 +65,7 @@ if not current_section and in_docs:
 
 </div> <!-- end #main-body -->
 
-<%include file="footer.mako"/>
+<%include file="footer.mako" args="site_base=self.attr.site_base, docs_base=self.attr.docs_base"/>
 
 </div> <!-- end #wrap -->
 

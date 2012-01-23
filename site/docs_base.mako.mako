@@ -50,7 +50,7 @@ ${next.body()}
 <%text>
 <%block name="footer">
 </%text>
-<%include file="footer.mako"/>
+<%include file="footer.mako" args="site_base=self.attr.site_base, docs_base=self.attr.docs_base"/>
 <%text>
 </%block>
 </%text>
