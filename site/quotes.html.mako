@@ -27,6 +27,15 @@ What People Are Saying - SQLAlchemy
     </blockquote>
 </%def>
 
+
+<%self:quote link="http://www.reddit.com/r/Python/comments/p03yh/sqlalchemy_vs_django_db/c3lk2dy" author="sisyphus, Reddit User">
+...it's the kind of library that not only solves the need it addresses but
+recommends the language it's written in--when I think about a language other
+than Python for some project involving a database my first thought is always,
+'but what would replace SQLAlchemy?'
+</%self:quote>
+
+
 <%self:quote link="http://tarekziade.wordpress.com/2011/07/12/firefox-sync-python/#comment-11602" author="Tarek Ziadé, core Firefox Sync developer">
 There’s a lot of Python libraries/frameworks out there we can use, and some of
 them are a big advantage to write web services. SQLAlchemy is one that comes
