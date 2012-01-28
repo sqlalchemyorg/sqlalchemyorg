@@ -1,0 +1,30 @@
+---
+date: 2012/01/28 12:01:00
+title: SQLAlchemy 0.7.5 Released
+author: Mike B
+---
+SQLAlchemy release 0.7.5 is now available.   This release
+includes some major bugfixes, as well as a handful of 
+new features:
+
+* Relationship loaders like ``joinedload()`` accept 
+  a "wildcard" character, e.g. ``'*'``, to establish
+  the "default loading strategy" for a query.
+* New reflection features allow autoloading of tables
+  to be smoothly integrated with Declarative
+  mappings, allowing database connectivity to 
+  be established in a later step after classes have
+  been defined.
+* Multiple Declarative bases can share the same
+  registry of class names.
+
+For a full list of changes including all
+bug fixes (27 in total), see 
+`CHANGES </changelog/CHANGES_0_7_5>`_.
+
+For a full description of version 0.7 of SQLAlchemy including migration information,
+see `What's New in SQLAlchemy 0.7? </trac/wiki/07Migration>`_.
+
+Download SQLAlchemy 0.7.5 on the `download page </download.html>`_.
+
+
