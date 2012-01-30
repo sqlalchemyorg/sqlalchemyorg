@@ -27,6 +27,14 @@ What People Are Saying - SQLAlchemy
     </blockquote>
 </%def>
 
+<%self:quote link="http://www.reddit.com/r/Python/comments/p03yh/sqlalchemy_vs_django_db/c3lk2dy" author="francoisdevlin, Hacker News User">
+SQLAlchemy is one of the best designed libraries I have ever used for any
+software task, period. I've done all sorts of crazy reflexive joins with it,
+used the meta programming capabilities to bootstrap my ORM from nothing, added
+my own rails like scope features to the session maker, etc. SQLAlchemy just
+plain works(TM). If you're a Python guy, learning it is one of the best things
+you can do.
+</%self:quote>
 
 <%self:quote link="http://www.reddit.com/r/Python/comments/p03yh/sqlalchemy_vs_django_db/c3lk2dy" author="sisyphus, Reddit User">
 ...it's the kind of library that not only solves the need it addresses but
