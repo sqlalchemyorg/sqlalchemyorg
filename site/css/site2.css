@@ -443,9 +443,13 @@ div.pygments_manni {
   }
 
 #sidebar .donate form {
-    text-align:center;
-    padding:20px;
+    display:inline;
 }
+
+#sidebar .donate img {
+    margin-top:auto;
+}
+
 
 /* footer styles
 ---------------------------------------------------------- */
