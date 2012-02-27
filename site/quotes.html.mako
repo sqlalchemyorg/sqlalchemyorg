@@ -27,6 +27,26 @@ What People Are Saying - SQLAlchemy
     </blockquote>
 </%def>
 
+<%self:quote link="http://www.reddit.com/r/programming/comments/q778v/taking_a_step_back_from_orms/c3vim8o" author="Rolegros, Reddit User">
+
+<p>I'm the biggest proponent of correct, thought-of, and performant SQL where
+I work, and I have to say that one ORM/database driver combination shifted my
+opinions towards ORMs.</p>
+
+<p>When you use SQLAlchemy (an ORM for python), you feel in complete control
+of what is done for you behind the scenes.</p>
+
+<p>First of all, they had the brilliant idea to build an abstraction over sql
+BEFORE building an ORM, so that if you do not want to work with objects mapped
+to your table, you can work with dictionaries directly, using a nice
+sql-generation api which allows you to refactor/check your sql code in a
+breeze.</p>
+
+<p>Second, the ORM itself is fantastic. I don't really know how to explain it,
+but you always feel in control of what happens. And if anything does not work
+like you expect it to, you can always extend the framework. It is extremely
+well suited for that. </p>
+</%self:quote>
 
 <%self:quote link="https://twitter.com/#!/mitsuhiko/status/173180120767545344/" author="Armin Ronacher, author of the Flask web framework, Jinja templates">
 I demand SQLAlchemy to be renamed to SQLAwesome. No particular reason.

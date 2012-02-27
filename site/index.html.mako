@@ -33,7 +33,9 @@ accommodate both of these principles.</p>
 <p>The main goal of SQLAlchemy is to change the way you think about databases
 and SQL! </p>
 
-<p><strong>Read some <a href="/features.html"><strong>key features</strong></a> of SQLAlchemy.</strong></p>
+<p><strong>Read some <a href="/features.html"><strong>key features</strong></a> of SQLAlchemy,
+    as well as <a href="/quotes.html"><strong>what people are saying</strong></a> about SQLAlchemy.</strong>
+    </p>
 
 <dl id="features">
     <dt>Who Uses SQLAlchemy</dt>
