@@ -27,6 +27,11 @@ What People Are Saying - SQLAlchemy
     </blockquote>
 </%def>
 
+
+<%self:quote link="https://twitter.com/#!/mitsuhiko/status/173180120767545344/" author="Armin Ronacher, author of the Flask web framework, Jinja templates">
+I demand SQLAlchemy to be renamed to SQLAwesome. No particular reason.
+</%self:quote>
+
 <%self:quote link="http://news.ycombinator.com/item?id=3526430" author="francoisdevlin, Hacker News User">
 SQLAlchemy is one of the best designed libraries I have ever used for any
 software task, period. I've done all sorts of crazy reflexive joins with it,
