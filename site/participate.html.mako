@@ -82,8 +82,8 @@ to log in and participate in tickets.
         <li>Tell us exactly what version of SQLAlchemy the issue is being observed with, as well as details
             about the database in use.   Often, an issue has already been fixed in the upcoming series and
             could not be backported.</li>
-        <li>Add yourself as a CC to the issue - our current trac interface gives you only one chance to do this 
-            unfortunately, so if you miss it, just add an email address in a comment and we'll add you on.</li>
+        <li>As you'll create an account to post a bug, updates on the ticket will be sent to the email address
+            you register with.  Feel free to add other addresses as CCs to the issue.</li>
         <li>Monitor the issue.   Lots of times the developers have immediate followup questions, and might even
             have patches for you to try in case the issue is hard to reproduce.   Please keep the conversation going
             until we can get the bug fixed !</li>
