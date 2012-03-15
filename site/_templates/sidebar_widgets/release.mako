@@ -2,7 +2,7 @@
 
 <a href="/download.html"><b>0.7.6</b></a>
 <br/>
-<a href="/blog/2012/03/15/sqlalchemy-0.7.6-released/">What's New?</a> | 
+<a href="/blog/2012/03/14/sqlalchemy-0.7.6-released/">What's New?</a> | 
 <a href="/changelog/CHANGES_0_7_6">Changelog</a> | 
 <a href="/docs/07/">docs</a>
 <br/>
