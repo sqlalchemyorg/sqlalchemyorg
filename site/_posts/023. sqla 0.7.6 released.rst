@@ -1,0 +1,21 @@
+---
+date: 2012/03/14 12:01:00
+title: SQLAlchemy 0.7.6 Released
+author: Mike B
+---
+SQLAlchemy release 0.7.6 is now available.   Released
+from Pycon 2012, this release starts getting us
+ready for the 0.8 series, adds some new features
+such as support for Common Table Expressions, and also has 
+some important bug fixes.
+
+For a full list of changes including all
+bug fixes, see 
+`CHANGES </changelog/CHANGES_0_7_6>`_.
+
+For a full description of version 0.7 of SQLAlchemy including migration information,
+see `What's New in SQLAlchemy 0.7? </trac/wiki/07Migration>`_.
+
+Download SQLAlchemy 0.7.6 on the `download page </download.html>`_.
+
+
