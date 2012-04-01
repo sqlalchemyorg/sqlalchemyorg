@@ -19,3 +19,5 @@ Released March 14, 2012
 <br/>
 Released June 5, 2011
 
+<br/><br/>
+<a href="/trac/wiki/08Migration"><b>Roadmap for 0.8</b></a>

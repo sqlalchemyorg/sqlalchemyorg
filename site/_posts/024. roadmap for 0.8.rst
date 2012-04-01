@@ -1,0 +1,20 @@
+---
+date: 2012/04/1 12:01:00
+title: Roadmap for 0.8 Published
+author: Mike B
+---
+The `What's new in 0.8 </trac/wiki/08Migration>`_ document is now
+published on the wiki.   The work for 0.8 is around 70% completed
+with the majority of "hard" reworkings finished, broken up among
+various patches and Bitbucket repositories at the moment but
+soon to be merged into a comprehensive 0.8 tree that will ultimately
+push 0.7 into a maintenance branch.
+
+0.8 so far has overall fewer changes than any previous major version,
+though a few are significant.   It's very likely that 0.8 will pick up
+a bunch more changes before it lands its first beta release.  
+
+So far, the version is set to be called 0.8 but there's at least some
+possibility it could be called 1.0 - stay tuned for news on that !
+
+`0.8 Migration </trac/wiki/08Migration>`_
