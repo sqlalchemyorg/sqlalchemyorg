@@ -120,6 +120,19 @@ Organizations - SQLAlchemy
 </%self:user>
 
 <%self:user
+    name="Intuitive Web Solutions",
+    logo="iws.png",
+    url="http://www.britecore.com/",
+    anchor="iws"
+    >
+    <a href="http://www.britecore.com/">Intuitive Web Solutions</a>
+    is the creator of <strong>BriteCore</strong> - a comprehensive insurance processing system
+    that empowers clients to efficiently manage the daily operations of their
+    insurance company. We use SQLAlchemy to manage our data - from policies to
+    the lines of business they are built on.
+</%self:user>
+
+<%self:user
     name="Beautylish",
     logo="beautylish.jpg"
     url="http://www.beautylish.com"
