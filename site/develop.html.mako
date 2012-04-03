@@ -84,7 +84,7 @@ on the <a href="/download.html">download</a> page.
 <h2>Bitbucket Mirror</h2>
 <p>Sharing changes with SQLAlchemy core developers can be done by either attaching patches to 
     <a href="/participate.html#trac">Trac tickets</a>, or creating forks on <a href="http://www.bitbucket.org">BitBucket</a>.
-    The SQLAlchemy Mercurial repository automatically pushes out to the official <a href="https://bitbucket.org/zzzeek/sqlalchemy">BitBucket mirror
+    The SQLAlchemy Mercurial repository automatically pushes out to the official <a href="https://bitbucket.org/sqlalchemy/sqlalchemy">BitBucket mirror
     of SQLAlchemy</a>.  The "fork" button creates a new fork, where you can pull and push changes from.   When the patch is ready,
     send off a "pull request", and/or link from a Trac ticket.
 </p>
