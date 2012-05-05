@@ -1,0 +1,34 @@
+---
+date: 2012/05/05 12:01:00
+title: SQLAlchemy 0.6.9 Released
+author: Mike B
+---
+SQLAlchemy 0.6.9, a maintenance release of the 0.6 branch,
+is now available.
+
+The 0.6 series has not seen a release since 0.6.8 was
+released nearly a year ago.  During that time,
+the 0.7 series has gone through over six releases, gaining many
+new features and bug fixes.  A portion of these fixes have been
+backported to 0.6 since 0.6.8, including twelve ORM fixes, so 0.6.9 is an effort
+to make these fixes widely available to those installations who have 
+not yet upgraded to 0.7.   The release coincides at the same time as 
+release 0.7.7, which is also fast approaching maintenance-only mode
+with 0.8 now well underway and close to initial beta releases.
+
+Care has been taken in 0.6.9 to minimize as much as possible the potential
+for backwards-incompatibilities with existing code, which sometimes can
+occur if an application is unknowingly relying upon a buggy behavior that
+is then fixed.   So while 0.6.9 is a very conservative release, it does
+still represent changes over a year's time; users are strongly urged to carefully
+review the CHANGES file to see exactly what's been adjusted, 
+and to test it fully in their 
+existing 0.6 applications 
+before promoting it to production.
+
+For a full list of changes including all
+bug fixes, see 
+`CHANGES </changelog/CHANGES_0_6_9>`_.
+
+Download SQLAlchemy 0.6.9 on the `download page </download.html>`_.
+

@@ -1,0 +1,28 @@
+---
+date: 2012/05/05 12:02:00
+title: SQLAlchemy 0.7.7 Released
+author: Mike B
+---
+SQLAlchemy 0.7.7 is now available.  This is the first release of the 0.7
+series subsequent to the promotion of the 0.8 series to trunk.   It nearly 
+two dozen bug fixes and features, including some significant ORM issues
+that have been resolved.   
+
+Development is now proceeding with the 0.8 series, which begins
+to push 0.7 into maintenance mode.  Bug fixes and some 
+features are being backported to 0.7 as is possible.   The 0.6 series 
+also launches 0.6.9 at the same time as 0.7.7, in an effort to "push out"
+all the pending fixes for both the 0.6 and 0.7 series, so that development
+on 0.8 can continue.
+
+While changes from 0.7.6 to 0.7.7 are intended to be fully backwards 
+compatible, existing installations running on 0.7 should refer to the CHANGES file
+to determine if and how they may be impacted by the fixes in 0.7.7 
+before upgrading, and users are advised to fully test their applications
+against 0.7.7 before promoting to production.
+
+For a full list of changes including all
+bug fixes, see 
+`CHANGES </changelog/CHANGES_0_7_7>`_.
+
+Download SQLAlchemy 0.7.7 on the `download page </download.html>`_.

@@ -10,12 +10,12 @@ Download - SQLAlchemy
 
 <h2>Version 0.7 (production / stable)</h2>
 
-<p>Latest 0.7 Release: <b>0.7.6</b> <a
-href="http://prdownloads.sourceforge.net/sqlalchemy/SQLAlchemy-0.7.6.tar.gz?download"><b>(0.7.6
+<p>Latest 0.7 Release: <b>0.7.7</b> <a
+href="http://prdownloads.sourceforge.net/sqlalchemy/SQLAlchemy-0.7.7.tar.gz?download"><b>(0.7.7
 via Sourceforge)</b></a> 
-<a href="http://www.python.org/pypi/SQLAlchemy/0.7.6"><b>(0.7.6 via
+<a href="http://www.python.org/pypi/SQLAlchemy/0.7.7"><b>(0.7.7 via
 Cheeseshop)</b></a>
-<a href="/changelog/CHANGES_0_7_6"><b>(CHANGES)</b></a></p>
+<a href="/changelog/CHANGES_0_7_7"><b>(CHANGES)</b></a></p>
 
 <p>Please be sure to review the 0.6 to 0.7 migration guide, found at <a
 href="/trac/wiki/07Migration"><b>07Migration</b></a>, for full details on changes
@@ -23,11 +23,11 @@ made since 0.6.</p>
 
 <h2>Version 0.6 (previous production series)</h2>
 
-<p>Latest 0.6 Release: <b>0.6.8</b> 
-<a href="http://prdownloads.sourceforge.net/sqlalchemy/SQLAlchemy-0.6.8.tar.gz?download"><b>(0.6.8
+<p>Latest 0.6 Release: <b>0.6.9</b> 
+<a href="http://prdownloads.sourceforge.net/sqlalchemy/SQLAlchemy-0.6.9.tar.gz?download"><b>(0.6.9
 via Sourceforge)</b></a> 
-<a href="http://www.python.org/pypi/SQLAlchemy/0.6.8"><b>(0.6.8 via
-Cheeseshop)</b></a> <a href="/changelog/CHANGES_0_6_8"><b>(CHANGES)</b></a></p>
+<a href="http://www.python.org/pypi/SQLAlchemy/0.6.9"><b>(0.6.9 via
+Cheeseshop)</b></a> <a href="/changelog/CHANGES_0_6_9"><b>(CHANGES)</b></a></p>
 
 <p>Please be sure to review the 0.5 to 0.6 migration guide, found at <a
 href="/trac/wiki/06Migration"><b>06Migration</b></a>, for full details on changes
@@ -42,10 +42,16 @@ made since 0.5.</p>
 <h2>Development Versions</h2>
 
 <p>Snapshots from Mercurial:</p>
-<p>0.7:
+<p>0.8:
 <a href="http://hg.sqlalchemy.org/sqlalchemy/archive/default.zip">zip</a> | 
 <a href="http://hg.sqlalchemy.org/sqlalchemy/archive/default.tar.gz">gz</a> |
 <a href="http://hg.sqlalchemy.org/sqlalchemy/archive/default.tar.bz2">bz2</a>
+</p>
+
+<p>0.7:
+<a href="http://hg.sqlalchemy.org/sqlalchemy/archive/rel_0_7.zip">zip</a> | 
+<a href="http://hg.sqlalchemy.org/sqlalchemy/archive/rel_0_7.tar.gz">gz</a> |
+<a href="http://hg.sqlalchemy.org/sqlalchemy/archive/rel_0_7.tar.bz2">bz2</a>
 </p>
 
 <p>0.6: 
