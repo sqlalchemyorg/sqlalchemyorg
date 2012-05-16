@@ -1,0 +1,19 @@
+---
+date: 2012/05/16 12:02:00
+title: Architecture of Open Source Applications, Volume II Now Available
+author: Mike B
+---
+I'm very pleased to announce that `The Architecture of Open Source Applications, Volume II <http://www.aosabook.org/>`_ is now available.  The
+AOSA volumes feature in-depth discussions of various open source applications, including Berkeley DB, Sendmail, and Git.
+Volume II includes my own contributed chapter which I wrote over the course of many weeks last year.
+
+In my chapter, `SQLAlchemy <http://www.aosabook.org/en/sqlalchemy.html>`_, I cover from a software development perspective how the various pieces of SQLAlchemy were conceived and how they fit together.  The history of major architectural decisions as well as influencing software are also discussed.   Users of SQLAlchemy are encouraged
+to gain a deeper perspective over how SQLAlchemy came to be the way it is
+by reading this chapter.
+
+I highly recommend purchasing the book directly from 
+`Lulu.com <http://www.lulu.com/content/paperback-book/the-architecture-of-open-source-applications-volume-ii/12652487>`_.  When purchasing from Lulu, all royalties are donated to `Amnesty International <http://amnesty.org/>`_.   The full text of the book is also available for free on `the website <http://www.aosabook.org>`_ directly.
+
+
+
+
