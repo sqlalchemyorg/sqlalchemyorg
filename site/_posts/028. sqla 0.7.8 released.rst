@@ -14,6 +14,9 @@ and ``Connection`` would not interpret positional arguments correctly.
 Users who are using the Pyodbc driver in conjunction with the C extensions
 on any platform are encouraged to upgrade.
 
+There's also a new dialect added that should allow usage of the new MySQL 
+engine provided by Google App Engine.
+
 Overall, 0.7.8 has few changes versus 0.7.7, particularly within the 
 ORM component, save for a few fixes.   Users are advised to fully
 test existing applications before upgrading in any case.
