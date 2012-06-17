@@ -3,7 +3,7 @@
 <a href="/download.html"><b>0.7.8</b></a>
 <br/>
 <a href="/blog/2012/06/16/sqlalchemy-0.7.8-released/">What's New?</a> | 
-<a href="/changelog/CHANGES_0_7_6">Changelog</a> | 
+<a href="/changelog/CHANGES_0_7_8">Changelog</a> | 
 <a href="/docs/07/">docs</a>
 <br/>
 Released June 16, 2012
