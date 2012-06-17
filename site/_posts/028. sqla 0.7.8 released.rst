@@ -1,0 +1,27 @@
+---
+date: 2012/06/16 12:02:00
+title: SQLAlchemy 0.7.8 Released
+author: Mike B
+---
+SQLAlchemy 0.7.8 is released.  This is a maintenance release containing
+significant bug fixes applied to both the 0.7 and 0.8 SQLAlchemy series.
+
+Significant issues resolved include a memory leak identified when the 
+C extensions were installed in conjunction with usage of the Pyodbc DBAPI
+driver, and possibly other drivers that use a custom non-tuple for 
+result rows; as well as a Python 3 issue where the ``execute()`` method of ``Engine``
+and ``Connection`` would not interpret positional arguments correctly.
+Users who are using the Pyodbc driver in conjunction with the C extensions
+on any platform are encouraged to upgrade.
+
+Overall, 0.7.8 has few changes versus 0.7.7, particularly within the 
+ORM component, save for a few fixes.   Users are advised to fully
+test existing applications before upgrading in any case.
+
+For a full list of changes including all
+bug fixes, see 
+`CHANGES </changelog/CHANGES_0_7_8>`_.
+
+Download SQLAlchemy 0.7.8 on the `download page </download.html>`_.
+
+
