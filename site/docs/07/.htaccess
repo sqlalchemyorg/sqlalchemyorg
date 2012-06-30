@@ -1,4 +1,4 @@
 RewriteEngine On
-RewriteRule (.*) http://docs.sqlalchemy.org/en/latest/$1 [R,L]
+RewriteRule (.*) http://docs.sqlalchemy.org/en/rel_0_7/$1 [R,L]
 
 
