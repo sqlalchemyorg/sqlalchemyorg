@@ -8,7 +8,7 @@ Organizations - SQLAlchemy
 
 <h1>Organizations using SQLAlchemy</h1>
 
-<p>This is just a partial list of organizations that have 
+<p>This is just a partial list of organizations that have
     rolled out using SQLAlchemy.</p>
 
 <p>Using SQLAlchemy in production ?   We'd love to add your logo and details about your
@@ -27,19 +27,40 @@ Organizations - SQLAlchemy
 <dl id="inproduction">
 
 
-<%self:user 
-        name="Yelp", 
+<%self:user
+        name="Yelp",
         logo="yelp.png"
         url="http://www.yelp.com/"
         anchor="yelp">
         <a href="http://www.yelp.com/">Yelp</a>
         is the fun and easy way to find and talk about great (and not so great) local businesses.
-        An early adopter of SQLAlchemy, Yelp started out with a core-only approach as early as version 
+        An early adopter of SQLAlchemy, Yelp started out with a core-only approach as early as version
         0.4, later migrating to an ORM approach now in production at version 0.7.
 </%self:user>
 
-<%self:user 
-        name="LolApps", 
+<%self:user
+        name="newcars.com (part of cars.com)"
+        logo="carscom.png"
+        url="http://www.newcars.com"
+        anchor="newcars.com">
+        <a href="http://www.newcars.com">newcars.com</a> is a new member of the <a href="http://www.cars.com">cars.com</a>
+        family, allowing cars.com visitors to shop for new cars, in addition to the site's original focus on used cars.
+        Written in Python using the Pyramid web framework, newcars.com is built entirely around the
+        SQLAlchemy ORM.
+</%self:user>
+
+<%self:user
+        name="Dropbox"
+        logo="dropbox.png"
+        url="http://www.dropbox.com"
+        anchor="dropbox.com">
+        <a href="http://www.dropbox.com">dropbox.com</a> is the widely successful file sharing platform.
+        Dropbox were early adopters of SQLAlchemy.  Today, they successfully scale out to over
+        50,000,000 users using a custom-built SQLAlchemy Core approach on top of MySQL.
+</%self:user>
+
+<%self:user
+        name="LolApps",
         logo="lolapps.png"
         url="http://www.lolapps.com"
         anchor="lolapps">
@@ -49,8 +70,8 @@ Organizations - SQLAlchemy
 </%self:user>
 
 
-<%self:user 
-        name="Firefox Sync", 
+<%self:user
+        name="Firefox Sync",
         logo="firefox.png"
         url="http://www.firefox.com/sync"
         anchor="firefox">
@@ -58,29 +79,29 @@ Organizations - SQLAlchemy
         Core server elements of Firefox Sync are written in Python using SQLAlchemy for backend storage.
 </%self:user>
 
-<%self:user 
-        name="Reddit", 
+<%self:user
+        name="Reddit",
         logo="reddit.png"
         url="http://reddit.com",
         anchor="reddit">
-        <a href="http://reddit.com">Reddit</a> is one of the biggest social 
+        <a href="http://reddit.com">Reddit</a> is one of the biggest social
         news aggregators on the internet. Reddit is built using Pylons, Mako templates,
         and a custom, non-ORM database abstraction layer built on SQLAlchemy Core.
 </%self:user>
 
 
-<%self:user 
-        name="Fedora Project", 
+<%self:user
+        name="Fedora Project",
         logo="fedora-logo.png"
         url="http://fedoraproject.org"
         anchor="fedoraproject">
         <a href="http://fedoraproject.org">Fedora</a> is one of the most widely used Linux distributions.
-        According to their developers: 
+        According to their developers:
         "SQLAlchemy powers much of Fedora's Infrastructure. We pretty much worship it :)"
 </%self:user>
 
-<%self:user 
-        name="SurveyMonkey", 
+<%self:user
+        name="SurveyMonkey",
         logo="surveymonkey.png"
         url="http://www.surveymonkey.com/"
         anchor="surveymonkey">
@@ -106,8 +127,8 @@ Organizations - SQLAlchemy
     based on a sharded Postgresql system.
 </%self:user>
 
-<%self:user 
-        name="OpenStack", 
+<%self:user
+        name="OpenStack",
         logo="openstack.png"
         url="http://www.openstack.com"
         anchor="openstack">
@@ -144,8 +165,8 @@ more. Beautylish is built using Pylons and SQLAlchemy on top of a complete
 Amazon Web Services stack. Beauty is serious business ;)
 </%self:user>
 
-<%self:user 
-        name="FreshBooks", 
+<%self:user
+        name="FreshBooks",
         logo="freshbooks.png"
         url="http://www.freshbooks.com/"
         anchor="freshbooks">
@@ -154,8 +175,8 @@ Amazon Web Services stack. Beauty is serious business ;)
         is built entirely upon SQLAlchemy.
 </%self:user>
 
-<%self:user 
-        name="Lex Machina", 
+<%self:user
+        name="Lex Machina",
         logo="lexmachina.jpg"
         url="https://lexmachina.com/"
         anchor="lexmachina">
@@ -166,12 +187,12 @@ Amazon Web Services stack. Beauty is serious business ;)
         extensively as the gateway to their legal database.
 </%self:user>
 
-<%self:user 
-        name="SourceForge", 
+<%self:user
+        name="SourceForge",
         logo="sourceforge.png"
         url="http://sourceforge.net"
         anchor="sourceforge">
-        <a href="http://sourceforge.net">SourceForge's</a> 
+        <a href="http://sourceforge.net">SourceForge's</a>
         all new infrastructure uses SQLAlchemy where relational databases
         are used.
 </%self:user>
@@ -212,7 +233,7 @@ Amazon Web Services stack. Beauty is serious business ;)
     anchor="juju">
     <a href="http://www.job-search-engine.com/">Juju</a> is a job search engine that indexes job
     listings from companies and job boards all over the web and makes them
-    searchable. 
+    searchable.
 </%self:user>
 
 <%self:user
@@ -230,7 +251,7 @@ Amazon Web Services stack. Beauty is serious business ;)
     url="http://www.amyris.com",
     anchor="amyris">
     <a href="http://www.amyris.com">Amyris</a> is applying an industrial synthetic biology platform to provide
-high-performing alternatives to petroleum-sourced fuels and chemicals: 
+high-performing alternatives to petroleum-sourced fuels and chemicals:
 "We use sqlalchemy heavily at Amyris and it is a thing of beauty :)"
 </%self:user>
 
@@ -239,8 +260,8 @@ high-performing alternatives to petroleum-sourced fuels and chemicals:
         logo="poweredbytippr.gif"
         url="http://www.poweredbytippr.com/"
         anchor="poweredbytippr">
-        <a href="http://www.poweredbytippr.com/">Powered By Tippr</a> enables publishers to run group buying 
-        promotions on their websites, rewarding their loyal readers, attracting new audience 
+        <a href="http://www.poweredbytippr.com/">Powered By Tippr</a> enables publishers to run group buying
+        promotions on their websites, rewarding their loyal readers, attracting new audience
         groups and unlocking a new revenue stream through improved ad revenue.
         Powered By Tippr uses SQLAlchemy for their analysis and reporting tools.
 </%self:user>
@@ -252,7 +273,7 @@ high-performing alternatives to petroleum-sourced fuels and chemicals:
         anchor="thumbtack">
         <a href="http://www.thumbtack.com/">Thumbtack</a> gives you the ability to vet, contact and book service professionals online.
         SQLAlchemy is used throughout their backend data services, including their customer recommendation engine.  Per Thumbtack's
-        director of engineering, "Needless to say we can deploy updates and improvements to our internal tools much 
+        director of engineering, "Needless to say we can deploy updates and improvements to our internal tools much
         faster because SQLAlchemy saves us so much time!"
 </%self:user>
 
@@ -261,54 +282,54 @@ high-performing alternatives to petroleum-sourced fuels and chemicals:
         logo="naumen.gif"
         url="http://naumen.com/"
         anchor="naumen">
-        <a href="http://naumen.com/">Naumen</a> 
+        <a href="http://naumen.com/">Naumen</a>
         is a leading Russian developer of software solutions for businesses and public authorities.
-        Areas of expertise include enterprise document management, call- and contact-centers, e-learning, CRM, Help Desk systems. 
-        SQLAlchemy is used extensively within the company's Call Center solution. 
+        Areas of expertise include enterprise document management, call- and contact-centers, e-learning, CRM, Help Desk systems.
+        SQLAlchemy is used extensively within the company's Call Center solution.
 </%self:user>
 
-<%self:user 
-        name="FanFeedr", 
+<%self:user
+        name="FanFeedr",
         logo="fanfeedr.png"
         url="http://fanfeedr.com/">
-        <a href="http://fanfeedr.com/">FanFeedr</a> is a sports aggregation site featuring hundreds of thousands of stories from around 
+        <a href="http://fanfeedr.com/">FanFeedr</a> is a sports aggregation site featuring hundreds of thousands of stories from around
         the globe.  Over thirty sports categories are covered as thousands of articles daily are classified
         and tagged, using SQLAlchemy with PostgreSQL as the core content repository and statistical analysis engine.
 </%self:user>
 
-<%self:user 
-        name="Adroll", 
+<%self:user
+        name="Adroll",
         logo="adroll.png"
         url="http://www.adroll.com">
-    <a href="http://www.adroll.com">Adroll.com</a> lets online publishers connect and roll up their ad space to form relevant packages of inventory that advertisers can buy. 
+    <a href="http://www.adroll.com">Adroll.com</a> lets online publishers connect and roll up their ad space to form relevant packages of inventory that advertisers can buy.
     Adroll's platform is built on Pylons using SQLAlchemy with PostgreSQL for data storage.
 </%self:user>
 
-<%self:user 
-        name="Charlie Rose", 
+<%self:user
+        name="Charlie Rose",
         logo="charlierose.png"
         url="http://www.charlierose.com/">
-<a href="http://www.charlierose.com/">Charlie Rose</a> is the widely viewed PBS show.  Their website offers a full episode and clip archive, on a site built with Pylons and SQLAlchemy. 
+<a href="http://www.charlierose.com/">Charlie Rose</a> is the widely viewed PBS show.  Their website offers a full episode and clip archive, on a site built with Pylons and SQLAlchemy.
 </%self:user>
 
-<%self:user 
-        name="Jim Henson's CreatureShop", 
+<%self:user
+        name="Jim Henson's CreatureShop",
         logo="creatureshop.jpg"
         url="http://www.creatureshop.com/">
         One of several high profile animation studios which use SQLAlchemy, <a href="http://www.creatureshop.com/">Jim Henson's Creature Shop</a>
-         uses SQLAlchemy internally for asset tracking and within the backend for its render farm. 
+         uses SQLAlchemy internally for asset tracking and within the backend for its render farm.
 </%self:user>
 
-<%self:user 
-        name="alaTest", 
+<%self:user
+        name="alaTest",
         logo="alatest.jpg"
         url="http://alatest.com/">
         <a href="http://alatest.com/">alaTest</a> collects reviews from consumers and experts to help you find the best products on the market.
-        SQLAlchemy is used heavily for our datamining and matching technology. 
+        SQLAlchemy is used heavily for our datamining and matching technology.
 </%self:user>
 
-<%self:user 
-        name="Checkout", 
+<%self:user
+        name="Checkout",
         logo="checkout.gif"
         url="http://www.checkoutapp.com/">
     <a href="http://www.checkoutapp.com/">Checkout</a> is a desktop
@@ -317,16 +338,16 @@ high-performing alternatives to petroleum-sourced fuels and chemicals:
     along with SQLite to implement its storage system.
 </%self:user>
 
-<%self:user 
-        name="Toolpart Team", 
+<%self:user
+        name="Toolpart Team",
         logo="toolpart.jpg"
         url="http://toolpart.hu">
         <a href="http://toolpart.hu">Toolpart</a> offers custom business integration and Open ERP solutions.   SQLAlchemy is used for Python projects.
 </%self:user>
 
 
-<%self:user 
-        name="The Carbon Account", 
+<%self:user
+        name="The Carbon Account",
         logo="carbon_account.gif"
         url="http://www.thecarbonaccount.com/">
     <a href="http://www.thecarbonaccount.com/">The Carbon Account</a> helps
@@ -335,18 +356,18 @@ high-performing alternatives to petroleum-sourced fuels and chemicals:
     database.
 </%self:user>
 
-<%self:user 
-        name="Codepad", 
+<%self:user
+        name="Codepad",
         logo="codepad.png"
         url="http://www.codepad.org/">
-        <a href="http://www.codepad.org/">CodePad.org</a> 
+        <a href="http://www.codepad.org/">CodePad.org</a>
         is an online compiler/interpreter, and a simple collaboration tool,
         written by Steven Hazel, founder of <a href="http://saucelabs.com">Sauce Labs.</a>
-        The web site is written in Python, using Pylons and SQLAlchemy. 
+        The web site is written in Python, using Pylons and SQLAlchemy.
 </%self:user>
 
-<%self:user 
-        name="SiaFoo", 
+<%self:user
+        name="SiaFoo",
         logo="siafoo.png"
         url="http://www.siafoo.net/">
         <a href="http://www.siafoo.net/">SiaFoo</a> is a site for storing code
@@ -354,8 +375,8 @@ high-performing alternatives to petroleum-sourced fuels and chemicals:
         PostgreSQL.
 </%self:user>
 
-<%self:user 
-        name="MediaCore", 
+<%self:user
+        name="MediaCore",
         logo="mediacore.png"
         url="http://mediacore.com/">
         <a href="http://mediacore.com">MediaCore</a> is a media content system
@@ -363,49 +384,49 @@ high-performing alternatives to petroleum-sourced fuels and chemicals:
         SQLAlchemy to manage content.
 </%self:user>
 
-<%self:user 
-        name="Milo", 
+<%self:user
+        name="Milo",
         logo="milo.png"
         url="http://milo.com">
-        Real-Time Local Product Search. Uses Django as the framework but with 
-        SQLAlchemy dropped in as the ORM on the front-end (and exclusively on the back-end). 
+        Real-Time Local Product Search. Uses Django as the framework but with
+        SQLAlchemy dropped in as the ORM on the front-end (and exclusively on the back-end).
 </%self:user>
 
-<%self:user 
-        name="TriMet", 
+<%self:user
+        name="TriMet",
         logo="trimet.png"
         url="http://trimet.org/">
-        TriMet provides bus, light rail and commuter rail service in the Portland, Oregon metro area. 
+        TriMet provides bus, light rail and commuter rail service in the Portland, Oregon metro area.
         Pylons and SQLAlchemy are used as the basis for a set of internal GIS/mapping apps, as well as other
         applications.
 </%self:user>
 
-<%self:user 
-        name="gcollab", 
+<%self:user
+        name="gcollab",
         logo="gcollab.jpg"
         url="https://www.gcollab.com/">
 Global collaborative internet services, built with SQLAlchemy.
 </%self:user>
 
-<%self:user 
-        name="mapWOC", 
+<%self:user
+        name="mapWOC",
         logo="mapwoc.png"
         url="http://mapwoc.org/">
-        <a href="http://mapwoc.org/">mapWOC</a> lets you verify the integrity of websites, and identify malicious 
+        <a href="http://mapwoc.org/">mapWOC</a> lets you verify the integrity of websites, and identify malicious
         content by managing virtual machines with native browsers and
         analysing generated network traffic.  SQLAlchemy ORM is used throughout
         for data management.
 </%self:user>
 
-<%self:user 
-        name="Mydeco", 
+<%self:user
+        name="Mydeco",
         logo="mydeco.png"
         url="http://mydeco.com/">
         <a href="http://mydeco.com/">Mydeco</a> is a home furnishings and interior design site, built on SQLAlchemy for database access.
 </%self:user>
 
-<%self:user 
-        name="screenshots.debian.net", 
+<%self:user
+        name="screenshots.debian.net",
         logo="screenshots.debian.png"
         url="http://screenshots.debian.net/">
         A repository of Debian screenshots.  Builds on SQLAlchemy and PostgreSQL for data storage.
