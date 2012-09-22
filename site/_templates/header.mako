@@ -13,6 +13,14 @@
 </div>
 
 <div id="nav">
+
+    <div id="gittip_nav">
+
+        <iframe style="border: 0; margin: 0; padding: 0;"
+        src="https://www.gittip.com/zzzeek/widget.html"
+        width="48pt" height="20pt"></iframe>
+
+    </div>
     <ul>
         <li${active('home')}><a href="${site_base}/">home</a></li>
         <li${active('features')}><a href="${site_base}/features.html">features</a>

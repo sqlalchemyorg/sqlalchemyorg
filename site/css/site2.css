@@ -170,6 +170,10 @@ a:hover {
   background-color: #333;
 }
 
+#gittip_nav {
+  float:right;
+  margin-top:2px;
+}
 
 
 /* content styles
