@@ -1,0 +1,26 @@
+---
+date: 2012/10/01 12:02:00
+title: SQLAlchemy 0.7.9 Released
+author: Mike B
+---
+SQLAlchemy 0.7.9 is released.  This is a maintenance release primarily
+containing bug fixes applied to both the 0.7 and 0.8 SQLAlchemy series.
+
+0.7.9 includes some adjustments that will also be present in 0.8, including
+changes to the event-dispatch system which dramatically reduce the amount
+of memory used.   There are also several fixes related to the relatively
+new common table expression (CTE) construct.
+
+Other fixes include small bugs present in components such as the ORM,
+SQL generation system, and various dialect-specific bugs.   0.7.9 also
+has updates to its unit test system which were backported from 0.8.
+
+The 0.8 series, which includes a long list of new features and improvements,
+is more or less ready for initial beta releases, and will be available for
+download within the coming weeks.
+
+For a full list of changes, see `CHANGES </changelog/CHANGES_0_7_9>`_.
+
+Download SQLAlchemy 0.7.9 on the `download page </download.html>`_.
+
+
