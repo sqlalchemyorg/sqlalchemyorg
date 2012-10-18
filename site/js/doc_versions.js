@@ -23,7 +23,7 @@ function renderDocVersions() {
     $('#version_menu,.version-listing').empty();
     for (key in doc_versions) {
         obj = doc_versions[key];
-        current_url = docs_base + "/" + obj.slug + "/";
+        current_url = docs_base + "/en/" + obj.slug + "/";
         $("#version_menu,.version-listing").append('<li><a href="' + current_url + '">Version ' + obj.version + '</a></li>');
     }
 }
