@@ -16,8 +16,8 @@ Changes - SQLAlchemy
 
 <script>
 
-	var changelog = location.hash;
-	var match_change_file = /CHANGES_(\d+)_(\d+)(?:_(\d+))?(beta\d|[a-z]\d)?/;
+	var changelog = location.search;
+    var match_change_file = /.*CHANGES_(\d+)_(\d+)(?:_(\d+))?(beta\d|[a-z]\d)?/;
 	if (changelog) {
 		match = match_change_file.exec(changelog);
 		if (match) {

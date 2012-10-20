@@ -1,4 +1,4 @@
 RewriteEngine On
-RewriteRule (CHANGES.*) /changelog/index.html#$1 [R,L]
+RewriteRule ^(CHANGES.*) /changelog/index.html?$1 [R,L]
 
 
