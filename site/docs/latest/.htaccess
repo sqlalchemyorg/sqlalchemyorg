@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule (.*) http://docs.sqlalchemy.org/en/latest/$1 [R,L]
+
