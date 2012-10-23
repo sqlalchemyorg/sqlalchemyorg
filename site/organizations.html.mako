@@ -101,6 +101,19 @@ Organizations - SQLAlchemy
 </%self:user>
 
 <%self:user
+        name="OpenStack",
+        logo="openstack.png"
+        url="http://www.openstack.com"
+        anchor="openstack">
+        <a href="http://www.openstack.com">OpenStack</a> is an IaaS cloud
+        computing project by Rackspace Cloud and NASA joined by several
+        companies such as Cloud.com, Citrix Systems, Dell, enStratus, NTT
+        Data, PEER 1, RightScale, Cloudkick, Zenoss, Limelight, Scalr, AMD,
+        Intel, and Spiceworks. OpenStack Compute uses the SQLAlchemy ORM for
+        integration with backend storage.
+</%self:user>
+
+<%self:user
         name="SurveyMonkey",
         logo="surveymonkey.png"
         url="http://www.surveymonkey.com/"
@@ -128,16 +141,19 @@ Organizations - SQLAlchemy
 </%self:user>
 
 <%self:user
-        name="OpenStack",
-        logo="openstack.png"
-        url="http://www.openstack.com"
-        anchor="openstack">
-        <a href="http://www.openstack.com">OpenStack</a> is an IaaS cloud
-        computing project by Rackspace Cloud and NASA joined by several
-        companies such as Cloud.com, Citrix Systems, Dell, enStratus, NTT
-        Data, PEER 1, RightScale, Cloudkick, Zenoss, Limelight, Scalr, AMD,
-        Intel, and Spiceworks. OpenStack Compute uses the SQLAlchemy ORM for
-        integration with backend storage.
+    name="LinOTP",
+    logo="linotp.png",
+    url="http://www.linotp.org",
+    anchor="linotp"
+    >
+    <a href="http://www.linotp.org">LSE LinOTP</a> is a flexible and versatile OTP-platform for strong user
+authentication.  Leveraging a modular architecture, it supports a
+variety of authentication protocols, as well as token and user
+repository features, while still remaining vendor-independent at its
+core.  LinOTP features user friendly installation and usage, simple
+scalability and multi tenancy.   LinOTP's approach is backed by
+relational databases accessed via SQLAlchemy.
+
 </%self:user>
 
 <%self:user
