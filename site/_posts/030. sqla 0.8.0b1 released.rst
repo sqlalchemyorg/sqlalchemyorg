@@ -1,0 +1,38 @@
+---
+date: 2012/10/30 12:02:00
+title: SQLAlchemy 0.8.0b1 Released
+author: Mike B
+---
+The first beta release of the SQLAlchemy 0.8 series, 0.8.0b1, is
+released for developer evaluation.
+
+0.8 represents the latest series of refinements to the SQLAlchemy
+Core and ORM libraries and features over 100 individual changes,
+consisting of major new features, bug fixes, and other enhancements.
+There are also major refactorings present in both the library and the
+test suite intended to improve maintainability, performance, and
+compability with future enhancements and external projects.
+
+The purpose of the beta releases is to give a wide range of developers
+a chance to evaluate the new version against existing applications,
+and to alert the SQLAlchemy
+team of any regressions or major upgrade issues being experienced.
+Each major release of SQLAlchemy includes a wide array of planned
+but backwards-incompatible changes, including the removal of
+deprecated features, as well as bug fixes which change
+behaviors that some applications may have been relying upon.
+
+Among many changes include improvements to the documentation system.
+The changelog and migration guides for SQLAlchemy are now integrated
+with the Sphinx documentation, where they can refer to each other
+as well as the rest of the SQLAlchemy documentation.
+
+Users should start by reading the `What's New in 0.8 </docs/08/changelog/migration_08.html>`_
+document, which introduces major new features as well as areas
+where applications may experience a behavioral change.  The
+`0.8.0b1 Changelog </changelog/CHANGES_0_8_0b1>`_ will enumerate
+most changes in detail.
+
+Download SQLAlchemy 0.8.0b1 on the `download page </download.html>`_.
+
+
