@@ -15,7 +15,7 @@ href="http://prdownloads.sourceforge.net/sqlalchemy/SQLAlchemy-0.8.0b1.tar.gz?do
 via Sourceforge)</b></a>
 
 ## <a href="http://www.python.org/pypi/SQLAlchemy/0.8.0b1"><b>(0.8.0b1 via
-Cheeseshop)</b></a>
+## Cheeseshop)</b></a>
 
 <a href="/changelog/CHANGES_0_8_0b1"><b>(CHANGES)</b></a></p>
 
