@@ -1,8 +1,12 @@
 
 var doc_versions = [
       {
-        "version":"0.8",
+        "version":"development",
         "slug":"latest"
+      },
+      {
+        "version":"0.8",
+        "slug":"rel_0_8"
       },
       {
         "version":"0.7",

@@ -40,6 +40,7 @@
                 <li><a href="${site_base}/trac/wiki/UsageRecipes">Recipes</a></li>
                 <li><a href="${site_base}/trac/wiki/FAQ">FAQ</a></li>
                 <li><a href="${site_base}/trac/roadmap">Roadmap</a></li>
+                <li><a href="${site_base}/trac/timeline">Timeline</a></li>
                 <li><a href="${site_base}/trac/query?status=assigned&status=new&status=reopened&group=milestone&max=150&col=id&col=summary&col=status&col=type&col=priority&col=milestone&col=component&order=priority">Tickets by Milestone</a></li>
             </ul>
         </li>
