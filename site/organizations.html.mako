@@ -305,15 +305,6 @@ high-performing alternatives to petroleum-sourced fuels and chemicals:
 </%self:user>
 
 <%self:user
-        name="FanFeedr",
-        logo="fanfeedr.png"
-        url="http://fanfeedr.com/">
-        <a href="http://fanfeedr.com/">FanFeedr</a> is a sports aggregation site featuring hundreds of thousands of stories from around
-        the globe.  Over thirty sports categories are covered as thousands of articles daily are classified
-        and tagged, using SQLAlchemy with PostgreSQL as the core content repository and statistical analysis engine.
-</%self:user>
-
-<%self:user
         name="Adroll",
         logo="adroll.png"
         url="http://www.adroll.com">
