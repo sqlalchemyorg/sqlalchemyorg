@@ -63,7 +63,6 @@ and SQL! </p>
             <li><a href="/quotes.html">Testimonials</a></li>
             <li><a href="/docs/">Documentation</a></li>
             <li><a href="/trac/wiki/UsageRecipes">Recipes</a></li>
-            <li><a href="/trac/wiki/FAQ">Developer FAQ</a></li>
         </ul>
     </dd>
     <dt>Resources</dt>
