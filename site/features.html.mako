@@ -13,7 +13,7 @@ Features - SQLAlchemy
 <dl id="features">
     <dt>No ORM Required</dt>
     <dd>
-        <p>SQLAlchemy consists of two distinct components, known as the 
+        <p>SQLAlchemy consists of two distinct components, known as the
         <strong>Core</strong> and the <strong>ORM</strong>.  The Core is itself
         a fully featured SQL abstraction toolkit, providing a smooth
         layer of abstraction over a wide variety of DBAPI implementations
@@ -23,7 +23,7 @@ Features - SQLAlchemy
         statements as well as introspect existing schemas, and a type
         system that allows any mapping of Python types to database types,
         rounds out the system.   The
-        Object Relational Mapper is then an optional package which 
+        Object Relational Mapper is then an optional package which
         builds upon the Core.  Many applications are built strictly
         on the Core, using the SQL expression system to provide succinct
         and exact control over database interactions.
@@ -31,12 +31,13 @@ Features - SQLAlchemy
     </dd>
     <dt>Mature, High Performing Architecture</dt>
     <dd>
-       <p>Over five years of constant development, profiling, and refactoring
+       <p>Over seven years of constant development, profiling, and refactoring
        has led to a toolkit that is high performing and accurate, well covered
        in tests, and deployed in thousands of environments. With virtually
        every major component in its second or third full iteration, SQLAlchemy
        0.6 is roughly twice the speed of older 0.4 versions from just a few
-       years ago. It's raw execution speed is competitive with comparable
+       years ago, and versions 0.7 and 0.8 continue to improve.
+       It's raw execution speed is competitive with comparable
        tools, and advanced ORM features like its unit of work, in-memory
        collections, eager loading of collections via joins or secondary
        subselects, and other optimizations allow SQLAlchemy's ORM to emit
@@ -103,9 +104,9 @@ Features - SQLAlchemy
             other, and can also be extended through various plugin points.
             An integrated event system allows custom code to be injected at
             over fifty points of interaction, including within core
-            statement execution, schema generation and introspection, 
+            statement execution, schema generation and introspection,
             connection pool operation, object relational configuration,
-            persistence operations, attribute mutation events, and 
+            persistence operations, attribute mutation events, and
             transactional stages.   New SQL expression elements and custom
             database types can be built and integrated seamlessly.
 
@@ -117,8 +118,8 @@ Features - SQLAlchemy
     <p>The ORM standardizes on a "Declarative" configurational system that
         allows construction of user-defined classes inline with the table
         metadata they map to, in the same way most other object-relational
-        tools provide.   However this system is totally optional - 
-        at its core, the ORM considers the user-defined class, the 
+        tools provide.   However this system is totally optional -
+        at its core, the ORM considers the user-defined class, the
         associated table metadata, and the mapping of the two to be entirely
         separate.   Through the use of the <code>mapper()</code> function,
         any arbitrary Python class can be mapped to a database table or view.
@@ -128,15 +129,15 @@ Features - SQLAlchemy
 
   <dt>Eager-loading and caching of related objects and collections</dt>
   <dd>
-        <p>The ORM caches collections and references between objects once 
+        <p>The ORM caches collections and references between objects once
             loaded, so that no SQL need be emitted on each access.
             The eager loading feature allows entire graphs
             of objects linked by collections and references to be loaded
             with few or just one query, configurable
             down to the exact statement count on a per-mapping or
-            per-query basis, with no changes to existing queries 
+            per-query basis, with no changes to existing queries
             needed.   The "N+1" problem,
-            whereby an ORM needs to emit individual statements for 
+            whereby an ORM needs to emit individual statements for
             all objects in a collection, is a thing of the
             past with SQLAlchemy.
         </p>
@@ -197,19 +198,18 @@ Features - SQLAlchemy
   </dd>
     <dt>Supported Platforms</dt>
     <dd>
-        <p>SQLAlchemy supports Python 2.4 and above, including Python 3.x.
-        Jython is also supported, using zxjdbc-enabled dialects as well as 
-        Pypy as of version 0.7.
+        <p>SQLAlchemy supports Python 2.5 through the latest 3.x versions.
+          Other supported platforms include Jython and Pypy.
     </dd>
      <dt>Supported Databases</dt>
      <dd>
         <p>SQLAlchemy includes dialects for SQLite, Postgresql, MySQL, Oracle,
         MS-SQL, Firebird, Sybase and others, most of which support multiple
-        DBAPIs; IBM has also released a DB2 dialect. The corresponding <a
+        DBAPIs.  Other dialects are published as external projects.  The corresponding <a
         href="http://www.python.org/dev/peps/pep-0249/">DB-API 2.0</a>
         implementation (or sometimes one of several available) is required to
         use each particular database. <a
-        href="/docs/core/engines.html#supported-databases">View Current DBAPI
+        href="/docs/dialects/">View Current DBAPI
         Support</a></p>
     </dd>
 
