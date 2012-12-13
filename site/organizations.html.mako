@@ -60,7 +60,15 @@ Organizations - SQLAlchemy
 </%self:user>
 
 <%self:user
-        name="LolApps",
+        name="PayLogic"
+        logo="paylogic.png"
+        url="http://paylogic.eu/"
+        anchor="paylogic">
+        <a href="http://paylogic.eu/">Paylogic</a> is the fastest growing European online ticketing company. It's powered by SQLAlchemy, Django, Tornado, Flask and Backbone.
+</%self:user>
+
+<%self:user
+        name="LolApps"
         logo="lolapps.png"
         url="http://www.lolapps.com"
         anchor="lolapps">
@@ -71,7 +79,7 @@ Organizations - SQLAlchemy
 
 
 <%self:user
-        name="Firefox Sync",
+        name="Firefox Sync"
         logo="firefox.png"
         url="http://www.firefox.com/sync"
         anchor="firefox">
