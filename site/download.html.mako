@@ -10,14 +10,13 @@ Download - SQLAlchemy
 
 <h2>Version 0.8 (beta releases)</h2>
 
-<p>Latest 0.8 Release: <b>0.8.0b1</b> <a
-href="http://prdownloads.sourceforge.net/sqlalchemy/SQLAlchemy-0.8.0b1.tar.gz?download"><b>(0.8.0b1
+<p>Latest 0.8 Release: <b>0.8.0b2/b> <a
+href="http://prdownloads.sourceforge.net/sqlalchemy/SQLAlchemy-0.8.0b2.tar.gz?download"><b>(0.8.0b2
 via Sourceforge)</b></a>
 
-## <a href="http://www.python.org/pypi/SQLAlchemy/0.8.0b1"><b>(0.8.0b1 via
-## Cheeseshop)</b></a>
+<a href="http://www.python.org/pypi/SQLAlchemy/0.8.0b2"><b>(0.8.0b2 via Cheeseshop)</b></a>
 
-<a href="/changelog/CHANGES_0_8_0b1"><b>(CHANGES)</b></a></p>
+<a href="/changelog/CHANGES_0_8_0b2"><b>(CHANGES)</b></a></p>
 
 <p>Please be sure to review the 0.7 to 0.8 migration guide, found at <a
 href="/docs/08/changelog/migration_08.html"><b>08Migration</b></a>, for full details on changes

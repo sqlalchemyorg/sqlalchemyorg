@@ -1,0 +1,30 @@
+---
+date: 2012/12/14 15:46:00
+title: SQLAlchemy 0.8.0b2 Released
+author: Mike B
+---
+The second beta release of the 0.8 series is now released.
+
+This release fixes some regressions found in 0.8.0b1 and improves upon some
+of what's new in 0.8.  In particular, a second rework of the "pathing" mechanics
+which relate loader strategies to entity paths allows for more elaborate "polymorphic"
+loading schemes than before.   The Postgresql HSTORE type has now been added
+fully to the Postgresql dialect, and there are many dialect-specific fixes including
+several for Oracle.
+
+It is hoped that 0.8.0b2 will be the last beta before 0.8, and to encourage
+more user testing, the release is available on Pypi.
+Applications which absolutely need to stay on 0.7 should tag their requirements
+to "SQLAlchemy < 0.8" to prevent inadvertent installs of 0.8.
+
+Users new to 0.8 should start by reading the `What's New in 0.8 </docs/08/changelog/migration_08.html>`_
+document, which introduces major new features as well as areas
+where applications may experience a behavioral change.  The
+`0.8.0b2 Changelog </changelog/CHANGES_0_8_0b2>`_ will enumerate
+most changes in detail.
+
+Download SQLAlchemy 0.8.0b2 on the `download page </download.html>`_.
+
+
+
+
