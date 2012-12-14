@@ -10,7 +10,7 @@ Download - SQLAlchemy
 
 <h2>Version 0.8 (beta releases)</h2>
 
-<p>Latest 0.8 Release: <b>0.8.0b2/b> <a
+<p>Latest 0.8 Release: <b>0.8.0b2</b> <a
 href="http://prdownloads.sourceforge.net/sqlalchemy/SQLAlchemy-0.8.0b2.tar.gz?download"><b>(0.8.0b2
 via Sourceforge)</b></a>
 
