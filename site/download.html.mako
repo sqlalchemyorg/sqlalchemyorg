@@ -26,7 +26,7 @@ Download - SQLAlchemy
 
 <p>Please be sure to review the 0.7 to 0.8 migration guide, found at <a
 href="/docs/08/changelog/migration_08.html"><b>08Migration</b></a>, for full details on changes
-made since 0.6.</p>
+made since 0.7.</p>
 
 <h2>Version 0.7 (production / stable)</h2>
 
