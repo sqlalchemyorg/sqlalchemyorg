@@ -1,0 +1,21 @@
+---
+date: 2013/02/07 15:46:00
+title: SQLAlchemy 0.7.10 Released
+author: Mike B
+---
+SQLAlchemy 0.7.10 is now available.
+
+This is a bugfix release, sending out a series of fixes that have
+accumulated as version 0.8.0's release is imminent.
+
+Fixes in this version include issues related to the Oracle, SQL Server,
+MySQL, and Google App Engine dialects, as well as a few schema related
+and ORM related fixes.
+
+Full changelog is available at `0.7.10 Changelog </changelog/CHANGES_0_7_10>`_.
+
+Download SQLAlchemy 0.7.10 on the `download page </download.html>`_.
+
+
+
+
