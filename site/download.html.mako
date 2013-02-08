@@ -1,6 +1,10 @@
 <%inherit file="/base.mako"/>
 <%!
     section = 'download'
+
+    rel_08 = "0.8.0b2"
+    rel_07 = "0.7.10"
+
 %>
 <%block name="head_title">
 Download - SQLAlchemy
@@ -10,15 +14,15 @@ Download - SQLAlchemy
 
 <h2>Version 0.8 (beta releases)</h2>
 
-<p>Latest 0.8 Release: <b>0.8.0b2</b>
+<p>Latest 0.8 Release: <b>${rel_08}</b>
 
 ##<a
-##href="http://prdownloads.sourceforge.net/sqlalchemy/SQLAlchemy-0.8.0b2.tar.gz?download"><b>(0.8.0b2
+##href="http://prdownloads.sourceforge.net/sqlalchemy/SQLAlchemy-${rel_08}.tar.gz?download"><b>(${rel_08}
 ##via Sourceforge)</b></a>
 
-<a href="http://www.python.org/pypi/SQLAlchemy/0.8.0b2"><b>(0.8.0b2 via Cheeseshop)</b></a>
+<a href="http://www.python.org/pypi/SQLAlchemy/${rel_08}"><b>(${rel_08} via Cheeseshop)</b></a>
 
-<a href="/changelog/CHANGES_0_8_0b2"><b>(CHANGES)</b></a></p>
+<a href="/changelog/CHANGES_${rel_08.replace('.', '_')}"><b>(CHANGES)</b></a></p>
 
 <p>Please be sure to review the 0.7 to 0.8 migration guide, found at <a
 href="/docs/08/changelog/migration_08.html"><b>08Migration</b></a>, for full details on changes
@@ -26,15 +30,17 @@ made since 0.6.</p>
 
 <h2>Version 0.7 (production / stable)</h2>
 
-<p>Latest 0.7 Release: <b>0.7.10</b>
+<p>Latest 0.7 Release: <b>${rel_07}</b>
 
 ##<a
-##href="http://prdownloads.sourceforge.net/sqlalchemy/SQLAlchemy-0.7.10.tar.gz?download"><b>(0.7.10
+##href="http://prdownloads.sourceforge.net/sqlalchemy/SQLAlchemy-${rel_07}.tar.gz?download"><b>(${rel_07}
 ##via Sourceforge)</b></a>
 
-<a href="http://www.python.org/pypi/SQLAlchemy/0.7.10"><b>(0.7.10 via
+<a href="http://www.python.org/pypi/SQLAlchemy/${rel_07}"><b>(${rel_07} via
 Cheeseshop)</b></a>
-<a href="/changelog/CHANGES_0_7_10"><b>(CHANGES)</b></a></p>
+<a href="/changelog/CHANGES_${rel_07.replace('.', '_')}"><b>(CHANGES)</b></a></p>
+
+<p>SQLAlchemy ${rel_07} is signed using Michael Bayer's PGP key id <a href="http://pgp.mit.edu:11371/pks/lookup?search=0xC4DAFEE1&op=index">C4DAFEE1</a> (use <code>gpg --recv-keys C4DAFEE1</code> to import).</p>
 
 <p>Please be sure to review the 0.6 to 0.7 migration guide, found at <a
 href="/docs/07/changelog/migration_07.html"><b>07Migration</b></a>, for full details on changes
