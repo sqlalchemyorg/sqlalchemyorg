@@ -22,7 +22,7 @@ Some major new features include:
 
 * `New Relationship Features </docs/changelog/migration_08.html#rewritten-relationship-mechanics>`_
 
-* New Polymorphic Features - `with_polymorhpic() </docs/changelog/migration_08.html#new-with-polymorphic-feature-can-be-used-anywhere>`_ and `of_type() </docs/changelog/migration_08.html#of-type-works-with-alias-with-polymorphic-any-has-joinedload-subqueryload-contains-eager>`_
+* New Polymorphic Features - `with_polymorphic() </docs/changelog/migration_08.html#new-with-polymorphic-feature-can-be-used-anywhere>`_ and `of_type() </docs/changelog/migration_08.html#of-type-works-with-alias-with-polymorphic-any-has-joinedload-subqueryload-contains-eager>`_
 
 * `New Runtime Inspection System </docs/changelog/migration_08.html#new-class-object-inspection-system>`_
 
