@@ -13,10 +13,10 @@ Version 0.8 marks the most consistent, extensible
 and performant version of SQLAlchemy to date.   The development
 cycle for 0.8 has been particularly long, starting in April of
 2012 with a rewrite of the internals of the ``relationship()``
-construct, then into a large sweep of new functionality
-regarding ORM querying of so-called "polymorphic" mapped structures,
-and later into a major upgrades to the typing system, including
-fully customized operators and type-specific SQL expression support.
+construct, followed by the addition of a significant
+amount of new functionality regarding "polymorphic" querying,
+and later into a major upgrade to the typing system, including
+an extensible operator system and type-specific SQL expression support.
 
 Some major new features include:
 
@@ -30,8 +30,9 @@ Some major new features include:
 
 * `HSTORE Support </docs/changelog/migration_08.html#postgresql-hstore-type>`_
 
-In addition, a new API for external dialects, including a compliance suite, allows third-party
-dialects to be written and tested in a simple and succinct manner.  Several new or updated
+In addition, a new API for external dialects, along with an associated
+test suite, allows third-party dialects to be organized and tested in a
+consistent manner.  Several new or updated
 SQLAlchemy dialects make use of this system, most notably an all new version of
 `IBM DB2 for SQLAlchemy <http://code.google.com/p/ibm-db/wiki/README>`_ as well as
 `sqlalchemy-akiban <https://github.com/zzzeek/sqlalchemy_akiban>`_.
