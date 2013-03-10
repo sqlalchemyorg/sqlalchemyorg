@@ -1,0 +1,57 @@
+---
+date: 2013/03/09 19:24:00
+title: SQLAlchemy 0.8.0 Released
+author: Mike B
+---
+
+SQLAlchemy release 0.8.0 final is now available.
+
+This release now sets 0.8 as the official production series of
+SQLAlchemy, following two beta releases.
+
+Version 0.8 marks the most consistent, extensible
+and performant version of SQLAlchemy to date.   The development
+cycle for 0.8 has been particularly long, starting in April of
+2012 with a rewrite of the internals of the ``relationship()``
+construct, then into a large sweep of new functionality
+regarding ORM querying of so-called "polymorphic" mapped structures,
+and later into a major upgrades to the typing system, including
+fully customized operators and type-specific SQL expression support.
+
+Some major new features include:
+
+* `New Relationship Features </docs/changelog/migration_08.html#rewritten-relationship-mechanics>`_
+
+* New Polymorphic Features - `with_polymorhpic() </docs/changelog/migration_08.html#new-with-polymorphic-feature-can-be-used-anywhere>`_ and `of_type() </docs/changelog/migration_08.html#of-type-works-with-alias-with-polymorphic-any-has-joinedload-subqueryload-contains-eager>`_
+
+* `New Runtime Inspection System </docs/changelog/migration_08.html#new-class-object-inspection-system>`_
+
+* `Extensible Operator System </docs/changelog/migration_08.html#fully-extensible-type-level-operator-support-in-core>`_
+
+* `HSTORE Support </docs/changelog/migration_08.html#postgresql-hstore-type>`_
+
+In addition, a new API for external dialects, including a compliance suite, allows third-party
+dialects to be written and tested in a simple and succinct manner.  Several new or updated
+SQLAlchemy dialects make use of this system, most notably an all new version of
+`IBM DB2 for SQLAlchemy <http://code.google.com/p/ibm-db/wiki/README>`_ as well as
+`sqlalchemy-akiban <https://github.com/zzzeek/sqlalchemy_akiban>`_.
+
+Beyond the major new additions, SQLAlchemy internals and tests continue to be
+improved and simplified.   Long functions and classes have been broken out
+into compositions of small functions, which are easier to understand
+as well as to unit test; tests themselves are being moved from long lists
+of assertions within a single test into small units each containing a single
+assertion, with an emphasis on testing smaller units of functionality more
+exhaustively.  The test suite has now surpassed 5000 individual tests, which are run
+via continuous integration against a variety
+of Python platforms and DBAPI implementations using on-demand Amazon EC2 instances.
+Coverage is also high:  ``sqlalchemy.orm`` is at 95%, ``sqlalchemy.sql``
+is at 94%, ``sqlalchemy.ext.declarative`` is at 99%.
+
+For a full overview of major features and behavioral changes in SQLAlchemy,
+refer to the `What's New? </docs/08/changelog/migration_08.html>`_ document.  For a detailed
+list of changes in 0.8 and throughout the 0.8 series, refer to the
+`Changelog </changelog/CHANGES_0_8_0>`_.
+
+SQLAlchemy 0.8.0 is available for download on the `Download Page </download.html>`_.
+
