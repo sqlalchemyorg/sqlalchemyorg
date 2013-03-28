@@ -39,6 +39,29 @@ Organizations - SQLAlchemy
 </%self:user>
 
 <%self:user
+        name="OpenStack",
+        logo="openstack.png"
+        url="http://www.openstack.com"
+        anchor="openstack">
+        <a href="http://www.openstack.com">OpenStack</a> is an IaaS cloud
+        computing project by Rackspace Cloud and NASA joined by several
+        companies such as Cloud.com, Citrix Systems, Dell, enStratus, NTT
+        Data, PEER 1, RightScale, Cloudkick, Zenoss, Limelight, Scalr, AMD,
+        Intel, and Spiceworks. OpenStack makes wide use of SQLAlchemy Core
+        and ORM for integration with database storage.
+</%self:user>
+
+<%self:user
+        name="Reddit",
+        logo="reddit.png"
+        url="http://reddit.com",
+        anchor="reddit">
+        <a href="http://reddit.com">Reddit</a> is one of the biggest social
+        news aggregators on the internet. Reddit is built using Pylons, Mako templates,
+        and a custom, non-ORM database abstraction layer built on SQLAlchemy Core.
+</%self:user>
+
+<%self:user
         name="newcars.com (part of cars.com)"
         logo="carscom.png"
         url="http://www.newcars.com"
@@ -95,16 +118,6 @@ Organizations - SQLAlchemy
         Core server elements of Firefox Sync are written in Python using SQLAlchemy for backend storage.
 </%self:user>
 
-<%self:user
-        name="Reddit",
-        logo="reddit.png"
-        url="http://reddit.com",
-        anchor="reddit">
-        <a href="http://reddit.com">Reddit</a> is one of the biggest social
-        news aggregators on the internet. Reddit is built using Pylons, Mako templates,
-        and a custom, non-ORM database abstraction layer built on SQLAlchemy Core.
-</%self:user>
-
 
 <%self:user
         name="Fedora Project",
@@ -116,18 +129,6 @@ Organizations - SQLAlchemy
         "SQLAlchemy powers much of Fedora's Infrastructure. We pretty much worship it :)"
 </%self:user>
 
-<%self:user
-        name="OpenStack",
-        logo="openstack.png"
-        url="http://www.openstack.com"
-        anchor="openstack">
-        <a href="http://www.openstack.com">OpenStack</a> is an IaaS cloud
-        computing project by Rackspace Cloud and NASA joined by several
-        companies such as Cloud.com, Citrix Systems, Dell, enStratus, NTT
-        Data, PEER 1, RightScale, Cloudkick, Zenoss, Limelight, Scalr, AMD,
-        Intel, and Spiceworks. OpenStack Compute uses the SQLAlchemy ORM for
-        integration with backend storage.
-</%self:user>
 
 <%self:user
         name="SurveyMonkey",
