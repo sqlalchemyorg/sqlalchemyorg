@@ -142,6 +142,16 @@ Organizations - SQLAlchemy
 </%self:user>
 
 <%self:user
+    name="Blocksworld"
+    logo="blocksworld.png"
+    url="http://blocksworld.com/"
+    anchor="blocksworld"
+>
+<a href="http://blocksworld.com/">Blocksworld</a> is an iPad game in which players use cubes, wedges, rockets, wheels, motors and more to easily create 3D models of anything they can imagine - from race cars to animals to robots and more.   SQLAlchemy is used for the application server portion, which
+also makes use of Flask, MySQL, and Redis.
+</%self:user>
+
+<%self:user
     name="Urban Airship"
     logo="urban_airship.jpg"
     url="http://www.urbanairship.com"
