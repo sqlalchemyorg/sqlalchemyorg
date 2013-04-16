@@ -98,15 +98,6 @@ Organizations - SQLAlchemy
         <a href="http://pwnedlist.com/">PwnedList</a> is a new breed of a security company that focuses on proactively monitoring external threats, such as hackers, their intricate social networks and the data they share amongst each other.  Our platform is powered by Pyramid, Mako templates, SQLAlchemy and Amazon RDS.
 </%self:user>
 
-<%self:user
-        name="LolApps"
-        logo="lolapps.png"
-        url="http://www.lolapps.com"
-        anchor="lolapps">
-        <a href="http://www.lolapps.com">LolApps</a> is one of the fastest growing social games companies.
-        As presented in the Pycon 2010 talk <a href="http://us.pycon.org/2010/conference/schedule/event/135/">Scaling Python webapps from zero to 50 million users</a>,
-        the SQLAlchemy ORM is at the core of their data access strategy.
-</%self:user>
 
 
 <%self:user
@@ -152,6 +143,16 @@ also makes use of Flask, MySQL, and Redis.
 </%self:user>
 
 <%self:user
+    name="Coingig"
+    logo="coingig.png"
+    url="http://www.coingig.com/"
+    anchor="coingig"
+>
+<a href="http://www.coingig.com">Coingig.com</a> is a marketplace platform for buyers and sellers to exchange products for Bitcoin. Coingig is built with Python and has recently implemented SQLAlchemy as our backbone database framework.
+</%self:user>
+
+
+<%self:user
     name="Urban Airship"
     logo="urban_airship.jpg"
     url="http://www.urbanairship.com"
@@ -165,6 +166,16 @@ also makes use of Flask, MySQL, and Redis.
 
     SQLAlchemy ORM is at the core of their data access strategy which is currently
     based on a sharded Postgresql system.
+</%self:user>
+
+<%self:user
+        name="LolApps"
+        logo="lolapps.png"
+        url="http://www.lolapps.com"
+        anchor="lolapps">
+        <a href="http://www.lolapps.com">LolApps</a> is one of the fastest growing social games companies.
+        As presented in the Pycon 2010 talk <a href="http://us.pycon.org/2010/conference/schedule/event/135/">Scaling Python webapps from zero to 50 million users</a>,
+        the SQLAlchemy ORM is at the core of their data access strategy.
 </%self:user>
 
 <%self:user
