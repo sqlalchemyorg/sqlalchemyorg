@@ -2,7 +2,7 @@
 <%!
     section = 'download'
 
-    rel_08 = "0.8.0"
+    rel_08 = "0.8.1"
     rel_07 = "0.7.10"
 
 %>
@@ -52,15 +52,9 @@ made since 0.6.</p>
 
 <p>Snapshots from Mercurial:</p>
 <p>0.8:
-<a href="http://hg.sqlalchemy.org/sqlalchemy/archive/default.zip">zip</a> |
-<a href="http://hg.sqlalchemy.org/sqlalchemy/archive/default.tar.gz">gz</a> |
-<a href="http://hg.sqlalchemy.org/sqlalchemy/archive/default.tar.bz2">bz2</a>
-</p>
-
-<p>0.7:
-<a href="http://hg.sqlalchemy.org/sqlalchemy/archive/rel_0_7.zip">zip</a> |
-<a href="http://hg.sqlalchemy.org/sqlalchemy/archive/rel_0_7.tar.gz">gz</a> |
-<a href="http://hg.sqlalchemy.org/sqlalchemy/archive/rel_0_7.tar.bz2">bz2</a>
+<a href="http://hg.sqlalchemy.org/sqlalchemy/archive/rel_0_8.zip">zip</a> |
+<a href="http://hg.sqlalchemy.org/sqlalchemy/archive/rel_0_8.tar.gz">gz</a> |
+<a href="http://hg.sqlalchemy.org/sqlalchemy/archive/rel_0_8.tar.bz2">bz2</a>
 </p>
 
 <p>For further details on Mercurial repository access please see <a href="/develop.html">development</a>.</p>

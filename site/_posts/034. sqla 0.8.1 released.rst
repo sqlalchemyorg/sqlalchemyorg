@@ -1,0 +1,18 @@
+---
+date: 2013/04/27 17:40:00
+title: SQLAlchemy 0.8.1 Released
+author: Mike B
+---
+
+SQLAlchemy release 0.8.1 is now available.
+
+This is a bugfix release which resolves many issues, some of which appeared
+in 0.8.0 as regressions and many more that affect all versions.
+
+Major issues resolved include a significant rework to the ``Query.join()``
+method, as well as a major fix to an issue regarding overlapping column
+labels affecting primarily the ORM.   In total, there are 27 bug fixes listed
+in the `Changelog </changelog/CHANGES_0_8_1>`_.   We'd like to thank
+the many contributors who helped with this release.
+
+SQLAlchemy 0.8.1 is available on the `Download Page </download.html>`_.
