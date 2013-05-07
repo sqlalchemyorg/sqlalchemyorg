@@ -133,6 +133,17 @@ Organizations - SQLAlchemy
 </%self:user>
 
 <%self:user
+    name="MixRank"
+    logo="mixrank.png"
+    url="http://mixrank.com/"
+    anchor="mixrank"
+>
+<a href="http://mixrank.com/">MixRank</a> is a competitive intelligence service for online advertising. SQLAlchemy is used to process and persist billions of data points.
+
+</%self:user>
+
+
+<%self:user
     name="Blocksworld"
     logo="blocksworld.png"
     url="http://blocksworld.com/"
