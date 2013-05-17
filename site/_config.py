@@ -5,33 +5,23 @@
 
 docs = controllers.docs
 
-docs.enabled = False
+docs.enabled = True
 
-dev_root = '/Users/classic/dev'
-
-docs.standard_docs = []
-docs.sphinx_docs = [
-    (dev_root + '/sa05/doc/build/output/site', '05'),
-    (dev_root + '/sa06/doc/build/output/site', ''),
-    (dev_root + '/sqlalchemy/doc/build/output/site', '07')
-]
 
 docs_url = "http://docs.sqlalchemy.org"
-
+site.url = "http://www.sqlalchemy.org"
 
 filters.syntax_highlight.style= "manni"
 filters.syntax_highlight.enabled = True
-
-site.url = "http://www.sqlalchemy.org"
 
 # blog
 blog = controllers.blog
 blog.enabled = True
 blog.path = "/blog"
 
-blog.path = "/blog"
+blog.name = "Your Blog's Name"
 
-blog.name = "SQLAlchemy Blog"
+blog.description = "Your Blog's short description"
 
 blog.timezone = "US/Eastern"
 
