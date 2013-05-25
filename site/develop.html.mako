@@ -13,7 +13,7 @@ Develop - SQLAlchemy
     <li><a href="#roster">Developer Roster</a></li>
     <li><a href="#developers">Development Community</a></li>
     <li><a href="#source">Source Access</a></li>
-    <li><a href="#bitbucket">Bitbucket Mirror</a></li>
+    <li><a href="#bitbucket">Bitbucket/Github Mirrors</a></li>
     <li><a href="#testing">Testing</a></li>
     <li><a href="#integration">Continuous Integration</a></li>
     <li><a href="#documentation">Documentation</a></li>
@@ -57,36 +57,43 @@ on getting started.
 
 <a name="source"></a>
 <h2>Source Access</h2>
-<p>SQLAlchemy self-hosts its sourcecode using <a href="http://mercurial.selenic.com/">Mercurial</a>.   A clone of
+<p>SQLAlchemy self-hosts its sourcecode using <a href="http://git-scm.com/">Git</a>.   A clone of
     the repository is via:</p>
 
 <p>
 <code>
-hg clone http://hg.sqlalchemy.org/sqlalchemy
+git clone https://bitbucket.org/zzzeek/sqlalchemy.git
 </code>
 </p>
 
-<p>Major release branches are maintained using Mercurial branches.  For example, to get at the 0.6 branch, the tag
-is called <code>rel_0_6</code>:</p>
+<p>Major release branches are maintained using branches.  For example, to get at the 0.8 branch, the tag
+is called <code>rel_0_8</code>:</p>
 
 <p>
   <code>
-  hg clone -u rel_0_6 http://hg.sqlalchemy.org/sqlalchemy sa06<br/>
+  git clone -b rel_0_8 https://bitbucket.org/zzzeek/sqlalchemy.git sa08<br/>
   </code>
 </p>
 
 <p>
-Downloadable snapshots of the current default and maintenance branches are available
-on the <a href="/download.html">download</a> page.
+Downloadable snapshots of the current default and maintenance branches are available on the <a href="/download.html">download</a> page.
 </p>
 
 <a name="bitbucket"></a>
-<h2>Bitbucket Mirror</h2>
-<p>Sharing changes with SQLAlchemy core developers can be done by either attaching patches to
-    <a href="/participate.html#trac">Trac tickets</a>, or creating forks on <a href="http://www.bitbucket.org">BitBucket</a>.
-    The SQLAlchemy Mercurial repository automatically pushes out to the official <a href="https://bitbucket.org/sqlalchemy/sqlalchemy">BitBucket mirror
-    of SQLAlchemy</a>.  The "fork" button creates a new fork, where you can pull and push changes from.   When the patch is ready,
-    send off a "pull request", and/or link from a Trac ticket.
+<h2>Bitbucket / Github Mirrors</h2>
+<p>SQLAlchemy hosts mirrors of its Git repository on both <a href="https://bitbucket.org/">Bitbucket</a> and
+<a href="https://github.com/">Github</a>:
+
+<ul>
+<li><strong>Bitbucket:</strong> <a href="https://bitbucket.org/zzzeek/sqlalchemy/">https://bitbucket.org/zzzeek/sqlalchemy/</a></li>
+
+<li><strong>Github:</strong> <a href="https://github.com/zzzeek/sqlalchemy">https://github.com/zzzeek/sqlalchemy</a></li>
+</ul>
+
+Changes can be shared with core developers using pull
+    requests to either of these services.  Patch files can also be submitted as
+    attachments to <a href="/participate.html#trac">Trac tickets</a>.
+
 </p>
 
 <a name="testing"></a>
