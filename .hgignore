@@ -1,4 +1,0 @@
-syntax:regexp
-^site/_site
-.pyc$
-.DS_Store
