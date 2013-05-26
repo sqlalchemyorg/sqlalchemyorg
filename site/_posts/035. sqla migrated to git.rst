@@ -1,0 +1,58 @@
+---
+date: 2013/05/25 19:54:00
+title: SQLAlchemy Migrated to Git
+author: Mike B
+---
+
+The SQLAlchemy source repository has been migrated to Git.
+
+There are now twin repository mirrors for SQLAlchemy hosted
+at `Bitbucket <https://bitbucket.org/zzzeek/sqlalchemy>`_
+and `Github <https://github.com/zzzeek/sqlalchemy>`_.
+
+Rationale for the migration includes the following:
+
+* Git manages the size of the repository more efficiently; while
+  the Mercurial repository has been approaching 50M in size,
+  the Git repository is only 17M.
+
+* Git allows for lightweight, temporary feature branches
+  which can be freely renamed or deleted, including that dead branches
+  can be pruned of their changesets.   The Mercurial repository
+  had filled up with several dozen development branches, some
+  abandoned, which while they could be hidden via "close", could
+  never be removed.   While Mercurial supports part of Git's functionality
+  via the "bookmarks" extension, users typically are unaware of this
+  and continue to create unwieldy branches.  Bookmarks don't solve
+  the issue of removing unused changesets in any case.  Feature branches
+  in Mercurial typically had to proceed in separate clones to
+  allow for the possibility of abandonment without clogging up
+  the main repository.
+
+* While Mercurial has various extensions which emulate advanced Git
+  features like "rebase" and "collapse", manipulation of history
+  for the purposes of collapsing changesets or manipulating branches
+  is a first class and widely used feature in Git.
+
+* Largely due to the popularity of Github, Git has achieved a much
+  higher userbase, to the degree where we regularly have users
+  requesting us to move to Git so they can provide pull requests.
+
+SQLAlchemy's issue repository will remain hosted on Trac; while a
+Git repository can be mirrored in any number of places, an issue
+repository cannot, so SQLAlchemy's long history of issue discussion
+remains maintained directly by the project.
+
+While we are favoring Bitbucket as the location of the "primary"
+push repository, users who wish to contribute should feel free
+to provide pull requests from either Bitbucket or Github; we should
+be able to accommodate both.
+
+The SQLAlchemy Mercurial repository at http://hg.sqlalchemy.org/ will
+remain up for some period of time until we observe that requests have
+fallen off - note that this repository is not being mirrored from Git,
+as the repository would need to be recreated with bookmarks instead
+of branches which require recreating the entire revision history.
+
+
+
