@@ -36,7 +36,8 @@ Rationale for the migration includes the following:
 
 * Largely due to the popularity of Github, Git has achieved a much
   higher userbase, to the degree where we regularly have users
-  requesting us to move to Git so they can provide pull requests.
+  requesting us to move to Git so they can provide pull requests
+  (as they don't want to learn Mercurial).
 
 SQLAlchemy's issue repository will remain hosted on Trac; while a
 Git repository can be mirrored in any number of places, an issue
