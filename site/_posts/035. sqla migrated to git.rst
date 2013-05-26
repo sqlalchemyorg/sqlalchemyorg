@@ -40,8 +40,10 @@ Rationale for the migration includes the following:
 
 SQLAlchemy's issue repository will remain hosted on Trac; while a
 Git repository can be mirrored in any number of places, an issue
-repository cannot, so SQLAlchemy's long history of issue discussion
-remains maintained directly by the project.
+repository cannot (for now!  Can someone please create a distributed issue
+tracker?  Should be pretty doable, though getting Github/Bitbucket
+to use it, not so much...), so SQLAlchemy's long history of
+issue discussion remains maintained directly by the project.
 
 While we are favoring Bitbucket as the location of the "primary"
 push repository, users who wish to contribute should feel free
