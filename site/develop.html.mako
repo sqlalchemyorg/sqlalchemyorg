@@ -13,7 +13,6 @@ Develop - SQLAlchemy
     <li><a href="#roster">Developer Roster</a></li>
     <li><a href="#developers">Development Community</a></li>
     <li><a href="#source">Source Access</a></li>
-    <li><a href="#bitbucket">Bitbucket/Github Mirrors</a></li>
     <li><a href="#testing">Testing</a></li>
     <li><a href="#integration">Continuous Integration</a></li>
     <li><a href="#documentation">Documentation</a></li>
@@ -47,7 +46,7 @@ on getting started.
     also hosted on Google groups.  Anyone can join this
     list, though we ask that discussion be limited to architectural and developmental issues only.
     </li>
-    <li>A large amount of development discussion occurs on the
+    <li>Some development discussion occurs on the
     <code>#sqlalchemy-devel</code> IRC channel on Freenode.
     This channel is <strong>only</strong> for users that are interested in contributing code,
     tests, documentation, or other developmental resources, and no support issues will be
@@ -57,14 +56,37 @@ on getting started.
 
 <a name="source"></a>
 <h2>Source Access</h2>
-<p>SQLAlchemy self-hosts its sourcecode using <a href="http://git-scm.com/">Git</a>.   A clone of
-    the repository is via:</p>
+<p>SQLAlchemy's source code is versioned using <a href="http://git-scm.com/">Git</a>.
+Public repositories are available at <a href="https://bitbucket.org/">Bitbucket</a> and
+<a href="https://github.com/">Github</a>:</p>
+
+<ul>
+<li><strong>Bitbucket:</strong> <a href="https://bitbucket.org/zzzeek/sqlalchemy/">https://bitbucket.org/zzzeek/sqlalchemy/</a>
 
 <p>
+<br/>
 <code>
 git clone https://bitbucket.org/zzzeek/sqlalchemy.git
 </code>
 </p>
+
+</li>
+
+<li><strong>Github:</strong> <a href="https://github.com/zzzeek/sqlalchemy">https://github.com/zzzeek/sqlalchemy</a>
+
+<p>
+<br/>
+<code>
+git clone https://github.com/zzzeek/sqlalchemy.git
+</code>
+</p>
+
+</li>
+</ul>
+
+<p>Changes can be shared with core developers using pull
+    requests to either of these services.  Patch files can also be submitted as
+    attachments to <a href="/participate.html#trac">Trac tickets</a>.</p>
 
 <p>Major release branches are maintained using branches.  For example, to get at the 0.8 branch, the tag
 is called <code>rel_0_8</code>:</p>
@@ -79,22 +101,6 @@ is called <code>rel_0_8</code>:</p>
 Downloadable snapshots of the current default and maintenance branches are available on the <a href="/download.html">download</a> page.
 </p>
 
-<a name="bitbucket"></a>
-<h2>Bitbucket / Github Mirrors</h2>
-<p>SQLAlchemy hosts mirrors of its Git repository on both <a href="https://bitbucket.org/">Bitbucket</a> and
-<a href="https://github.com/">Github</a>:
-
-<ul>
-<li><strong>Bitbucket:</strong> <a href="https://bitbucket.org/zzzeek/sqlalchemy/">https://bitbucket.org/zzzeek/sqlalchemy/</a></li>
-
-<li><strong>Github:</strong> <a href="https://github.com/zzzeek/sqlalchemy">https://github.com/zzzeek/sqlalchemy</a></li>
-</ul>
-
-Changes can be shared with core developers using pull
-    requests to either of these services.  Patch files can also be submitted as
-    attachments to <a href="/participate.html#trac">Trac tickets</a>.
-
-</p>
 
 <a name="testing"></a>
 <h2>Testing</h2>

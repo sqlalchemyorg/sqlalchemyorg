@@ -1,0 +1,20 @@
+---
+date: 2013/07/03 15:40:00
+title: SQLAlchemy 0.8.2 Released
+author: Mike B
+---
+
+SQLAlchemy release 0.8.2 is now available.
+
+0.8.2 includes several dozen bug fixes and new features, including
+refinement of some of the new features introduced in 0.8.
+
+Areas of improvement include Core, ORM, as well as specific fixes
+for dialects such as Postgresql, MySQL, Oracle, SQL Server, Firebird
+and Sybase.
+
+Users should carefully review the `Changelog </changelog/CHANGES_0_8_2>`_ to
+note which behaviors and issues are affected.   We'd like to thank
+the many contributors who helped with this release.
+
+SQLAlchemy 0.8.2 is available on the `Download Page </download.html>`_.

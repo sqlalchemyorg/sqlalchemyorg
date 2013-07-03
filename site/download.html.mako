@@ -2,7 +2,7 @@
 <%!
     section = 'download'
 
-    rel_08 = "0.8.1"
+    rel_08 = "0.8.2"
     rel_07 = "0.7.10"
 
 %>
@@ -48,6 +48,7 @@ Cheeseshop)</b></a>
 href="/docs/07/changelog/migration_07.html"><b>07Migration</b></a>, for full details on changes
 made since 0.6.</p>
 
+<a name="development"/>
 <h2>Development Versions</h2>
 
 <p>Snapshots from Git:</p>
