@@ -35,7 +35,7 @@ Organizations - SQLAlchemy
         <a href="http://www.yelp.com/">Yelp</a>
         is the fun and easy way to find and talk about great (and not so great) local businesses.
         An early adopter of SQLAlchemy, Yelp started out with a core-only approach as early as version
-        0.4, later migrating to an ORM approach now in production at version 0.7.
+        0.4, later migrating to an ORM approach on version 0.7 and forward.
 </%self:user>
 
 <%self:user
