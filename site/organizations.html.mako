@@ -52,6 +52,13 @@ Organizations - SQLAlchemy
 </%self:user>
 
 <%self:user
+        name="Uber"
+        logo="uber.png"
+        url="http://www.uber.com"
+        anchor="uber">
+        The <a href="http://www.uber.com">Uber</a> engineering team is the creator, operator, and guardian of a global platform for finding on-demand transportation that operates 24x7. We use SQLAlchemy in every service we develop. We even migrated our entire database to PostgreSQL from MySQL - and it was thanks to SQLAlchemy and Alembic that made that process possible.
+</%self:user>
+<%self:user
         name="Reddit",
         logo="reddit.png"
         url="http://reddit.com",
