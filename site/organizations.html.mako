@@ -97,14 +97,6 @@ Organizations - SQLAlchemy
         <a href="http://paylogic.eu/">Paylogic</a> is the fastest growing European online ticketing company. It's powered by SQLAlchemy, Django, Tornado, Flask and Backbone.
 </%self:user>
 
-<%self:user
-        name="PwnedList"
-        logo="pwnedlist.png"
-        url="http://pwnedlist.com/"
-        anchor="pwnedlist">
-        <a href="http://pwnedlist.com/">PwnedList</a> is a new breed of a security company that focuses on proactively monitoring external threats, such as hackers, their intricate social networks and the data they share amongst each other.  Our platform is powered by Pyramid, Mako templates, SQLAlchemy and Amazon RDS.
-</%self:user>
-
 
 
 <%self:user
@@ -116,6 +108,16 @@ Organizations - SQLAlchemy
         Core server elements of Firefox Sync are written in Python using SQLAlchemy for backend storage.
 </%self:user>
 
+
+<%self:user
+        name="FreshBooks",
+        logo="freshbooks.png"
+        url="http://www.freshbooks.com/"
+        anchor="freshbooks">
+        <a href="http://www.freshbooks.com/">Freshbooks</a>
+        delivers fast and simple invoicing and time tracking services.  The data tier
+        is built entirely upon SQLAlchemy.
+</%self:user>
 
 <%self:user
         name="Fedora Project",
@@ -213,6 +215,15 @@ relational databases accessed via SQLAlchemy.
 </%self:user>
 
 <%self:user
+        name="PwnedList"
+        logo="pwnedlist.png"
+        url="http://pwnedlist.com/"
+        anchor="pwnedlist">
+        <a href="http://pwnedlist.com/">PwnedList</a> is a new breed of a security company that focuses on proactively monitoring external threats, such as hackers, their intricate social networks and the data they share amongst each other.  Our platform is powered by Pyramid, Mako templates, SQLAlchemy and Amazon RDS.
+</%self:user>
+
+
+<%self:user
     name="Intuitive Web Solutions",
     logo="iws.png",
     url="http://www.britecore.com/",
@@ -237,15 +248,6 @@ more. Beautylish is built using Pylons and SQLAlchemy on top of a complete
 Amazon Web Services stack. Beauty is serious business ;)
 </%self:user>
 
-<%self:user
-        name="FreshBooks",
-        logo="freshbooks.png"
-        url="http://www.freshbooks.com/"
-        anchor="freshbooks">
-        <a href="http://www.freshbooks.com/">Freshbooks</a>
-        delivers fast and simple invoicing and time tracking services.  The data tier
-        is built entirely upon SQLAlchemy.
-</%self:user>
 
 <%self:user
         name="Lex Machina",
