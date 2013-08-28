@@ -98,6 +98,15 @@ Organizations - SQLAlchemy
 </%self:user>
 
 
+<%self:user
+        name="Tropofy"
+        logo="tropofy.png"
+        url="http://www.tropofy.com"
+        anchor="tropofy">
+    <a href="http://www.tropofy.com">Tropofy</a> is an innovative web deployment platform for problem solvers, allowing
+    the deployment of apps to the cloud without the need for a web development background. Tropofy is powered by Pyramid, SQLAlchemy and Knockoutjs.
+</%self:user>
+
 
 <%self:user
         name="Firefox Sync"
