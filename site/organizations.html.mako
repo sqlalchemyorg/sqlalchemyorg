@@ -140,6 +140,15 @@ Organizations - SQLAlchemy
 
 
 <%self:user
+        name="FastMonkeys"
+        logo="fastmonkeys.png"
+        url="http://www.fastmonkeys.com/"
+        anchor="fastmonkeys">
+        <a href="http://www.fastmonkeys.com/">Fast Monkeys</a> is a product development house based in Finland. We develop new web ventures using Python, Flask and SQLAlchemy.
+</%self:user>
+
+
+<%self:user
         name="SurveyMonkey",
         logo="surveymonkey.png"
         url="http://www.surveymonkey.com/"
@@ -308,6 +317,7 @@ Amazon Web Services stack. Beauty is serious business ;)
     distributed organizations, as well as Fortune 500
     companies.
 </%self:user>
+
 
 <%self:user
     name="Juju",
