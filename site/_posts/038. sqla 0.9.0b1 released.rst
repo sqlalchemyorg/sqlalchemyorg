@@ -1,0 +1,40 @@
+---
+date: 2013/10/26 15:41:00
+title: SQLAlchemy 0.9.0b1 Released
+author: Mike B
+---
+
+SQLAlchemy release 0.9.0b1 is now available.
+
+This is the first beta release of the new 0.9 series, which features
+a wide array of behavioral improvements and features.   It also includes
+all relevant bugfixes that have been applied to the 0.8 and sometimes the
+0.7 series as develoment has continued.   We strongly encourage users to
+download and evaluate 0.9.0b1, already in use in production environments,
+and to report back on issues promptly.
+
+To get an overview of SQLAlchemy 0.9's new features, see the
+`What's New in 0.9 </docs/09/changelog/migration_09.html>`_ document.
+This document should also serve as a guide for those behavioral changes which
+may require adjustments to existing applications.
+
+Major highlights include:
+
+* Runs on Python 2 and 3 with no 2to3 step needed.
+* C extensions run on Python 3
+* Major improvements to SQL rendering regarding ORM eager loading
+* The event API is enhanced with the ability to remove listeners.
+* Major improvements to composite attributes, association proxies
+* New Query features including a rewritten "loader option" system with
+  greater capabilities
+* SQL expression language and schema improvements.
+
+The release is being offered for download via Bitbucket files and not on
+Pypi, so that it is not installed automatically for those users using ``pip``,
+since it is still in beta.
+
+Download SQLAlchemy 0.9.0b1 on the `Download Page </download.html>`_.
+
+
+
+

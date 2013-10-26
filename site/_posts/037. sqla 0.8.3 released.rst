@@ -1,0 +1,19 @@
+---
+date: 2013/10/26 15:40:00
+title: SQLAlchemy 0.8.3 Released
+author: Mike B
+---
+
+SQLAlchemy release 0.8.3 is now available.
+
+0.8.3 is a bugfix release containing several dozen fixes, and a few features
+backported from the upcoming 0.9.0b1 release planned for the same time.
+
+Areas of improvement include ORM, Core, and fixes for dialects like that
+of MySQL, Postgresql, Oracle, and SQLite.
+
+Users should carefully review the `Changelog </changelog/CHANGES_0_8_3>`_ to
+note which behaviors and issues are affected.   We'd like to thank
+the many contributors who helped with this release.
+
+SQLAlchemy 0.8.3 is available on the `Download Page </download.html>`_.

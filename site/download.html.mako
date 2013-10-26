@@ -2,8 +2,8 @@
 <%!
     section = 'download'
 
-    rel_08 = "0.8.2"
-    rel_07 = "0.7.10"
+    rel_09 = "0.9.0b1"
+    rel_08 = "0.8.3"
 
 %>
 <%block name="head_title">
@@ -12,7 +12,26 @@ Download - SQLAlchemy
 
 <h1>Get SQLAlchemy</h1>
 
-<h2>Version 0.8 (beta releases)</h2>
+<h2>Version 0.9</h2>
+
+<p>Latest 0.9 Release: <b>${rel_09}</b>
+
+<a
+href="https://bitbucket.org/zzzeek/sqlalchemy/downloads/SQLAlchemy-${rel_09}.tar.gz"><b>(${rel_09}
+via BitBucket)</b></a>
+
+##<a href="http://www.python.org/pypi/SQLAlchemy/${rel_08}"><b>(${rel_08} via Cheeseshop)</b></a>
+
+<a href="/changelog/CHANGES_${rel_09.replace('.', '_')}"><b>(CHANGES)</b></a></p>
+
+<p>SQLAlchemy ${rel_09} is signed using Michael Bayer's PGP key id <a href="http://pgp.mit.edu:11371/pks/lookup?search=0xC4DAFEE1&op=index">C4DAFEE1</a> (use <code>gpg --recv-keys C4DAFEE1</code> to import).</p>
+
+<p>Please be sure to review the 0.8 to 0.9 migration guide, found at <a
+href="/docs/09/changelog/migration_09.html"><b>09Migration</b></a>, for full details on changes
+made since 0.8.</p>
+
+
+<h2>Version 0.8</h2>
 
 <p>Latest 0.8 Release: <b>${rel_08}</b>
 
@@ -30,23 +49,6 @@ Download - SQLAlchemy
 href="/docs/08/changelog/migration_08.html"><b>08Migration</b></a>, for full details on changes
 made since 0.7.</p>
 
-<h2>Version 0.7 (production / stable)</h2>
-
-<p>Latest 0.7 Release: <b>${rel_07}</b>
-
-##<a
-##href="http://prdownloads.sourceforge.net/sqlalchemy/SQLAlchemy-${rel_07}.tar.gz?download"><b>(${rel_07}
-##via Sourceforge)</b></a>
-
-<a href="http://www.python.org/pypi/SQLAlchemy/${rel_07}"><b>(${rel_07} via
-Cheeseshop)</b></a>
-<a href="/changelog/CHANGES_${rel_07.replace('.', '_')}"><b>(CHANGES)</b></a></p>
-
-<p>SQLAlchemy ${rel_07} is signed using Michael Bayer's PGP key id <a href="http://pgp.mit.edu:11371/pks/lookup?search=0xC4DAFEE1&op=index">C4DAFEE1</a> (use <code>gpg --recv-keys C4DAFEE1</code> to import).</p>
-
-<p>Please be sure to review the 0.6 to 0.7 migration guide, found at <a
-href="/docs/07/changelog/migration_07.html"><b>07Migration</b></a>, for full details on changes
-made since 0.6.</p>
 
 <a name="development"/>
 <h2>Development Versions</h2>
