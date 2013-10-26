@@ -5,10 +5,14 @@ var doc_versions = [
         "slug":"latest"
       },
       {
+        "version":"Version 0.9",
+        "slug":"rel_0_9"
+      },
+      {
         "version":"Version 0.8",
         "slug":"rel_0_8"
       },
-      {
+       {
         "version":"Version 0.7",
         "slug":"rel_0_7"
       },
