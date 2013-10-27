@@ -22,10 +22,6 @@ self.attr.docs_base = docs_base = bf.config.docs_url
     <%block name="headers">
 
     <!-- RTD <head> via SQLAlchemy adapter -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-    <script type="text/javascript" src="${MEDIA_URL}javascript/underscore.js"></script>
-    <script type="text/javascript" src="${MEDIA_URL}javascript/doctools.js"></script>
-    <script type="text/javascript" src="${MEDIA_URL}javascript/searchtools.js"></script>
     <script type="text/javascript">
         var doc_version = "${current_version}";
         var doc_slug = "${slug}";
@@ -34,10 +30,10 @@ self.attr.docs_base = docs_base = bf.config.docs_url
         // copied from:
         // https://github.com/rtfd/readthedocs.org/commit/edbbb4c753454cf20c128d4eb2fef60d740debaa#diff-2f70e8d9361202bfe3f378d2ff2c510bR8
         var READTHEDOCS_DATA = {
-            project: "${slug}";
-            version: "${current_version}";
-            page: "${pagename}";
-            theme: "${html_theme}";
+            project: "${slug}",
+            version: "${current_version}",
+            page: "${pagename}",
+            theme: "${html_theme}",
           };
 
     </script>
