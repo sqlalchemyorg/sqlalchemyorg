@@ -33,7 +33,7 @@ self.attr.docs_base = docs_base = bf.config.docs_url
             project: "${slug}",
             version: "${current_version}",
             page: "${pagename}",
-            theme: "${html_theme}",
+            theme: "${html_theme}"
           };
 
     </script>
