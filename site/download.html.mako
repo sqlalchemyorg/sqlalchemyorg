@@ -20,7 +20,9 @@ Download - SQLAlchemy
 href="https://bitbucket.org/zzzeek/sqlalchemy/downloads/SQLAlchemy-${rel_09}.tar.gz"><b>(${rel_09}
 via BitBucket)</b></a>
 
-##<a href="http://www.python.org/pypi/SQLAlchemy/${rel_08}"><b>(${rel_08} via Cheeseshop)</b></a>
+##<a href="http://www.python.org/pypi/SQLAlchemy/${rel_09}"><b>(${rel_09} via Cheeseshop)</b></a>
+
+<a href="https://bitbucket.org/zzzeek/sqlalchemy/downloads/SQLAlchemy-${rel_09}.tar.gz.asc"><b>(pgp)</b></a></p>
 
 <a href="/changelog/CHANGES_${rel_09.replace('.', '_')}"><b>(CHANGES)</b></a></p>
 
