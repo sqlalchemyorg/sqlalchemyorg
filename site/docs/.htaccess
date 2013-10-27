@@ -1,4 +1,4 @@
 RewriteEngine On
-RewriteRule (.*) http://docs.sqlalchemy.org/en/rel_0_8/$1 [R,L]
+RewriteRule (.*) http://docs.sqlalchemy.org/en/rel_0_9/$1 [R,L]
 ErrorDocument 404 /docs/notfound.html
 
