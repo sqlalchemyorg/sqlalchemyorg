@@ -53,24 +53,9 @@ made since 0.7.</p>
 <a name="development"/>
 <h2>Development Versions</h2>
 
-<p>Snapshots from Git:</p>
-<p>Master:
-<a href="https://bitbucket.org/zzzeek/sqlalchemy/get/master.zip">zip</a> |
-<a href="https://bitbucket.org/zzzeek/sqlalchemy/get/master.tar.gz">gz</a> |
-<a href="https://bitbucket.org/zzzeek/sqlalchemy/get/master.tar.bz2">bz2</a>
-</p>
+<p><a href="https://bitbucket.org/zzzeek/sqlalchemy/">SQLAlchemy on Bitbucket</a></p>
+<p><a href="https://github.com/zzzeek/sqlalchemy/">SQLAlchemy on GitHub</a></p>
 
-<p>0.8:
-<a href="https://bitbucket.org/zzzeek/sqlalchemy/get/rel_0_8.zip">zip</a> |
-<a href="https://bitbucket.org/zzzeek/sqlalchemy/get/rel_0_8.tar.gz">gz</a> |
-<a href="https://bitbucket.org/zzzeek/sqlalchemy/get/rel_0_8.tar.bz2">bz2</a>
-</p>
-
-<p>0.7:
-<a href="https://bitbucket.org/zzzeek/sqlalchemy/get/rel_0_7.zip">zip</a> |
-<a href="https://bitbucket.org/zzzeek/sqlalchemy/get/rel_0_7.tar.gz">gz</a> |
-<a href="https://bitbucket.org/zzzeek/sqlalchemy/get/rel_0_7.tar.bz2">bz2</a>
-</p>
 
 <p>For further details on Git repository access please see <a href="/develop.html">development</a>.</p>
 
