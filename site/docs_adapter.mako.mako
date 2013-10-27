@@ -85,17 +85,8 @@ ${next.body()}
 
 </%text>
 
-
-
 </div> <!-- end #wrap -->
 
 </body>
 </html>
-
-
-
-
-
-
-
 
