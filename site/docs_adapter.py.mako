@@ -24,14 +24,4 @@ def setup_context(context):
             context['slug']
     )
 
-    script_files = context['script_files']
-    newscript = []
-    # strip out script files that RTD wants to provide
-    for script in script_files:
-        for token in ("jquery.js", "underscore.js", "doctools.js"):
-            if token in script:
-                break
-        else:
-            newscript.append(script)
-    script_files[:] = newscript
 
