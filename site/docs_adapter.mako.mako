@@ -31,6 +31,15 @@ self.attr.docs_base = docs_base = bf.config.docs_url
         var doc_slug = "${slug}";
         var static_root = "${pathto('_static', 1)}"
 
+        // copied from:
+        // https://github.com/rtfd/readthedocs.org/commit/edbbb4c753454cf20c128d4eb2fef60d740debaa#diff-2f70e8d9361202bfe3f378d2ff2c510bR8
+        var READTHEDOCS_DATA = {
+            project: "${slug}";
+            version: "${current_version}";
+            page: "${pagename}";
+            theme: "${html_theme}";
+          };
+
     </script>
     <!-- end RTD <head> via SQLAlchemy adapter -->
 
