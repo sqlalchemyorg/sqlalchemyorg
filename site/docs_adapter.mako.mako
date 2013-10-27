@@ -19,6 +19,12 @@ self.attr.docs_base = docs_base = bf.config.docs_url
     </title>
 
     <%text>
+    <!-- begin iterate through sphinx environment css_files -->
+    % for cssfile in css_files:
+        <link rel="stylesheet" href="${pathto(cssfile, 1)}" type="text/css" />
+    % endfor
+    <!-- end iterate through sphinx environment css_files -->
+
     <%block name="headers">
 
     <!-- RTD <head> via SQLAlchemy adapter -->
@@ -40,6 +46,8 @@ self.attr.docs_base = docs_base = bf.config.docs_url
     <!-- end RTD <head> via SQLAlchemy adapter -->
 
     </%block>
+
+
     </%text>
 
     <!-- sqlalchemy.org docs base head -->
