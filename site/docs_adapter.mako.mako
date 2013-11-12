@@ -20,7 +20,26 @@ self.attr.docs_base = docs_base = bf.config.docs_url
     </title>
 
     <%text>
+
+
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+
+    <%block name="css">
+        <!-- begin iterate through SQLA css_files -->
+        % for cssfile in default_css_files:
+            <link rel="stylesheet" href="${pathto(cssfile, 1)}" type="text/css" />
+        % endfor
+        <!-- end iterate through SQLA css_files -->
+
+        <link rel="stylesheet" type="text/css" media="all" href="${site_base}/css/site2.css"></link>
+        <link rel="stylesheet" type="text/css" media="print" href="${site_base}/css/print.css"></link>
+
+        <!-- begin iterate through sphinx environment css_files -->
+        % for cssfile in css_files:
+            <link rel="stylesheet" href="${pathto(cssfile, 1)}" type="text/css" />
+        % endfor
+        <!-- end iterate through sphinx environment css_files -->
+    </%block>
 
     <%block name="headers">
 
@@ -48,7 +67,7 @@ self.attr.docs_base = docs_base = bf.config.docs_url
     </%text>
 
     <!-- sqlalchemy.org docs base head -->
-    <%include file="/head.mako" args="site_base=self.attr.site_base, docs_base=self.attr.docs_base"/>
+    <%include file="/head.mako" args="site_base=self.attr.site_base, docs_base=self.attr.docs_base, css=False"/>
     <%include file="/tracking.mako"/>
     <!-- end sqlalchemy.org docs base head -->
 
