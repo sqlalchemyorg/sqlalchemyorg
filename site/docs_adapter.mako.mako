@@ -26,7 +26,7 @@ self.attr.docs_base = docs_base = bf.config.docs_url
 
     <%block name="css">
         <!-- begin iterate through SQLA css_files -->
-        % for cssfile in default_css_files:
+        % for cssfile in self.attr.default_css_files:
             <link rel="stylesheet" href="${pathto(cssfile, 1)}" type="text/css" />
         % endfor
         <!-- end iterate through SQLA css_files -->
