@@ -4,6 +4,7 @@
 <%
 self.attr.site_base = site_base = bf.config.site.url
 self.attr.docs_base = docs_base = bf.config.docs_url
+
 %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -19,6 +20,8 @@ self.attr.docs_base = docs_base = bf.config.docs_url
     </title>
 
     <%text>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+
     <!-- begin iterate through sphinx environment css_files -->
     % for cssfile in css_files:
         <link rel="stylesheet" href="${pathto(cssfile, 1)}" type="text/css" />
@@ -26,6 +29,7 @@ self.attr.docs_base = docs_base = bf.config.docs_url
     <!-- end iterate through sphinx environment css_files -->
 
     <%block name="headers">
+
 
     <!-- RTD <head> via SQLAlchemy adapter -->
     <script type="text/javascript">
