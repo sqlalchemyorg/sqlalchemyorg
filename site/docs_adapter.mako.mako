@@ -22,14 +22,7 @@ self.attr.docs_base = docs_base = bf.config.docs_url
     <%text>
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
 
-    <!-- begin iterate through sphinx environment css_files -->
-    % for cssfile in css_files:
-        <link rel="stylesheet" href="${pathto(cssfile, 1)}" type="text/css" />
-    % endfor
-    <!-- end iterate through sphinx environment css_files -->
-
     <%block name="headers">
-
 
     <!-- RTD <head> via SQLAlchemy adapter -->
     <script type="text/javascript">
