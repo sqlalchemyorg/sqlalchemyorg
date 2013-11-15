@@ -19,10 +19,6 @@ var doc_versions = [
       {
         "version":"Version 0.6",
         "slug":"rel_0_6"
-      },
-      {
-        "version":"Version 0.5",
-        "slug":"rel_0_5"
       }
     ];
 
