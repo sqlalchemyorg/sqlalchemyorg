@@ -6,9 +6,11 @@
 	via <strong>Gittip</strong>.
 <p>
 	<p>
-	<iframe style="border: 0; margin: 0; padding: 0;"
-        src="https://www.gittip.com/zzzeek/widget.html"
-        width="48pt" height="20pt"></iframe></p>
+
+        <script data-gittip-username="sqlalchemy"
+        data-gittip-widget="button"
+        src="//gttp.co/v1.js"></script>
+	</p>
 
 <p>Oldschool?  We accept PayPal donations too:</p>
 <p><form action="https://www.paypal.com/cgi-bin/webscr" method="post">
