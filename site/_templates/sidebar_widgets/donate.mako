@@ -7,7 +7,7 @@
 <p>
 	<p>
 
-        <script data-gittip-username="sqlalchemy"
+        <script data-gittip-username="zzzeek"
         data-gittip-widget="button"
         src="//gttp.co/v1.js"></script>
 	</p>
