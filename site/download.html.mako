@@ -3,7 +3,7 @@
     section = 'download'
 
     rel_09 = "0.9.0b1"
-    rel_08 = "0.8.3"
+    rel_08 = "0.8.4"
 
 %>
 <%block name="head_title">

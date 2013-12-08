@@ -11,14 +11,14 @@ Released October 26, 2013
 
 <br/><br/>
 
-<a href="/download.html"><b>0.8.3</b></a>
+<a href="/download.html"><b>0.8.4</b></a>
 <br/>
-<a href="/blog/2013/10/26/sqlalchemy-0.8.3-released/">Release Announcement</a> |
+<a href="/blog/2013/12/08/sqlalchemy-0.8.4-released/">Release Announcement</a> |
 <a href="/docs/08/changelog/migration_08.html">What's New in 0.8?</a> |
-<a href="/changelog/CHANGES_0_8_3">Changelog</a> |
+<a href="/changelog/CHANGES_0_8_4">Changelog</a> |
 <a href="/docs/08/">docs</a>
 <br/>
-Released October 26, 2013
+Released December 8, 2013
 
 <br/><br/>
 
