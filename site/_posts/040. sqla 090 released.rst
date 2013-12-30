@@ -1,0 +1,42 @@
+---
+date: 2013/12/30 15:41:00
+title: SQLAlchemy 0.9.0 Released
+author: Mike B
+---
+
+SQLAlchemy release 0.9.0 is now available.
+
+After about a year's worth of development, 0.9.0 is the first official release
+of the 0.9 series of SQLAlchemy.  As always, 0.9 includes many major architectural
+improvements and new features.
+
+To get an overview of SQLAlchemy 0.9's new features, see the
+`What's New in 0.9 </docs/09/changelog/migration_09.html>`_ document.
+This document should also serve as a guide for those behavioral changes which
+may require adjustments to existing applications.
+
+Highlights of SQLAlchemy 0.9.0 include in-place Python 3 support, major
+improvements to the eager loading system including a more expressive API
+and critical performance improvements to the rendering of more complex joins,
+support for Postgresql JSON types, SQL expression improvements such as textual
+"selectable" objects, "INSERT from SELECT" support, improved APIs for
+"SELECT..FOR UPDATE", schema and DDL improvements, and many other refinements.
+Architecturally, the move to Python 3 in place has allowed lots of consolidation
+to take place, and there has also been a major reorganization of module layout
+both within Core and ORM.
+
+Existing production deployments which have not yet been tested in
+SQLAlchemy 0.9.0 should ensure that they specify a version less than
+0.9.0 in their requirements files, as version 0.9.0 now becomes the
+default version of SQLAlchemy downloaded from Pypi when no version
+specifics are given.
+
+Full changelog for the SQLAlchemy 0.9 series is at `Changes </changelog/CHANGES_0_9_0>`_;
+this document will also link out in many cases to the migration document mentioned
+above.
+
+Download SQLAlchemy 0.9.0 on the `Download Page </download.html>`_.
+
+
+
+

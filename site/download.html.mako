@@ -2,7 +2,7 @@
 <%!
     section = 'download'
 
-    rel_09 = "0.9.0b1"
+    rel_09 = "0.9.0"
     rel_08 = "0.8.4"
 
 %>
@@ -16,17 +16,15 @@ Download - SQLAlchemy
 
 <p>Latest 0.9 Release: <b>${rel_09}</b>
 
-<a
-href="https://bitbucket.org/zzzeek/sqlalchemy/downloads/SQLAlchemy-${rel_09}.tar.gz"><b>(${rel_09}
-via BitBucket)</b></a>
+##<a href="https://bitbucket.org/zzzeek/sqlalchemy/downloads/SQLAlchemy-${rel_09}.tar.gz"><b>(${rel_09} via BitBucket)</b></a>
 
-##<a href="http://www.python.org/pypi/SQLAlchemy/${rel_09}"><b>(${rel_09} via Cheeseshop)</b></a>
+<a href="http://www.python.org/pypi/SQLAlchemy/${rel_09}"><b>(${rel_09} via Cheeseshop)</b></a>
 
-<a href="https://bitbucket.org/zzzeek/sqlalchemy/downloads/SQLAlchemy-${rel_09}.tar.gz.asc"><b>(pgp)</b></a>
+##<a href="https://bitbucket.org/zzzeek/sqlalchemy/downloads/SQLAlchemy-${rel_09}.tar.gz.asc"><b>(pgp)</b></a>
 
 <a href="/changelog/CHANGES_${rel_09.replace('.', '_')}"><b>(CHANGES)</b></a></p>
 
-##<p>SQLAlchemy ${rel_09} is signed using Michael Bayer's PGP key id <a href="http://pgp.mit.edu:11371/pks/lookup?search=0xC4DAFEE1&op=index">C4DAFEE1</a> (use <code>gpg --recv-keys C4DAFEE1</code> to import).</p>
+<p>SQLAlchemy ${rel_09} is signed using Michael Bayer's PGP key id <a href="http://pgp.mit.edu:11371/pks/lookup?search=0xC4DAFEE1&op=index">C4DAFEE1</a> (use <code>gpg --recv-keys C4DAFEE1</code> to import).</p>
 
 <p>Please be sure to review the 0.8 to 0.9 migration guide, found at <a
 href="/docs/09/changelog/migration_09.html"><b>09Migration</b></a>, for full details on changes
