@@ -11,7 +11,7 @@ What People Are Saying - SQLAlchemy
 
 <%def name="quote(link, author)">
     <blockquote class="box">
-    <p>${caller.body()}</p> 
+    <p>${caller.body()}</p>
     <p>- <i><a href="${link}">${author}</a></i></p>
     </blockquote>
 </%def>
@@ -26,6 +26,23 @@ What People Are Saying - SQLAlchemy
     % endif
     </blockquote>
 </%def>
+
+
+
+<%self:quote link="https://news.ycombinator.com/item?id=6989963" author="auvrw, Hacker News User">
+
+A really solid, perhaps unique, library that, as far as i can tell,
+completely addresses the "impedence mismatch" argument. If you're
+directly using a database api in a structured way, you've probably
+already reimplemented the sqlalchemy core, and refactoring your
+program to use sqlalchemy will give you an orm, should you want one,
+and make your code portable across database implementations even if
+you don't. If you're already using an orm, refactoring to use
+sqlalchemy will allow you to to start optimizing the low-level
+database operations in a coherent way (i.e. not just sprinkling SQL
+throughout the models).
+</%self:quote>
+
 
 <%self:quote link="http://www.reddit.com/r/programming/comments/q778v/taking_a_step_back_from_orms/c3vim8o" author="Rolegros, Reddit User">
 
@@ -85,7 +102,7 @@ Loving #SQLAlchemy for #Python right now. It just did 95% of the heavy lifting f
 </%self:quote>
 
 <%self:quote link="https://twitter.com/simonyun/status/74182857605652480" author="Simon Yun">
-Then realized I have schema defined in SQLAlchemy. Used it to recreate my schema in PostgreSQL. Booyah. 
+Then realized I have schema defined in SQLAlchemy. Used it to recreate my schema in PostgreSQL. Booyah.
 Best ORM I've seen. In any language.
 </%self:quote>
 
