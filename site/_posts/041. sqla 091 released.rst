@@ -1,0 +1,36 @@
+---
+date: 2014/01/05 15:41:00
+title: SQLAlchemy 0.9.1 Released
+author: Mike B
+---
+
+SQLAlchemy release 0.9.1 is now available.
+
+This release is primarily a quick-hit regression release; as we moved
+fast through 0.9 betas only releasing a single beta, a couple of small regressions
+popped up since then; this release fixes those.
+
+The release does however include one major, though experimental feature.
+After spending many hours on IRC with a particular user's use case of
+automatically generating ``relationship()`` objects for an existing schema,
+a new extension is proposed known as ``sqlalchemy.ext.automap``.  Automap
+expands upon the Declarative model as well as the "deferred reflection" class
+to attempt producing a full model at runtime based on a reflected, or
+otherwise non-mapped, schema collection.   In some ways, Automap can more or
+less replace what the very famous
+`SQLSoup <https://sqlsoup.readthedocs.org/en/latest/>`_ extension has historically
+been used for, e.g. to generate classes on the fly based on a reflected schema.
+Automap expands on this idea by proposing simple logic to also generate
+rudimentary relationships between classes, and also is structured so as to
+interoperate smoothly with the Declarative mapping system that didn't exist when
+SQLSoup was created.
+
+Full changelog for SQLAlchemy 0.9.1 is at `Changes </changelog/CHANGES_0_9_1>`_,
+and for an overview of what's new in SQLAlchemy 0.9 overall, see
+`What's New in 0.9 </docs/09/changelog/migration_09.html>`_.
+
+Download SQLAlchemy 0.9.1 on the `Download Page </download.html>`_.
+
+
+
+
