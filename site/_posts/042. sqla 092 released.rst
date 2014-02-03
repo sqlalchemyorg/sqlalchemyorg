@@ -1,0 +1,36 @@
+---
+date: 2014/02/02 15:41:00
+title: SQLAlchemy 0.9.2 Released
+author: Mike B
+---
+
+SQLAlchemy release 0.9.2 is now available.
+
+Release 0.9.2, while only a "point release" in the new 0.9 series,
+contains a large list of bug and regression fixes across ORM, Core
+and dialect, as well as a significant number of new features, particularly
+in the area of database metadata management.
+
+Features include a "naming convention" system for database metadata
+that is hoped to assist with schema management, including when using
+Alembic migrations, as well as new options for constraints, Postgresql
+table reflection, and copying of table metadata.   Support and
+documentation has been improved for some advanced ORM patterns such as
+creating relationships to complex targets.
+
+The release also features a lot of regression fixes, so is recommended for
+all users who have already upgraded to the 0.9 series.
+
+Among other bugfixes, there are quite a few dialect-specific bug fixes including
+four for MySQL alone, as well as Oracle, Postgresql, MSSQL, and SQLite, as well
+as a good number of ORM fixes.
+
+Full changelog for SQLAlchemy 0.9.2 is at `Changes </changelog/CHANGES_0_9_2>`_,
+and for an overview of what's new in SQLAlchemy 0.9 overall, see
+`What's New in 0.9 </docs/09/changelog/migration_09.html>`_.
+
+Download SQLAlchemy 0.9.2 on the `Download Page </download.html>`_.
+
+
+
+
