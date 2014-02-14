@@ -35,7 +35,7 @@
             <ul class="version-listing">
             </ul>
         </li>
-        <li${active('wiki')}><a href="${bb_base}">wiki</a>
+        <li${active('wiki')}><a href="${bb_base}/wiki">wiki</a>
             <ul>
                 <li><a href="${bb_base}/wiki/UsageRecipes">Recipes</a></li>
                 <li><a href="${docs_base}/en/latest/faq.html">FAQ</a></li>
