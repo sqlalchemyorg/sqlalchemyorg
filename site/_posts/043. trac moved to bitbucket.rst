@@ -1,0 +1,42 @@
+---
+date: 2014/02/13 15:41:00
+title: SQLAlchemy Migrates Issues from Trac to Bitbucket
+author: Mike B
+---
+
+The SQLAlchemy project is now using `Bitbucket <https://bitbucket.org/zzzeek/sqlalchemy>`_
+for all issue tracking and wiki pages.
+
+SQLAlchemy began using Bitbucket some years ago for pull requests, and
+then when the move to Git was made, Bitbucket became the originating point
+for the git master, which remains mirrored on SQLAlchemy's host as well as
+on Github.  However, the issue system has for SQLAlchemy's entire life remained
+hosted on Trac.
+
+A move from Trac to another system like Github or Bitbucket was not feasable
+until Bitbucket added an advanced import/export feature which could maintain
+the full history, timestamps, and user accounts of the imported issues.
+When this feature was introduced, the SQLAlchemy project still was reluctant
+to give up full control over its issue tracker, instead enabling full
+user account tools and adding such features
+as `tracvatar <https://pypi.python.org/pypi/tracvatar/>`_ (used by the Fedora project!)
+to improve the user
+interface.  But ultimately spammers started abusing the system, and the spam
+tools provided with Trac were failing to deter them in any way, and more generally
+didn't seem to work at all; an alternate plugin was installed to provide captcha
+support to the registration page, but spam accounts continued to register daily
+despite it.   The account database in Trac amassed several hundred accounts,
+mostly inactive, any number of which might also be spam accounts.   As the SQLAlchemy
+project has no interest being in the business of maintaining user account
+databases, the impetus to move became clear.   An additional advantage is that
+the issue system is no longer throttled to crawlers,
+who were also a nuisance on SQLAlchemy's very low power host.
+
+After two weeks of effort to produce import/export tools as well as to
+develop various utilities and workarounds for some issues encountered with
+Bitbucket (most notably, that its system marks every issue and comment not owned
+by you as spam after an import is done, meaning you have to un-mark them all),
+the issue system has been moved entirely.  SQLAlchemy's host is now used
+to serve the main website and for the Jenkins master (which is also non-public
+to deter crawlers from slowing it down).
+
