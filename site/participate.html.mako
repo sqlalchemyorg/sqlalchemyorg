@@ -10,7 +10,7 @@ Participate - SQLAlchemy
 
 <ul>
     <li><a href="#status">Project Status</a></li>
-    <li><a href="#trac">Trac Access</a></li>
+    <li><a href="#bitbucket">Bitbucket Access</a></li>
     <li><a href="#bugs">Reporting Bugs</a></li>
     <li><a href="#assistance">User Assistance</a></li>
     <li><a href="#publicizing">Publicizing SQLAlchemy</a></li>
@@ -26,8 +26,8 @@ Participate - SQLAlchemy
     approach of moving slowly and steadily has so far been very beneficial to the project, allowing
     great strides in architecture and usage before a larger pool of new users is taken on.</p>
 
-<p>The overall status of development can be gleaned by viewing the <a href="trac/roadmap">Roadmap</a> in Trac.  We try to
-    assign all bugs and new features to a specific version.   A specific number, like "0.6.8", means we'd like
+<p>The overall status of development can be gleaned by viewing the <a href="${self.attr.bb_base}">Bitbucket project page.</a>.  We try to
+    assign all bugs and new features to a specific version, which are linked to milestones.   A specific number, like "0.6.8", means we'd like
     to get the ticket completed as of that version (though this is not always guaranteed).
     An "open ended" number like "0.7.xx" means the ticket is
     "in the queue", but is not determined to be part of any specific version.   A lot of these tickets are
@@ -42,17 +42,15 @@ Participate - SQLAlchemy
     more in-depth posts can also be found at <a href="http://techspot.zzzeek.org/category/sqlalchemy/">techspot.zzzeek.org</a>.
 </p>
 
-<a name="trac"></a>
-<h2>Trac Access</h2>
-<p>SQLAlchemy uses Trac for bug reporting and issue tracking, Wiki pages, and source browsing.
-Trac now uses a registration system, so create an account via the "registration" link
-to log in and participate in tickets.
+<a name="bitbucket"></a>
+<h2>Bitbucket</h2>
+<p>SQLAlchemy uses <a href="https://bitbucket.org">Bitbucket</a> for bug reporting and issue tracking, Wiki pages, and source browsing.   Sign up for a Bitbucket account in order to participate in issues.
 </p>
 
 <a name="bugs"></a>
 <h2>Reporting Bugs</h2>
 
-<p>Bugs are reported using Trac at the <a href="/trac/newticket">new ticket</a> link
+<p>Bugs are reported using Bitbucket using the <a href="${self.attr.bb_base}/issues/new">create issue</a> function
 (note you have to be logged in to use it).</p>
 
 <p>Bugs are generally reported only against the two most recent release branches, which comprise
@@ -67,8 +65,7 @@ to log in and participate in tickets.
             the default branch or the maintance branch, and preferably
             against the latest development tip of the series in use.   SQLAlchemy provides easy download links of the
             most recent development versions on the <a href="/download.html">download page.</a></li>
-        <li>Check that the issue doesn't already exist in Trac.  This can be a little tricky as Trac's search interface
-            isn't the best, but we ask that you give it a try.</li>
+        <li>Check that the issue doesn't already exist on the issue tracker.  This can be a little tricky as Bitbucket's search interface is fairly rudimental, but we ask that you give it a try.</li>
         <li>Only report issues that you're pretty sure is a bug.   It is perfectly OK to report a usage issue on the
             mailing list that may or may not be a bug - we'll escalate bugs to the bug tracker if it really
             is a bug.</li>
@@ -90,7 +87,7 @@ to log in and participate in tickets.
             have patches for you to try in case the issue is hard to reproduce.   Please keep the conversation going
             until we can get the bug fixed !</li>
     </ul>
-<p>Ready?  Let's <a href="/trac/newticket">report a bug!</a></p>
+<p>Ready?  Let's <a href="${self.attr.bb_base}/issues/new">report a bug!</a></p>
 
 <a name="assistance"></a>
 <h2>User Assistance</h2>

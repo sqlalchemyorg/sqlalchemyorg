@@ -9,6 +9,7 @@ docs.enabled = True
 
 
 docs_url = "http://docs.sqlalchemy.org"
+bb_url = "https://bitbucket.org/zzzeek/sqlalchemy"
 site.url = "http://www.sqlalchemy.org"
 
 filters.syntax_highlight.style= "manni"

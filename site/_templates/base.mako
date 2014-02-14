@@ -8,6 +8,7 @@ if in_docs:
 else:
     self.attr.site_base = site_base = ""
 self.attr.docs_base = docs_base = bf.config.docs_url
+self.attr.bb_base = bb_base = bf.config.bb_url
 current_section = getattr(self.module, 'section', '')
 if not current_section and in_docs:
     current_section = 'docs'
@@ -28,7 +29,7 @@ if not current_section and in_docs:
 
     <%block name="head">
         <!-- sqlalchemy.org head -->
-        <%include file="/head.mako" args="site_base=self.attr.site_base, docs_base=self.attr.docs_base"/>
+        <%include file="/head.mako" args="site_base=self.attr.site_base, docs_base=self.attr.docs_base, bb_base=self.attr.bb_base"/>
         <%include file="/tracking.mako"/>
         <!-- end sqlalchemy.org head -->
     </%block>
@@ -39,7 +40,7 @@ if not current_section and in_docs:
 
 <div id="wrap">
 
-<%include file="header.mako" args="section=current_section, docs_base=docs_base, site_base=site_base" />
+<%include file="header.mako" args="section=current_section, docs_base=docs_base, site_base=site_base, bb_base=self.attr.bb_base" />
 
 <div id="main-body" class="${current_section}">
 

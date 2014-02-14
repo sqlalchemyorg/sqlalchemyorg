@@ -1,4 +1,4 @@
-<%page args="site_base, docs_base, css=True"/>
+<%page args="site_base, docs_base, bb_base, css=True"/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <link rel="shortcut icon" href="${site_base}/favicon.ico" type="image/x-icon">
 % if css:

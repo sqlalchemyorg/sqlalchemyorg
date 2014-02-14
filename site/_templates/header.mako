@@ -1,4 +1,4 @@
-<%page args="site_base, docs_base, section='home'"/>
+<%page args="site_base, docs_base, bb_base, section='home'"/>
 <%
     def active(sec):
         if sec==section:
@@ -35,13 +35,11 @@
             <ul class="version-listing">
             </ul>
         </li>
-        <li${active('wiki')}><a href="${site_base}/trac/">wiki</a>
+        <li${active('wiki')}><a href="${bb_base}">wiki</a>
             <ul>
-                <li><a href="${site_base}/trac/wiki/UsageRecipes">Recipes</a></li>
-                <li><a href="${site_base}/trac/wiki/FAQ">FAQ</a></li>
-                <li><a href="${site_base}/trac/roadmap">Roadmap</a></li>
-                <li><a href="${site_base}/trac/timeline">Timeline</a></li>
-                <li><a href="${site_base}/trac/query?status=assigned&status=new&status=reopened&group=milestone&max=150&col=id&col=summary&col=status&col=type&col=priority&col=milestone&col=component&order=priority">Tickets by Milestone</a></li>
+                <li><a href="${bb_base}/wiki/UsageRecipes">Recipes</a></li>
+                <li><a href="${docs_base}/en/latest/faq.html">FAQ</a></li>
+                <li><a href="${bb_base}/issues?status=new&status=open">Issues</a></li>
             </ul>
         </li>
         <li${active('involved')}><a href="${site_base}/support.html">community</a>

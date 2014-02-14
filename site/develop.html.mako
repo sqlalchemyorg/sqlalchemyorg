@@ -27,10 +27,10 @@ on getting started.
 <h2>Developer Roster</h2>
 <p>Modern releases of SQLAlchemy include a core developer list.   The names of developers
     who are currently or have been critical to our progress are in this file,
-    the current version of which can be seen at <a href="/trac/browser/AUTHORS">AUTHORS</a>.
+    the current version of which can be seen at <a href="${self.attr.bb_base}/src/master/AUTHORS">AUTHORS</a>.
 </p>
 <p>A list of all developers who have ever contributed to SQLAlchemy, even a single patch,
-     is maintained at <a href="/trac/wiki/Contributors">Contributors</a>.
+     is maintained at <a href="${self.attr.bb_base}/wiki/Contributors">Contributors</a>.
 </p>
 
 <a name="developers"></a>
@@ -86,7 +86,7 @@ git clone https://github.com/zzzeek/sqlalchemy.git
 
 <p>Changes can be shared with core developers using pull
     requests to either of these services.  Patch files can also be submitted as
-    attachments to <a href="/participate.html#trac">Trac tickets</a>.</p>
+    attachments to <a href="/participate.html#bitbucket">Bitbucket issues</a>.</p>
 
 <p>Major release branches are maintained using branches.  For example, to get at the 0.8 branch, the tag
 is called <code>rel_0_8</code>:</p>
@@ -116,7 +116,7 @@ Downloadable snapshots of the current default and maintenance branches are avail
 
 <p>The tests run using <a href="http://pypi.python.org/pypi/nose">Nose</a>.   A comprehensive guide to running the tests is
     present in the
-    file <a href="/trac/browser/README.unittests">README.unittests</a>, which is available in the distribution.
+    file <a href="${self.attr.bb_base}/src/master/README.unittests.rst">README.unittests</a>, which is available in the distribution.
     After downloading the source distribution of SQLAlchemy, this file explains in detail how tests can be run,
     overall, for specific databases, and specific tests.   Ideally, any patch that's given to use via Trac or similar
     should be tested in the default branch against the full test suite.   We of course do this in any case but the patch
