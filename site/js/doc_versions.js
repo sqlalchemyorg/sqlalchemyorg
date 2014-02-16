@@ -10,17 +10,26 @@ var doc_versions = [
       },
       {
         "version":"Version 0.8",
-        "slug":"rel_0_8"
+        "slug":"rel_0_8",
+        "latest_warning": true
       },
        {
         "version":"Version 0.7",
-        "slug":"rel_0_7"
+        "slug":"rel_0_7",
+        "latest_warning": true
       },
       {
         "version":"Version 0.6",
-        "slug":"rel_0_6"
+        "slug":"rel_0_6",
+        "latest_warning": true
       }
     ];
+
+var _version_lookup = {};
+for (key in doc_versions) {
+    version = doc_versions[key];
+    _version_lookup[version.slug] = version;
+}
 
 function renderDocVersions() {
 
@@ -32,6 +41,24 @@ function renderDocVersions() {
     }
 }
 
+function renderLatestVersionButton() {
+  if (doc_version) {
+      if (_version_lookup[doc_version].latest_warning) {
+          latest = _version_lookup['latest'];
+          latest_url = document.URL.replace(doc_version, latest.slug);
+          $("body").append(
+
+            '<div class="read_latest_button">' +
+            '<a class="read_latest_button" href="' + latest_url + '">' +
+            '> Read the latest version of this page</a>' +
+            '</div>'
+          )
+      }
+
+  }
+}
+
 $(document).ready(function() {
     renderDocVersions();
+    renderLatestVersionButton();
 });
