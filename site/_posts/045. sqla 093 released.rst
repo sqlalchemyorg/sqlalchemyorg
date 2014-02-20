@@ -1,0 +1,28 @@
+---
+date: 2014/02/19 15:41:00
+title: SQLAlchemy 0.9.3 Released
+author: Mike B
+---
+
+SQLAlchemy release 0.9.3 is now available.
+
+Release 0.9.3 includes a wide array of bugfixes and a few new
+features.   A critical subset of these fixes are also backported to
+release 0.8.5.  Both 0.9.3 and 0.8.5 are being released simultaneously to
+resolve a concurrency-related
+regression introduced in version 0.8.4, which can cause a dialect to
+sporadically be used in a mis-configured state when it first connects.
+For this reason, 0.9.3 is recommended for all users of the 0.9 series.
+
+Other improvements include updates to the Postgresql dialect to better handle
+schema reflection when working with old versions of Postgresql,
+namely pre-0.8.1 versions, which should also have a positive effect on those
+users using Amazon Redshift.   0.9.3 also includes improved support for
+SQLite type reflection, using SQLite's "type affinity" rules to unconditionally
+reflect all possible datatypes declared within a database.
+
+Users should carefully review the `Changelog </changelog/CHANGES_0_9_3>`_ to
+note which behaviors and issues are affected.   We'd like to thank
+the many contributors who helped with this release.
+
+SQLAlchemy 0.9.3 is available on the `Download Page </download.html>`_.

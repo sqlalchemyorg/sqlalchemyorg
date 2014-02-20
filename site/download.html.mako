@@ -2,8 +2,8 @@
 <%!
     section = 'download'
 
-    rel_09 = "0.9.2"
-    rel_08 = "0.8.4"
+    rel_09 = "0.9.3"
+    rel_08 = "0.8.5"
 
 %>
 <%block name="head_title">
@@ -16,11 +16,7 @@ Download - SQLAlchemy
 
 <p>Latest 0.9 Release: <b>${rel_09}</b>
 
-##<a href="https://bitbucket.org/zzzeek/sqlalchemy/downloads/SQLAlchemy-${rel_09}.tar.gz"><b>(${rel_09} via BitBucket)</b></a>
-
 <a href="http://www.python.org/pypi/SQLAlchemy/${rel_09}"><b>(${rel_09} via Cheeseshop)</b></a>
-
-##<a href="https://bitbucket.org/zzzeek/sqlalchemy/downloads/SQLAlchemy-${rel_09}.tar.gz.asc"><b>(pgp)</b></a>
 
 <a href="/changelog/CHANGES_${rel_09.replace('.', '_')}"><b>(CHANGES)</b></a></p>
 
@@ -34,10 +30,6 @@ made since 0.8.</p>
 <h2>Version 0.8</h2>
 
 <p>Latest 0.8 Release: <b>${rel_08}</b>
-
-##<a
-##href="http://prdownloads.sourceforge.net/sqlalchemy/SQLAlchemy-${rel_08}.tar.gz?download"><b>(${rel_08}
-##via Sourceforge)</b></a>
 
 <a href="http://www.python.org/pypi/SQLAlchemy/${rel_08}"><b>(${rel_08} via Cheeseshop)</b></a>
 

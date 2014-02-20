@@ -1,0 +1,25 @@
+---
+date: 2014/02/19 15:40:00
+title: SQLAlchemy 0.8.5 Released
+author: Mike B
+---
+
+SQLAlchemy release 0.8.5 is now available.
+
+Release 0.8.5 is a bugfix release which includes a wide array of fixes
+backported from the 0.9 series.  Both 0.8.5 and 0.9.3 are being released
+simultaneously to resolve a concurrency-related
+regression introduced in version 0.8.4, which can cause a dialect to
+sporadically be used in a mis-configured state when it first connects.  For
+this reason, 0.8.5 is recommended for all users on 0.8.4.
+
+Other improvements include updates to the Postgresql dialect to better handle
+schema reflection when working with old versions of Postgresql,
+namely pre-0.8.1 versions, which should also have a positive effect on those
+users using Amazon Redshift.
+
+Users should carefully review the `Changelog </changelog/CHANGES_0_8_5>`_ to
+note which behaviors and issues are affected.   We'd like to thank
+the many contributors who helped with this release.
+
+SQLAlchemy 0.8.5 is available on the `Download Page </download.html>`_.
