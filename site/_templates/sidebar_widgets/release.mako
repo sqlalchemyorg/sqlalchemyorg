@@ -1,4 +1,4 @@
-<h3>Current / Upcoming Releases</h3>
+<h3>Current Releases</h3>
 
 <a href="/download.html"><b>0.9.3</b></a>
 <br/>
