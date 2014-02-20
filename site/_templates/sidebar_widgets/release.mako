@@ -4,7 +4,7 @@
 <br/>
 <a href="/blog/2014/02/19/sqlalchemy-0.9.3-released/">Release Announcement</a> |
 <a href="/docs/09/changelog/migration_09.html">What's New in 0.9?</a> |
-<a href="/changelog/CHANGES_0_9_2">Changelog</a> |
+<a href="/changelog/CHANGES_0_9_3">Changelog</a> |
 <a href="/docs/09/">docs</a>
 <br/>
 Released Feburary 19, 2014
