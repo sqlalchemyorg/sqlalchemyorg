@@ -1,0 +1,17 @@
+---
+date: 2014/03/21 15:41:00
+title: SQLAlchemy Site Mini-Redesign
+author: Mike B
+---
+
+That's not your eyes playing tricks on you, the SQLAlchemy logo is now
+a little bigger.   Today, some modifications to the site layout have gone out,
+including some new fonts, updated navigation, and an all new section
+called `The Library </library.html>`_.   The Library is the new home
+base for all kinds of documentation, blog posts, and videos about all things
+SQLAlchemy.  The same old documentation links are right at the top, but beyond
+that there's links to the `Architecture of Open Source <http://aosabook.org/en/sqlalchemy.html>`_
+chapter, links to
+Pycon talks as well as whatever else was handy.  We'd like users to be aware
+of the very best of SQLAlchemy documentation resources so be sure to check
+back with the Library every now and then for new additions.
