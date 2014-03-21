@@ -9,14 +9,85 @@
     }
 }
 
+.textual-font {
+    font-family: "Source Sans Pro", arial, sans-serif;
+    color: #333;
+}
+
+.topic-box-header-font {
+    font-family: Verdana, "Lucida Grande", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #778877;
+    letter-spacing: 1px;
+}
+
+.topic-box-body-font {
+    font-family: Verdana, "Lucida Grande", sans-serif;
+    color: #777777;
+    font-size: .75em;
+    line-height: 1.4em;
+}
+
+.selling-point-font {
+    color: #777733;
+    font: 16px/1.1em "Source Sans Pro", arial,sans-serif;
+    font-weight: bold;
+}
+
+.page-welcome-font-big {
+    font: 22px/24px Tahoma,Geneva,sans-serif;
+    color: #222222;
+    letter-spacing: normal;
+}
+
+.page-welcome-font-small {
+    font: 20px/24px Tahoma,Geneva,sans-serif;
+    color: #222222;
+    letter-spacing: normal;
+    text-transform: none;
+}
+
+.code-font {
+    color: #703040;
+    font: normal 1.1em/1.2em courier, "courier new", Monaco, monospace;
+}
+
+.dateline-font {
+    letter-spacing: 1px;
+    color: #778877;
+    font-size: 0.9em;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.nav-link-font {
+    font-family: "Source Sans Pro", arial, sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+.box {
+    background-color: #f0f0f0;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin:0 0 20px 0;
+    padding:12px;
+
+}
+
+.pagetext {
+    line-height: 1.4em;
+    letter-spacing: .01em;
+}
+
 body {
+    @extend .textual-font;
     margin: 0;
     padding: 0;
 
-    font-family: Verdana, "Lucida Grande", sans-serif;
-
     text-align: left;
-    color: #333;
     background: #fff;
 }
 
@@ -55,10 +126,6 @@ a {
 
 }
 
-.pagetext {
-    font-size: small;
-    line-height: 1.4em;
-}
 
 #main-body {
     @extend .self-clearing-float;
@@ -67,11 +134,9 @@ a {
 
 #sidebar {
     @extend .pagetext;
+    @extend .topic-box-body-font;
     float: right;
     width: 25%;
-    font-size: .75em;
-    line-height: 1.4em;
-    color: #777;
 }
 
 
@@ -133,12 +198,14 @@ a {
 /* navigation
 ---------------------------------------------------------- */
 
+$nav_height: 32px;
+
 #nav {
     @extend .self-clearing-float;
     padding: 1px 15px 0px 15px;
     background: #787 url(../img/navbg1.gif) repeat-x top left;
-    height:26px;
-    font-size:small;
+    height: $nav_height;
+    font-size:1em;
 
     ul {
         margin: 0;
@@ -147,15 +214,15 @@ a {
 
         li {
 
-            &:hover ul {
+            &:hover > ul {
                 display:block;
             }
 
             ul {
                 display:none;
                 position:absolute;
-                top:92px;
-                min-width:140px;
+                top: 98px;
+                min-width:200px;
 
                 li {
 
@@ -164,11 +231,21 @@ a {
                         background-color: #333;
                     }
 
-                    height:26px;
+                    height:$nav_height;
                     width:100%;
                     background-color: #787;
                     clear:left;
                     float:left;
+
+                    &:hover > ul {
+                        display:block;
+                    }
+                    ul {
+                        display:none;
+                        top: -$nav_height + 1;
+                        position:relative;
+                        left:200px;
+                    }
 
                     a {
                         width:100%;
@@ -182,7 +259,7 @@ a {
         float: left;
         margin: 0;
         padding: 0;
-        min-height:26px;
+        min-height:$nav_height;
 
         &:hover, .active {
             color: #fff;
@@ -190,24 +267,20 @@ a {
         }
 
         a {
+            @extend .nav-link-font;
             float: left;
             margin: 0;
             padding: 5px 12px;
-            font-family: arial, verdana, sans-serif;
-            font-size: 100%;
-            font-weight: normal;
-            text-decoration: none;
-            color: #f0f0f0;
+
         }
 
     }
 
 }
 
-
 #gittip_nav {
     float:right;
-    margin-top:2px;
+    margin-top:5px;
 }
 
 
@@ -216,33 +289,24 @@ a {
 
 #content {
     h1 {
+        @extend .page-welcome-font-big;
         margin: 0 2em 15px 0;
         padding: 0;
-        font: normal 22px/24px Tahoma,Geneva,sans-serif;
-        color: #222;
-        letter-spacing:normal; /*.03em;*/
     }
 
     h2 {
+        @extend .topic-box-header-font;
         margin: 2em 0 10px 0;
         padding: 0 0 4px 0;
         font-size: 90%;
-        font-weight: bold;
-        text-transform: uppercase;
-        color: #787;
         border-bottom: 1px solid #D9E7BD;
-        letter-spacing: 1px;
     }
     p {
         margin: 0 0 1em 0;
         padding: 0;
     }
     blockquote {
-        margin:20px;
-        padding:12px;
-        background-color: #f0f0f0;
-        border-right: 1px solid #ccc;
-        border-bottom: 1px solid #ccc;
+        @extend .box;
     }
 
     /* lists
@@ -259,7 +323,7 @@ a {
         padding-left: 20px;
     }
     ul {
-        list-style: circle;
+        list-style: disc;
         margin-top:0;
 
         li {
@@ -278,31 +342,23 @@ a {
         clear:both;
 
         h2 {
+            @extend .page-welcome-font-small;
             margin: 0 0 5px 0;
             padding: 0px 0px 0px 0px;
-            text-transform: none;
             border: 0;
-            font: normal 20px/24px Tahoma,Geneva,sans-serif;
-            color:#000000;
         }
 
         .blog_post_date {
-            font-size: .9em;
-            font-weight: normal;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #787;
+            @extend .dateline-font;
             border: none;
         }
 
         .blog_post_permalink {
             font-size:.8em;
-            text-transform:none;
         }
 
         .blog_post_byline {
-            text-transform:none;
-            font-size:12px;
+            font-size: .95em;
         }
 
         .blog_post_header {
@@ -342,15 +398,14 @@ a {
         padding-top:10px;
         border-bottom:1px solid #CCCCCC;
         dt {
-            color: #773;
-            font: normal 14px/1.1em arial,helvetica,sans-serif;
+            @extend .selling-point-font;
             padding-top:20px;
             float:left;
-            width:125px;
+            width:135px;
         }
         dd {
             border-top:1px solid #CCCCCC;
-            padding-left:135px;
+            padding-left:145px;
             padding-right:20px;
             padding-top:15px;
             padding-bottom:10px;
@@ -377,20 +432,6 @@ a {
 
 }
 
-/* basic phrase element styles */
-
-code, .darkcell span.pre {
-    color: #703040;
-    font: normal 1.1em/1.2em courier, "courier new", Monaco, monospace;
-    text-align: left;
-}
-
-em {
-    font-style: italic;
-}
-strong {
-    font-weight: bold;
-}
 
 
 /* sidebar styles
@@ -398,11 +439,9 @@ strong {
 
 #sidebar {
     .box {
+        @extend .box;
         margin: 0 0 2em 0;
         padding: 15px 15px 1em 15px;
-        background-color: #f0f0f0;
-        border-right: 1px solid #ccc;
-        border-bottom: 1px solid #ccc;
     }
     .donate p {
         padding-top:5px;
@@ -412,12 +451,10 @@ strong {
         font-style: italic;
     }
     h3 {
+        @extend .topic-box-header-font;
         margin: 0 0 10px 0;
+
         font-size: 110%;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        color: #787;
     }
     p {
         margin: 0;
@@ -462,8 +499,19 @@ div.involved {
     }
 }
 
-/* code highlight
----------------------------------------------------- */
+/* basic phrase element styles */
+
+code, .darkcell span.pre {
+    @extend .code-font;
+    text-align: left;
+}
+
+em {
+    font-style: italic;
+}
+strong {
+    font-weight: bold;
+}
 
 pre {
     margin: auto;
@@ -475,4 +523,28 @@ div.pygments_manni {
     border: 1px solid;
     overflow: auto;
     margin-bottom:10px;
+}
+
+
+/* client-injected document styles
+   (e.g. the button on the docs site!)
+---------------------------------------------------------- */
+
+a.read_latest_button {
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 10px 10px;
+    background-color: rgba(218, 79, 73, 0.75);
+    background-image: linear-gradient(to bottom, rgba(238, 95, 91, 0.5), rgba(189, 54, 47, 0.5));
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+div.read_latest_button {
+  bottom: 70px;
+  right: 20px;
+  position: fixed;
 }

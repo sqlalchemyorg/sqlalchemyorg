@@ -8,7 +8,7 @@
 %>
 
 <div id="header">
-    <div id="logo"><a href="${site_base}/"><img src="${site_base}/img/sqla-logo6.gif" width="188" height="52" alt="SQLAlchemy" /></a></div>
+    <div id="logo"><a href="${site_base}/"><img src="${site_base}/img/sqla_logo.png" width="240" alt="SQLAlchemy" /></a></div>
     <div id="description"><img src="${site_base}/img/dbtoolkit6.gif" width="180" height="12" alt="The Database Toolkit for Python" /></div>
 </div>
 
@@ -31,15 +31,16 @@
             </ul>
         </li>
         <li${active('blog')}><a href="${site_base}/blog/">blog</a></li>
-        <li${active('docs')}><a href="${docs_base}">documentation</a>
-            <ul class="version-listing">
-            </ul>
-        </li>
-        <li${active('wiki')}><a href="${bb_base}/wiki">wiki</a>
+        <li${active('docs')}><a href="${site_base}/library.html">library</a>
             <ul>
-                <li><a href="${bb_base}/wiki/UsageRecipes">Recipes</a></li>
-                <li><a href="${docs_base}/en/latest/faq.html">FAQ</a></li>
-                <li><a href="${bb_base}/issues?status=new&status=open">Issues</a></li>
+                <li><a href="${docs_base}">Reference</a>
+                    <ul class="version-listing">
+                    </ul>
+                </li>
+                <li><a href="${site_base}/library.html#architecture">Architecture</a></li>
+                <li><a href="${site_base}/library.html#talks">Talks</a></li>
+                <li><a href="${site_base}/library.html#tutorials">Tutorials</a></li>
+                <li><a href="${site_base}/library.html#recipes">Recipes</a></li>
             </ul>
         </li>
         <li${active('involved')}><a href="${site_base}/support.html">community</a>
@@ -47,6 +48,7 @@
                 <li><a href="${site_base}/support.html">Get Support</a></li>
                 <li><a href="${site_base}/participate.html">Participate</a></li>
                 <li><a href="${site_base}/develop.html">Develop</a></li>
+                <li><a href="${bb_base}">Bitbucket</a></li>
             </ul>
         </li>
         <li${active('download')}><a href="${site_base}/download.html">download</a></li>
