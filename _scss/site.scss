@@ -253,8 +253,8 @@ $nav_height: 32px;
         float: left;
         margin: 0;
         padding: 0;
-        padding-top: 3px;
-        min-height:$nav_height - 3px;
+        padding-top: 4px;
+        min-height:$nav_height - 4px;
 
         &:hover, .active {
             color: #fff;
