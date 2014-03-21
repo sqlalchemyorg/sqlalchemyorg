@@ -1,34 +1,44 @@
+.self-clearing-float {
+    &:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+
+    }
+}
+
 body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 
-  font-family: Verdana, "Lucida Grande", sans-serif;
+    font-family: Verdana, "Lucida Grande", sans-serif;
 
-  text-align: left;
-  color: #333;
-  background: #fff;
+    text-align: left;
+    color: #333;
+    background: #fff;
 }
 
 a {
+    &:link {
+        padding: 0 0 1px 0;
+        font-weight: normal;
+        text-decoration: none;
+        color: #900;
+    }
 
-  &:link {
-    padding: 0 0 1px 0;
-    font-weight: normal;
-    text-decoration: none;
-    color: #900;
-  }
+    &:visited {
+        color: #700;
+        font-weight: normal;
+        text-decoration: none;
+    }
 
-  &:visited {
-    color: #700;
-    font-weight: normal;
-    text-decoration: none;
-  }
-
-  &:hover {
-    color: #f00;
-    font-weight: normal;
-    text-decoration: underline;
-  }
+    &:hover {
+        color: #f00;
+        font-weight: normal;
+        text-decoration: underline;
+    }
 }
 
 
@@ -51,6 +61,7 @@ a {
 }
 
 #main-body {
+    @extend .self-clearing-float;
     padding: 20px 20px 0 20px;
 }
 
@@ -74,7 +85,6 @@ a {
     }
 }
 
-
 #footer {
     @extend .pagetext;
     clear: both;
@@ -82,6 +92,19 @@ a {
     border-top: 1px solid #d9d9d9;
     padding: 2em 1em;
     background: #fff url(../img/nav-shadow2.gif) top left repeat-x;
+    color: #777;
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .pypowered { float: left; margin: 0 10px 0 0;}
+
+    .copyright {
+        float: left;
+        font-size:.9em;
+    }
 }
 
 /* header
@@ -93,8 +116,9 @@ a {
 }
 
 #logo {
-  padding: 0;
-  width: 172px;
+    @extend .self-clearing-float;
+    padding: 0;
+    width: 172px;
 }
 #logo img {
   margin: 7px 0 0 16px;
@@ -110,6 +134,7 @@ a {
 ---------------------------------------------------------- */
 
 #nav {
+    @extend .self-clearing-float;
     padding: 1px 15px 0px 15px;
     background: #787 url(../img/navbg1.gif) repeat-x top left;
     height:26px;
@@ -181,6 +206,273 @@ a {
 
 
 #gittip_nav {
-  float:right;
-  margin-top:2px;
+    float:right;
+    margin-top:2px;
+}
+
+
+/* content styles
+---------------------------------------------------------- */
+
+#content {
+    h1 {
+        margin: 0 2em 15px 0;
+        padding: 0;
+        font: normal 22px/24px Tahoma,Geneva,sans-serif;
+        color: #222;
+        letter-spacing:normal; /*.03em;*/
+    }
+
+    h2 {
+        margin: 2em 0 10px 0;
+        padding: 0 0 4px 0;
+        font-size: 90%;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #787;
+        border-bottom: 1px solid #D9E7BD;
+        letter-spacing: 1px;
+    }
+    p {
+        margin: 0 0 1em 0;
+        padding: 0;
+    }
+    blockquote {
+        margin:20px;
+        padding:12px;
+        background-color: #f0f0f0;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+
+    /* lists
+    ---------------------------------------------------------- */
+
+    ul, ol, dl {
+        margin: 1em 0 1em 0;
+        padding: 0;
+    }
+    ul, ol {
+        margin-left: 15px;
+    }
+    ol {
+        padding-left: 20px;
+    }
+    ul {
+        list-style: circle;
+        margin-top:0;
+
+        li {
+            padding: 0 0 4px 0;
+            line-height: 1.3em;
+        }
+    }
+
+    /* blog
+    ---------------------------------------------------------- */
+
+    div.blog_post {
+        margin: 0 0 1em 0;
+        border-bottom: 1px solid #CCCCCC;
+        padding-bottom: 1em;
+        clear:both;
+
+        h2 {
+            margin: 0 0 5px 0;
+            padding: 0px 0px 0px 0px;
+            text-transform: none;
+            border: 0;
+            font: normal 20px/24px Tahoma,Geneva,sans-serif;
+            color:#000000;
+        }
+
+        .blog_post_date {
+            font-size: .9em;
+            font-weight: normal;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #787;
+            border: none;
+        }
+
+        .blog_post_permalink {
+            font-size:.8em;
+            text-transform:none;
+        }
+
+        .blog_post_byline {
+            text-transform:none;
+            font-size:12px;
+        }
+
+        .blog_post_header {
+            border-bottom: 1px solid #CCCCCC;
+            padding: 0px 0px 10px 0px;
+            margin: 20px 0 10px 0;
+        }
+    }
+
+    div.blog_nav {
+        border-bottom: 1px solid #CCCCCC;
+
+        .prev {
+            float: left;
+            font-size: 0.8em;
+        }
+        .next {
+            float: right;
+            font-size: 0.8em;
+        }
+    }
+
+    div.subscribe {
+        padding-bottom:10px;
+        margin-bottom:5px;
+    }
+
+    div.subscribe h3 {
+        font-size:13px;
+    }
+
+
+    /* features styles
+    ---------------------------------------------------------- */
+
+    dl#features  {
+        padding-top:10px;
+        border-bottom:1px solid #CCCCCC;
+        dt {
+            color: #773;
+            font: normal 14px/1.1em arial,helvetica,sans-serif;
+            padding-top:20px;
+            float:left;
+            width:125px;
+        }
+        dd {
+            border-top:1px solid #CCCCCC;
+            padding-left:135px;
+            padding-right:20px;
+            padding-top:15px;
+            padding-bottom:10px;
+            margin-left:0px;
+        }
+    }
+
+
+    /* in production (organizations) styles
+    ---------------------------------------------------------- */
+
+    dl#inproduction  {
+        padding-top:10px;
+        border-top:1px solid #CCCCCC;
+        dt {
+          padding-top:10px;
+        }
+        dd {
+            border-bottom:1px solid #CCCCCC;
+            margin:0px 0px 10px 0px;
+            padding:0px 0px 10px 0px;
+        }
+    }
+
+}
+
+/* basic phrase element styles */
+
+code, .darkcell span.pre {
+    color: #703040;
+    font: normal 1.1em/1.2em courier, "courier new", Monaco, monospace;
+    text-align: left;
+}
+
+em {
+    font-style: italic;
+}
+strong {
+    font-weight: bold;
+}
+
+
+/* sidebar styles
+---------------------------------------------------------- */
+
+#sidebar {
+    .box {
+        margin: 0 0 2em 0;
+        padding: 15px 15px 1em 15px;
+        background-color: #f0f0f0;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+    .donate p {
+        padding-top:5px;
+    }
+    .box .date {
+        color: #666;
+        font-style: italic;
+    }
+    h3 {
+        margin: 0 0 10px 0;
+        font-size: 110%;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #787;
+    }
+    p {
+        margin: 0;
+        padding: 0;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    li {
+        padding: 3px 0;
+        line-height: 1.4em;
+    }
+
+    .donate form {
+        display:inline;
+    }
+
+    .donate img {
+        margin-top:auto;
+    }
+
+}
+
+
+/* get involved
+---------------------------------------------------------- */
+div.involved {
+    #content {
+        ul.nav {
+            padding:0;
+            margin:10px 0px 25px 0px;
+            li {
+                display:inline;
+            }
+        }
+
+        div.pagecontrol {
+            text-align:right;
+        }
+    }
+}
+
+/* code highlight
+---------------------------------------------------- */
+
+pre {
+    margin: auto;
+    padding: 10px;
+}
+
+div.pygments_manni {
+    background-color: #EFEFEF;
+    border: 1px solid;
+    overflow: auto;
+    margin-bottom:10px;
 }

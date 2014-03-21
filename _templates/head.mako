@@ -3,7 +3,6 @@
 <link rel="shortcut icon" href="${site_base}/favicon.ico" type="image/x-icon">
 % if css:
 	<link rel="stylesheet" type="text/css" media="all" href="${site_base}/css/site.css"></link>
-	<link rel="stylesheet" type="text/css" media="all" href="${site_base}/css/site2.css"></link>
 	<link rel="stylesheet" type="text/css" media="print" href="${site_base}/css/print.css"></link>
 % endif
 
