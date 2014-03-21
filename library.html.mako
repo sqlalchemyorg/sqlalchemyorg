@@ -175,7 +175,7 @@ there's a huge number of "recipes", code examples geared towards specific use ca
 These are currently split out among the SQLAlchemy reference documentation and the wiki:
 
 <ul>
-	<li><a href="${self.attr.docs_base}/orm/examples.html">SQLAlchemy ORM Examples</a> - in the SQLAlchemy documentation</li>
+	<li><a href="${self.attr.docs_base}/en/rel_0_9/orm/examples.html">SQLAlchemy ORM Examples</a> - in the SQLAlchemy documentation</li>
 	<li><a href="${self.attr.bb_base}/wiki/UsageRecipes">Theatrum Chemicum</a> - large list of recipes old and new on the wiki</li>
 </ul>
 </p>
