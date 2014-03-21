@@ -15,7 +15,9 @@ site.url = "http://www.sqlalchemy.org"
 filters.syntax_highlight.style= "manni"
 filters.syntax_highlight.enabled = True
 
-# blog
+scss = controllers.gen_scss
+scss.enabled = True
+
 blog = controllers.blog
 blog.enabled = True
 blog.path = "/blog"
