@@ -9,6 +9,8 @@ def setup_context(context):
         context['url'] = "/some/test/url"
     if 'current_version' not in context:
         context['current_version'] = "latest"
+    if 'html_theme' not in context:
+        context['html_theme'] = ''
 
     if 'name' not in context:
         context['name'] = context['project'].lower()

@@ -33,7 +33,7 @@
         <li${active('blog')}><a href="${site_base}/blog/">blog</a></li>
         <li${active('docs')}><a href="${site_base}/library.html">library</a>
             <ul>
-                <li><a href="${docs_base}">Reference</a>
+                <li><a href="${site_base}/library.html#reference">Reference</a>
                     <ul class="version-listing">
                     </ul>
                 </li>

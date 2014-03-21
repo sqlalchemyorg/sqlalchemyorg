@@ -32,7 +32,7 @@ self.attr.bb_base = bb_base = bf.config.bb_url
         % endfor
         <!-- end iterate through SQLA css_files -->
 
-        <link rel="stylesheet" type="text/css" media="all" href="${site_base}/css/site2.css"></link>
+        <link rel="stylesheet" type="text/css" media="all" href="${site_base}/css/site.css"></link>
         <link rel="stylesheet" type="text/css" media="print" href="${site_base}/css/print.css"></link>
 
         <!-- begin iterate through sphinx environment css_files -->

@@ -10,7 +10,7 @@ Library - SQLAlchemy
 
 <p>
 A wide array of documentation both official and non-official exists
-for SQLAlchemy.   The following is a guide to the best information
+for SQLAlchemy.   The following is a guide to the some of the best information
 available.
 
 <ul>
@@ -144,6 +144,22 @@ resources available as well:
 		tutorial.
 	</%self:talk>
 
+	<%self:talk
+		title="SQLAlchemy + URL Dispatch Wiki Tutorial"
+		presented="Part of the Pylons Documentation"
+		author="Chris McDonough"
+		links="${[
+			('SQLAlchemy + URL Dispatch Wiki Tutorial',
+				'http://docs.pylonsproject.org/projects/pyramid/en/latest/tutorials/wiki2/index.html')
+		]}"
+	>
+	This is the official tutorial for SQLAlchemy integration within the
+	<a href="http://www.pylonsproject.org/">Pyramid Web Framework</a>.  The basic
+	steps to integrate SQLAlchemy within a traditional web application are laid
+	out here and are mostly in conformance with those guidelines referenced
+	by SQLAlchemy's documentation.
+
+	</%self:talk>
 </ul>
 
 </p>
