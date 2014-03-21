@@ -200,7 +200,6 @@ a {
 $nav_height: 32px;
 
 #nav {
-    @extend .self-clearing-float;
     padding: 1px 15px 0px 15px;
     background: #787 url(../img/navbg1.gif) repeat-x top left;
     height: $nav_height;
@@ -221,7 +220,6 @@ $nav_height: 32px;
                 display:none;
                 position:absolute;
                 top: 98px;
-                min-width:200px;
 
                 li {
 
@@ -230,25 +228,22 @@ $nav_height: 32px;
                         background-color: #333;
                     }
 
+                    margin: 0;
                     height:$nav_height;
-                    width:100%;
+                    width:200px;
                     background-color: #787;
                     clear:left;
-                    float:left;
 
                     &:hover > ul {
                         display:block;
                     }
                     ul {
                         display:none;
-                        top: -$nav_height + 1.5;
-                        position:relative;
+                        position:absolute;
                         left:200px;
+                        top:0px;
                     }
 
-                    a {
-                        width:100%;
-                    }
                 }
             }
         }
@@ -258,7 +253,8 @@ $nav_height: 32px;
         float: left;
         margin: 0;
         padding: 0;
-        min-height:$nav_height;
+        padding-top: 3px;
+        min-height:$nav_height - 3px;
 
         &:hover, .active {
             color: #fff;
@@ -267,10 +263,8 @@ $nav_height: 32px;
 
         a {
             @extend .nav-link-font;
-            float: left;
             margin: 0;
             padding: 5px 12px;
-
         }
 
     }
