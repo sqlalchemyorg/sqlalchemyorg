@@ -1,0 +1,24 @@
+---
+date: 2014/03/28 15:41:00
+title: SQLAlchemy 0.9.4 Released
+author: Mike B
+---
+
+SQLAlchemy release 0.9.4 is now available.
+
+0.9.4 contains mostly bug fixes, split across regressions local to 0.9
+as well as more general issues.  There are also some new features, in particular
+a major change to the testing system to support py.test in addition to nose.
+
+Many bugfixes have also been backported to the 0.8 series which is being released
+simultaneously as 0.8.6, however others are being left only in 0.9 as they represent
+a slightly bigger change in behavior; the changelog will note which issues
+are backported and which are not.   Key fixes include an enhancement to
+the mechanics of connection pool recycling to be more efficient as well
+as tweaks to event mechanics.
+
+Users should carefully review the `Changelog </changelog/CHANGES_0_9_4>`_ to
+note which behaviors and issues are affected.   We'd like to thank
+the many contributors who helped with this release.
+
+SQLAlchemy 0.9.4 is available on the `Download Page </download.html>`_.

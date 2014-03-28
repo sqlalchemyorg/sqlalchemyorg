@@ -2,8 +2,8 @@
 <%!
     section = 'download'
 
-    rel_09 = "0.9.3"
-    rel_08 = "0.8.5"
+    rel_09 = "0.9.4"
+    rel_08 = "0.8.6"
 
 %>
 <%block name="head_title">
