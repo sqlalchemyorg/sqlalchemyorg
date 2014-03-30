@@ -37,7 +37,7 @@ function renderDocVersions() {
 }
 
 function renderLatestVersionButton() {
-  if (doc_version) {
+  if (typeof doc_version !== 'undefined') {
       if (_version_lookup[doc_version].latest_warning) {
           latest = _version_lookup['latest'];
           latest_url = document.URL.replace(doc_version, latest.slug);
