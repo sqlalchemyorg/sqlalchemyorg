@@ -35,6 +35,7 @@ available.
 	only introduced in more recent versions should always be noted.
 
     <ul class="version-listing">
+        <li><a href="http://docs.sqlalchemy.org">Reference Documentation</a></li>
     </ul>
 </p>
 

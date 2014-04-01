@@ -35,6 +35,7 @@
             <ul>
                 <li><a href="${site_base}/library.html#reference">Reference</a>
                     <ul class="version-listing">
+                        <li><a href="http://docs.sqlalchemy.org">Reference Documentation</a></li>
                     </ul>
                 </li>
                 <li><a href="${site_base}/library.html#architecture">Architecture</a></li>
