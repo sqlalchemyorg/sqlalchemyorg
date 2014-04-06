@@ -1,6 +1,7 @@
 <%inherit file="/base.mako"/>
 <%!
-    section = 'library'
+import re
+section = 'library'
 %>
 <%block name="head_title">
 Library - SQLAlchemy
@@ -54,9 +55,13 @@ behind both the Core and ORM components of SQLAlchemy:
 <a name="talks"></a>
 
 <%def name="talk(title, presented, author, links)">
+	<%
+		link = re.sub(r'\W', '', title.lower())
+	%>
 	<li>
 		<h3>
-			<em>${title}</em> - ${presented}
+			<a name="${link}"></a><em>${title}</em> - ${presented}
+			<a class="headerlink" href="#${link}">¶</a>
 		</h3>
 		<p>Author: ${author}</p>
 	    <p>${caller.body()}</p>
@@ -115,6 +120,24 @@ at many conferences worldwide.   Here's only a choice few of them:
 		Too often, programmers use ORMs to hide from their database and avoid learning how it works. Instead, I encourage programmers to learn a bit of SQL and become familiar with the problems that database queries are designed to solve well. In this talk, I outline the basics of using SQLAlchemy to craft efficient queries and avoid several common database query anti-patterns.
 	</%self:talk>
 
+	<%self:talk
+		title="SQLAlchemy - an Architectural Retrospective"
+		presented="presented at PyGotham 2011"
+		author="Mike Bayer"
+		links="${[
+				('Slides', 'http://techspot.zzzeek.org/files/2011/sqla_arch_retro.key.pdf'),
+				('Video', 'http://pyvideo.org/video/499/pygotham-2011--sqlalchemy--an-architectural-retro')
+		]}"
+	>
+
+	This talk walks through some highlights of SQLAlchemy internal
+	design  and methodology, based on the (now published) chapter for the
+	"Architecture of Open Source Applications" book. We'll have a
+	little bit of SQLAlchemy philosophy, an overview of the Core, and
+	then a 500-ft view of how the ORM goes about things, with plenty
+	of cool looking diagrams.
+
+	</%self:talk>
 </ul>
 </p>
 

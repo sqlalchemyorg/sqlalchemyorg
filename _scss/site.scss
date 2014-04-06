@@ -109,7 +109,22 @@ a {
         font-weight: normal;
         text-decoration: underline;
     }
+
 }
+
+a.headerlink {
+    visibility: hidden;
+}
+
+h1:hover > a.headerlink,
+h2:hover > a.headerlink,
+h3:hover > a.headerlink,
+h4:hover > a.headerlink,
+li:hover > a.headerlink
+{
+  visibility: visible;
+}
+
 
 
 /* page structure
