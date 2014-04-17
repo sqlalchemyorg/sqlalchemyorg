@@ -14,7 +14,7 @@ for SQLAlchemy in one place.
 Links to talks:
 
 * `Building the App </library.html#buildingtheapp>`_ - Mike Bayer
-* `Sane schema migrations with Alembic and SQLAlchemy </library.html#saneschemamigrationswithalembicandsqlalchemy>`_ - Selena Deckelmann
+* `Sane Schema Migrations with Alembic and SQLAlchemy </library.html#saneschemamigrationswithalembicandsqlalchemy>`_ - Selena Deckelmann
 * `Introduction to SQLAlchemy Core </library.html#introductiontosqlalchemycore>`_- Jason Meyers
 
 This year's tutorial was a replay of `Introduction to SQLAlchemy </library.html#introductiontosqlalchemy>`_, the

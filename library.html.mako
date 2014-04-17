@@ -118,7 +118,7 @@ at many conferences worldwide.   Here's only a choice few of them:
 
 
 	<%self:talk
-		title="Sane schema migrations with Alembic and SQLAlchemy"
+		title="Sane Schema Migrations with Alembic and SQLAlchemy"
 		presented="presented at Pycon North America, 2014"
 		author="Selena Deckelmann"
 		links="${[
