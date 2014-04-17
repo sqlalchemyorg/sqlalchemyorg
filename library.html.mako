@@ -2,6 +2,11 @@
 <%!
 import re
 section = 'library'
+
+videoheight=360
+videowidth=640
+videowidth43=480
+
 %>
 <%block name="head_title">
 Library - SQLAlchemy
@@ -54,7 +59,7 @@ behind both the Core and ORM components of SQLAlchemy:
 
 <a name="talks"></a>
 
-<%def name="talk(title, presented, author, links)">
+<%def name="talk(title, presented, author, links=[])">
 	<%
 		link = re.sub(r'\W', '', title.lower())
 	%>
@@ -64,12 +69,17 @@ behind both the Core and ORM components of SQLAlchemy:
 			<a class="headerlink" href="#${link}">¶</a>
 		</h3>
 		<p>Author: ${author}</p>
+	    % if hasattr(caller, 'embed'):
+	    	${caller.embed()}
+	    % endif
 	    <p>${caller.body()}</p>
+	    % if links:
 	    <ul>
 	    % for desc, url in links:
 	    	<li><a href="${url}">${desc}</a></li>
 	    % endfor
 	    </ul>
+	    % endif
     </li>
 </%def>
 
@@ -80,32 +90,44 @@ at many conferences worldwide.   Here's only a choice few of them:
 
 <ul>
 	<%self:talk
-			title="The SQLAlchemy Session - In Depth"
-			presented="presented at Pycon Canada, 2012"
+			title="Building the App"
+			presented="presented at Pycon North America, 2014"
 			author="Mike Bayer"
 			links="${[
-				('Slides', 'http://techspot.zzzeek.org/files/2012/session.key.pdf'),
-				('Video', 'http://pyvideo.org/video/1600/the-sqlalchemy-session-in-depth'),
-				('HTML Demo', 'http://techspot.zzzeek.org/files/2012/session.html.tar.gz')
-			]}"
-		>
-		This talk describes why SQLAlchemy has always been called a "toolkit", detailing the software construction mindset for which SQLAlchemy was designed to be used with.  The talk refers to this
-		as the "Hand Coded" approach, and has an emphasis on user-created patterns and conventions,
-		along with explicit exposure of relational structures.
+				('Slides', 'https://speakerdeck.com/zzzeek/building-the-app'),
+				('Sample Pyramid Application', 'https://bitbucket.org/zzzeek/pycon2014_atmcraft'),
+				('Java Client', 'https://bitbucket.org/zzzeek/pycon2014_atmcraft_java/')
+			]}">
+		<%def name="embed()">
+		<iframe width="${videowidth}" height="${videoheight}" src="//www.youtube.com/embed/5SSC6nU314c?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
+
+		</%def>
+		In this talk we'll illustrate a simple web application using SQLAlchemy, showing off the style of development that SQLAlchemy is most geared towards, the so-called "foundational" style which provides for development and maintainance of custom conventions which then service the needs of the model declarations and use case implementations.
 	</%self:talk>
 
 	<%self:talk
-			title="Hand Coded Applications with SQLAlchemy"
-			presented="presented at Pycon US, 2012"
-			author="Mike Bayer"
-			links="${[
-				('Slides', 'http://techspot.zzzeek.org/files/2012/hand_coded_with_sqla.key.pdf'),
-				('Video', 'http://www.youtube.com/watch?v=E09qigk_hnY'),
-			]}"
+			title="Introduction to SQLAlchemy Core"
+			presented="presented at Pycon North America, 2014"
+			author="Jason Meyers"
 		>
-		This talk describes why SQLAlchemy has always been called a "toolkit", detailing the software construction mindset for which SQLAlchemy was designed to be used with.  The talk refers to this
-		as the "Hand Coded" approach, and has an emphasis on user-created patterns and conventions,
-		along with explicit exposure of relational structures.
+		<%def name="embed()">
+		<iframe width="${videowidth}" height="${videoheight}" src="//www.youtube.com/embed/0PSdzUxRYpA?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
+		</%def>
+		This talk provides a broad-based introduction to SQLAlchemy Core library. It is focused on someone new to SQLAlchemy Core, who has experience with other database technologies such as Django or SQLAlchemy ORM. We'll cover the differences between the domain-centric models of those tools compared to the schema-centric model and how we can use that to deal with common and unusual data sources.
+	</%self:talk>
+
+
+	<%self:talk
+		title="Sane schema migrations with Alembic and SQLAlchemy"
+		presented="presented at Pycon North America, 2014"
+		author="Selena Deckelmann"
+		links="${[
+			('Slides', 'http://bit.ly/1iGL5lQ'),
+		]}">
+		<%def name="embed()">
+		<iframe width="${videowidth}" height="${videoheight}" src="//www.youtube.com/embed/_ZdqwCr4c7Q?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
+		</%def>
+	Working with developers on schema migrations is a perennial challenge for DBAs and developers. Devs tend to like a "set it and forget it" tool. This talk discusses the strategies used to move from a pure SQL and shell migration system to using SQLAlchemy and <a href="https://bitbucket.org/zzzeek/alembic">Alembic</a> for maximum DBA and developer happiness.
 	</%self:talk>
 
 	<%self:talk
@@ -117,7 +139,47 @@ at many conferences worldwide.   Here's only a choice few of them:
 				('Video', 'http://www.youtube.com/watch?v=399c-ycBvo4'),
 			]}"
 		>
+		<%def name="embed()">
+		<iframe width="${videowidth}" height="${videoheight}" src="//www.youtube.com/embed/399c-ycBvo4?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+		</%def>
+
 		Too often, programmers use ORMs to hide from their database and avoid learning how it works. Instead, I encourage programmers to learn a bit of SQL and become familiar with the problems that database queries are designed to solve well. In this talk, I outline the basics of using SQLAlchemy to craft efficient queries and avoid several common database query anti-patterns.
+	</%self:talk>
+
+	<%self:talk
+			title="The SQLAlchemy Session - In Depth"
+			presented="presented at Pycon Canada, 2012"
+			author="Mike Bayer"
+			links="${[
+				('Slides', 'https://speakerdeck.com/zzzeek/the-sqlalchemy-session-in-depth'),
+				('Video', 'http://pyvideo.org/video/1600/the-sqlalchemy-session-in-depth'),
+				('HTML Demo', 'http://techspot.zzzeek.org/files/2012/session.html.tar.gz')
+			]}"
+		>
+		<%def name="embed()">
+		<iframe width="${videowidth}" height="${videoheight}" src="//www.youtube.com/embed/PKAdehPHOMo?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
+
+		</%def>
+		This talk describes why SQLAlchemy has always been called a "toolkit", detailing the software construction mindset for which SQLAlchemy was designed to be used with.  The talk refers to this
+		as the "Hand Coded" approach, and has an emphasis on user-created patterns and conventions,
+		along with explicit exposure of relational structures.
+	</%self:talk>
+
+	<%self:talk
+			title="Hand Coded Applications with SQLAlchemy"
+			presented="presented at Pycon US, 2012"
+			author="Mike Bayer"
+			links="${[
+				('Slides', 'https://speakerdeck.com/zzzeek/hand-coded-applications-with-sqlalchemy'),
+				('Video', 'http://www.youtube.com/watch?v=E09qigk_hnY'),
+			]}"
+		>
+		<%def name="embed()">
+		<iframe width="${videowidth}" height="${videoheight}" src="//www.youtube.com/embed/E09qigk_hnY?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+		</%def>
+		This talk describes why SQLAlchemy has always been called a "toolkit", detailing the software construction mindset for which SQLAlchemy was designed to be used with.  The talk refers to this
+		as the "Hand Coded" approach, and has an emphasis on user-created patterns and conventions,
+		along with explicit exposure of relational structures.
 	</%self:talk>
 
 	<%self:talk
@@ -125,11 +187,19 @@ at many conferences worldwide.   Here's only a choice few of them:
 		presented="presented at PyGotham 2011"
 		author="Mike Bayer"
 		links="${[
-				('Slides', 'http://techspot.zzzeek.org/files/2011/sqla_arch_retro.key.pdf'),
+				('Slides', 'https://speakerdeck.com/zzzeek/sqlalchemy-an-architectural-retrospective'),
 				('Video', 'http://pyvideo.org/video/499/pygotham-2011--sqlalchemy--an-architectural-retro')
 		]}"
 	>
+	<%def name="embed()">
 
+
+<video preload="auto" controls="" style="width: ${videowidth43}px ! important; height: ${videoheight}px ! important;">
+<source src="http://05d2db1380b6504cc981-8cbed8cf7e3a131cd8f1c3e383d10041.r93.cf2.rackcdn.com/pygotham-2011/499_pygotham-2011-sqlalchemy-an-architectural-retrospective.ogv"></source>
+</video>
+
+
+	</%def>
 	This talk walks through some highlights of SQLAlchemy internal
 	design  and methodology, based on the (now published) chapter for the
 	"Architecture of Open Source Applications" book. We'll have a
@@ -160,6 +230,10 @@ resources available as well:
 				('Prerequisite Material', 'http://techspot.zzzeek.org/files/2013/pycon2013_student_package.tar.gz'),
 			]}"
 		>
+		<%def name="embed()">
+		<iframe width="${videowidth}" height="${videoheight}" src="//www.youtube.com/embed/woKYyhLCcnU?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+
+		</%def>
 		This is Mike Bayer's own "getting started" tutorial that presents a fast paced
 		but beginner-focused tutorial on what SQLAlchemy is all about.   While the
 		tutorial has evolved over the years and at this point is fairly fixed.
