@@ -1,0 +1,21 @@
+---
+date: 2014/04/17 15:41:00
+title: SQLAlchemy at Pycon 2014
+author: Mike B
+---
+
+SQLAlchemy had a big year at this year's `Pycon North America <https://us.pycon.org/2014/>`_
+presented in Montréal, Canada.   Conference presentations were given by three separate
+speakers, and a three hour tutorial session was given as well.   Videos and supporting documents
+are now available in the new `SQLAlchemy Library </library.html>`_, a new
+site section where we're gathering every kind of learning resource we can
+for SQLAlchemy in one place.
+
+Links to talks:
+
+* `Building the App </library.html#buildingtheapp>`_ - Mike Bayer
+* `Sane schema migrations with Alembic and SQLAlchemy </library.html#saneschemamigrationswithalembicandsqlalchemy>`_ - Selena Deckelmann
+* `Introduction to SQLAlchemy Core </library.html#introductiontosqlalchemycore>`_- Jason Meyers
+
+This year's tutorial was a replay of `Introduction to SQLAlchemy </library.html#introductiontosqlalchemy>`_, the
+intro tutorial that's been presented at many conferences.
