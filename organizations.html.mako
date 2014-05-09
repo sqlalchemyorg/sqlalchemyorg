@@ -28,17 +28,6 @@ Organizations - SQLAlchemy
 
 
 <%self:user
-        name="Yelp",
-        logo="yelp.png"
-        url="http://www.yelp.com/"
-        anchor="yelp">
-        <a href="http://www.yelp.com/">Yelp</a>
-        is the fun and easy way to find and talk about great (and not so great) local businesses.
-        An early adopter of SQLAlchemy, Yelp started out with a core-only approach as early as version
-        0.4, later migrating to an ORM approach on version 0.7 and forward.
-</%self:user>
-
-<%self:user
         name="OpenStack",
         logo="openstack.png"
         url="http://www.openstack.com"
@@ -90,6 +79,28 @@ Organizations - SQLAlchemy
 </%self:user>
 
 <%self:user
+        name="Yelp",
+        logo="yelp.png"
+        url="http://www.yelp.com/"
+        anchor="yelp">
+        <a href="http://www.yelp.com/">Yelp</a>
+        is the fun and easy way to find and talk about great (and not so great) local businesses.
+        An early adopter of SQLAlchemy, Yelp started out with a core-only approach as early as version
+        0.4, later migrating to an ORM approach on version 0.7 and forward.
+</%self:user>
+
+<%self:user
+        name="SurveyMonkey",
+        logo="surveymonkey.png"
+        url="http://www.surveymonkey.com/"
+        anchor="surveymonkey">
+        <a href="http://www.surveymonkey.com/">SurveyMonkey</a>,
+        the leader in online surveys, is building its entire stack in Python.
+        SurveyMonkey is being built using Pylons/Pyramid, Jinja2 templating and
+        a backend data tier built entirely upon SQLAlchemy.
+</%self:user>
+
+<%self:user
         name="PayLogic"
         logo="paylogic.png"
         url="http://paylogic.eu/"
@@ -97,16 +108,15 @@ Organizations - SQLAlchemy
         <a href="http://paylogic.eu/">Paylogic</a> is the fastest growing European online ticketing company. It's powered by SQLAlchemy, Django, Tornado, Flask and Backbone.
 </%self:user>
 
-
 <%self:user
-        name="Tropofy"
-        logo="tropofy.png"
-        url="http://www.tropofy.com"
-        anchor="tropofy">
-    <a href="http://www.tropofy.com">Tropofy</a> is an innovative web deployment platform for problem solvers, allowing
-    the deployment of apps to the cloud without the need for a web development background. Tropofy is powered by Pyramid, SQLAlchemy and Knockoutjs.
+        name="Fedora Project",
+        logo="fedora-logo.png"
+        url="http://fedoraproject.org"
+        anchor="fedoraproject">
+        <a href="http://fedoraproject.org">Fedora</a> is one of the most widely used Linux distributions.
+        According to their developers:
+        "SQLAlchemy powers much of Fedora's Infrastructure. We pretty much worship it :)"
 </%self:user>
-
 
 <%self:user
         name="Firefox Sync"
@@ -115,6 +125,50 @@ Organizations - SQLAlchemy
         anchor="firefox">
         <a href="http://www.firefox.com/sync">Firefox Sync</a> is Firefox's built in bookmark synchronization service.
         Core server elements of Firefox Sync are written in Python using SQLAlchemy for backend storage.
+</%self:user>
+
+<%self:user
+        name="CleverTim"
+        logo="clevertim.png"
+        url="http://clevertim.com/"
+        anchor="clevertim">
+        <a href="http://clevertim.com/">CleverTim</a> provides a simple CRM solution
+        with a variety of features for small business use.  SQLAlchemy is used heavily
+        at the core of their platform.
+</%self:user>
+
+<%self:user
+    name="Urban Airship"
+    logo="urban_airship.jpg"
+    url="http://www.urbanairship.com"
+    anchor="urbanairship"
+>
+    <a href="http://www.urbanairship.com">Urban Airship</a>
+    is the engine behind thousands of the world’s most successful mobile apps,
+    providing a full suite of messaging and content delivery tools, including
+    Push Notifications, Rich Media Messaging, In-App Purchase and
+    Subscriptions.
+
+    SQLAlchemy ORM is at the core of their data access strategy which is currently
+    based on a sharded Postgresql system.
+</%self:user>
+
+<%self:user
+    name="Six Feet Up",
+    logo="sixfeetup.png",
+    url="http://www.sixfeetup.com",
+    anchor="sixfeetup">
+    Founded in 1999, <a
+    href="http://www.sixfeetup.com">Six Feet Up</a> is a
+    privately-held woman-owned company that develops and
+    hosts sophisticated web publishing and collaboration
+    projects. We specialize in Python solutions and are a
+    leading provider of Plone services. We leverage
+    SQLAlchemy to power web activity reports and access
+    object oriented data in an effortless fashion. Our
+    clients include top universities, growing and
+    distributed organizations, as well as Fortune 500
+    companies.
 </%self:user>
 
 
@@ -129,14 +183,15 @@ Organizations - SQLAlchemy
 </%self:user>
 
 <%self:user
-        name="Fedora Project",
-        logo="fedora-logo.png"
-        url="http://fedoraproject.org"
-        anchor="fedoraproject">
-        <a href="http://fedoraproject.org">Fedora</a> is one of the most widely used Linux distributions.
-        According to their developers:
-        "SQLAlchemy powers much of Fedora's Infrastructure. We pretty much worship it :)"
+        name="Tropofy"
+        logo="tropofy.png"
+        url="http://www.tropofy.com"
+        anchor="tropofy">
+    <a href="http://www.tropofy.com">Tropofy</a> is an innovative web deployment platform for problem solvers, allowing
+    the deployment of apps to the cloud without the need for a web development background. Tropofy is powered by Pyramid, SQLAlchemy and Knockoutjs.
 </%self:user>
+
+
 
 
 <%self:user
@@ -147,17 +202,6 @@ Organizations - SQLAlchemy
         <a href="http://www.fastmonkeys.com/">Fast Monkeys</a> is a product development house based in Finland. We develop new web ventures using Python, Flask and SQLAlchemy.
 </%self:user>
 
-
-<%self:user
-        name="SurveyMonkey",
-        logo="surveymonkey.png"
-        url="http://www.surveymonkey.com/"
-        anchor="surveymonkey">
-        <a href="http://www.surveymonkey.com/">SurveyMonkey</a>,
-        the leader in online surveys, is building its entire stack in Python.
-        SurveyMonkey is being built using Pylons/Pyramid, Jinja2 templating and
-        a backend data tier built entirely upon SQLAlchemy.
-</%self:user>
 
 <%self:user
     name="MixRank"
@@ -189,22 +233,6 @@ also makes use of Flask, MySQL, and Redis.
 <a href="http://www.coingig.com">Coingig.com</a> is a marketplace platform for buyers and sellers to exchange products for Bitcoin. Coingig is built with Python and has recently implemented SQLAlchemy as our backbone database framework.
 </%self:user>
 
-
-<%self:user
-    name="Urban Airship"
-    logo="urban_airship.jpg"
-    url="http://www.urbanairship.com"
-    anchor="urbanairship"
->
-    <a href="http://www.urbanairship.com">Urban Airship</a>
-    is the engine behind thousands of the world’s most successful mobile apps,
-    providing a full suite of messaging and content delivery tools, including
-    Push Notifications, Rich Media Messaging, In-App Purchase and
-    Subscriptions.
-
-    SQLAlchemy ORM is at the core of their data access strategy which is currently
-    based on a sharded Postgresql system.
-</%self:user>
 
 <%self:user
         name="LolApps"
@@ -280,16 +308,6 @@ Amazon Web Services stack. Beauty is serious business ;)
 </%self:user>
 
 <%self:user
-        name="SourceForge",
-        logo="sourceforge.png"
-        url="http://sourceforge.net"
-        anchor="sourceforge">
-        <a href="http://sourceforge.net">SourceForge's</a>
-        all new infrastructure uses SQLAlchemy where relational databases
-        are used.
-</%self:user>
-
-<%self:user
         name="Seagate",
         logo="seagate.png",
         url="http://seagate.com",
@@ -299,24 +317,6 @@ Amazon Web Services stack. Beauty is serious business ;)
     internal applications.
 </%self:user>
 
-
-<%self:user
-    name="Six Feet Up",
-    logo="sixfeetup.png",
-    url="http://www.sixfeetup.com",
-    anchor="sixfeetup">
-    Founded in 1999, <a
-    href="http://www.sixfeetup.com">Six Feet Up</a> is a
-    privately-held woman-owned company that develops and
-    hosts sophisticated web publishing and collaboration
-    projects. We specialize in Python solutions and are a
-    leading provider of Plone services. We leverage
-    SQLAlchemy to power web activity reports and access
-    object oriented data in an effortless fashion. Our
-    clients include top universities, growing and
-    distributed organizations, as well as Fortune 500
-    companies.
-</%self:user>
 
 
 <%self:user
