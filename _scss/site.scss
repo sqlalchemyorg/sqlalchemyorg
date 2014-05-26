@@ -172,6 +172,8 @@ li:hover > a.headerlink
     padding: 2em 1em;
     background: #fff url(../img/nav-shadow2.gif) top left repeat-x;
     color: #777;
+    position: relative;
+    z-index: 100;
 
     p {
         margin: 0;
