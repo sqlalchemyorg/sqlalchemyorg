@@ -33,11 +33,11 @@ Organizations - SQLAlchemy
         url="http://www.openstack.org"
         anchor="openstack">
         <a href="http://www.openstack.org">OpenStack</a> is a widely used
-        open source cloud computing platform; with OpenStack, anyone can run
+        open source cloud computing platform.  With OpenStack, anyone can run
         a private or public cloud on the hardware of their choosing.  OpenStack
         was first founded by NASA and Rackspace, and today is supported by an
         enormous community of contributors and users, shepherded
-        by a consortium of sponsors including Red Hat, Rackspace, Hewlett Packward,
+        by a consortium of sponsors including Red Hat, Rackspace, Hewlett Packard,
         Mirantis, IBM, and dozens more.   The majority of OpenStack's
         components are written in Python and interact heavily with relational
         database storage, where the SQLAlchemy ORM is used for all database
