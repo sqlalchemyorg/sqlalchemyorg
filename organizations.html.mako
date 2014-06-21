@@ -30,14 +30,18 @@ Organizations - SQLAlchemy
 <%self:user
         name="OpenStack",
         logo="openstack.png"
-        url="http://www.openstack.com"
+        url="http://www.openstack.org"
         anchor="openstack">
-        <a href="http://www.openstack.com">OpenStack</a> is an IaaS cloud
-        computing project by Rackspace Cloud and NASA joined by several
-        companies such as Cloud.com, Citrix Systems, Dell, enStratus, NTT
-        Data, PEER 1, RightScale, Cloudkick, Zenoss, Limelight, Scalr, AMD,
-        Intel, and Spiceworks. OpenStack makes wide use of SQLAlchemy Core
-        and ORM for integration with database storage.
+        <a href="http://www.openstack.org">OpenStack</a> is a widely used
+        open source cloud computing platform; with OpenStack, anyone can run
+        a private or public cloud on the hardware of their choosing.  OpenStack
+        was first founded by NASA and Rackspace, and today is supported by an
+        enormous community of contributors and users, shepherded
+        by a consortium of sponsors including Red Hat, Rackspace, Hewlett Packward,
+        Mirantis, IBM, and dozens more.   The majority of OpenStack's
+        components are written in Python and interact heavily with relational
+        database storage, where the SQLAlchemy ORM is used for all database
+        interaction.
 </%self:user>
 
 <%self:user
