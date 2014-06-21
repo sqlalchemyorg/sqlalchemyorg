@@ -22,6 +22,7 @@ available.
 <ul>
     <li><a href="#reference">Reference Documentation</a></li>
     <li><a href="#architecture">Architecture</a></li>
+    <li><a href="#blog">Blog Posts</a></li>
     <li><a href="#talks">Talks</a></li>
     <li><a href="#tutorials">Tutorials</a></li>
     <li><a href="#recipes">Recipes</a></li>
@@ -55,6 +56,20 @@ behind both the Core and ORM components of SQLAlchemy:
 <li><a href="http://aosabook.org/en/sqlalchemy.html">SQLAlchemy at Architecture of Open Source Applications</a></li>
 </ul>
 </p>
+
+<a name="blog"></a>
+<h2>Blog Posts</h2>
+<p>A series of blog posts by Mike Bayer.</p>
+
+<ul>
+	<li><a href="http://techspot.zzzeek.org/category/sqlalchemy/">All SQLAlchemy posts on techspot</a></li>
+	<li><a href="http://techspot.zzzeek.org/2012/02/07/patterns-implemented-by-sqlalchemy/">Patterns Implemented by SQLAlchemy</a> - more architectural insights discussing the influence of Martin Fowler's work on SQLAlchemy's development.</li>
+	<li><a href="http://techspot.zzzeek.org/2012/01/11/django-style-database-routers-in-sqlalchemy/">Django-style Database Routers in SQLAlchemy</a> - background on how to build an ORM Session that refers to different databases using a custom
+	routing scheme.</li>
+	<li><a href="http://techspot.zzzeek.org/2011/10/21/hybrids-and-value-agnostic-types/">Hybrids and Value Agnostic Types</a> - background and advanced use cases on so-called "hybrid" datatypes</li>
+	<li><a href="http://techspot.zzzeek.org/2011/01/14/the-enum-recipe/">The Enum Recipe</a> - when and how to use enumerated types with SQLAlchemy.</li>
+
+</ul>
 
 
 <a name="talks"></a>
