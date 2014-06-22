@@ -14,13 +14,6 @@
 
 <div id="nav">
 
-    <div id="gittip_nav">
-
-        <script data-gittip-username="zzzeek"
-        data-gittip-widget="button"
-        src="//gttp.co/v1.js"></script>
-
-    </div>
     <ul>
         <li${active('home')}><a href="${site_base}/">home</a></li>
         <li${active('features')}><a href="${site_base}/features.html">features</a>
