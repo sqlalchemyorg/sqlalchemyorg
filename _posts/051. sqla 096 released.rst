@@ -1,12 +1,13 @@
 ---
-date: 2014/06/23 15:41:00
+date: 2014/06/23 15:41:01
 title: SQLAlchemy 0.9.6 Released
 author: Mike B
 ---
 
 SQLAlchemy release 0.9.6 is now available.
 
-This is an emergency release to fix a regression caused by the 0.9.5
+This is an emergency release to fix a regression caused by the
+`0.9.5 </blog/2014/06/23/sqlalchemy-0.9.5-released/>`_
 release, earlier today.  Please see
 `Changelog </changelog/CHANGES_0_9_6>`_.
 
