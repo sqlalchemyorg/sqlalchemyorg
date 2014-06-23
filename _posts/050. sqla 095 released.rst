@@ -1,0 +1,20 @@
+---
+date: 2014/06/23 15:41:00
+title: SQLAlchemy 0.9.5 Released
+author: Mike B
+---
+
+SQLAlchemy release 0.9.5 is now available.
+
+0.9.5 contains mostly bug fixes as well as some smaller enhancements,
+and the first to be alongside new features
+and refactorings going into the 1.0 release branch.    While the issue
+queue still has a handful of critical fixes to go, it's been several months
+since a release so the current crop of fixes and small enhancements within
+0.9.5 is due to go out.   0.9.6 should be following within the coming weeks.
+
+Users should carefully review the `Changelog </changelog/CHANGES_0_9_5>`_ to
+note which behaviors and issues are affected.   We'd like to thank
+the many contributors who helped with this release.
+
+SQLAlchemy 0.9.5 is available on the `Download Page </download.html>`_.
