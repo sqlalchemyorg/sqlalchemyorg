@@ -142,6 +142,22 @@ Organizations - SQLAlchemy
 </%self:user>
 
 <%self:user
+    name="privacyIDEA",
+    logo="privacyidea.png",
+    url="http://privacyidea.org/",
+    anchor="privacyidea"
+    >
+    <a href="http://privacyidea.org/">privacyIDEA</a>
+    is a modular solution for two factor authentication,
+    especially with OTP tokens.  Adding token types is as easy
+    as writing a short Python module, leveraging its ability to
+    consume existing LDAP, Active Directory, SQL, SCIM or flat file services.
+    privacyIDEA uses the flexibility of SQLAlchemy to access the token store
+    across a wide variety of SQL databases.
+
+</%self:user>
+
+<%self:user
     name="Urban Airship"
     logo="urban_airship.jpg"
     url="http://www.urbanairship.com"
@@ -247,6 +263,8 @@ also makes use of Flask, MySQL, and Redis.
         As presented in the Pycon 2010 talk <a href="http://us.pycon.org/2010/conference/schedule/event/135/">Scaling Python webapps from zero to 50 million users</a>,
         the SQLAlchemy ORM is at the core of their data access strategy.
 </%self:user>
+
+
 
 <%self:user
     name="LinOTP",
