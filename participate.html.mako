@@ -50,7 +50,7 @@ Participate - SQLAlchemy
 <a name="bugs"></a>
 <h2>Reporting Bugs</h2>
 
-<p>Bugs are reported using Bitbucket using the <a href="${self.attr.bb_base}/issues/new">create issue</a> function
+<p>Bugs are reported using Bitbucket using the <a href="${self.attr.bb_base}/issues">Issues</a> tracking system
 (note you have to be logged in to use it).</p>
 
 <p>Bugs are generally reported only against the two most recent release branches, which comprise
@@ -65,8 +65,8 @@ Participate - SQLAlchemy
             the default branch or the maintance branch, and preferably
             against the latest development tip of the series in use.   SQLAlchemy provides easy download links of the
             most recent development versions on the <a href="/download.html">download page.</a></li>
-        <li>Check that the issue doesn't already exist on the issue tracker.  This can be a little tricky as Bitbucket's search interface is fairly rudimental, but we ask that you give it a try.</li>
-        <li>Only report issues that you're pretty sure is a bug.   It is perfectly OK to report a usage issue on the
+        <li>Check that the issue doesn't already exist on the issue tracker.  This can be a little tricky as Bitbucket's search interface is fairly rudimental, but we ask that you give it a try. <a href="${self.attr.bb_base}/issues/query">Click here to Search BitBucket</a></li>
+        <li>Only report issues that you're pretty sure are a bug.   It is perfectly OK to report a usage issue on the
             mailing list that may or may not be a bug - we'll escalate bugs to the bug tracker if it really
             is a bug.</li>
         <li><strong>Create a succinct test case which reproduces the issue.</strong>   This needs to be a script that
@@ -87,7 +87,12 @@ Participate - SQLAlchemy
             have patches for you to try in case the issue is hard to reproduce.   Please keep the conversation going
             until we can get the bug fixed !</li>
     </ul>
-<p>Ready?  Let's <a href="${self.attr.bb_base}/issues/new">report a bug!</a></p>
+<p>Ready?  Great!</p>
+    <ul>
+        <li><a href="${self.attr.bb_base}/issues">View Existing Bugs</a></li>
+        <li><a href="${self.attr.bb_base}/issues/query">Advanced Bug Search</a></li>
+        <li>Links to create a new bug are featured on the BitBucket Issue Tracking System</li>
+    </ul>
 
 <a name="assistance"></a>
 <h2>User Assistance</h2>
