@@ -84,22 +84,19 @@ git clone https://github.com/zzzeek/sqlalchemy.git
 </li>
 </ul>
 
-<p>Changes can be shared with core developers using pull
-    requests to either of these services.  Patch files can also be submitted as
-    attachments to <a href="/participate.html#bitbucket">Bitbucket issues</a>.</p>
+<p>To propose a code change, please submit a
+<a href="https://github.com/zzzeek/sqlalchemy/pulls">pull request</a> to
+<strong>Github</strong>.</p>
 
-<p>Major release branches are maintained using branches.  For example, to get at the 0.8 branch, the tag
-is called <code>rel_0_8</code>:</p>
+<p>Major release branches are maintained using branches.  For example, to get at the 0.9 branch, the tag
+is called <code>rel_0_9</code>:</p>
 
 <p>
   <code>
-  git clone -b rel_0_8 https://bitbucket.org/zzzeek/sqlalchemy.git sa08<br/>
+  git clone -b rel_0_9 https://github.com/zzzeek/sqlalchemy.git sa08<br/>
   </code>
 </p>
 
-<p>
-Downloadable snapshots of the current default and maintenance branches are available on the <a href="/download.html">download</a> page.
-</p>
 
 
 <a name="testing"></a>
