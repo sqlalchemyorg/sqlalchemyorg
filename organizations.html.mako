@@ -132,32 +132,6 @@ Organizations - SQLAlchemy
 </%self:user>
 
 <%self:user
-        name="CleverTim"
-        logo="clevertim.png"
-        url="http://clevertim.com/"
-        anchor="clevertim">
-        <a href="http://clevertim.com/">CleverTim</a> provides a simple CRM solution
-        with a variety of features for small business use.  SQLAlchemy is used heavily
-        at the core of their platform.
-</%self:user>
-
-<%self:user
-    name="privacyIDEA",
-    logo="privacyidea.png",
-    url="http://privacyidea.org/",
-    anchor="privacyidea"
-    >
-    <a href="http://privacyidea.org/">privacyIDEA</a>
-    is a modular solution for two factor authentication,
-    especially with OTP tokens.  Adding token types is as easy
-    as writing a short Python module, leveraging its ability to
-    consume existing LDAP, Active Directory, SQL, SCIM or flat file services.
-    privacyIDEA uses the flexibility of SQLAlchemy to access the token store
-    across a wide variety of SQL databases.
-
-</%self:user>
-
-<%self:user
     name="Urban Airship"
     logo="urban_airship.jpg"
     url="http://www.urbanairship.com"
@@ -212,7 +186,13 @@ Organizations - SQLAlchemy
 </%self:user>
 
 
-
+<%self:user
+        name="Galaxy Project"
+        logo="galaxyproject.png"
+        url="http://galaxyproject.org/"
+        anchor="galaxyproject">
+        <a href="http://galaxyproject.org/">Galaxy Project</a> is an open source, web-based platform for data intensive biomedical research. Mostly written in Python and using SQLAlchemy on PostgreSQL/SQLite.
+</%self:user>
 
 <%self:user
         name="FastMonkeys"
@@ -391,6 +371,33 @@ high-performing alternatives to petroleum-sourced fuels and chemicals:
         director of engineering, "Needless to say we can deploy updates and improvements to our internal tools much
         faster because SQLAlchemy saves us so much time!"
 </%self:user>
+
+<%self:user
+        name="CleverTim"
+        logo="clevertim.png"
+        url="http://clevertim.com/"
+        anchor="clevertim">
+        <a href="http://clevertim.com/">CleverTim</a> provides a simple CRM solution
+        with a variety of features for small business use.  SQLAlchemy is used heavily
+        at the core of their platform.
+</%self:user>
+
+<%self:user
+    name="privacyIDEA",
+    logo="privacyidea.png",
+    url="http://privacyidea.org/",
+    anchor="privacyidea"
+    >
+    <a href="http://privacyidea.org/">privacyIDEA</a>
+    is a modular solution for two factor authentication,
+    especially with OTP tokens.  Adding token types is as easy
+    as writing a short Python module, leveraging its ability to
+    consume existing LDAP, Active Directory, SQL, SCIM or flat file services.
+    privacyIDEA uses the flexibility of SQLAlchemy to access the token store
+    across a wide variety of SQL databases.
+
+</%self:user>
+
 
 <%self:user
         name="Naumen"
