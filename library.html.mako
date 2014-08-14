@@ -230,7 +230,7 @@ at many conferences worldwide.   Here's only a choice few of them:
 <a name="tutorials"></a>
 <h2>Tutorials</h2>
 <p>The most up-to-date and complete tutorials available for getting started with SQLAlchemy
-are the <a href="${self.attr.docs_base}/core/tutorial.html">Core</a> and <a href="${self.attr.docs_base}/orm/tutorial.html">ORM</a> tutorials included with SQLAlchemy's own documentation.   There's a few other good
+are the <a href="/docs/core/tutorial.html">Core</a> and <a href="/docs/orm/tutorial.html">ORM</a> tutorials included with SQLAlchemy's own documentation.   There's a few other good
 resources available as well:
 
 <ul>
@@ -312,7 +312,7 @@ there's a huge number of "recipes", code examples geared towards specific use ca
 These are currently split out among the SQLAlchemy reference documentation and the wiki:
 
 <ul>
-	<li><a href="${self.attr.docs_base}/en/rel_0_9/orm/examples.html">SQLAlchemy ORM Examples</a> - in the SQLAlchemy documentation</li>
+	<li><a href="/docs/orm/examples.html">SQLAlchemy ORM Examples</a> - in the SQLAlchemy documentation</li>
 	<li><a href="${self.attr.bb_base}/wiki/UsageRecipes">Theatrum Chemicum</a> - large list of recipes old and new on the wiki</li>
 </ul>
 </p>
