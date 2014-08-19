@@ -132,22 +132,6 @@ Organizations - SQLAlchemy
 </%self:user>
 
 <%self:user
-    name="Urban Airship"
-    logo="urban_airship.jpg"
-    url="http://www.urbanairship.com"
-    anchor="urbanairship"
->
-    <a href="http://www.urbanairship.com">Urban Airship</a>
-    is the engine behind thousands of the world’s most successful mobile apps,
-    providing a full suite of messaging and content delivery tools, including
-    Push Notifications, Rich Media Messaging, In-App Purchase and
-    Subscriptions.
-
-    SQLAlchemy ORM is at the core of their data access strategy which is currently
-    based on a sharded Postgresql system.
-</%self:user>
-
-<%self:user
     name="Six Feet Up",
     logo="sixfeetup.png",
     url="http://www.sixfeetup.com",
