@@ -1,0 +1,22 @@
+---
+date: 2014/10/13 15:41:02
+title: SQLAlchemy 0.9.8 Released
+author: Mike B
+---
+
+SQLAlchemy release 0.9.8 is now available.
+
+As the 1.0 series is `well underway </docs/latest/changelog/migration_10.html>`_,
+0.9.8 continues to close out bugs that can still be applied without
+significant risk of destabilization.  In contrast to 0.9.7 where we
+were still hitting upon regressions, 0.9.8 fixes a set of garden variety bugs,
+many of which are related to changes in DBAPIs (new SQL Server version strings,
+new Psycopg2 error conditions, changes in MySQL-connector-python and pg8000).
+That being said, 0.9.8 has a relatively large amount of fixes overall.
+
+Users should carefully review the `Changelog </changelog/CHANGES_0_9_8>`_ to
+note which behaviors and issues are affected.   We'd like to thank
+the many contributors who helped with this release.
+
+SQLAlchemy 0.9.8 is available on the `Download Page </download.html>`_.
+
