@@ -114,7 +114,7 @@ at many conferences worldwide.   Here's only a choice few of them:
 				('Java Client', 'https://bitbucket.org/zzzeek/pycon2014_atmcraft_java/')
 			]}">
 		<%def name="embed()">
-		<iframe width="${videowidth}" height="${videoheight}" src="//www.youtube.com/embed/5SSC6nU314c?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
+		<iframe width="${videowidth}" height="${videoheight}" src="//www.youtube.com/embed/5SSC6nU314c" frameborder="0" allowfullscreen></iframe>
 
 		</%def>
 		In this talk we'll illustrate a simple web application using SQLAlchemy, showing off the style of development that SQLAlchemy is most geared towards, the so-called "foundational" style which provides for development and maintainance of custom conventions which then service the needs of the model declarations and use case implementations.
@@ -126,7 +126,7 @@ at many conferences worldwide.   Here's only a choice few of them:
 			author="Jason Meyers"
 		>
 		<%def name="embed()">
-		<iframe width="${videowidth}" height="${videoheight}" src="//www.youtube.com/embed/0PSdzUxRYpA?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
+		<iframe width="${videowidth}" height="${videoheight}" src="//www.youtube.com/embed/0PSdzUxRYpA" frameborder="0" allowfullscreen></iframe>
 		</%def>
 		This talk provides a broad-based introduction to SQLAlchemy Core library. It is focused on someone new to SQLAlchemy Core, who has experience with other database technologies such as Django or SQLAlchemy ORM. We'll cover the differences between the domain-centric models of those tools compared to the schema-centric model and how we can use that to deal with common and unusual data sources.
 	</%self:talk>
@@ -140,7 +140,7 @@ at many conferences worldwide.   Here's only a choice few of them:
 			('Slides', 'http://bit.ly/1iGL5lQ'),
 		]}">
 		<%def name="embed()">
-		<iframe width="${videowidth}" height="${videoheight}" src="//www.youtube.com/embed/_ZdqwCr4c7Q?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
+		<iframe width="${videowidth}" height="${videoheight}" src="//www.youtube.com/embed/_ZdqwCr4c7Q" frameborder="0" allowfullscreen></iframe>
 		</%def>
 	Working with developers on schema migrations is a perennial challenge for DBAs and developers. Devs tend to like a "set it and forget it" tool. This talk discusses the strategies used to move from a pure SQL and shell migration system to using SQLAlchemy and <a href="https://bitbucket.org/zzzeek/alembic">Alembic</a> for maximum DBA and developer happiness.
 	</%self:talk>
@@ -155,7 +155,7 @@ at many conferences worldwide.   Here's only a choice few of them:
 			]}"
 		>
 		<%def name="embed()">
-		<iframe width="${videowidth}" height="${videoheight}" src="//www.youtube.com/embed/399c-ycBvo4?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+		<iframe width="${videowidth}" height="${videoheight}" src="//www.youtube.com/embed/399c-ycBvo4" frameborder="0" allowfullscreen></iframe>
 		</%def>
 
 		Too often, programmers use ORMs to hide from their database and avoid learning how it works. Instead, I encourage programmers to learn a bit of SQL and become familiar with the problems that database queries are designed to solve well. In this talk, I outline the basics of using SQLAlchemy to craft efficient queries and avoid several common database query anti-patterns.
@@ -172,7 +172,7 @@ at many conferences worldwide.   Here's only a choice few of them:
 			]}"
 		>
 		<%def name="embed()">
-		<iframe width="${videowidth}" height="${videoheight}" src="//www.youtube.com/embed/PKAdehPHOMo?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
+		<iframe width="${videowidth}" height="${videoheight}" src="//www.youtube.com/embed/PKAdehPHOMo" frameborder="0" allowfullscreen></iframe>
 
 		</%def>
 		This talk describes why SQLAlchemy has always been called a "toolkit", detailing the software construction mindset for which SQLAlchemy was designed to be used with.  The talk refers to this
@@ -190,7 +190,7 @@ at many conferences worldwide.   Here's only a choice few of them:
 			]}"
 		>
 		<%def name="embed()">
-		<iframe width="${videowidth}" height="${videoheight}" src="//www.youtube.com/embed/E09qigk_hnY?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+		<iframe width="${videowidth}" height="${videoheight}" src="//www.youtube.com/embed/E09qigk_hnY" frameborder="0" allowfullscreen></iframe>
 		</%def>
 		This talk describes why SQLAlchemy has always been called a "toolkit", detailing the software construction mindset for which SQLAlchemy was designed to be used with.  The talk refers to this
 		as the "Hand Coded" approach, and has an emphasis on user-created patterns and conventions,
@@ -241,12 +241,13 @@ resources available as well:
 			author="Mike Bayer"
 			links="${[
 				('Slides', 'https://speakerdeck.com/zzzeek/introduction-to-sqlalchemy-pycon-2013'),
-				('Video', 'http://www.youtube.com/watch?feature=player_embedded&v=woKYyhLCcnU'),
+				('Video at PyCon 2013', 'http://www.youtube.com/watch?v=woKYyhLCcnU'),
+				('Video at PyGotham 2014', 'https://www.youtube.com/watch?v=vunIDi9Z-_8'),
 				('Prerequisite Material', 'http://techspot.zzzeek.org/files/2013/pycon2013_student_package.tar.gz'),
 			]}"
 		>
 		<%def name="embed()">
-		<iframe width="${videowidth}" height="${videoheight}" src="//www.youtube.com/embed/woKYyhLCcnU?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+		<iframe width="${videowidth}" height="${videoheight}" src="//www.youtube.com/embed/woKYyhLCcnU" frameborder="0" allowfullscreen></iframe>
 
 		</%def>
 		This is Mike Bayer's own "getting started" tutorial that presents a fast paced
