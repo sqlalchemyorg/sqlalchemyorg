@@ -45,13 +45,6 @@ Organizations - SQLAlchemy
 </%self:user>
 
 <%self:user
-        name="Uber"
-        logo="uber.png"
-        url="http://www.uber.com"
-        anchor="uber">
-        The <a href="http://www.uber.com">Uber</a> engineering team is the creator, operator, and guardian of a global platform for finding on-demand transportation that operates 24x7. We use SQLAlchemy in every service we develop. We even migrated our entire database to PostgreSQL from MySQL - and it was thanks to SQLAlchemy and Alembic that made that process possible.
-</%self:user>
-<%self:user
         name="Reddit",
         logo="reddit.png"
         url="http://reddit.com",
@@ -161,6 +154,15 @@ Organizations - SQLAlchemy
 </%self:user>
 
 <%self:user
+        name="Uber"
+        logo="uber.png"
+        url="http://www.uber.com"
+        anchor="uber">
+        The <a href="http://www.uber.com">Uber</a> engineering team is the creator, operator, and guardian of a global platform for finding on-demand transportation that operates 24x7. We use SQLAlchemy in every service we develop. We even migrated our entire database to PostgreSQL from MySQL - and it was thanks to SQLAlchemy and Alembic that made that process possible.
+</%self:user>
+
+
+<%self:user
         name="Tropofy"
         logo="tropofy.png"
         url="http://www.tropofy.com"
@@ -177,6 +179,7 @@ Organizations - SQLAlchemy
         anchor="galaxyproject">
         <a href="http://galaxyproject.org/">Galaxy Project</a> is an open source, web-based platform for data intensive biomedical research. Mostly written in Python and using SQLAlchemy on PostgreSQL/SQLite.
 </%self:user>
+
 
 <%self:user
         name="FastMonkeys"
