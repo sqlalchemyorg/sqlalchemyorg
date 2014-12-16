@@ -32,14 +32,24 @@ self.attr.bb_base = bb_base = bf.config.bb_url
         % endfor
         <!-- end iterate through SQLA css_files -->
 
+        <!-- begin iterate through sphinx environment local css_files -->
+        % for cssfile in css_files:
+            % if not cssfile.startswith("http"):
+            <link rel="stylesheet" href="${pathto(cssfile, 1)}" type="text/css" />
+            % endif
+        % endfor
+        <!-- end iterate through sphinx environment local css_files -->
+
         <link rel="stylesheet" type="text/css" media="all" href="${site_base}/css/site.css"></link>
         <link rel="stylesheet" type="text/css" media="print" href="${site_base}/css/print.css"></link>
 
-        <!-- begin iterate through sphinx environment css_files -->
+        <!-- begin iterate through sphinx environment remote css_files -->
         % for cssfile in css_files:
+            % if cssfile.startswith("http"):
             <link rel="stylesheet" href="${pathto(cssfile, 1)}" type="text/css" />
+            % endif
         % endfor
-        <!-- end iterate through sphinx environment css_files -->
+        <!-- end iterate through sphinx environment remote css_files -->
     </%block>
 
     <%block name="headers">
