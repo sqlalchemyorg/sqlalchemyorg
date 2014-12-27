@@ -114,6 +114,10 @@ ${next.body()}
 
 </div> <!-- end #wrap -->
 
+<%text>
+    <%block name="lower_scripts"/>
+</%text>
+
 </body>
 </html>
 
