@@ -25,7 +25,6 @@ if not current_section and in_docs:
         </%block>
     </title>
 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 
     <%block name="head">
         <!-- sqlalchemy.org head -->
@@ -70,7 +69,12 @@ if not current_section and in_docs:
 
 </div> <!-- end #wrap -->
 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script type="text/javascript" src="${site_base}/js/doc_versions.js"></script>
+
 <%block name="scripts"/>
+
+
 
 </body>
 </html>

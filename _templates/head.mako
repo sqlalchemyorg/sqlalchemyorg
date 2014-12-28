@@ -7,8 +7,6 @@
 	<link rel="stylesheet" type="text/css" media="print" href="${site_base}/css/print.css"></link>
 % endif
 
-<script type="text/javascript" src="${site_base}/js/doc_versions.js"></script>
-
 <script type="text/javascript">
 var site_base='${site_base}';
 var docs_base='${docs_base}';

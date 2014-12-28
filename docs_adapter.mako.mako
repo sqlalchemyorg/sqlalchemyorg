@@ -118,6 +118,9 @@ ${next.body()}
     <%block name="lower_scripts"/>
 </%text>
 
+<script type="text/javascript" src="${site_base}/js/doc_versions.js"></script>
+
+
 </body>
 </html>
 
