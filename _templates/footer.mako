@@ -13,7 +13,7 @@
                 <a href="http://www.makotemplates.org">Mako Templates for Python</a>.</p>
      </div>
 
-    <br clear="both" />
+    <br clear="all" />
 
 </div>
 

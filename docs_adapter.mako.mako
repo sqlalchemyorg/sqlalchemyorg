@@ -1,17 +1,15 @@
 <%!
     in_docs = True
-%>
-<%
+%><%
 self.attr.site_base = site_base = bf.config.site.url
 self.attr.docs_base = docs_base = bf.config.docs_url
 self.attr.bb_base = bb_base = bf.config.bb_url
 
-%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+%><!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>
         <%text>
         <%block name="head_title">
@@ -22,8 +20,7 @@ self.attr.bb_base = bb_base = bf.config.bb_url
 
     <%text>
 
-
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700' rel='stylesheet' type='text/css'/>
 
     <%block name="css">
         <!-- begin iterate through SQLA css_files -->
@@ -40,8 +37,8 @@ self.attr.bb_base = bb_base = bf.config.bb_url
         % endfor
         <!-- end iterate through sphinx environment local css_files -->
 
-        <link rel="stylesheet" type="text/css" media="all" href="${site_base}/css/site.css"></link>
-        <link rel="stylesheet" type="text/css" media="print" href="${site_base}/css/print.css"></link>
+        <link rel="stylesheet" type="text/css" media="all" href="${site_base}/css/site.css"/>
+        <link rel="stylesheet" type="text/css" media="print" href="${site_base}/css/print.css"/>
 
         <!-- begin iterate through sphinx environment remote css_files -->
         % for cssfile in css_files:
