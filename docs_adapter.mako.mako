@@ -79,7 +79,6 @@ self.attr.bb_base = bb_base = bf.config.bb_url
 
     <!-- sqlalchemy.org docs base head -->
     <%include file="/head.mako" args="site_base=self.attr.site_base, docs_base=self.attr.docs_base, bb_base=self.attr.bb_base, css=False"/>
-    <%include file="/tracking.mako"/>
     <!-- end sqlalchemy.org docs base head -->
 
 </head>
