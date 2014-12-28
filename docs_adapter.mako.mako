@@ -119,7 +119,7 @@ ${next.body()}
 </%text>
 
 <script type="text/javascript" src="${site_base}/js/doc_versions.js"></script>
-
+<%include file="/tracking.mako"/>
 
 </body>
 </html>

@@ -29,7 +29,6 @@ if not current_section and in_docs:
     <%block name="head">
         <!-- sqlalchemy.org head -->
         <%include file="/head.mako" args="site_base=self.attr.site_base, docs_base=self.attr.docs_base, bb_base=self.attr.bb_base"/>
-        <%include file="/tracking.mako"/>
         <!-- end sqlalchemy.org head -->
     </%block>
 
@@ -71,6 +70,7 @@ if not current_section and in_docs:
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 <script type="text/javascript" src="${site_base}/js/doc_versions.js"></script>
+<%include file="/tracking.mako"/>
 
 <%block name="scripts"/>
 
