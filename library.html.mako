@@ -175,9 +175,15 @@ at many conferences worldwide.   Here's only a choice few of them:
 		<iframe width="${videowidth}" height="${videoheight}" src="//www.youtube.com/embed/PKAdehPHOMo" frameborder="0" allowfullscreen></iframe>
 
 		</%def>
-		This talk describes why SQLAlchemy has always been called a "toolkit", detailing the software construction mindset for which SQLAlchemy was designed to be used with.  The talk refers to this
-		as the "Hand Coded" approach, and has an emphasis on user-created patterns and conventions,
-		along with explicit exposure of relational structures.
+
+		A detailed walkthrough of SQLAlchemy's Session, describing the
+		rationale for its existence, its driving philosophies, and
+		finally a walkthrough of Session lifecycle through the use of
+		an animated diagram. We'll cover how the relational database
+		refers to database rows within a transaction, and how the
+		Session has over the years developed a tight, proxied
+		integration with this lifecycle.
+
 	</%self:talk>
 
 	<%self:talk
