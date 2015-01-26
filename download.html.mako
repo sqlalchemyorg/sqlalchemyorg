@@ -37,7 +37,7 @@ Download - SQLAlchemy
             <h4>Release Support: Security Fixes Only</h4>
             <p>
                 <em>
-                    Please note: As of ${latest_rec['release_date']},
+                    Please note: As of ${latest_rec['release_date'].strftime("%Y-%m-%d")},
                     the ${release_rec['major_version']} release is only updated
                     for critical security fixes.
                 </em>
@@ -48,7 +48,7 @@ Download - SQLAlchemy
             <h4>Release Support: Maintenance Mode</h4>
             <p>
                 <em>
-                    Please note: As of ${latest_rec['release_date']}, the
+                    Please note: As of ${latest_rec['release_date'].strftime("%Y-%m-%d")}, the
                     ${release_rec['major_version']} release has been placed
                     into the "Maintenance" milestone.  Periodic updates and
                     security fixes will still be available, but users are
