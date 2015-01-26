@@ -32,6 +32,7 @@ Released ${latest_rec['release_date'].strftime("%B %d, %Y")}
 
 <%
     dev_version = release_milestones['development']
+    dev_release = release_history[dev_version]
 %>
 <br/><br/>
 
@@ -39,6 +40,7 @@ Released ${latest_rec['release_date'].strftime("%B %d, %Y")}
 
 <strong>${dev_version}</strong>
 <br/>
-<a href="${bf.config.release_data[dev_version]['migration_url']}">${bf.config.release_data[dev_version]['migration_title']}</a>
+<a href="${dev_release['migration_url']}">${dev_release['migration_title']}</a> |
+<A href="${dev_release['docs']}">docs</a>
 
 % endif
