@@ -1,24 +1,31 @@
+<%
+    release_history = bf.config.release_data
+    release_milestones = bf.config.release_milestones
+
+%>
 
 var doc_versions = [
-      {
-        "version":"development",
-        "slug":"latest"
-      },
-      {
-        "version":"Version 0.9",
-        "slug":"rel_0_9"
-      },
-      {
-        "version":"Version 0.8",
-        "slug":"rel_0_8",
-        "latest_warning": true
-      },
-       {
-        "version":"Version 0.7",
-        "slug":"rel_0_7",
-        "latest_warning": true
-      }
-    ];
+% for vers in list(reversed(sorted(release_history))):
+  <%
+    vers_rec = release_history[vers]
+  %>
+  % if vers_rec.get('docs', None):
+  {
+    "version": "${
+      'development' \
+      if vers_rec['milestone'] == 'development' \
+      else 'Version %s' % vers_rec['major_version']
+    }",
+    "slug": "${vers_rec['rtd_plaque']}",
+    "latest_warning": "${
+      'true' \
+      if vers_rec['milestone'] in ('security', 'eol') \
+      else 'false'
+    }",
+  }${"," if not loop.last else ""}
+  % endif
+% endfor
+];
 
 var _version_lookup = {};
 for (var key in doc_versions) {

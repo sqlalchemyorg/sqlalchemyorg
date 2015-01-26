@@ -567,3 +567,47 @@ div.read_latest_button {
   right: 20px;
   position: fixed;
 }
+
+
+.release-status, .download {
+    .inline-alert {
+        padding: 0 20px 0 20px;
+        margin: 20px 0;
+        border: 1px solid #eee;
+        border-left-width: 5px;
+        border-radius: 3px;
+        border-left-color: #1b809e;
+    }
+
+    .release-tip {
+        font-size: .8em;
+    }
+    .inline-alert.deprecation-security {
+        border-left-color: #ce4844;
+    }
+    .inline-alert.deprecation-security h4 {
+        color: #ce4844;
+    }
+
+    .inline-alert.deprecation-maintenance {
+        border-left-color: #aa6708;
+    }
+    .inline-alert.deprecation-maintenance h4 {
+        color: #aa6708;
+    }
+
+    table.table {
+        border-spacing: 0;
+        width: 100%;
+    }
+      table.table td
+    , table.table th {
+        padding: 3px 3px 6px 6px;
+        vertical-align: top;
+        border-left: 1px solid #DDD;
+        border-bottom: 1px solid #EEE;
+    }
+    table.table th {
+        background: #F6F6F6;
+    }
+}

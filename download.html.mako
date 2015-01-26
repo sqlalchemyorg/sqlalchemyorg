@@ -1,45 +1,81 @@
 <%inherit file="/base.mako"/>
 <%!
     section = 'download'
+%>
 
-    rel_09 = "0.9.8"
-    rel_08 = "0.8.7"
+<%
+    release_history = bf.config.release_data
+    release_milestones = bf.config.release_milestones
 
 %>
+
+
 <%block name="head_title">
 Download - SQLAlchemy
 </%block>
 
 <h1>Get SQLAlchemy</h1>
 
-<h2>Version 0.9</h2>
 
-<p>Latest 0.9 Release: <b>${rel_09}</b>
+<%def name="download_version(milestone)">
+    <%
+        release_rec = release_history[release_milestones[milestone]]
+        latest_rec = release_rec['latest']
+    %>
 
-<a href="http://www.python.org/pypi/SQLAlchemy/${rel_09}"><b>(${rel_09} via Cheeseshop)</b></a>
+    <h2>Version ${release_rec['major_version']}</h2>
 
-<a href="/changelog/CHANGES_${rel_09.replace('.', '_')}"><b>(CHANGES)</b></a></p>
+    <p>Latest ${release_rec['major_version']} Release: <b>${latest_rec['version']}</b>
 
-<p>SQLAlchemy ${rel_09} is signed using Michael Bayer's PGP key id <a href="http://pgp.mit.edu:11371/pks/lookup?search=0xC4DAFEE1&op=index">C4DAFEE1</a> (use <code>gpg --recv-keys C4DAFEE1</code> to import).</p>
+    <a href="${latest_rec['url']}"><b>(${latest_rec['version']} via Cheeseshop)</b></a>
 
-<p>Please be sure to review the 0.8 to 0.9 migration guide, found at <a
-href="/docs/09/changelog/migration_09.html"><b>09Migration</b></a>, for full details on changes
-made since 0.8.</p>
+    <a href="${latest_rec['changelog']}"><b>(CHANGES)</b></a></p>
 
 
-<h2>Version 0.8</h2>
+    % if milestone  == 'security':
+        <div class="inline-alert deprecation-security">
+            <h4>Release Support: Security Fixes Only</h4>
+            <p>
+                <em>
+                    Please note: As of ${latest_rec['release_date']},
+                    the ${release_rec['major_version']} release is only updated
+                    for critical security fixes.
+                </em>
+            </p>
+        </div>
+    % elif milestone == 'maintenance':
+        <div class="inline-alert deprecation-maintenance">
+            <h4>Release Support: Maintenance Mode</h4>
+            <p>
+                <em>
+                    Please note: As of ${latest_rec['release_date']}, the
+                    ${release_rec['major_version']} release has been placed
+                    into the "Maintenance" milestone.  Periodic updates and
+                    security fixes will still be available, but users are
+                    advised to begin upgrading to a more current version of
+                    SQLAlchemy.
+                </em>
+            </p>
+        </div>
+    % endif
 
-<p>Latest 0.8 Release: <b>${rel_08}</b>
+    <p>SQLAlchemy ${latest_rec['version']} is signed using Michael Bayer&#8217;s PGP key id <a href="http://pgp.mit.edu:11371/pks/lookup?search=0xC4DAFEE1&op=index">C4DAFEE1</a> (use <code>gpg --recv-keys C4DAFEE1</code> to import).</p>
 
-<a href="http://www.python.org/pypi/SQLAlchemy/${rel_08}"><b>(${rel_08} via Cheeseshop)</b></a>
+    <p>Please be sure to review the ${release_rec['previous_version']} to ${release_rec['major_version']} migration guide, found at <a
+    href="${release_rec['migration_url']}"><b>${release_rec['migration_title']}</b></a>, for full details on changes
+    made since ${release_rec['previous_version']}.</p>
 
-<a href="/changelog/CHANGES_${rel_08.replace('.', '_')}"><b>(CHANGES)</b></a></p>
+</%def>
 
-<p>SQLAlchemy ${rel_08} is signed using Michael Bayer's PGP key id <a href="http://pgp.mit.edu:11371/pks/lookup?search=0xC4DAFEE1&op=index">C4DAFEE1</a> (use <code>gpg --recv-keys C4DAFEE1</code> to import).</p>
+% if 'current' in release_milestones:
+    ${download_version("current")}
+% endif
 
-<p>Please be sure to review the 0.7 to 0.8 migration guide, found at <a
-href="/docs/08/changelog/migration_08.html"><b>08Migration</b></a>, for full details on changes
-made since 0.7.</p>
+% if 'maintenance' in release_milestones:
+    ${download_version("maintenance")}
+% elif 'security' in release_milestones:
+    ${download_version("security")}
+% endif
 
 
 <a name="development"/>
@@ -56,4 +92,4 @@ made since 0.7.</p>
 
 <p>SQLAlchemy is covered by the <a href="http://www.opensource.org/licenses/mit-license.php">MIT License</a>.
 
-
+<%include file="release_grid.mako"/>
