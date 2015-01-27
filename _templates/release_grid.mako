@@ -80,14 +80,7 @@
 
 <h4>About Release Status Categories</h4>
 <p>
-    SQLAlchemy is a robust and mature Python library <a href="/organizations.html">that is
-    used by some of the largest technology companies</a> and has been actively
-    supported and developed since 2006!
-</p>
-<p>
-    The SQLAlchemy team develops the codebase using a Release Status system to
-    allocate new features and ongoing maintenance/support.
-    Development occurs as follows:
+    The following table summarizes each status category:
 </p>
 <table class="table table-striped">
     <thead>
