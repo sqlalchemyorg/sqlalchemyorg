@@ -32,7 +32,7 @@ eol = '0.7'
 
 # this is actually down to 0.4
 # but I don't want those to be even linked
-# this prominently
+# this prominently.
 lowest_migration_version = '0.7'
 
 
@@ -113,7 +113,7 @@ def _gen_release_data(pypi_data, milestones):
                         if major_version >= lowest_doc_version_parsed
                         else None,
                 'migration_url':
-                    '/docs/latest/changelog/'
+                    '/docs/%(local_doc_plaque)s/changelog/'
                     'migration_%(plaque)s.html' %
                     tokens
                     if major_version >= lowest_migration_version_parsed
