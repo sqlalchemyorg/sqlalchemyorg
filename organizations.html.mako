@@ -87,6 +87,23 @@ Organizations - SQLAlchemy
 </%self:user>
 
 <%self:user
+        name="Tablet"
+        logo="tablet.png"
+        url="http://www.tablethotels.com/"
+        anchor="tablet"
+        >
+        <a href="http://www.tablethotels.com/">Tablet</a>
+        does the hard work of selecting only the most extraordinary
+        hotels and making booking as painless as it can be, having
+        been founded as a cure for boring travel and an antidote to
+        to the internet's overdose of options.
+        Most of Tablet's codebase is written in Python, interacting
+        with a MySQL backend using both the Core and ORM components of
+        SQLAlchemy.
+
+</%self:user>
+
+<%self:user
         name="SurveyMonkey",
         logo="surveymonkey.png"
         url="http://www.surveymonkey.com/"
