@@ -1,0 +1,25 @@
+---
+date: 2015/03/10 15:41:02
+title: SQLAlchemy 0.9.9 Released
+author: Mike B
+---
+
+SQLAlchemy release 0.9.9 is now available.
+
+Release 0.9.9 is a large maintenance release featuring 30 changes,
+mostly bug fixes.  A handful of modest feature adds are also present,
+including new Core features for SQLite, Postgresql, and new
+API features to provide better control of transaction isolation level
+when using the ORM.
+
+The majority of SQLAlchemy development is taking place targeted at
+version 1.0, which is extremely close to having its initial beta releases.
+Version 1.0 has accumulated a wide variety of performance improvements,
+both as intrinsic to normal operation as well as via new features.
+
+Users should carefully review the `Changelog </changelog/CHANGES_0_9_9>`_ to
+note which behaviors and issues are affected.   We'd like to thank
+the many contributors who helped with this release.
+
+SQLAlchemy 0.9.9 is available on the `Download Page </download.html>`_.
+
