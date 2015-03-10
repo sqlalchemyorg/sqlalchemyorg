@@ -139,7 +139,7 @@ def _gen_release_data(pypi_data, milestones):
                     '/changelog/CHANGES_%s' %
                     str(release).replace('.', "_")),
                 'announcement_url':
-                    '/blog/%(year)s/%(month)s/%(day)s/'
+                    '/blog/%(year).4d/%(month).2d/%(day).2d/'
                     'sqlalchemy-%(version)s-released/' % {
                         'year': upload_datetime.year,
                         'month': upload_datetime.month,
