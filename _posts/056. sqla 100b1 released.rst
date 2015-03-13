@@ -1,0 +1,47 @@
+---
+date: 2015/03/13 15:41:02
+title: SQLAlchemy 1.0.0b1 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.0.0b1 is now available.
+
+This is the first beta release in the new 1.0 series of SQLAlchemy.  Users
+are encouraged to ensure that their ``pip`` installations are up-to-date, so
+that version 1.0.0b1 will only install if explcitly specified using the
+``--pre`` flag.
+
+Release 1.0.0b1 features a large degree of internal rearchitecture, new
+features, and bug fixes.    Key highlights include:
+
+* **Improved Performance** - Function call counts are reduced in
+  many areas across the library, including Core execution and result set
+  formulation, ORM query construction,
+  ORM result set fetching, mass object expiration, and
+  ORM persistence.  The memory footprint of an ORM application is also
+  greatly reduced by rolling out the use of ``__slots__`` across a wide
+  array of internal structures.
+
+* **New Performance Features** - for even more performance gains, new APIs
+  are introduced to the ORM which can dramatically improve the performance
+  of certain operations.   See features such
+  as `Baked Queries </docs/latest/changelog/migration_10.html#baked-queries>`_
+  and  `Bulk Insert/Update API </docs/latest/changelog/migration_10.html#new-session-bulk-insert-update-api>`_.
+  New documentation and examples regarding performance are added as well,
+  including the new `example performance suite </docs/latest/orm/examples.html#examples-performance>`_.
+
+* **New Dialect Features** - In particular, the `Postgresql </docs/latest/changelog/migration_10.html#dialect-improvements-and-changes-postgresql>`_,
+  `MySQL </docs/latest/changelog/migration_10.html#dialect-improvements-and-changes-mysql>`_, and `SQLite </docs/latest/changelog/migration_10.html#dialect-improvements-and-changes-sqlite>`_ dialects have significant changes,
+  in particular regarding improved datatype support and improved database reflection.
+
+* **Dozens of other improvements** - Small but useful improvements like
+  `removing the need for use_alter </docs/latest/changelog/migration_10.html#the-use-alter-flag-on-foreignkeyconstraint-is-no-longer-needed>`_ and `autoload_with implies autoload=True </docs/latest/changelog/migration_10.html#autoload-with-now-implies-autoload-true>`_ are part
+  of a long list of changes which can be seen in the `What's new in 1.0? </docs/latest/changelog/migration_10.html>`_
+  document.
+
+Users should carefully review the migration document as well as the `Changelog </changelog/CHANGES_0_1_0b1>`_ to
+note which behaviors and issues are affected.   We'd like to thank
+the many contributors who helped with this release.
+
+SQLAlchemy 1.0.0b1 is available on the `Download Page </download.html>`_.
+

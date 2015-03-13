@@ -20,8 +20,8 @@ pypi_url_json = "https://pypi.python.org/pypi/SQLAlchemy/json"
 # ==============================================================================
 
 release_milestones = {
-    'development': '1.0',
-    # 'beta': '1.0',
+    # 'development': '1.0',
+    'beta': '1.0',
     'current': '0.9',
     # 'maintenance': '0.9',
     'security': '0.8',
