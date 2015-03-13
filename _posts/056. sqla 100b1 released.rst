@@ -39,7 +39,7 @@ features, and bug fixes.    Key highlights include:
   of a long list of changes which can be seen in the `What's new in 1.0? </docs/latest/changelog/migration_10.html>`_
   document.
 
-Users should carefully review the migration document as well as the `Changelog </changelog/CHANGES_0_1_0b1>`_ to
+Users should carefully review the migration document as well as the `Changelog </changelog/CHANGES_1_0_0b1>`_ to
 note which behaviors and issues are affected.   We'd like to thank
 the many contributors who helped with this release.
 
