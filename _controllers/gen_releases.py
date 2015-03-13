@@ -41,8 +41,8 @@ def run():
     r = requests.get(pypi_url_json)
     pypi_data = json.loads(r.content)
 
-    # with open("sqla.json") as f:
-    #    pypi_data = json.load(f)
+    #with open("sqla.json") as f:
+    #   pypi_data = json.load(f)
 
     bf.config.release_milestones = milestones = dict(
         (key, parse(version))
@@ -70,6 +70,11 @@ def _gen_release_data(pypi_data, milestones):
     else:
         development_version = None
 
+    if 'beta' in milestones:
+        beta_version = milestones['beta']
+    else:
+        beta_version = None
+
     lowest_doc_version_parsed = parse(lowest_doc_version)
     lowest_migration_version_parsed = parse(lowest_migration_version)
     eol_parsed = parse(eol)
@@ -90,7 +95,7 @@ def _gen_release_data(pypi_data, milestones):
             major_vers_underscore = str(major_version).replace('.', "_")
             git_tag = "rel_%s" % major_vers_underscore
 
-            if release == development_version:
+            if release == development_version or major_version == beta_version:
                 local_doc_plaque = 'latest'
                 rtd_plaque = 'latest'
             else:
