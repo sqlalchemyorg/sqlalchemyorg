@@ -6,6 +6,7 @@
 
     # text overrides
     milestone_text = {
+        'beta': "Beta",
         'development': "Development",
         'current': "Current Release",
         'maintenance': "Maintenance",
@@ -57,11 +58,17 @@
                 <td>
                     % if first_version:
                         ${first_version['release_date'].strftime("%Y-%m-%d")}
+                        % if first_version['version'].is_prerelease:
+                            <span class="release-tip">(beta)</span>
+                        % endif
                     % endif
                 </td>
                 <td>
                     % if latest_version:
                         ${latest_version['release_date'].strftime("%Y-%m-%d")}
+                        % if latest_version['version'].is_prerelease:
+                            <span class="release-tip">(beta)</span>
+                        % endif
                     % endif
                 </td>
                 <td>

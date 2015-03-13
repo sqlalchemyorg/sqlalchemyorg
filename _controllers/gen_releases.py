@@ -9,7 +9,7 @@ import datetime
 
 # generates a group like this:
 # 0.9.8 | 0.9, 0, 9, 8 | SqlAlchemyVersion(Major.Minor), Major, Minor, Release
-RE_release = re.compile("^((\d)\.(\d))\.(\d+)$", re.I | re.X)
+RE_release = re.compile("^((\d)\.(\d))(?:\.(\d+))?((?:a|b|c|rc)\d)?$", re.I | re.X)
 
 # ==============================================================================
 
@@ -21,6 +21,7 @@ pypi_url_json = "https://pypi.python.org/pypi/SQLAlchemy/json"
 
 release_milestones = {
     'development': '1.0',
+    # 'beta': '1.0',
     'current': '0.9',
     # 'maintenance': '0.9',
     'security': '0.8',
@@ -40,6 +41,9 @@ def run():
     r = requests.get(pypi_url_json)
     pypi_data = json.loads(r.content)
 
+    # with open("sqla.json") as f:
+    #    pypi_data = json.load(f)
+
     bf.config.release_milestones = milestones = dict(
         (key, parse(version))
         for key, version in release_milestones.items()
@@ -57,12 +61,14 @@ def _gen_release_data(pypi_data, milestones):
         for vers in pypi_data['releases']
     )
     release_keys = sorted(
-        vers for vers in releases if not vers.is_prerelease
-        and not isinstance(vers, LegacyVersion)
+        vers for vers in releases
+        if not isinstance(vers, LegacyVersion)
     )
     if 'development' in milestones:
         vers = development_version = milestones['development']
         release_keys.append(vers)
+    else:
+        development_version = None
 
     lowest_doc_version_parsed = parse(lowest_doc_version)
     lowest_migration_version_parsed = parse(lowest_migration_version)

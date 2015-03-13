@@ -19,7 +19,10 @@ Download - SQLAlchemy
 
 <%def name="download_version(milestone)">
     <%
-        release_rec = release_history[release_milestones[milestone]]
+        try:
+            release_rec = release_history[release_milestones[milestone]]
+        except KeyError:
+            return ""
         latest_rec = release_rec['latest']
     %>
 
@@ -66,6 +69,10 @@ Download - SQLAlchemy
     made since ${release_rec['previous_version']}.</p>
 
 </%def>
+
+% if 'beta' in release_milestones:
+    ${download_version("beta")}
+% endif
 
 % if 'current' in release_milestones:
     ${download_version("current")}
