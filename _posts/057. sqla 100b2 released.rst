@@ -1,0 +1,19 @@
+---
+date: 2015/03/20 15:41:02
+title: SQLAlchemy 1.0.0b2 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.0.0b2 is now available.
+
+This is the second pre-release in the 1.0.0 series which includes a small
+handful of regression fixes and some additional features.  We'd like to thank
+those who have been beta testing the 1.0.0 series and encourage all beta
+testers to upgrade to beta2!
+
+Users should carefully review the `Migration Document for 1.0 </docs/latest/changelog/migration_10.html>`_
+for the 1.0 series overall, as well as the `Changelog </changelog/CHANGES_1_0_0b2>`_ to
+note which behaviors and issues are affected in this release.   We'd like to thank
+the many contributors who helped with this release.
+
+SQLAlchemy 1.0.0b2 is available on the `Download Page </download.html>`_.
