@@ -1,0 +1,15 @@
+---
+date: 2015/03/20 15:41:02
+title: SQLAlchemy 1.0.0b3 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.0.0b3 is now available.
+
+This is an emergency re-release of 1.0.0b2 to repair an erroneous commit.
+
+Changelog for 1.0.0b3 is at:
+
+`Changelog </changelog/CHANGES_1_0_0b3>`_.
+
+SQLAlchemy 1.0.0b3 is available on the `Download Page </download.html>`_.
