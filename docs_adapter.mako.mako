@@ -51,7 +51,41 @@ self.attr.bb_base = bb_base = bf.config.bb_url
 
     <%block name="headers">
 
-    <!-- RTD <head> via SQLAlchemy adapter -->
+    <!-- RTD <head> via SQLAlchemy adapter
+
+        adapted from:
+        https://raw.githubusercontent.com/rtfd/readthedocs.org/master/readthedocs/templates/sphinx/layout.html
+
+    -->
+
+
+    <%
+        ending = "/" if builder == "readthedocsdirhtml" else ".html"
+        canonical_page = pagename + ending
+    %>
+    % if canonical_url:
+        % if single_version:
+          <!--
+          Single version, so link without a language or version
+          http://docs.readthedocs.org/en/latest/canonical.html
+          -->
+          <link rel="canonical" href="${canonical_url}${canonical_page.replace("index.html", "").replace("index/", "")}" />
+        % else:
+          <!--
+          Always link to the latest version, as canonical.
+          http://docs.readthedocs.org/en/latest/canonical.html
+          -->
+          <link rel="canonical" href="${canonical_url}${rtd_language}/latest/${canonical_page.replace("index.html", "").replace("index/", "")}" />
+        % endif
+    % else:
+        <!--
+        Read the Docs is acting as the canonical URL for your project.
+        If you want to change it, more info is available in our docs:
+          http://docs.readthedocs.org/en/latest/canonical.html
+        -->
+        <link rel="canonical" href="http://${slug}.readthedocs.org/${rtd_language}/latest/${canonical_page.replace("index.html", "").replace("index/", "")}" />
+    % endif
+
     <script type="text/javascript">
         var doc_version = "${current_version}";
         var doc_slug = "${slug}";
@@ -65,6 +99,7 @@ self.attr.bb_base = bb_base = bf.config.bb_url
             page: "${pagename}",
             theme: "${html_theme}"
           };
+
 
     </script>
     <!-- end RTD <head> via SQLAlchemy adapter -->
