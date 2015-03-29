@@ -1,0 +1,22 @@
+---
+date: 2015/03/29 15:45:02
+title: SQLAlchemy 1.0.0b4 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.0.0b4 is now available.
+
+This release contains a handful of fixes and enhancements mostly
+to address issues that were reported by beta testers.  Things
+are looking very good and it's hoped that *maybe* this will be the
+last beta, unless a host of new regressions are reported.
+
+In preparation for 1.0.0, production installations that haven't yet been
+tested in the 1.0 series should be making sure that their requirements
+files are capped at 0.9.99, to avoid surprise upgrades.
+
+Changelog for 1.0.0b4 is at:
+
+`Changelog </changelog/CHANGES_1_0_0b4>`_
+
+SQLAlchemy 1.0.0b4 is available on the `Download Page </download.html>`_.
