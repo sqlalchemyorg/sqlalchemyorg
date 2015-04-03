@@ -1,0 +1,21 @@
+---
+date: 2015/04/03 15:45:02
+title: SQLAlchemy 1.0.0b5 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.0.0b5 is now available.
+
+This release is yet another set of fixes for issues reported
+by beta testers.  At this point, 1.0.0 is ready to go and should
+be released very soon.
+
+In preparation for 1.0.0, production installations that haven't yet been
+tested in the 1.0 series should be making sure that their requirements
+files are capped at 0.9.99, to avoid surprise upgrades.
+
+Changelog for 1.0.0b5 is at:
+
+`Changelog </changelog/CHANGES_1_0_0b5>`_
+
+SQLAlchemy 1.0.0b5 is available on the `Download Page </download.html>`_.
