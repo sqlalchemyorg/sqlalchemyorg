@@ -87,23 +87,6 @@ Organizations - SQLAlchemy
 </%self:user>
 
 <%self:user
-        name="Tablet"
-        logo="tablet.png"
-        url="http://www.tablethotels.com/"
-        anchor="tablet"
-        >
-        <a href="http://www.tablethotels.com/">Tablet</a>
-        does the hard work of selecting only the most extraordinary
-        hotels and making booking as painless as it can be, having
-        been founded as a cure for boring travel and an antidote to
-        to the internet's overdose of options.
-        Most of Tablet's codebase is written in Python, interacting
-        with a MySQL backend using both the Core and ORM components of
-        SQLAlchemy.
-
-</%self:user>
-
-<%self:user
         name="SurveyMonkey",
         logo="surveymonkey.png"
         url="http://www.surveymonkey.com/"
@@ -112,14 +95,6 @@ Organizations - SQLAlchemy
         the leader in online surveys, is building its entire stack in Python.
         SurveyMonkey is being built using Pylons/Pyramid, Jinja2 templating and
         a backend data tier built entirely upon SQLAlchemy.
-</%self:user>
-
-<%self:user
-        name="PayLogic"
-        logo="paylogic.png"
-        url="http://paylogic.eu/"
-        anchor="paylogic">
-        <a href="http://paylogic.eu/">Paylogic</a> is the fastest growing European online ticketing company. It's powered by SQLAlchemy, Django, Tornado, Flask and Backbone.
 </%self:user>
 
 <%self:user
@@ -140,6 +115,15 @@ Organizations - SQLAlchemy
         <a href="http://www.firefox.com/sync">Firefox Sync</a> is Firefox's built in bookmark synchronization service.
         Core server elements of Firefox Sync are written in Python using SQLAlchemy for backend storage.
 </%self:user>
+
+<%self:user
+    name="Morrisville State College",
+    logo="morrisville.png",
+    url="http://www.morrisville.edu",
+    anchor="morrisville">
+    <a href="http://www.morrisville.edu">Morrisville State College</a> is ideally located in the geographic center of New York State and offers over 75 different majors. The Web Team at Morrisville built a portable application for recruiters that uses Bottle, Jinja templates, and SQLAlchemy ORM with SQLite. The application allows recruiters to collect student information on the road without requiring an internet connection.
+</%self:user>
+
 
 <%self:user
     name="Six Feet Up",
@@ -176,6 +160,31 @@ Organizations - SQLAlchemy
         url="http://www.uber.com"
         anchor="uber">
         The <a href="http://www.uber.com">Uber</a> engineering team is the creator, operator, and guardian of a global platform for finding on-demand transportation that operates 24x7. We use SQLAlchemy in every service we develop. We even migrated our entire database to PostgreSQL from MySQL - and it was thanks to SQLAlchemy and Alembic that made that process possible.
+</%self:user>
+
+<%self:user
+        name="Tablet"
+        logo="tablet.png"
+        url="http://www.tablethotels.com/"
+        anchor="tablet"
+        >
+        <a href="http://www.tablethotels.com/">Tablet</a>
+        does the hard work of selecting only the most extraordinary
+        hotels and making booking as painless as it can be, having
+        been founded as a cure for boring travel and an antidote to
+        to the internet's overdose of options.
+        Most of Tablet's codebase is written in Python, interacting
+        with a MySQL backend using both the Core and ORM components of
+        SQLAlchemy.
+
+</%self:user>
+
+<%self:user
+        name="PayLogic"
+        logo="paylogic.png"
+        url="http://paylogic.eu/"
+        anchor="paylogic">
+        <a href="http://paylogic.eu/">Paylogic</a> is the fastest growing European online ticketing company. It's powered by SQLAlchemy, Django, Tornado, Flask and Backbone.
 </%self:user>
 
 
