@@ -44,7 +44,7 @@ gratitude for their tremendous efforts towards contributing code and
 wisdom to the project, as well as support of my work from very early on:
 
 * Jason Kirtland
-* Gaetan de Menten
+* Gaëtan de Menten
 * Diana Clarke
 * Michael Trier
 * Philip Jenvey
