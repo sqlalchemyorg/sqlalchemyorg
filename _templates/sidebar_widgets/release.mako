@@ -20,7 +20,7 @@
         return ""
     latest_rec = release_rec['latest']
 %>
-    <h3>${name} Release</h3>
+    <h3>${name}</h3>
 
     <a href="/download.html"><b>${latest_rec['version']}</b></a>
     <br/>
@@ -33,10 +33,13 @@
     <br/><br/>
 </%def>
 
-${release(milestone, "Current")}
+${release(milestone, "Current Release")}
+% if 'maintenance' in release_milestones:
+    ${release("maintenance", "Previous Series")}
+% endif
 
 % if 'beta' in release_milestones:
-    ${release("beta", "Beta")}
+    ${release("beta", "Beta Release")}
 % elif 'development' in release_milestones:
 
 <%
