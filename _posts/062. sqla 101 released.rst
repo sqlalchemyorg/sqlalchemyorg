@@ -1,0 +1,37 @@
+---
+date: 2015/04/23 15:45:02
+title: SQLAlchemy 1.0.1 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.0.1 is now available.
+
+This is a quick bug-fix release that repairs several new regressions
+identified in the 1.0.0 release, not found during the beta period.
+All users of 1.0.0 are encouraged to upgrade to 1.0.1.
+
+Key elements of this release include fixes regarding the ``NEVER_SET``
+symbol leaking into queries in some cases, fixes to SQLite
+when  using DDL in conjunction with referential integrity enabled, a
+fix to the EXISTS construct which primarily impacts queries that use
+special datatypes, and repairs to the Firebird dialect regarding the
+new LIMIT/OFFSET features.
+
+In order to accommodate some of these fixes, there are three additional
+behavioral changes in 1.0.1; a new warning is emitted when using DDL with SQLite
+in conjunction with mutually-dependent foreign keys (e.g. a reference cycle),
+a new warning is emitted when running ORM relationship comparisons when
+the target object contains the value ``None`` for any of the Python-side column
+values, and a change is made regarding which data values are used within a
+relationship comparison that uses the ``!=`` operator, in order to make the
+behavior consistent with that of the ``==`` operator as used in the same
+context.   The migration notes contains updates for all three of these
+changes, and they are each linked directly from the changelog which should
+be carefully reviewed.
+
+Changelog for 1.0.1 is at:
+
+`Changelog </changelog/CHANGES_1_0_1>`_
+
+SQLAlchemy 1.0.1 is available on the `Download Page </download.html>`_.
+
