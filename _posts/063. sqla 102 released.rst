@@ -1,0 +1,23 @@
+---
+date: 2015/04/24 15:45:02
+title: SQLAlchemy 1.0.2 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.0.2 is now available.
+
+As additional regressions are still being reported, we would like to
+get these changes out as fast as possible so that early adopters are working
+on a 1.0 version that is most representative of what its final form will
+be.  1.0.2 includes two additional fixes, one of which was particularly
+thorny in that it was already "fixed" in 1.0.0b4, but was not fixed correctly,
+regarding the placement of plain label names in GROUP BY expressions; so the
+incorrect fix is reverted and the original regression from 0.9 is resolved
+as well.
+
+Changelog for 1.0.2 is at:
+
+`Changelog </changelog/CHANGES_1_0_2>`_
+
+SQLAlchemy 1.0.2 is available on the `Download Page </download.html>`_.
+
