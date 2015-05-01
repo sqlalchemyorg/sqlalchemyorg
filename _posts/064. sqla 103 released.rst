@@ -1,0 +1,28 @@
+---
+date: 2015/04/30 15:45:02
+title: SQLAlchemy 1.0.3 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.0.3 is now available.
+
+Release 1.0.3 is the latest in a series of weekly releases intended to quickly
+address remaining small regressions that have come up since the 1.0.0 release.
+One fairly serious unit-of-work regression regarding SQL expressions is fixed,
+the new behavior regarding textual expressions with "ORDER BY" has been scaled
+back a bit to better suit now-deprecated use cases, a little-used ORM event
+hook was repaired as it prevented the SQLSoup package from working, and
+the metadata "on create/on drop" events experienced a format change in one of
+the lesser used arguments being passed, which was reverted to its previous
+form.
+
+The release also includes a few additional bug fixes and a series of new
+features within the connection pool / dialect system to allow for better
+visibility and customization of the connectivity process.
+
+Changelog for 1.0.3 is at:
+
+`Changelog </changelog/CHANGES_1_0_3>`_
+
+SQLAlchemy 1.0.3 is available on the `Download Page </download.html>`_.
+
