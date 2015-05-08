@@ -1,0 +1,20 @@
+---
+date: 2015/05/07 15:45:02
+title: SQLAlchemy 1.0.4 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.0.4 is now available.
+
+With release 1.0.4 we are pretty much through all the bumps we had
+in the 0.9 to 1.0 movement.  Four additional very minor regressions are
+solved in this release.     Most prominently, another issue regarding
+recent enhancements to the ``Query.column_descriptions`` collection,
+also slated for release in 0.9.10, was fixed.
+
+Changelog for 1.0.4 is at:
+
+`Changelog </changelog/CHANGES_1_0_4>`_
+
+SQLAlchemy 1.0.4 is available on the `Download Page </download.html>`_.
+
