@@ -13,17 +13,3 @@
 
 </p>
 
-<p>
-	Weekly donations of as little as $1 can be also be established
-	via <strong>Gratipay</strong>.
-<p>
-	<p>
-
-        <script data-gittip-username="zzzeek"
-        data-gittip-widget="button"
-        src="//gttp.co/v1.js"></script>
-	</p>
-
-##<p><a href="http://flattr.com/thing/523068/SQLAlchemy" target="_blank">
-##<img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a></p>
-
