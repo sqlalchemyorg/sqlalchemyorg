@@ -1,0 +1,33 @@
+---
+date: 2015/06/25 15:45:02
+title: SQLAlchemy 1.0.6 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.0.6 is now available.
+
+This release includes a handful of new bugfixes and some small feature adds,
+pushed along by a high level of community involvement.
+
+The most critical issue fixed involves the versioning feature of the
+ORM, where the version counter of a row could be incremented when there
+was otherwise no net change on the row; this was a regression from 0.9.  A
+few other minor issues were also regressions or "semi-regressions" (e.g. a bug
+that existed in 0.9, but is more likely to be encountered in 1.0 due to
+greater use of a feature).  Issues involving the SQL Server ``VARBINARY``
+type, ORM queries for "single inheritance" mappings, and support for the
+very latest (2.7.1) release of psycopg2cffi are resolved.
+
+The new features are all Postgresql centric, and include support for setting
+the storage parameters of a Postgresql index, as well as reflection of
+those parameters and the "using" algorithm of an index; fixes to the
+``ExcludeConstraint`` construct to allow more open-ended SQL expressions,
+and support for controlling the size of the row buffer used when
+"server side cursor" mode is used.
+
+Changelog for 1.0.6 is at:
+
+`Changelog </changelog/CHANGES_1_0_6>`_
+
+SQLAlchemy 1.0.6 is available on the `Download Page </download.html>`_.
+
