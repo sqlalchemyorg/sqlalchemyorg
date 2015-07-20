@@ -1,0 +1,24 @@
+---
+date: 2015/07/20 15:45:02
+title: SQLAlchemy 1.0.7 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.0.7 is now available.
+
+This release contains a series of regression fixes, some additional
+bugfixes, and a few new Core level features, including a new
+``.cast()`` method available on column constructs as well as support for
+many new keywords used in creating sequences.
+
+Next on the roadmap for SQLAlchemy are the beginnings of the 1.1 series;
+the 1.1 milestone has already accumulated several dozen proposed bugfixes
+and features.  Look for development and documentation of the 1.1 series
+to begin within the coming weeks.
+
+Changelog for 1.0.7 is at:
+
+`Changelog </changelog/CHANGES_1_0_7>`_
+
+SQLAlchemy 1.0.7 is available on the `Download Page </download.html>`_.
+
