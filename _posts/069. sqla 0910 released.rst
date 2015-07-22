@@ -1,0 +1,21 @@
+---
+date: 2015/07/22 15:45:02
+title: SQLAlchemy 0.9.10 Released
+author: Mike B
+---
+
+SQLAlchemy release 0.9.10 is now available.
+
+This is a maintenance release of the 0.9 series, delivering an
+array of bug fixes and small feature enhancements which typically
+have been backported from the 1.0 series.    As the 1.0 series
+has been in production use for some months now, the 0.9 series
+is expected to receive only critical bugfixes subsequent to this
+version.
+
+Changelog for 0.9.10 is at:
+
+`Changelog </changelog/CHANGES_0_9_10>`_
+
+SQLAlchemy 0.9.10 is available on the `Download Page </download.html>`_.
+
