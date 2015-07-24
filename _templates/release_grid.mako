@@ -78,7 +78,7 @@
                     % endif
                 </td>
                 <td>
-                    ${milestone_text[version_rec['milestone']]}
+                    <a href="#status-desc-${version_rec['milestone']}">${milestone_text[version_rec['milestone']]}</a>
                 </td>
             </tr>
         % endfor
@@ -98,41 +98,70 @@
     </thead>
     <tbody>
         <tr>
+            <a name="status-desc-development"/>
             <th>${milestone_text['development']}</th>
             <td>
                 Active development for the next major release of SQLAlchemy.
-                Development of new features and potential backward
-                incompatibilities are restricted to this "future" branch of code.
+                Development of new features and major behavioral changes
+                to this "future" branch of code.   Users are encouraged
+                to run the master branch within test environments in order
+                to help in reporting regressions as well as to
+                test beta releases as they are released.
             </td>
         </tr>
         <tr>
+            <a name="status-desc-current"/>
             <th>${milestone_text['current']}</th>
             <td>
                 The current official release of SQLAlchemy.
-                Ongoing work is performed to close out bugs that can still be
-                applied without significant risk of destabilization.
+                Ongoing work is performed to close out regressions and
+                bugs that can still be applied without significant
+                risk of destabilization.  Applications
+                which are under active development should seek to always
+                refer to at least the "current" release.
             </td>
         </tr>
         <tr>
+            <a name="status-desc-maintenance"/>
             <th>${milestone_text['maintenance']}</th>
             <td>
-                Patches are accepted for bug fixes that can be applied without
-                risk of destabilization.   Security related bug reports are addressed.
+                The maintenance series accepts a very limited set of
+                critical bug fixes as they are encountered.
+                In maintenance mode, it is assumed that applications coded
+                to this version are themselves fully stable and not
+                experiencing much change, so the pace of releases slows down
+                considerably to avoid disruption.  An application that wishes
+                to continue active development should seek to upgrade
+                to the current release series as soon as possible.
+                Applications that are in a stable state and experience
+                a low amount of new development may wish to remain
+                linked to the current maintenance version, but will still
+                want to upgrade as the maintenance series falls into the
+                next milestone.
             </td>
         </tr>
         <tr>
+            <a name="status-desc-security"/>
             <th>${milestone_text['security']}</th>
             <td>
-                Only security related bug reports or patches are accepted.
+                Security related bug reports or patches are accepted, however
+                almost no other changes are made and there are basically
+                no releases except in extraordinary circumstances;
+                SQLAlchemy has had perhaps one or two issues since its
+                inception in 2005 that even marginally qualified as
+                "security" issues. Applications running against this milestone
+                series should seek to upgrade to a newer series
+                in order to stay current.
             </td>
         </tr>
         <tr>
+            <a name="status-desc-eol"/>
             <th>${milestone_text['eol']}</th>
             <td>
-                This release version is no longer supported or maintained.
-                In rare situations security related bug reports may be applied
-                to these releases, but this is the exception and not the norm.
-                Legacy users are strongly advised to upgrade to a newer version.
+                This release version is no longer maintained and is considered
+                legacy.
+                Applications in production use against an EOL milestone
+                are strongly advised to upgrade to a newer version.
             </td>
         </tr>
     </tbody>

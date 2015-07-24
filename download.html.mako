@@ -51,11 +51,13 @@ Download - SQLAlchemy
             <p>
                 <em>
                     Please note: the
-                    ${release_rec['major_version']} release has been placed
-                    into the "Maintenance" milestone.  Periodic updates and
-                    security fixes will still be available, but users are
-                    advised to begin upgrading to a more current version of
-                    SQLAlchemy.
+                    ${release_rec['major_version']} series is the current
+                    "Maintenance" series.  Periodic updates and
+                    security fixes will still be available, but applications
+                    which continue to be under active development are
+                    advised to begin upgrading to the current series of
+                    SQLAlchemy
+                    (currently the <strong>${release_milestones["current"]}</strong> series).
                 </em>
             </p>
         </div>
