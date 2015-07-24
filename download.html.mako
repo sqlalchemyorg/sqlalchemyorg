@@ -52,8 +52,8 @@ Download - SQLAlchemy
                 <em>
                     Please note: the
                     ${release_rec['major_version']} series is the current
-                    "Maintenance" series.  Periodic updates and
-                    security fixes will still be available, but applications
+                    "Maintenance" series.  Updates for critical fixes
+                    will be made available as needed, but applications
                     which continue to be under active development are
                     advised to begin upgrading to the current series of
                     SQLAlchemy
