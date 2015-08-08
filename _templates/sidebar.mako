@@ -12,6 +12,11 @@
     <%include file="/sidebar_widgets/news.mako"/>
 </div>
 
+<div class="box">
+    <%include file="/sidebar_widgets/follow.mako"/>
+</div>
+
+
 
 
 </div> <!-- end #sidebar -->

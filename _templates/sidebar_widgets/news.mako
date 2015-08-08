@@ -1,4 +1,5 @@
 <h3>Latest News</h3>
+
 <ul>
     % for post in bf.config.blog.posts[:5]:
         <li><a href="/blog/#${post.slug}">${post.title}</a>
