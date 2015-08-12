@@ -1,0 +1,38 @@
+---
+date: 2015/08/12 12:01:00
+title: Alembic 0.8.0 Relased
+author: Mike B
+---
+`Alembic <http://pypi.python.org/pypi/alembic>`_ 0.8.0 is now available.
+
+This release includes a large series of reorganizations in order to provide several new extension APIs which dramatically increase the degree to which Alembic can be extended.
+
+The average Alembic environment should hopefully not notice anything different as we've strived to maintain full backwards compatibility.   However, both the "operations" and the "autogenerate" features have been entirely reorganized in order to produce a much more open-ended and integrated flow between these two systems.
+
+At the base of the new system, everything in Alembic that is an "operation" is now boiled down into an object, known as a ``MigrateOperation``.   Subclasses of ``MigrateOperation`` include familiar things like ``AddColumnOp``, ``CreateForeignKeyOP``, and ``DropTableOp``.   These objects don't represent the SQL that we emit for these operations, but instead, represent the operation as defined in Alembic as part of the interface.  On these objects we now hang all functions as related operations, including how it is linked to the ``alembic.op.*`` namespace, how autogenerate renders it in Python, how autogenerate produces a "diff" of it against a database, how it is implemented against the DDL backend, and many more things.
+
+With this new system, we haven't necessarily added any new functionality that wasn't there before, but we've now organized all the things we know about an "Alembic operation" centered around this object using now-public APIs to associate operations with each one.
+
+What this means is that you can now:
+
+* create your own Alembic operations freely, which become available as first-class functions in ``alembic.op.*`` like any other
+
+* create your own autogenerate schemes for these operations, including defining how to do the database compare as well as render the Python
+
+* Modify completely what autogenerate does when it produces a new migration script; the entire contents of a generated script are delivered in object form to user-available hooks which can then rewrite the structure completely.  The autogenerate operation can be made to generate multiple files to different directories and/or branches, or no files at all.   A helper is also provided to make it easy to write short replacements of specific elements.    Common user requests such as having autogenerate not produce a file if there were no net changes, converting an "add column" operation into an "add column, nullable=True" + "alter column set not null", or supporting alternative migration flows such as splitting migrations into "expand" and "contract" branches are now easily scriptable with no need to add new flags and switches to Alembic itself.
+
+* Create applications that can receive an autogenerate stream and push it out directly as Alembic operations to a live database or SQL script, without even generating any revision scripts.
+
+* Create alternative series of implementations for Alembic operations, such as writing them out to JSON or XML formats or perhaps building up a live MetaData structure based on them.
+
+
+The release also includes a few other fixes and features.   In particular, in conjunction with the reorganization of operations, there is also a renaming of positional arguments in the ``alembic.op.*`` namespace, however a backwards-compatibility translation layer is included so that most projects should be unaffected.  The full list of name changes is listed in the changelog.
+
+Download Alembic 0.8.0 at:  https://pypi.python.org/pypi/alembic/
+
+Full changelog, including new features, bugfixes, as well as links to all Operations methods where positional argument names that have changed, are at: http://alembic.readthedocs.org/en/latest/changelog.html#change-0.8.0.
+
+Thanks to everyone in the community who has helped with this release in the form of patches, pull requests, bug reports, and mailing list commentary.
+
+
+
