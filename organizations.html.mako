@@ -110,7 +110,7 @@ Organizations - SQLAlchemy
 <%self:user
         name="Firefox Sync"
         logo="firefox.png"
-        url="http://www.firefox.com/sync"
+        url="http://www.firefox.com/"
         anchor="firefox">
         <a href="http://www.firefox.com/sync">Firefox Sync</a> is Firefox's built in bookmark synchronization service.
         Core server elements of Firefox Sync are written in Python using SQLAlchemy for backend storage.
@@ -180,6 +180,18 @@ Organizations - SQLAlchemy
 </%self:user>
 
 <%self:user
+        name="Thumbtack"
+        logo="thumbtack.png"
+        url="http://www.thumbtack.com/"
+        anchor="thumbtack">
+        <a href="http://www.thumbtack.com/">Thumbtack</a> gives you the ability to vet, contact and book service professionals online.
+        SQLAlchemy is used throughout their backend data services, including their customer recommendation engine.  Per Thumbtack's
+        director of engineering, "Needless to say we can deploy updates and improvements to our internal tools much
+        faster because SQLAlchemy saves us so much time!"
+</%self:user>
+
+
+<%self:user
         name="PayLogic"
         logo="paylogic.png"
         url="http://paylogic.eu/"
@@ -236,27 +248,6 @@ Organizations - SQLAlchemy
 <a href="http://blocksworld.com/">Blocksworld</a> is an iPad game in which players use cubes, wedges, rockets, wheels, motors and more to easily create 3D models of anything they can imagine - from race cars to animals to robots and more.   SQLAlchemy is used for the application server portion, which
 also makes use of Flask, MySQL, and Redis.
 </%self:user>
-
-<%self:user
-    name="Coingig"
-    logo="coingig.png"
-    url="http://www.coingig.com/"
-    anchor="coingig"
->
-<a href="http://www.coingig.com">Coingig.com</a> is a marketplace platform for buyers and sellers to exchange products for Bitcoin. Coingig is built with Python and has recently implemented SQLAlchemy as our backbone database framework.
-</%self:user>
-
-
-<%self:user
-        name="LolApps"
-        logo="lolapps.png"
-        url="http://www.lolapps.com"
-        anchor="lolapps">
-        <a href="http://www.lolapps.com">LolApps</a> is one of the fastest growing social games companies.
-        As presented in the Pycon 2010 talk <a href="http://us.pycon.org/2010/conference/schedule/event/135/">Scaling Python webapps from zero to 50 million users</a>,
-        the SQLAlchemy ORM is at the core of their data access strategy.
-</%self:user>
-
 
 
 <%self:user
@@ -337,7 +328,7 @@ Amazon Web Services stack. Beauty is serious business ;)
 <%self:user
     name="Juju",
     logo="juju.gif",
-    url="http://www.job-search-engine.com/",
+    url="http://www.juju.com/",
     anchor="juju">
     <a href="http://www.job-search-engine.com/">Juju</a> is a job search engine that indexes job
     listings from companies and job boards all over the web and makes them
@@ -361,28 +352,6 @@ Amazon Web Services stack. Beauty is serious business ;)
     <a href="http://www.amyris.com">Amyris</a> is applying an industrial synthetic biology platform to provide
 high-performing alternatives to petroleum-sourced fuels and chemicals:
 "We use sqlalchemy heavily at Amyris and it is a thing of beauty :)"
-</%self:user>
-
-<%self:user
-        name="Powered By Tippr"
-        logo="poweredbytippr.gif"
-        url="http://www.poweredbytippr.com/"
-        anchor="poweredbytippr">
-        <a href="http://www.poweredbytippr.com/">Powered By Tippr</a> enables publishers to run group buying
-        promotions on their websites, rewarding their loyal readers, attracting new audience
-        groups and unlocking a new revenue stream through improved ad revenue.
-        Powered By Tippr uses SQLAlchemy for their analysis and reporting tools.
-</%self:user>
-
-<%self:user
-        name="Thumbtack"
-        logo="thumbtack.png"
-        url="http://www.thumbtack.com/"
-        anchor="thumbtack">
-        <a href="http://www.thumbtack.com/">Thumbtack</a> gives you the ability to vet, contact and book service professionals online.
-        SQLAlchemy is used throughout their backend data services, including their customer recommendation engine.  Per Thumbtack's
-        director of engineering, "Needless to say we can deploy updates and improvements to our internal tools much
-        faster because SQLAlchemy saves us so much time!"
 </%self:user>
 
 <%self:user
@@ -411,17 +380,6 @@ high-performing alternatives to petroleum-sourced fuels and chemicals:
 
 </%self:user>
 
-
-<%self:user
-        name="Naumen"
-        logo="naumen.gif"
-        url="http://naumen.com/"
-        anchor="naumen">
-        <a href="http://naumen.com/">Naumen</a>
-        is a leading Russian developer of software solutions for businesses and public authorities.
-        Areas of expertise include enterprise document management, call- and contact-centers, e-learning, CRM, Help Desk systems.
-        SQLAlchemy is used extensively within the company's Call Center solution.
-</%self:user>
 
 <%self:user
         name="Adroll",
@@ -465,14 +423,6 @@ high-performing alternatives to petroleum-sourced fuels and chemicals:
 </%self:user>
 
 <%self:user
-        name="Toolpart Team",
-        logo="toolpart.jpg"
-        url="http://toolpart.hu">
-        <a href="http://toolpart.hu">Toolpart</a> offers custom business integration and Open ERP solutions.   SQLAlchemy is used for Python projects.
-</%self:user>
-
-
-<%self:user
         name="The Carbon Account",
         logo="carbon_account.gif"
         url="http://www.thecarbonaccount.com/">
@@ -511,27 +461,12 @@ high-performing alternatives to petroleum-sourced fuels and chemicals:
 </%self:user>
 
 <%self:user
-        name="Milo",
-        logo="milo.png"
-        url="http://milo.com">
-        Real-Time Local Product Search. Uses Django as the framework but with
-        SQLAlchemy dropped in as the ORM on the front-end (and exclusively on the back-end).
-</%self:user>
-
-<%self:user
         name="TriMet",
         logo="trimet.png"
         url="http://trimet.org/">
         TriMet provides bus, light rail and commuter rail service in the Portland, Oregon metro area.
         Pylons and SQLAlchemy are used as the basis for a set of internal GIS/mapping apps, as well as other
         applications.
-</%self:user>
-
-<%self:user
-        name="gcollab",
-        logo="gcollab.jpg"
-        url="https://www.gcollab.com/">
-Global collaborative internet services, built with SQLAlchemy.
 </%self:user>
 
 <%self:user
