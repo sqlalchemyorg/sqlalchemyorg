@@ -76,6 +76,20 @@ Organizations - SQLAlchemy
 </%self:user>
 
 <%self:user
+        name="Hulu",
+        logo="hulu.png"
+        url="http://www.hulu.com/"
+        anchor="hulu">
+        <a href="http://www.hulu.com/">Hulu</a> is a well known, large scale online TV and
+        movie streaming service.   Hulu makes
+        extensive use of Python in many of their backend services, including use of SQLAlchemy.
+        As detailed in their blog post <a href="http://tech.hulu.com/blog/2012/01/03/hostess-menu-system/">Hostess
+        Menu System</a>, SQLAlchemy is at the core of Hulu's UX management
+        system which serves data-driven views, filters and UI layouts to client applications running
+        on a wide variety of devices.
+</%self:user>
+
+<%self:user
         name="Yelp",
         logo="yelp.png"
         url="http://www.yelp.com/"
