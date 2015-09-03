@@ -37,7 +37,7 @@ Features - SQLAlchemy
        every major component in its second or third full iteration, SQLAlchemy
        0.6 is roughly twice the speed of older 0.4 versions from just a few
        years ago, and versions 0.7 and 0.8 continue to improve.
-       It's raw execution speed is competitive with comparable
+       Its raw execution speed is competitive with comparable
        tools, and advanced ORM features like its unit of work, in-memory
        collections, eager loading of collections via joins or secondary
        subselects, and other optimizations allow SQLAlchemy's ORM to emit
