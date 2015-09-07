@@ -101,6 +101,18 @@ Organizations - SQLAlchemy
 </%self:user>
 
 <%self:user
+        name="Anomaly"
+        logo="anomaly.png"
+        url="https://anomaly.net.au/"
+        anchor="anomaly">
+        <a href="https://anomaly.net.au/">Anomaly</a> are
+        "purveyors of finely-crafted code and pixels for the Web and iOS."
+        where SQLAlchemy and Alembic is "part of our daily lives".
+        Anomaly is a valued sponsor of SQLAlchemy.
+
+</%self:user>
+
+<%self:user
         name="SurveyMonkey",
         logo="surveymonkey.png"
         url="http://www.surveymonkey.com/"
