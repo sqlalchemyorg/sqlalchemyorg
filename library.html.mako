@@ -74,14 +74,15 @@ behind both the Core and ORM components of SQLAlchemy:
 
 <a name="talks"></a>
 
-<%def name="talk(title, presented, author, links=[])">
+<%def name="talk(title, presented, author, links=[], anchor=None)">
 	<%
-		link = re.sub(r'\W', '', title.lower())
+		if not anchor:
+			anchor = re.sub(r'\W', '', title.lower())
 	%>
 	<li>
 		<h3>
-			<a name="${link}"></a><em>${title}</em> - ${presented}
-			<a class="headerlink" href="#${link}">¶</a>
+			<a name="${anchor}"></a><em>${title}</em> - ${presented}
+			<a class="headerlink" href="#${anchor}">¶</a>
 		</h3>
 		<p>Author: ${author}</p>
 	    % if hasattr(caller, 'embed'):
@@ -306,6 +307,7 @@ resources available as well:
 		title="SQLAlchemy Tutorial"
 		presented="on the Zetcode tutorial website"
 		author="Jan Bodnar"
+		anchor="zetcodetutorial"
 		links="${[
 			('SQLAlchemy Tutorial',
 				'http://zetcode.com/db/sqlalchemy/')
