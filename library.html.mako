@@ -303,6 +303,20 @@ resources available as well:
 	</%self:talk>
 
 	<%self:talk
+		title="SQLAlchemy Tutorial"
+		presented="on the Zetcode tutorial website"
+		author="Jan Bodnar"
+		links="${[
+			('SQLAlchemy Tutorial',
+				'http://zetcode.com/db/sqlalchemy/')
+		]}"
+	>
+	This is a "nutshell" style tutorial that quickly introduces the major
+	areas of SQLAlchemy using simple examples, covering raw SQL, schema concepts,
+	SQL Expression language, and the ORM including querying and relationships.
+	</%self:talk>
+
+	<%self:talk
 		title="SQLAlchemy + URL Dispatch Wiki Tutorial"
 		presented="Part of the Pylons Documentation"
 		author="Chris McDonough"
