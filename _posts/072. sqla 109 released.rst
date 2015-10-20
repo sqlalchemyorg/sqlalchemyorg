@@ -1,0 +1,25 @@
+---
+date: 2015/10/20 15:45:02
+title: SQLAlchemy 1.0.9 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.0.9 is now available.
+
+Release 1.0.9 is a bugfix release, pushing out a collection of mostly
+small fixes that have accumulated over the past few months.   In particular
+there is one small but important fix for users of the latest cx_Oracle
+library (5.2 or greater) in conjunction with Python 3 that corrects for
+an important issue in correctly detecting the version of this DBAPI
+and its Unicode behavior.
+
+Primary development of new features, architectural and behavioral
+improvements continues within the 1.1 series targeted at early 2016
+for initial beta releases.
+
+Changelog for 1.0.9 is at:
+
+`Changelog </changelog/CHANGES_1_0_9>`_
+
+SQLAlchemy 1.0.9 is available on the `Download Page </download.html>`_.
+
