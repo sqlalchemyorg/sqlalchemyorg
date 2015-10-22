@@ -28,6 +28,16 @@ What People Are Saying - SQLAlchemy
 </%def>
 
 
+<%self:quote link="https://www.reddit.com/r/Python/comments/3pn88a/is_sqlalchemy_recommended_for_a_highly/cw8ovva" author="moorow, Reddit User">
+
+SQLAlchemy is probably the one library in which I've never reached the
+"wait, I need to do something and can't" point. Every single weird
+edge case I've had to handle has been supported either natively or by
+being able to access the raw interfaces directly in a clean way.
+Fantastic library, can't recommend it more highly.
+
+</%self:quote>
+
 
 <%self:quote link="https://news.ycombinator.com/item?id=6989963" author="auvrw, Hacker News User">
 
