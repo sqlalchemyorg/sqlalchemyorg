@@ -235,6 +235,15 @@ Organizations - SQLAlchemy
     the deployment of apps to the cloud without the need for a web development background. Tropofy is powered by Pyramid, SQLAlchemy and Knockoutjs.
 </%self:user>
 
+<%self:user
+    name="RedRoute"
+    logo="redroute.png"
+    url="http://redroute.co"
+    anchor="redroute">
+
+    <a href="http://redroute.co">RedRoute</a> is a cab dispatching iPhone (and soon, Android) application serving the area around Cornell University in Ithaca, NY.  RedRoute has a backend that's entirely managed by SQLAlchemy; the system was developed over a 6-week period and SQLAlchemy greatly reduced development time over the alternatives considered.
+</%self:user>
+
 
 <%self:user
         name="Galaxy Project"
