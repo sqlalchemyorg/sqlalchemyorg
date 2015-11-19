@@ -67,7 +67,7 @@ self.attr.bb_base = bb_base = bf.config.bb_url
     % if canonical_url:
         <%
             # make sure we're just on the base
-            canonical_url = "%s://%s" % (urlparse.urlparse(canonical_url)[0:2])
+            canonical_url_ = "%s://%s" % (urlparse.urlparse(canonical_url)[0:2])
 
         %>
         % if single_version:
@@ -75,13 +75,13 @@ self.attr.bb_base = bb_base = bf.config.bb_url
           Single version, so link without a language or version
           http://docs.readthedocs.org/en/latest/canonical.html
           -->
-          <link rel="canonical" href="${canonical_url}${canonical_page.replace("index.html", "").replace("index/", "")}" />
+          <link rel="canonical" href="${canonical_url_}${canonical_page.replace("index.html", "").replace("index/", "")}" />
         % else:
           <!--
           Always link to the latest version, as canonical.
           http://docs.readthedocs.org/en/latest/canonical.html
           -->
-          <link rel="canonical" href="${canonical_url}${rtd_language}/latest/${canonical_page.replace("index.html", "").replace("index/", "")}" />
+          <link rel="canonical" href="${canonical_url_}${rtd_language}/latest/${canonical_page.replace("index.html", "").replace("index/", "")}" />
         % endif
     % else:
         <!--
