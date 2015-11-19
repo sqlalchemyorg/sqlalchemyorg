@@ -1,5 +1,4 @@
 <%!
-    import urlparse
     in_docs = True
 %><%
 self.attr.site_base = site_base = bf.config.site.url
@@ -20,6 +19,10 @@ self.attr.bb_base = bb_base = bf.config.bb_url
     </title>
 
     <%text>
+
+    <%!
+        import urlparse
+    %>
 
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700' rel='stylesheet' type='text/css'/>
 
