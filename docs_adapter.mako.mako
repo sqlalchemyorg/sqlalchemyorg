@@ -70,7 +70,7 @@ self.attr.bb_base = bb_base = bf.config.bb_url
     % if canonical_url:
         <%
             # make sure we're just on the base
-            canonical_url_ = "%s://%s" % (urlparse.urlparse(canonical_url)[0:2])
+            canonical_url_ = "%s://%s/" % (urlparse.urlparse(canonical_url)[0:2])
 
         %>
         % if single_version:
