@@ -1,4 +1,5 @@
 <%!
+    import urlparse
     in_docs = True
 %><%
 self.attr.site_base = site_base = bf.config.site.url
@@ -64,6 +65,11 @@ self.attr.bb_base = bb_base = bf.config.bb_url
         canonical_page = pagename + ending
     %>
     % if canonical_url:
+        <%
+            # make sure we're just on the base
+            canonical_url = "%s://%s" % (urlparse.urlparse(url)[0:2])
+
+        %>
         % if single_version:
           <!--
           Single version, so link without a language or version
