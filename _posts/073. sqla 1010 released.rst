@@ -1,0 +1,23 @@
+---
+date: 2015/12/11 15:45:02
+title: SQLAlchemy 1.0.10 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.0.10 is now available.
+
+Release 1.0.10 continues with maintenance fixes as we continue major
+development on the 1.1 series.   Fixes here include a handful of fairly
+obscure ORM issues, as our userbase continues to use the new loader
+option system introduced in 0.9 more deeply, some adjustments to internals
+to work more smoothly with the latest Python 3.5 and upcoming 3.6 versions,
+an array of dialect-specific fixes, and a pretty important fix to the
+new "baked query" extension.   There's also one new feature which is the ability
+to render an UPDATE statement with a specific ordering of the SET clauses.
+
+Changelog for 1.0.10 is at:
+
+`Changelog </changelog/CHANGES_1_0_10>`_
+
+SQLAlchemy 1.0.10 is available on the `Download Page </download.html>`_.
+
