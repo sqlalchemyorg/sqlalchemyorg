@@ -1,4 +1,4 @@
-<h3>Donate to SQLAlchemy!</h3>
+<h3><a name="donate"></a>Donate to SQLAlchemy!</h3>
 
 
 <p>SQLAlchemy accepts project donations through <strong>PayPal</strong>:</p>
