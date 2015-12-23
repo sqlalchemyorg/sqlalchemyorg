@@ -1,0 +1,23 @@
+---
+date: 2015/12/22 15:45:02
+title: SQLAlchemy 1.0.11 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.0.11 is now available.
+
+Release 1.0.11, only eleven days after 1.0.10's release, is expedited to
+correct for one ORM-related regression introduced by a 1.0.10 fix; some other
+fairly significant bugfixes involving more recently added features, all
+reported subsequent to the release of 1.0.10, were also fixed.
+Fixes include a major issue in the "baked lazy loader" extension when used as a
+systemwide-replacement for lazy loading, a major series of fixes to the
+"eager_defaults" mapper persistence option, and a revision to 1.0.10's fix for
+a particular polymorphic joined-eager loading issue.
+
+Changelog for 1.0.11 is at:
+
+`Changelog </changelog/CHANGES_1_0_11>`_
+
+SQLAlchemy 1.0.11 is available on the `Download Page </download.html>`_.
+
