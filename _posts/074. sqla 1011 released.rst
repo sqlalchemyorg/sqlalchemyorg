@@ -1,12 +1,12 @@
 ---
-date: 2015/12/22 15:45:02
+date: 2015/12/23 15:45:02
 title: SQLAlchemy 1.0.11 Released
 author: Mike B
 ---
 
 SQLAlchemy release 1.0.11 is now available.
 
-Release 1.0.11, only eleven days after 1.0.10's release, is expedited to
+Release 1.0.11, only twelve days after 1.0.10's release, is expedited to
 correct for one ORM-related regression introduced by a 1.0.10 fix; some other
 fairly significant bugfixes involving more recently added features, all
 reported subsequent to the release of 1.0.10, were also fixed.
