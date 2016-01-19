@@ -112,7 +112,8 @@ at many conferences worldwide.   Here's only a choice few of them:
 			links="${[
 				('Slides', 'https://speakerdeck.com/zzzeek/building-the-app'),
 				('Sample Pyramid Application', 'https://bitbucket.org/zzzeek/pycon2014_atmcraft'),
-				('Java Client', 'https://bitbucket.org/zzzeek/pycon2014_atmcraft_java/')
+				('Java Client', 'https://bitbucket.org/zzzeek/pycon2014_atmcraft_java/'),
+				('Video', 'http://www.youtube.com/watch/5SSC6nU314c')
 			]}">
 		<%def name="embed()">
 		<iframe width="${videowidth}" height="${videoheight}" src="//www.youtube.com/embed/5SSC6nU314c" frameborder="0" allowfullscreen></iframe>
@@ -139,6 +140,9 @@ at many conferences worldwide.   Here's only a choice few of them:
 			title="Introduction to SQLAlchemy Core"
 			presented="presented at Pycon North America, 2014"
 			author="Jason Meyers"
+			links="${[
+				('Video', 'http://www.youtube.com/watch/0PSdzUxRYpA')
+			]}"
 		>
 		<%def name="embed()">
 		<iframe width="${videowidth}" height="${videoheight}" src="//www.youtube.com/embed/0PSdzUxRYpA" frameborder="0" allowfullscreen></iframe>
@@ -153,6 +157,7 @@ at many conferences worldwide.   Here's only a choice few of them:
 		author="Selena Deckelmann"
 		links="${[
 			('Slides', 'http://bit.ly/1iGL5lQ'),
+			('Video', 'http://www.youtube.com/watch?v=_ZdqwCr4c7Q')
 		]}">
 		<%def name="embed()">
 		<iframe width="${videowidth}" height="${videoheight}" src="//www.youtube.com/embed/_ZdqwCr4c7Q" frameborder="0" allowfullscreen></iframe>
@@ -182,7 +187,7 @@ at many conferences worldwide.   Here's only a choice few of them:
 			author="Mike Bayer"
 			links="${[
 				('Slides', 'https://speakerdeck.com/zzzeek/the-sqlalchemy-session-in-depth'),
-				('Video', 'http://pyvideo.org/video/1600/the-sqlalchemy-session-in-depth'),
+				('Video', 'https://www.youtube.com/watch?v=PKAdehPHOMo'),
 				('HTML Demo', 'http://techspot.zzzeek.org/files/2012/session.html.tar.gz')
 			]}"
 		>
