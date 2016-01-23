@@ -145,9 +145,8 @@ is called <code>rel_0_9</code>:</p>
 <a name="integration"></a>
 <h2>Continuous Integration</h2>
 
-<p>We run a <a href="http://jenkins.sqlalchemy.org">Jenkins</a> server for continuous integration
-    at <a href="http://jenkins.sqlalchemy.org">jenkins.sqlalchemy.org</a>.
-    A quick overview of how wide a variety of scenarios our tests need to run within can be seen here.</p>
+The SQLAlchemy project uses Jenkins instances on internal hosts for
+continuous integration.   Public status viewing is not currently available.
 
 <a name="documentation"></a>
 <h2>Documentation</h2>
