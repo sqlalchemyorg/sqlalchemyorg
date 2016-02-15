@@ -12,7 +12,7 @@ on the 1.1 series which is slated for initial releases in the spring.
 
 1.0.12 includes relatively minor fixes, including a revision to a
 fix made for version 1.0.10 where we're attempting to report
-on the "cause" of an error that is interupted by a later failure to
+on the "cause" of an error that is interrupted by a later failure to
 emit a ROLLBACK on the MySQL platform.  While Python 3 solves this problem
 using exception chaining and cause reporting, on Python 2 we emit a warning
 so that the cause isn't totally concealed.  The condition has been expanded
