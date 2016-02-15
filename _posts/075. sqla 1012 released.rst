@@ -1,0 +1,26 @@
+---
+date: 2016/02/15 15:45:02
+title: SQLAlchemy 1.0.12 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.0.12 is now available.
+
+Release 1.0.12 is a bug fix release resolving a handful of issues
+reported in the past few weeks.   Primary development continues
+on the 1.1 series which is slated for initial releases in the spring.
+
+1.0.12 includes relatively minor fixes, including a revision to a
+fix made for version 1.0.10 where we're attempting to report
+on the "cause" of an error that is interupted by a later failure to
+emit a ROLLBACK on the MySQL platform.  While Python 3 solves this problem
+using exception chaining and cause reporting, on Python 2 we emit a warning
+so that the cause isn't totally concealed.  The condition has been expanded
+to emit this warning in a much wider range of scenarios.
+
+Changelog for 1.0.12 is at:
+
+`Changelog </changelog/CHANGES_1_0_12>`_
+
+SQLAlchemy 1.0.12 is available on the `Download Page </download.html>`_.
+
