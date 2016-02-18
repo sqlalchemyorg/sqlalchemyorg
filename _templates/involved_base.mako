@@ -10,9 +10,9 @@ Get Involved - SQLAlchemy
 
 <p>A guide to getting involved with SQLAlchemy.</p>
 <ul class="nav">
-    <li><a href="/support.html">Get Support</a> | </li>
-    <li><a href="/participate.html">Participate</a> | </li>
-    <li><a href="/develop.html">Develop</a></li>
+    <li><a href="/support.html">Get Support</a> - help with using SQLAlchemy</li>
+    <li><a href="/participate.html">Participate</a> - reporting bugs and helping others</li>
+    <li><a href="/develop.html">Develop</a> - contributing code</li>
 </ul>
 
 ${next.body()}

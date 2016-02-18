@@ -501,10 +501,16 @@ $nav_height: 32px;
 div.involved {
     #content {
         ul.nav {
-            padding:0;
+            padding:10px;
             margin:10px 0px 25px 0px;
+            border: 1px solid;
+            background-color: #f6f6f6;
             li {
-                display:inline;
+                list-style: none;
+
+                a {
+                    font-weight: bold;
+                }
             }
         }
 
