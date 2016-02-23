@@ -2,7 +2,6 @@
 <%!
     section = 'home'
 
-    # 1
 %>
 
 <h1>The Python SQL Toolkit and Object Relational Mapper</h1>
