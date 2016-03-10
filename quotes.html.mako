@@ -130,15 +130,6 @@ ORM infrastructure that is capable of complex queries and mappings (as well as
 some pretty stone-simple ones).
 </%self:quote>
 
-<%self:quote link="http://www.artima.com/weblogs/viewpost.jsp?thread=193479" author="Bruce Eckel, Author of <u>Thinking in Java</u>">
-SQLAlchemy is a pretty amazing design...In SQLAlchemy, you need to
-explicitly start a session. What's amazing is that all the changes you make
-during that session are kept in some kind of parse tree, and then when the
-session ends SQL is created on-the-fly to produce a single, optimal SQL
-statement for that particular sequence of changes. I found this idea pretty
-mind-blowing.
-</%self:quote>
-
 <%self:quote link="http://bewest.wordpress.com/2006/09/06/the-toolbox/#comment-13" author="Daniel Lyons">
 I've been using SQLAlchemy for about two days now and I can tell you, it's
 without compare. The ORM is the most flexible I've ever seen. It's freaking
