@@ -9,10 +9,14 @@ What People Are Saying - SQLAlchemy
 
 <h1>What People are Saying about SQLAlchemy</h1>
 
-<%def name="quote(link, author)">
+<%def name="quote(link=None, author=None)">
     <blockquote class="box">
     <p>${caller.body()}</p>
+    % if link:
     <p>- <i><a href="${link}">${author}</a></i></p>
+    % else:
+    <p>- <i>${author}</i></p>
+    % endif
     </blockquote>
 </%def>
 
@@ -96,11 +100,11 @@ than Python for some project involving a database my first thought is always,
 </%self:quote>
 
 
-<%self:quote link="https://twitter.com/#!/janerist/status/157889517670498304" author="Jan-Erik Strøm">
+<%self:quote author="Jan-Erik Strøm">
 Lost faith in ORMs after many battles with Hibernate/Entity Framework/whatnot. SQLAlchemy restores it. ORM done right.
 </%self:quote>
 
-<%self:quote link="http://tarekziade.wordpress.com/2011/07/12/firefox-sync-python/#comment-11602" author="Tarek Ziadé, core Firefox Sync developer">
+<%self:quote author="Tarek Ziadé, core Firefox Sync developer">
 There’s a lot of Python libraries/frameworks out there we can use, and some of
 them are a big advantage to write web services. SQLAlchemy is one that comes
 in mind, that is one of the best ORM/DB tool out there, all languages
