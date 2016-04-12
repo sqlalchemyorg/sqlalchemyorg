@@ -121,6 +121,9 @@ helpful. At the very least, make sure you set up your email address via
 the <a href="https://gerrit.sqlalchemy.org/register">register</a> link so that
 you receive notifications of comments on the change.</p>
 
+<p>If you do use Gerrit, we strongly recommend using the <a href="http://docs.openstack.org/infra/git-review/">git-review</a> tool provided by the Openstack project.  Pushing to Gerrit
+is vastly easier using this tool.</p>
+
 
 <a name="testing"></a>
 <h2>Testing</h2>
