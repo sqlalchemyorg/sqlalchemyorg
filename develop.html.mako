@@ -13,6 +13,7 @@ Develop - SQLAlchemy
     <li><a href="#roster">Developer Roster</a></li>
     <li><a href="#developers">Development Community</a></li>
     <li><a href="#source">Source Access</a></li>
+    <li><a href="#pullrequests">Pull Requests</a></li>
     <li><a href="#testing">Testing</a></li>
     <li><a href="#integration">Continuous Integration</a></li>
     <li><a href="#documentation">Documentation</a></li>
@@ -84,10 +85,6 @@ git clone https://github.com/zzzeek/sqlalchemy.git
 </li>
 </ul>
 
-<p>To propose a code change, please submit a
-<a href="https://github.com/zzzeek/sqlalchemy/pulls">pull request</a> to
-<strong>Github</strong>.</p>
-
 <p>Major release branches are maintained using branches.  For example, to get at the 0.9 branch, the tag
 is called <code>rel_0_9</code>:</p>
 
@@ -97,6 +94,32 @@ is called <code>rel_0_9</code>:</p>
   </code>
 </p>
 
+<a name="pullrequests"></a>
+<h2>Pull Requests</h2>
+
+<p>The pull request is a widely understood system of submitting patches for review.
+SQLAlchemy accepts pull requests through GitHub as well as Bitbucket; GitHub
+is preferred.</p>
+
+<p>To propose a code change, please submit a
+<a href="https://github.com/zzzeek/sqlalchemy/pulls">pull request</a> to
+<strong>Github</strong>.</p>
+
+<p>While we accept pull requests through the usual channels, our current process
+of reviewing and integrating them is a little unusual; new pull requests are now
+closed (or on BitBucket marked as "declined") upon initial review without
+being merged at all; instead, the
+patch itself is imported into our Gerrit system at <a href="https://gerrit.sqlalchemy.org">https://gerrit.sqlalchemy.org</a> where we can review, modify, and run it through continuous
+integration tests with a high degree of control and collaborative ability.
+A comment on the pull request is added, providing a direct link
+to the Gerrit review as well as a direct link to fully register into Gerrit.
+Gerrit logins are provided via GitHub authorization.
+</p>
+
+<p>It's not strictly necessary to learn to use Gerrit though it is extremely
+helpful. At the very least, make sure you set up your email address via
+the <a href="https://gerrit.sqlalchemy.org/register">register</a> link so that
+you receive notifications of comments on the change.</p>
 
 
 <a name="testing"></a>
@@ -145,8 +168,8 @@ is called <code>rel_0_9</code>:</p>
 <a name="integration"></a>
 <h2>Continuous Integration</h2>
 
-The SQLAlchemy project uses Jenkins instances on internal hosts for
-continuous integration.   Public status viewing is not currently available.
+The SQLAlchemy project uses Jenkins for continuous integration.   Our read-only
+Jenkins interface is available at <a href="https://jenkins.sqlalchemy.org">https://jenkins.sqlalchemy.org</a>.
 
 <a name="documentation"></a>
 <h2>Documentation</h2>
@@ -178,9 +201,10 @@ continuous integration.   Public status viewing is not currently available.
     </ul>
 <a name="sprints"></a>
 <h2>Sprints</h2>
-<p>The SQLAlchemy project has a great interest in attracting developers through sprints.   Currently
-    there is only one official "sprint" per year at Pycon US.   We are in need of assistance for planning
-    these sprints such that new developers are well prepared to contribute and learn about SQLAlchemy.
+<p>The SQLAlchemy project has an interest in attracting developers through sprints.   Currently,
+    there are only occasional sprints typically annually at Pycon US, though not always.
+    We are in need of assistance with planning, organizing and running sprints
+    such that new developers are well prepared to contribute and learn about SQLAlchemy.
     Contributors who are interested in mentoring new developers at sprints or hosting other sprints during
     the year are encouraged to contact the developers, we would love to have more assistance in this area.
     </p>
