@@ -55,6 +55,17 @@ Organizations - SQLAlchemy
 </%self:user>
 
 <%self:user
+        name="RideLink"
+        logo="ridelink.png"
+        url="https://ridelink.com/"
+        anchor="ridelink"
+>
+    <a href="https://ridelink.com/">RideLink</a> is an online community where car
+    owners can safely rent their cars directly to drivers, making money in the process.
+    Most of our services layer is written in Python, using Pyramid and SQLAlchemy.
+</%self:user>
+
+<%self:user
         name="newcars.com (part of cars.com)"
         logo="carscom.png"
         url="http://www.newcars.com"
