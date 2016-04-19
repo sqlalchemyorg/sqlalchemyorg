@@ -70,7 +70,7 @@ Organizations - SQLAlchemy
         logo="level12.png"
         url="http://www.level12.io"
         anchor="level12">
-        <a href="http://www.level12.io">level12</a> is a web & database
+        <a href="http://www.level12.io">Level 12</a> is a web & database
         development firm that uses solid engineering,
         proactive communication, and modern development practices to make our
         customers really, really, happy.  SQLAlchemy is our preferred ORM for
