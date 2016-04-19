@@ -66,6 +66,18 @@ Organizations - SQLAlchemy
 </%self:user>
 
 <%self:user
+        name="Level 12"
+        logo="level12.png"
+        url="http://www.level12.io"
+        anchor="level12">
+        <a href="http://www.level12.io">level12</a> is a web & database
+        development firm that uses solid engineering,
+        proactive communication, and modern development practices to make our
+        customers really, really, happy.  SQLAlchemy is our preferred ORM for
+        custom Python web application development.
+</%self:user>
+
+<%self:user
         name="newcars.com (part of cars.com)"
         logo="carscom.png"
         url="http://www.newcars.com"
