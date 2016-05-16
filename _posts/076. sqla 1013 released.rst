@@ -1,0 +1,22 @@
+---
+date: 2016/05/16 15:45:02
+title: SQLAlchemy 1.0.13 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.0.13 is now available.
+
+Release 1.0.13 fixes a variety of issues targeted at the 1.0 series that have
+been resolved over the past several weeks.  Fixes include small issues
+repaired in the ORM, Core, Postgresql, Oracle, SQL Server dialects.  Most
+issues are very minor with the exception of one
+issue involving Oracle LOB types in conjunction with query caching
+(such as that used by the ``sqlalchemy.ext.baked``) extension which would
+cause result set fetches to fail.
+
+Changelog for 1.0.13 is at:
+
+`Changelog </changelog/CHANGES_1_0_13>`_
+
+SQLAlchemy 1.0.13 is available on the `Download Page </download.html>`_.
+
