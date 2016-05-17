@@ -27,7 +27,7 @@ release_milestones = {
     'eol': '0.7',
 }
 
-lowest_doc_version = '0.7'
+lowest_doc_version = '0.9'
 eol = '0.7'
 
 # this is actually down to 0.4
