@@ -19,11 +19,12 @@ def setup_context(context):
     context['toolbar'] = True
     context['base'] = "docs_adapter.mako"
 
-    context['pdf_url'] = "%spdf/%s/%s/%s.pdf" % (
-            context['MEDIA_URL'],
-            context['slug'],
-            context['current_version'],
-            context['slug']
-    )
+    context['pdf_url'] = None
+    #context['pdf_url'] = "%spdf/%s/%s/%s.pdf" % (
+    #        context['MEDIA_URL'],
+    #        context['slug'],
+    #        context['current_version'],
+    #        context['slug']
+    #)
 
 
