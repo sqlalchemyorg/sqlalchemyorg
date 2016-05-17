@@ -92,7 +92,7 @@ self.attr.bb_base = bb_base = bf.config.bb_url
         If you want to change it, more info is available in our docs:
           http://docs.readthedocs.org/en/latest/canonical.html
         -->
-        <link rel="canonical" href="http://${slug}.readthedocs.org/${rtd_language}/latest/${canonical_page.replace("index.html", "").replace("index/", "")}" />
+        <link rel="canonical" href="http://docs.sqlalchemy.org/${rtd_language}/latest/${canonical_page.replace("index.html", "").replace("index/", "")}" />
     % endif
 
     <script type="text/javascript">
