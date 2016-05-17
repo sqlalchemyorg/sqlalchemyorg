@@ -2,7 +2,7 @@ def setup_context(context):
     # add variables if not present, such
     # as if local test of READTHEDOCS variable
     if 'MEDIA_URL' not in context:
-        context['MEDIA_URL'] = "http://media.readthedocs.org/"
+        context['MEDIA_URL'] = ""  # "http://media.readthedocs.org/"
     if 'slug' not in context:
         context['slug'] = context['project'].lower()
     if 'url' not in context:
