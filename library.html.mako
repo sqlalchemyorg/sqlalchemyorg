@@ -59,16 +59,25 @@ behind both the Core and ORM components of SQLAlchemy:
 
 <a name="blog"></a>
 <h2>Blog Posts</h2>
-<p>A series of blog posts by Mike Bayer.</p>
 
 <ul>
+	<li>Posts by Mike Bayer
+	<ul>
 	<li><a href="http://techspot.zzzeek.org/category/sqlalchemy/">All SQLAlchemy posts on techspot</a></li>
 	<li><a href="http://techspot.zzzeek.org/2012/02/07/patterns-implemented-by-sqlalchemy/">Patterns Implemented by SQLAlchemy</a> - more architectural insights discussing the influence of Martin Fowler's work on SQLAlchemy's development.</li>
 	<li><a href="http://techspot.zzzeek.org/2012/01/11/django-style-database-routers-in-sqlalchemy/">Django-style Database Routers in SQLAlchemy</a> - background on how to build an ORM Session that refers to different databases using a custom
 	routing scheme.</li>
 	<li><a href="http://techspot.zzzeek.org/2011/10/21/hybrids-and-value-agnostic-types/">Hybrids and Value Agnostic Types</a> - background and advanced use cases on so-called "hybrid" datatypes</li>
 	<li><a href="http://techspot.zzzeek.org/2011/01/14/the-enum-recipe/">The Enum Recipe</a> - when and how to use enumerated types with SQLAlchemy.</li>
+	</ul>
+	</li>
 
+	<li>Other blog posts
+	<ul>
+	<li><a href="http://queue.acm.org/detail.cfm?id=2841313">Automation Should Be Like Iron Man, Not Ultron</a> - describes an approach to automation that favors and assists the expertise of the user, instead
+	of attempting to automate most use cases behind a facade (leaving the remaining 20% of them as inscrutable headaches).   This describes perfectly the rationale for SQLAlchemy's API design.
+	</li>
+	</ul>
 </ul>
 
 
@@ -220,7 +229,10 @@ at many conferences worldwide.   Here's only a choice few of them:
 		</%def>
 		This talk describes why SQLAlchemy has always been called a "toolkit", detailing the software construction mindset for which SQLAlchemy was designed to be used with.  The talk refers to this
 		as the "Hand Coded" approach, and has an emphasis on user-created patterns and conventions,
-		along with explicit exposure of relational structures.
+		along with explicit exposure of relational structures.    This talk
+		describes how SQLAlchemy abides by the <strong>complimentarity principle</strong> of automation, allowing the library's work to be exposed as
+		a series of transparent automation tools, rather than as an opaque wall hiding
+		the details.
 	</%self:talk>
 
 	<%self:talk
