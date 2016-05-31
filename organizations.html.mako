@@ -75,7 +75,7 @@ Organizations - SQLAlchemy
     with an existing database and/or SQLAlchemy model to allow
     RESTful APIs to any database backend, including MySQL, Postgresql, Oracle,
     MySQL, DB2 and SQLite as well as any other data store using a plug-in
-    model.   The product features both commercial and developer licensing models.
+    model.   The product features both commercial and free developer licensing models.
 </%self:user>
 
 <%self:user
