@@ -68,7 +68,7 @@ Organizations - SQLAlchemy
 <%self:user
     name="SlashDB"
     logo="slashdb.png"
-    url="http://www.slashdb.com"
+    url="http://www.slashdb.com/?utm_source=sqlalchemy&utm_medium=logo&utm_campaign=free4dev"
     anchor="slashdb"
 >
     <a href="http://www.slashdb.com/?utm_source=sqlalchemy&utm_medium=logo&utm_campaign=free4dev">SlashDB</a> is an instant REST API gateway to databases.  SlashDB works
