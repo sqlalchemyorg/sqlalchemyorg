@@ -66,6 +66,19 @@ Organizations - SQLAlchemy
 </%self:user>
 
 <%self:user
+    name="SlashDB"
+    logo="slashdb.png"
+    url="http://www.slashdb.com"
+    anchor="slashdb"
+>
+    <a href="http://www.slashdb.com/?utm_source=sqlalchemy&utm_medium=logo&utm_campaign=free4dev">SlashDB</a> is an instant REST API gateway to databases.  SlashDB works
+    with an existing database and/or SQLAlchemy model to allow
+    RESTful APIs to any database backend, including MySQL, Postgresql, Oracle,
+    MySQL, DB2 and SQLite as well as any other data store using a plug-in
+    model.   The product features both commercial and developer licensing models.
+</%self:user>
+
+<%self:user
         name="Level 12"
         logo="level12.png"
         url="http://www.level12.io"
