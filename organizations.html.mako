@@ -242,18 +242,6 @@ Organizations - SQLAlchemy
 </%self:user>
 
 <%self:user
-        name="Thumbtack"
-        logo="thumbtack.png"
-        url="http://www.thumbtack.com/"
-        anchor="thumbtack">
-        <a href="http://www.thumbtack.com/">Thumbtack</a> gives you the ability to vet, contact and book service professionals online.
-        SQLAlchemy is used throughout their backend data services, including their customer recommendation engine.  Per Thumbtack's
-        director of engineering, "Needless to say we can deploy updates and improvements to our internal tools much
-        faster because SQLAlchemy saves us so much time!"
-</%self:user>
-
-
-<%self:user
         name="PayLogic"
         logo="paylogic.png"
         url="http://paylogic.eu/"
