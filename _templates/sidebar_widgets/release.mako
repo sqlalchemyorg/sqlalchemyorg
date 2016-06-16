@@ -33,14 +33,17 @@
     <br/><br/>
 </%def>
 
-${release(milestone, "Current Release")}
-% if 'maintenance' in release_milestones:
-    ${release("maintenance", "Previous Series")}
-% endif
-
 % if 'beta' in release_milestones:
     ${release("beta", "Beta Release")}
-% elif 'development' in release_milestones:
+% endif
+
+${release(milestone, "Current Release")}
+
+## % if 'maintenance' in release_milestones:
+##    ${release("maintenance", "Previous Series")}
+## % endif
+
+% if 'development' in release_milestones:
 
 <%
     dev_version = release_milestones['development']

@@ -1,0 +1,59 @@
+---
+date: 2016/06/16 15:45:02
+title: SQLAlchemy 1.1.0b1 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.1.0b1 is now available.
+
+This is the first beta release in the new 1.1 series of SQLAlchemy.  Users
+are encouraged to ensure that their ``pip`` installations are up-to-date, so
+that version 1.1.0b1 will only install if explcitly specified using the
+``--pre`` flag.
+
+The 1.1 series includes a wide variety of enhancements and behavioral
+improvements across all areas, including Core, ORM and dialects.  In particular,
+the 1.1 series has an especially long list of new capabilities targeted
+at the Postgresql database.  This is largely thanks to a much larger volume
+of user contributions to the codebase this time around, as well as a
+focus on Postgresql overall as this platform continues to add new features
+at a very high rate.
+
+Key highlights of version 1.1 include:
+
+* **Sesion lifecycle events** - Within the ORM, the entire ``Session`` lifecycle
+  is now trackable via events on a per-object basis, allowing code to be
+  notified when objects are added to sessions, when they become persistent,
+  detached, deleted, etc.
+
+* **CTE support for INSERT, UPDATE, DELETE** - Common table expressions are
+  now fully compatible with INSERT, UPDATE and DELETE expressions, as is most
+  commonly used with Postgresql.
+
+* **JSON / ARRAY Support in Core, MySQL JSON** - The Postgresql JSON and ARRAY
+  types are greatly enhanced, and are built on top of Core versions of these constructs
+  that work generically without the need to import special Postgresql datatypes.
+  The JSON type in particular also works on newer MySQL versions (as of version 5.7)
+  and provides some degree of behavioral parity vs. the Postgresql version.
+
+* **Support for LATERAL, TABLESAMPLE, WITHIN GROUP** - among a number
+  of newly supported SQL standard constructs are these widely requested SQL
+  constructs, all supported by the Postgresql backend.
+
+* **Support for INSERT..ON CONFLICT** - SQLAlchemy's first foray into
+  the realm of "upserts" is provided via Postgresql 9.5's "INSERT..ON CONFLICT"
+  syntax, now fully supported using a Postgresql specific version of the
+  ``insert()`` function.
+
+* **Result set improvements** - the internal mechanics of result sets are further
+  enhanced to take more advantage of positional column targeting, that is, matching
+  up columns from a SQL expression object to the result row itself based on the known
+  position in the row, rather than through matching string names.   This improves
+  both the resiliency of the result set system (much fewer "can't find column X in row"
+  types of errors) as well as its performance.
+
+Users should carefully review the `What's New in SQLAlchemy 1.1? </docs/latest/changelog/migration_11.html>`_ document as well as the `Changelog </changelog/CHANGES_1_1_0b1>`_ to
+note which behaviors and issues are affected.   We'd like to thank
+the many contributors who helped with this release.
+
+SQLAlchemy 1.1.0b1 is available on the `Download Page </download.html>`_.
