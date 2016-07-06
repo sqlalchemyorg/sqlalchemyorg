@@ -32,8 +32,9 @@ accommodate both of these principles.</p>
     decoupled way from the beginning.</p>
 
 <p>SQLAlchemy's overall approach to these problems is entirely different
-from that of most other SQL / ORM tools, and is fully based on the <strong>Complimentarity Principle</strong> of automation; instead of hiding away SQL and object relational details behind a
-wall of automation, all processes are <strong>fully exposed</strong> within a series of composable, transparent tools.  The library takes on the job of automating redundant tasks while the developer remains in control of how SQL is constructed.</p>
+from that of most other SQL / ORM tools, rooted in a so-called <strong>complimentarity-</strong>
+oriented approach; instead of hiding away SQL and object relational details behind a
+wall of automation, all processes are <strong>fully exposed</strong> within a series of composable, transparent tools.  The library takes on the job of automating redundant tasks while the developer remains in control of how the database is organized and how SQL is constructed.</p>
 
 <p>The main goal of SQLAlchemy is to change the way you think about databases
 and SQL! </p>
