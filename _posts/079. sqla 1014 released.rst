@@ -1,0 +1,23 @@
+---
+date: 2016/07/06 15:45:02
+title: SQLAlchemy 1.0.14 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.0.14 is now available.
+
+This is the latest release in the 1.0 series which includes  a variety of bug
+fixes that have accumulated since the last 1.0 release.  This release happens
+to only feature Core and dialect level changes; none are ORM specific.  All
+applicable fixes here are also in the 1.1 series, most of which are already
+released as of 1.1.0b2.  As the 1.1 series moves towards final release, the 1.0
+series will move into "maintenance" mode with very few additional changes being
+made.
+
+Users should review the changelog for 1.0.14 at
+`Changelog </changelog/CHANGES_1_0_14>`_;  we'd like to thank
+the many contributors who helped with this release.
+
+
+SQLAlchemy 1.0.14 is available on the `Download Page </download.html>`_.
+
