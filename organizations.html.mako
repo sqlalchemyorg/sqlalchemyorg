@@ -55,6 +55,15 @@ Organizations - SQLAlchemy
 </%self:user>
 
 <%self:user
+        name="Kalibrr"
+        logo="kalibrr.png"
+        url="https://www.kalibrr.com/"
+        anchor="kalibrr"
+>
+    <a href="https://www.kalibrr.com/">Kalibrr</a> is a recommendations-powered recruitment and job-seeking platform based in the Philippines. We've been powered by Pyramid, SQLAlchemy, and PostgreSQL since 2013 (coming from ActiveRecord) and have been in love with it ever since.
+</%self:user>
+
+<%self:user
         name="RideLink"
         logo="ridelink.png"
         url="https://ridelink.com/"
