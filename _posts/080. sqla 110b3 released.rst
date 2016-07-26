@@ -1,0 +1,19 @@
+---
+date: 2016/07/26 15:45:02
+title: SQLAlchemy 1.1.0b3 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.1.0b3 is now available.
+
+This is likely the last beta of the 1.1 series, which repairs a few
+issues in the new CTE for UPDATE/INSERT feature.   Overall not many
+regressions or issues have been reported in the beta series, however
+this is typical; once the 1.1 final release comes out, the userbase
+grows dramatically and more issues should be expected.
+
+Users should carefully review the `What's New in SQLAlchemy 1.1? </docs/latest/changelog/migration_11.html>`_ document as well as the `Changelog </changelog/CHANGES_1_1_0b3>`_ to
+note which behaviors and issues are affected.   We'd like to thank
+the many contributors who helped with this release.
+
+SQLAlchemy 1.1.0b3 is available on the `Download Page </download.html>`_.
