@@ -1,0 +1,18 @@
+---
+date: 2016/09/01 15:45:02
+title: SQLAlchemy 1.0.15 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.0.15 is now available.
+
+Release 1.0.15 features a small number of bug fixes that have been made
+over the past two months since the previous 1.0.x release.
+
+Users should review the changelog for 1.0.15 at
+`Changelog </changelog/CHANGES_1_0_15>`_;  we'd like to thank
+the many contributors who helped with this release.
+
+
+SQLAlchemy 1.0.15 is available on the `Download Page </download.html>`_.
+
