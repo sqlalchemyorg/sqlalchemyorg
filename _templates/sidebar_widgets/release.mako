@@ -39,9 +39,9 @@
 
 ${release(milestone, "Current Release")}
 
-## % if 'maintenance' in release_milestones:
-##    ${release("maintenance", "Previous Series")}
-## % endif
+% if 'maintenance' in release_milestones:
+    ${release("maintenance", "Previous Series")}
+% endif
 
 % if 'development' in release_milestones:
 
