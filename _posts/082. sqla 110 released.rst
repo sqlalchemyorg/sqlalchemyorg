@@ -1,0 +1,60 @@
+---
+date: 2016/10/05 15:45:02
+title: SQLAlchemy 1.1.0 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.1.0 is now available.
+
+Release 1.1.0 is the first official release in the 1.1 series, after
+three beta releases.   The release represents the past eighteen months
+of new feature development since version 1.0 was released.    The very long
+list of new capabilities has a focus on Core, particularly
+in the area of SQL syntaxes that are either solely supported by, or are
+most commonly used on the Postgresql database, and development was greatly
+assisted by a highly involved community working sometimes for many weeks
+on new features.
+
+Major new SQL features include:
+
+* Common table expression (CTE) support for INSERT, UPDATE, DELETE
+
+* Support for Postgresql upsert  - INSERT..ON CONFLICT (DO UPDATE | DO NOTHING)
+
+* Support for MySQL's JSON type
+
+* Support for RANGE and ROWS specification within window functions
+
+* Support for the SQL LATERAL keyword support by Postgresql
+
+* Support for TABLESAMPLE
+
+* Core and ORM support for FULL OUTER JOIN
+
+* Support for IS DISTINCT FROM and IS NOT DISTINCT FROM
+
+* Support for WITHIN GROUP, ARRAY_AGG
+
+* Support for FOR UPDATE SKIP LOCKED  / FOR NO KEY UPDATE / FOR KEY SHARE
+
+There are also many new ORM features including a new "raise" loader that
+prevents inadvertent lazy loading, new event hooks for Session objects that allow
+tracking of all stages of an object's lifecycle, and new "mutable" collections
+for columns that store serialized object structures.
+
+Along with the new SQL syntax and ORM features are a wide array of ORM and
+execution engine fixes and improvements, and an absolute minimum of behavioral changes that
+run the risk of being surprising.  Nevertheless, as is always the case,
+there are many areas where something that didn't work before will work
+now; users should please carefully
+review the full series of migration notes at
+`What's new in 1.1? </docs/latest/changelog/migration_11.html>`_ to see the full
+expanse of things that have changed.
+
+The complete changelog for 1.1.0 as well as all the beta releases is at
+`Changelog </changelog/CHANGES_1_1_0>`_;  we'd like to thank
+the many contributors who helped with this release.
+
+
+SQLAlchemy 1.1.0 is available on the `Download Page </download.html>`_.
+

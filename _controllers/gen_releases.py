@@ -20,15 +20,14 @@ pypi_url_json = "https://pypi.python.org/pypi/SQLAlchemy/json"
 # ==============================================================================
 
 release_milestones = {
-    'beta': '1.1',
-    'current': '1.0',
-    'maintenance': '0.9',
-    'security': '0.8',
-    'eol': '0.7',
+    'current': '1.1',
+    'maintenance': '1.0',
+    'security': '0.9',
+    'eol': '0.8',
 }
 
 lowest_doc_version = '0.9'
-eol = '0.7'
+eol = '0.8'
 
 # this is actually down to 0.4
 # but I don't want those to be even linked
