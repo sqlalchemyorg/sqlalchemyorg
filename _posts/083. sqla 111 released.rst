@@ -1,0 +1,18 @@
+---
+date: 2016/10/07 15:45:02
+title: SQLAlchemy 1.1.1 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.1.1 is now available.
+
+Release 1.1.1 includes two quick hits to issues reported in 1.1.0, released
+two days ago.  One is a failure to connect to some configurations of SQL Server
+with pyodbc, and the other is that a newly added CompileError that intercepts
+primary key issues on INSERT has been dialed back to a warning, allowing the
+database to raise IntegrityError as it normally would.
+
+Changelog for 1.1.1 is at `Changelog </changelog/CHANGES_1_1_1>`_.
+
+SQLAlchemy 1.1.1 is available on the `Download Page </download.html>`_.
+
