@@ -24,7 +24,7 @@ self.attr.bb_base = bb_base = bf.config.bb_url
         import urlparse
     %>
 
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700' rel='stylesheet' type='text/css'/>
+    <link href='//fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700' rel='stylesheet' type='text/css'/>
 
     <%block name="css">
         <!-- begin iterate through SQLA css_files -->
