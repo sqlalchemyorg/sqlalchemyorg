@@ -1,0 +1,18 @@
+---
+date: 2016/10/27 15:45:02
+title: SQLAlchemy 1.1.3 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.1.3 is now available.
+
+Release 1.1.3 continues a series of very fast releases since 1.1.0
+was first released, containing fixes for several more small regressions.
+As is usually the case with such regressions, each one involves an
+unanticipated use case so are not expected to impact most
+users.
+
+Changelog for 1.1.3 is at `Changelog </changelog/CHANGES_1_1_3>`_.
+
+SQLAlchemy 1.1.3 is available on the `Download Page </download.html>`_.
+
