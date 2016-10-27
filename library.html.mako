@@ -230,7 +230,7 @@ at many conferences worldwide.   Here's only a choice few of them:
 		This talk describes why SQLAlchemy has always been called a "toolkit", detailing the software construction mindset for which SQLAlchemy was designed to be used with.  The talk refers to this
 		as the "Hand Coded" approach, and has an emphasis on user-created patterns and conventions,
 		along with explicit exposure of relational structures.    This talk
-		describes how SQLAlchemy makes use of a "person-focused" style of automation, allowing the library's work to be exposed as
+                describes how SQLAlchemy abides by what has been described as the <a href="http://queue.acm.org/detail.cfm?id=2841313">complimentarity principle of automation</a> (not to be confused with the more common physics term), allowing the library's work to be exposed as
 		a series of transparent automation tools, rather than as an opaque wall hiding
 		the details.
 	</%self:talk>
