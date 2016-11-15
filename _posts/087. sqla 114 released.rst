@@ -1,0 +1,18 @@
+---
+date: 2016/11/15 15:45:02
+title: SQLAlchemy 1.1.4 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.1.4 is now available.
+
+Release 1.1.4 includes a variety of bug fixes, some backported to the 1.0
+series and others which repair minor regressions in the 1.1 series.  There
+is also an important fix to the new Postgresql ON CONFLICT feature,
+as well as a new feature allowing server side cursor functionality
+to be usable with MySQL.
+
+Changelog for 1.1.4 is at `Changelog </changelog/CHANGES_1_1_4>`_.
+
+SQLAlchemy 1.1.4 is available on the `Download Page </download.html>`_.
+

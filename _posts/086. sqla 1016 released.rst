@@ -1,0 +1,16 @@
+---
+date: 2016/11/15 15:44:02
+title: SQLAlchemy 1.0.16 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.0.16 is now available.
+
+Release 1.0.16 includes a series backported bug fixes from SQLAlchemy versions
+1.1.0 to 1.1.4.   These changes include a handful of relatively minor ORM and
+MS SQL Server fixes.
+
+Changelog for 1.0.16 is at `Changelog </changelog/CHANGES_1_0_16>`_.
+
+SQLAlchemy 1.0.16 is available on the `Download Page </download.html>`_.
+
