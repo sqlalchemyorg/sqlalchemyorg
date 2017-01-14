@@ -53,7 +53,6 @@ and SQL! </p>
             <li><a href="/organizations.html#reddit">reddit</a></li>
             <li><a href="/organizations.html#firefox">Mozilla</a></li>
             <li><a href="/organizations.html#surveymonkey">Survey Monkey</a></li>
-            <li><a href="/organizations.html#lolapps">lolapps</a></li>
             <li><a href="/organizations.html#freshbooks">Freshbooks</a></li>
             <li><a href="/organizations.html#fedoraproject">Fedora Project</a></li>
         </ul>
