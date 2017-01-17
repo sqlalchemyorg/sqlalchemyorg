@@ -1,0 +1,17 @@
+---
+date: 2017/1/17 15:44:02
+title: SQLAlchemy 1.0.17 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.0.17 is now available.
+
+The 1.0.x series is well into maintenance mode and most fixes and enhancements
+are targeted only at the 1.1.x series.   This release includes only one ORM
+related fix as well as repairs to deprecation warnings that are more prevalent
+with the Python 3.6 interpreter.
+
+Changelog for 1.0.17 is at `Changelog </changelog/CHANGES_1_0_17>`_.
+
+SQLAlchemy 1.0.17 is available on the `Download Page </download.html>`_.
+
