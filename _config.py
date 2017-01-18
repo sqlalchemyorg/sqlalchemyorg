@@ -28,9 +28,9 @@ blog.enabled = True
 blog.path = "/blog"
 blog.priority = 50
 
-blog.name = "Your Blog's Name"
+blog.name = "SQLAlchemy"
 
-blog.description = "Your Blog's short description"
+blog.description = "Announcements for SQLAlchemy"
 
 blog.timezone = "US/Eastern"
 
