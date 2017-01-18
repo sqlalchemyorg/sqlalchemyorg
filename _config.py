@@ -7,9 +7,9 @@ docs = controllers.docs
 docs.enabled = True
 docs.priority = 50
 
-docs_url = "//docs.sqlalchemy.org"
+docs_url = "http://docs.sqlalchemy.org"
 bb_url = "https://bitbucket.org/zzzeek/sqlalchemy"
-site.url = "//www.sqlalchemy.org"
+site.url = "http://www.sqlalchemy.org"
 
 
 filters.syntax_highlight.style= "manni"
