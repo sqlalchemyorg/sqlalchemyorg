@@ -452,8 +452,8 @@ relational databases accessed via SQLAlchemy.
     <a href="https://rollbar.com">Rollbar</a> provides powerful, real-time error insights and analytics for
     engineering teams. Instantly know what code is broken and why. Rollbar detects and alerts
     you when code breaks in production and provides the source code and state to help
-    you defeat impactful errors.  Rollbar's team are big fans of SQLAlchemy, which is used within
-    internal applications.
+    you defeat impactful errors.  Rollbar uses SQLAlchemy in their web tier and backend processing pipeline 
+    which processes billions of alerts for thousands of customers.
 </%self:user>
 
 <%self:user
