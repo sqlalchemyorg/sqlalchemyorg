@@ -30,16 +30,17 @@
     <a href="${release_rec['docs']}">docs</a>
     <br/>
     Released ${latest_rec['release_date'].strftime("%B %d, %Y")}
-    <br/><br/>
 </%def>
 
 % if 'beta' in release_milestones:
     ${release("beta", "Beta Release")}
+    <br/><br/>
 % endif
 
 ${release(milestone, "Current Release")}
 
 % if 'maintenance' in release_milestones:
+    <br/><br/>
     ${release("maintenance", "Previous Series")}
 % endif
 
