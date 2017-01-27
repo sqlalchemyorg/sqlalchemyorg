@@ -455,7 +455,7 @@ $nav_height: 32px;
 #sidebar {
     .box {
         @extend .box;
-        margin: 0 0 2em 0;
+        margin: 0 0 1em 0;
         padding: 15px 15px 1em 15px;
     }
     .donate p {
@@ -635,3 +635,4 @@ div.read_latest_button {
         background: #F6F6F6;
     }
 }
+

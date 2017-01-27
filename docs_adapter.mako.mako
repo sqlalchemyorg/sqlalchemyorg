@@ -42,6 +42,7 @@ self.attr.bb_base = bb_base = bf.config.bb_url
         <!-- end iterate through sphinx environment local css_files -->
 
         <link rel="stylesheet" type="text/css" media="all" href="${site_base}/css/site.css"/>
+        <link rel="stylesheet" type="text/css" media="all" href="${site_base}/css/carbonads.css"/>
         <link rel="stylesheet" type="text/css" media="print" href="${site_base}/css/print.css"/>
 
         <!-- begin iterate through sphinx environment remote css_files -->
@@ -52,6 +53,10 @@ self.attr.bb_base = bb_base = bf.config.bb_url
         % endfor
         <!-- end iterate through sphinx environment remote css_files -->
     </%block>
+
+    <%def name="bannerad()">
+        </%text><%include file="/sidebar_widgets/bannerad.mako"/><%text>
+    </%def>
 
     <%block name="headers">
 

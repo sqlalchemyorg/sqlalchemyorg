@@ -4,6 +4,10 @@
     <%include file="/sidebar_widgets/release.mako"/>
 </div>
 
+<div class="box banner">
+    <%include file="/sidebar_widgets/bannerad.mako"/>
+</div>
+
 <div class="box donate">
     <%include file="/sidebar_widgets/donate.mako"/>
 </div>
