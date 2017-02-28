@@ -1,0 +1,22 @@
+---
+date: 2017/2/28 15:45:02
+title: SQLAlchemy 1.1.6 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.1.6 is now available.
+
+Release 1.1.6 continues to provide bug fixes and some new features within the
+1.1 series.  As we begin to lead into the development phase  for 1.2 and
+solidify the 1.1 series as "done", additional behavioral improvements will more
+likely to be targeted at 1.2 rather than 1.1.   Nevertheless, 1.1.6 includes a
+few fairly major behavioral improvements in the area of performance; some
+significant performance issues within the "joined eager loading" functionality
+were identified and repaired, which should cut the Python-level latency for
+such a query roughly in half, as well as an unnecessary SELECT which could emit
+when using the "eager defaults" feature was repaired.
+
+Changelog for 1.1.6 is at `Changelog </changelog/CHANGES_1_1_6>`_.
+
+SQLAlchemy 1.1.6 is available on the `Download Page </download.html>`_.
+
