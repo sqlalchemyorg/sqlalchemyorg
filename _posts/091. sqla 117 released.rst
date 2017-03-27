@@ -1,0 +1,21 @@
+---
+date: 2017/03/27 15:45:02
+title: SQLAlchemy 1.1.7 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.1.7 is now available.
+
+Release 1.1.7 includes several bugfixes, one of which was introduced in 1.1.6
+as a result of performance enhancements for joined eager loading which presents
+as a race condition under certain multithreaded scenarios. Fixes also include
+an important adjustment in the cx_Oracle dialect to adjust for changes in
+cx_Oracle release 5.3, resolution of an extremely small memory leak which could
+occur in the relatively unusual case that an arbitrarily high number of
+savepoints were established on a single ``Connection`` object, as well as an
+important fix in the "schema translate" feature.
+
+Changelog for 1.1.7 is at `Changelog </changelog/CHANGES_1_1_7>`_.
+
+SQLAlchemy 1.1.7 is available on the `Download Page </download.html>`_.
+
