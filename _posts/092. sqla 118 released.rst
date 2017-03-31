@@ -1,0 +1,18 @@
+---
+date: 2017/03/31 15:45:02
+title: SQLAlchemy 1.1.8 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.1.8 is now available.
+
+Release 1.1.8 is only a few days ahead of 1.1.7, however is being released
+early in order to deliver a few fixes requested by downstream projects.
+In particular, a regression from the 1.0.x series involving the
+``sqlalchemy.ext.mutable`` extension is fixed.
+
+Changelog for 1.1.8 is at `Changelog </changelog/CHANGES_1_1_8>`_.
+
+SQLAlchemy 1.1.8 is available on the `Download Page </download.html>`_.
+
+
