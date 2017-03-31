@@ -6,7 +6,7 @@ author: Mike B
 
 SQLAlchemy release 1.1.8 is now available.
 
-Release 1.1.8 is only a few days ahead of 1.1.7, however is being released
+Release 1.1.8 is only a few days past 1.1.7, however is being released
 early in order to deliver a few fixes requested by downstream projects.
 In particular, a regression from the 1.0.x series involving the
 ``sqlalchemy.ext.mutable`` extension is fixed.
