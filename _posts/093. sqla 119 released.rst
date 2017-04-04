@@ -1,0 +1,21 @@
+---
+date: 2017/04/04 15:45:02
+title: SQLAlchemy 1.1.9 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.1.9 is now available.
+
+A continuing stream of small regressions is leading us to have to
+put out releases every few days at the moment.  This release
+includes a fix to a regression that was caused by a fix to a regression
+:), specifically the ``sqlalchemy.ext.mutable`` fix put out in 1.1.8.
+It also fixes a different regression in the typing system introduced in 1.1.5,
+and also has a regular bug fix for another issue regarding "connectionless"
+execution.
+
+Changelog for 1.1.9 is at `Changelog </changelog/CHANGES_1_1_9>`_.
+
+SQLAlchemy 1.1.9 is available on the `Download Page </download.html>`_.
+
+
