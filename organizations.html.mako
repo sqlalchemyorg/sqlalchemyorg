@@ -157,6 +157,13 @@ also makes use of Flask, MySQL, and Redis.
         50,000,000 users using a custom-built SQLAlchemy Core approach on top of MySQL.
 </%self:user>
 
+<%self:user
+        name="ElectricSmokerZone"
+        logo="electricsmoker.jpg"
+        url="http://www.electricsmokerzone.com/"
+        anchor="electricsmoker">
+        <a href="http://www.electricsmokerzone.com/">ElectricSmokerZone</a> provides useful and well-detailed information about electric smoker products and brands.  Detail on how to choose the best for a long lasting performance as well as tutorials on smoking meat are provided.  SQLAlchemy is used for database access within the site.
+</%self:user>
 
 <%self:user
         name="FastMonkeys"
@@ -452,7 +459,7 @@ relational databases accessed via SQLAlchemy.
     <a href="https://rollbar.com">Rollbar</a> provides powerful, real-time error insights and analytics for
     engineering teams. Instantly know what code is broken and why. Rollbar detects and alerts
     you when code breaks in production and provides the source code and state to help
-    you defeat impactful errors.  Rollbar uses SQLAlchemy in their web tier and backend processing pipeline 
+    you defeat impactful errors.  Rollbar uses SQLAlchemy in their web tier and backend processing pipeline
     which processes billions of alerts for thousands of customers.
 </%self:user>
 
