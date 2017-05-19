@@ -1,0 +1,19 @@
+---
+date: 2017/05/19 15:45:02
+title: SQLAlchemy 1.1.10 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.1.10 is now available.
+
+Release 1.1.10 contains a short series of fixes to specific behaviors,
+primarily in Core, as well as one issue with "delete orphan" cascade
+when using inheriting mappers.  No regressions were encountered since 1.1.9.
+Release 1.1.10 is recommended for users who are impacted by the specific
+issues listed.
+
+Changelog for 1.1.10 is at `Changelog </changelog/CHANGES_1_1_10>`_.
+
+SQLAlchemy 1.1.10 is available on the `Download Page </download.html>`_.
+
+
