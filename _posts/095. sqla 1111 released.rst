@@ -1,0 +1,17 @@
+---
+date: 2017/06/19 15:45:02
+title: SQLAlchemy 1.1.11 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.1.11 is now available.
+
+Release 1.1.11 includes a series of fixes providing forwards-compatibility
+with a variety new behaviors in supported databases.   A few other core
+fixes and one ORM-related fix is also included.
+
+Changelog for 1.1.11 is at `Changelog </changelog/CHANGES_1_1_11>`_.
+
+SQLAlchemy 1.1.11 is available on the `Download Page </download.html>`_.
+
+
