@@ -41,15 +41,16 @@ if not current_section and in_docs:
 
 % if not in_docs:
 
+    <%block name="sidebar">
+        <%include file="sidebar.mako" args="section=current_section" />
+    </%block>
+
     <div id="content">
     <div id="content-inner">
     ${next.body(**pageargs)}
     </div>
     </div> <!-- end #content-inner, #content -->
 
-    <%block name="sidebar">
-        <%include file="sidebar.mako" args="section=current_section" />
-    </%block>
 
 % else:
 

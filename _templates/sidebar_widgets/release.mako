@@ -22,12 +22,11 @@
 %>
     <div class="release_panel">
     <a href="/download.html"><b>${latest_rec['version']}</b></a> -
-        ${latest_rec['release_date'].strftime("%Y-%m-%d")}
+        ${latest_rec['release_date'].strftime("%Y-%m-%d")} -
+        <a href="${latest_rec['announcement_url']}">announce</a>
     <br/>
-    <a href="${latest_rec['announcement_url']}">Announcement</a> |
-    <a href="${latest_rec['changelog']}">Changelog</a>
-    <br/>
-    <a href="${release_rec['migration_url']}">Migration Notes</a> |
+    <a href="${latest_rec['changelog']}">changes</a> |
+    <a href="${release_rec['migration_url']}">migration notes</a> |
     <a href="${release_rec['docs']}">docs</a>
     </div>
 </%def>

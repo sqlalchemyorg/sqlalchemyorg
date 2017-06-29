@@ -154,7 +154,7 @@ li:hover > a.headerlink
     @extend .pagetext;
     @extend .topic-box-body-font;
     float: right;
-    width: 280px;
+    width: 340px;
 
     .release_panel {
         border-right: 1px solid #ccc;
@@ -168,11 +168,12 @@ li:hover > a.headerlink
 
 #content {
     @extend .pagetext;
-    float: left;
-    width: 70%;
-    max-width: 1024px;
+    /*float: left;*/
+    /*width: 70%;*/
+    margin-right: 400px;
 
     #content-inner {
+        max-width: 1024px;
         margin: 0 30px 0 0;
     }
 }
@@ -464,7 +465,7 @@ $nav_height: 32px;
 #sidebar {
     .box {
         @extend .box;
-        margin: 0 0 1em 0;
+        margin: 0 0 10px 0;
         padding: 15px 15px 10px 15px;
     }
     .donate p {
