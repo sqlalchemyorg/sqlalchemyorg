@@ -5,6 +5,10 @@
 </div>
 
 <div class="box banner">
+    <%include file="/sidebar_widgets/datacamp.mako"/>
+</div>
+
+<div class="box banner">
     <%include file="/sidebar_widgets/bannerad.mako"/>
 </div>
 
