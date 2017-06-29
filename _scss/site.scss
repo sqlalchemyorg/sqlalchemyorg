@@ -136,7 +136,7 @@ li:hover > a.headerlink
 
 #wrap {
     position: relative;
-    /*max-width: 1024px;*/
+    max-width: 1600px;
     min-width: 400px;
     margin: 0 auto;
     text-align: left;
@@ -154,8 +154,7 @@ li:hover > a.headerlink
     @extend .pagetext;
     @extend .topic-box-body-font;
     float: right;
-    width: 300px;
-    /*min-width: 27%;*/
+    width: 280px;
 
     .release_panel {
         border-right: 1px solid #ccc;
@@ -171,6 +170,7 @@ li:hover > a.headerlink
     @extend .pagetext;
     float: left;
     width: 70%;
+    max-width: 1024px;
 
     #content-inner {
         margin: 0 30px 0 0;
