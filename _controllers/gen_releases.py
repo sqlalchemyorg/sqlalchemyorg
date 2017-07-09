@@ -20,7 +20,7 @@ pypi_url_json = "https://pypi.python.org/pypi/SQLAlchemy/json"
 # ==============================================================================
 
 release_milestones = {
-    'development': '1.2',
+    'beta': '1.2',
     'current': '1.1',
     'maintenance': '1.0',
     'security': '0.9',
@@ -40,7 +40,7 @@ def run():
     r = requests.get(pypi_url_json)
     pypi_data = json.loads(r.content)
 
-    #with open("sqla.json") as f:
+    #with open("sqla_sample.json") as f:
     #   pypi_data = json.load(f)
 
     bf.config.release_milestones = milestones = dict(

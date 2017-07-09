@@ -1,0 +1,59 @@
+---
+date: 2017/07/10 15:45:02
+title: SQLAlchemy 1.2.0b1 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.2.0b1 is now available.
+
+This is the first beta for the 1.2 series of SQLAlchemy.  As is always
+the case for beta releases, the release is available on Pypi, but only
+installable when specifying the ``--pre`` flag with ``pip``.
+
+Key highlights of version 1.2 include:
+
+* **Connection pool pre-ping** - The connection pool now includes an optional
+  "pre ping" feature that will test the "liveness" of a pooled connection   for
+  every connection checkout, transparently recycling the DBAPI   connection if
+  the database is disconnected.  This feature eliminates the need for the "pool
+  recycle" flag   as well as the issue of errors raised when a pooled connection
+  is   used after a database restart.
+
+* **New eagerloading features** - an all-new eager loader called "selectin" is
+  added.  This loader is similar to "subquery" eager loading, but foregoes
+  embedding a complex subquery in favor of using a simple IN expression
+  which uses the primary key values of the just-loaded objects to locate related
+  rows.   This style of loading will perform dramatically better than
+  "subquery" eager loading in many cases.
+
+* **New polymorphic loading options** - A new "selectin" loader is also
+  implemented for polymorphic inheritance hieararchies, which will load the
+  extra table rows for subclasses in a result set all at once, without the
+  need to use JOIN or "with_polymorphic".   New declarative options are added
+  to allow per-subclass polymorphic loading configuration as well.
+
+* **The IN operator now emits a simple expression for empty IN** - The long
+  standing behavior of "empty in" resolving to a non-performant expression
+  with a warning has been removed as default behavior; for an IN with no
+  elements, a simple ``1 != 1`` expression is now used to evaluate to "false".
+
+* **INSERT..ON DUPLICATE KEY UPDATE support in MySQL** - complementing the
+  support for PostgreSQL "INSERT..ON CONFLICT" in 1.1, the MySQL dialect
+  now supports the ON DUPLICATE KEY phrase.   Simple database-agnostic
+  "merge" routines can now be composed against these two backends.
+
+* **COMMENT Support** - thanks to a generous contribution, version 1.2
+  can emit all necessary DDL as well as fully reflect SQL comments for tables
+  and columns against the MySQL, PostgreSQL, and Oracle backends.
+
+* **SQL expression caching within ORM loaders** - the "lazyload" feature
+  as well as the new "selectin" loading now use SQL expression caching using
+  the "baked query" extension when emitting queries, removing a significant
+  bulk of Python overhead from these very common operations.
+
+
+Users should carefully review the `What's New in SQLAlchemy 1.2? </docs/latest/changelog/migration_12.html>`_ document as well as the `Changelog </changelog/CHANGES_1_2_0b1>`_ to
+note which behaviors and issues are affected.   We'd like to thank
+the many contributors who helped with this release.
+
+SQLAlchemy 1.2.0b1 is available on the `Download Page </download.html>`_.
