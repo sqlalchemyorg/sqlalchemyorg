@@ -27,7 +27,7 @@ Key highlights of version 1.2 include:
   "subquery" eager loading in many cases.
 
 * **New polymorphic loading options** - A new "selectin" loader is also
-  implemented for polymorphic inheritance hieararchies, which will load the
+  implemented for polymorphic inheritance hierarchies, which will load the
   extra table rows for subclasses in a result set all at once, without the
   need to use JOIN or "with_polymorphic".   New declarative options are added
   to allow per-subclass polymorphic loading configuration as well.
