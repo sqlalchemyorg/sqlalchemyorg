@@ -1,0 +1,18 @@
+---
+date: 2017/07/24 15:45:02
+title: SQLAlchemy 1.1.12 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.1.12 is now available.
+
+This release repairs an issue in the test suite that would prevent
+the suite from passing on Python version 3.6.2.   The release is
+made at the same time as that of release 1.0.18 and 1.2.0b2.  Also included
+are fixes related to ORM use of JSON NULL values, subquery eager loading,
+and a stability enhancement involving the identity map when used under
+high concurrency.
+
+Changelog for 1.1.12 is at `Changelog </changes/CHANGES_1_1_12>`_.
+
+SQLAlchemy 1.1.12 is available on the `Download Page </download.html>`_.

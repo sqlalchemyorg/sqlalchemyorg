@@ -1,0 +1,25 @@
+---
+date: 2017/07/24 15:45:03
+title: SQLAlchemy 1.2.0b2 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.2.0b2 is now available.
+
+This release repairs an issue in the test suite that would prevent
+the suite from passing on Python version 3.6.2.   The release is
+made at the same time as that of release 1.0.18 and 1.1.12.  Also included
+are fixes related to ORM use of JSON NULL values, subquery eager loading,
+and a stability enhancement involving the identity map when used under
+high concurrency.  New keyword options are also introduced on the
+``Sequence`` construct.
+
+The 1.2.0 series still has some more improvements that should be expected
+in a 1.2.0b3 release before moving to the final 1.2.0 release.
+
+Users should carefully review the `What's New in SQLAlchemy 1.2? </docs/latest/changelog/migration_12.html>`_ document as well as the `Changelog </changelog/CHANGES_1_2_0b2>`_ to
+note which behaviors and issues are affected.   We'd like to thank
+the many contributors who helped with this release.
+
+SQLAlchemy 1.2.0b2 is available on the `Download Page </download.html>`_.
+
