@@ -13,6 +13,6 @@ are fixes related to ORM use of JSON NULL values, subquery eager loading,
 and a stability enhancement involving the identity map when used under
 high concurrency.
 
-Changelog for 1.1.12 is at `Changelog </changes/CHANGES_1_1_12>`_.
+Changelog for 1.1.12 is at `Changelog </changelog/CHANGES_1_1_12>`_.
 
 SQLAlchemy 1.1.12 is available on the `Download Page </download.html>`_.

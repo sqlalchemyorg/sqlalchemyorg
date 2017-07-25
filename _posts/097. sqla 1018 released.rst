@@ -12,6 +12,6 @@ made at the same time as that of release 1.1.12 and 1.2.0b2.  Additionally,
 a backport from release 1.1.7 allowing cx_Oracle 5.3 to work correctly
 is included in this release.
 
-Changelog for 1.0.18 is at `Changelog </changes/CHANGES_1_0_18>`_.
+Changelog for 1.0.18 is at `Changelog </changelog/CHANGES_1_0_18>`_.
 
 SQLAlchemy 1.0.18 is available on the `Download Page </download.html>`_.
