@@ -45,29 +45,7 @@ function renderDocVersions() {
     }
 }
 
-function renderLatestVersionButton() {
-  if (typeof doc_version !== 'undefined' && typeof _version_lookup[doc_version] !== 'undefined') {
-      if (_version_lookup[doc_version].latest_warning) {
-          //latest = _version_lookup['latest'];
-          //latest_slug = latest.slug;
-          latest_slug = "latest";
-          latest_url = document.URL.replace(doc_version, latest_slug);
-          $("body").append(
-            '<div class="read_latest_button">' +
-            '<a id="read_latest_button" class="read_latest_button" href="' + latest_url + '">' +
-            '> Read the latest version of this page</a>' +
-            '</div>'
-          );
-          $("#read_latest_button").click(function () {
-              document.location = document.URL.replace(doc_version, latest_slug);
-              return false;
-          });
-      }
-
-  }
-}
 
 $(document).ready(function() {
     renderDocVersions();
-    renderLatestVersionButton();
 });

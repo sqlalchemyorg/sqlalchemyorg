@@ -1,3 +1,26 @@
+<%
+    release_history = bf.config.release_data
+    release_milestones = bf.config.release_milestones
+
+    release_status = {}
+    for token, major_version in release_milestones.items():
+        is_prerelease = token in ('beta', 'development')
+        is_legacy = token in ('maintenance', 'security', 'eol')
+
+        version_history = release_history[major_version]
+        for vers in version_history['releases']:
+            release_status[str(vers)] = {
+                "token": token,
+                "is_prerelease_version": is_prerelease,
+                "is_legacy_version": is_legacy
+            }
+
+%>
+
+release_status = ${repr(release_status)};
+
+
+
 def setup_context(context):
     # add variables if not present, such
     # as if local test of READTHEDOCS variable
@@ -18,6 +41,10 @@ def setup_context(context):
     context['rtd'] = True
     context['toolbar'] = True
     context['base'] = "docs_adapter.mako"
+
+    release_status_rec = release_status[context['current_version']]
+    context['is_legacy_version'] = release_status_rec['is_legacy_version']
+    context['is_prerelease_version'] = release_status_rec['is_prerelease_version']
 
     context['pdf_url'] = None
     #context['pdf_url'] = "%spdf/%s/%s/%s.pdf" % (
