@@ -42,7 +42,7 @@ def setup_context(context):
     context['toolbar'] = True
     context['base'] = "docs_adapter.mako"
 
-    release_status_rec = release_status[context['current_version']]
+    release_status_rec = release_status[context['release']]
     context['is_legacy_version'] = release_status_rec['is_legacy_version']
     context['is_prerelease_version'] = release_status_rec['is_prerelease_version']
 
