@@ -6,13 +6,15 @@
     for token, major_version in release_milestones.items():
         is_prerelease = token in ('beta', 'development')
         is_legacy = token in ('maintenance', 'security', 'eol')
+        is_current = token in ('current,')
 
         version_history = release_history[major_version]
         for vers in version_history['releases']:
             release_status[str(vers)] = {
                 "token": token,
                 "is_prerelease_version": is_prerelease,
-                "is_legacy_version": is_legacy
+                "is_legacy_version": is_legacy,
+                "is_current_version": is_current,
             }
 
 %>
@@ -45,6 +47,7 @@ def setup_context(context):
     release_status_rec = release_status[context['release']]
     context['is_legacy_version'] = release_status_rec['is_legacy_version']
     context['is_prerelease_version'] = release_status_rec['is_prerelease_version']
+    context['is_current_version'] = release_status_rec['is_current_version']
 
     context['pdf_url'] = None
     #context['pdf_url'] = "%spdf/%s/%s/%s.pdf" % (
