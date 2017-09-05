@@ -1,0 +1,16 @@
+---
+date: 2017/09/05 15:45:02
+title: SQLAlchemy 1.1.14 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.1.14 is now available.
+
+This release includes a variety of fixes for the ORM.  Two of the issues
+are critical stability issues involving garbage-collection related
+bugs that are more likely to be seen within the Pypy interpreter however
+are not necessarily limited to this platform.
+
+Changelog for 1.1.14 is at `Changelog </changelog/CHANGES_1_1_14>`_.
+
+SQLAlchemy 1.1.14 is available on the `Download Page </download.html>`_.
