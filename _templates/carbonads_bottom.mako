@@ -1,8 +1,3 @@
-<!--
-Demo Zone Key: CVADC53U
-Live Zone Key will be available next week. You’ll need replace demo zone key with live zone key before pushing the update live.
- -->
-
 <div class="bsa-ad">
       <div class="partner">
         <p>SQLAlchemy <strong>Sponsors</strong></p>
