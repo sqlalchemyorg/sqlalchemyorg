@@ -69,12 +69,15 @@ Participate - SQLAlchemy
         <li>Only report issues that you're pretty sure are a bug.   It is perfectly OK to report a usage issue on the
             mailing list that may or may not be a bug - we'll escalate bugs to the bug tracker if it really
             is a bug.</li>
-        <li><strong>Create a succinct test case which reproduces the issue.</strong>   This needs to be a script that
+        <li><p><strong>Create a succinct test case which reproduces the issue.</strong>   This needs to be a script that
             <strong>we can actually run</strong> - so it should not require any imports that the SQLAlchemy
             developers don't have access to, and in the vast majority of cases should not have any imports
             outside of SQLAlchemy itself.   It needs to include whatever table definitions and data are
             required to reproduce the issue.  While we have access to most database backends, SQLite is preferred
-            unless the issue is specific to a certain backend.
+            unless the issue is specific to a certain backend.</p>
+
+            <p>The guide we use for this is <a href="https://stackoverflow.com/help/mcve">How to create a Minimal, Complete, and Verifiable example</a> on StackOverflow.   Please give it a read.</p>
+
         </li>
         <li>At the very least, if code examples are not feasible, <strong>please include complete stack traces for all exceptions being observed.</strong>  Nothing is more vague than an exception message without a stack trace.
         </li>
@@ -86,7 +89,10 @@ Participate - SQLAlchemy
         <li>Monitor the issue.   Lots of times the developers have immediate followup questions, and might even
             have patches for you to try in case the issue is hard to reproduce.   Please keep the conversation going
             until we can get the bug fixed !</li>
+
     </ul>
+
+
 <p>Ready?  Great!</p>
     <ul>
         <li><a href="${self.attr.bb_base}/issues">View Existing Bugs</a></li>
