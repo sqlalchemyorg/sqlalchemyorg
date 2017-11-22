@@ -402,13 +402,13 @@ relational databases accessed via SQLAlchemy.
 </%self:user>
 
 
-<%self:user
-        name="PwnedList"
-        logo="pwnedlist.png"
-        url="http://pwnedlist.com/"
-        anchor="pwnedlist">
-        <a href="http://pwnedlist.com/">PwnedList</a> is a new breed of a security company that focuses on proactively monitoring external threats, such as hackers, their intricate social networks and the data they share amongst each other.  Our platform is powered by Pyramid, Mako templates, SQLAlchemy and Amazon RDS.
-</%self:user>
+##<%self:user
+##        name="PwnedList"
+##        logo="pwnedlist.png"
+##        url="http://pwnedlist.com/"
+##        anchor="pwnedlist">
+##        <a href="http://pwnedlist.com/">PwnedList</a> is a new breed of a security company that focuses on proactively monitoring external threats, such as hackers, their intricate social networks and the data they share amongst each other.  Our platform is powered by Pyramid, Mako templates, SQLAlchemy and Amazon RDS.
+##</%self:user>
 
 
 <%self:user
