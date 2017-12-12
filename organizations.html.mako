@@ -322,6 +322,13 @@ relational databases accessed via SQLAlchemy.
 </%self:user>
 
 <%self:user
+        name="marilyn",
+        logo="marilyn.png"
+        url="https://mymarilyn.ru/en">
+        <a href="https://mymarilyn.ru/en">Marilyn</a> is a Russian cross-channel performance management platform for advertisers and agencies. It happily uses SQLAlchemy to access PostgreSQL and Clickhouse in production.
+</%self:user>
+
+<%self:user
         name="MediaCore",
         logo="mediacore.png"
         url="http://mediacore.com/">
