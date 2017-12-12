@@ -314,6 +314,7 @@ relational databases accessed via SQLAlchemy.
 <%self:user
         name="mapWOC",
         logo="mapwoc.png"
+        anchor="mapwoc"
         url="http://mapwoc.org/">
         <a href="http://mapwoc.org/">mapWOC</a> lets you verify the integrity of websites, and identify malicious
         content by managing virtual machines with native browsers and
@@ -324,6 +325,7 @@ relational databases accessed via SQLAlchemy.
 <%self:user
         name="marilyn",
         logo="marilyn.png"
+        anchor="marilyn"
         url="https://mymarilyn.ru/en">
         <a href="https://mymarilyn.ru/en">Marilyn</a> is a Russian cross-channel performance management platform for advertisers and agencies. It happily uses SQLAlchemy to access PostgreSQL and Clickhouse in production.
 </%self:user>
