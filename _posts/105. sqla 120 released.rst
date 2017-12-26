@@ -1,0 +1,66 @@
+---
+date: 2017/12/26 15:45:02
+title: SQLAlchemy 1.2.0 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.2.0 is now available.
+
+Release 1.2.0 is the first official release in the 1.2 series, after
+three beta releases.   The release represents the past eighteen months
+of new feature development since version 1.1 was released.
+
+The 1.2 series has a large mix of features and behavioral enhancements
+spread across both the Core and ORM components, including in the area of
+ORM relationship loading, the behavior of the Core IN operator, new SQL
+constructs such as DELETE..FROM and MySQL's INSERT..ON DUPLICATE KEY UPDATE,
+as well as a new connection pooling feature that provides for pessimistic
+connection testing upon checkout.
+
+The migration notes and changelog should cover everything to look for,
+however some major changes include:
+
+* Lazy loaders and deferred eager loaders now use the baked query system
+  for a major reduction in Python call overhead
+
+* A new eager loader called "SELECT IN" loading, similar to
+  subquery eager loading but uses an IN clause with primary keys for
+  significantly faster performance in many situations
+
+* A variant of "SELECT IN" loading for polymorphic mappings, which allows
+  the sub-table rows of a heterogeneous result of joined inheritance classes
+  to be loaded en-masse without using a LEFT OUTER JOIN up front.
+
+* A new "expanding IN" clause that allows for arbitrary lists of items
+  to be late-bound to an IN operator just like a single bound parameter
+
+* Support for psycopg2's recently added "fast execution" helper, allowing
+  for batching of DML statements into larger chunks for a great reduction
+  in network overhead
+
+* A new connection pool parameter ``pool_pre_ping``, which pings connections
+  upon checkout, thereby eliminating the issue of stale connections in a
+  connection pool
+
+* Support for table and column comments in DDL and reflection
+
+* Major reworks of both the cx_Oracle and pyodbc MSSQL and pymssql dialects
+  for greater stability and performance.
+
+There are many more behavioral improvements and changes, all of which
+are backwards-compatible for but as is always the case, may be surprising
+in those cases where the sudden appearance of a feature, an assertion that
+wasn't present earlier, or a fix of a previously undefined or buggy behavior
+may produce unexpected results or error messages for an existing application.
+Users should please carefully review the full series of migration notes at
+`What's new in 1.2? </docs/latest/changelog/migration_12.html>`_ to see the full
+expanse of things that have changed and should always fully test existing
+applications against the 1.2 series before promoting to production.
+
+The complete changelog for 1.2.0 as well as all the beta releases is at
+`Changelog </changelog/CHANGES_1_2_0>`_;  we'd like to thank
+the many contributors who helped with this release.
+
+
+SQLAlchemy 1.2.0 is available on the `Download Page </download.html>`_.
+
