@@ -31,6 +31,9 @@ however some major changes include:
   the sub-table rows of a heterogeneous result of joined inheritance classes
   to be loaded en-masse without using a LEFT OUTER JOIN up front.
 
+* The IN operator now allows empty lists in a performant manner, revising
+  a long standing restriction on these expressions
+
 * A new "expanding IN" clause that allows for arbitrary lists of items
   to be late-bound to an IN operator just like a single bound parameter
 
