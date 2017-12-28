@@ -62,6 +62,8 @@ def _gen_release_data(pypi_data, milestones):
         vers for vers in releases
         if not isinstance(vers, LegacyVersion)
     )
+    current_version = milestones['current']
+
     if 'development' in milestones:
         vers = development_version = milestones['development']
         release_keys.append(vers)
@@ -89,11 +91,15 @@ def _gen_release_data(pypi_data, milestones):
             major_version = parse(RE_release.match(str(release)).group(1))
 
         if major_version not in release_history:
+
             major_vers_plaque = str(major_version).replace('.', "")
             major_vers_underscore = str(major_version).replace('.', "_")
             git_tag = "rel_%s" % major_vers_underscore
 
-            if release == development_version or major_version == beta_version:
+            if release == development_version or \
+                    major_version == beta_version or \
+                    (major_version == current_version and \
+                        development_version is None and beta_version is None):
                 local_doc_plaque = 'latest'
                 rtd_plaque = 'latest'
             else:
