@@ -1,0 +1,15 @@
+---
+date: 2018/01/15 15:45:02
+title: SQLAlchemy 1.2.1 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.2.1 is now available.
+
+Release 1.2.1 fixes some minor issues for the newly released 1.2 series,
+including a few small regressions as well as some issues reported
+with the new "selectin" relationship and polymorphic loader features.
+
+Changelog for 1.2.1 is at `Changelog </changelog/CHANGES_1_2_1>`_.
+
+SQLAlchemy 1.2.1 is available on the `Download Page </download.html>`_.
