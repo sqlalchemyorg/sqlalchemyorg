@@ -1,0 +1,16 @@
+---
+date: 2018/01/24 15:45:02
+title: SQLAlchemy 1.2.2 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.2.2 is now available.
+
+Release 1.2.2 has a very small number of minor bug fixes and one fix of a
+serious ORM regression in the 1.2 series regarding relationships and
+backreferences.  Because of the ORM issue, users of the ORM within the 1.2
+series are encouraged to upgrade to  1.2.2.
+
+Changelog for 1.2.2 is at `Changelog </changelog/CHANGES_1_2_2>`_.
+
+SQLAlchemy 1.2.2 is available on the `Download Page </download.html>`_.
