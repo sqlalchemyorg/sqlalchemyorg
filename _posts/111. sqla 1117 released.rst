@@ -1,0 +1,14 @@
+---
+date: 2018/02/22 15:45:02
+title: SQLAlchemy 1.1.17 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.1.17 is now available.
+
+Release 1.1.17 repairs a single regression regarding the association
+proxy extension which appeared in 1.1.16.
+
+Changelog for 1.1.17 is at `Changelog </changelog/CHANGES_1_1_17>`_.
+
+SQLAlchemy 1.1.17 is available on the `Download Page </download.html>`_.

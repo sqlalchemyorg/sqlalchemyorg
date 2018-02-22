@@ -6,8 +6,8 @@ author: Mike B
 
 SQLAlchemy release 1.2.4 is now available.
 
-Release 1.2.4 includes fixes for a variety of ORM, Core, and dialect-specific
-issues.
+Release 1.2.4 includes a small series of fixes within the ORM
+and Core components, three of which are 1.2-specific regressions.
 
 Changelog for 1.2.4 is at `Changelog </changelog/CHANGES_1_2_4>`_.
 
