@@ -86,7 +86,6 @@ class Post(object):
         self.tags = set()
         self.permalink = None
         self.content = u""
-        self.excerpt = u""
         self.filename = filename
         self.author = ""
         self.guid = None
@@ -112,8 +111,6 @@ class Post(object):
             self.__parse_yaml(content_parts[1])
             post_src = content_parts[2]
         self.__apply_filters(post_src)
-        #Do post excerpting
-        self.__parse_post_excerpting()
 
     def __apply_filters(self, post_src):
         """Apply filters to the post"""
@@ -131,33 +128,6 @@ class Post(object):
                 self.filters = []
         self.content = bf.filter.run_chain(self.filters, post_src)
 
-    def __parse_post_excerpting(self):
-        if bf.config.controllers.blog.post_excerpts.enabled:
-            length = bf.config.controllers.blog.post_excerpts.word_length
-            try:
-                self.excerpt = bf.config.post_excerpt(self.content, length)
-            except AttributeError:
-                self.excerpt = self.__excerpt(length)
-
-    def __excerpt(self, num_words=50):
-        #Default post excerpting function
-        #Can be overridden in _config.py by
-        #defining post_excerpt(content,num_words)
-        if len(self.excerpt) == 0:
-             """Retrieve excerpt from article"""
-             s = BeautifulSoup.BeautifulSoup(self.content)
-             # get rid of javascript, noscript and css
-             [[tree.extract() for tree in s(elem)] for elem in (
-                     'script', 'noscript', 'style')]
-             # get rid of doctype
-             subtree = s.findAll(text=re.compile("DOCTYPE|xml"))
-             [tree.extract() for tree in subtree]
-             # remove headers
-             [[tree.extract() for tree in s(elem)] for elem in (
-                     'h1', 'h2', 'h3', 'h4', 'h5', 'h6')]
-             text = ''.join(s.findAll(text=True))\
-                                 .replace("\n", "").split(" ")
-             return " ".join(text[:num_words]) + '...'
 
     def __post_process(self):
         # fill in empty default value

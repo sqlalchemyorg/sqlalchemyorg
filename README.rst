@@ -4,10 +4,6 @@ SQLAlchemy Website
 The site uses Blogofile 0.7.1 (it's advised that you install that
 version specifically).
 
-Issues and pullrequests for the site overall can be submitted here.
-
-    easy_install Blogofile==0.7.1
-    easy_install pyScss==1.1.0
 
 
 Building and Testing:

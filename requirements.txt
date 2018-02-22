@@ -1,0 +1,4 @@
+blogofile===0.7.1
+pyScss
+requests
+packaging
