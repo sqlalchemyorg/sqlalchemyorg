@@ -1,4 +1,3 @@
-import urlparse
 from blogofile.cache import bf
 import re
 

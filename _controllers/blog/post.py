@@ -10,19 +10,26 @@ __date__   = "Mon Feb  2 21:21:04 2009"
 
 import os
 import sys
+py2k = sys.version_info < (3, 0)
+
 import datetime
 import re
 import operator
-import urlparse
+
+try:
+    import urllib.parse as urlparse
+except ImportError:
+    import urlparse
+
 import hashlib
 import codecs
 
 import pytz
 import yaml
 import logging
-import BeautifulSoup
 
 import blogofile_bf as bf
+
 
 logger = logging.getLogger("blogofile.post")
 
@@ -261,7 +268,7 @@ class Post(object):
             #Always generate the path from the permalink
             return self.permapath()
         else:
-            raise AttributeError, name
+            raise AttributeError(name)
 
 
 class Category(object):
@@ -307,11 +314,10 @@ def parse_posts(directory):
     for post_path in post_paths:
         post_fn = os.path.split(post_path)[1]
         logger.debug("Parsing post: {0}".format(post_path))
-        #IMO codecs.open is broken on Win32.
-        #It refuses to open files without replacing newlines with CR+LF
-        #reverting to regular open and decode:
         try:
-            src = open(post_path, "r").read().decode(
+            src = open(post_path, "r").read()
+            if py2k:
+                src = src.decode(
                     bf.config.controllers.blog.post_encoding)
         except:
             logger.exception("Error reading post: {0}".format(post_path))

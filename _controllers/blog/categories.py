@@ -1,7 +1,6 @@
-import os
 import shutil
 import operator
-import feed
+from . import feed
 from blogofile.cache import bf
 
 blog = bf.config.controllers.blog

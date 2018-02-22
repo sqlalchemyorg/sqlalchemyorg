@@ -9,7 +9,7 @@
 import operator
 
 from blogofile.cache import bf
-import chronological
+from . import chronological
 
 blog = bf.config.controllers.blog
 

@@ -2,12 +2,12 @@ import logging
 
 from blogofile.cache import bf
 
-import archives
-import categories
-import chronological
-import feed
-import permapage
-import post
+from . import archives
+from . import categories
+from . import chronological
+from . import feed
+from . import permapage
+from . import post
 
 config = {
         "name": "Blog",
