@@ -1,0 +1,14 @@
+---
+date: 2018/02/22 15:45:02
+title: SQLAlchemy 1.2.4 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.2.4 is now available.
+
+Release 1.2.4 includes fixes for a variety of ORM, Core, and dialect-specific
+issues.
+
+Changelog for 1.2.4 is at `Changelog </changelog/CHANGES_1_2_4>`_.
+
+SQLAlchemy 1.2.4 is available on the `Download Page </download.html>`_.
