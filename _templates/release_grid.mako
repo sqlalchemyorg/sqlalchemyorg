@@ -7,6 +7,7 @@
     # text overrides
     milestone_text = {
         'beta': "Beta",
+        'early_development': "Development",
         'development': "Development",
         'current': "Current Release",
         'maintenance': "Maintenance",

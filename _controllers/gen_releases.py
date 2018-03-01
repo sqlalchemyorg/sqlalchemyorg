@@ -20,6 +20,7 @@ pypi_url_json = "https://pypi.python.org/pypi/SQLAlchemy/json"
 # ==============================================================================
 
 release_milestones = {
+    'early_development': '1.3',
     'current': '1.2',
     'maintenance': '1.1',
     'security': '1.0',
@@ -75,6 +76,12 @@ def _gen_release_data(pypi_data, milestones):
     else:
         beta_version = None
 
+    if 'early_development' in milestones:
+        vers = early_development_version = milestones['early_development']
+        release_keys.append(vers)
+    else:
+        early_development_version = None
+
     lowest_doc_version_parsed = parse(lowest_doc_version)
     lowest_migration_version_parsed = parse(lowest_migration_version)
     eol_parsed = parse(eol)
@@ -87,6 +94,8 @@ def _gen_release_data(pypi_data, milestones):
     for release in release_keys:
         if release == development_version:
             major_version = development_version
+        elif release == early_development_version:
+            major_version = early_development_version
         else:
             major_version = parse(RE_release.match(str(release)).group(1))
 
@@ -125,7 +134,8 @@ def _gen_release_data(pypi_data, milestones):
                 'releases': {},
                 'docs': "/docs/%(local_doc_plaque)s/" %
                         tokens
-                        if major_version >= lowest_doc_version_parsed
+                        if major_version >= lowest_doc_version_parsed and
+                        early_development_version != major_version
                         else None,
                 'migration_url':
                     '/docs/%(local_doc_plaque)s/changelog/'
@@ -139,7 +149,7 @@ def _gen_release_data(pypi_data, milestones):
 
             }
 
-        if release != development_version:
+        if release not in (development_version, early_development_version):
             release_rec = releases[release][0]
 
             upload_datetime = datetime.datetime.strptime(
