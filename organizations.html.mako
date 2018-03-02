@@ -251,6 +251,17 @@ also makes use of Flask, MySQL, and Redis.
 </%self:user>
 
 <%self:user
+    name="JobNinja",
+    logo="jobninja.png",
+    url="http://jobninja.com/",
+    anchor="jobninja">
+    <a href="http://jobninja.com/">JobNinja</a> is an innovative job board
+    based in Germany. It uses Flask, Flask REST-Plus and SQLAlchemy to power
+    the website and the API. The data layer is built on top of
+    SQLAlchemy.
+</%self:user>
+
+<%self:user
     name="Juju",
     logo="juju.gif",
     url="http://www.juju.com/",
