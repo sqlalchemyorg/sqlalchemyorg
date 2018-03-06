@@ -1,0 +1,17 @@
+---
+date: 2018/03/06 15:45:02
+title: SQLAlchemy 1.1.18 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.1.18 is now available.
+
+Release 1.1.18 has two dialect-specific issues backported from 1.2.5,
+which are a Python 3.7 regression in the Postgresql dialect, as well as
+an adjustment to all MySQL dialects to utilize a distinct query to
+obtain the server version rather than relying upon the DBAPI, which fixes
+issues with certain proxy servers.
+
+Changelog for 1.1.18 is at `Changelog </changelog/CHANGES_1_1_18>`_.
+
+SQLAlchemy 1.1.18 is available on the `Download Page </download.html>`_.
