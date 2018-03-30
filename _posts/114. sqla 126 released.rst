@@ -10,6 +10,6 @@ Release 1.2.6 includes a variety of fixes including a connection-pool
 related issue which could cause a connection to be added to the pool
 without all of the "connect" event handlers being called.
 
-Changelog for 1.2.6 is at `Changelog </changelog/CHANGES_1_2_5>`_.
+Changelog for 1.2.6 is at `Changelog </changelog/CHANGES_1_2_6>`_.
 
 SQLAlchemy 1.2.6 is available on the `Download Page </download.html>`_.
