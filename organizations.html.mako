@@ -195,15 +195,6 @@ also makes use of Flask, MySQL, and Redis.
 </%self:user>
 
 <%self:user
-        name="Firefox Sync"
-        logo="firefox.png"
-        url="http://www.firefox.com/"
-        anchor="firefox">
-        <a href="http://www.firefox.com/sync">Firefox Sync</a> is Firefox's built in bookmark synchronization service.
-        Core server elements of Firefox Sync are written in Python using SQLAlchemy for backend storage.
-</%self:user>
-
-<%self:user
         name="Foxberry"
         logo="foxberry.png"
         url="https://www.foxberry.com"
