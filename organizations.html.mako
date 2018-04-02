@@ -204,6 +204,14 @@ also makes use of Flask, MySQL, and Redis.
 </%self:user>
 
 <%self:user
+        name="Foxberry"
+        logo="foxberry.png"
+        url="https://www.foxberry.com"
+        anchor="foxberry">
+        <a href="https://www.foxberry.com">Foxberry</a> is a creator and administrator of financial indices. Foxberry uses SQLAlchemy throughout its R&D and governance process. The ability to programmatically create dynamic queries, whilst still be able to drop-down to raw SQL, results in an efficient development process whilst not compromising on functionality.
+</%self:user>
+
+<%self:user
         name="FreshBooks",
         logo="freshbooks.png"
         url="http://www.freshbooks.com/"
