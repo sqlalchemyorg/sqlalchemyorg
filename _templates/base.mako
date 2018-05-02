@@ -3,7 +3,7 @@
 %><%
 in_docs = self.attr.in_docs
 if in_docs:
-    self.attr.site_base = site_base = bf.config.site.url
+    self.attr.site_base = site_base = bf.config.site_url
 else:
     self.attr.site_base = site_base = ""
 self.attr.docs_base = docs_base = bf.config.docs_url
