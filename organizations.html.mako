@@ -203,6 +203,14 @@ also makes use of Flask, MySQL, and Redis.
 </%self:user>
 
 <%self:user
+        name="Foxytrades"
+        logo="foxytrades.jpg"
+        url="https://foxytrades.com"
+        anchor="foxytrades">
+        <a href="https://foxytrades">Foxytrades</a> is an educational website featuring a wide range of day trading resources.  "We are a happy users of SQLAlchemy and our data layer is solely built on SQLAlchemy."
+</%self:user>
+
+<%self:user
         name="FreshBooks",
         logo="freshbooks.png"
         url="http://www.freshbooks.com/"
