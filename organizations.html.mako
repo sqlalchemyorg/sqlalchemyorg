@@ -500,6 +500,19 @@ relational databases accessed via SQLAlchemy.
 </%self:user>
 
 <%self:user
+        name="Scaleway",
+        logo="scaleway.png",
+        url="https://www.scaleway.com",
+        anchor="scaleway">
+    <a href="https://www.scaleway.com">Scaleway</a> is a cloud provider
+    focusing on offering the best ratio performance/price for its customer. We
+    use SQLAlchemy to manage our PostgreSQL databases.  We trust SQLAlchemy to
+    perform the right queries on our whole accounting, billing and resource
+    mangement stack.
+
+</%self:user>
+
+<%self:user
         name="Seagate",
         logo="seagate.png",
         url="http://seagate.com",
