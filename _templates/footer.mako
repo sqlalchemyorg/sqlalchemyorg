@@ -1,11 +1,12 @@
 <%page args="site_base, docs_base"/>
 
 <div id="footer">
-
+    <div class='snd-ad'>
     <div class="box banner">
         <p>
         <%include file="/carbonads_bottom.mako"/>
         </p>
+    </div>
     </div>
 
     <div class="pypowered"><a href="http://www.python.org/" title="The Python Language Site"><img src="${site_base}/img/python-logo.gif" width="88" height="30" alt="Python" class="pypowered" /></a></div>
