@@ -1,7 +1,6 @@
 <%inherit file="/base.mako"/>
 <%!
     section = 'home'
-
 %>
 
 ## comment
