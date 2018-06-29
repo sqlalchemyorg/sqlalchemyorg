@@ -1,0 +1,18 @@
+---
+date: 2018/06/29 15:45:02
+title: SQLAlchemy 1.2.9 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.2.9 is now available.
+
+Release 1.2.9 continues to include a wide range of fixes for both new issues
+and 1.2-specific regressions across both the ORM and dialect-specific
+components.  Among the important changes present, specific improvements have
+been made to improve behavior on Python 3.7 as well as MySQL 8.0, as well as a
+new hook to allow customization of datatype binding within the the cx_Oracle
+dialect.
+
+Changelog for 1.2.9 is at `Changelog </changelog/CHANGES_1_2_9>`_.
+
+SQLAlchemy 1.2.9 is available on the `Download Page </download.html>`_.
