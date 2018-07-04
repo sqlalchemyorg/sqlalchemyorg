@@ -12,4 +12,4 @@ var site_base='${site_base}';
 var docs_base='${docs_base}';
 </script>
 
-<%include file="/seedanddew.mako"/>
+## < %include file="/seedanddew.mako"/ >
