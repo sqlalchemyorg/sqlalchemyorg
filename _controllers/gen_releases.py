@@ -22,7 +22,7 @@ pypi_url_json = "https://pypi.python.org/pypi/SQLAlchemy/json"
 # development: development series in master, no betas released
 # beta: development series in master, betas released
 release_milestones = {
-    'development': '1.3',
+#    'development': '1.3',
     'current': '1.2',
     'maintenance': '1.1',
     'security': '1.0',
