@@ -100,10 +100,10 @@ def _gen_release_data(pypi_data, milestones):
             git_tag = "rel_%s" % major_vers_underscore
 
             if release == development_version or major_version == beta_version:
-                doc_plaque = 'devel'
+                doc_plaque = rtd_plaque = 'devel'
                 git_location = 'master'
             elif major_version == current_version:
-                doc_plaque = 'latest'
+                doc_plaque = rtd_plaque = 'latest'
                 if development_version is None and beta_version is None:
                     git_location = 'master'
                 else:
@@ -111,6 +111,7 @@ def _gen_release_data(pypi_data, milestones):
             else:
                 doc_plaque = major_vers_plaque
                 git_location = git_tag
+                rtd_plaque = git_tag
 
             tokens = {
                 'plaque': major_vers_plaque,

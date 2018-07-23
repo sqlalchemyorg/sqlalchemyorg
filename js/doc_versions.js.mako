@@ -19,7 +19,7 @@ var doc_versions = [
       if vers_rec['milestone'] == 'development' \
       else 'Version %s' % vers_rec['major_version']
     }",
-    "slug": "${vers_rec['doc_plaque']}"
+    "slug": "${vers_rec['rtd_plaque']}"
     ${
         ',"latest_warning": true' \
         if vers_rec['milestone'] in ('security', 'eol')\
