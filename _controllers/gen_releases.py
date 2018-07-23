@@ -118,13 +118,13 @@ def _gen_release_data(pypi_data, milestones):
                 'underscore': major_vers_underscore,
                 'version': major_version,
                 'doc_plaque': doc_plaque,
-                'rtd_plaque': rtd_plaque
             }
 
             release_history[major_version] = {
                 'major_version': major_version,
                 'first': None,
                 'latest': None,
+                'rtd_plaque': rtd_plaque,
                 'git_tag': git_tag,
                 'git_location': git_location,
                 'doc_plaque': doc_plaque,
