@@ -44,10 +44,16 @@ def setup_context(context):
     context['toolbar'] = True
     context['base'] = "docs_adapter.mako"
 
-    release_status_rec = release_status[context['release']]
-    context['is_legacy_version'] = release_status_rec['is_legacy_version']
-    context['is_prerelease_version'] = release_status_rec['is_prerelease_version']
-    context['is_current_version'] = release_status_rec['is_current_version']
+    try:
+        release_status_rec = release_status[context['release']]
+    except KeyError:
+        context['is_legacy_version'] = False
+        context['is_prerelease_version'] = True
+        context['is_current_version'] = False
+    else:
+        context['is_legacy_version'] = release_status_rec['is_legacy_version']
+        context['is_prerelease_version'] = release_status_rec['is_prerelease_version']
+        context['is_current_version'] = release_status_rec['is_current_version']
 
     context['pdf_url'] = None
     #context['pdf_url'] = "%spdf/%s/%s/%s.pdf" % (
