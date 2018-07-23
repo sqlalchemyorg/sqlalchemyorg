@@ -117,7 +117,8 @@ def _gen_release_data(pypi_data, milestones):
                 'plaque': major_vers_plaque,
                 'underscore': major_vers_underscore,
                 'version': major_version,
-                'doc_plaque': doc_plaque
+                'doc_plaque': doc_plaque,
+                'rtd_plaque': rtd_plaque
             }
 
             release_history[major_version] = {
