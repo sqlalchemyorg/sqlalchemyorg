@@ -19,8 +19,10 @@ pypi_url_json = "https://pypi.python.org/pypi/SQLAlchemy/json"
 
 # ==============================================================================
 
+# development: development series in master, no betas released
+# beta: development series in master, betas released
 release_milestones = {
-    'early_development': '1.3',
+    'development': '1.3',
     'current': '1.2',
     'maintenance': '1.1',
     'security': '1.0',
@@ -76,12 +78,6 @@ def _gen_release_data(pypi_data, milestones):
     else:
         beta_version = None
 
-    if 'early_development' in milestones:
-        vers = early_development_version = milestones['early_development']
-        release_keys.append(vers)
-    else:
-        early_development_version = None
-
     lowest_doc_version_parsed = parse(lowest_doc_version)
     lowest_migration_version_parsed = parse(lowest_migration_version)
     eol_parsed = parse(eol)
@@ -94,8 +90,6 @@ def _gen_release_data(pypi_data, milestones):
     for release in release_keys:
         if release == development_version:
             major_version = development_version
-        elif release == early_development_version:
-            major_version = early_development_version
         else:
             major_version = parse(RE_release.match(str(release)).group(1))
 
@@ -105,21 +99,24 @@ def _gen_release_data(pypi_data, milestones):
             major_vers_underscore = str(major_version).replace('.', "_")
             git_tag = "rel_%s" % major_vers_underscore
 
-            if release == development_version or \
-                    major_version == beta_version or \
-                    (major_version == current_version and \
-                        development_version is None and beta_version is None):
-                local_doc_plaque = 'latest'
-                rtd_plaque = 'latest'
+            if release == development_version or major_version == beta_version:
+                doc_plaque = 'devel'
+                git_location = 'master'
+            elif major_version == current_version:
+                doc_plaque = 'latest'
+                if development_version is None and beta_version is None:
+                    git_location = 'master'
+                else:
+                    git_location = git_tag
             else:
-                local_doc_plaque = major_vers_plaque
-                rtd_plaque = git_tag
+                doc_plaque = major_vers_plaque
+                git_location = git_tag
 
             tokens = {
                 'plaque': major_vers_plaque,
                 'underscore': major_vers_underscore,
                 'version': major_version,
-                'local_doc_plaque': local_doc_plaque
+                'doc_plaque': doc_plaque
             }
 
             release_history[major_version] = {
@@ -127,18 +124,18 @@ def _gen_release_data(pypi_data, milestones):
                 'first': None,
                 'latest': None,
                 'git_tag': git_tag,
-                'rtd_plaque': rtd_plaque,
+                'git_location': git_location,
+                'doc_plaque': doc_plaque,
                 'milestone':
                     version_to_milestone[major_version]
                     if major_version >= eol_parsed else 'eol',
                 'releases': {},
-                'docs': "/docs/%(local_doc_plaque)s/" %
+                'docs': "/docs/%(doc_plaque)s/" %
                         tokens
-                        if major_version >= lowest_doc_version_parsed and
-                        early_development_version != major_version
+                        if major_version >= lowest_doc_version_parsed
                         else None,
                 'migration_url':
-                    '/docs/%(local_doc_plaque)s/changelog/'
+                    '/docs/%(doc_plaque)s/changelog/'
                     'migration_%(plaque)s.html' %
                     tokens
                     if major_version >= lowest_migration_version_parsed
@@ -149,7 +146,7 @@ def _gen_release_data(pypi_data, milestones):
 
             }
 
-        if release not in (development_version, early_development_version):
+        if release != development_version:
             release_rec = releases[release][0]
 
             upload_datetime = datetime.datetime.strptime(
