@@ -87,6 +87,17 @@ Amazon Web Services stack. Beauty is serious business ;)
 </%self:user>
 
 <%self:user
+    name="BestVPNWeb",
+    logo="bestvpnweb.png"
+    url="https://bestvpnweb.com/"
+    anchor="bestvpnweb"
+>
+
+<a href="https://bestvpnweb.com/">BestVPNweb.com</a> is VPN review and comparison website. Our developer is using SQLAlchemy extensively for all database interactions.
+
+</%self:user>
+
+<%self:user
     name="Blocksworld"
     logo="blocksworld.png"
     url="http://blocksworld.com/"
