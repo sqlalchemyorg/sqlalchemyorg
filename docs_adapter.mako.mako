@@ -21,7 +21,11 @@ self.attr.bb_base = bb_base = zf.config.bb_url
     <%text>
 
     <%!
-        import urlparse
+        import sys
+        if sys.version_info.major >= 3:
+            from urllib.parse import urlparse
+        else:
+            import urlparse
     %>
 
     <link href='//fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700' rel='stylesheet' type='text/css'/>
