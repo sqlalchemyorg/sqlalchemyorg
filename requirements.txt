@@ -1,4 +1,4 @@
-blogofile===0.7.1
+zeekofile
 pyScss
 requests
 packaging

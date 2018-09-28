@@ -1,9 +1,9 @@
 <%!
     in_docs = True
 %><%
-self.attr.site_base = site_base = bf.config.site_url
-self.attr.docs_base = docs_base = bf.config.docs_url
-self.attr.bb_base = bb_base = bf.config.bb_url
+self.attr.site_base = site_base = zf.config.site_url
+self.attr.docs_base = docs_base = zf.config.docs_url
+self.attr.bb_base = bb_base = zf.config.bb_url
 
 %><!DOCTYPE html>
 

@@ -1,6 +1,6 @@
 import logging
 
-from blogofile.cache import bf
+from zeekofile.cache import zf
 
 from . import archives
 from . import categories
@@ -19,11 +19,11 @@ config = {
         }
 
 def run():
-    blog = bf.config.controllers.blog
+    blog = zf.config.controllers.blog
 
     #Parse the posts
     blog.posts = post.parse_posts("_posts")
-    blog.dir = bf.util.path_join(bf.writer.output_dir, blog.path)
+    blog.dir = zf.util.path_join(zf.writer.output_dir, blog.path)
 
     # Find all the categories and archives before we write any pages
     blog.archived_posts = {} ## "/archive/Year/Month" -> [post, post, ... ]

@@ -9,7 +9,7 @@ version specifically).
 Building and Testing:
 
 	build
-	>> blogofile build
+	>> zeekofile build
 
 	test
 	>> cd _site

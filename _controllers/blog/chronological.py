@@ -1,8 +1,8 @@
 # Write all the blog posts in reverse chronological order
 import os
-from blogofile.cache import bf
+from zeekofile.cache import zf
 
-blog = bf.config.controllers.blog
+blog = zf.config.controllers.blog
 
 
 def run():
@@ -26,24 +26,24 @@ def write_blog_chron(posts, root):
             next_link = "../" + str(page_num + 1)
         else:
             next_link = None
-        page_dir = bf.util.path_join(blog.path, root, str(page_num))
-        fn = bf.util.path_join(page_dir, "index.html")
+        page_dir = zf.util.path_join(blog.path, root, str(page_num))
+        fn = zf.util.path_join(page_dir, "index.html")
         env = {
             "posts": page_posts,
             "next_link": next_link,
             "prev_link": prev_link
         }
-        bf.writer.materialize_template("/blog/chronological.mako", fn, env)
+        zf.writer.materialize_template("/blog/chronological.mako", fn, env)
         page_num += 1
 
 
 def write_blog_first_page():
     if not blog.custom_index:
         page_posts = blog.posts[:blog.posts_per_page]
-        path = bf.util.path_join(blog.path, "index.html")
+        path = zf.util.path_join(blog.path, "index.html")
         blog.logger.info("Writing blog index page: " + path)
         if len(blog.posts) > blog.posts_per_page:
-            next_link = bf.util.site_path_helper(
+            next_link = zf.util.site_path_helper(
                     blog.path, blog.pagination_dir+"/2")
         else:
             next_link = None
@@ -52,4 +52,4 @@ def write_blog_first_page():
             "next_link": next_link,
             "prev_link": None
         }
-        bf.writer.materialize_template("/blog/chronological.mako", path, env)
+        zf.writer.materialize_template("/blog/chronological.mako", path, env)

@@ -28,12 +28,12 @@ import pytz
 import yaml
 import logging
 
-import blogofile_bf as bf
+import zeekofile_zf as zf
 
 
-logger = logging.getLogger("blogofile.post")
+logger = logging.getLogger("zeekofile.post")
 
-config = bf.config.controllers.blog.post
+config = zf.config.controllers.blog.post
 config.mod = sys.modules[globals()["__name__"]]
 
 # These are all the Blogofile reserved field names for posts. It is not
@@ -86,7 +86,7 @@ class Post(object):
         self.source = source
         self.yaml = None
         self.title = None
-        self.__timezone = bf.config.controllers.blog.timezone
+        self.__timezone = zf.config.controllers.blog.timezone
         self.date = None
         self.updated = None
         self.categories = set()
@@ -129,11 +129,11 @@ class Post(object):
         if self.filters is None:
             try:
                 file_extension = os.path.splitext(self.filename)[-1][1:]
-                self.filters = bf.config.controllers.blog.post_default_filters[
+                self.filters = zf.config.controllers.blog.post_default_filters[
                     file_extension]
             except KeyError:
                 self.filters = []
-        self.content = bf.filter.run_chain(self.filters, post_src)
+        self.content = zf.filter.run_chain(self.filters, post_src)
 
 
     def __post_process(self):
@@ -169,11 +169,11 @@ class Post(object):
         if not self.categories or len(self.categories) == 0:
             self.categories = set([Category('Uncategorized')])
         if not self.permalink and \
-                bf.config.controllers.blog.auto_permalink.enabled:
-            self.permalink = bf.config.site.url.rstrip("/") + \
-                bf.config.controllers.blog.auto_permalink.path
+                zf.config.controllers.blog.auto_permalink.enabled:
+            self.permalink = zf.config.site.url.rstrip("/") + \
+                zf.config.controllers.blog.auto_permalink.path
             self.permalink = \
-                    re.sub(":blog_path", bf.config.blog.path, self.permalink)
+                    re.sub(":blog_path", zf.config.blog.path, self.permalink)
             self.permalink = \
                     re.sub(":year", self.date.strftime("%Y"), self.permalink)
             self.permalink = \
@@ -202,10 +202,10 @@ class Post(object):
         try:
             self.permalink = y['permalink']
             if self.permalink.startswith("/"):
-                self.permalink = urlparse.urljoin(bf.config.site.url,
+                self.permalink = urlparse.urljoin(zf.config.site.url,
                         self.permalink)
-            #Ensure that the permalink is for the same site as bf.config.site.url
-            if not self.permalink.startswith(bf.config.site.url):
+            #Ensure that the permalink is for the same site as zf.config.site.url
+            if not self.permalink.startswith(zf.config.site.url):
                 raise PostParseException("{0}: permalink for a different site"
                         " than configured".format(self.filename))
             logger.debug("path from permalink: {0}".format(self.path))
@@ -274,13 +274,13 @@ class Post(object):
 class Category(object):
 
     def __init__(self, name):
-        self.name = unicode(name)
+        self.name = name
         # TODO: slugification should be abstracted out somewhere reusable
         # TODO: consider making url_name and path read-only properties?
         self.url_name = self.name.lower().replace(" ", "-")
-        self.path = bf.util.site_path_helper(
-                bf.config.controllers.blog.path,
-                bf.config.controllers.blog.category_dir,
+        self.path = zf.util.site_path_helper(
+                zf.config.controllers.blog.path,
+                zf.config.controllers.blog.category_dir,
                 self.url_name)
 
     def __eq__(self, other):
@@ -308,7 +308,7 @@ def parse_posts(directory):
     if not os.path.isdir("_posts"):
         logger.warn("This site has no _posts directory.")
         return []
-    post_paths = [f for f in bf.util.recursive_file_list(
+    post_paths = [f for f in zf.util.recursive_file_list(
             directory, post_filename_re) if post_filename_re.match(f)]
 
     for post_path in post_paths:
@@ -318,7 +318,7 @@ def parse_posts(directory):
             src = open(post_path, "r").read()
             if py2k:
                 src = src.decode(
-                    bf.config.controllers.blog.post_encoding)
+                    zf.config.controllers.blog.post_encoding)
         except:
             logger.exception("Error reading post: {0}".format(post_path))
             raise

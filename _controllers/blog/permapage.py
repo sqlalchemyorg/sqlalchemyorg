@@ -1,7 +1,7 @@
-from blogofile.cache import bf
+from zeekofile.cache import zf
 import re
 
-blog = bf.config.controllers.blog
+blog = zf.config.controllers.blog
 
 
 def run():
@@ -10,7 +10,7 @@ def run():
 
 def write_permapages():
     "Write blog posts to their permalink locations"
-    site_re = re.compile(bf.config.site.url, re.IGNORECASE)
+    site_re = re.compile(zf.config.site.url, re.IGNORECASE)
     num_posts = len(blog.posts)
 
     for i, post in enumerate(blog.posts):
@@ -33,5 +33,5 @@ def write_permapages():
         if i > 0:
             env['next_post'] = blog.posts[i - 1]
 
-        bf.writer.materialize_template(
-                "/blog/permapage.mako", bf.util.path_join(path, "index.html"), env)
+        zf.writer.materialize_template(
+                "/blog/permapage.mako", zf.util.path_join(path, "index.html"), env)

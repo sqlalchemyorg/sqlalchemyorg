@@ -1,7 +1,7 @@
-# This is a barren blogofile config file.
+# This is a barren zeekofile config file.
 # See docs at http://www.blogofile.com/documentation
 # for config options
-# or run 'blogofile help init' to see more complete templates
+# or run 'zeekofile help init' to see more complete templates
 
 docs = controllers.docs
 docs.enabled = True

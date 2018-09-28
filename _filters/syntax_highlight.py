@@ -2,7 +2,7 @@ import re
 import os
 
 from pygments import util, formatters, lexers, highlight
-import blogofile_bf as bf
+import zeekofile_zf as zf
 
 css_files_written = set()
 
@@ -24,8 +24,8 @@ def highlight_code(code, language, formatter):
     return highlighted
 
 def write_pygments_css(style, formatter, location="/css"):
-    path = bf.util.path_join(bf.writer.output_dir, bf.util.fs_site_path_helper(location))
-    bf.util.mkdir(path)
+    path = zf.util.path_join(zf.writer.output_dir, zf.util.fs_site_path_helper(location))
+    zf.util.mkdir(path)
     css_path = os.path.join(path,"pygments_"+style+".css")
     if css_path in css_files_written:
         return #already written, no need to overwrite it.
@@ -37,7 +37,7 @@ def write_pygments_css(style, formatter, location="/css"):
 from mako.filters import html_entities_unescape
 
 def highlight_site(code, lang="python"):
-    style = bf.config.filters.syntax_highlight.style
+    style = zf.config.filters.syntax_highlight.style
     css_class = "pygments_"+style
     formatter = formatters.HtmlFormatter(
             linenos=False, cssclass=css_class, style=style)
@@ -46,7 +46,7 @@ def highlight_site(code, lang="python"):
 
 def run(src):
 
-    style = bf.config.filters.syntax_highlight.style
+    style = zf.config.filters.syntax_highlight.style
     css_class = "pygments_"+style
     formatter = formatters.HtmlFormatter(
             linenos=False, cssclass=css_class, style=style)

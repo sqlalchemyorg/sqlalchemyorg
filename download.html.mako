@@ -4,8 +4,8 @@
 %>
 
 <%
-    release_history = bf.config.release_data
-    release_milestones = bf.config.release_milestones
+    release_history = zf.config.release_data
+    release_milestones = zf.config.release_milestones
 
 %>
 

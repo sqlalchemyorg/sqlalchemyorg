@@ -1,5 +1,5 @@
 import os
-from blogofile.cache import bf
+from zeekofile.cache import zf
 from scss import Scss
 
 # these docs aren't super accurate
@@ -15,6 +15,6 @@ def run():
 
         css = compiler.compile(open(os.path.join("_scss", fname)).read())
         with open(
-                bf.util.path_join(bf.writer.output_dir, "css", "%s.css" % name),
+                zf.util.path_join(zf.writer.output_dir, "css", "%s.css" % name),
                 "w") as out:
             out.write(css)

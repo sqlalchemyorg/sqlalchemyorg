@@ -8,10 +8,10 @@
 
 import operator
 
-from blogofile.cache import bf
+from zeekofile.cache import zf
 from . import chronological
 
-blog = bf.config.controllers.blog
+blog = zf.config.controllers.blog
 
 
 def run():

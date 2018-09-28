@@ -1,4 +1,4 @@
-from blogofile.cache import bf
+from zeekofile.cache import zf
 import json
 import re
 import requests
@@ -45,12 +45,12 @@ def run():
     #with open("sqla_sample.json") as f:
     #   pypi_data = json.load(f)
 
-    bf.config.release_milestones = milestones = dict(
+    zf.config.release_milestones = milestones = dict(
         (key, parse(version))
         for key, version in release_milestones.items()
     )
 
-    bf.config.release_data = _gen_release_data(pypi_data, milestones)
+    zf.config.release_data = _gen_release_data(pypi_data, milestones)
 
 
 def _gen_release_data(pypi_data, milestones):

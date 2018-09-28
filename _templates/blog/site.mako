@@ -4,7 +4,7 @@ section='blog'
 %>
 
 <%def name="filter(chain)">
-  ${bf.filter.run_chain(chain, capture(caller.body))}
+  ${zf.filter.run_chain(chain, capture(caller.body))}
 </%def>
 
 <%block name="head_title">
@@ -18,14 +18,14 @@ section='blog'
 
 <%block name="head">
 ${parent.head()}
-<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="${bf.util.site_path_helper(bf.config.blog.path,'/feed/index.xml')}" />
-<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="${bf.util.site_path_helper(bf.config.blog.path,'/feed/atom/index.xml')}" />
-<link rel='stylesheet' href='${bf.config.filters.syntax_highlight.css_dir}/pygments_${bf.config.filters.syntax_highlight.style}.css' type='text/css' />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="${zf.util.site_path_helper(zf.config.blog.path,'/feed/index.xml')}" />
+<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="${zf.util.site_path_helper(zf.config.blog.path,'/feed/atom/index.xml')}" />
+<link rel='stylesheet' href='${zf.config.filters.syntax_highlight.css_dir}/pygments_${zf.config.filters.syntax_highlight.style}.css' type='text/css' />
 </%block>
 
 <%block name="scripts">
 ${parent.scripts()}
-% if bf.config.blog.disqus.enabled:
+% if zf.config.blog.disqus.enabled:
 <script type="text/javascript">
 //<![CDATA[
 (function() {
@@ -36,7 +36,7 @@ ${parent.scripts()}
                 query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
             }
         }
-        document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/${bf.config.blog.disqus.name}/get_num_replies.js' + query + '"></' + 'script>');
+        document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/${zf.config.blog.disqus.name}/get_num_replies.js' + query + '"></' + 'script>');
     })();
 //]]>
 </script>

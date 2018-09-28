@@ -3,11 +3,11 @@
 %><%
 in_docs = self.attr.in_docs
 if in_docs:
-    self.attr.site_base = site_base = bf.config.site_url
+    self.attr.site_base = site_base = zf.config.site_url
 else:
     self.attr.site_base = site_base = ""
-self.attr.docs_base = docs_base = bf.config.docs_url
-self.attr.bb_base = bb_base = bf.config.bb_url
+self.attr.docs_base = docs_base = zf.config.docs_url
+self.attr.bb_base = bb_base = zf.config.bb_url
 current_section = getattr(self.module, 'section', '')
 if not current_section and in_docs:
     current_section = 'docs'

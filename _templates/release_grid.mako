@@ -1,8 +1,8 @@
 <%
-    release_history = bf.config.release_data
+    release_history = zf.config.release_data
 
     # these are our milestones
-    release_milestones = bf.config.release_milestones
+    release_milestones = zf.config.release_milestones
 
     # text overrides
     milestone_text = {
