@@ -16,8 +16,10 @@
             SQLAlchemy and its documentation are licensed under the MIT license.</p>
         <p>SQLAlchemy is a trademark of Michael Bayer.  mike(&amp;)zzzcomputing.com
         All rights reserved. </p>
-        <p>Website generation by <a href="http://www.blogofile.com">Blogofile</a> and
-                <a href="http://www.makotemplates.org">Mako Templates for Python</a>.</p>
+        <p>Website generation by
+        <a href="https://bitbucket.org/zzzeek/zeekofile/">zeekofile</a>, with
+        huge thanks to the <a href="https://github.com/EnigmaCurry/blogofile">Blogofile</a>
+        project.</p>
      </div>
 
     <br clear="all" />
