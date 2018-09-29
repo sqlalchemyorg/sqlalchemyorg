@@ -14,6 +14,7 @@ Get Involved - SQLAlchemy
     <li><a href="/participate.html">Participate</a> - reporting bugs and helping others</li>
     <li><a href="/develop.html">Develop</a> - contributing code</li>
     <li><a href="/further.html">Further Reading</a> - great links on how to ask for help</li>
+    <li><a href="/codeofconduct.html">Code of Conduct</a> - guidelines for interaction</li>
 </ul>
 
 ${next.body()}

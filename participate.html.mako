@@ -113,7 +113,7 @@ Regular users can also volunteer to help with approval of new posters.
 There's a core set of "regulars" who are pretty friendly, and more helpers are always welcome.  </p>
 
 <p>SQLAlchemy places great emphasis on polite, thoughtful, and constructive communication between users and developers.
-    Rudeness, personal insults, or overly brusque answers are never appropriate, even for users with unreasonable requests.
+    Rudeness, personal insults, or brusque answers are never appropriate, even for users with unreasonable requests.   See our <a href="codeofconduct.html">Code of Conduct</a> for a full statement.
     We also try to ensure that
     no message on the mailing list goes unanswered, even if the answer is simply to politely direct the user towards
     the appropriate section of documentation.   The core SQLAlchemy developers would like to encourage all users to help
