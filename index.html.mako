@@ -52,7 +52,7 @@ and SQL! </p>
             <li>reddit</li>
             <li>DropBox</li>
             <li>The OpenStack Project</li>
-            <li>Survey Monkey/li>
+            <li>Survey Monkey</li>
         </ul>
         </p>
     </dd>
