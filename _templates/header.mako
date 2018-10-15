@@ -19,7 +19,6 @@
         <li${active('features')}><a href="${site_base}/features.html">features</a>
             <ul>
                 <li><a href="${site_base}/features.html">Feature Overview</a></li>
-                <li><a href="${site_base}/organizations.html">Organizations</a></li>
                 <li><a href="${site_base}/quotes.html">Testimonials</a></li>
             </ul>
         </li>

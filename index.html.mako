@@ -48,23 +48,19 @@ and SQL! </p>
     <dd>
         <p>SQLAlchemy is used by organizations such as:
         <ul>
-            <li><a href="/organizations.html#yelp">Yelp!</a></li>
-            <li><a href="/organizations.html#openstack">The OpenStack Project</a></li>
-            <li><a href="/organizations.html#reddit">reddit</a></li>
-            <li><a href="/organizations.html#firefox">Mozilla</a></li>
-            <li><a href="/organizations.html#surveymonkey">Survey Monkey</a></li>
-            <li><a href="/organizations.html#freshbooks">Freshbooks</a></li>
-            <li><a href="/organizations.html#fedoraproject">Fedora Project</a></li>
+            <li>Yelp!</li>
+            <li>reddit</li>
+            <li>DropBox</li>
+            <li>The OpenStack Project</li>
+            <li>Survey Monkey/li>
         </ul>
         </p>
-        <a href="/organizations.html">more...</a>
     </dd>
     <dt>Learn More</dt>
     <dd>
         <ul>
             <li><a href="/library.html"><strong>Library</strong></a> - master index of documentation, videos, talks, and more</li>
             <li><a href="/features.html">Overview of Key Features</a></li>
-            <li><a href="/organizations.html">Organizations Using SQLAlchemy</a></li>
             <li><a href="/quotes.html">Testimonials</a></li>
         </ul>
     </dd>

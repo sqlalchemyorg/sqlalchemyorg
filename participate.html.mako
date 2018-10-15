@@ -130,9 +130,6 @@ There's a core set of "regulars" who are pretty friendly, and more helpers are a
             - if the tweet contains "sqlalchemy" or a link to the site, it will show up under searches for the term.
             Expect SQLAlchemy developers to respond to provocative tweets!
         </li>
-        <li>The <a href="/organizations.html">"Organizations Using SQLAlchemy"</a> page lists prominent
-            and not-so-prominent organizations who make use of SQLAlchemy.   Please contact
-            us to have your organization added here.</li>
         <li>Blog Posts - Users often write short tutorials or blog posts describing how to achieve something
             with SQLAlchemy.    It all becomes part of the larger collection of knowledge so share freely!
         </li>
