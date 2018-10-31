@@ -1,0 +1,15 @@
+---
+date: 2018/09/19 15:45:02
+title: SQLAlchemy 1.2.12 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.2.12 is now available.
+
+Release 1.2.12 includes a series of mostly minor bugfixes, as well as one
+critical issue allowing the recently released version 7.0 of the cx_Oracle
+DBAPI to work correctly.
+
+Changelog for 1.2.12 is at `Changelog </changelog/CHANGES_1_2_12>`_.
+
+SQLAlchemy 1.2.12 is available on the `Download Page </download.html>`_.
