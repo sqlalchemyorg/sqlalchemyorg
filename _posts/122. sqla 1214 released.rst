@@ -1,0 +1,16 @@
+---
+date: 2018/11/10 15:45:02
+title: SQLAlchemy 1.2.14 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.2.14 is now available.
+
+Release 1.2.14 includes a change that adjusts a change made
+in release 1.2.13, which itself was a workaround for an issue that affects
+the MySQL 8.0 series when reflecting foreign key constraints.  The fix
+needed to be adjusted to work correctly when using MySQL on OSX.
+
+Changelog for 1.2.14 is at `Changelog </changelog/CHANGES_1_2_14>`_.
+
+SQLAlchemy 1.2.14 is available on the `Download Page </download.html>`_.
