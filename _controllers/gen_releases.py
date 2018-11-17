@@ -42,8 +42,8 @@ def run():
     r = requests.get(pypi_url_json)
     pypi_data = json.loads(r.content)
 
-    with open("sqla_sample.json") as f:
-       pypi_data = json.load(f)
+    #with open("sqla_sample.json") as f:
+    #   pypi_data = json.load(f)
 
     zf.config.release_milestones = milestones = dict(
         (key, parse(version))
