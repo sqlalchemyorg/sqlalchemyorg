@@ -94,6 +94,8 @@ def _gen_release_data(pypi_data, milestones):
             major_version = parse(RE_release.match(str(release)).group(1))
 
         if major_version not in release_history:
+            # major_vers_plaque: digits only, like 10, 11, 12, 13
+            # git_tag: like rel_1_0, rel_1_1, rel_1_2, rel_1_3
 
             major_vers_plaque = str(major_version).replace('.', "")
             major_vers_underscore = str(major_version).replace('.', "_")
@@ -131,6 +133,11 @@ def _gen_release_data(pypi_data, milestones):
                 'version': major_version,
                 'doc_plaque': doc_plaque,
             }
+
+            # note that for "/docs/doc_plaque/", we have an apache redirect
+            # that redirects to "/docs/en/rtd_plaque", e.g.  "/docs/12/"
+            # redirects to "/docs/en/rel_1_2/".  So there is really no need
+            # for "doc_plaque" except it looks a little nicer
 
             release_history[major_version] = {
                 'major_version': major_version,

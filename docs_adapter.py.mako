@@ -13,7 +13,7 @@
         for vers in version_history['releases']:
             release_status[str(vers)] = {
                 "token": token,
-                "is_beta": is_beta,
+                "is_beta_version": is_beta,
                 "is_prerelease_version": is_prerelease,
                 "is_legacy_version": is_legacy,
                 "is_current_version": is_current,
