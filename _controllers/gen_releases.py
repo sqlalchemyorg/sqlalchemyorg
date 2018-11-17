@@ -110,13 +110,16 @@ def _gen_release_data(pypi_data, milestones):
                 # a beta version
                 if beta_version is None:
                     doc_plaque = rtd_plaque = 'latest'
-                else:
-                    doc_plaque = rtd_plaque = major_vers_plaque
 
-                if development_version is None and beta_version is None:
-                    git_location = 'master'
+                    if development_version is None:
+                        git_location = 'master'
+                    else:
+                        git_location = git_tag
                 else:
+                    doc_plaque = major_vers_plaque
+                    rtd_plaque = git_tag
                     git_location = git_tag
+
             else:
                 doc_plaque = major_vers_plaque
                 git_location = git_tag
