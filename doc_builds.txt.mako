@@ -11,5 +11,5 @@
 
 %>\
 % for vers_rec in display_versions:
-${vers_rec['git_location']}@${vers_rec['doc_plaque']}
+${vers_rec['git_location']}@${vers_rec['rtd_plaque']}
 % endfor
