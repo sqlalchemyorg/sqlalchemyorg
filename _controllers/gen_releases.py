@@ -22,7 +22,7 @@ pypi_url_json = "https://pypi.python.org/pypi/SQLAlchemy/json"
 # development: development series in master, no betas released
 # beta: development series in master, betas released
 release_milestones = {
-    'development': '1.3',
+    'beta': '1.3',
     'current': '1.2',
     'maintenance': '1.1',
     'security': '1.0',
@@ -42,8 +42,8 @@ def run():
     r = requests.get(pypi_url_json)
     pypi_data = json.loads(r.content)
 
-    #with open("sqla_sample.json") as f:
-    #   pypi_data = json.load(f)
+    with open("sqla_sample.json") as f:
+       pypi_data = json.load(f)
 
     zf.config.release_milestones = milestones = dict(
         (key, parse(version))
@@ -99,11 +99,20 @@ def _gen_release_data(pypi_data, milestones):
             major_vers_underscore = str(major_version).replace('.', "_")
             git_tag = "rel_%s" % major_vers_underscore
 
-            if release == development_version or major_version == beta_version:
+            if release == development_version:
                 doc_plaque = rtd_plaque = 'devel'
                 git_location = 'master'
-            elif major_version == current_version:
+            elif major_version == beta_version:
                 doc_plaque = rtd_plaque = 'latest'
+                git_location = 'master'
+            elif major_version == current_version:
+                # current version goes in "latest" if there isn't
+                # a beta version
+                if beta_version is None:
+                    doc_plaque = rtd_plaque = 'latest'
+                else:
+                    doc_plaque = rtd_plaque = major_vers_plaque
+
                 if development_version is None and beta_version is None:
                     git_location = 'master'
                 else:

@@ -79,10 +79,8 @@ Download - SQLAlchemy
     ${download_version("current")}
 % endif
 
-% if 'maintenance' in release_milestones:
+% if 'maintenance' in release_milestones and 'beta' not in release_milestones:
     ${download_version("maintenance")}
-% elif 'security' in release_milestones:
-    ${download_version("security")}
 % endif
 
 

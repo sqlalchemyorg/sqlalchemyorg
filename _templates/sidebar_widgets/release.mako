@@ -39,7 +39,7 @@
 
 ${release(milestone, "Current Release")}
 
-% if 'maintenance' in release_milestones:
+% if 'maintenance' in release_milestones and 'beta' not in release_milestones:
     ${release("maintenance", "Previous Series")}
 % endif
 

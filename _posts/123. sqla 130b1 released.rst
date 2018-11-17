@@ -1,0 +1,44 @@
+---
+date: 2018/11/16 15:45:02
+title: SQLAlchemy 1.3.0b1 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.3.0b1 is now available.
+
+This is the initial beta release in the 1.3 series of SQLAlchemy, the latest
+iteration of new features and behavioral improvements.   Highlights of
+1.3 include:
+
+* Performance improvements to the new "select in" loader strategy, such
+  that a JOIN is no longer used at all to load collections
+
+* JSON support for SQLite
+
+* Support for SQLite's "ON CONFLICT" constraint directive
+
+* Improvements to the new "expanding" bound parameter used for "IN" expressions,
+  such that empty "IN" expressions are now supported
+
+* new schema naming convention features and support for automatic truncation
+  of long names
+
+* a series of architectural and API improvements to the association proxy
+  extension
+
+* architectural and behavioral improvements to the ``Query.join()`` method
+
+* Improvements to rendering and reflection of FULLTEXT indexes on MySQL
+
+* Support for pyodbc's "fast executemany" mode for SQL Server
+
+* Architectural improvements and updates to the cx_oracle dialect to keep up
+  with the high velocity of changes being made to this DBAPI upstream
+
+Release 1.3 includes approximately 39 individual improvements and features.
+
+For an overview of what's new in the 1.3 series, see
+`Whats New in 1.3? </docs/latest/changelog/migration_13.html>`_  Full
+changelog is available at `Changelog </changelog/CHANGES_1_3_0b1>`_.
+
+SQLAlchemy 1.3.0b1 is available on the `Download Page </download.html>`_.
