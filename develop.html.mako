@@ -10,7 +10,6 @@ Develop - SQLAlchemy
 <h1>Develop</h1>
 
 <ul>
-    <li><a href="#roster">Developer Roster</a></li>
     <li><a href="#developers">Development Community</a></li>
     <li><a href="#source">Source Access</a></li>
     <li><a href="#pullrequests">Pull Requests</a></li>
@@ -23,16 +22,6 @@ Develop - SQLAlchemy
 
 This section describes where to find information on development and some tips
 on getting started.
-
-<a name="roster"></a>
-<h2>Developer Roster</h2>
-<p>Modern releases of SQLAlchemy include a core developer list.   The names of developers
-    who are currently or have been critical to our progress are in this file,
-    the current version of which can be seen at <a href="${self.attr.bb_base}/src/master/AUTHORS">AUTHORS</a>.
-</p>
-<p>A list of all developers who have ever contributed to SQLAlchemy, even a single patch,
-     is maintained at <a href="${self.attr.bb_base}/wiki/Contributors">Contributors</a>.
-</p>
 
 <a name="developers"></a>
 <h2>Development Community</h2>
@@ -58,93 +47,103 @@ on getting started.
 <a name="source"></a>
 <h2>Source Access</h2>
 <p>SQLAlchemy's source code is versioned using <a href="http://git-scm.com/">Git</a>.
-Public repositories are available at <a href="https://bitbucket.org/">Bitbucket</a> and
-<a href="https://github.com/">Github</a>:</p>
+The primary public repository is at <b>Github</b>:</p>
 
 <ul>
-<li><strong>Bitbucket:</strong> <a href="https://bitbucket.org/zzzeek/sqlalchemy/">https://bitbucket.org/zzzeek/sqlalchemy/</a>
+<li><strong>Github:</strong> <a href="https://github.com/sqlalchemy/sqlalchemy/">https://github.com/sqlalchemy/sqlalchemy/</a>
 
 <p>
 <br/>
 <code>
-git clone https://bitbucket.org/zzzeek/sqlalchemy.git
+git clone https://github.com/sqlalchemy/sqlalchemy.git
 </code>
 </p>
 
 </li>
 
-<li><strong>Github:</strong> <a href="https://github.com/zzzeek/sqlalchemy">https://github.com/zzzeek/sqlalchemy</a>
-
-<p>
-<br/>
-<code>
-git clone https://github.com/zzzeek/sqlalchemy.git
-</code>
-</p>
-
-</li>
 </ul>
 
-<p>Major release branches are maintained using branches.  For example, to get at the 0.9 branch, the tag
-is called <code>rel_0_9</code>:</p>
-
-<p>
-  <code>
-  git clone -b rel_0_9 https://github.com/zzzeek/sqlalchemy.git sa08<br/>
-  </code>
-</p>
 
 <a name="pullrequests"></a>
 <h2>Pull Requests</h2>
 
-<p>The pull request is a widely understood system of submitting patches for review.
-SQLAlchemy accepts pull requests through GitHub as well as Bitbucket; GitHub
-is preferred.</p>
+<p>
 
-<p>To propose a code change, please submit a
-<a href="https://github.com/zzzeek/sqlalchemy/pulls">pull request</a> to
-<strong>Github</strong>.</p>
+Pull requests are submitted to the Github repository at <a href="https://github
+.com/sqlalchemy/sqlalchemy">https://github.com/sqlalchemy/sqlalchemy</a>. Once
+accepted for review, assuming the pull request is altering the code itself and
+not just correcting documentation issues, code review occurs within our Gerrit
+system at <a
+href="https://gerrit.sqlalchemy.org">https://gerrit.sqlalchemy.org</a> where we
+can review, modify, and run it through continuous integration tests with a high
+degree of control and collaborative ability. The pull request will be closed
+with a link to the review in Gerrit. Pull requests for code changes are never
+merged directly.
 
-<p>While we accept pull requests through the usual channels, our current process
-of reviewing and integrating them is a little unusual; new pull requests are now
-closed (or on BitBucket marked as "declined") upon initial review without
-being merged at all; instead, the
-patch itself is imported into our Gerrit system at <a href="https://gerrit.sqlalchemy.org">https://gerrit.sqlalchemy.org</a> where we can review, modify, and run it through continuous
-integration tests with a high degree of control and collaborative ability.
-A comment on the pull request is added, providing a direct link
-to the Gerrit review as well as a direct link to fully register into Gerrit.
-Gerrit logins are provided via GitHub authorization.
 </p>
 
-<p>It's not strictly necessary to learn to use Gerrit though it is extremely
-helpful. At the very least, make sure you set up your email address via
-the <a href="https://gerrit.sqlalchemy.org/register">register</a> link so that
-you receive notifications of comments on the change.</p>
+<p>Please note the <b>Guidelines for Pull Requests</b> which modify
+source code (e.g. not just documentation):
 
-<p>If you do use Gerrit, we strongly recommend using the <a href="http://docs.openstack.org/infra/git-review/">git-review</a> tool provided by the Openstack project.  Pushing to Gerrit
-is vastly easier using this tool.</p>
+<ul>
+<li><b>Please first submit an issue in the issue tracker before submitting a
+pull request.</b>   It is a frequent occurence that pull requests are submitted
+with no clear rationale why such a change is needed or what problem it
+intends to solve.  The issue will serve as a place for discussion
+regarding the pull request and will be permanently linked from the SQLAlchemy
+changelog as the source of information on the rationale for a given change.</li>
+
+<li><b>Always include tests with the change in code</b> - SQLAlchemy does not
+commit changes to code without a corresponding test - every line of code that
+isn't tested is technically a bug in itself.  When a pull request is submitted
+without tests, it <b>cannot be merged</b> until a test is written.  It is
+extremely common that we receive a pull request that is one line long,
+yet we need to write many dozens of lines to test it, since <b>99% of the work
+for any code change is writing the tests</b>.  <b>Please don't submit
+one-liner PRs without tests.  Only submit a <a href="participate.html#bugs">complete
+bug report</a> for code changes where you aren't able to provide tests</b>.</li>
+
+<li><b>Please follow up for requests for changes on the pull request, as well
+as subscribe to the Gerrit review to receive comments.</b> - Pull requests where
+requested changes are not responded towards will be closed.</li>
+
+</ul>
 
 
 <a name="testing"></a>
 <h2>Testing</h2>
 
-<p>A critical task for anyone wishing to develop even small features or fixes is to be proficient in running the tests,
-    and in the ideal case, being able to write tests.  SQLAlchemy has over 3000 tests which span in focus from unit to integration.
-    By far the largest scope of development work, both on the existing codebase as well as when any new feature or fix is
-    being implemented, is in writing complete tests.   The tests for a particular change or feature are generally
-    five to ten times as many lines of code as the code for the actual behavior.  They also can be much more difficult to
-    write than the actual feature, often requiring a wide variety of difficult-to-anticipate variants on the target behavior,
-    injection of behavior for testing purposes, interception of generated SQL, events, or elements of DBAPI messaging.
+<p>
+
+A critical task for anyone wishing to develop even small features or fixes is
+to be proficient in running the tests,     and in the ideal case, being able to
+write tests.  SQLAlchemy has over many thousands of tests which span in focus
+from unit to integration, and a full continuous integration run over multiple
+Python  versions and database backends runs well over <b>two hundred thousand
+individual tests</b>.
+
+By far the largest scope of development work, both on the
+existing codebase as well as when any new feature or fix is     being
+implemented, is in writing complete tests.   The tests for a particular change
+or feature are generally     five to ten times as many lines of code as the
+code for the actual behavior.  They also can be much more difficult to
+write than the actual feature, often requiring a wide variety of difficult-to-
+anticipate variants on the target behavior,     injection of behavior for
+testing purposes, interception of generated SQL, events, or elements of DBAPI
+messaging.
+
     </p>
 
-<p>The tests run using <a href="http://pypi.python.org/pypi/nose">Nose</a>.   A comprehensive guide to running the tests is
-    present in the
-    file <a href="${self.attr.bb_base}/src/master/README.unittests.rst">README.unittests</a>, which is available in the distribution.
-    After downloading the source distribution of SQLAlchemy, this file explains in detail how tests can be run,
-    overall, for specific databases, and specific tests.   Ideally, any patch that's given to use via Trac or similar
-    should be tested in the default branch against the full test suite.   We of course do this in any case but the patch
-    which takes this into account is always preferable.
-    </p>
+<p>
+
+Tests are run using <a href="http://pypi.python.org/pypi/pytest">py.test</a>.
+A comprehensive guide to running the tests is     present in the     file
+<a href="${self.attr.bb_base}/blob/master/README.unittests.rst">README.unittests</a>,
+which is present in the source distribution. This file explains in detail how
+tests can be run across many scopes, including how to run for specific databases
+and how to select for specific tests.
+
+</p>
 
     <p>The tests themselves have been written over the course of many years, and stylistically have evolved.   We try
     to upgrade old tests to newer styles as we become more proficient and advanced in our methodologies,

@@ -43,7 +43,7 @@
                 <li><a href="${site_base}/participate.html">Participate</a></li>
                 <li><a href="${site_base}/develop.html">Develop</a></li>
                 <li><a href="${site_base}/codeofconduct.html">Code of Conduct</a></li>
-                <li><a href="${bb_base}">Bitbucket</a></li>
+                <li><a href="${bb_base}">Github</a></li>
             </ul>
         </li>
         <li${active('download')}><a href="${site_base}/download.html">download</a></li>

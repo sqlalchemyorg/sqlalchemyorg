@@ -87,8 +87,7 @@ Download - SQLAlchemy
 <a name="development"/>
 <h2>Development Versions</h2>
 
-<p><a href="https://bitbucket.org/zzzeek/sqlalchemy/">SQLAlchemy on Bitbucket</a></p>
-<p><a href="https://github.com/zzzeek/sqlalchemy/">SQLAlchemy on GitHub</a></p>
+<p><a href="https://github.com/sqlalchemy/sqlalchemy/">SQLAlchemy on GitHub</a></p>
 
 
 <p>For further details on Git repository access please see <a href="/develop.html">development</a>.</p>

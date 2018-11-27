@@ -171,7 +171,7 @@ at many conferences worldwide.   Here's only a choice few of them:
 		<%def name="embed()">
 		<iframe width="${videowidth}" height="${videoheight}" src="//www.youtube.com/embed/_ZdqwCr4c7Q" frameborder="0" allowfullscreen></iframe>
 		</%def>
-	Working with developers on schema migrations is a perennial challenge for DBAs and developers. Devs tend to like a "set it and forget it" tool. This talk discusses the strategies used to move from a pure SQL and shell migration system to using SQLAlchemy and <a href="https://bitbucket.org/zzzeek/alembic">Alembic</a> for maximum DBA and developer happiness.
+	Working with developers on schema migrations is a perennial challenge for DBAs and developers. Devs tend to like a "set it and forget it" tool. This talk discusses the strategies used to move from a pure SQL and shell migration system to using SQLAlchemy and <a href="https://alembic.sqlalchemy.org">Alembic</a> for maximum DBA and developer happiness.
 	</%self:talk>
 
 	<%self:talk
