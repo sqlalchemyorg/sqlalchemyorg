@@ -47,10 +47,10 @@ on getting started.
 <a name="source"></a>
 <h2>Source Access</h2>
 <p>SQLAlchemy's source code is versioned using <a href="http://git-scm.com/">Git</a>.
-The primary public repository is at <b>Github</b>:</p>
+The primary public repository is at <b>GitHub</b>:</p>
 
 <ul>
-<li><strong>Github:</strong> <a href="https://github.com/sqlalchemy/sqlalchemy/">https://github.com/sqlalchemy/sqlalchemy/</a>
+<li><strong>GitHub:</strong> <a href="https://github.com/sqlalchemy/sqlalchemy/">https://github.com/sqlalchemy/sqlalchemy/</a>
 
 <p>
 <br/>
@@ -69,7 +69,7 @@ git clone https://github.com/sqlalchemy/sqlalchemy.git
 
 <p>
 
-Pull requests are submitted to the Github repository at <a href="https://github
+Pull requests are submitted to the GitHub repository at <a href="https://github
 .com/sqlalchemy/sqlalchemy">https://github.com/sqlalchemy/sqlalchemy</a>. Once
 accepted for review, assuming the pull request is altering the code itself and
 not just correcting documentation issues, code review occurs within our Gerrit

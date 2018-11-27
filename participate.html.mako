@@ -10,7 +10,7 @@ Participate - SQLAlchemy
 
 <ul>
     <li><a href="#status">Project Status</a></li>
-    <li><a href="#github">Github Access</a></li>
+    <li><a href="#github">GitHub Access</a></li>
     <li><a href="#bugs">Reporting Bugs</a></li>
     <li><a href="#assistance">User Assistance</a></li>
     <li><a href="#publicizing">Publicizing SQLAlchemy</a></li>
@@ -26,7 +26,7 @@ Participate - SQLAlchemy
     approach of moving slowly and steadily has so far been very beneficial to the project, allowing
     great strides in architecture and usage before a larger pool of new users is taken on.</p>
 
-<p>The overall status of development can be gleaned by viewing the <a href="${self.attr.bb_base}">Github project page.</a>.  We try to
+<p>The overall status of development can be gleaned by viewing the <a href="${self.attr.bb_base}">GitHub project page.</a>.  We try to
     assign all bugs and new features to a specific version, which are linked to milestones.   A specific number, like "0.6.8", means we'd like
     to get the ticket completed as of that version (though this is not always guaranteed).
     An "open ended" number like "0.7.xx" means the ticket is
@@ -43,14 +43,14 @@ Participate - SQLAlchemy
 </p>
 
 <a name="github"></a>
-<h2>Github</h2>
-<p>SQLAlchemy uses <a href="https://github.com">Github</a> for bug reporting and issue tracking, Wiki pages, and source browsing.   Sign up for a Github account in order to participate in issues.
+<h2>GitHub</h2>
+<p>SQLAlchemy uses <a href="https://github.com">Github</a> for bug reporting and issue tracking, Wiki pages, and source browsing.   Sign up for a GitHub account in order to participate in issues.
 </p>
 
 <a name="bugs"></a>
 <h2>Reporting Bugs</h2>
 
-<p>Bugs are reported using Github using the <a href="${self.attr.bb_base}/issues">Issues</a> tracking system
+<p>Bugs are reported using GitHub using the <a href="${self.attr.bb_base}/issues">Issues</a> tracking system
 (note you have to be logged in to use it).</p>
 
 <p>Bugs are generally reported only against the two most recent release branches, which comprise
@@ -65,7 +65,7 @@ Participate - SQLAlchemy
             the default branch or the maintance branch, and preferably
             against the latest development tip of the series in use.   SQLAlchemy provides easy download links of the
             most recent development versions on the <a href="/download.html">download page.</a></li>
-        <li>Check that the issue doesn't already exist on the issue tracker.  Github is fairly
+        <li>Check that the issue doesn't already exist on the issue tracker.  GitHub is fairly
         helpful in this regard.</li>
         <li>Only report issues that you're pretty sure are a bug.   It is perfectly OK to report a usage issue on the
             mailing list that may or may not be a bug - we'll escalate bugs to the bug tracker if it really

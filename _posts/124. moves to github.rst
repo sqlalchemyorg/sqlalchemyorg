@@ -1,10 +1,10 @@
 ---
 date: 2018/11/27 15:45:02
-title: SQLAlchemy and Related Projects move to Github
+title: SQLAlchemy and Related Projects move to GitHub
 author: Mike B
 ---
 
-SQLAlchemy's primary code-hosting repository is now `Github <https://github.com>`_.
+SQLAlchemy's primary code-hosting repository is now `GitHub <https://github.com>`_.
 
 The public source repository, issue tracker and wiki now moves
 underneath a new `organization <https://github.com/sqlalchemy>`_
@@ -24,8 +24,8 @@ to organize for common themes, as well as a capable search system and a modern,
 responsive web interface.
 
 The massive technical challenge to this move was the ability to import
-SQLAlchemy's 4000+ issues into Github's issue tracker, as well as the many
-hundreds of issues associated with other projects.   Github for many years
+SQLAlchemy's 4000+ issues into GitHub's issue tracker, as well as the many
+hundreds of issues associated with other projects.   GitHub for many years
 lacked a usable issue import system which made the move a non-starter, but
 eventually a non-official issue import API was released, which after much
 effort was able to do just enough to make an issue import feasible, after
@@ -36,9 +36,9 @@ without being blocked.
 Most recently, alternative self hosted systems like `Gitea
 <https://gitea.io/>`_, which looks extremely promising, were considered as
 well, but in the end, SQLAlchemy would like to do everything it can to
-encourage community involvement, so it is hoped that the Github move will have
+encourage community involvement, so it is hoped that the GitHub move will have
 this effect.
 
-In addition to the move to Github, the SQLAlchemy organization has been
+In addition to the move to GitHub, the SQLAlchemy organization has been
 set up as the owning namespace for these projects to further emphasize that
 SQLAlchemy is more than just "zzzeek".
