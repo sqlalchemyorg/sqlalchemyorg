@@ -1,0 +1,44 @@
+---
+date: 2018/11/27 15:45:02
+title: SQLAlchemy and Related Projects move to Github
+author: Mike B
+---
+
+SQLAlchemy's primary code-hosting repository is now `Github <https://github.com>`_.
+
+The public source repository, issue tracker and wiki now moves
+underneath a new `organization <https://github.com/sqlalchemy>`_
+which now is the home for `SQLAlchemy <https://github.com/sqlalchemy/sqlalchemy>`_
+as well as related projects
+`Alembic <https://github.com/sqlalchemy/alembic>`_,
+`Mako Templates <https://github.com/sqlalchemy/mako>`_,
+`dogpile.cache <https://github.com/sqlalchemy/dogpile.cache>`_, and others.
+
+The move from Bitbucket has been under consideration for well over a year,
+prompted by a long and slow decline in Bitbucket's quality as well as a
+complete lack of features and improvements to their issue tracker, ever since
+being acquired by Atlassian who sought to encourage users to move to Jira
+instead. Most critically, SQLAlchemy and related projects desperately needed
+the ability to apply free-form labels and  classifications to issues in order
+to organize for common themes, as well as a capable search system and a modern,
+responsive web interface.
+
+The massive technical challenge to this move was the ability to import
+SQLAlchemy's 4000+ issues into Github's issue tracker, as well as the many
+hundreds of issues associated with other projects.   Github for many years
+lacked a usable issue import system which made the move a non-starter, but
+eventually a non-official issue import API was released, which after much
+effort was able to do just enough to make an issue import feasible, after
+several weeks of tweaking import scripts to format issues and their changes
+as well as to move thousands of web requests over a rate-limited system
+without being blocked.
+
+Most recently, alternative self hosted systems like `Gitea
+<https://gitea.io/>`_, which looks extremely promising, were considered as
+well, but in the end, SQLAlchemy would like to do everything it can to
+encourage community involvement, so it is hoped that the Github move will have
+this effect.
+
+In addition to the move to Github, the SQLAlchemy organization has been
+set up as the owning namespace for these projects to further emphasize that
+SQLAlchemy is more than just "zzzeek".
