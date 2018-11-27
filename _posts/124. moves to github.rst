@@ -6,7 +6,7 @@ author: Mike B
 
 SQLAlchemy's primary code-hosting repository is now `GitHub <https://github.com>`_.
 
-The public source repository, issue tracker and wiki now moves
+The public source repository, issue tracker and wiki moves
 underneath a new `organization <https://github.com/sqlalchemy>`_
 which now is the home for `SQLAlchemy <https://github.com/sqlalchemy/sqlalchemy>`_
 as well as related projects
