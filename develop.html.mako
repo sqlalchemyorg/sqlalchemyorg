@@ -86,12 +86,13 @@ merged directly.
 source code (e.g. not just documentation):
 
 <ul>
-<li><b>Please first submit an issue in the issue tracker before submitting a
-pull request.</b>   It is a frequent occurence that pull requests are submitted
-with no clear rationale why such a change is needed or what problem it
-intends to solve.  The issue will serve as a place for discussion
-regarding the pull request and will be permanently linked from the SQLAlchemy
-changelog as the source of information on the rationale for a given change.</li>
+<li><b>It is preferred to submit an issue in the issue tracker before submitting a
+pull request, </b> particularly for major changes.
+It is a frequent occurence that pull requests submitted either don't describe
+what problem they intend to solve, or they solve the problem in an inappropriate
+or sub-optimal way.   Having a bug or feature issue opened ahead of time
+will allow us to to understand the use case and discuss the best approach
+before the contributor makes the effort to write the code and tests.</li>
 
 <li><b>Always include tests with the change in code</b> - SQLAlchemy does not
 commit changes to code without a corresponding test - every line of code that
