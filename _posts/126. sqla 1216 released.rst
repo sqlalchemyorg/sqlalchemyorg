@@ -1,0 +1,15 @@
+---
+date: 2019/01/11 15:45:02
+title: SQLAlchemy 1.2.16 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.2.16 is now available.
+
+Release 1.2.16 includes a series of dialect and engine-level fixes, including
+one 1.2 regression involving Unicode decoding of DBAPI exception messages that
+contain non-ascii characters.
+
+Changelog for 1.2.16 is at `Changelog </changelog/CHANGES_1_2_16>`_.
+
+SQLAlchemy 1.2.16 is available on the `Download Page </download.html>`_.
