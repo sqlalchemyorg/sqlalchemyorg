@@ -103,11 +103,23 @@
             <th>${milestone_text['development']}</th>
             <td>
                 Active development for the next major release of SQLAlchemy.
-                Development of new features and major behavioral changes
-                to this "future" branch of code.   Users are encouraged
-                to run the master branch within test environments in order
-                to help in reporting regressions as well as to
-                test beta releases as they are released.
+                The "development" status is by definition not released on
+                Pypi and only exists within the git repository, typically
+                under the master branch.   When the first release of the
+                "development" status is created, the status moves to "beta".
+            </td>
+        </tr>
+        <tr>
+            <a name="status-desc-beta"/>
+            <th>${milestone_text['beta']}</th>
+            <td>
+                Evaluation releases for the current development version.
+                These releases are available on Pypi, however include a
+                'b' character in their version name so that per
+                <a href="https://www.python.org/dev/peps/pep-0440/">pep-0440</a>
+                these releases will not be installed by the pip tool unless the
+                <code>--pre</code> flag is specified. The "beta" status is
+                generally mutually exclusive versus the "development" status.
             </td>
         </tr>
         <tr>
@@ -126,35 +138,18 @@
             <a name="status-desc-maintenance"/>
             <th>${milestone_text['maintenance']}</th>
             <td>
-                The maintenance series accepts a very limited set of
-                critical bug fixes as they are encountered.
-                In maintenance mode, it is assumed that applications coded
-                to this version are themselves fully stable and not
-                experiencing much change, so the pace of releases slows down
-                considerably to avoid disruption.  An application that wishes
-                to continue active development should seek to upgrade
-                to the current release series as soon as possible.
-                Applications that are in a stable state and experience
-                a low amount of new development may wish to remain
-                linked to the current maintenance version, but will still
-                want to upgrade as the maintenance series falls into the
-                next milestone.
+                The maintenance series exists when the "beta" series has
+                become "current", and the previous "current" series becomes
+                "maintenance".   The maintenance series accepts a limited
+                set of critical bug fixes as they are encountered, as it is
+                expected that applications under active development will be
+                migrating to the "current" release if they have not done so
+                already.  Once the next development version begins, the
+                "maintenance" series is no longer released and moves to
+                "EOL".
             </td>
         </tr>
-        <tr>
-            <a name="status-desc-security"/>
-            <th>${milestone_text['security']}</th>
-            <td>
-                Security related bug reports or patches are accepted, however
-                almost no other changes are made and there are basically
-                no releases except in extraordinary circumstances;
-                SQLAlchemy has had perhaps one or two issues since its
-                inception in 2005 that even marginally qualified as
-                "security" issues. Applications running against this milestone
-                series should seek to upgrade to a newer series
-                in order to stay current.
-            </td>
-        </tr>
+
         <tr>
             <a name="status-desc-eol"/>
             <th>${milestone_text['eol']}</th>

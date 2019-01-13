@@ -35,17 +35,7 @@ Download - SQLAlchemy
     <a href="${latest_rec['changelog']}"><b>(CHANGES)</b></a></p>
 
 
-    % if milestone  == 'security':
-        <div class="inline-alert deprecation-security">
-            <h4>Release Support: Security Fixes Only</h4>
-            <p>
-                <em>
-                    Please note: the ${release_rec['major_version']} release is only updated
-                    for critical security fixes.
-                </em>
-            </p>
-        </div>
-    % elif milestone == 'maintenance':
+    % if milestone == 'maintenance':
         <div class="inline-alert deprecation-maintenance">
             <h4>Release Support: Maintenance Mode</h4>
             <p>

@@ -21,21 +21,27 @@ pypi_url_json = "https://pypi.python.org/pypi/SQLAlchemy/json"
 
 # development: development series in master, no betas released
 # beta: development series in master, betas released
+# current: current release
+# maintenance: optional category for "prior to current"
+# eol: end of life, one version  must be marked this way
+
+# we will generally have one of the following combinations:
+# eol, maintenance, current
+# eol, current, beta
+# eol, current, development
 release_milestones = {
     'beta': '1.3',
     'current': '1.2',
-    'maintenance': '1.1',
-    'security': '1.0',
-    'eol': '0.9',
+    'eol': '1.1',
 }
 
-lowest_doc_version = '0.9'
+lowest_doc_version = '1.1'
 eol = release_milestones['eol']
 
-# this is actually down to 0.4
-# but I don't want those to be even linked
-# this prominently.
-lowest_migration_version = '0.7'
+# this is the lowest doc version for which
+# we will link to "What's New?" in the release status
+# section of the download page
+lowest_migration_version = '1.0'
 
 
 def run():
