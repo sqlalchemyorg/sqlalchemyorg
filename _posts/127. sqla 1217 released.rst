@@ -1,0 +1,15 @@
+---
+date: 2019/01/26 15:45:02
+title: SQLAlchemy 1.2.17 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.2.17 is now available.
+
+Release 1.2.17 includes a fix to integer handling in the Oracle dialect
+specific to the 1.2 series, as well as two new event hooks in the ORM to
+assist with interception of bulk update and delete events.
+
+Changelog for 1.2.17 is at `Changelog </changelog/CHANGES_1_2_17>`_.
+
+SQLAlchemy 1.2.17 is available on the `Download Page </download.html>`_.

@@ -1,0 +1,39 @@
+---
+date: 2019/01/26 15:45:02
+title: SQLAlchemy 1.3.0b2 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.3.0b2 is now available.
+
+As the second beta release in the 1.3 series, version 1.3.0b2 has
+a focus on looking towards the future, ensuring that all features
+and behaviors that are long since deprecated fully emit a warning
+as such to better allow them to be removed in subsequent
+releases, as well as that some major new deprecations are added.
+The goal is to apply more focus to the ORM and Core usage
+APIs to allow easier transition to an eventual next generation
+version of SQLAlchemy suited to a Python 3 only world.
+
+Major changes in 1.3.0b2 include:
+
+* The ``AliasedClass`` construct may now be specified as the target
+  for a relationship, fully replacing the remaining rationale for the
+  "non primary mapper" feature which becomes deprecated.
+
+* The ``convert_unicode`` parameter on ``Engine`` and ``String``
+  is deprecated, as unicode handling is now supplied by all supported
+  DBAPIs.
+
+* The "threadlocal" engine strategy, long an obsolete behavior, is
+  finally deprecated.
+
+* Deprecation warning are emitted for **all** functions, methods,
+  and parameters that have already been noted in the documentation
+  as deprecated.
+
+For an overview of what's new in the 1.3 series, see
+`Whats New in 1.3? </docs/latest/changelog/migration_13.html>`_  Full
+changelog is available at `Changelog </changelog/CHANGES_1_3_0b2>`_.
+
+SQLAlchemy 1.3.0b2 is available on the `Download Page </download.html>`_.
