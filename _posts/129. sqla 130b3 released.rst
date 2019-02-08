@@ -1,0 +1,29 @@
+---
+date: 2019/02/08 15:45:02
+title: SQLAlchemy 1.3.0b3 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.3.0b3 is now available.
+
+Release 1.3.0b3 should hopefully be the last beta release for 1.3, as no
+additional major changes are planned.   This release adds further restrictions
+on deprecated behaviors, most notably removing most instances of automatic
+coercion of Python strings that contain SQL fragments into ``text()`` objects;
+this behavior has been emitting warnings since 1.0 so should not be something
+in use by applications by now; as it has become an obscure feature it starts
+to look more like a bug rather than a deprecated behavior, so the warnings
+are now full exception messages.
+
+The release also includes a variety of
+related improvements in the area of SQL identifiers and quoting, as well
+as some ORM-specific improvements.  Finally, support for the Nose testing
+framework has been removed; SQLAlchemy has standardized on Py.test for some
+years now and Nose no longer worked as a test platform under Python 3 in
+any case.
+
+For an overview of what's new in the 1.3 series, see
+`Whats New in 1.3? </docs/latest/changelog/migration_13.html>`_  Full
+changelog is available at `Changelog </changelog/CHANGES_1_3_0b3>`_.
+
+SQLAlchemy 1.3.0b3 is available on the `Download Page </download.html>`_.
