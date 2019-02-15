@@ -1,0 +1,15 @@
+---
+date: 2019/02/15 15:45:02
+title: SQLAlchemy 1.2.18 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.2.18 is now available.
+
+Release 1.2.18 includes a series of dialect-level fixes as well as a
+few ORM fixes.   Of note is another fix in a series of fixes involving
+a MySQL 8.0 related issue which impacts table reflection on Windows platforms.
+
+Changelog for 1.2.18 is at `Changelog </changelog/CHANGES_1_2_18>`_.
+
+SQLAlchemy 1.2.18 is available on the `Download Page </download.html>`_.
