@@ -1,0 +1,47 @@
+---
+date: 2019/03/04 15:45:02
+title: SQLAlchemy 1.3.0 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.3.0 is now available.
+
+Release 1.3.0 is the first official release in the 1.3 series, after
+three beta releases.   The release represents the past fourteen months
+of new feature development since version 1.2 was released.
+
+The 1.3 series has focuses in the areas of ORM behavioral improvements,
+Core behavioral improvements, and a large sweep of deprecations of old
+behaviors and features that are no longer necessary for the modern Python
+database development landscape.   With the upcoming end of Python 2
+maintenance, release 1.3 begins to lean towards a longer
+term plan for a simplified SQLAlchemy tailored to a Python 3 only world.
+
+Major highlights include:
+
+* An ORM relationship can now target an ``AliasedClass`` mapping, that is,
+  a class that is essentially mapped to an alternative selectable like an alias
+  or a subquery.   The relationship-to-aliased-class feature replaces the
+  last use case for non-primary mappers with a much more capable pattern.
+
+* The "expanding IN" feature added in 1.2, which allows a single bound
+  parameter to be used with an IN list of arbitrary size on any database
+  backend, now supports empty lists as well.  With the completion of this
+  feature, the stage is set for "expanding IN" to be the default behavior
+  for IN expressions in subsequent feature releases.
+
+* A large series of improvements to the association proxy extension.
+
+* Major behavioral improvements to the loader options system, including
+  more use cases supported and much better error messages
+
+* Support for SQLite JSON persistence and expression operations via the
+  base ``JSON`` datatype.
+
+The complete changelog for 1.3.0 as well as all the beta releases is at
+`Changelog </changelog/CHANGES_1_3_0>`_;  we'd like to thank
+the many contributors who helped with this release.
+
+
+SQLAlchemy 1.3.0 is available on the `Download Page </download.html>`_.
+
