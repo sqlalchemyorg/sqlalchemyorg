@@ -38,6 +38,16 @@ Major highlights include:
 * Support for SQLite JSON persistence and expression operations via the
   base ``JSON`` datatype.
 
+Overall, most changes are fully backwards compatible with a SQLAlchemy 1.2
+application, with the exception of the hard removal of the long-deprecated
+automatic coercion of SQL phrases into text (see `Coercion of string SQL
+fragments to text() fully removed
+<http://docs.sqlalchemy.org/en/latest/changelog/migration_13.html#coercion-of-string-sql-fragments-to-text-fully-removed>`_).
+Users should please carefully review the full series of migration notes at
+`What's new in 1.3? </docs/latest/changelog/migration_13.html>`_ to see the full
+expanse of things that have changed and should always fully test existing
+applications against the 1.3 series before promoting to production.
+
 The complete changelog for 1.3.0 as well as all the beta releases is at
 `Changelog </changelog/CHANGES_1_3_0>`_;  we'd like to thank
 the many contributors who helped with this release.
