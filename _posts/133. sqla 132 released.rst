@@ -1,0 +1,14 @@
+---
+date: 2019/04/02 15:45:02
+title: SQLAlchemy 1.3.2 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.3.2 is now available.
+
+Release 1.3.2 is the roughly monthly release containing the
+last few weeks of minor fixes.
+
+Changelog for 1.3.2 is at `Changelog </changelog/CHANGES_1_3_2>`_.
+
+SQLAlchemy 1.3.2 is available on the `Download Page </download.html>`_.
