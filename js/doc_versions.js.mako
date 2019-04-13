@@ -15,9 +15,12 @@ var doc_versions = [
 % for vers_rec in display_versions:
   {
     "version": "${
-      'development' \
-      if vers_rec['milestone'] == 'development' \
-      else 'Version %s' % vers_rec['major_version']
+      'Version %s%s' % (
+            vers_rec['major_version'],
+            " (%s)" % vers_rec['milestone']
+            if vers_rec['milestone'] in ('development', 'beta')
+            else ""
+        )
     }",
     "slug": "${vers_rec['major_vers_plaque']}"
     ${

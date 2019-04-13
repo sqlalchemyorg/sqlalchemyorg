@@ -4,7 +4,7 @@
 
     if 'current' in release_milestones:
         milestone = 'current'
-    elif 'maintenance' in milestones:
+    elif 'maintenance' in release_milestones:
         milestone = 'maintenance'
     else:
         # ack! no releases
