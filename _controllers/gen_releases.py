@@ -108,62 +108,48 @@ def _gen_release_data(pypi_data, milestones):
             git_tag = "rel_%s" % major_vers_underscore
 
             if release == development_version:
-                doc_plaque = rtd_plaque = 'devel'
                 git_location = 'master'
             elif major_version == beta_version:
-                doc_plaque = rtd_plaque = 'latest'
                 git_location = 'master'
             elif major_version == current_version:
                 # current version goes in "latest" if there isn't
                 # a beta version
                 if beta_version is None:
-                    doc_plaque = rtd_plaque = 'latest'
 
                     if development_version is None:
                         git_location = 'master'
                     else:
                         git_location = git_tag
                 else:
-                    doc_plaque = major_vers_plaque
-                    rtd_plaque = git_tag
                     git_location = git_tag
 
             else:
-                doc_plaque = major_vers_plaque
                 git_location = git_tag
-                rtd_plaque = git_tag
 
             tokens = {
-                'plaque': major_vers_plaque,
+                'major_vers_plaque': major_vers_plaque,
                 'underscore': major_vers_underscore,
                 'version': major_version,
-                'doc_plaque': doc_plaque,
             }
-
-            # note that for "/docs/doc_plaque/", we have an apache redirect
-            # that redirects to "/docs/en/rtd_plaque", e.g.  "/docs/12/"
-            # redirects to "/docs/en/rel_1_2/".  So there is really no need
-            # for "doc_plaque" except it looks a little nicer
 
             release_history[major_version] = {
                 'major_version': major_version,
+                'major_vers_plaque': major_vers_plaque,
                 'first': None,
                 'latest': None,
-                'rtd_plaque': rtd_plaque,
                 'git_tag': git_tag,
                 'git_location': git_location,
-                'doc_plaque': doc_plaque,
                 'milestone':
                     version_to_milestone[major_version]
                     if major_version >= eol_parsed else 'eol',
                 'releases': {},
-                'docs': "/docs/%(doc_plaque)s/" %
+                'docs': "/docs/%(major_vers_plaque)s/" %
                         tokens
                         if major_version >= lowest_doc_version_parsed
                         else None,
                 'migration_url':
-                    '/docs/%(doc_plaque)s/changelog/'
-                    'migration_%(plaque)s.html' %
+                    '/docs/%(major_vers_plaque)s/changelog/'
+                    'migration_%(major_vers_plaque)s.html' %
                     tokens
                     if major_version >= lowest_migration_version_parsed
                     else None,
