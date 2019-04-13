@@ -17,4 +17,4 @@
 
 RewriteEngine On
 
-RewriteRule (.*) ${release_rec['docs']}/$1
+RewriteRule (.*) ${release_rec['docs']}$1
