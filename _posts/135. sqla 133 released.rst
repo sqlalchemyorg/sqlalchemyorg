@@ -1,0 +1,17 @@
+---
+date: 2019/04/15 15:45:02
+title: SQLAlchemy 1.3.3 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.3.3 is now available.
+
+Release 1.3.3 fixes an ORM level regression and a SQLite connection-pool
+related regression in the 1.3 series as well as a PostgreSQL specific
+regression introduced in 1.3.2.  The ORM issue is likely the most impactful as
+it affects complex ``Query.join()`` conditions that have been observed in
+downstream projects.  A few other minor issues are corrected as well.
+
+Changelog for 1.3.3 is at `Changelog </changelog/CHANGES_1_3_3>`_.
+
+SQLAlchemy 1.3.3 is available on the `Download Page </download.html>`_.
