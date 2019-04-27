@@ -57,6 +57,34 @@ behind both the Core and ORM components of SQLAlchemy:
 </ul>
 </p>
 
+<a name="citations"></a>
+<h2>Citing SQLAlchemy</h2>
+
+<p>
+Please cite SQLalchemy if you use it in your research. You can cite the
+chapter from <a href="http://aosabook.org/en/sqlalchemy.html">SQLAlchemy at Architecture of Open Source Applications</a> as introduced in the previous section:
+
+<ul>
+<li>Michael Bayer. SQLAlchemy. In Amy Brown and Greg Wilson, editors, <b>The Architecture of Open Source Applications Volume II: Structure, Scale, and a Few More Fearless Hacks</b> 2012 <a href="http://aosabook.org">http://aosabook.org</a></li>
+</ul>
+
+Here is an example BibTeX entry:
+
+<pre>
+@incollection{sqlalchemy,
+  place={Mountain View},
+  title={SQLAlchemy},
+  booktitle={The Architecture of Open Source Applications Volume II: Structure, Scale, and a Few More Fearless Hacks},
+  publisher={aosabook.org},
+  url="http://aosabook.org/en/sqlalchemy.html",
+  author={Bayer, Michael},
+  editor={Brown, Amy and Wilson, Greg},
+  year={2012}
+}
+</pre>
+
+</p>
+
 <a name="blog"></a>
 <h2>Blog Posts</h2>
 

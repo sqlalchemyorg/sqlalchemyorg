@@ -31,6 +31,7 @@
                     </ul>
                 </li>
                 <li><a href="${site_base}/library.html#architecture">Architecture</a></li>
+                <li><a href="${site_base}/library.html#citations">Citing SQLAlchemy</a></li>
                 <li><a href="${site_base}/library.html#blog">Blog Posts</a></li>
                 <li><a href="${site_base}/library.html#talks">Talks</a></li>
                 <li><a href="${site_base}/library.html#tutorials">Tutorials</a></li>
