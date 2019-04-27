@@ -22,6 +22,7 @@ available.
 <ul class="nav">
     <li><a href="#reference">Reference Documentation</a> - SQLAlchemy's own documentation, including tutorials</li>
     <li><a href="#architecture">Architecture</a> - deep architectural dives</li>
+    <li><a href="#citations">Citing SQLAlchemy</a></li>
     <li><a href="#blog">Blog Posts</a> - news and musings</li>
     <li><a href="#talks">Talks</a> - videos from PyCon and elsewhere</li>
     <li><a href="#tutorials">Tutorials</a> - tutorial videos and sites hosted elsewhere</li>
