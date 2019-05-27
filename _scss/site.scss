@@ -501,6 +501,49 @@ $nav_height: 32px;
         margin-top:auto;
     }
 
+    #paypal-sidebar {
+        margin: 20px 0px 20px 0px;
+    }
+
+    #paypal-sidebar form {
+        float: left;
+        margin-top:10px
+    }
+
+    #paypal-sidebar p {
+        padding-left: 30px
+    }
+
+    hr {
+        color: #BFBFBF;
+        border: 1px solid;
+        clear: both;
+    }
+
+    #tidelift-sidebar {
+        div {
+          padding-left: 30px;
+          padding-bottom: 10px;
+          margin-top: 10px;
+          padding-top: 10px;
+        }
+
+        img {
+          float: left;
+          width: 50px;
+          height: 50px;
+          margin-right: 5px !important;
+        }
+
+    }
+}
+
+#tidelift-support img {
+  float: left;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #888;
+  margin-right: 20px !important;
 }
 
 div.library {

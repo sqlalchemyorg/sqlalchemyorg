@@ -12,6 +12,7 @@ Participate - SQLAlchemy
     <li><a href="#status">Project Status</a></li>
     <li><a href="#github">GitHub Access</a></li>
     <li><a href="#bugs">Reporting Bugs</a></li>
+    <li><a href="#security">Reporting Security Issues</a></li>
     <li><a href="#assistance">User Assistance</a></li>
     <li><a href="#publicizing">Publicizing SQLAlchemy</a></li>
 </ul>
@@ -94,7 +95,17 @@ has been the case for many years.</p>
 
     </ul>
 
+<a name="security"></a>
+<h2>Reporting Security Issues</h2>
 
+
+<p>SQLAlchemy participates in the <a href="https://tidelift.com/docs/security">Tidelift</a>
+security infrastructure for reporting potential vulnerabilities reponsibly.
+Please follow the guidelines at <a href="https://tidelift.com/docs/security">Tidelift security</a>
+in order to report a security issue.   Security-related issues in SQLAlchemy
+are <i>extremely</i> rare, and there have only been three CVEs reported in a fourteen year
+period.  Nevertheless, we would ask that you <strong>please do not file CVEs without
+emailing us first</strong>, so that proper disclosure steps may be taken.
 
 <a name="assistance"></a>
 <h2>User Assistance</h2>

@@ -13,6 +13,7 @@ Support - SQLAlchemy
     <li><a href="#mailinglist">Mailing List</a></li>
     <li><a href="#irc">IRC Channel</a></li>
     <li><a href="#stackoverflow">Stack Overflow</a></li>
+    <li><a href="#professional">Professional Support with Tidelift</a></li>
 </ul>
 
 <a name="before"></a>
@@ -37,28 +38,34 @@ href="http://stackoverflow.com/questions/tagged/sqlalchemy">Stack Overflow</a>.
 <a name="mailinglist"></a>
 <h2>Mailing List</h2>
 
-<p>Ready to post on the mailing list ?   This is the primary place for interactive support.
-We ask that posters try, to the best of their ability, to compose messages are both complete in
-their description as well as succinct with regards to the topic at hand:</p>
+<p>Ready to post on the mailing list ?   This is the primary place for
+interactive support. We ask that posters try, to the best of their ability, to
+compose messages are both complete in their description as well as succinct
+with regards to the topic at hand:</p>
 
     <ul>
-        <li><strong>Complete</strong> - important
-details like the version of SQLAlchemy in use, the type of database being worked with (MySQL 5, Postgresql 8.4, etc.),
-as well as full stack traces for error messages are provided, as well as clear sections of code illustrating the exact
-usage that leads to the symptom.</li>
-        <li><strong>Succinct</strong> - code and output
-is trimmed and formatted to illustrate only the problem at hand - details that aren't directly
-relevant to the issue at hand should be trimmed out as much as possible, including unrelated
-tables and models, dependencies on internal or third party libraries, unrelated object methods and
-relationships, large numbers of column definitions that can be omitted,
-complicated internal variable names that are difficult for outsiders
-to read.
-        </li>
+
+        <li><strong>Complete</strong> - important details like the version of
+        SQLAlchemy in use, the type of database being worked with (MySQL 5,
+        Postgresql 8.4, etc.), as well as full stack traces for error messages
+        are provided, as well as clear sections of code illustrating the exact
+        usage that leads to the symptom.</li>
+
+        <li><strong>Succinct</strong> - code and output is trimmed and
+        formatted to illustrate only the problem at hand - details that aren't
+        directly relevant to the issue at hand should be trimmed out as much as
+        possible, including unrelated tables and models, dependencies on
+        internal or third party libraries, unrelated object methods and
+        relationships, large numbers of column definitions that can be omitted,
+        complicated internal variable names that are difficult for outsiders to
+        read. </li>
+
     </ul>
 
-<p>These are only guidelines to follow, as we can and regularly do accommodate users of all skill levels.
-As long as some effort is apparent on your part to research and thoughtfully describe the issue,
-you've earned support from us !</p>
+<p>These are only guidelines to follow, as we can and regularly do accommodate
+users of all skill levels. As long as some effort is apparent on your part to
+research and thoughtfully describe the issue, you've earned support from us
+!</p>
 
 <p>The mailing list is hosted at <a
 href="http://groups.google.com/group/sqlalchemy">Google Groups.</a>
@@ -70,15 +77,19 @@ immediately.</p>
 <a name="irc"></a>
 <h2>IRC Channel</h2>
 
-<p>Another support resource is the IRC channel.   In this forum, users of all skill levels
-can ask short questions, post pastes of code, and discuss techniques among other developers who happen
-to be present.   The usual rules of IRC etiquette apply here - not unlike the mailing list, users who've
-put some effort into understanding their problem ahead of time will tend to get better results.</p>
+<p>Another support resource is the IRC channel.   In this forum, users of all
+skill levels can ask short questions, post pastes of code, and discuss
+techniques among other developers who happen to be present.   The usual rules
+of IRC etiquette apply here - not unlike the mailing list, users who've put
+some effort into understanding their problem ahead of time will tend to get
+better results.</p>
 
-<p>Core developers are sometimes present on the channel, but please do not single them out for individual
-assistance!  There are usually about 80-100 members on at any given time - many of which can likely
-help with your issue.   If your issue is genuinely more intricate and requiring of more skillful help than
-is currently available on the IRC channel, that's when it's time to post on the <a href="#mailinglist">mailing list</a>.</p>
+<p>Core developers are sometimes present on the channel, but please do not
+single them out for individual assistance!  There are usually about 80-100
+members on at any given time - many of which can likely help with your issue.
+If your issue is genuinely more intricate and requiring of more skillful help
+than is currently available on the IRC channel, that's when it's time to post
+on the <a href="#mailinglist">mailing list</a>.</p>
 
 <p>The IRC channel is on the <a href="http://www.freenode.net">Freenode</a> network as <code>#sqlalchemy</code>.</p>
 
@@ -89,6 +100,22 @@ is currently available on the IRC channel, that's when it's time to post on the 
 across the full spectrum of software development issues.   Search for questions tagged with
 <a
 href="http://stackoverflow.com/questions/tagged/sqlalchemy">sqlalchemy</a>.
+
+<a name="professional"></a>
+<h2>Professional support with Tidelift</h2>
+
+<div id="tidelift-support">
+
+<a href="https://tidelift.com/subscription/pkg/pypi-sqlalchemy?utm_source=pypi-sqlalchemy&utm_medium=referral&utm_campaign=website"><img src="/img/tidelift.png"/></a>
+
+<p>Professional support for SQLAlchemy is available as part of the <a
+href="https://tidelift.com/subscription/pkg/pypi-sqlalchemy?utm_source=pypi-sqlalchemy&utm_medium=referral&utm_campaign=website">Tidelift
+Subscription</a>. Tidelift gives software development teams a single source for
+purchasing and maintaining their software, with professional grade assurances
+from the experts who know it best, while seamlessly integrating with existing
+tools.</p>
+
+</div>
 
 <div class="pagecontrol">
 <strong>Next ... <a href="/participate.html">Participate</a></strong>
