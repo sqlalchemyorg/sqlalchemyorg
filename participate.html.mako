@@ -50,46 +50,47 @@ Participate - SQLAlchemy
 <a name="bugs"></a>
 <h2>Reporting Bugs</h2>
 
-<p>Bugs are reported using GitHub using the <a href="${self.attr.bb_base}/issues">Issues</a> tracking system
-(note you have to be logged in to use it).</p>
+<p>Bugs are reported using GitHub using the <a href="${self.attr.bb_base}/issues">Issues</a> tracking system.</p>
 
-<p>Bugs are generally reported only against the two most recent release branches, which comprise
-    the <strong>default</strong> branch and the <strong>maintenance</strong> branch.   Branches
-    prior to these are rarely modified.   Bug reports regarding library behavior
-    as well as documentation issues are reported in nearly equal measure.</p>
+<p>It is common these days for issues reported on Github that are not really bugs
+but are instead usage questions.   In the past we've tried to discourage the use of
+this style of reporting, however as it's prevalent on Github and Github has a
+very open-ended tagging system, we will tag such
+issues as "question" and answer them normally, however note we still welcome
+user questions on the <a href="support.html#mailinglist">mailing list</a> as
+has been the case for many years.</p>
 
-<p>When reporting a behavioral bug we ask that you:</p>
+<p>When reporting a behavioral (non-documentation) bug we ask that you:</p>
 
     <ul>
-        <li>Ensure that the issue is still present on the most recent released version of SQLAlchemy within either
-            the default branch or the maintance branch, and preferably
-            against the latest development tip of the series in use.   SQLAlchemy provides easy download links of the
-            most recent development versions on the <a href="/download.html">download page.</a></li>
-        <li>Check that the issue doesn't already exist on the issue tracker.  GitHub is fairly
-        helpful in this regard.</li>
-        <li>Only report issues that you're pretty sure are a bug.   It is perfectly OK to report a usage issue on the
-            mailing list that may or may not be a bug - we'll escalate bugs to the bug tracker if it really
-            is a bug.</li>
         <li><p><strong>Create a succinct test case which reproduces the issue.</strong>   This needs to be a script that
-            <strong>we can actually run</strong> - so it should not require any imports that the SQLAlchemy
-            developers don't have access to, and in the vast majority of cases should not have any imports
-            outside of SQLAlchemy itself.   It needs to include whatever table definitions and data are
-            required to reproduce the issue.  While we have access to most database backends, SQLite is preferred
-            unless the issue is specific to a certain backend.</p>
+        <strong>we can actually run</strong> - so it should not require any
+        imports that the SQLAlchemy developers don't have access to, and in
+        the vast majority of cases should not have any imports outside of
+        SQLAlchemy itself.   It needs to include whatever table definitions
+        and data are required to reproduce the issue.  While we have access
+        to most database backends, SQLite is preferred unless the issue is
+        specific to a certain backend.</p>
 
-            <p>The guide we use for this is <a href="https://stackoverflow.com/help/mcve">How to create a Minimal, Complete, and Verifiable example</a> on StackOverflow.   Please give it a read.</p>
+        <p>The guide we use for this is <a
+        href="https://stackoverflow.com/help/mcve">How to create a Minimal,
+        Complete, and Verifiable example</a> on StackOverflow.   Please
+        give it a read.</p>
 
         </li>
-        <li>At the very least, if code examples are not feasible, <strong>please include complete stack traces for all exceptions being observed.</strong>  Nothing is more vague than an exception message without a stack trace.
-        </li>
-        <li>Tell us exactly what version of SQLAlchemy the issue is being observed with, as well as details
-            about the database in use.   Often, an issue has already been fixed in the upcoming series and
-            could not be backported.</li>
-        <li>As you'll create an account to post a bug, updates on the ticket will be sent to the email address
-            you register with.  Feel free to add other addresses as CCs to the issue.</li>
-        <li>Monitor the issue.   Lots of times the developers have immediate followup questions, and might even
-            have patches for you to try in case the issue is hard to reproduce.   Please keep the conversation going
-            until we can get the bug fixed !</li>
+
+        <li>At the very least, if code examples are not feasible,
+        <strong>please include complete stack traces for all exceptions being
+        observed.</strong>  Nothing is more vague than an exception message
+        without a stack trace. </li>
+
+        <li>Tell us exactly what version of SQLAlchemy the issue is being
+        observed with, as well as details about the database in use as well as
+        the exact driver (e.g. Python DBAPI) being used. </li>
+
+        <li>Please respond to further questions asked on the issue.  If we
+        can't get the additional information we need, we will usually have to
+        close the issue. </li>
 
     </ul>
 
