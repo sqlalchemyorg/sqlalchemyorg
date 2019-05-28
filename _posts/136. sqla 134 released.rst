@@ -1,0 +1,20 @@
+---
+date: 2019/05/27 15:45:02
+title: SQLAlchemy 1.3.4 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.3.4 is now available.
+
+Release 1.3.4 includes a few small ORM level
+regression fixes as well as adjustments and enhancements for the PostgreSQL,
+MySQL and SQL Server dialects.  Additionally, it identifies differently-cased,
+but otherwise equivalent identifiers within the ``GenericFunction`` system
+as a deprecated use case; a warning will be emitted when two names conflict.
+
+As is the case with all releases, we'd like to thank all the contributors who
+helped with this release.
+
+Changelog for 1.3.4 is at `Changelog </changelog/CHANGES_1_3_4>`_.
+
+SQLAlchemy 1.3.4 is available on the `Download Page </download.html>`_.
