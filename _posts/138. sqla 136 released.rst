@@ -1,0 +1,20 @@
+---
+date: 2019/07/21 15:45:02
+title: SQLAlchemy 1.3.6 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.3.6 is now available.
+
+Release 1.3.6 includes a relatively wide amount of changes including
+many small bug fixes within the ORM, as well as the ability for the SQLite
+dialect to render an IN expression against tuples for newer versions of
+SQLite and a new capability for ORM query options to be specified
+hierarchically.
+
+As is the case with all releases, we'd like to thank all the contributors who
+helped with this release.
+
+Changelog for 1.3.6 is at `Changelog </changelog/CHANGES_1_3_6>`_.
+
+SQLAlchemy 1.3.6 is available on the `Download Page </download.html>`_.
