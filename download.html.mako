@@ -16,6 +16,9 @@ Download - SQLAlchemy
 
 <h1>Get SQLAlchemy</h1>
 
+<%include file="download_links.mako"/>
+
+
 
 <%def name="download_version(milestone)">
     <%
@@ -25,7 +28,7 @@ Download - SQLAlchemy
             return ""
         latest_rec = release_rec['latest']
     %>
-
+    <a name="${milestone}"></a>
     <h2>Version ${release_rec['major_version']}</h2>
 
     <p>Latest ${release_rec['major_version']} Release: <b>${latest_rec['version']}</b>
@@ -74,7 +77,7 @@ Download - SQLAlchemy
 % endif
 
 
-<a name="development"/>
+<a name="development"></a>
 <h2>Development Versions</h2>
 
 <p><a href="https://github.com/sqlalchemy/sqlalchemy/">SQLAlchemy on GitHub</a></p>
@@ -82,9 +85,13 @@ Download - SQLAlchemy
 
 <p>For further details on Git repository access please see <a href="/develop.html">development</a>.</p>
 
-
+<a name="license"></a>
 <h2>License</h2>
 
 <p>SQLAlchemy is covered by the <a href="http://www.opensource.org/licenses/mit-license.php">MIT License</a>.
 
+<a name="versions"></a>
+<%include file="versioning.mako"/>
+
+<a name="relstatus"></a>
 <%include file="release_grid.mako"/>

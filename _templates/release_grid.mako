@@ -21,13 +21,16 @@
 
 <h2>Release Status</h2>
 
+<p>This table summarizes the overall history of SQLAlchemy releases with
+further links for more recent minor releases.</p>
+
 <table class="table table-striped">
     <thead>
         <tr>
-            <th>Major Version</th>
+            <th>Major/Minor Version</th>
             <th>First Release</th>
             <th>Latest Release</th>
-            <th>Latest Version</th>
+            <th>Latest Point Release</th>
             <th>Release Status</th>
         </tr>
     </thead>

@@ -47,7 +47,9 @@
                 <li><a href="${bb_base}">Github</a></li>
             </ul>
         </li>
-        <li${active('download')}><a href="${site_base}/download.html">download</a></li>
+        <li${active('download')}><a href="${site_base}/download.html">download</a>
+            <%include file="download_links.mako"/>
+        </li>
     </ul>
 
 </div>
