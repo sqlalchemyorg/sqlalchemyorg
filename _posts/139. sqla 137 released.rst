@@ -1,0 +1,19 @@
+---
+date: 2019/08/14 15:45:02
+title: SQLAlchemy 1.3.7 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.3.7 is now available.
+
+Release 1.3.7 has a considerable number of bug fixes across the ORM, SQL, and
+database dialect components and a few new database use case additions,
+including full support for psycopg2's fast execution helpers which can
+significantly increase the performance of multiple INSERT statements.
+
+As is the case with all releases, we'd like to thank all the contributors who
+helped with this release.
+
+Changelog for 1.3.7 is at `Changelog </changelog/CHANGES_1_3_7>`_.
+
+SQLAlchemy 1.3.7 is available on the `Download Page </download.html>`_.
