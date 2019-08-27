@@ -1,0 +1,20 @@
+---
+date: 2019/08/27 15:45:02
+title: SQLAlchemy 1.3.8 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.3.8 is now available.
+
+Release 1.3.8 is only about two weeks past release 1.3.7, and overall there
+has been a high level of velocity as users continue to report lots of small
+issues and often deliver pull requests to accompany them.   Release 1.3.8
+includes a fix for the new psycopg2 "execute values" performance feature to
+accommodate for INSERT statements that are modified by compiler hooks.
+
+As is the case with all releases, we'd like to thank all the contributors who
+helped with this release.
+
+Changelog for 1.3.8 is at `Changelog </changelog/CHANGES_1_3_8>`_.
+
+SQLAlchemy 1.3.8 is available on the `Download Page </download.html>`_.
