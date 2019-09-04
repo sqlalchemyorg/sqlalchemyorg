@@ -99,9 +99,9 @@ has been the case for many years.</p>
 <h2>Reporting Security Issues</h2>
 
 
-<p>SQLAlchemy participates in the <a href="https://tidelift.com/docs/security">Tidelift</a>
+<p>SQLAlchemy participates in the <a href="https://tidelift.com/security">Tidelift</a>
 security infrastructure for reporting potential vulnerabilities reponsibly.
-Please follow the guidelines at <a href="https://tidelift.com/docs/security">Tidelift security</a>
+Please follow the guidelines at <a href="https://tidelift.com/security">Tidelift security</a>
 in order to report a security issue.   Security-related issues in SQLAlchemy
 are <i>extremely</i> rare, and there have only been three CVEs reported in a fourteen year
 period.  Nevertheless, we would ask that you <strong>please do not file CVEs without
