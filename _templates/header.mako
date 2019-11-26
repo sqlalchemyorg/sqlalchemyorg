@@ -48,7 +48,7 @@
             </ul>
         </li>
         <li${active('download')}><a href="${site_base}/download.html">download</a>
-            <%include file="download_links.mako"/>
+            <%include file="download_links.mako" args="site_base=site_base"/>
         </li>
     </ul>
 
