@@ -1,6 +1,6 @@
 ---
 date: 2019/12/16 15:45:02
-title: SQLAlchemy 1.3.11 Released
+title: SQLAlchemy 1.3.12 Released
 author: Mike B
 ---
 
