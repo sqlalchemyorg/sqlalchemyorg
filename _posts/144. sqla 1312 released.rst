@@ -1,0 +1,20 @@
+---
+date: 2019/12/16 15:45:02
+title: SQLAlchemy 1.3.11 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.3.12 is now available.
+
+Release 1.3.12 contains a series of bug fixes mostly in the area of the
+ORM.
+
+See the changelog for descriptions of these new features as well as
+an overview of bug fixes.
+
+As is the case with all releases, we'd like to thank all the contributors who
+helped with this release.
+
+Changelog for 1.3.12 is at `Changelog </changelog/CHANGES_1_3_12>`_.
+
+SQLAlchemy 1.3.12 is available on the `Download Page </download.html>`_.
