@@ -17,6 +17,7 @@ Develop - SQLAlchemy
     <li><a href="#integration">Continuous Integration</a></li>
     <li><a href="#documentation">Documentation</a></li>
     <li><a href="#style">Coding Guidelines</a></li>
+    <li><a href="#environment">Development Environment</a></li>
     <li><a href="#sprints">Sprints</a></li>
 </ul>
 
@@ -107,6 +108,9 @@ bug report</a> for code changes where you aren't able to provide tests</b>.</li>
 <li><b>Please follow up for requests for changes on the pull request, as well
 as subscribe to the Gerrit review to receive comments.</b> - Pull requests where
 requested changes are not responded towards will be closed.</li>
+
+<li>Please make sure you are configured to run the current <a href="#environment">Development Environment</a>
+    requirements, which will help ensure your PRs pass automatic tests.</li>
 
 </ul>
 
@@ -201,7 +205,27 @@ Jenkins interface is available at <a href="https://jenkins.sqlalchemy.org">https
             runs under <a href="#documentation">Sphinx.</a></li>
         <li>No feature or bug fix is ever committed without full <a href="#testing">unit tests</a>
             to as much a degree as possible.</li>
+        <li>Please make sure you are configured to run the current <a href="#environment">Development Environment</a>
+            requirements, which will help ensure your PRs pass automatic tests.</li>
     </ul>
+
+
+<a name="environment"></a>
+<h2>Development Environment</h2>
+
+<p>The SQLAlchemy project has recently standardized to adopting a few conventions during development,
+    most of which can be automatically enforced by a properly configured development environment.</p>
+    <ul>
+        <li>Source code formatting and other utilities are automatically applied using hooks in the <a href="https://pre-commit.com ">pre-commit</a> framework.
+            `pre-commit` can be installed by running <code>pip install pre-commit</code>.</li>
+        <li>Source code is formatted using Python Software Foundation's <a href="https://black.readthedocs.io/en/stable/">black</a>.
+            `black` can be installed by running <code>pip install black</code>,
+            however `pre-commit` should automatically install it in most situations.</li>
+    </ul>
+<p>TLDR; please ensure <a href="https://pre-commit.com ">pre-commit</a> is installed in your environment before beginning work on a Pull Request.
+</p>
+
+
 <a name="sprints"></a>
 <h2>Sprints</h2>
 <p>The SQLAlchemy project has an interest in attracting developers through sprints.   Currently,
