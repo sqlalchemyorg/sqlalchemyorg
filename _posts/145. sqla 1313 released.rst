@@ -1,0 +1,25 @@
+---
+date: 2020/01/22 15:45:02
+title: SQLAlchemy 1.3.13 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.3.13 is now available.
+
+Release 1.3.13 is a fairly ambitious bug-fix release which includes
+a fair amount of ORM related fixes as well as a variety of internal changes
+in order to greatly reduce reference cycles in both the Core and ORM
+layers.    While these changes have been extensively tested,  there is
+an increased usage of weak reference objects which can in theory impact
+non-idiomatic code that deals with inspection of ORM internals in that
+some objects may be garbage collected earlier than they would have previously.
+
+See the changelog for descriptions of these new features as well as
+an overview of bug fixes.
+
+As is the case with all releases, we'd like to thank all the contributors who
+helped with this release.
+
+Changelog for 1.3.13 is at `Changelog </changelog/CHANGES_1_3_13>`_.
+
+SQLAlchemy 1.3.13 is available on the `Download Page </download.html>`_.
