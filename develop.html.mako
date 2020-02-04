@@ -93,7 +93,8 @@ It is a frequent occurence that pull requests submitted either don't describe
 what problem they intend to solve, or they solve the problem in an inappropriate
 or sub-optimal way.   Having a bug or feature issue opened ahead of time
 will allow us to to understand the use case and discuss the best approach
-before the contributor makes the effort to write the code and tests.</li>
+before the contributor makes the effort to write the code and tests.  The Github
+generated issue numbers are also the preferred identifier for our changelog.</li>
 
 <li><b>Always include tests with the change in code</b> - SQLAlchemy does not
 commit changes to code without a corresponding test - every line of code that
@@ -111,6 +112,26 @@ requested changes are not responded towards will be closed.</li>
 
 <li>Please make sure you are configured to run the current <a href="#environment">Development Environment</a>
     requirements, which will help ensure your PRs pass automatic tests.</li>
+
+<li>Instead of editing the Changelog file itself, please adopt the following workflow:
+    <ul>
+        <li>Create a per-issue changelog file with the path
+            `/doc/build/changelog/unreleased_{Version}/{IssueId}.rst`, in which
+            `IssueId` is the auto-generated GitHub Issue Id.
+            </li>
+        <li>If the PR does not have a corresponding issue, use a placeholder file
+            in your PR to generate a unique identifier for the PR, and then rename
+            the placeholder file to use the PR identifer for the `IssueId`.
+            </li>
+        <li>The changelog file format will hopefully be self-documenting
+            to developers with experience in reStructuredText files, as our
+            documentation system uses a custom Sphinx extension to introduce custom
+            directives to standard `.rst` files.
+            Documentation for this extension is available on
+            <a href="https://github.com/sqlalchemyorg/changelog">sqlalchemyorg/changelog</a>.
+        </li>
+    </ul>
+</li>
 
 </ul>
 
