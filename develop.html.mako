@@ -60,7 +60,7 @@ seeking or providing support.</em></p>
             discussion medium for SqlAlchemy contributors and hosts the 
             <a href="#scheduled-developer-meetings">Scheduled Developer Meetings</a>.
             Gitter based support is available via the
-            <a href="https://gitter.im/sqlalchemy/devel">sqlalchemy/community</a> Gitter
+            <a href="https://gitter.im/sqlalchemy/community">sqlalchemy/community</a> Gitter
             room; more information on this is available on the 
             <a href="/support.html#gitter">support</a> page.
             </li>
