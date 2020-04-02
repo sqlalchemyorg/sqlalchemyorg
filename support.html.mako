@@ -11,7 +11,7 @@ Support - SQLAlchemy
 <ul>
     <li><a href="#before">Before Requesting Support</a></li>
     <li><a href="#mailinglist">Mailing List</a></li>
-    <li><a href="#irc">IRC Channel</a></li>
+    <li><a href="#real-time">Real-time Channel</a></li>
     <li><a href="#stackoverflow">Stack Overflow</a></li>
     <li><a href="#professional">Professional Support with Tidelift</a></li>
 </ul>
@@ -74,24 +74,42 @@ hours until a moderator can approve it.  Once approved, subsequent posts should 
 immediately.</p>
 
 
-<a name="irc"></a>
-<h2>IRC Channel</h2>
+<a name="real-time"></a>
+<h2>Real-time Channels</h2>
 
-<p>Another support resource is the IRC channel.   In this forum, users of all
+<p>There are several real-time options for support.</p>
+
+<p><em>The Developers of SqlAlchemy kindly request all people participating in 
+these channels respect the <a href="/codeofconduct.html">Code of Conduct</a> when 
+seeking or providing support.</em></p>
+
+<p>Core developers are sometimes present on these channels, but please do not
+single them out for individual assistance!  There are usually about 80-100
+members on at any given time - many of which can likely help with your issue.
+If your issue is genuinely more intricate and requiring of more skillful help
+than is currently available on IRC or Gitter, that's when it's time to post
+on the <a href="#mailinglist">mailing list</a>.</p>
+
+<a name="irc"></a><!-- keep #irc for legacy links -->
+<h3>IRC Channel</h3>
+<p>A popular support resource is the IRC channel.   In this forum, users of all
 skill levels can ask short questions, post pastes of code, and discuss
 techniques among other developers who happen to be present.   The usual rules
 of IRC etiquette apply here - not unlike the mailing list, users who've put
 some effort into understanding their problem ahead of time will tend to get
 better results.</p>
 
-<p>Core developers are sometimes present on the channel, but please do not
-single them out for individual assistance!  There are usually about 80-100
-members on at any given time - many of which can likely help with your issue.
-If your issue is genuinely more intricate and requiring of more skillful help
-than is currently available on the IRC channel, that's when it's time to post
-on the <a href="#mailinglist">mailing list</a>.</p>
-
 <p>The IRC channel is on the <a href="http://www.freenode.net">Freenode</a> network as <code>#sqlalchemy</code>.</p>
+
+<a name="gitter"></a>
+<h3>Gitter Room</h3>
+
+<p>The <a href="https://gitter.im/sqlalchemy/community">sqlalchemy/community</a> 
+Gitter room is available for real-time support.  There are usually a handful of 
+SqlAlchemy users and developers present and willing to assist.</p>
+
+<p>Unlike IRC, Gitter offers a browsable public history - so user are not required
+to be constantly logged-in and can review any conversations they have missed.</p>
 
 <a name="stackoverflow"></a>
 <h2>Stack Overflow</h2>
