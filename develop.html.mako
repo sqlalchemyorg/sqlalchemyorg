@@ -31,37 +31,53 @@ on getting started.
 
 <ul>
     <li>The <a href="/support.html#mailinglist">main mailing list</a> is the most 
-        common - core devs assist users with issues of all kinds.
+        common - core devs assist users with issues of all kinds. All SqlAlchemy 
+        Users and Third-Party Library authors are encouraged to participate here
+        and seek support of any kind.
         </li>
-    <li>Developer discussion takes place on the 
-        <a href="http://groups.google.com/group/sqlalchemy-devel">development
-        mailing list</a>, also hosted on Google groups.  Anyone can join this list, 
-        though we ask that discussion be limited to architectural and developmental 
-        issues only.
+
+    <li>A secondary <a href="https://groups.google.com/group/sqlalchemy-devel">
+        development mailing list</a>, also hosted on Google groups, is dedicated
+        to Developer concerns such as: release announcements, architectural and 
+        developmental issues, and issues pertaining to Third-Party Library authors.
+        This list is typically low traffic; all posts intended for this channel are
+        welcome on the <a href="/support.html#mailinglist">main mailing list</a> .
         </li>
-    <li>Some development discussion occurs on the <code>#sqlalchemy-devel</code>
-        IRC channel on Freenode. This channel is <strong>only</strong> for users 
-        that are interested in contributing code, tests, documentation, or other 
-        developmental resources.
+
+    <li>Development discussion continually occurs in the 
+        <a href="https://gitter.im/sqlalchemy/devel">sqlalchemy/devel</a> gitter room
+        througout the week. Discussion in this room is intended for users 
+        who are interested in contributing code, tests, documentation, or other 
+        developmental resources. This channel is the current preferred real-time
+        discussion medium for SqlAlchemy contributors and hosts the 
+        <a href="#scheduled-developer-meetings">Scheduled Developer Meetings</a>.
+        </li>
+
+    <li>There is a legacy <code>#sqlalchemy-devel</code> IRC channel on Freenode.
+        This channel is <strong>only</strong> for users that are interested in
+        contributing code, tests, documentation, or other developmental resources.
         <strong>No support issues will be addressed here.</strong>
         IRC-based support is available on the <a href="/support.html#irc">main 
         IRC channel</a>.
-        </li>
-    <li>A real-time virtual meeting of core developers and contributers occurs in the
-        <a href="https://gitter.im/sqlalchemy/devel">sqlalchemy/devel</a> gitter room
-        on a regular basis. This meeting is intended to be held weekly at a regular time,
-        but this may vary based on the availability of required members.  In advance of 
-        every meeting, the room will contain a link to a document containing the Date, 
-        Time and Agenda for the next scheduled meeting; currently this appears in the 
-        "Subject Line" or "Title"  of the room. These meetings and their records are 
-        open to the public; users who are interested in contributing code, tests, 
-        documentation, or other developmental resources are encouraged to attend.
-        <strong>No support issues will be addressed here.</strong>
-        These meetings follow their annonced agendas, and are dedicated to core
-        development themes such as API changes, new releases, and the assignment of 
-        work regarding recognized bugs and features.
+        This channel is considered to be a legacy format; users are encouraged to
+        use the gitter room.
         </li>
 </ul>
+
+<a name="scheduled-developer-meetings"></a>
+<h3>Scheduled Developer Meetings</h3>
+
+<p>A real-time virtual meeting of core developers and contributers occurs in the
+   <a href="https://gitter.im/sqlalchemy/devel">sqlalchemy/devel</a> gitter room
+   on a regular basis. This meeting is intended to be held weekly at a regular time,
+   but this may vary based on the availability of required members.  In advance of 
+   every meeting, the room will contain a link to a document containing the Date, 
+   Time and Agenda for the next scheduled meeting; currently this appears in the 
+   "Subject Line" or "Title"  of the room. These meetings and their records are 
+   open to the public. Users who are interested in contributing code, tests, 
+   documentation, or other developmental resources are encouraged to attend.
+   </p>
+
 
 <a name="source"></a>
 <h2>Source Access</h2>
