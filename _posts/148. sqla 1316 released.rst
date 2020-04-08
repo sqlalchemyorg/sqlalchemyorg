@@ -1,0 +1,22 @@
+---
+date: 2020/04/17 15:45:02
+title: SQLAlchemy 1.3.16 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.3.16 is now available.
+
+Release 1.3.16 includes many fixes and improvements as well as new use case
+additions, including support for the AUTOCOMMIT isolation level setting for the
+SQLite and Oracle dialects, support for reflection of "computed" column
+defaults, and support for emulated versions of "IS DISTINCT FROM" / "IS NOT
+DISTINCT FROM" for the Oracle, MySQL, and SQL Server dialects.
+
+See the changelog for descriptions of this and other fixes.
+
+As is the case with all releases, we'd like to thank all the contributors who
+helped with this release.
+
+Changelog for 1.3.16 is at `Changelog </changelog/CHANGES_1_3_16>`_.
+
+SQLAlchemy 1.3.16 is available on the `Download Page </download.html>`_.
