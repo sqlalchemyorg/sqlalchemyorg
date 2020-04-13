@@ -37,7 +37,7 @@ release_milestones = {
     'eol': '1.1',
 }
 
-lowest_doc_version = '1.1'
+lowest_doc_version = '1.2'
 eol = release_milestones['eol']
 
 # this is the lowest doc version for which
