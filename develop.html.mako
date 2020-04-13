@@ -177,12 +177,12 @@ on getting started.
                 `/doc/build/changelog/unreleased_{Version}/{IssueId}.rst`, in which
                 `IssueId` is the auto-generated GitHub Issue Id.
             </li>
-            <li>The file format for a changelog file uses the `.rst` markup described at 
+            <li>The format for a changelog file uses the `.rst` markup described at 
                 <a href="https://github.com/sqlalchemyorg/changelog">sqlalchemyorg/changelog</a>. 
-                See the `README.txt` file in the `/doc/build/unreleased_XX` directory 
-                for an example. Please note: SqlAclhemy's documentation uses
-                a custom Sphinx extension that introduces new directives to reStructuredText
-                files.
+                See the file `/doc/build/changelog/README.txt` in SqlAlchemy's 
+                source code for more details and an example. 
+                Please note: SqlAclhemy's documentation uses a custom Sphinx 
+                extension that introduces new directives to reStructuredText files.
             </li>
         </ul>
     </li>
