@@ -1,0 +1,24 @@
+---
+date: 2020/05/13 15:45:02
+title: SQLAlchemy 1.3.17 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.3.17 is now available.
+
+Release 1.3.17 fixes a variety of issues across the ORM, engine, and
+dialect-level components, as well as includes some new use case additions.
+Among the fixes is a connection-pool related issue which could under some
+less common circumstances lead towards the "rollback agent" not functioning
+correctly in the pool.  The release also includes a new feature
+"sync_backref=False" that hopes to ease the use of viewonly relationships
+within backref combinations.
+
+See the changelog for descriptions of this and other fixes.
+
+As is the case with all releases, we'd like to thank all the contributors who
+helped with this release.
+
+Changelog for 1.3.17 is at `Changelog </changelog/CHANGES_1_3_17>`_.
+
+SQLAlchemy 1.3.17 is available on the `Download Page </download.html>`_.
