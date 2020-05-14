@@ -79,7 +79,7 @@ immediately.</p>
 
 <p>There are several real-time options for support.</p>
 
-<p><em>The Developers of SqlAlchemy kindly request all people participating in 
+<p><em>The Developers of SQLAlchemy kindly request all people participating in 
 these channels respect the <a href="/codeofconduct.html">Code of Conduct</a> when 
 seeking or providing support.</em></p>
 
@@ -106,7 +106,7 @@ better results.</p>
 
 <p>The <a href="https://gitter.im/sqlalchemy/community">sqlalchemy/community</a> 
 Gitter room is available for real-time support.  There are usually a handful of 
-SqlAlchemy users and developers present and willing to assist.</p>
+SQLAlchemy users and developers present and willing to assist.</p>
 
 <p>Unlike IRC, Gitter offers a browsable public history - so user are not required
 to be constantly logged-in and can review any conversations they have missed.</p>

@@ -27,10 +27,10 @@ on getting started.
 <a name="developers"></a>
 <h2>Development Community</h2>
 
-<p>Where can you find the Developers of SqlAlchemy ?</p>
+<p>Where can you find the Developers of SQLAlchemy ?</p>
 
 <p>
-    <em>The Developers of SqlAlchemy kindly request all people participating in 
+    <em>The Developers of SQLAlchemy kindly request all people participating in 
     these channels respect the <a href="/codeofconduct.html">Code of Conduct</a> when 
     seeking or providing support.</em>
 </p>
@@ -39,7 +39,7 @@ on getting started.
     <li>Mailing Lists</li>
     <ul>
         <li>The <a href="/support.html#mailinglist">main mailing list</a> is the most 
-            common - core devs assist users with issues of all kinds. All SqlAlchemy 
+            common - core devs assist users with issues of all kinds. All SQLAlchemy 
             Users and Third-Party Library authors are encouraged to participate here
             and seek support of any kind.
         </li>
@@ -58,7 +58,7 @@ on getting started.
             througout the week. Discussion in this room is intended for users 
             who are interested in contributing code, tests, documentation, or other 
             developmental resources. This channel is the current preferred real-time
-            discussion medium for SqlAlchemy contributors and hosts the 
+            discussion medium for SQLAlchemy contributors and hosts the 
             <a href="#scheduled-developer-meetings">Scheduled Developer Meetings</a>.
             Gitter based support is available via the
             <a href="https://gitter.im/sqlalchemy/community">sqlalchemy/community</a> Gitter
@@ -179,7 +179,7 @@ on getting started.
             </li>
             <li>The format for a changelog file uses the `.rst` markup described at 
                 <a href="https://github.com/sqlalchemyorg/changelog">sqlalchemyorg/changelog</a>. 
-                See the file `/doc/build/changelog/README.txt` in SqlAlchemy's 
+                See the file `/doc/build/changelog/README.txt` in SQLAlchemy's 
                 source code for more details and an example. 
                 Please note: SqlAclhemy's documentation uses a custom Sphinx 
                 extension that introduces new directives to reStructuredText files.
