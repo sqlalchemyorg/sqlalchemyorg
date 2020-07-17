@@ -8,6 +8,7 @@ docs.enabled = True
 docs.priority = 50
 
 docs_url = "//docs.sqlalchemy.org"
+#docs_url = "//localhost:8080/docs"
 bb_url = "https://github.com/sqlalchemy/sqlalchemy"
 site_url = "//www.sqlalchemy.org"
 site.url = "http://www.sqlalchemy.org"

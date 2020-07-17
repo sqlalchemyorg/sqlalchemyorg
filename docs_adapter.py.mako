@@ -59,6 +59,12 @@ def setup_context(context):
         context['is_current_version'] = release_status_rec['is_current_version']
         context['is_beta_version'] = release_status_rec['is_beta_version']
 
+    context['zip_url'] = "%s/%s/sqlalchemy-%s.zip" % (
+        "${zf.config.docs_url}",
+        context['current_version'],
+        context['current_version']
+    )
+
     context['pdf_url'] = None
     #context['pdf_url'] = "%spdf/%s/%s/%s.pdf" % (
     #        context['MEDIA_URL'],
