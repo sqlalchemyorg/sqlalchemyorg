@@ -67,7 +67,7 @@ def setup_context(context):
     context['is_beta_version'] = release_status_rec['is_beta_version']
     context["major_vers_plaque"] =release_status_rec["major_vers_plaque"]
 
-    context['zip_url'] = "%s/%s/sqlalchemy-%s.zip" % (
+    context['zip_url'] = "%s/%s/sqlalchemy_%s.zip" % (
         "${zf.config.docs_url}",
         release_status_rec["major_vers_plaque"],
         release_status_rec["major_vers_plaque"]
