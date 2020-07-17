@@ -17,7 +17,17 @@
                 "is_prerelease_version": is_prerelease,
                 "is_legacy_version": is_legacy,
                 "is_current_version": is_current,
+                "major_vers_plaque": version_history["major_vers_plaque"]
             }
+        release_status[str(major_version)] = {
+            "token": token,
+            "is_beta_version": is_beta,
+            "is_prerelease_version": is_prerelease,
+            "is_legacy_version": is_legacy,
+            "is_current_version": is_current,
+            "major_vers_plaque": version_history["major_vers_plaque"]
+        }
+
 
 %>
 
@@ -49,20 +59,18 @@ def setup_context(context):
     try:
         release_status_rec = release_status[context['release']]
     except KeyError:
-        context['is_legacy_version'] = False
-        context['is_prerelease_version'] = True
-        context['is_current_version'] = False
-        context['is_beta_version'] = False
-    else:
-        context['is_legacy_version'] = release_status_rec['is_legacy_version']
-        context['is_prerelease_version'] = release_status_rec['is_prerelease_version']
-        context['is_current_version'] = release_status_rec['is_current_version']
-        context['is_beta_version'] = release_status_rec['is_beta_version']
+        release_status_rec = release_status[context['version']]
+
+    context['is_legacy_version'] = release_status_rec['is_legacy_version']
+    context['is_prerelease_version'] = release_status_rec['is_prerelease_version']
+    context['is_current_version'] = release_status_rec['is_current_version']
+    context['is_beta_version'] = release_status_rec['is_beta_version']
+    context["major_vers_plaque"] =release_status_rec["major_vers_plaque"]
 
     context['zip_url'] = "%s/%s/sqlalchemy-%s.zip" % (
         "${zf.config.docs_url}",
-        context['current_version'],
-        context['current_version']
+        release_status_rec["major_vers_plaque"],
+        release_status_rec["major_vers_plaque"]
     )
 
     context['pdf_url'] = None
