@@ -12,7 +12,6 @@
   font-family: "Source Sans Pro", arial, sans-serif;
   color: #333;
   font-size: 110%;
-  line-height: 1.2em;
 }
 
 .topic-box-header-font {
@@ -26,7 +25,7 @@
 .topic-box-body-font {
   font-family: Verdana, "Lucida Grande", sans-serif;
   color: #777777;
-  font-size: 0.8em;
+  font-size: 0.9em;
   line-height: 1.4em;
 }
 
@@ -83,13 +82,18 @@
 }
 
 body {
-  @extend .textual-font;
+  #header, #nav, #main-body > #content, #footer {
+    @extend .textual-font;
+  }
   margin: 0;
   padding: 0;
 
   text-align: left;
   background: #fbfbfb;
 }
+
+
+
 
 .body-background {
   background-color: #fbfbfb;
@@ -100,7 +104,7 @@ a {
     padding: 0 0 1px 0;
     font-weight: normal;
     text-decoration: none;
-    color: #900;
+    color: #700;
   }
 
   &:visited {
