@@ -9,6 +9,7 @@
 
 }
 
+
 .carbon-wrap {
   padding: 15px;
   padding-bottom 5px;
@@ -53,6 +54,7 @@
     background: inherit;
     border: 1px solid #ccc;
     margin-bottom: 10px;
+    font-size: .8em;
 }
 
 
