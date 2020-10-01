@@ -67,6 +67,7 @@
   font-weight: normal;
   text-decoration: none;
   color: #f0f0f0;
+  font-size:18px;
 }
 
 .box {
@@ -82,9 +83,10 @@
 }
 
 body {
-  #header, #nav, #main-body > #content, #footer {
+  #header, #main-body > #content, #footer {
     @extend .textual-font;
   }
+
   margin: 0;
   padding: 0;
 
@@ -231,6 +233,7 @@ li:hover > a.headerlink {
 ---------------------------------------------------------- */
 
 $nav_height: 32px;
+$nav_width: 240px;
 
 #nav {
   padding: 1px 15px 0px 15px;
@@ -262,7 +265,7 @@ $nav_height: 32px;
 
           margin: 0;
           height: $nav_height;
-          width: 220px;
+          width: $nav_width;
           background-color: #787;
           clear: left;
 
@@ -272,7 +275,7 @@ $nav_height: 32px;
           ul {
             display: none;
             position: absolute;
-            left: 220px;
+            left: $nav_width;
             top: 0px;
           }
         }
