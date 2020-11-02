@@ -1,0 +1,57 @@
+---
+date: 2020/11/02 15:45:02
+title: SQLAlchemy 1.4.0b1 Released
+author: Mike B
+---
+
+The first beta release of the SQLAlchemy 1.4 series, 1.4.0b1, is now available.
+
+Release 1.4.0b1 is the culmination of nearly 18 months of effort to envision
+and create a newly modernized and capable SQLAlchemy, containing the widest
+range of changes in many years.    The first stop along the way to
+**SQLAlchemy 2.0**, release 1.4 intends to provide a gradual introduction
+of a newly revised and simplified way of working with both Core and ORM.
+A combination of major API refinements and capabilities
+hopes to provide a toolkit that is well suited towards the modern direction
+of the Python programming language and its associated communities.
+
+Top level changes include:
+
+* A simpler and more consistent way to work with transactions, connections
+  and ORM Sessions with unified patterns of use across Core and ORM.
+
+* The ``select()`` construct is highly refined and now serves as the universal
+  way to create SELECT statements across Core and ORM; the new ``Result`` object
+  unifies how results are handled across both components and adds a great
+  many capabilities.
+
+* Transparent SQL-caching is now present in all cases, greatly reducing
+  the latency to generate SQL for a persistently running application, including
+  the majority of ORM-related SQL generation work; the previous extension-based
+  approach to SQL caching is no longer needed
+
+* Python ``asyncio`` support is now fully integrated for both Core **and**
+  ORM, to provide one of the first fully capable Python object relational
+  mappers for asyncio
+
+* New mapper configuration paradigms unify both Declarative and "classical"
+  mapping forms, adds support for Python dataclasses and others.
+
+The 1.4 series serves as the migration gateway for applications to be compatible
+with the to-be-developed SQLAlchemy 2.0 release, which will move to Python 3
+only and standardize completely on the new APIs and usage paradigms.
+
+The ultimate goal of the 1.4 / 2.0 series is to make SQLAlchemy
+**easier to learn**, **more consistent** and **more reliable**.
+
+A huge number of contributors as well as our core development team has helped
+tremendously in getting us to the first beta and everyone deserves our
+deepest thanks and gratitude.
+
+The migration guide for SQLAlchemy 1.4 is the best place to start in order
+to get an overview of what's happening:  `What's New in 1.4? </docs/14/changelog/migration_14.html>`_.   The complete changelog is at
+`Changelog </changelog/CHANGES_1_4_0b1>`_.
+
+SQLAlchemy 1.4.0b1 by naming convention is a beta release, so only installs
+with pip if the ``--pre`` flag is included.   Links to pypi for
+SQLAlchemy 1.4.0b1 are available on the `Download Page </download.html>`_.

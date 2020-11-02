@@ -19,7 +19,7 @@ ${release_history[release_milestones[milestone]]['major_version']}</%def>
 % endif
 
 % if 'beta' in release_milestones:
-    <li><a href="${site_base}/download.html#beta">Beta release (${major_version("beta")}</a></li>
+    <li><a href="${site_base}/download.html#beta">Beta release (${major_version("beta")})</a></li>
 % endif
     <li><a href="${site_base}/download.html#development">Development Access</a></li>
     <li><a href="${site_base}/download.html#license">License</a></li>

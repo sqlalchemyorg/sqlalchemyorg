@@ -31,7 +31,7 @@ pypi_url_json = "https://pypi.python.org/pypi/SQLAlchemy/json"
 # eol, current, development
 release_milestones = {
 #    'development': '2.0',
-    'development': '1.4',
+    'beta': '1.4',
     'current': '1.3',
     'maintenance': '1.2',
     'eol': '1.1',
@@ -99,7 +99,11 @@ def _gen_release_data(pypi_data, milestones):
         if release == development_version:
             major_version = development_version
         else:
-            major_version = parse(RE_release.match(str(release)).group(1))
+            rel = RE_release.match(str(release))
+            if rel:
+                major_version = parse(rel.group(1))
+            else:
+                continue
 
         if major_version not in release_history:
             # major_vers_plaque: digits only, like 10, 11, 12, 13
