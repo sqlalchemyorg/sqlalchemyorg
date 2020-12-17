@@ -1,0 +1,16 @@
+---
+date: 2020/10/17 15:45:02
+title: SQLAlchemy 1.3.21 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.3.21 is now available.
+
+Release 1.3.21 contains a series of bug fixes and small use case improvements.
+
+As is the case with all releases, we'd like to thank all the contributors who
+helped with this release.
+
+Changelog for 1.3.21 is at `Changelog </changelog/CHANGES_1_3_21>`_.
+
+SQLAlchemy 1.3.21 is available on the `Download Page </download.html>`_.
