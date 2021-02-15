@@ -1,0 +1,30 @@
+---
+date: 2021/02/15 15:45:02
+title: SQLAlchemy 1.4.0b3 Released
+author: Mike B
+---
+
+The third beta release of the SQLAlchemy 1.4 series, 1.4.0b3, is now available.
+
+Release 1.4.0b3 includes a few new features and changes.  In particular, a
+change has been made to the strategy that names the columns within a
+row when using SELECT statements in 2.0 style, so that these names more
+directly match what was first requested including when special labeling
+scenarios are used.   There are also some additional regression fixes.
+
+While 1.4.0b2 was slated to be the last beta before 1.4.0, we would like to get
+some more testing done including the above column naming change, hence the
+release of 1.4.0b3. Release 1.4.0 final continues to be expected within the
+coming weeks.
+
+Thanks to our many generous contributors as well as our core development team
+in getting this beta release and all releases shipped out to the world.
+
+The migration guide for SQLAlchemy 1.4 is the best place to start in order
+to get an overview of what's happening:  `What's New in 1.4? </docs/14/changelog/migration_14.html>`_.
+The complete changelog is at
+`Changelog </changelog/CHANGES_1_4_0b3>`_.
+
+SQLAlchemy 1.4.0b3 by naming convention is a beta release, so only installs
+with pip if the ``--pre`` flag is included.   Links to pypi for
+SQLAlchemy 1.4.0b3 are available on the `Download Page </download.html>`_.
