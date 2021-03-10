@@ -14,6 +14,9 @@
 
 <div id="nav">
 
+    <label for="menu-toggle">Toggle menu</label>
+    <input type="checkbox" id="menu-toggle" />
+
     <ul>
         <li${active('home')}><a href="${site_base}/">home</a></li>
         <li${active('features')}><a href="${site_base}/features.html">features</a>
