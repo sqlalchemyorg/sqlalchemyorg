@@ -1,0 +1,92 @@
+---
+date: 2021/03/15 15:45:02
+title: SQLAlchemy 1.4.0 Released
+author: Mike B
+---
+
+SQLAlchemy release 1.4.0 is now available.
+
+After three beta releases in the 1.4 series, **Release 1.4.0** is finally
+available.   This is the most extensive release for SQLAlchemy in at least
+ten years, featuring a major rethink of the most prominent APIs in Core
+and ORM, vastly revised internals, and a wide range of significant new
+features and capabilities.
+
+SQLAlchemy 1.4 establishes itself as the starting point for the
+**SQLAlchemy 2.0** project, which will move fully to Python 3 only
+as well as finalize the new APIs introduced in release 1.4.0.
+
+The topmost highlights of SQLAlchemy 1.4.0 include:
+
+* The approach used to generate SELECT and other SQL statements for both Core
+  and ORM is now **unified** around a revised and more-capable ``select()``
+  construct, so that SQL queries targeted to either a Core or ORM context are
+  now composed using the same APIs and patterns. The ``Session.execute()`` and
+  ``Connection.execute()`` methods have been aligned so that the transition
+  between Core and ORM queries and result sets are seamless, with both systems
+  behaving as similarly as is practical to each other. A new emphasis on
+  explicitness and unambiguous consistency intends to allow both learning and
+  using SQLAlchemy to be more straightforward, while also supporting new Python
+  paradigms such as asyncio and PEP-484 typing.
+
+* A revised Declarative mapping system which provides support for many new
+  mapping paradigms, including mapping classes using decorators instead of base
+  classes, explicit support for Python ``dataclasses``, and "imperative
+  mappings" which are are an improved version of classical ``mapper()``
+  operations that integrate with the Declarative class registry.
+
+* Universal and fully transparent caching of SQL compilation for both Core and
+  ORM. This replaces the "baked query cache" system of previous releases that
+  provided an optional SQL caching system for the ORM, with a new approach that
+  is fully transparent and enabled for the vast majority of DML and DQL
+  statements across both Core and ORM. This system caches not only the
+  immediate SQL string for a statement but also its associated
+  result-processing infrastructure that is used to generate new rows and ORM
+  object instances for each query.
+
+* A newly revised transactional model for both the Core ``Engine`` as well as
+  the ORM ``Session`` which is simpler to work with, eliminates legacy APIs
+  that have become confusing, and operates in a more consistent fashion than
+  before. The new transactional model, which will be the only model in
+  SQLAlchemy 2.0, can be enabled fully under 1.4 by passing the ``future=True``
+  flag to the ``create_engine()`` function as well as the ``Session()``
+  constructor.
+
+* Complete support for Python ``asyncio`` for both Core and ORM. This new
+  system leverages the ``greenlet`` context-switching library to adapt the
+  entirety of SQLAlchemy to be usable behind a very thin ``asyncio`` front-end
+  while operating directly against ``asyncio`` database drivers within
+  the asyncio event loop, with no need for thread executors.  Support for
+  ``asyncpg`` and ``aiomysql`` is included so far with more drivers in
+  development.
+
+* Vastly improved ORM querying extensibility, using new hooks and options
+  including the ``SessionEvents.do_orm_execute()`` hook and the
+  ``with_loader_criteria()`` function which together can reliably and predictably
+  intercept and modify all ORM queries with additional criteria;
+  ``do_orm_execute()`` itself proves its worth by now being the only hook
+  required to implement both the "horizontal sharding" (multiplexing a single
+  query among many databases) and the "dogpile
+  caching" (pre-empting queries with a cached ``Result`` object) examples.
+
+* Native support for **PEP-484** and **Mypy** is now underway, with the first
+  alpha version of an all new Mypy plugin included which operates with a newly
+  published stubs library ``sqlalchemy2-stubs``.
+
+Release 1.4 would not have been possible without the help of hundreds of
+contributors as well as our recently expanded team of dedicated maintainers; we
+would like to give **HUGE** thanks to Federico Caselli, Gord Thompson, Jonathan
+Vanasco, and Ramon Williams for their massive efforts in fielding hundreds of
+issues and working to implement major new features, as well as our frequent
+user-support contributors including Alex Grönholm and Simon King.
+
+For users migrating from 1.3, the first stop is the
+`What's New in 1.4? <https://docs.sqlalchemy.org/en/14/changelog/migration_14.html>`_
+document which will provide an overview of how to get started with
+SQLAlchemy 1.4.
+
+The complete changelog for 1.4.0 as well as all the beta releases is at
+`Changelog </changelog/CHANGES_1_4_0>`_.
+
+SQLAlchemy 1.4.0 is available on the `Download Page </download.html>`_.
+
