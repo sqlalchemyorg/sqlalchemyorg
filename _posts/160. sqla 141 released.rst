@@ -1,0 +1,29 @@
+---
+date: 2021/02/17 15:45:02
+title: SQLAlchemy 1.4.1 Released
+author: Mike B
+---
+
+SQLAlchemy 1.4.1 is now available.
+
+The response to the SQLAlchemy 1.4.0 release has been large and enthusiastic.
+In a testament to how widely used it is, within one day we got plenty of new
+issue reports for mostly small and fairly edge-case issues like naming
+conflicts introduced by new APIs and such. SQLAlchemy 1.4.1 has the first batch
+of fixes for these issues, as well as a fix for a more serious regression
+involving lazy loading in highly dynamic mapper configurations which has been
+identified and repaired.
+
+Thanks to our many generous contributors as well as our core development team
+for turning around this quick fix release; there's still much more to do
+so more releases are on the way.
+
+For users migrating from 1.3, the first stop is the
+`What's New in 1.4? <https://docs.sqlalchemy.org/en/14/changelog/migration_14.html>`_
+document which will provide an overview of how to get started with
+SQLAlchemy 1.4.
+
+The complete changelog for 1.4.1 as well as all the beta releases is at
+`Changelog </changelog/CHANGES_1_4_1>`_.
+
+SQLAlchemy 1.4.1 is available on the `Download Page </download.html>`_.
