@@ -1,0 +1,26 @@
+---
+date: 2021/03/19 15:45:02
+title: SQLAlchemy 1.4.2 Released
+author: Mike B
+---
+
+SQLAlchemy 1.4.2 is now available.
+
+As the large number of small regressions and new feature issues being reported
+has continued beyond version 1.4.1, version 1.4.2 now has the next batch of
+fixes. Release 1.4.2 includes mostly more regression fixes, all of which are
+"one-liner" fixes, as well as a new use case supported by Dataclasses feature
+allowing declarative mixins with ``@declared_attr`` to work as Dataclasses.
+
+Continued thanks to the users submitting great bug reports and our core
+development team working all week to solidify the 1.4 release.
+
+For users migrating from 1.3, the first stop is the
+`What's New in 1.4? <https://docs.sqlalchemy.org/en/14/changelog/migration_14.html>`_
+document which will provide an overview of how to get started with
+SQLAlchemy 1.4.
+
+The complete changelog for 1.4.2 as well as all the beta releases is at
+`Changelog </changelog/CHANGES_1_4_2>`_.
+
+SQLAlchemy 1.4.2 is available on the `Download Page </download.html>`_.
