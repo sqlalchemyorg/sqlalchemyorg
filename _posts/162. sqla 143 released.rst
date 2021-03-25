@@ -1,0 +1,23 @@
+---
+date: 2021/03/25 15:45:02
+title: SQLAlchemy 1.4.3 Released
+author: Mike B
+---
+
+SQLAlchemy 1.4.3 is now available.
+
+Release 1.4.3 continues with small fixes and additionally introduces
+support for the ``aiosqlite`` asyncio API for SQLite.
+
+Huge thanks to our userbase and core development team for working to make
+release 1.4.3 possible.
+
+For users migrating from 1.3, the first stop is the
+`What's New in 1.4? <https://docs.sqlalchemy.org/en/14/changelog/migration_14.html>`_
+document which will provide an overview of how to get started with
+SQLAlchemy 1.4.
+
+The complete changelog for 1.4.3 as well as all the beta releases is at
+`Changelog </changelog/CHANGES_1_4_3>`_.
+
+SQLAlchemy 1.4.3 is available on the `Download Page </download.html>`_.
