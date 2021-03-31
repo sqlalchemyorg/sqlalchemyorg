@@ -1,0 +1,32 @@
+---
+date: 2021/03/30 15:45:02
+title: SQLAlchemy 1.4.4 Released
+author: Mike B
+---
+
+SQLAlchemy 1.4.4 is now available.
+
+Release 1.4.4 includes a short set of mostly minor bug fixes, and a small fix
+for one significant issue in the new ``PropComparator.and_()`` method which can
+be used to apply custom criteria to relationship loads where bound parameters
+would not be applied correctly.
+
+The primary development effort within the 1.4 series is further fixes
+and improvements to the Mypy plugin as well as the related
+``sqlalchemy2-stubs`` package.  Upcoming fixes to those features
+involve more significant development of new test suites so are **not**
+included in 1.4.4 as of yet.   Mypy plugin work continues to go well
+as some difficult issues integrating with Mypy have been figured out.
+
+Huge thanks to our userbase and core development team for working to make
+release 1.4.4 possible.
+
+For users migrating from 1.3, the first stop is the
+`What's New in 1.4? <https://docs.sqlalchemy.org/en/14/changelog/migration_14.html>`_
+document which will provide an overview of how to get started with
+SQLAlchemy 1.4.
+
+The complete changelog for 1.4.4 as well as all the beta releases is at
+`Changelog </changelog/CHANGES_1_4_4>`_.
+
+SQLAlchemy 1.4.4 is available on the `Download Page </download.html>`_.
