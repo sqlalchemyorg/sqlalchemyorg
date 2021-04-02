@@ -1,0 +1,33 @@
+---
+date: 2021/04/02 15:45:02
+title: SQLAlchemy 1.4.5 Released
+author: Mike B
+---
+
+SQLAlchemy 1.4.5 is now available.
+
+Release 1.4.5 includes the next round of mostly small regressions and bug fixes
+for the 1.4 series. The most major change in this release is that the
+"statement caching" feature has been changed to be "opt in" for third party
+dialects, after the identification of some patterns in some dialects that are
+not compatible with statement caching. Third party dialects that want to add
+support for statement caching should set the ``supports_statement_cache`` flag
+on each dialect subclass that they implement, and then test that SQL statements
+which include literal Python values, particularly those used for LIMIT/OFFSET,
+are rendered correctly as they change across executions for the same statement.
+See the changelog for further details.
+
+The above issue was also identified in the Oracle dialect, so all Oracle
+installations using the 1.4 series should upgrade to 1.4.5.
+
+Support for the Mypy plugin is still ongoing; while there are some Mypy fixes
+in this release, there are still additional known issues which will be resolved
+in upcoming releases.   The ``sqlalchemy2-stubs`` package is also undergoing
+rapid development and should be improving significantly in the coming weeks.
+
+Huge thanks to our userbase and core development team for working to make
+release 1.4.5 possible.
+
+The complete changelog for 1.4.5 is at `Changelog </changelog/CHANGES_1_4_5>`_.
+
+SQLAlchemy 1.4.5 is available on the `Download Page </download.html>`_.
