@@ -18,3 +18,4 @@ fast as possible; thanks to everyone involved.
 The complete changelog for 1.4.7 is at `Changelog </changelog/CHANGES_1_4_6>`_.
 
 SQLAlchemy 1.4.7 is available on the `Download Page </download.html>`_.
+
