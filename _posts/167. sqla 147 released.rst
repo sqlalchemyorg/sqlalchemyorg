@@ -1,0 +1,20 @@
+---
+date: 2021/04/09 15:45:02
+title: SQLAlchemy 1.4.7 Released
+author: Mike B
+---
+
+SQLAlchemy 1.4.7 is now available.
+
+Release 1.4.7 includes two ORM related fixes relating to
+the "autobegin" feature of the ``Session`` as well as some new eager loading
+features, and is recommended for all users of the ORM.
+
+While the releases are coming fast as we get 1.4 fully adapted to an ever
+growing expanse of existing SQLAlchemy codebases, every release still
+relies on our great userbase and core dev team to report, triage and fix as
+fast as possible; thanks to everyone involved.
+
+The complete changelog for 1.4.7 is at `Changelog </changelog/CHANGES_1_4_6>`_.
+
+SQLAlchemy 1.4.7 is available on the `Download Page </download.html>`_.
