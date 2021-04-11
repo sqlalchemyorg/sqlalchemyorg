@@ -10,44 +10,48 @@ Support - SQLAlchemy
 
 <ul>
     <li><a href="#before">Before Requesting Support</a></li>
+    <li><a href="#discussions">Github Discussions</a></li>
     <li><a href="#mailinglist">Mailing List</a></li>
     <li><a href="#real-time">Real-time Channel</a></li>
-    <li><a href="#stackoverflow">Stack Overflow</a></li>
     <li><a href="#professional">Professional Support with Tidelift</a></li>
 </ul>
 
-<a name="before"></a>
-<p>Before requesting support, please try to make use of the available online resources, where
-the answers to a large number of questions can already be found.
-The most important is the <a href="/docs">documentation</a>.   A great majority of questions
-asked on the SQLAlchemy mailing list are easily answered through simple searches via the <a href="http://www.sqlalchemy.org/docs/">index page</a>,
-the <a href="/docs/search.html">Sphinx documentation search</a>,
-or a <a href="http://www.google.com/search?q=site%3Awww.sqlalchemy.org%2Fdocs%2F">Google search</a>.
-Note also that the documentation is worked on and improved constantly, sometimes dramatically so.
-Issues with the documentation may be reported as bugs (see <a href="/participate.html#bugs">reporting bugs</a>).
+<a name="before"></a> <p>Before requesting support, please try to make use of
+the available online resources, where the answers to a large number of
+questions can already be found. The most important is the <a
+href="https://docs.sqlalchemy.org/">documentation</a>. A great deal of
+questions asked in SQLAlchemy forums are answered through simple searches using
+the search box in the upper right of the index page or in the left hand column
+of any documentation page. The documentation is worked on and improved
+constantly, sometimes dramatically so. Issues with the documentation may be
+reported as bugs (see <a href="/participate.html#bugs">reporting bugs</a>).
+Another approach is to search through the
+<a
+href="https://github.com/sqlalchemy/sqlalchemy/discussions">Github
+Discussions</a> forum which is fast becoming a primary informational resource.
 </p>
 
-<p>SQLAlchemy is a very powerful tool that can serve your Python database development needs for
-years.  An initial investment in careful study of the documentation is well worth it!</p>
+<a name="discussions"></a>
+<h2>Github Discussions</h2>
 
-<p>Other places to check for information include the <a href="/trac/wiki/FAQ">FAQ</a> (note the FAQ is undergoing an upgrade soon!),
-the usage recipes at <a href="/trac/wiki/UsageRecipes">Theatrum Chemicum</a>, and <a
-href="http://stackoverflow.com/questions/tagged/sqlalchemy">Stack Overflow</a>.
-</p>
+<p>SQLAlchemy and its related projects now offer support via the <a
+href="https://github.com/sqlalchemy/sqlalchemy/discussions">Github
+Discussions</a> link on the Github page for each project. This forum-style
+interface allows for discussions more or like that of the mailing list, which
+also remains available, however due to the popularity of Github, the
+discussions forum has become one of several primary avenues for interactive
+support.
 
-<a name="mailinglist"></a>
-<h2>Mailing List</h2>
-
-<p>Ready to post on the mailing list ?   This is the primary place for
-interactive support. We ask that posters try, to the best of their ability, to
+When posting on the discussions forum as well as the mailing list,
+we ask that posters try, to the best of their ability, to
 compose messages are both complete in their description as well as succinct
 with regards to the topic at hand:</p>
 
     <ul>
 
         <li><strong>Complete</strong> - important details like the version of
-        SQLAlchemy in use, the type of database being worked with (MySQL 5,
-        Postgresql 8.4, etc.), as well as full stack traces for error messages
+        SQLAlchemy in use, the type of database being worked with (MySQL 8,
+        PostgreSQL 12, etc.), as well as full stack traces for error messages
         are provided, as well as clear sections of code illustrating the exact
         usage that leads to the symptom.</li>
 
@@ -67,20 +71,28 @@ users of all skill levels. As long as some effort is apparent on your part to
 research and thoughtfully describe the issue, you've earned support from us
 !</p>
 
+
+<a name="mailinglist"></a>
+<h2>Mailing List</h2>
+
+<p>Old school users are free to use the mailing list as well.   Guidelines
+for posting are the same as those mentioned for Discussions above, so that
+we can quickly identify the problem and the best way to solve.
+
 <p>The mailing list is hosted at <a
-href="http://groups.google.com/group/sqlalchemy">Google Groups.</a>
-This list is moderated for new users, so your first post may not appear for up to 24
-hours until a moderator can approve it.  Once approved, subsequent posts should appear
-immediately.</p>
+href="http://groups.google.com/group/sqlalchemy">Google Groups.</a> Google will
+sometimes moderate posts created by new users, so in some cases your first post
+may not appear for up to 24 hours until a moderator can approve it. Once
+approved, subsequent posts should appear immediately.</p>
 
 
 <a name="real-time"></a>
-<h2>Real-time Channels</h2>
+<h2>Real-time Channels: Gitter, IRC</h2>
 
 <p>There are several real-time options for support.</p>
 
-<p><em>The Developers of SqlAlchemy kindly request all people participating in 
-these channels respect the <a href="/codeofconduct.html">Code of Conduct</a> when 
+<p><em>The Developers of SqlAlchemy kindly request all people participating in
+these channels respect the <a href="/codeofconduct.html">Code of Conduct</a> when
 seeking or providing support.</em></p>
 
 <p>Core developers are sometimes present on these channels, but please do not
@@ -88,7 +100,19 @@ single them out for individual assistance!  There are usually about 80-100
 members on at any given time - many of which can likely help with your issue.
 If your issue is genuinely more intricate and requiring of more skillful help
 than is currently available on IRC or Gitter, that's when it's time to post
-on the <a href="#mailinglist">mailing list</a>.</p>
+on the <a href="#discussions">Github Discussions forum</a> or
+<a href="#mailinglist">mailing list</a>.</p>
+
+<a name="gitter"></a>
+<h3>Gitter Room</h3>
+
+<p>The <a href="https://gitter.im/sqlalchemy/community">sqlalchemy/community</a>
+Gitter room is available for real-time support.  There are usually a handful of
+SqlAlchemy users and developers present and willing to assist.</p>
+
+<p>Unlike IRC, Gitter offers a browsable public history - so user are not required
+to be constantly logged-in and can review any conversations they have missed.</p>
+
 
 <a name="irc"></a><!-- keep #irc for legacy links -->
 <h3>IRC Channel</h3>
@@ -100,24 +124,6 @@ some effort into understanding their problem ahead of time will tend to get
 better results.</p>
 
 <p>The IRC channel is on the <a href="http://www.freenode.net">Freenode</a> network as <code>#sqlalchemy</code>.</p>
-
-<a name="gitter"></a>
-<h3>Gitter Room</h3>
-
-<p>The <a href="https://gitter.im/sqlalchemy/community">sqlalchemy/community</a> 
-Gitter room is available for real-time support.  There are usually a handful of 
-SqlAlchemy users and developers present and willing to assist.</p>
-
-<p>Unlike IRC, Gitter offers a browsable public history - so user are not required
-to be constantly logged-in and can review any conversations they have missed.</p>
-
-<a name="stackoverflow"></a>
-<h2>Stack Overflow</h2>
-
-<p><a href="http://www.stackoverflow.com">Stack Overflow</a> is a great resource for developer help
-across the full spectrum of software development issues.   Search for questions tagged with
-<a
-href="http://stackoverflow.com/questions/tagged/sqlalchemy">sqlalchemy</a>.
 
 <a name="professional"></a>
 <h2>Professional support with Tidelift</h2>
