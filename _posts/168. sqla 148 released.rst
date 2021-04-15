@@ -1,0 +1,53 @@
+---
+date: 2021/04/15 15:45:02
+title: SQLAlchemy 1.4.8 Released
+author: Mike B
+---
+
+SQLAlchemy 1.4.8 is now available.
+
+Release 1.4.8 includes four regression fixes, two of them minor, one more
+significant issue regarding the fairly new ``with_expression()`` feature, and
+finally a critical fix for the SQL Server dialect involving LIMIT/OFFSET
+rendering; all SQL Server users on the 1.4 series should ensure 1.4.8 or
+greater is installed.
+
+The additional changes in release 1.4.8 are fixes for new 1.4 features and
+behaviors, including several for the Mypy plugin which continues to be under
+development; Mypy integration is an extremely complicated task and we are
+fortunate to have additional developers continuing to improve this extension
+as well as developing the new ``sqlalchemy2-stubs`` package.
+
+The 1.4 series has had an incredible eight releases within less than a one
+month period; contrast to the 1.3 series, which from its 1.3.0 release had only
+three releases total within the same time period. The unusual cadence of the
+1.4 series is due to the very fundamental and far ranging architectural changes
+that have taken place for this series, brought on by the overall "SQLAlchemy
+2.0" project and its focus on making something of a fresh start from over a
+decade of older architectural patterns, as well as the introduction of native
+caching support for all SQL constructs and similar features which are
+essentially "game changer" kinds of changes. The SQLAlchemy userbase is now
+very broad, so we have benefitted from rapid reporting of a significant range
+of edge case regressions that for a new project would have taken months if not
+years to identify. To date, all of the regression fixes have been of the "one
+liner" variety (literally in most cases, figuratively in a few others ;) ),
+meaning no changes to any architectural approaches have been necessary, only
+the correct application of newer internal patterns in various areas that were
+missed by the existing tests (which are of course expanded each time to
+exercise each new identified use case).
+
+We would like to encourage users to take the leap and work through the new
+1.4/2.0
+`Unified Tutorial <https://docs.sqlalchemy.org/en/14/tutorial/index.html>`_,
+which describes SQLAlchemy from top to bottom all at once, and hopes to provide
+a contextual foundation for what's needed to jump into the reference
+documentation.
+
+We'd like to extend a huge thanks to our userbase for helping us
+solidify the 1.4 series as well as the ever growing base of SQLAlchemy
+core developers and regular contributors who are making a huge difference.
+
+The complete changelog for 1.4.8 is at `Changelog </changelog/CHANGES_1_4_8>`_.
+
+SQLAlchemy 1.4.8 is available on the `Download Page </download.html>`_.
+
