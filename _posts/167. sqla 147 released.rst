@@ -15,7 +15,7 @@ growing expanse of existing SQLAlchemy codebases, every release still
 relies on our great userbase and core dev team to report, triage and fix as
 fast as possible; thanks to everyone involved.
 
-The complete changelog for 1.4.7 is at `Changelog </changelog/CHANGES_1_4_6>`_.
+The complete changelog for 1.4.7 is at `Changelog </changelog/CHANGES_1_4_7>`_.
 
 SQLAlchemy 1.4.7 is available on the `Download Page </download.html>`_.
 
