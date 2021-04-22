@@ -6,9 +6,10 @@ author: Mike B
 
 SQLAlchemy 1.4.11 is now available.
 
-Release 1.4.11 fixes a critical race condition in the ``Engine`` class
-which ensures that the dialect is fully initialized upon first connect before
-other concurrent threads can begin to use the dialect.
+Release 1.4.11 adds a fix for critical race condition in the ``Engine`` class,
+ensuring that the dialect is fully initialized upon first connect before
+other concurrent threads can begin to use the dialect as was the behavior
+in 1.3.x.
 
 Thanks to our team and users helping us to get everything done for the
 1.4 series.
