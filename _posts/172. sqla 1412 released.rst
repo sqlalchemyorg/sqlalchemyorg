@@ -1,0 +1,21 @@
+---
+date: 2021/04/22 15:45:02
+title: SQLAlchemy 1.4.11 Released
+author: Mike B
+---
+
+SQLAlchemy 1.4.11 is now available.
+
+Release 1.4.11 adds a fix for critical race condition in the ``Engine`` class,
+ensuring that the dialect is fully initialized upon first connect before
+other concurrent threads can begin to use the dialect as was the behavior
+in 1.3.x.
+
+Thanks to our team and users helping us to get everything done for the
+1.4 series.
+
+The complete changelog for 1.4.11 is at `Changelog </changelog/CHANGES_1_4_11>`_.
+
+SQLAlchemy 1.4.11 is available on the `Download Page </download.html>`_.
+
+
