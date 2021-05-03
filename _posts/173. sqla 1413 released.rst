@@ -1,0 +1,26 @@
+---
+date: 2021/05/03 15:45:02
+title: SQLAlchemy 1.4.13 Released
+author: Mike B
+---
+
+SQLAlchemy 1.4.13 is now available.
+
+Release 1.4.13 is being made ahead of some more usage-oriented changes
+to push out fixes for the latest series of regressions, which continue
+to result from the very broad array of internal changes for the
+1.4/2.0 series interacting with various use cases reported by the userbase
+which weren't specifically tested; all the regressions continue to be small
+tweaks for various unanticipated conditions.
+
+Progress also continues with sqlalchemy2-stubs which continues to be
+released independently.
+
+We'd like to thank our users, contributors and core developers for keeping
+the momemtum going stronger than ever.
+
+The complete changelog for 1.4.13 is at `Changelog </changelog/CHANGES_1_4_13>`_.
+
+SQLAlchemy 1.4.13 is available on the `Download Page </download.html>`_.
+
+
