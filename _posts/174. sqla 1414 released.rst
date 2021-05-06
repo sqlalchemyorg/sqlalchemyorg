@@ -21,4 +21,3 @@ The complete changelog for 1.4.14 is at `Changelog </changelog/CHANGES_1_4_14>`_
 
 SQLAlchemy 1.4.14 is available on the `Download Page </download.html>`_.
 
-
