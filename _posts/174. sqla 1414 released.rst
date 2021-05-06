@@ -1,0 +1,24 @@
+---
+date: 2021/05/06 15:45:02
+title: SQLAlchemy 1.4.14 Released
+author: Mike
+---
+
+SQLAlchemy 1.4.14 is now available.
+
+Release 1.4.14 includes deprecation paths for some API behaviors that
+had inadvertently been removed.   It also includes a fix for the recently
+modified "empty IN" behaviors, as well as support for calling ".commit()"
+or ".rollback()" pre-emptively inside of transactional context managers.
+Finally, an adjustment to ``TypeDecorator`` will render a warning that user-
+defined ``TypeDecorator`` classes will want to "opt in" or "opt out"
+of caching by applying a flag ``cache_ok=[True|False]`` to these classes.
+
+Thanks to our users and developers for their continued support and efforts
+on the project.
+
+The complete changelog for 1.4.14 is at `Changelog </changelog/CHANGES_1_4_14>`_.
+
+SQLAlchemy 1.4.14 is available on the `Download Page </download.html>`_.
+
+
