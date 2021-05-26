@@ -116,7 +116,7 @@ receive a dozen new users in one week.   Help with fielding new users and questi
 Regular users can also volunteer to help with approval of new posters.
 </p>
 
-<p>The IRC channel <code>#sqlalchemy</code> on Freenode is similarly busy most days.
+<p>The IRC channel <code>#sqlalchemy</code> on <a href="/support.html#irc">Libera</a> is similarly busy most days.
 There's a core set of "regulars" who are pretty friendly, and more helpers are always welcome.  </p>
 
 <p>SQLAlchemy places great emphasis on polite, thoughtful, and constructive communication between users and developers.
