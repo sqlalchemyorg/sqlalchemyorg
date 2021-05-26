@@ -123,7 +123,7 @@ of IRC etiquette apply here - not unlike the mailing list, users who've put
 some effort into understanding their problem ahead of time will tend to get
 better results.</p>
 
-<p>The IRC channel is on the <a href="http://www.freenode.net">Freenode</a> network as <code>#sqlalchemy</code>.</p>
+<p>The IRC channel is on the <a href="https://libera.chat/">Libera</a> network as <code>#sqlalchemy</code>.</p>
 
 <a name="professional"></a>
 <h2>Professional support with Tidelift</h2>
