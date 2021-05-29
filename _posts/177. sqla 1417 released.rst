@@ -1,0 +1,20 @@
+---
+date: 2021/05/29 15:45:02
+title: SQLAlchemy 1.4.17 Released
+author: Mike
+---
+
+SQLAlchemy 1.4.17 is now available.
+
+Release 1.4.17 fixes one mistake just released in version 1.4.16 regarding a
+performance enhancement involving expressions such as ``select().join()``,
+which could fail in certain uncommon calling circumstances brought to our
+attention.
+
+Thanks to our users and developers for their continued support and efforts
+on the project.
+
+The complete changelog for 1.4.17 is at `Changelog </changelog/CHANGES_1_4_17>`_.
+
+SQLAlchemy 1.4.17 is available on the `Download Page </download.html>`_.
+
