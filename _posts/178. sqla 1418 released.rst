@@ -1,0 +1,21 @@
+---
+date: 2021/06/10 15:45:02
+title: SQLAlchemy 1.4.18 Released
+author: Mike
+---
+
+SQLAlchemy 1.4.18 is now available.
+
+Release 1.4.18 includes some ORM regressions typically involving very complex
+mapping/query combinations, as well as makes an improvement that is hoped to
+support Flask-SQLAlchemy integration as well as similar integrations. Some new
+asyncio features are included as well as varied other dialect-level fixes for
+PostgreSQL and SQLite (specifically pysqlcipher).
+
+Thanks to our users and developers for their continued support and efforts
+on the project.
+
+The complete changelog for 1.4.18 is at `Changelog </changelog/CHANGES_1_4_18>`_.
+
+SQLAlchemy 1.4.18 is available on the `Download Page </download.html>`_.
+
