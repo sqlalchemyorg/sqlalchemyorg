@@ -1,0 +1,22 @@
+---
+date: 2021/06/22 15:45:02
+title: SQLAlchemy 1.4.19 Released
+author: Mike
+---
+
+SQLAlchemy 1.4.19 is now available.
+
+Release 1.4.19 includes a variety of bug fixes in areas such as
+asyncio support, ORM use, the Mypy plugin, and some dialect-level fixes.
+In asyncio in particular, an issue was fixed that prevented the
+``asyncio.CancelledError`` from being intercepted correctly within engine-level
+error handling, leading to stability issues for applications and web containers
+that make use of this condition to halt tasks.
+
+Thanks to our users and developers for their continued support and efforts
+on the project.
+
+The complete changelog for 1.4.19 is at `Changelog </changelog/CHANGES_1_4_19>`_.
+
+SQLAlchemy 1.4.19 is available on the `Download Page </download.html>`_.
+
