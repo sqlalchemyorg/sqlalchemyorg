@@ -1,19 +1,23 @@
 SQLAlchemy Website
 ==================
 
-The site uses Blogofile 0.7.1 (it's advised that you install that
-version specifically).
+This site uses `zeekofile <https://github.com/sqlalchemyorg/zeekofile>`_ to
+build a static site, which can also be served locally using zeekofile.
 
 
+Building and Testing::
 
-Building and Testing:
+  #!/bin/bash
 
-	build
-	>> zeekofile build
+  virtualenv .venv
+  source .venv/bin/activate
+  pip install git+https://github.com/sqlalchemyorg/zeekofile
+  git clone https://github.com/sqlalchemyorg/sqlalchemyorg
+  cd sqlalchemyorg/
+  pip install -r requirements.txt
+  zeekofile --serve
 
-	test
-	>> cd _site
-	>> python -m SimpleHTTPServer
+Then view::
 
-	view
-	>> http://127.0.0.1:8000/download.html
+	http://127.0.0.1:8080
+
