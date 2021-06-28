@@ -13,7 +13,8 @@ def run():
         if ext != ".scss":
             continue
 
-        css = compiler.compile(open(os.path.join("_scss", fname)).read())
+        with open(os.path.join("_scss", fname)) as _file:
+            css = compiler.compile(_file.read())
         with open(
                 zf.util.path_join(zf.writer.output_dir, "css", "%s.css" % name),
                 "w") as out:
