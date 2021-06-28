@@ -9,7 +9,7 @@ import datetime
 
 # generates a group like this:
 # 0.9.8 | 0.9, 0, 9, 8 | SqlAlchemyVersion(Major.Minor), Major, Minor, Release
-RE_release = re.compile("^((\d)\.(\d))(?:\.(\d+))?((?:a|b|c|rc)\d)?$", re.I | re.X)
+RE_release = re.compile(r"^((\d)\.(\d))(?:\.(\d+))?((?:a|b|c|rc)\d)?$", re.I | re.X)
 
 # ==============================================================================
 
