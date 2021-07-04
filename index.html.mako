@@ -44,7 +44,7 @@ and SQL! </p>
     as well as <a href="/quotes.html"><strong>what people are saying</strong></a> about SQLAlchemy.</strong>
     </p>
 
-<dl id="features">
+<dl id="features" class="features">
     <dt>Who Uses SQLAlchemy</dt>
     <dd>
         <p>SQLAlchemy is used by organizations such as:

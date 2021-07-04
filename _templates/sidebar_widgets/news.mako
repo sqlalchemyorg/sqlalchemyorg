@@ -1,12 +1,14 @@
-<h3>Latest News</h3>
+<h3 class="card-title">Latest News</h3>
 
-<ul>
+<ul class="m-0 p-0">
     % for post in zf.config.blog.posts[:5]:
-        <li><a href="/blog/#${post.slug}">${post.title}</a>
-        <br/><span class="date">${post.date.strftime("%a, %d %b %Y")}</span>
+        <li class="py-1">
+            <a href="/blog/#${post.slug}">${post.title}</a>
+            <br/>
+            <span class="fst-italic text-muted">${post.date.strftime("%a, %d %b %Y")}</span>
+        </li>
     % endfor
-
 </ul>
 % if section != 'news':
-<a href="/blog/">More news...</a>
+<a class="card-link" href="/blog/">More news...</a>
 % endif
