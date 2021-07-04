@@ -1,4 +1,5 @@
 <%inherit file="/base.mako"/>
+<%namespace name="tools" file="/tools.mako"/>
 <%!
 import re
 section = 'library'
@@ -19,14 +20,18 @@ A wide array of documentation both official and non-official exists
 for SQLAlchemy.   The following is a guide to the some of the best information
 available.
 
-<ul class="nav">
-    <li><a href="#reference">Reference Documentation</a> - SQLAlchemy's own documentation, including tutorials</li>
-    <li><a href="#architecture">Architecture</a> - deep architectural dives</li>
-    <li><a href="#citations">Citing SQLAlchemy</a></li>
-    <li><a href="#blog">Blog Posts</a> - news and musings</li>
-    <li><a href="#talks">Talks and Tutorials</a> - videos from PyCon and elsewhere</li>
-    <li><a href="#recipes">Recipes</a> - a curated selection of example code</li>
-</ul>
+<%tools:vertical_nav>
+<%tools:vertical_nav_item
+    url="#reference"
+    url_text="Reference Documentation"
+    content="- SQLAlchemy's own documentation, incuding tutorials"
+/>
+<%tools:vertical_nav_item url="#architecture" url_text="Architecture" content="- deep architectural dives"/>
+<%tools:vertical_nav_item url="#citations" url_text="Citing SQLAlchemy"/>
+<%tools:vertical_nav_item url="#blog" url_text="Blog Posts" content="- news and musings"/>
+<%tools:vertical_nav_item url="#talks" url_text="Talks and Tutorials" content="- videos from PyCon and elsewhere"/>
+<%tools:vertical_nav_item url="#recipes" url_text="Recipes" content="- a curated selection of example code"/>
+</%tools:vertical_nav>
 
 </p>
 
@@ -70,7 +75,7 @@ chapter from <a href="http://aosabook.org/en/sqlalchemy.html">SQLAlchemy at Arch
 
 Here is an example BibTeX entry:
 
-<pre>
+<pre class="mt-2 small-text">
 @incollection{sqlalchemy,
   place={Mountain View},
   title={SQLAlchemy},
@@ -117,24 +122,26 @@ Here is an example BibTeX entry:
 		if not anchor:
 			anchor = re.sub(r'\W', '', title.lower())
 	%>
-	<li>
-		<h3>
-			<a name="${anchor}"></a><em>${title}</em> - ${presented}
-			<a class="headerlink" href="#${anchor}">¶</a>
-		</h3>
-		<p>Author: ${author}</p>
-	    % if hasattr(caller, 'embed'):
-	    	${caller.embed()}
-	    % endif
-	    <p>${caller.body()}</p>
-	    % if links:
-	    <ul>
-	    % for desc, url in links:
-	    	<li><a href="${url}">${desc}</a></li>
-	    % endfor
-	    </ul>
-	    % endif
-    </li>
+    <div class="talk card mb-1">
+        <div class="card-body">
+            <h5 class="card-title">
+                <a name="${anchor}"></a><em>${title}</em> - ${presented}
+                <a class="headerlink" href="#${anchor}">¶</a>
+            </h5>
+            <h6 class="card-subtitle mb-2 text-muted">Author: ${author}</h6>
+            % if hasattr(caller, 'embed'):
+                ${caller.embed()}
+            % endif
+            <p class="card-text">${caller.body()}</p>
+            % if links:
+            <ul>
+            % for desc, url in links:
+                <li><a href="${url}">${desc}</a></li>
+            % endfor
+            </ul>
+            % endif
+        </div>
+    </div>
 </%def>
 
 

@@ -39,7 +39,7 @@ Download - SQLAlchemy
 
 
     % if milestone == 'maintenance':
-        <div class="inline-alert deprecation-maintenance">
+        <div class="alert alert-warning" role="alert">
             <h4>Release Support: Maintenance Mode</h4>
             <p>
                 <em>
