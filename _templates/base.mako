@@ -33,36 +33,37 @@ if not current_section and in_docs:
 
 <body>
 
-<div id="wrap">
+<div id="wrap" class="container-lg wrap px-0">
 
-<%include file="header.mako" args="section=current_section, docs_base=docs_base, site_base=site_base, bb_base=self.attr.bb_base" />
+    <%include file="header.mako" args="section=current_section, docs_base=docs_base, site_base=site_base, bb_base=self.attr.bb_base" />
 
-<div id="main-body" class="${current_section}">
+    <div id="main-body" class="${current_section} main-body row m-0">
 
-% if not in_docs:
+    % if not in_docs:
 
-    <%block name="sidebar">
-        <%include file="sidebar.mako" args="section=current_section" />
-    </%block>
+        <main id="content" class="content col-md-8 p-4">
+            <div id="content-inner">
+                ${next.body(**pageargs)}
+            </div>
+        </main> <!-- end #content-inner, #content -->
 
-    <div id="content">
-    <div id="content-inner">
-    ${next.body(**pageargs)}
-    </div>
-    </div> <!-- end #content-inner, #content -->
+        <div class="col-md-4 pt-4 px-2">
+            <%block name="sidebar">
+                <%include file="sidebar.mako" args="section=current_section" />
+            </%block>
+        </div>
 
+    % else:
 
-% else:
+        <div id="docs">
+        ${next.body(**pageargs)}
+        </div>
 
-    <div id="docs">
-    ${next.body(**pageargs)}
-    </div>
+    % endif
 
-% endif
+    </div> <!-- end #main-body -->
 
-</div> <!-- end #main-body -->
-
-<%include file="footer.mako" args="site_base=self.attr.site_base, docs_base=self.attr.docs_base"/>
+    <%include file="footer.mako" args="site_base=self.attr.site_base, docs_base=self.attr.docs_base"/>
 
 </div> <!-- end #wrap -->
 
