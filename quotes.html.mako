@@ -10,25 +10,27 @@ What People Are Saying - SQLAlchemy
 <h1>What People are Saying about SQLAlchemy</h1>
 
 <%def name="quote(link=None, author=None)">
-    <blockquote class="box">
-    <p>${caller.body()}</p>
-    % if link:
-    <p>- <i><a href="${link}">${author}</a></i></p>
-    % else:
-    <p>- <i>${author}</i></p>
-    % endif
-    </blockquote>
+    <div class="quote card mb-2">
+        <div class="card-body">
+            <p class="card-text">${caller.body()}</p>
+            % if link:
+            <p class="card-link m-0">- <i><a href="${link}">${author}</a></i></p>
+            % else:
+            <p class="m-0">- <i>${author}</i></p>
+            % endif
+        </div>
+    </div>
 </%def>
 
 <%def name="link(url, author=None)">
-    <blockquote class="box">
-    <p><a href="${url}">${caller.body()}</a></p>
-    % if author:
-        <p>
-        <i>- ${author}</i>
-        </p>
-    % endif
-    </blockquote>
+    <div class="quote card mb-2">
+        <div class="card-body">
+            <p><a class="card-link" href="${url}">${caller.body()}</a></p>
+            % if author:
+            <p class="m-0"><i>- ${author}</i></p>
+            % endif
+        </div>
+    </div>
 </%def>
 
 

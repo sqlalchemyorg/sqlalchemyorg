@@ -2,6 +2,7 @@ $sa-green: #778877;
 $sa-grey: #778877;
 $a-color: #700;
 $a-hover-color: #f00;
+$code-color: #703040;
 
 .bg-sa-green {
   background: $sa-green
@@ -23,13 +24,6 @@ $a-hover-color: #f00;
   text-transform: uppercase;
   color: #778877;
   letter-spacing: 1px;
-}
-
-.topic-box-body-font {
-  font-family: Verdana, "Lucida Grande", sans-serif;
-  color: #777777;
-  font-size: 0.9em;
-  line-height: 1.4em;
 }
 
 .selling-point-font {
@@ -74,6 +68,10 @@ $a-hover-color: #f00;
   font-size: 0.8rem;
 }
 
+code {
+  color: $code-color;
+}
+
 /* header ---------------------------------------------------------- */
 
 nav.navbar.logo {
@@ -107,7 +105,6 @@ div.sidebar {
 
 div.footer {
   @extend .textual-font;
-  // @extend .pagetext;
   clear: both;
   margin: 50px 0 -50px 0;
   border-top: 1px solid #d9d9d9;
@@ -151,9 +148,6 @@ main.content {
     margin: 0 0 1em 0;
     padding: 0;
   }
-  // blockquote {
-  //   @extend .box;
-  // }
 
   /* features styles
     ---------------------------------------------------------- */
@@ -175,5 +169,13 @@ main.content {
       padding-bottom: 10px;
       margin-left: 0px;
     }
+  }
+
+  .tidelift-support img {
+    float: left;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #888;
+    margin-right: 20px !important;
   }
 }
