@@ -35,3 +35,22 @@
     %endfor
     <li><hr class="dropdown-divider"></li>
 </%def>
+
+<%def name="vertical_nav()">
+<div class="card bg-sa-grey">
+    <div class="card-body">
+        <ul class="nav flex-column">
+        ${caller.body()}
+        </ul>
+    </div>
+</div>
+</%def>
+
+<%def name="vertical_nav_item(url, url_text, content=None)">
+<li class="nav-item">
+    <a class="nav-link d-inline fw-bold" href="${url}">${url_text}</a>
+    % if content:
+        ${content}
+    % endif
+</li>
+</%def>
