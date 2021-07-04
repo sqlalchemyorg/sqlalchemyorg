@@ -1,15 +1,15 @@
 <%inherit file="site.mako" />
-<div class="blog_nav">
+<div class="blog_nav d-flex border-bottom mb-1">
 <%block name="prevnext">
     % if prev_post:
     <div class="prev">
-    « <a href="${prev_post.permapath()}">${prev_post.title}</a>
+      <a class="small-text" href="${prev_post.permapath()}">« ${prev_post.title}</a>
     </div>
     % endif
-
+    <span class="flex-grow-1"></span>
     % if next_post:
     <div class="next">
-    <a href="${next_post.permapath()}">${next_post.title}</a>  »
+      <a class="small-text" href="${next_post.permapath()}">${next_post.title} »</a>
     </div>
     % endif
 </%block>

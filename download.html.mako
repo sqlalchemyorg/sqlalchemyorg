@@ -16,7 +16,7 @@ Download - SQLAlchemy
 
 <h1>Get SQLAlchemy</h1>
 
-<%include file="download_links.mako" args="site_base=self.attr.site_base" />
+<%include file="download_links.mako" args="site_base=self.attr.site_base, dropdown=False" />
 
 
 
