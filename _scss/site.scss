@@ -1,15 +1,19 @@
 $sa-green: #778877;
-$sa-grey: #778877;
+$sa-grey: #f0f0f0;
 $a-color: #700;
 $a-hover-color: #f00;
 $code-color: #703040;
+
+:root {
+  --bs-font-sans-serif: "Source Sans Pro", arial, sans-serif;
+}
 
 .bg-sa-green {
   background: $sa-green
 }
 
 .bg-sa-grey {
-  background: #f0f0f0;
+  background: $sa-grey;
 }
 
 .textual-font {
@@ -74,9 +78,14 @@ code {
 
 /* header ---------------------------------------------------------- */
 
-nav.navbar.logo {
-  height: 65px;
-  background: #fff url(../img/symbols-bg5.gif) top right no-repeat;
+nav.navbar {
+  &.logo {
+    height: 65px;
+    background: #fff url(../img/symbols-bg5.gif) top right no-repeat;
+  }
+  &.navigation {
+    background: $sa-green url(../img/navbg1.gif) repeat-x top left;
+  }
 }
 
 /* body ---------------------------------------------------------- */

@@ -38,17 +38,30 @@ for (var key in doc_versions) {
     _version_lookup[version.slug] = version;
 }
 
-function renderDocVersions() {
-
-    $('#version_menu,.version-listing').empty();
-    for (var key in doc_versions) {
-        obj = doc_versions[key];
-        current_url = docs_base + "/en/" + obj.slug + "/";
-        $("#version_menu,.version-listing").append('<li><a href="' + current_url + '">' + obj.version + '</a></li>');
+function empty(selector) {
+    var nodes = document.querySelectorAll(selector);
+    for (var i = 0; i < nodes.length; i++) {
+        nodes[i].textContent = '';
     }
 }
 
+function append(selector, to_append) {
+    var nodes = document.querySelectorAll(selector);
+    for (var i = 0; i < nodes.length; i++) {
+        nodes[i].innerHTML += to_append
+    }
+}
 
-$(document).ready(function() {
-    renderDocVersions();
+function renderDocVersions() {
+
+    empty('#version_menu,.version-listing');
+    for (var key in doc_versions) {
+        obj = doc_versions[key];
+        current_url = docs_base + "/en/" + obj.slug + "/";
+        append("#version_menu,.version-listing", '<li><a href="' + current_url + '">' + obj.version + '</a></li>');
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function() { 
+  renderDocVersions();
 });
