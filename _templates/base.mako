@@ -33,7 +33,7 @@ if not current_section and in_docs:
 
 <body>
 
-<div id="wrap" class="container-lg wrap px-0">
+<div id="wrap" class="container-xxl wrap px-0">
 
     <%include file="header.mako" args="section=current_section, docs_base=docs_base, site_base=site_base, bb_base=self.attr.bb_base" />
 
@@ -41,13 +41,13 @@ if not current_section and in_docs:
 
     % if not in_docs:
 
-        <main id="content" class="content col-md-8 p-4">
+        <main id="content" class="content col-md-8 col-lg-9 p-4">
             <div id="content-inner">
                 ${next.body(**pageargs)}
             </div>
         </main> <!-- end #content-inner, #content -->
 
-        <div class="col-md-4 pt-4 px-2">
+        <div class="col-md-4 col-lg-3 pt-4 px-2">
             <%block name="sidebar">
                 <%include file="sidebar.mako" args="section=current_section" />
             </%block>
