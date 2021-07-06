@@ -20,17 +20,15 @@
         return ""
     latest_rec = release_rec['latest']
 %>
-    <div class="card text-dark bg-sa-grey">
-        <div class="card-body py-2">
-            <a href="/download.html">
-                <b>${latest_rec['version']}</b>
-            </a> - ${latest_rec['release_date'].strftime("%Y-%m-%d")} -
-            <a href="${latest_rec['announcement_url']}">announce</a>
-            <br/>
-            <a href="${latest_rec['changelog']}">changes</a> |
-            <a href="${release_rec['migration_url']}">migration notes</a> |
-            <a href="${release_rec['docs']}">docs</a>
-        </div>
+    <div class="border-end border-bottom py-2">
+        <a href="/download.html">
+            <b>${latest_rec['version']}</b>
+        </a> - ${latest_rec['release_date'].strftime("%Y-%m-%d")} -
+        <a href="${latest_rec['announcement_url']}">announce</a>
+        <br/>
+        <a href="${latest_rec['changelog']}">changes</a> |
+        <a href="${release_rec['migration_url']}">migration notes</a> |
+        <a href="${release_rec['docs']}">docs</a>
     </div>
 </%def>
 
@@ -53,12 +51,10 @@ ${release(milestone, "Current Release")}
     dev_release = release_history[dev_version]
 %>
 
-<div class="card text-dark bg-sa-grey">
-    <div class="card-body py-2">
-        <strong>${dev_version}</strong> - next major series
-        <br/>
-        <a href="${dev_release['migration_url']}">${dev_release['migration_title']}</a> |
-        <a href="${dev_release['docs']}">docs</a>
-    </div>
+<div class="border-end border-bottom py-2">
+    <strong>${dev_version}</strong> - next major series
+    <br/>
+    <a href="${dev_release['migration_url']}">${dev_release['migration_title']}</a> |
+    <a href="${dev_release['docs']}">docs</a>
 </div>
 % endif
