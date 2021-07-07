@@ -8,9 +8,10 @@ else:
     self.attr.site_base = site_base = ""
 self.attr.docs_base = docs_base = zf.config.docs_url
 self.attr.bb_base = bb_base = zf.config.bb_url
-current_section = getattr(self.module, 'section', '')
+current_section = getattr(self.attr, 'section', '')
 if not current_section and in_docs:
     current_section = 'docs'
+self.attr.current_section = current_section
 %><!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -33,40 +34,41 @@ if not current_section and in_docs:
 
 <body>
 
-<div id="wrap">
+<div id="wrap" class="container-xxl wrap px-0">
 
-<%include file="header.mako" args="section=current_section, docs_base=docs_base, site_base=site_base, bb_base=self.attr.bb_base" />
+    <%include file="header.mako" args="section=current_section, docs_base=docs_base, site_base=site_base, bb_base=self.attr.bb_base" />
 
-<div id="main-body" class="${current_section}">
+    <div id="main-body" class="${current_section} main-body row m-0">
 
-% if not in_docs:
+    % if not in_docs:
 
-    <%block name="sidebar">
-        <%include file="sidebar.mako" args="section=current_section" />
-    </%block>
+        <main id="content" class="content col-md-8 col-lg-9 p-4">
+            <div id="content-inner">
+                ${next.body(**pageargs)}
+            </div>
+        </main> <!-- end #content-inner, #content -->
 
-    <div id="content">
-    <div id="content-inner">
-    ${next.body(**pageargs)}
-    </div>
-    </div> <!-- end #content-inner, #content -->
+        <div class="col-md-4 col-lg-3 pt-4 px-2">
+            <%block name="sidebar">
+                <%include file="sidebar.mako" args="section=self.attr.current_section" />
+            </%block>
+        </div>
 
+    % else:
 
-% else:
+        <div id="docs">
+        ${next.body(**pageargs)}
+        </div>
 
-    <div id="docs">
-    ${next.body(**pageargs)}
-    </div>
+    % endif
 
-% endif
+    </div> <!-- end #main-body -->
 
-</div> <!-- end #main-body -->
-
-<%include file="footer.mako" args="site_base=self.attr.site_base, docs_base=self.attr.docs_base"/>
+    <%include file="footer.mako" args="site_base=self.attr.site_base, docs_base=self.attr.docs_base"/>
 
 </div> <!-- end #wrap -->
 
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script type="text/javascript" src="${site_base}/js/doc_versions.js"></script>
 <%include file="/tracking.mako"/>
 

@@ -10,7 +10,7 @@ Features - SQLAlchemy
 
 <p><em>Some of the key features at a glance:</em></p>
 
-<dl id="features">
+<dl id="features" class="features">
     <dt>No ORM Required</dt>
     <dd>
         <p>SQLAlchemy consists of two distinct components, known as the

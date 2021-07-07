@@ -128,7 +128,7 @@ better results.</p>
 <a name="professional"></a>
 <h2>Professional support with Tidelift</h2>
 
-<div id="tidelift-support">
+<div class="tidelift-support">
 
 <a href="https://tidelift.com/subscription/pkg/pypi-sqlalchemy?utm_source=pypi-sqlalchemy&utm_medium=referral&utm_campaign=website"><img src="/img/tidelift.png"/></a>
 
@@ -141,6 +141,7 @@ tools.</p>
 
 </div>
 
-<div class="pagecontrol">
-<strong>Next ... <a href="/participate.html">Participate</a></strong>
+<div class="d-flex">
+    <span class="flex-grow-1"></span>
+    <strong>Next ... <a href="/participate.html">Participate</a></strong>
 </div>

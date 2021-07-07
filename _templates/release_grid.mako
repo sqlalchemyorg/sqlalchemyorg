@@ -102,8 +102,10 @@ further links for more recent minor releases.</p>
     </thead>
     <tbody>
         <tr>
-            <a name="status-desc-development"/>
-            <th>${milestone_text['development']}</th>
+            <th>
+                <a name="status-desc-development"></a>
+                ${milestone_text['development']}
+            </th>
             <td>
                 Active development for the next major release of SQLAlchemy.
                 The "development" status is by definition not released on
@@ -113,8 +115,10 @@ further links for more recent minor releases.</p>
             </td>
         </tr>
         <tr>
-            <a name="status-desc-beta"/>
-            <th>${milestone_text['beta']}</th>
+            <th>
+                <a name="status-desc-beta"></a>
+                ${milestone_text['beta']}
+            </th>
             <td>
                 Evaluation releases for the current development version.
                 These releases are available on Pypi, however include a
@@ -126,8 +130,10 @@ further links for more recent minor releases.</p>
             </td>
         </tr>
         <tr>
-            <a name="status-desc-current"/>
-            <th>${milestone_text['current']}</th>
+            <th>
+                <a name="status-desc-current"></a>
+                ${milestone_text['current']}
+            </th>
             <td>
                 The current official release of SQLAlchemy.
                 Ongoing work is performed to close out regressions and
@@ -138,8 +144,10 @@ further links for more recent minor releases.</p>
             </td>
         </tr>
         <tr>
-            <a name="status-desc-maintenance"/>
-            <th>${milestone_text['maintenance']}</th>
+            <th>
+                <a name="status-desc-maintenance"></a>
+                ${milestone_text['maintenance']}
+            </th>
             <td>
                 The maintenance series exists when the "beta" series has
                 become "current", and the previous "current" series becomes
@@ -152,10 +160,11 @@ further links for more recent minor releases.</p>
                 "EOL".
             </td>
         </tr>
-
         <tr>
-            <a name="status-desc-eol"/>
-            <th>${milestone_text['eol']}</th>
+            <th>
+                <a name="status-desc-eol"></a>
+                ${milestone_text['eol']}
+            </th>
             <td>
                 This release version is no longer maintained and is considered
                 legacy.

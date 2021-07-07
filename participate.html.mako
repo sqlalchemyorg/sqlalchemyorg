@@ -145,6 +145,7 @@ There's a core set of "regulars" who are pretty friendly, and more helpers are a
             up on the web after the presentation!</li>
     </ul>
 
-<div class="pagecontrol">
-<strong>Next ... <a href="/develop.html">Develop</a></strong>
+<div class="d-flex">
+    <span class="flex-grow-1"></span>
+    <strong>Next ... <a href="/develop.html">Develop</a></strong>
 </div>
