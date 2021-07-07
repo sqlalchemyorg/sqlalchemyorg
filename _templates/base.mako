@@ -8,9 +8,10 @@ else:
     self.attr.site_base = site_base = ""
 self.attr.docs_base = docs_base = zf.config.docs_url
 self.attr.bb_base = bb_base = zf.config.bb_url
-current_section = getattr(self.module, 'section', '')
+current_section = getattr(self.attr, 'section', '')
 if not current_section and in_docs:
     current_section = 'docs'
+self.attr.current_section = current_section
 %><!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -49,7 +50,7 @@ if not current_section and in_docs:
 
         <div class="col-md-4 col-lg-3 pt-4 px-2">
             <%block name="sidebar">
-                <%include file="sidebar.mako" args="section=current_section" />
+                <%include file="sidebar.mako" args="section=self.attr.current_section" />
             </%block>
         </div>
 

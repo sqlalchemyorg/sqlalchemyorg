@@ -1,3 +1,4 @@
+<%page args="section" />
 <h3 class="card-title">Latest News</h3>
 
 <ul class="m-0 p-0">
@@ -9,6 +10,8 @@
         </li>
     % endfor
 </ul>
-% if section != 'news':
-<a class="card-link" href="/blog/">More news...</a>
+
+
+% if section != 'blog':
+    <a class="card-link" href="/blog/">More news...</a>
 % endif

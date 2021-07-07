@@ -1,3 +1,4 @@
+<%page args="section" />
 <div id="sidebar" class="sidebar">
 
     <div class="release card text-dark bg-sa-grey mb-2">
@@ -20,7 +21,7 @@
 
     <div class="news card text-dark bg-sa-grey mb-2">
         <div class="card-body">
-            <%include file="/sidebar_widgets/news.mako"/>
+            <%include file="/sidebar_widgets/news.mako" args="section=section"/>
         </div>
     </div>
 
