@@ -2,7 +2,7 @@
 <%namespace name="tools" file="/tools.mako"/>
 <%
     def when_active(sec, text):
-        if sec==section:
+        if sec == section or (not isinstance(sec, str) and section in sec):
             return text
         else:
             return ''
@@ -30,7 +30,7 @@
                     <a class="nav-link ${when_active('home', 'active')}" ${when_active('home', 'aria-current="page"')} href="${site_base}/">home</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle ${when_active('features', 'active')}" ${when_active('home', 'aria-current="page"')} href="#" id="feature-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle ${when_active('features', 'active')}" ${when_active('features', 'aria-current="page"')} href="#" id="feature-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         features
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark bg-sa-green" aria-labelledby="feature-dropdown">
@@ -42,10 +42,12 @@
                     <a class="nav-link ${when_active('blog', 'active')}" ${when_active('blog', 'aria-current="page"')} href="${site_base}/blog/">blog</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle ${when_active('docs', 'active')}" ${when_active('docs', 'aria-current="page"')} href="#" id="docs-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle ${when_active({'docs', 'library'}, 'active')}" ${when_active({'docs', 'library'}, 'aria-current="page"')} 
+                    href="#" id="docs-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         library
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark bg-sa-green" aria-labelledby="docs-dropdown">
+                        <li><a class="dropdown-item" href="${site_base}/library.html">Library</a>
                         <li><a class="dropdown-item" href="${site_base}/library.html#reference">Reference</a></li>
                         ${tools.version(site_base)}
                         <li><a class="dropdown-item" href="${site_base}/library.html#architecture">Architecture</a></li>

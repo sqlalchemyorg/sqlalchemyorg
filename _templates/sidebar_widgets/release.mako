@@ -20,7 +20,7 @@
         return ""
     latest_rec = release_rec['latest']
 %>
-    <div class="border-end border-bottom py-2">
+    <div class="release-box border-end border-bottom py-2">
         <a href="/download.html">
             <b>${latest_rec['version']}</b>
         </a> - ${latest_rec['release_date'].strftime("%Y-%m-%d")} -
@@ -51,7 +51,7 @@ ${release(milestone, "Current Release")}
     dev_release = release_history[dev_version]
 %>
 
-<div class="border-end border-bottom py-2">
+<div class="release-box border-end border-bottom py-2">
     <strong>${dev_version}</strong> - next major series
     <br/>
     <a href="${dev_release['migration_url']}">${dev_release['migration_title']}</a> |

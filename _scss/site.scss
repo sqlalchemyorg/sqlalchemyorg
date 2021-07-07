@@ -16,18 +16,19 @@ $code-color: #703040;
   background: $sa-grey;
 }
 
-.textual-font {
-  font-family: "Source Sans Pro", arial, sans-serif;
-  color: #333;
-  font-size: 110%;
-}
-
 .topic-box-header-font {
   font-family: Verdana, "Lucida Grande", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   color: #778877;
   letter-spacing: 1px;
+}
+
+.topic-box-body-font {
+  font-family: Verdana, "Lucida Grande", sans-serif;
+  color: #777777;
+  font-size: 0.9rem;
+  // line-height: 1.4em;
 }
 
 .selling-point-font {
@@ -79,12 +80,19 @@ code {
 /* header ---------------------------------------------------------- */
 
 nav.navbar {
+  font-size: 1.15rem;
+
   &.logo {
     height: 65px;
     background: #fff url(../img/symbols-bg5.gif) top right no-repeat;
   }
+
   &.navigation {
     background: $sa-green url(../img/navbg1.gif) repeat-x top left;
+  }
+
+  .dropdown-menu {
+    font-size: inherit;
   }
 }
 
@@ -92,28 +100,44 @@ nav.navbar {
 
 body {
   background: #fbfbfb;
+  font-size: 1.1rem;
   div.wrap {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   }
 }
 
+/* sidebar ---------------------------------------------------------*/
+
 div.sidebar {
+  @extend .topic-box-body-font;
+
   .sponsor-img {
     width: 50px;
     height: 50px;
   }
+
   ul {
     list-style: none;
   }
+
   li {
     line-height: 1.4em;
+  }
+
+  .release .release-box {
+      border-color: #ccc !important;
+  }
+
+  h3 {
+    @extend .topic-box-header-font;
+    font-size: inherit;
+    // margin: 0 0 1px 0;
   }
 }
 
 /* footer ------------------------------------------------------------*/
 
 div.footer {
-  @extend .textual-font;
   clear: both;
   margin: 50px 0 -50px 0;
   border-top: 1px solid #d9d9d9;
