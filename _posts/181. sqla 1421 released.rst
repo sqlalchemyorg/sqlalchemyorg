@@ -1,0 +1,27 @@
+---
+date: 2021/07/14 15:45:02
+title: SQLAlchemy 1.4.21 Released
+author: Mike
+---
+
+SQLAlchemy 1.4.21 is now available.
+
+Release 1.4.21 includes a series of improvements within the ORM and Core
+components to improve issues regarding column naming in SQL statements and
+result sets (see issue #6718 and #6710 in the changelog), as well as an
+adjustment to a particular case where the ORM would emit a lazyload during an
+attribute set event for one-to-one relationships that's particularly
+troublesome when using the asyncio extension; this operation has been changed
+to occur only when enabled using the ``active_history`` flag (see issue #6708
+in the changelog).
+
+A series of fixes regarding PostgreSQL "ON CONFLICT" statements are also
+included.
+
+Thanks to all the users who reported and contributed to this release as well
+as the ongoing efforts of our amazing core team.
+
+The complete changelog for 1.4.21 is at `Changelog </changelog/CHANGES_1_4_21>`_.
+
+SQLAlchemy 1.4.21 is available on the `Download Page </download.html>`_.
+
