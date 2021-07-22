@@ -1,0 +1,20 @@
+---
+date: 2021/07/21 15:45:02
+title: SQLAlchemy 1.4.22 Released
+author: Mike
+---
+
+SQLAlchemy 1.4.22 is now available.
+
+Release 1.4.22 includes a fix to statement caching regarding INSERT
+statements rendered by the ORM, particularly those on the PostgreSQL
+database.   The release also includes a short series of fixes for other
+relatively minor and specific issues.
+
+Thanks to our user and contributor communities for their ongoing help
+and support and our core team for their excellent work.
+
+The complete changelog for 1.4.22 is at `Changelog </changelog/CHANGES_1_4_22>`_.
+
+SQLAlchemy 1.4.22 is available on the `Download Page </download.html>`_.
+
