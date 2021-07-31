@@ -295,10 +295,35 @@ at many conferences worldwide.   Here's only a choice few of them:
 <a name="tutorials"></a>
 <h2>Tutorials</h2>
 <p>The most up-to-date and complete tutorials available for getting started with SQLAlchemy
-are the <a href="/docs/core/tutorial.html">Core</a> and <a href="/docs/orm/tutorial.html">ORM</a> tutorials included with SQLAlchemy's own documentation.   There's a few other good
-resources available as well:
+are:
+
+* the <a href="/docs/tutorial/index.html">SQLAlchemy 1.4/2.0 Tutorial</a> which is a
+  full rewrite of the classic "1.x" SQLAlchemy tutorials; users starting with the
+  latest SQLAlchemy releases should start here.
+
+* the <a href="/docs/core/tutorial.html">Core</a> and <a href="/docs/orm/tutorial.html">ORM</a> tutorials
+  are recommended for those using "1.x style" codebases.
+
+A few other online resources include:
 
 <ul>
+
+	<%self:talk
+			title="SQLAlchemy 2.0 - The One-Point-Four-Ening 2021"
+			presented="Python Web Conf 2021"
+			author="Mike Bayer"
+			links="${[
+				('Video', 'https://www.youtube.com/watch?v=1Va493SMTcY&list=PLt4L3V8wVnF4iB8pGfkR7eozIJPwCM7vv&index=1&t=865s'),
+				('Student Download', 'https://github.com/zzzeek/sqla_tutorial'),
+			]}"
+		>
+		<%def name="embed()">
+        <iframe width="${videowidth}" height="${videoheight}" src="//www.youtube.com/embed/1Va493SMTcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+		</%def>
+        This is the newest version of the "getting started" tutorial that presents
+        SQLAlchemy from the perspective of the new 2.0 series.
+	</%self:talk>
 
 	<%self:talk
 			title="Introduction to SQLAlchemy"
@@ -315,12 +340,11 @@ resources available as well:
 		<iframe width="${videowidth}" height="${videoheight}" src="//www.youtube.com/embed/woKYyhLCcnU" frameborder="0" allowfullscreen></iframe>
 
 		</%def>
-		This is Mike Bayer's own "getting started" tutorial that presents a fast paced
+        This tutorial is the more "classic" tutorial that presents a fast paced
 		but beginner-focused tutorial on what SQLAlchemy is all about.   While the
-		tutorial has evolved over the years and at this point is fairly fixed.
-		The "Prerequisite Material" is highly recommended and includes a PDF introductory
-		guide as well as a self-installing, runnable code demo that's used in the
-		tutorial.
+		tutorial has evolved over the years and at this point is fairly fixed;
+        see the newer "2.0" tutorial for a the latest version that is changed a
+        bit more substantially.
 	</%self:talk>
 
 	<%self:talk
