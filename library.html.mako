@@ -270,15 +270,13 @@ at many conferences worldwide.   Here's only a choice few of them:
 		author="Mike Bayer"
 		links="${[
 				('Slides', 'https://speakerdeck.com/zzzeek/sqlalchemy-an-architectural-retrospective'),
-				('Video', 'http://pyvideo.org/video/499/pygotham-2011--sqlalchemy--an-architectural-retro')
+				('Video', 'https://archive.org/details/pyvideo_499___pygotham-2011-sqlalchemy-an-architectural-retrospective')
 		]}"
 	>
 	<%def name="embed()">
 
+<iframe src="https://archive.org/embed/pyvideo_499___pygotham-2011-sqlalchemy-an-architectural-retrospective" width="640" height="480" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 
-<video preload="auto" controls="" style="width: ${videowidth43}px ! important; height: ${videoheight}px ! important;">
-<source src="http://05d2db1380b6504cc981-8cbed8cf7e3a131cd8f1c3e383d10041.r93.cf2.rackcdn.com/pygotham-2011/499_pygotham-2011-sqlalchemy-an-architectural-retrospective.ogv"></source>
-</video>
 
 
 	</%def>
