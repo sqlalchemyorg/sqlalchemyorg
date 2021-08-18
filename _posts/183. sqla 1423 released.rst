@@ -1,0 +1,33 @@
+---
+date: 2021/08/18 15:45:02
+title: SQLAlchemy 1.4.23 Released
+author: Mike
+---
+
+SQLAlchemy 1.4.23 is now available.
+
+Release 1.4.23 has a significant number of fixes and improvements.   Notable
+changes include:
+
+* The ``greenlet`` dependency used by the ``asyncio`` extension now will
+  install by default only on common platforms where ``greenlet`` is
+  known to be supported; if asyncio support is needed on less common
+  architectures, the ``sqlalchemy[asyncio]`` target
+  needs to be stated explicitly when installing with pip.
+* Support is improved for the ``sqlalchemy2-stubs`` package by allowing
+  declaration of "generic" types against SQLAlchemy classes at runtime
+* Changes have been made to the "selectinload" and "lazyload" loader strategies
+  to accommodate various loader and user-defined options scenarios more
+  correctly, by implementing a simplification of these strategies to
+  no longer use the "lambda caching" feature internally.
+* Added a new parameter ``maintain_column_froms`` to the ``Select.with_only_columns``
+  method so that it is easier to change the columns being SELECTed from
+  without altering the FROM list.
+
+Thanks to our user and contributor communities for their ongoing help
+and support and our core team for their excellent work.
+
+The complete changelog for 1.4.23 is at `Changelog </changelog/CHANGES_1_4_23>`_.
+
+SQLAlchemy 1.4.23 is available on the `Download Page </download.html>`_.
+
