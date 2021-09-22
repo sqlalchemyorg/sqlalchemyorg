@@ -1,0 +1,25 @@
+---
+date: 2021/09/22 15:45:02
+title: SQLAlchemy 1.4.24 Released
+author: Mike
+---
+
+SQLAlchemy 1.4.24 is now available.
+
+Notable highlights for 1.4.24 include:
+
+* A new driver for the ``asyncmy`` asynchronous database driver is added.  This
+  driver is added in response to compatibility issues in the ``aiomysql``
+  project which remain unaddressed.
+* ORM loader options can now be used with the ``Session.merge()`` and
+  ``AsyncSession.merge()`` methods.
+* A new method ``Session.scalars`` and ``AsyncSession.scalars`` is added to
+  provide for retrieving a scalar-based result, typically for ORM objects.
+
+Thanks to our user and contributor communities for their ongoing help
+and support and our core team for their excellent work.
+
+The complete changelog for 1.4.24 is at `Changelog </changelog/CHANGES_1_4_24>`_.
+
+SQLAlchemy 1.4.24 is available on the `Download Page </download.html>`_.
+
