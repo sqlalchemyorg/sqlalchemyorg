@@ -1,0 +1,20 @@
+---
+date: 2021/09/23 15:45:02
+title: SQLAlchemy 1.4.25 Released
+author: Mike
+---
+
+SQLAlchemy 1.4.25 is now available.
+
+Release 1.4.25 fixes a single platform installation issue where the platform
+names for ``aarch64`` as well as ``AMD64`` on windows only were excluded from
+the list of platforms for which the ``greenlet`` dependency, necessary for
+SQLAlchemy asyncio support, is required, preventing ``greenlet`` from being
+installed automatically for these platforms. The ``greenlet`` dependency may
+also be installed manually using the ``sqlalchemy[asyncio]`` installation
+target with pip.
+
+The complete changelog for 1.4.25 is at `Changelog </changelog/CHANGES_1_4_25>`_.
+
+SQLAlchemy 1.4.25 is available on the `Download Page </download.html>`_.
+
