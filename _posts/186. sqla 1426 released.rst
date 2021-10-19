@@ -1,0 +1,41 @@
+---
+date: 2021/10/19 15:45:02
+title: SQLAlchemy 1.4.26 Released
+author: Mike
+---
+
+SQLAlchemy 1.4.26 is now available.
+
+Release 1.4.26 is chock full of a number of bug fixes as the 1.4 release
+has settled into general use.   Key fixes in release 1.4.26 include:
+
+* a repair to the workings of the ``update()`` statement in an ORM context
+  when used with hybrid and composite attributes.
+
+* Fixes for the ``with_loader_criteria()`` ORM option
+
+* adjustments to the ORM Session interface to accommodate for new API features
+
+* some new legacy warnings for lesser used patterns with ``Query.join()``
+
+* SQL / ORM fixes for the use case of selecting from repeated, non-labeled
+  column expressions, typically the ``null()`` construct when used as a
+  placeholder in a UNION statement.
+
+* For PostgreSQL, refinements to the "expanding IN"
+  SQL feature when used with PostgreSQL ARRAY datatypes as well as fixes
+  for the mostly PostgreSQL-specific ``any_()`` and ``all_()`` column methods.
+
+* For MySQL, repaired support for new behaviors in MariaDB 10.6
+
+* For SQL Server, reflection fixes and improvements for foreign key constraints
+  as well table /view detection.
+
+As is always the case, huge thanks to our user and contributor communities as
+for their ongoing help and support as well as to our core team for their
+dedicated efforts and hard work.
+
+The complete changelog for 1.4.26 is at `Changelog </changelog/CHANGES_1_4_26>`_.
+
+SQLAlchemy 1.4.26 is available on the `Download Page </download.html>`_.
+
