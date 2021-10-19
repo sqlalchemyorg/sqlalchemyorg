@@ -19,8 +19,8 @@ pypi_url_json = "https://pypi.python.org/pypi/SQLAlchemy/json"
 
 # ==============================================================================
 
-# development: development series in master, no betas released
-# beta: development series in master, betas released
+# development: development series in main, no betas released
+# beta: development series in main, betas released
 # current: current release
 # maintenance: optional category for "prior to current"
 # eol: end of life, one version  must be marked this way
@@ -113,16 +113,16 @@ def _gen_release_data(pypi_data, milestones):
             git_tag = "rel_%s" % major_vers_underscore
 
             if release == development_version:
-                git_location = 'master'
+                git_location = 'main'
             elif major_version == beta_version:
-                git_location = 'master'
+                git_location = 'main'
             elif major_version == current_version:
                 # current version goes in "latest" if there isn't
                 # a beta version
                 if beta_version is None:
 
                     if development_version is None:
-                        git_location = 'master'
+                        git_location = 'main'
                     else:
                         git_location = git_tag
                 else:

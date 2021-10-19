@@ -8,7 +8,7 @@ SQLAlchemy release 1.3.19 is now available.
 
 Release 1.3.19 contains a small series of bug fixes and use case improvements
 across the Core and ORM components as well as dialect level fixtures.
-Primary development continues on the 1.4 series in git master which will
+Primary development continues on the 1.4 series in git main which will
 serve as the basis for transitioning to SQLAlchemy 2.0.
 
 As is the case with all releases, we'd like to thank all the contributors who

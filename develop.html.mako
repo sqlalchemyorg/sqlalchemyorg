@@ -182,7 +182,7 @@ messaging.
 
 Tests are run using <a href="http://pypi.python.org/pypi/pytest">py.test</a>.
 A comprehensive guide to running the tests is     present in the     file
-<a href="${self.attr.bb_base}/blob/master/README.unittests.rst">README.unittests</a>,
+<a href="${self.attr.bb_base}/blob/main/README.unittests.rst">README.unittests</a>,
 which is present in the source distribution. This file explains in detail how
 tests can be run across many scopes, including how to run for specific databases
 and how to select for specific tests.

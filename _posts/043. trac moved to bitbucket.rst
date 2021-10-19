@@ -9,7 +9,7 @@ for all issue tracking and wiki pages.
 
 SQLAlchemy began using Bitbucket some years ago for pull requests, and
 then when the move to Git was made, Bitbucket became the originating point
-for the git master, which remains mirrored on SQLAlchemy's host as well as
+for the git main, which remains mirrored on SQLAlchemy's host as well as
 on Github.  However, the issue system has for SQLAlchemy's entire life remained
 hosted on Trac.
 
@@ -37,6 +37,6 @@ develop various utilities and workarounds for some issues encountered with
 Bitbucket (most notably, that its system marks every issue and comment not owned
 by you as spam after an import is done, meaning you have to un-mark them all),
 the issue system has been moved entirely.  SQLAlchemy's host is now used
-to serve the main website and for the Jenkins master (which is also non-public
+to serve the main website and for the Jenkins main (which is also non-public
 to deter crawlers from slowing it down).
 

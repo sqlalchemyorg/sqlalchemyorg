@@ -11,12 +11,12 @@ documentation as the "latest".
 
 * major version released:
 
-	sqlalchemy git master == major version, e.g. 1.2
+	sqlalchemy git main == major version, e.g. 1.2
 	sqlalchemy git rel_1_1 == previous version, e.g. 1.1
 	sqlalchemy git rel_1_0 == prior to that, e.g. 1.0
 	sqlalchemy git rel_0_9 == prior to that, e.g. 0.9
 
-	docs.sqlalchemy.org/en/latest -> docs for master
+	docs.sqlalchemy.org/en/latest -> docs for main
 	docs.sqlalchemy.org/en/rel_1_2 -> redirects to /en/latest
 	docs.sqlalchemy.org/en/rel_1_1 -> docs for 1.1
 	docs.sqlalchemy.org/en/rel_1_0 -> docs for 1.0
@@ -34,13 +34,13 @@ documentation as the "latest".
 
 * early development version, not documented:
 
-	sqlalchemy git master == dev version, e.g. 1.3
+	sqlalchemy git main == dev version, e.g. 1.3
 	sqlalchemy git rel_1_2 == previous version, e.g. 1.2
 	sqlalchemy git rel_1_1 == previous version, e.g. 1.1
 	sqlalchemy git rel_1_0 == prior to that, e.g. 1.0
 	sqlalchemy git rel_0_9 == prior to that, e.g. 0.9
 
-	docs.sqlalchemy.org/en/latest -> docs for 1.2    *** this is the tricky one, latest == master and here builds rel_1_2
+	docs.sqlalchemy.org/en/latest -> docs for 1.2    *** this is the tricky one, latest == main and here builds rel_1_2
 	docs.sqlalchemy.org/en/rel_1_2 -> redirects to /en/latest
 	docs.sqlalchemy.org/en/rel_1_1 -> docs for 1.1
 	docs.sqlalchemy.org/en/rel_1_0 -> docs for 1.0
@@ -58,13 +58,13 @@ documentation as the "latest".
 
 * advanced development version, documented:
 
-	sqlalchemy git master == dev version, e.g. 1.3
+	sqlalchemy git main == dev version, e.g. 1.3
 	sqlalchemy git rel_1_2 == previous version, e.g. 1.2
 	sqlalchemy git rel_1_1 == previous version, e.g. 1.1
 	sqlalchemy git rel_1_0 == prior to that, e.g. 1.0
 	sqlalchemy git rel_0_9 == prior to that, e.g. 0.9
 
-	docs.sqlalchemy.org/en/latest -> docs for master
+	docs.sqlalchemy.org/en/latest -> docs for main
 	docs.sqlalchemy.org/en/rel_1_2 -> docs for 1.2
 	docs.sqlalchemy.org/en/rel_1_1 -> docs for 1.1
 	docs.sqlalchemy.org/en/rel_1_0 -> docs for 1.0
@@ -82,13 +82,13 @@ documentation as the "latest".
 
 * beta version, documented:
 
-	sqlalchemy git master == dev version, e.g. 1.3
+	sqlalchemy git main == dev version, e.g. 1.3
 	sqlalchemy git rel_1_2 == previous version, e.g. 1.2
 	sqlalchemy git rel_1_1 == previous version, e.g. 1.1
 	sqlalchemy git rel_1_0 == prior to that, e.g. 1.0
 	sqlalchemy git rel_0_9 == prior to that, e.g. 0.9
 
-	docs.sqlalchemy.org/en/latest -> docs for master
+	docs.sqlalchemy.org/en/latest -> docs for main
 	docs.sqlalchemy.org/en/rel_1_2 -> docs for 1.2
 	docs.sqlalchemy.org/en/rel_1_1 -> docs for 1.1
 	docs.sqlalchemy.org/en/rel_1_0 -> docs for 1.0

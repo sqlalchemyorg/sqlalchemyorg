@@ -108,7 +108,7 @@ further links for more recent minor releases.</p>
                 Active development for the next major release of SQLAlchemy.
                 The "development" status is by definition not released on
                 Pypi and only exists within the git repository, typically
-                under the master branch.   When the first release of the
+                under the main branch.   When the first release of the
                 "development" status is created, the status moves to "beta".
             </td>
         </tr>

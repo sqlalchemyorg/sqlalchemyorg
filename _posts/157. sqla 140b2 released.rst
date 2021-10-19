@@ -41,7 +41,7 @@ It's hoped that 1.4.0b2 will be the last beta release before 1.4.0 final,
 which itself should hopefully be released within the coming weeks.
 
 Some weeks after 1.4.0 final is released, the 2.0 branch will be moved
-to master and SQLAlchemy's development as a Python 3 only system supporting
+to main and SQLAlchemy's development as a Python 3 only system supporting
 type annotations can begin.
 
 The ultimate goal of the 1.4 / 2.0 series is to make SQLAlchemy

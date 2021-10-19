@@ -58,7 +58,7 @@ and SQL! </p>
     <dt>Learn More</dt>
     <dd>
         <ul>
-            <li><a href="/library.html"><strong>Library</strong></a> - master index of documentation, videos, talks, and more</li>
+            <li><a href="/library.html"><strong>Library</strong></a> - main index of documentation, videos, talks, and more</li>
             <li><a href="/features.html">Overview of Key Features</a></li>
             <li><a href="/quotes.html">Testimonials</a></li>
         </ul>
