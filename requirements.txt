@@ -1,4 +1,4 @@
 zeekofile
-pyScss
+libsass
 requests
 packaging
