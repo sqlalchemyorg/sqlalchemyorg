@@ -1,0 +1,22 @@
+---
+date: 2021/11/11 15:45:02
+title: SQLAlchemy 1.4.27 Released
+author: Mike
+---
+
+SQLAlchemy 1.4.27 is now available.
+
+Release 1.4.27 includes a series of fixes and improvements across the
+Core and ORM components as well as for individual dialects.
+
+The 1.4 series has moved off of the "main" branch of SQLAlchemy and
+2.0 development is now underway.
+
+As is always the case, huge thanks to our user and contributor communities as
+for their ongoing help and support as well as to our core team for their
+dedicated efforts and hard work.
+
+The complete changelog for 1.4.27 is at `Changelog </changelog/CHANGES_1_4_27>`_.
+
+SQLAlchemy 1.4.27 is available on the `Download Page </download.html>`_.
+
