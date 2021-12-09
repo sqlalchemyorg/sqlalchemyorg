@@ -18,7 +18,7 @@ refreshes, which occur on attribute access, can be an exception if these
 calls are very frequent.
 
 For this reason, the new warnings will refer users to `new documentation
-sections <https://sqlalche.me/e/14/cprf>` that describe the steps to take
+sections <https://sqlalche.me/e/14/cprf>`_ that describe the steps to take
 when these warnings occur.
 
 As is always the case, huge thanks to our user and contributor communities as
