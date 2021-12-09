@@ -1,0 +1,31 @@
+---
+date: 2021/12/09 15:45:02
+title: SQLAlchemy 1.4.28 Released
+author: Mike
+---
+
+SQLAlchemy 1.4.28 is now available.
+
+Release 1.4.28 adds new warnings emitted in the area of
+statement caching involving third-party datatypes, SQL constructs, and
+dialects, as user issues have revealed that the case of
+SQLAlchemy's new statement caching being disabled may be more common
+than was previously realized, and that this can also have a significant
+performance impact compared to release 1.3 in the area of ORM lazy loading.
+Previously, it was expected that 1.4 would be only modestly slower than
+1.3 if statement caching were disabled, however ORM lazy loading and object
+refreshes, which occur on attribute access, can be an exception if these
+calls are very frequent.
+
+For this reason, the new warnings will refer users to `new documentation
+sections <https://sqlalche.me/e/14/cprf>` that describe the steps to take
+when these warnings occur.
+
+As is always the case, huge thanks to our user and contributor communities as
+for their ongoing help and support as well as to our core team for their
+dedicated efforts and hard work.
+
+The complete changelog for 1.4.28 is at `Changelog </changelog/CHANGES_1_4_28>`_.
+
+SQLAlchemy 1.4.28 is available on the `Download Page </download.html>`_.
+
