@@ -1,0 +1,25 @@
+---
+date: 2021/12/22 15:45:02
+title: SQLAlchemy 1.4.29 Released
+author: Mike
+---
+
+SQLAlchemy 1.4.29 is now available.
+
+Release 1.4.29 is released slightly ahead of schedule to accommodate for a fix
+for the mypy plugin, which stopped working as a result of a change released in
+mypy version 0.390, released earlier today. SQLAlchemy's continuous integration
+for mypy was inadvertently disabled which prevented this issue from being
+caught, which has been repaired.
+
+Also included are fixes and use case additions for the ORM, asyncio,
+engine and MariaDB components.
+
+Our user and contributor communities continue to deliver with bug reports,
+fixes and code contributions every day. Thanks much for their dedication and
+efforts.
+
+The complete changelog for 1.4.29 is at `Changelog </changelog/CHANGES_1_4_29>`_.
+
+SQLAlchemy 1.4.29 is available on the `Download Page </download.html>`_.
+
