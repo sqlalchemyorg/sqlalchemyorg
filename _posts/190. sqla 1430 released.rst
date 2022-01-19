@@ -1,0 +1,20 @@
+---
+date: 2022/01/19 15:45:02
+title: SQLAlchemy 1.4.30 Released
+author: Mike
+---
+
+SQLAlchemy 1.4.30 is now available.
+
+Release 1.4.30 has a wide range of bug fixes and use case additions,
+affecting the ORM and Core components as well as the PostgreSQL and MySQL
+dialects.    Overall, SQLAlchemy's main development is largely focused on the
+2.0 release which is hoped to have beta releases in the coming months.
+
+Thanks as always to our user community as well as our dedicated contributors
+for helping to make release 1.4.30 happen.
+
+The complete changelog for 1.4.30 is at `Changelog </changelog/CHANGES_1_4_30>`_.
+
+SQLAlchemy 1.4.30 is available on the `Download Page </download.html>`_.
+
