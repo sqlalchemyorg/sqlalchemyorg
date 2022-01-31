@@ -1,3 +1,14 @@
+// Defines a medium sized breakpoint that you can use like
+// @include media ($md) { /* styles here */ }
+// This applies those styles to any screens wider than the given width.
+// Where applicable, styles are adapted to be "mobile first" with alternate styles for larger screens.
+$md: 768px;
+@mixin media($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
+
 .self-clearing-float {
   &:after {
     content: ".";
@@ -82,6 +93,31 @@
   line-height: 1.4em;
 }
 
+table {
+  // Makes tables scroll horizontally on mobile, independent of the page
+  max-width: 100%;
+  display: block;
+  overflow-x: scroll;
+  // Could also add `white-space: nowrap;` to some tables but it isn't the best solution for all
+
+
+  @include media($md) {
+      display: table;
+      overflow: auto;
+      white-space: initial;
+      max-width: none;
+
+  }
+}
+
+.hide-mobile {
+  @include media($md) {
+    display: initial;
+  }
+
+  display: none;
+}
+
 body {
   #header, #main-body > #content, #footer {
     @extend .textual-font;
@@ -94,8 +130,10 @@ body {
   background: #fbfbfb;
 }
 
-
-
+iframe, img, video {
+  // helps prevent overflowing the content area on mobile
+  max-width: 100%;
+}
 
 .body-background {
   background-color: #fbfbfb;
@@ -140,7 +178,9 @@ li:hover > a.headerlink {
 #wrap {
   position: relative;
   max-width: 1500px; //80em; // 70 * 16 == 1600px
-  min-width: 25em; // 25 * 16 == 400px
+  @include media($md) {
+    min-width: 25em; // 25 * 16 == 400px
+  }
   margin: 0 auto;
   text-align: left;
   background: #fff;
@@ -155,6 +195,7 @@ li:hover > a.headerlink {
 #sidebar {
   @extend .pagetext;
   @extend .topic-box-body-font;
+  @extend .hide-mobile;
   float: right;
   width: 340px;
 
@@ -170,7 +211,9 @@ li:hover > a.headerlink {
   @extend .pagetext;
   /*float: left;*/
   /*width: 70%;*/
-  margin-right: 400px;
+  @include media($md) {
+    margin-right: 400px;
+  }
 
   #content-inner {
     max-width: 1024px;
@@ -224,8 +267,13 @@ li:hover > a.headerlink {
 #description {
   position: absolute;
   width: 180px;
-  top: 45px;
-  right: 0px;
+  top: 50px;
+  left: 20px;
+  @include media($md) {
+    top: 45px;
+    right: 0px;
+    left: auto;
+  }
   margin: 0 20px 0 0;
 }
 
@@ -238,8 +286,39 @@ $nav_width: 240px;
 #nav {
   padding: 1px 15px 0px 15px;
   background: #787 url(../img/navbg1.gif) repeat-x top left;
-  height: $nav_height;
+  @include media ($md) {
+    height: $nav_height;
+  }
   font-size: 1em;
+
+  label {
+    color: #fff;
+    font-weight: 800;
+    display: block;
+    padding: 8px 0;
+    pointer: cursor;
+  }
+  @include media ($md) {
+    label {
+      display: none;
+    }
+  }
+  #menu-toggle {
+    display: none;
+
+    & + ul {
+      display: none;
+    }
+    &:checked + ul {
+      display: block;
+    }
+
+    @include media($md) {
+      & + ul, &:checked + ul {
+        display: block;
+      }
+    }
+  }
 
   ul {
     margin: 0;
@@ -248,14 +327,18 @@ $nav_width: 240px;
     z-index: 1000;
 
     li {
-      &:hover > ul {
-        display: block;
+      @include media($md) {
+        &:hover > ul {
+          display: block;
+        }
       }
 
       ul {
-        display: none;
-        position: absolute;
-        top: 98px;
+        @include media($md) {
+          display: none;
+          position: absolute;
+          top: 98px;
+        }
 
         li {
           &:hover {
@@ -263,20 +346,25 @@ $nav_width: 240px;
             background-color: #333;
           }
 
-          margin: 0;
-          height: $nav_height;
+          margin: 0 0 0 12px;
           width: $nav_width;
           background-color: #787;
           clear: left;
 
-          &:hover > ul {
-            display: block;
-          }
-          ul {
-            display: none;
-            position: absolute;
-            left: $nav_width;
-            top: 0px;
+          @include media($md) {
+            margin: 0;
+            height: $nav_height;
+
+            &:hover > ul {
+              display: block;
+            }
+
+            ul {
+              display: none;
+              position: absolute;
+              left: $nav_width;
+              top: 0px;
+            }
           }
         }
       }
@@ -284,7 +372,9 @@ $nav_width: 240px;
   }
 
   li {
-    float: left;
+    @include media($md) {
+      float: left;
+    }
     margin: 0;
     padding: 0;
     padding-top: 4px;
