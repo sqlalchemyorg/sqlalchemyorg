@@ -24,8 +24,7 @@ available.
     <li><a href="#architecture">Architecture</a> - deep architectural dives</li>
     <li><a href="#citations">Citing SQLAlchemy</a></li>
     <li><a href="#blog">Blog Posts</a> - news and musings</li>
-    <li><a href="#talks">Talks</a> - videos from PyCon and elsewhere</li>
-    <li><a href="#tutorials">Tutorials</a> - tutorial videos and sites hosted elsewhere</li>
+    <li><a href="#talks">Talks and Tutorials</a> - videos from PyCon and elsewhere</li>
     <li><a href="#recipes">Recipes</a> - a curated selection of example code</li>
 </ul>
 
@@ -111,6 +110,7 @@ Here is an example BibTeX entry:
 
 
 <a name="talks"></a>
+<a name="tutorials"></a>
 
 <%def name="talk(title, presented, author, links=[], anchor=None)">
 	<%
@@ -138,26 +138,66 @@ Here is an example BibTeX entry:
 </%def>
 
 
-<h2>Talks</h2>
-<p>A wide variety of talks both by SQLAlchemy creators and users have been presented
-at many conferences worldwide.   Here's only a choice few of them:
+<h2>Talks and Tutorials</h2>
+<p>A wide variety of talks and tutorials both by SQLAlchemy creators and users have been presented
+at many conferences worldwide.   Here's a selection:
 
 <ul>
 	<%self:talk
-			title="Building the App"
-			presented="presented at Pycon North America, 2014"
+			title="SQLAlchemy 2.0 - The One-Point-Four-Ening 2021"
+			presented="Python Web Conf 2021"
 			author="Mike Bayer"
 			links="${[
-				('Slides', 'https://speakerdeck.com/zzzeek/building-the-app'),
-				('Sample Pyramid Application', 'https://bitbucket.org/zzzeek/pycon2014_atmcraft'),
-				('Java Client', 'https://bitbucket.org/zzzeek/pycon2014_atmcraft_java/'),
-				('Video', 'http://www.youtube.com/watch/5SSC6nU314c')
-			]}">
+				('Video', 'https://www.youtube.com/watch?v=1Va493SMTcY&list=PLt4L3V8wVnF4iB8pGfkR7eozIJPwCM7vv&index=1&t=865s'),
+				('Student Download', 'https://github.com/zzzeek/sqla_tutorial'),
+			]}"
+		>
 		<%def name="embed()">
-		<iframe width="${videowidth}" height="${videoheight}" src="//www.youtube.com/embed/5SSC6nU314c" frameborder="0" allowfullscreen></iframe>
+        <iframe width="${videowidth}" height="${videoheight}" src="//www.youtube.com/embed/1Va493SMTcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 		</%def>
-		In this talk we'll illustrate a simple web application using SQLAlchemy, showing off the style of development that SQLAlchemy is most geared towards, the so-called "foundational" style which provides for development and maintainance of custom conventions which then service the needs of the model declarations and use case implementations.
+        This is the newest version of the "getting started" tutorial that presents
+        SQLAlchemy from the perspective of the new 2.0 series.
+	</%self:talk>
+
+
+
+	<%self:talk
+			title="SQLAlchemy 2.0"
+			presented="Recorded November 10, 2021"
+			author="Michael Kennedy and Mike Bayer"
+			links="${[
+                ('Video', 'https://www.youtube.com/watch?v=q5Iv6RUxKC8'),
+				('Podcast Homepage', 'https://talkpython.fm/episodes/show/344/sqlalchemy-2.0')
+			]}">
+		<%def name="embed()">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/q5Iv6RUxKC8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</%def>
+		A second interview with Mike Bayer in the <i>Talk Python to me Podcast</i> series;
+        this episode previews some of the highlights of SQLAlchemy 2.0.
+	</%self:talk>
+
+
+	<%self:talk
+			title="Introduction to SQLAlchemy"
+			presented="presented at many Pycon and other conferences"
+			author="Mike Bayer"
+			links="${[
+				('Slides', 'https://speakerdeck.com/zzzeek/introduction-to-sqlalchemy-pycon-2013'),
+				('Video at PyCon 2013', 'http://www.youtube.com/watch?v=woKYyhLCcnU'),
+				('Video at PyGotham 2014', 'https://www.youtube.com/watch?v=vunIDi9Z-_8'),
+				('Prerequisite Material', 'http://techspot.zzzeek.org/files/2013/pycon2013_student_package.tar.gz'),
+			]}"
+		>
+		<%def name="embed()">
+		<iframe width="${videowidth}" height="${videoheight}" src="//www.youtube.com/embed/woKYyhLCcnU" frameborder="0" allowfullscreen></iframe>
+
+		</%def>
+        This tutorial is the more "classic" tutorial that presents a fast paced
+		but beginner-focused tutorial on what SQLAlchemy is all about.   While the
+		tutorial has evolved over the years and at this point is fairly fixed;
+        see the newer "2.0" tutorial for a the latest version that is changed a
+        bit more substantially.
 	</%self:talk>
 
 	<%self:talk
@@ -174,49 +214,22 @@ at many conferences worldwide.   Here's only a choice few of them:
 		Discusses the history of the project and how it has evolved over time.
 	</%self:talk>
 
+
 	<%self:talk
-			title="Introduction to SQLAlchemy Core"
+			title="Building the App"
 			presented="presented at Pycon North America, 2014"
-			author="Jason Meyers"
+			author="Mike Bayer"
 			links="${[
-				('Video', 'http://www.youtube.com/watch/0PSdzUxRYpA')
-			]}"
-		>
+				('Video', 'http://www.youtube.com/watch/5SSC6nU314c'),
+				('Slides', 'https://speakerdeck.com/zzzeek/building-the-app'),
+				('Sample Pyramid Application', 'https://github.com/zzzeek/pycon2014_atmcraft'),
+				('Java Client', 'https://github.com/zzzeek/pycon2014_atmcraft_java'),
+			]}">
 		<%def name="embed()">
-		<iframe width="${videowidth}" height="${videoheight}" src="//www.youtube.com/embed/0PSdzUxRYpA" frameborder="0" allowfullscreen></iframe>
-		</%def>
-		This talk provides a broad-based introduction to SQLAlchemy Core library. It is focused on someone new to SQLAlchemy Core, who has experience with other database technologies such as Django or SQLAlchemy ORM. We'll cover the differences between the domain-centric models of those tools compared to the schema-centric model and how we can use that to deal with common and unusual data sources.
-	</%self:talk>
-
-
-	<%self:talk
-		title="Sane Schema Migrations with Alembic and SQLAlchemy"
-		presented="presented at Pycon North America, 2014"
-		author="Selena Deckelmann"
-		links="${[
-			('Slides', 'http://bit.ly/1iGL5lQ'),
-			('Video', 'http://www.youtube.com/watch?v=_ZdqwCr4c7Q')
-		]}">
-		<%def name="embed()">
-		<iframe width="${videowidth}" height="${videoheight}" src="//www.youtube.com/embed/_ZdqwCr4c7Q" frameborder="0" allowfullscreen></iframe>
-		</%def>
-	Working with developers on schema migrations is a perennial challenge for DBAs and developers. Devs tend to like a "set it and forget it" tool. This talk discusses the strategies used to move from a pure SQL and shell migration system to using SQLAlchemy and <a href="https://alembic.sqlalchemy.org">Alembic</a> for maximum DBA and developer happiness.
-	</%self:talk>
-
-	<%self:talk
-			title="Flexing SQLAlchemy's Relational Power"
-			presented="presented at Pycon US, 2012"
-			author="Brandon Rhodes"
-			links="${[
-				('Slides', 'http://rhodesmill.org/brandon/slides/2012-03-pycon/sqla-talk/'),
-				('Video', 'http://www.youtube.com/watch?v=399c-ycBvo4'),
-			]}"
-		>
-		<%def name="embed()">
-		<iframe width="${videowidth}" height="${videoheight}" src="//www.youtube.com/embed/399c-ycBvo4" frameborder="0" allowfullscreen></iframe>
+		<a href="https://www.youtube.com/watch?v=5SSC6nU314c"><img src="/img/pycon2014.png" width="600"/></a>
 		</%def>
 
-		Too often, programmers use ORMs to hide from their database and avoid learning how it works. Instead, I encourage programmers to learn a bit of SQL and become familiar with the problems that database queries are designed to solve well. In this talk, I outline the basics of using SQLAlchemy to craft efficient queries and avoid several common database query anti-patterns.
+		In this talk we'll illustrate a simple web application using SQLAlchemy, showing off the style of development that SQLAlchemy is most geared towards, the so-called "foundational" style which provides for development and maintainance of custom conventions which then service the needs of the model declarations and use case implementations.
 	</%self:talk>
 
 	<%self:talk
@@ -265,6 +278,51 @@ at many conferences worldwide.   Here's only a choice few of them:
 	</%self:talk>
 
 	<%self:talk
+			title="Introduction to SQLAlchemy Core"
+			presented="presented at Pycon North America, 2014"
+			author="Jason Meyers"
+			links="${[
+				('Video', 'http://www.youtube.com/watch/0PSdzUxRYpA')
+			]}"
+		>
+		<%def name="embed()">
+		<a href="http://www.youtube.com/watch/0PSdzUxRYpA"><img src="/img/pycon2014_sqla_core.png" width="600"/></a>
+		</%def>
+		This talk provides a broad-based introduction to SQLAlchemy Core library. It is focused on someone new to SQLAlchemy Core, who has experience with other database technologies such as Django or SQLAlchemy ORM. We'll cover the differences between the domain-centric models of those tools compared to the schema-centric model and how we can use that to deal with common and unusual data sources.
+	</%self:talk>
+
+
+	<%self:talk
+		title="Sane Schema Migrations with Alembic and SQLAlchemy"
+		presented="presented at Pycon North America, 2014"
+		author="Selena Deckelmann"
+		links="${[
+			('Slides', 'http://bit.ly/1iGL5lQ'),
+			('Video', 'http://www.youtube.com/watch?v=_ZdqwCr4c7Q')
+		]}">
+		<%def name="embed()">
+		<a href="http://www.youtube.com/watch?v=_ZdqwCr4c7Q"><img src="/img/pycon2014_migrations.png" width="600"/></a>
+		</%def>
+	Working with developers on schema migrations is a perennial challenge for DBAs and developers. Devs tend to like a "set it and forget it" tool. This talk discusses the strategies used to move from a pure SQL and shell migration system to using SQLAlchemy and <a href="https://alembic.sqlalchemy.org">Alembic</a> for maximum DBA and developer happiness.
+	</%self:talk>
+
+	<%self:talk
+			title="Flexing SQLAlchemy's Relational Power"
+			presented="presented at Pycon US, 2012"
+			author="Brandon Rhodes"
+			links="${[
+				('Slides', 'http://rhodesmill.org/brandon/slides/2012-03-pycon/sqla-talk/'),
+				('Video', 'http://www.youtube.com/watch?v=399c-ycBvo4'),
+			]}"
+		>
+		<%def name="embed()">
+		<iframe width="${videowidth}" height="${videoheight}" src="//www.youtube.com/embed/399c-ycBvo4" frameborder="0" allowfullscreen></iframe>
+		</%def>
+
+		Too often, programmers use ORMs to hide from their database and avoid learning how it works. Instead, I encourage programmers to learn a bit of SQL and become familiar with the problems that database queries are designed to solve well. In this talk, I outline the basics of using SQLAlchemy to craft efficient queries and avoid several common database query anti-patterns.
+	</%self:talk>
+
+	<%self:talk
 		title="SQLAlchemy - an Architectural Retrospective"
 		presented="presented at PyGotham 2011"
 		author="Mike Bayer"
@@ -277,8 +335,6 @@ at many conferences worldwide.   Here's only a choice few of them:
 
 <iframe src="https://archive.org/embed/pyvideo_499___pygotham-2011-sqlalchemy-an-architectural-retrospective" width="640" height="480" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 
-
-
 	</%def>
 	This talk walks through some highlights of SQLAlchemy internal
 	design  and methodology, based on the (now published) chapter for the
@@ -287,64 +343,6 @@ at many conferences worldwide.   Here's only a choice few of them:
 	then a 500-ft view of how the ORM goes about things, with plenty
 	of cool looking diagrams.
 
-	</%self:talk>
-</ul>
-</p>
-
-
-<a name="tutorials"></a>
-<h2>Tutorials</h2>
-<p>The most up-to-date and complete tutorials available for getting started with SQLAlchemy
-are:
-
-* the <a href="/docs/tutorial/index.html">SQLAlchemy 1.4/2.0 Tutorial</a> which is a
-  full rewrite of the classic "1.x" SQLAlchemy tutorials; users starting with the
-  latest SQLAlchemy releases should start here.
-
-* the <a href="/docs/core/tutorial.html">Core</a> and <a href="/docs/orm/tutorial.html">ORM</a> tutorials
-  are recommended for those using "1.x style" codebases.
-
-A few other online resources include:
-
-<ul>
-
-	<%self:talk
-			title="SQLAlchemy 2.0 - The One-Point-Four-Ening 2021"
-			presented="Python Web Conf 2021"
-			author="Mike Bayer"
-			links="${[
-				('Video', 'https://www.youtube.com/watch?v=1Va493SMTcY&list=PLt4L3V8wVnF4iB8pGfkR7eozIJPwCM7vv&index=1&t=865s'),
-				('Student Download', 'https://github.com/zzzeek/sqla_tutorial'),
-			]}"
-		>
-		<%def name="embed()">
-        <iframe width="${videowidth}" height="${videoheight}" src="//www.youtube.com/embed/1Va493SMTcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-		</%def>
-        This is the newest version of the "getting started" tutorial that presents
-        SQLAlchemy from the perspective of the new 2.0 series.
-	</%self:talk>
-
-	<%self:talk
-			title="Introduction to SQLAlchemy"
-			presented="presented at many Pycon and other conferences"
-			author="Mike Bayer"
-			links="${[
-				('Slides', 'https://speakerdeck.com/zzzeek/introduction-to-sqlalchemy-pycon-2013'),
-				('Video at PyCon 2013', 'http://www.youtube.com/watch?v=woKYyhLCcnU'),
-				('Video at PyGotham 2014', 'https://www.youtube.com/watch?v=vunIDi9Z-_8'),
-				('Prerequisite Material', 'http://techspot.zzzeek.org/files/2013/pycon2013_student_package.tar.gz'),
-			]}"
-		>
-		<%def name="embed()">
-		<iframe width="${videowidth}" height="${videoheight}" src="//www.youtube.com/embed/woKYyhLCcnU" frameborder="0" allowfullscreen></iframe>
-
-		</%def>
-        This tutorial is the more "classic" tutorial that presents a fast paced
-		but beginner-focused tutorial on what SQLAlchemy is all about.   While the
-		tutorial has evolved over the years and at this point is fairly fixed;
-        see the newer "2.0" tutorial for a the latest version that is changed a
-        bit more substantially.
 	</%self:talk>
 
 	<%self:talk
@@ -402,8 +400,9 @@ A few other online resources include:
 	by SQLAlchemy's documentation.
 
 	</%self:talk>
-</ul>
 
+
+</ul>
 </p>
 
 
