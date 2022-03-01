@@ -57,7 +57,7 @@ self.attr.current_section = current_section
 
     % else:
 
-        <div id="docs">
+        <main id="docs" class="docs">
         ${next.body(**pageargs)}
         </div>
 

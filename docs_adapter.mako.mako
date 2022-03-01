@@ -9,6 +9,7 @@ self.attr.bb_base = bb_base = zf.config.bb_url
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>
         <%text>
@@ -45,7 +46,8 @@ self.attr.bb_base = bb_base = zf.config.bb_url
         % endfor
         <!-- end iterate through sphinx environment local css_files -->
 
-        <link rel="stylesheet" type="text/css" media="all" href="${site_base}/css/site.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	    <link rel="stylesheet" type="text/css" media="all" href="${site_base}/css/site.css"/>
         <link rel="stylesheet" type="text/css" media="all" href="${site_base}/css/carbonads.css"/>
         <link rel="stylesheet" type="text/css" media="print" href="${site_base}/css/print.css"/>
 
@@ -123,13 +125,13 @@ self.attr.bb_base = bb_base = zf.config.bb_url
 
 <body>
 
-<div id="wrap">
+<div id="wrap" class="container-xxl wrap px-0">
 
 <%include file="header.mako" args="section='docs', site_base=self.attr.site_base, docs_base=self.attr.docs_base, bb_base=self.attr.bb_base" />
 
-<div id="main-body" class="docs">
+<div id="main-body" class="docs main-body row m-0">
 
-<div id="docs">
+<main id="docs" class="docs">
 <%text>
 ${next.body()}
 </%text>
@@ -155,6 +157,7 @@ ${next.body()}
     <%block name="lower_scripts"/>
 </%text>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script type="text/javascript" src="${site_base}/js/doc_versions.js"></script>
 <%include file="/tracking.mako"/>
 
