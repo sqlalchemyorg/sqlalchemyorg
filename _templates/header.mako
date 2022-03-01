@@ -20,10 +20,10 @@
 </nav>
 <nav class="navbar navbar-expand-md navbar-dark bg-sa-green py-0 navigation">
     <div class="container-fluid">
-        <a class="navbar-brand d-md-block d-md-none" href="#">Menu</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavigation" aria-controls="navbarNavigation" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+        <span class="navbar-brand d-md-block d-md-none" href="#">The Database Toolkit for Python</span>
         <div class="collapse navbar-collapse" id="navbarNavigation">
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
@@ -42,7 +42,7 @@
                     <a class="nav-link ${when_active('blog', 'active')}" ${when_active('blog', 'aria-current="page"')} href="${site_base}/blog/">blog</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle ${when_active({'docs', 'library'}, 'active')}" ${when_active({'docs', 'library'}, 'aria-current="page"')} 
+                    <a class="nav-link dropdown-toggle ${when_active({'docs', 'library'}, 'active')}" ${when_active({'docs', 'library'}, 'aria-current="page"')}
                     href="#" id="docs-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         library
                     </a>

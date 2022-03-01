@@ -9,9 +9,11 @@ docs.priority = 50
 
 docs_url = "//docs.sqlalchemy.org"
 #docs_url = "//localhost:8080/docs"
+
+docs_url = "/docs/"
 bb_url = "https://github.com/sqlalchemy/sqlalchemy"
-site_url = "//www.sqlalchemy.org"
-site.url = "http://www.sqlalchemy.org"
+site_url = "//bootstrap.sqlalchemy.org"
+site.url = "http://bootstrap.sqlalchemy.org"
 
 
 filters.syntax_highlight.style= "manni"

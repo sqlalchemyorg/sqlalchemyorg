@@ -8,6 +8,14 @@ $code-color: #703040;
   --bs-font-sans-serif: "Source Sans Pro", arial, sans-serif;
 }
 
+.navbar-dark {
+    .navbar-nav {
+        .nav-link {
+            color: rgba(255, 255, 255, .8);
+        }
+    }
+}
+
 .bg-sa-green {
   background: $sa-green
 }
@@ -87,6 +95,12 @@ nav.navbar {
     background: #fff url(../img/symbols-bg5.gif) top right no-repeat;
   }
 
+  @media only screen and (max-width: 980px) {
+    &.logo {
+        background: #fff;
+      }
+    }
+
   &.navigation {
     background: $sa-green url(../img/navbg1.gif) repeat-x top left;
   }
@@ -100,7 +114,6 @@ nav.navbar {
 
 body {
   background: #fbfbfb;
-  font-size: 1.1rem;
   div.wrap {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   }
@@ -164,7 +177,46 @@ div.footer {
 
 /* content styles ---------------------------------------------------------- */
 
+.left-right-container {
+        padding-left: 0;
+        padding-right: 0;
+}
+
+.docutils {
+    .container {
+        padding-top: 1rem;
+    }
+}
+
+main.docs {
+
+    .h1, h1 {
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    .h2, h2 {
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    .h3, h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    pre {
+        font-size: 1.1rem;
+    }
+
+    #docs-container {
+        pre {
+            font-size: 1.1rem;
+        }
+    }
+
+}
+
 main.content {
+  font-size: 1.1rem;
+
   h1 {
     @extend .page-welcome-font-big;
     margin: 0 2em 15px 0;
