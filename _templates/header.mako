@@ -49,7 +49,7 @@
                     <ul class="dropdown-menu dropdown-menu-dark bg-sa-green" aria-labelledby="docs-dropdown">
                         <li><a class="dropdown-item" href="${site_base}/library.html">Library</a>
                         <li><a class="dropdown-item" href="${site_base}/library.html#reference">Reference</a></li>
-                        ${tools.version(site_base)}
+                        ${tools.render_nav_docs_dropdown(docs_base)}
                         <li><a class="dropdown-item" href="${site_base}/library.html#architecture">Architecture</a></li>
                         <li><a class="dropdown-item" href="${site_base}/library.html#citations">Citing SQLAlchemy</a></li>
                         <li><a class="dropdown-item" href="${site_base}/library.html#blog">Blog Posts</a></li>

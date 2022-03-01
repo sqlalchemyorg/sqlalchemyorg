@@ -9,7 +9,7 @@
 	return zf.filter.run_chain('markdown', capture(caller.body))
 %></%def>
 
-<%def name="version(site_base)"><%
+<%def name="render_nav_docs_dropdown(docs_base)"><%
     display_versions = [
         ref_data for _, ref_data in reversed(sorted(zf.config.release_data.items()))
         if ref_data.get('docs', None)
@@ -28,7 +28,7 @@
     <li><hr class="dropdown-divider"></li>
     % for version in data:
         <li>
-            <a class="dropdown-item" href="${'%s/en/%s/' % (site_base, version['slug'])}">
+            <a class="dropdown-item" href="${'%s/en/%s/' % (docs_base, version['slug'])}">
                 <span class="ps-2">${version['version']}</span>
             </a>
         </li>
