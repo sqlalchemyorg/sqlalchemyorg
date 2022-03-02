@@ -9,14 +9,6 @@ $mobile-max-screen-width: 980px;
     --bs-font-sans-serif: "Source Sans Pro", arial, sans-serif;
 }
 
-.navbar-dark {
-    .navbar-nav {
-        .nav-link {
-            color: rgba(255, 255, 255, 0.8);
-        }
-    }
-}
-
 .bg-sa-green {
     background: $sa-green;
 }
@@ -90,6 +82,11 @@ code {
 
 nav.navbar {
     font-size: 1.15rem;
+    line-height: 1.2rem;
+
+    .dropdown-item {
+        line-height: 1.6rem;
+    }
 
     &.logo {
         height: 65px;
@@ -112,6 +109,15 @@ nav.navbar {
 
     .dropdown-menu {
         font-size: inherit;
+    }
+
+}
+
+.navbar-dark {
+    .navbar-nav {
+        .nav-link {
+            color: rgba(255, 255, 255, 0.8);
+        }
     }
 }
 
