@@ -204,16 +204,6 @@ div.footer {
 
 /* content styles ---------------------------------------------------------- */
 
-.left-right-container {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.docutils {
-    .container {
-        padding-top: 1rem;
-    }
-}
 
 main.docs {
     h1,
@@ -241,6 +231,36 @@ main.docs {
             font-size: 1.1rem;
         }
     }
+
+    .left-right-container {
+        padding-left: 0;
+        padding-right: 0;
+
+        max-width: none;
+
+        /* bootstrap uses the same class name "container" as sphinx html
+           w/ docutils container does, so here we try to break them apart
+        */
+
+        :not(.leftmost).docutils.container {
+            max-width: none;
+        }
+
+        .docutils.container {
+            padding-top: 1rem;
+        }
+    }
+
+    div {
+        &.admonition,
+        &.sidebar,
+        &.topic,
+        &.docutils-header,
+        &.docutils-footer {
+            padding-top:10px;
+        }
+    }
+
 }
 
 main.content {
