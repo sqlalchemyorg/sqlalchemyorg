@@ -66,6 +66,7 @@ $mobile-max-screen-width: 980px;
     }
 
     &:hover {
+        text-decoration: underline;
         color: $a-hover-color;
     }
 }
@@ -93,6 +94,10 @@ nav.navbar {
         background: #fff url(../img/symbols-bg5.gif) top right no-repeat;
     }
 
+    a {
+        text-decoration: none;
+    }
+
     @media only screen and (max-width: $mobile-max-screen-width) {
         &.logo {
             background: #fff;
@@ -110,7 +115,6 @@ nav.navbar {
     .dropdown-menu {
         font-size: inherit;
     }
-
 }
 
 .navbar-dark {
@@ -200,16 +204,19 @@ div.footer {
 }
 
 main.docs {
-    h1, #docs-body h1 {
+    h1,
+    #docs-body h1 {
         font-size: 1.7rem;
         font-weight: bold;
-        padding-top: .5rem;
+        padding-top: 0.5rem;
     }
-    h2, #docs-body h2 {
+    h2,
+    #docs-body h2 {
         font-size: 1.5rem;
         font-weight: bold;
     }
-    h3, #docs-body h3 {
+    h3,
+    #docs-body h3 {
         font-size: 1.2rem;
         font-weight: bold;
     }
@@ -222,9 +229,7 @@ main.docs {
             font-size: 1.1rem;
         }
     }
-
 }
-
 
 main.content {
     font-size: 1.1rem;
@@ -286,20 +291,17 @@ main.content {
         border-left-width: 5px;
         border-radius: 3px;
         border-left-color: #1b809e;
-
     }
 
     .release-tip {
         font-size: 0.8rem;
     }
 
-
     .inline-alert h4 {
         font-size: 1.2rem;
         font-weight: bold;
         padding: 10px 0 10px 0;
     }
-
 
     .inline-alert.deprecation-security {
         border-left-color: #ce4844;
