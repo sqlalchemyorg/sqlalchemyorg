@@ -200,18 +200,16 @@ div.footer {
 }
 
 main.docs {
-    .h1,
-    h1 {
-        font-size: 1.8rem;
+    h1, #docs-body h1 {
+        font-size: 1.7rem;
+        font-weight: bold;
+        padding-top: .5rem;
+    }
+    h2, #docs-body h2 {
+        font-size: 1.5rem;
         font-weight: bold;
     }
-    .h2,
-    h2 {
-        font-size: 1.3rem;
-        font-weight: bold;
-    }
-    .h3,
-    h3 {
+    h3, #docs-body h3 {
         font-size: 1.2rem;
         font-weight: bold;
     }
@@ -224,7 +222,9 @@ main.docs {
             font-size: 1.1rem;
         }
     }
+
 }
+
 
 main.content {
     font-size: 1.1rem;
