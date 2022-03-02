@@ -94,8 +94,28 @@ nav.navbar {
         background: #fff url(../img/symbols-bg5.gif) top right no-repeat;
     }
 
-    a {
-        text-decoration: none;
+    div#navbarNavigation {
+        .navbar-nav {
+            .nav-link {
+                color: rgba(255, 255, 255, 0.9);
+            }
+        }
+
+        .dropdown-item {
+            color: rgba(255, 255, 255, 0.9);
+
+            &:hover {
+                background-color: #333333;
+            }
+        }
+        a {
+            text-decoration: none;
+
+            &:hover {
+                background-color: #333333;
+            }
+        }
+
     }
 
     @media only screen and (max-width: $mobile-max-screen-width) {
@@ -114,14 +134,6 @@ nav.navbar {
 
     .dropdown-menu {
         font-size: inherit;
-    }
-}
-
-.navbar-dark {
-    .navbar-nav {
-        .nav-link {
-            color: rgba(255, 255, 255, 0.8);
-        }
     }
 }
 
