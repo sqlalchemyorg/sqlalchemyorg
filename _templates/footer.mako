@@ -20,7 +20,7 @@
         <p>SQLAlchemy is a trademark of Michael Bayer.  mike(&amp;)zzzcomputing.com
         All rights reserved. </p>
         <p>Website generation by
-        <a href="https://bitbucket.org/zzzeek/zeekofile/">zeekofile</a>, with
+        <a href="https://github.com/sqlalchemyorg/zeekofile/">zeekofile</a>, with
         huge thanks to the <a href="https://github.com/EnigmaCurry/blogofile">Blogofile</a>
         project.</p>
     </div>
