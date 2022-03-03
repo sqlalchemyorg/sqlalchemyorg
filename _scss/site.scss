@@ -3,7 +3,7 @@ $sa-grey: #f0f0f0;
 $a-color: #700;
 $a-hover-color: #f00;
 $code-color: #703040;
-$mobile-max-screen-width: 980px;
+$narrow-max-screen-width: 980px;
 
 :root {
     --bs-font-sans-serif: "Source Sans Pro", arial, sans-serif;
@@ -118,7 +118,11 @@ nav.navbar {
 
     }
 
-    @media only screen and (max-width: $mobile-max-screen-width) {
+    @media only screen and (max-width: $narrow-max-screen-width) {
+        /*
+            hide header background image and dbtoolkit images on narrow
+            screens
+        */
         &.logo {
             background: #fff;
         }
@@ -202,8 +206,9 @@ div.footer {
     }
 }
 
-/* content styles ---------------------------------------------------------- */
 
+/* docs override styles, which are targeted to correct zzzeeksphinx styles
+   given our bootstrap layout */
 
 main.docs {
     h1,
@@ -224,6 +229,10 @@ main.docs {
     }
     pre {
         font-size: 1.1rem;
+    }
+
+    #docs-sidebar {
+        top: 165px;
     }
 
     #docs-container {
@@ -262,6 +271,8 @@ main.docs {
     }
 
 }
+
+/* content styles ---------------------------------------------------------- */
 
 main.content {
     font-size: 1.1rem;
