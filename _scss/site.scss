@@ -115,7 +115,6 @@ nav.navbar {
                 background-color: #333333;
             }
         }
-
     }
 
     @media only screen and (max-width: $narrow-max-screen-width) {
@@ -206,7 +205,6 @@ div.footer {
     }
 }
 
-
 /* docs override styles, which are targeted to correct zzzeeksphinx styles
    given our bootstrap layout */
 
@@ -229,6 +227,14 @@ main.docs {
     }
     pre {
         font-size: 1.1rem;
+    }
+
+    #docs-body {
+        .orm-dependency,
+        .core-header,
+        .orm-header {
+            padding-top: 10px;
+        }
     }
 
     #docs-sidebar {
@@ -260,14 +266,32 @@ main.docs {
         }
     }
 
-    div {
-        &.admonition,
-        &.sidebar,
-        &.topic,
-        &.docutils-header,
-        &.docutils-footer {
-            padding-top:10px;
+    dl.field-list.simple {
+        dd > p {
+            padding-left: 30px;
         }
+    }
+
+    dd > p:first-child {
+        padding-top: 10px;
+    }
+
+    dl.function > dt,
+    dl.attribute > dt,
+    dl.classmethod > dt,
+    dl.method > dt,
+    dl.class > dt,
+    dl.exception > dt {
+        margin: 10px 10px 0 0;
+    }
+
+    dl.function > dd,
+    dl.attribute > dd,
+    dl.classmethod > dd,
+    dl.method > dd,
+    dl.class > dd,
+    dl.exception > dd {
+        padding-left: 10px;
     }
 
 }
