@@ -1,0 +1,22 @@
+---
+date: 2022/03/06 15:45:02
+title: SQLAlchemy 1.4.32 Released
+author: Mike
+---
+
+SQLAlchemy 1.4.32 is now available.
+
+Release 1.4.32 contains a fairly long series of fixes, quite a few in the area
+of correct error reporting for various error conditions. It also includes
+updates to accommodate changes in recent versions of cx_Oracle and
+mariadbconnector, as well as improvements to the test suite to correct for
+issues encountered within third party packaging and integration environments.
+
+Development on SQLAlchemy 2.0 continues with recent emphasis on new
+typing-oriented mapping styles and overall pep-484 support throughout the whole
+library.
+
+The complete changelog for 1.4.32 is at `Changelog </changelog/CHANGES_1_4_32>`_.
+
+SQLAlchemy 1.4.32 is available on the `Download Page </download.html>`_.
+
