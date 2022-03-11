@@ -283,13 +283,18 @@ main.docs {
         padding-top: 10px;
     }
 
+    dd > div.inherited-member {
+        margin-top: 10px;
+
+    }
+
     dl.function > dt,
     dl.attribute > dt,
     dl.classmethod > dt,
     dl.method > dt,
     dl.class > dt,
     dl.exception > dt {
-        margin: 10px 10px 0 0;
+        margin: 10px 0 0 0;
         font-weight: normal;
     }
 
