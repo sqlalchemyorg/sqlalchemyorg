@@ -1,0 +1,17 @@
+---
+date: 2022/03/31 15:45:02
+title: SQLAlchemy 1.4.34 Released
+author: Mike
+---
+
+SQLAlchemy 1.4.34 is now available.
+
+Release 1.4.34 repairs a regression in the now-yanked 1.4.33 release where
+running an ``insert()`` construct via the ``Session.execute()`` method
+would fail if the statement contained ORM entities. An additional adjustment
+to improve psycopg2 "executemany mode" is also present.
+
+The complete changelog for 1.4.34 is at `Changelog </changelog/CHANGES_1_4_34>`_.
+
+SQLAlchemy 1.4.34 is available on the `Download Page </download.html>`_.
+

@@ -4,7 +4,9 @@ title: SQLAlchemy 1.4.33 Released
 author: Mike
 ---
 
-SQLAlchemy 1.4.33 is now available.
+SQLAlchemy 1.4.33 is now available.   (update: this release was yanked due
+to a regression involving ORM-enabled INSERT statements.  1.4.34 is
+released to repair this.)
 
 Release 1.4.33 contains a wide variety of fixes and improvements, including
 a significant reduction in memory use by ORM mappings, as well as an
