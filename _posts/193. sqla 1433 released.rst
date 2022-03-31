@@ -1,0 +1,17 @@
+---
+date: 2022/03/31 15:45:02
+title: SQLAlchemy 1.4.33 Released
+author: Mike
+---
+
+SQLAlchemy 1.4.33 is now available.
+
+Release 1.4.33 contains a wide variety of fixes and improvements, including
+a significant reduction in memory use by ORM mappings, as well as an
+improvement to the ``Engine.dispose()`` feature which allows for better
+integration in multiprocessing environments.
+
+The complete changelog for 1.4.33 is at `Changelog </changelog/CHANGES_1_4_33>`_.
+
+SQLAlchemy 1.4.33 is available on the `Download Page </download.html>`_.
+
