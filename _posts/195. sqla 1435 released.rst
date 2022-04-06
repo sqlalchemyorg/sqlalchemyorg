@@ -1,0 +1,18 @@
+---
+date: 2022/04/06 15:45:02
+title: SQLAlchemy 1.4.35 Released
+author: Mike
+---
+
+SQLAlchemy 1.4.35 is now available.
+
+Release 1.4.35 repairs a critical regression in the now-yanked 1.4.34 release
+which could cause incorrect bound parameter values to be rendered due to
+a caching issue caused by the memory performance improvement first released
+in version 1.4.35.  1.4.35 is recommended for all users currently
+running 1.4.33 or 1.4.34.
+
+The complete changelog for 1.4.35 is at `Changelog </changelog/CHANGES_1_4_35>`_.
+
+SQLAlchemy 1.4.35 is available on the `Download Page </download.html>`_.
+
