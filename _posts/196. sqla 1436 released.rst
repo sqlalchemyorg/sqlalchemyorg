@@ -1,0 +1,18 @@
+---
+date: 2022/04/26 15:45:02
+title: SQLAlchemy 1.4.36 Released
+author: Mike
+---
+
+SQLAlchemy 1.4.36 is now available.
+
+Release 1.4.36 includes a variety of bugfixes, including one recent ORM related
+regression, as well as a memory leak issue in the now-deprecated C extensions
+that had gone unnoticed for many years, triggered by interpreting a ``Row``
+object as a NumPy array among other cases involving fetching of non-present
+attributes.
+
+The complete changelog for 1.4.36 is at `Changelog </changelog/CHANGES_1_4_36>`_.
+
+SQLAlchemy 1.4.36 is available on the `Download Page </download.html>`_.
+
