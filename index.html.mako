@@ -3,7 +3,6 @@
     section = 'home'
 %>
 
-## test bump
 
 <h1>The Python SQL Toolkit and Object Relational Mapper</h1>
 
