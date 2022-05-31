@@ -1,0 +1,15 @@
+---
+date: 2022/05/31 15:45:02
+title: SQLAlchemy 1.4.37 Released
+author: Mike
+---
+
+SQLAlchemy 1.4.37 is now available.
+
+Release 1.4.37 is a bug fix release, covering a variety of use-case specific
+issues.
+
+The complete changelog for 1.4.37 is at `Changelog </changelog/CHANGES_1_4_37>`_.
+
+SQLAlchemy 1.4.37 is available on the `Download Page </download.html>`_.
+
