@@ -142,19 +142,22 @@ without compare. The ORM is the most flexible I've ever seen. It's freaking
 magic.
 </%self:quote>
 
-<%self:link url="http://homepage.mac.com/s_lott/iblog/architecture/C465799452/E20070518134041/" author="S. Lott">
+## <%self:link url="http://homepage.mac.com/s_lott/iblog/architecture/C465799452/E20070518134041/" author="S. Lott">
+<%self:quote author="S. Lott">
 Just for a moment, I thought I'd found something SQLAlchemy
 doesn't do perfectly.
-</%self:link>
+</%self:quote>
 
-<%self:quote link="http://an9.org/devdev/node/73" author="Andy Smith">
+## <%self:quote link="http://an9.org/devdev/node/73" author="Andy Smith">
+<%self:quote author="Andy Smith">
 As a user of all kinds of ORMs and a write of plenty of my own, I've got to
 say I am extremely impressed by SQLAlchemy...It is wonderfully documented, and
 has a great philosophy. If you are using anything else, you should definitely
 try this.
 </%self:quote>
 
-<%self:quote link="http://coderseye.com/2006/sqlalchemy-another-great-sql-frameword.html" author="Bruce Kroeze">
+## <%self:quote link="http://coderseye.com/2006/sqlalchemy-another-great-sql-frameword.html" author="Bruce Kroeze">
+<%self:quote author="Bruce Kroeze">
 Very sweet, and very quick to get going on my Mac development and Linux
 deployment environments. I'm currently collecting data from three different
 databases (SQLite, PostgreSQL, and MySql) on five different servers. This is a
