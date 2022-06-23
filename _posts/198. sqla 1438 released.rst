@@ -1,0 +1,18 @@
+---
+date: 2022/06/23 15:45:02
+title: SQLAlchemy 1.4.38 Released
+author: Mike
+---
+
+SQLAlchemy 1.4.38 is now available.
+
+Release 1.4.38 is a bug fix release, covering a variety of use-case specific
+issues.   One fix of note involves applications that make direct use of the
+"lambda statement" construct as a replacement for "baked queries", where a
+critical thread-oriented race condition that would cause cache corruption
+specific to lambda statements has been fixed.
+
+The complete changelog for 1.4.38 is at `Changelog </changelog/CHANGES_1_4_38>`_.
+
+SQLAlchemy 1.4.38 is available on the `Download Page </download.html>`_.
+
