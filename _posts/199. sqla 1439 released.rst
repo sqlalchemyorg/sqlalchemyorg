@@ -1,0 +1,21 @@
+---
+date: 2022/06/24 15:45:02
+title: SQLAlchemy 1.4.39 Released
+author: Mike
+---
+
+SQLAlchemy 1.4.39 is now available.
+
+Release 1.4.39 fixes a single issue in 1.4.38 which is that a fix to the
+``sqlalchemy.ext.mutable`` extension involving pickling failed to accommodate
+for the previous pickling format, which would impact an in-place upgrade
+of SQLAlchemy from 1.4.37 to 1.4.38 in an application that refers to existing
+pickled ORM objects, such as if they were stored in a cache.   As SQLAlchemy's
+creator has at times been hit with this issue in production in days very
+long ago, we are rushing out a fix in 1.4.39 so that the legacy format for
+the "mutable" construct will remain consumable.
+
+The complete changelog for 1.4.39 is at `Changelog </changelog/CHANGES_1_4_39>`_.
+
+SQLAlchemy 1.4.39 is available on the `Download Page </download.html>`_.
+
