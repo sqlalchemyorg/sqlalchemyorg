@@ -3,7 +3,7 @@
     section = 'home'
 %>
 
-## bump
+## b1
 
 <h1>The Python SQL Toolkit and Object Relational Mapper</h1>
 
