@@ -1,0 +1,17 @@
+---
+date: 2022/09/07 15:45:02
+title: SQLAlchemy 1.4.41 Released
+author: Mike
+---
+
+SQLAlchemy 1.4.41 is now available.
+
+Release 1.4.41 includes a variety of bug fixes including an improvement
+to the asyncpg dialect implementation regarding how invalid or stale
+database connections are released, as well as a series of small ORM
+fixes.
+
+The complete changelog for 1.4.41 is at `Changelog </changelog/CHANGES_1_4_41>`_.
+
+SQLAlchemy 1.4.41 is available on the `Download Page </download.html>`_.
+
