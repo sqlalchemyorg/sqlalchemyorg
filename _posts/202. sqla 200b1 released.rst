@@ -1,0 +1,51 @@
+---
+date: 2022/10/13 15:45:02
+title: SQLAlchemy 2.0.0b1 Released
+author: Mike
+---
+
+We are pleased to announce that the first beta release of
+**SQLAlchemy 2.0** is now available.
+
+The 2.0 series represents over three years of effort towards
+updating SQLAlchemy's usage model and architectures for modern Python
+use.  The update's origins lie within the three major Python paradigms that
+came into existence well after SQLAlchemy's first releases in 2006:
+Python 3, pep-484 typing support, and asyncio.  It's also in response to the
+changing nature of the Python programming community, vastly larger and
+home to many new developers with higher standards for strictness, ease of use
+and documentation than was the case sixteen years ago.
+
+While the SQLAlchemy 1.4 series introduced the major architectural changes to
+internals, including the integration of Core SQL constructs within the
+ORM, full SQL caching support, and asyncio support, the SQLAlchemy 2.0 series
+now capitalizes on this architecture within many areas, including most
+prominently:
+
+* Complete pep-484 typing support and native compatibility with typing tools
+  such as mypy, pylance, including annotation-based Declarative models and
+  fully typed SQL statements (make sure you uninstall all ``sqlalchemy-stubs``,
+  ``sqlalchemy2-stubs`` packages)
+* Vastly more performant INSERT behavior within the ORM
+* Vastly more performant table reflection architecture
+* Integration of pure SELECT, INSERT, UPDATE, DELETE statements including
+  RETURNING of objects, upsert within normal ORM use
+
+SQLAlchemy 2.0 also finalizes a very large number of API changes
+first introduced in 1.4.     As such, even though SQLAlchemy 1.4 provided
+a `very comprehensive <https://docs.sqlalchemy.org/en/20/changelog/migration_20.html>`_
+upgrade path, we expect there to be lots of issues within the beginning of
+the series, both as projects accommodate the changes as well as for users
+of the new features, in particular the Declarative annotation support.
+We therefore hope that the beta series will have lots of testing done, and
+we will likely move from beta releases into release candidates as well,
+anticipating a 2.0 final release after some months.
+
+For an overview of whats new in SQLAlchemy 2.0, see the
+`Whats New in SQLAlchemy 2.0? <https://docs.sqlalchemy.org/en/20/changelog/whatsnew_20.html>`_
+document.
+
+Links to the detailed changelog for 2.0.0b1 is at `Changelog </changelog/CHANGES_2_0_0b1>`_.
+
+SQLAlchemy 2.0.0b1 is available on the `Download Page </download.html>`_.
+
