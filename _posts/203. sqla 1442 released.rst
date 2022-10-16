@@ -1,0 +1,29 @@
+---
+date: 2022/10/16 15:45:02
+title: SQLAlchemy 1.4.42 Released
+author: Mike
+---
+
+SQLAlchemy 1.4.42 is now available.
+
+Release 1.4.42 includes a variety of bug fixes mostly in the area of ORM
+related use cases. Two new ORM related configurational warnings are added as
+well, indicating situations that can otherwise lead to confusing behavior in
+some cases when the incorrect mappings are used. While it's likely that
+some existing setups may have either of these patterns in place and will see
+the new warnings, these mis-configuration patterns have been possible for many
+years and don't indicate any new issue for existing applications.
+
+
+Additionally fixed ongoing regressions regarding the MSSQL dialect in
+attempting to connect to various forms of Azure cloud databases, where fixes
+for one type of Azure database then introduce new problems connecting to
+another kind.   The SQLAlchemy project doesn't have direct testing resources
+for these databases so we can only rely upon user feedback to know what's
+working, however it's very likely the issues are finally resolved in this
+release.
+
+The complete changelog for 1.4.42 is at `Changelog </changelog/CHANGES_1_4_42>`_.
+
+SQLAlchemy 1.4.42 is available on the `Download Page </download.html>`_.
+
