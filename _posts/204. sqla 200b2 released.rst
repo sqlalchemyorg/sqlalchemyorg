@@ -1,0 +1,25 @@
+---
+date: 2022/10/20 15:45:02
+title: SQLAlchemy 2.0.0b2 Released
+author: Mike
+---
+
+The second beta release of **SQLAlchemy 2.0** is now available.
+
+The first beta release just one week ago has seen unprecedented response for a
+beta, with around 5000 downloads per day. Thanks to our users, in the past
+seven days we've gotten about ten bug reports for small issues that have been
+fixed in 2.0.b2.
+
+Of note is a fix for SQL Server that affected
+large string values, as well as a variety of rudimentary fixes for the new
+annotation-based Declarative feature including dataclasses support.
+
+For an overview of whats new in SQLAlchemy 2.0, see the
+`Whats New in SQLAlchemy 2.0? <https://docs.sqlalchemy.org/en/20/changelog/whatsnew_20.html>`_
+document.
+
+Links to the detailed changelog for 2.0.0b2 is at `Changelog </changelog/CHANGES_2_0_0b2>`_.
+
+SQLAlchemy 2.0.0b2 is available on the `Download Page </download.html>`_.
+
