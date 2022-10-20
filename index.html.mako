@@ -3,7 +3,7 @@
     section = 'home'
 %>
 
-## b12
+## b3
 
 <h1>The Python SQL Toolkit and Object Relational Mapper</h1>
 
