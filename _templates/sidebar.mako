@@ -25,10 +25,4 @@
         </div>
     </div>
 
-    <div class="follow card text-dark bg-sa-grey">
-        <div class="card-body">
-            <%include file="/sidebar_widgets/follow.mako"/>
-        </div>
-    </div>
-
 </div> <!-- end #sidebar -->
