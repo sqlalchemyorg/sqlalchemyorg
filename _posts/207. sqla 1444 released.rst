@@ -1,0 +1,18 @@
+---
+date: 2022/11/12 15:45:02
+title: SQLAlchemy 1.4.44 Released
+author: Mike
+---
+
+SQLAlchemy 1.4.44 is now available.
+
+Release 1.4.44 is being released sooner than usual to provide a fix for a
+memory issue identified in the SQL caching system. Applications which have
+observed larger than usual memory use since switching to the 1.4.x series are
+strongly encouraged to try out version 1.4.44; if observed memory use
+decreases, please reach out to us and let us know!
+
+The complete changelog for 1.4.44 is at `Changelog </changelog/CHANGES_1_4_44>`_.
+
+SQLAlchemy 1.4.44 is available on the `Download Page </download.html>`_.
+

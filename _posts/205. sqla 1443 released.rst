@@ -8,7 +8,7 @@ SQLAlchemy 1.4.43 is now available.
 
 Release 1.4.43 includes a variety of fixes within the 1.4 series.
 
-The complete changelog for 1.4.43 is at `Changelog </changelog/CHANGES_1_4_42>`_.
+The complete changelog for 1.4.43 is at `Changelog </changelog/CHANGES_1_4_43>`_.
 
 SQLAlchemy 1.4.43 is available on the `Download Page </download.html>`_.
 
