@@ -23,6 +23,9 @@
         <a href="https://github.com/sqlalchemyorg/zeekofile/">zeekofile</a>, with
         huge thanks to the <a href="https://github.com/EnigmaCurry/blogofile">Blogofile</a>
         project.</p>
+
+        <a rel="me" href="https://fosstodon.org/@zzzeek">Mastodon</a>
+
     </div>
 
     <br clear="all" />
