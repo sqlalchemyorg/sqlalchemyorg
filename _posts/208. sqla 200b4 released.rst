@@ -1,0 +1,46 @@
+---
+date: 2022/12/05 15:45:02
+title: SQLAlchemy 2.0.0b4 Released
+author: Mike
+---
+
+The fourth beta release of **SQLAlchemy 2.0** is now available.
+
+Version 2.0.0b4 should hopefully have the new Declarative features in
+ready-for-release quality; many issues regarding different styles of
+annotations as well as different scenarios using Dataclasses have been reported
+and fixed, as well as a range of typing related fixes and improvements to
+continue to allow for full strict typing without the need for plugins.
+
+There's additionally new improvements within the schema, SQL rendering and SQL
+type systems and several other improvements and fixes that have either already
+been released in SQLAlchemy 1.4.44 or will be in SQLAlchemy 1.4.45; the
+changelogs for 2.0.0b3 and 2.0.0b4 now note additional issues that were
+backported to the 1.4 series.
+
+The release of 2.0 final is hoped to be mid January of 2023.
+
+The 2.0 series is at this point very close to an approximate "feature freeze",
+having accumulated a series of changes that will likely lead to a long period
+of adjustment once released; while the beta releases typically see a few
+thousand downloads per day, the 1.4 releases average about **1.3 million per
+day** on a weekday, so the download base for SQLAlchemy 2.0 is expected to
+multiply by at least 10000% within the first few months; new issues and usage
+questions are expected to be extremely heavy after the release, as 2.0
+has most backwards-incompatible changes of any SQLAlchemy release.
+
+Users looking to upgrade to SQLAlchemy 2.0 are encouraged to work through the
+`2.0 Migration Guide <https://docs.sqlalchemy.org/en/20/changelog/migration_20.html>`,
+which will allow the vast majority of applications that run under SQLAlchemy
+1.4 to run completely under SQLAlchemy 2.0; from that point, additional
+migrations towards new 2.0 Declarative mappings can be undertaken, allowing for
+full typing support of ORM mappings without plugins. These migrations are are
+described in the
+`Whats New in SQLAlchemy 2.0? <https://docs.sqlalchemy.org/en/20/changelog/whatsnew_20.html>`_
+document, along with other migration notes for new features and other less
+central API changes, such as a new API for PostgreSQL RANGE datatypes.
+
+Links to the detailed changelog for 2.0.0b4 is at `Changelog </changelog/CHANGES_2_0_0b4>`_.
+
+SQLAlchemy 2.0.0b4 is available on the `Download Page </download.html>`_.
+
