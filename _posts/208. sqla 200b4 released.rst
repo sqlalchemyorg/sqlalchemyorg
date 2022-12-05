@@ -6,11 +6,12 @@ author: Mike
 
 The fourth beta release of **SQLAlchemy 2.0** is now available.
 
-Version 2.0.0b4 should hopefully have the new Declarative features in
-ready-for-release quality; many issues regarding different styles of
-annotations as well as different scenarios using Dataclasses have been reported
-and fixed, as well as a range of typing related fixes and improvements to
-continue to allow for full strict typing without the need for plugins.
+Version 2.0.0b4 should be close to ready-to-release quality, in particular for
+the new Declarative and Python Dataclasses features, which have received much
+attention within the beta testing period. A variety of issues regarding
+different styles of annotations and dataclass mappings have been reported and
+fixed, as well as a range of typing related fixes and improvements to continue
+to allow for full strict typing without the need for plugins.
 
 There's additionally new improvements within the schema, SQL rendering and SQL
 type systems and several other improvements and fixes that have either already
