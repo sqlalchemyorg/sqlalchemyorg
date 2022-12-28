@@ -1,0 +1,29 @@
+---
+date: 2022/12/28 15:45:02
+title: SQLAlchemy 2.0.0rc1 Released
+author: Mike
+---
+
+The first release candidate of **SQLAlchemy 2.0** is now available.
+
+Version 2.0.0rc1 is hoped to be very close to the final 2.0.0 release which
+is anticipated in January.   A few additional changes have been added
+since the 2.0.0b4 release, mostly in the area of ``Session`` behavior.
+
+Users of SQLAlchemy 1.4 should ensure that their production requirements.txt
+files are capped in the 1.4 series, so that the final 2.0.0 release doesn't
+result in sudden changes due to surprise upgrades; upgrades from 1.4.x to
+2.0.x should always be tested, even if the full migration steps were completed
+for the 1.4 series.
+
+Users looking to upgrade to SQLAlchemy 2.0 are encouraged to work through the
+`2.0 Migration Guide <https://docs.sqlalchemy.org/en/20/changelog/migration_20.html>`,
+which will allow the vast majority of applications that run under SQLAlchemy
+1.4 to run completely under SQLAlchemy 2.0.   SQLAlchemy 2.0
+may have additional behaviors and API adjustments that as always should be
+tested against the 2.0 release itself.
+
+Links to the detailed changelog for 2.0.0rc1 is at `Changelog </changelog/CHANGES_2_0_0rc1>`_.
+
+SQLAlchemy 2.0.0rc1 is available on the `Download Page </download.html>`_.
+
