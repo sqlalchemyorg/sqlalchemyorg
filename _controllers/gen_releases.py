@@ -2,7 +2,7 @@ from zeekofile.cache import zf
 import json
 import re
 import requests
-from packaging.version import parse, LegacyVersion
+from packaging.version import parse
 import datetime
 
 # ==============================================================================
@@ -70,7 +70,6 @@ def _gen_release_data(pypi_data, milestones):
     )
     release_keys = sorted(
         vers for vers in releases
-        if not isinstance(vers, LegacyVersion)
     )
     current_version = milestones['current']
 
