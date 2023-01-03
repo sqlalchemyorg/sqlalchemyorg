@@ -1,0 +1,24 @@
+---
+date: 2023/01/03 15:45:02
+title: SQLAlchemy 1.4.46 Released
+author: Mike
+---
+
+SQLAlchemy 1.4.46 is now available.
+
+The first release of the new year, SQLAlchemy 1.4.46 fixes a few fairly
+important issues, including an issue which could in unlikely circumstances
+impact connection pool stability for applications that use gevent or eventlet.
+
+Release 1.4.46 is also a step towards the first release of SQLAlchemy 2.0
+final, expected this month, introducing a new deprecation warning that emits
+exactly once when the application in use makes use of an API removed from 2.0,
+when the ``SQLALCHEMY_WARN_20`` environment variable is not otherwise set. This
+deprecation warning is intended to give users that may not be following the
+progress of 2.0 that their requirements files should ensure SQLAlchemy 2.0
+won't be installed prematurely.
+
+The complete changelog for 1.4.46 is at `Changelog </changelog/CHANGES_1_4_46>`_.
+
+SQLAlchemy 1.4.46 is available on the `Download Page </download.html>`_.
+
