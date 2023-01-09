@@ -1,0 +1,19 @@
+---
+date: 2023/01/09 15:45:02
+title: SQLAlchemy 2.0.0rc2 Released
+author: Mike
+---
+
+The second release candidate of **SQLAlchemy 2.0** is now available.
+
+Version 2.0.0rc2 includes a small number of relatively minor changes.
+In particular the MySQL/MariaDB dialect repair a regression that lasted
+throughout the 1.4 series where the ``Inspector.has_table()`` method would
+not report on the existence of temp tables.
+
+2.0 final is still anticipated for sometime this month.
+
+Links to the detailed changelog for 2.0.0rc2 is at `Changelog </changelog/CHANGES_2_0_0rc2>`_.
+
+SQLAlchemy 2.0.0rc2 is available on the `Download Page </download.html>`_.
+
