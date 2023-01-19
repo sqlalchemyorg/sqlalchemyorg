@@ -1,0 +1,19 @@
+---
+date: 2023/01/18 15:45:02
+title: SQLAlchemy 2.0.0rc3 Released
+author: Mike
+---
+
+The third release candidate of **SQLAlchemy 2.0** is now available.
+
+Version 2.0.0rc3 releases a few more small enhancements and fixes, as well
+as serves as a test for an update of the wheel builder plugin on Pypi.
+Release 2.0.0 final is imminent, as early as next week.    Applications that
+haven't tested within the 2.0 series should make sure they have pinned their
+requirements, as ``pip install`` will start to fetch the 2.0 series
+by default instead of 1.4 when the release occurs.
+
+Links to the detailed changelog for 2.0.0rc3 is at `Changelog </changelog/CHANGES_2_0_0rc3>`_.
+
+SQLAlchemy 2.0.0rc3 is available on the `Download Page </download.html>`_.
+
