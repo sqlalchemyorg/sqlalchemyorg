@@ -1,0 +1,148 @@
+---
+date: 2023/01/26 15:45:02
+title: SQLAlchemy 2.0.0 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.0, the first production release of **SQLAlchemy 2.0**, is
+now available.
+
+With this release, the default version of SQLAlchemy that will install
+when one runs ``pip install sqlalchemy`` will be version 2.0.   Note that
+version 2.0 has significant API changes compared to the 1.4 series, so
+applications that run on the 1.x series of SQLAlchemy which have not gone
+through the `migration process <https://docs.sqlalchemy.org/en/latest/changelog/migration_20.html>`_
+should seek to ensure `requirements <https://pip.pypa.io/en/stable/reference/requirements-file-format/>`_
+are set to maintain the desired major SQLAlchemy release series in place.
+
+The history of the SQLAlchemy 2.0 series starts over four years ago on August
+8, 2018, with some short ideas for how SQLAlchemy's notion of Core and ORM
+querying might be unified. The first plan for a real "SQLAlchemy 2.0" concept
+formed in November of that year, focused on the two areas of drastically
+simplifying Core execution and transactional APIs as well as seeking to unify
+querying across Core and ORM.
+
+The changes to foundational concepts were dramatic enough that SQLAlchemy 2.0
+was separated into two major phases. The first phase was the **SQLAlchemy 1.4**
+series, which provided an entirely new unified Core / ORM SQL querying system,
+all while building on top of a new universal statement caching architecture.
+This phase provided the complete implementation for SQLAlchemy 2.0's SQL
+construction approach (minus pep-484 typing support), while maintaining the
+legacy ``Query`` API completely. Along with this release, a comprehensive
+`migration path <https://docs.sqlalchemy.org/en/latest/changelog/migration_20.html>`_
+inspired by lessons learned from the Python 2->3 migration process was
+provided, which describes how to port applications so that they can continue
+to run in SQLAlchemy 1.4 while being entirely forwards compatible with
+SQLAlchemy 2.0.
+
+The second phase is the **SQLAlchemy 2.0** series, which removes the majority
+of deprecated elements, relegating the remaining ones (primarily ``Query``) to
+long term "legacy" status, fully moves to Python 3 only, and at the same time
+adds many new features that build on top of the new architecture, taking full
+advantage of Python 3 features (including dataclasses, enums, inline
+annotations) as well as the new unified query architecture.
+
+The key advantage to this approach is that the most significant and by far the
+riskiest architectural changes, that of the rewrite of Core/ORM querying on top
+of a new caching layer, have already been in production use with SQLAlchemy 1.4
+for nearly two years. So while SQLAlchemy 2.0 will certainly have a lot of new
+issues once it is used by the full developer audience, they should not be of
+the "new cracks in the foundational approach" variety, as the architectural
+foundations are already in widespread use. We expect that the vast majority of
+issues will be related to the new typing system as well as issues of existing
+applications adjusting to use the new APIs.
+
+SQLAlchemy 2.0 is a big enough release that it has **two**
+migration guides; the
+`Major Migration Guide <https://docs.sqlalchemy.org/en/latest/changelog/migration_20.html>`_
+documents how to reach API compatibility for an
+application to be able to run in SQLAlchemy 1.4 or 2.0 equally; the
+`What's New in SQLAlchemy 2.0? <https://docs.sqlalchemy.org/en/latest/changelog/whatsnew_20.html>`_
+guide then provides for all the new features and APIs that are available once
+an application is running on SQLAlchemy 2.0.
+
+With that introduction in mind, here's a top level bullet list of what's
+totally new in SQLAlchemy 2.0:
+
+* **All new plugin-free pep-484 compatible ORM syntaxes** - The ORM
+  Declarative style of mapper configuration now has an all new look, borrowing
+  heavily from systems such as **Python dataclasses** and **SQLModel** to
+  provide for `Annotation-driven ORM declarations <https://docs.sqlalchemy.org/en/latest/changelog/whatsnew_20.html#orm-declarative-models>`_,
+  using runtime interpretation of pep-484 annotations to produce mapped classes
+  that are fully typed and compatible with any type checker or IDE.
+
+* **pep-484 support for both new-style and legacy ORM queries** - using Annotated
+  Declarative models, the SQL constructs one creates, such as a ``select()``
+  object or a legacy ``Query`` construct, are themselves typed as to the
+  kind of columns returned within a row, and this typing
+  carries forth all the way to the Python values extracted from the result
+  object returned after executing the query.
+  While Python typing still has limitations for doing this kind of thing,
+  the new typing support draws from some techniques used by SQLModel so that
+  it works without additional annotations for the vast majority
+  of queries generated from ORM model classes, with varying
+  degrees of support for result-set-typing of Core-oriented or hybrid
+  Core/ORM queries as well.  Some examples are at
+  `SQL Expression Typing - Examples <https://docs.sqlalchemy.org/en/latest/changelog/whatsnew_20.html#sql-expression-typing-examples>`_.
+
+* **Declarative fully integrated with Python Dataclasses** - SQLAlchemy 2.0 introduces
+  support for an Annotated Declarative mapped class to be generated as a
+  **Python dataclass** directly; this will provide an ORM
+  mapped class declared like any other that features auto-generated dataclasses
+  methods such as ``__init__()``, ``__repr__()``, ``__eq__()``, and all the
+  rest. This `new approach <https://docs.sqlalchemy.org/en/latest/changelog/whatsnew_20.html#native-support-for-dataclasses-mapped-as-orm-models>`_ is vastly improved over the interim "hybrid"
+  approaches introduced in SQLAlchemy 1.4.
+
+* **An all-new, fully ORM-integrated approach to bulk INSERT that is typically
+  an order of magnitude faster on most backends** - Most of SQLAlchemy's
+  supported databases and drivers have now added or improved their support for
+  ``INSERT RETURNING`` syntax, and SQLAlchemy 2.0 has taken advantage of this
+  by supporting and improving RETURNING support for all of its backends, with
+  the sole exception of MySQL (MySQL only; MariaDB supports RETURNING).
+  Part of this improvement is the
+  ability to INSERT thousands of rows in one batched statement that also
+  returns a complete result set of server generated values needed by the ORM,
+  which was never possible before with the sole exception of an interim
+  implementation that relied upon the ``psycopg2`` driver. In 2.0,
+  the work has been done to optimize ``INSERT`` for all backends so that
+  `thousands of ORM objects with or without primary keys can be INSERTed with
+  one database round trip
+  <https://docs.sqlalchemy.org/en/latest/changelog/whatsnew_20.html#benchmarks>`_,
+  and this capability is fully integrated into the ORM for all INSERT
+  operations, both "regular" ORM unit of work operations as well as for "bulk"
+  approaches, which are also
+  `newly revised <https://docs.sqlalchemy.org/en/latest/changelog/whatsnew_20.html#bulk-insert-with-returning>`_
+  in version 2.0.
+
+* **An all-new bulk-optimized schema reflection architecture** - operations that
+  reflect full schemas as once such as ``MetaData.reflect(engine)`` and newly
+  added schema-wide operations with the ``inspect(engine)`` construct now build on top of a
+  foundation that assumes operations that work across hundreds or thousands of tables at once,
+  rather than table-at-a-time.  Dialects can "opt in" to the new architecture
+  by providing for new reflection queries that work across many tables at once,
+  allowing for very large schemas to be fully reflected much more efficently.
+  The new architecture is enabled for the
+  `PostgreSQL and Oracle backends <https://docs.sqlalchemy.org/en/latest/changelog/whatsnew_20.html#major-architectural-performance-and-api-enhancements-for-database-reflection>`_,
+  which were the two backends that had the biggest performance issues for
+  large schemas, where it grants a 250% improvement for PostgreSQL and
+  a 900% improvement for Oracle.  The SQL Server dialect is the next
+  target for the new architecture.  Any third party dialect can
+  opt in to the new "many tables at once" system or remain on the previous
+  "table at a time" approach that remains fully compatible without any changes.
+
+* **Native extensions ported to Cython** - SQLAlchemy's C extensions have been
+  replaced with an updated approach using Cython.  The Cython version of the
+  extensions in most cases benches as fast as, and sometimes faster than,
+  the previous C extensions, and allows SQLAlchemy to provide new native
+  extensions in more areas of the library much more easily without risk
+  of memory or stability issues.
+
+SQLAlchemy 2.0 includes many more features and with new architectures and
+a lot of older baggage being shed, hopes to have plenty of room for the future.
+
+Links to the detailed changelog for 2.0.0 is at `Changelog </changelog/CHANGES_2_0_0>`_ -
+note that the 2.0 series changelog spans across four beta and three release
+candidate releases.
+
+SQLAlchemy 2.0.0 is available on the `Download Page </download.html>`_.
+
