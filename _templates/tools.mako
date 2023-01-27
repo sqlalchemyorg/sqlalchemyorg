@@ -25,7 +25,6 @@
         for vers_rec in display_versions
     ]
 %>
-    <li><hr class="dropdown-divider"></li>
     % for version in data:
         <li>
             <a class="dropdown-item" href="${'%s/en/%s/' % (docs_base, version['slug'])}">
@@ -33,7 +32,6 @@
             </a>
         </li>
     %endfor
-    <li><hr class="dropdown-divider"></li>
 </%def>
 
 <%def name="vertical_nav()">

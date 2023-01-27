@@ -1,4 +1,4 @@
-<%page args="site_base, docs_base, bb_base, section='home'"/>
+<%page args="site_base, docs_base, bb_base, current_release, section='home'"/>
 <%namespace name="tools" file="/tools.mako"/>
 <%
     def when_active(sec, text):
@@ -39,22 +39,23 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link ${when_active('blog', 'active')}" ${when_active('blog', 'aria-current="page"')} href="${site_base}/blog/">blog</a>
+                    <a class="nav-link ${when_active('blog', 'active')}" ${when_active('blog', 'aria-current="page"')} href="${site_base}/blog/">news</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle ${when_active({'docs', 'library'}, 'active')}" ${when_active({'docs', 'library'}, 'aria-current="page"')}
                     href="#" id="docs-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        library
+                        documentation
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark bg-sa-green" aria-labelledby="docs-dropdown">
-                        <li><a class="dropdown-item" href="${site_base}/library.html">Library</a>
-                        <li><a class="dropdown-item" href="${site_base}/library.html#reference">Reference</a></li>
+                        <li><a class="dropdown-item" href="${docs_base}">Current Documentation (version ${current_release})</a></li>
+
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="${site_base}/library.html#reference">Documentation by Version</a></li>
                         ${tools.render_nav_docs_dropdown(docs_base)}
-                        <li><a class="dropdown-item" href="${site_base}/library.html#architecture">Architecture</a></li>
-                        <li><a class="dropdown-item" href="${site_base}/library.html#citations">Citing SQLAlchemy</a></li>
-                        <li><a class="dropdown-item" href="${site_base}/library.html#blog">Blog Posts</a></li>
+                        <li><hr class="dropdown-divider"></li>
+
                         <li><a class="dropdown-item" href="${site_base}/library.html#talks">Talks and Tutorials</a></li>
-                        <li><a class="dropdown-item" href="${site_base}/library.html#recipes">Recipes</a></li>
+                        <li><a class="dropdown-item" href="${site_base}/library.html">Published content overview</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">

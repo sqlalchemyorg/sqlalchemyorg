@@ -13,6 +13,76 @@ gives application developers the full power and flexibility of SQL.</p>
 patterns, designed for efficient and high-performing database access, adapted
 into a simple and Pythonic domain language.</p>
 
+<dl id="features" class="features">
+    <dt>Documentation</dt>
+    <dd>
+        <ul>
+            <li><a href="${self.attr.docs_base}"><strong>Current Documentation (version ${self.attr.current_release})</strong></a> - learn SQLAlchemy here
+                <ul>
+                    <li><a href="${self.attr.docs_base}/intro.html#installation">Installation Guide</a></li>
+                    <li><a href="${self.attr.docs_base}/orm/quickstart.html">ORM Quickstart</a></li>
+                    <li><a href="${self.attr.docs_base}/tutorial/index.html">Comprehensive Tutorial</a></li>
+                    <li><strong>Reference Guides</strong>
+                        <ul>
+                            <li><a href="${self.attr.docs_base}/orm/">Object Relational Mapping (ORM)</a></li>
+                            <li><a href="${self.attr.docs_base}/core/">Core (Connections, Schema Management, SQL)</a></li>
+                            <li><a href="${self.attr.docs_base}/dialects/">Dialects (specific backends)</a></li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </li>
+            <li><strong>Documentation by Version</strong>
+                <ul class="version-listing">
+                    <li><a href="${self.attr.docs_base}">Reference Documentation</a></li>
+                </ul>
+
+            </li>
+        </ul>
+    </dd>
+
+
+    <dt>Learn More</dt>
+    <dd>
+        <ul>
+            <li><a href="/library.html"><strong>Library</strong></a> - Articles and Talks
+                <ul>
+                <li><a href="/library.html#talks">Talks and Tutorials</a></li>
+                <li><a href="/library.html#architecture">Architecture</a></li>
+                </ul>
+            </li>
+            <li><strong>Front Matter</strong>
+
+            <ul>
+                <li><a href="#philosophy">SQLAlchemy's Philosophy</a></li>
+                <li><a href="/features.html">Overview of Key Features</a></li>
+                <li><a href="/quotes.html">Testimonials</a></li>
+            </ul>
+
+            </li>
+        </ul>
+    </dd>
+
+    <dt>Resources</dt>
+    <dd>
+            <ul>
+                <li><a href="/download.html">Release History / Download Information</a></li>
+                <li><a href="/blog/">News and Announcements</a></li>
+                <li><strong>Community</strong>
+                    <ul>
+                        <li><a href="/support.html">Getting Support</a></li>
+                        <li><a href="/participate.html">Participate in the Project</a></li>
+                        <li><a href="/develop.html">Get Involved with Development</a></li>
+                        <li><a href="/codeofconduct.html">Code of Conduct</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </ul>
+    </dd>
+</dl>
+
+<a name="philosophy"></a>
+
 <h2>SQLALCHEMY'S PHILOSOPHY</h2>
 
 <p class="philos">SQL databases behave less like object collections the more
@@ -44,38 +114,6 @@ and SQL! </p>
     as well as <a href="/quotes.html"><strong>what people are saying</strong></a> about SQLAlchemy.</strong>
     </p>
 
-<dl id="features" class="features">
-    <dt>Who Uses SQLAlchemy</dt>
-    <dd>
-        <p>SQLAlchemy is used by organizations such as:
-        <ul>
-            <li>Yelp!</li>
-            <li>reddit</li>
-            <li>DropBox</li>
-            <li>The OpenStack Project</li>
-            <li>Survey Monkey</li>
-        </ul>
-        </p>
-    </dd>
-    <dt>Learn More</dt>
-    <dd>
-        <ul>
-            <li><a href="/library.html"><strong>Library</strong></a> - main index of documentation, videos, talks, and more</li>
-            <li><a href="/features.html">Overview of Key Features</a></li>
-            <li><a href="/quotes.html">Testimonials</a></li>
-        </ul>
-    </dd>
-    <dt>Resources</dt>
-    <dd>
-        <ul>
-            <li><a href="/download.html">Download</a></li>
-            <li><a href="/blog/">Blog</a></li>
-            <li><a href="/support.html">Getting Support</a></li>
-            <li><a href="/participate.html">Participate</a></li>
-            <li><a href="/develop.html">Development</a></li>
-        </ul>
-    </dd>
-</dl>
 
 
 

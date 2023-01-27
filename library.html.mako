@@ -26,11 +26,9 @@ available.
     url_text="Reference Documentation"
     content="- SQLAlchemy's own documentation, incuding tutorials"
 />
+<%tools:vertical_nav_item url="#talks" url_text="Talks and Tutorials" content="- videos from PyCon and elsewhere"/>
 <%tools:vertical_nav_item url="#architecture" url_text="Architecture" content="- deep architectural dives"/>
 <%tools:vertical_nav_item url="#citations" url_text="Citing SQLAlchemy"/>
-<%tools:vertical_nav_item url="#blog" url_text="Blog Posts" content="- news and musings"/>
-<%tools:vertical_nav_item url="#talks" url_text="Talks and Tutorials" content="- videos from PyCon and elsewhere"/>
-<%tools:vertical_nav_item url="#recipes" url_text="Recipes" content="- a curated selection of example code"/>
 </%tools:vertical_nav>
 
 </p>
@@ -51,67 +49,6 @@ available.
     </ul>
 </p>
 
-<a name="architecture"></a>
-<h2>Architectural Documentation</h2>
-<p>
-A SQLAlchemy chapter was written for the book <a href="http://aosabook.org/"><em>The Architecture of Open Source Applications</em></a> in 2011.  This chapter includes an in-depth introduction to the key concepts
-behind both the Core and ORM components of SQLAlchemy:
-
-<ul>
-<li><a href="http://aosabook.org/en/sqlalchemy.html">SQLAlchemy at Architecture of Open Source Applications</a></li>
-</ul>
-</p>
-
-<a name="citations"></a>
-<h2>Citing SQLAlchemy</h2>
-
-<p>
-Please cite SQLalchemy if you use it in your research. You can cite the
-chapter from <a href="http://aosabook.org/en/sqlalchemy.html">SQLAlchemy at Architecture of Open Source Applications</a> as introduced in the previous section:
-
-<ul>
-<li>Michael Bayer. SQLAlchemy. In Amy Brown and Greg Wilson, editors, <b>The Architecture of Open Source Applications Volume II: Structure, Scale, and a Few More Fearless Hacks</b> 2012 <a href="http://aosabook.org">http://aosabook.org</a></li>
-</ul>
-
-Here is an example BibTeX entry:
-
-<pre class="mt-2 small-text">
-@incollection{sqlalchemy,
-  place={Mountain View},
-  title={SQLAlchemy},
-  booktitle={The Architecture of Open Source Applications Volume II: Structure, Scale, and a Few More Fearless Hacks},
-  publisher={aosabook.org},
-  url="http://aosabook.org/en/sqlalchemy.html",
-  author={Bayer, Michael},
-  editor={Brown, Amy and Wilson, Greg},
-  year={2012}
-}
-</pre>
-
-</p>
-
-<a name="blog"></a>
-<h2>Blog Posts</h2>
-
-<ul>
-	<li>Posts by Mike Bayer
-	<ul>
-	<li><a href="http://techspot.zzzeek.org/category/sqlalchemy/">All SQLAlchemy posts on techspot</a></li>
-	<li><a href="http://techspot.zzzeek.org/2012/02/07/patterns-implemented-by-sqlalchemy/">Patterns Implemented by SQLAlchemy</a> - more architectural insights discussing the influence of Martin Fowler's work on SQLAlchemy's development.</li>
-	<li><a href="http://techspot.zzzeek.org/2012/01/11/django-style-database-routers-in-sqlalchemy/">Django-style Database Routers in SQLAlchemy</a> - background on how to build an ORM Session that refers to different databases using a custom
-	routing scheme.</li>
-	<li><a href="http://techspot.zzzeek.org/2011/10/21/hybrids-and-value-agnostic-types/">Hybrids and Value Agnostic Types</a> - background and advanced use cases on so-called "hybrid" datatypes</li>
-	<li><a href="http://techspot.zzzeek.org/2011/01/14/the-enum-recipe/">The Enum Recipe</a> - when and how to use enumerated types with SQLAlchemy.</li>
-	</ul>
-	</li>
-
-	<li>Other blog posts
-	<ul>
-	<li><a href="http://queue.acm.org/detail.cfm?id=2841313">Automation Should Be Like Iron Man, Not Ultron</a> - describes an approach to automation that favors and assists the expertise of the user, instead
-	of attempting to automate most use cases behind a facade (leaving the remaining 20% of them as inscrutable headaches).   This describes perfectly the rationale for SQLAlchemy's API design.
-	</li>
-	</ul>
-</ul>
 
 
 <a name="talks"></a>
@@ -413,19 +350,41 @@ at many conferences worldwide.   Here's a selection:
 </p>
 
 
-<a name="recipes"></a>
-<h2>Recipes</h2>
+<a name="architecture"></a>
+<h2>Architectural Documentation</h2>
 <p>
-SQLAlchemy is a recipe-focused library; while it includes a tremendous number of features,
-overall the emphasis is on that of creating a composable toolkit, so that users can
-build their own database interaction layers that suit them best.  To help with this task,
-there's a huge number of "recipes", code examples geared towards specific use cases.
-These are currently split out among the SQLAlchemy reference documentation and the wiki:
+A SQLAlchemy chapter was written for the book <a href="http://aosabook.org/"><em>The Architecture of Open Source Applications</em></a> in 2011.  This chapter includes an in-depth introduction to the key concepts
+behind both the Core and ORM components of SQLAlchemy:
 
 <ul>
-	<li><a href="/docs/orm/examples.html">SQLAlchemy ORM Examples</a> - in the SQLAlchemy documentation</li>
-	<li><a href="${self.attr.bb_base}/wiki/UsageRecipes">Theatrum Chemicum</a> - large list of recipes old and new on the wiki</li>
+<li><a href="http://aosabook.org/en/sqlalchemy.html">SQLAlchemy at Architecture of Open Source Applications</a></li>
 </ul>
 </p>
 
+<a name="citations"></a>
+<h2>Citing SQLAlchemy</h2>
 
+<p>
+Please cite SQLAlchemy if you use it in your research. You can cite the
+chapter from <a href="http://aosabook.org/en/sqlalchemy.html">SQLAlchemy at Architecture of Open Source Applications</a> as introduced in the previous section:
+
+<ul>
+<li>Michael Bayer. SQLAlchemy. In Amy Brown and Greg Wilson, editors, <b>The Architecture of Open Source Applications Volume II: Structure, Scale, and a Few More Fearless Hacks</b> 2012 <a href="http://aosabook.org">http://aosabook.org</a></li>
+</ul>
+
+Here is an example BibTeX entry:
+
+<pre class="mt-2 small-text">
+@incollection{sqlalchemy,
+  place={Mountain View},
+  title={SQLAlchemy},
+  booktitle={The Architecture of Open Source Applications Volume II: Structure, Scale, and a Few More Fearless Hacks},
+  publisher={aosabook.org},
+  url="http://aosabook.org/en/sqlalchemy.html",
+  author={Bayer, Michael},
+  editor={Brown, Amy and Wilson, Greg},
+  year={2012}
+}
+</pre>
+
+</p>

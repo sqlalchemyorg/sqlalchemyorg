@@ -12,6 +12,15 @@ current_section = getattr(self.attr, 'section', '')
 if not current_section and in_docs:
     current_section = 'docs'
 self.attr.current_section = current_section
+
+
+release_milestones = zf.config.release_milestones
+
+if 'current' in release_milestones:
+    self.attr.current_release = current_release = release_milestones["current"]
+else:
+    self.attr.current_release = current_release = ""
+
 %><!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -37,7 +46,7 @@ self.attr.current_section = current_section
 
 <div id="wrap" class="container-xxl wrap px-0">
 
-    <%include file="header.mako" args="section=current_section, docs_base=docs_base, site_base=site_base, bb_base=self.attr.bb_base" />
+    <%include file="header.mako" args="section=current_section, current_release=current_release, docs_base=docs_base, site_base=site_base, bb_base=self.attr.bb_base" />
 
     <div id="main-body" class="${current_section} main-body row m-0">
 

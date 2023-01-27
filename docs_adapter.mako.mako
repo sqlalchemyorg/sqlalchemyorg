@@ -4,6 +4,12 @@
 self.attr.site_base = site_base = zf.config.site_url
 self.attr.docs_base = docs_base = zf.config.docs_url
 self.attr.bb_base = bb_base = zf.config.bb_url
+release_milestones = zf.config.release_milestones
+
+if 'current' in release_milestones:
+    self.attr.current_release = current_release = release_milestones["current"]
+else:
+    self.attr.current_release = current_release = ""
 
 %><!DOCTYPE html>
 
@@ -127,7 +133,7 @@ self.attr.bb_base = bb_base = zf.config.bb_url
 
 <div id="wrap" class="container-xxl wrap px-0">
 
-<%include file="header.mako" args="section='docs', site_base=self.attr.site_base, docs_base=self.attr.docs_base, bb_base=self.attr.bb_base" />
+<%include file="header.mako" args="section='docs', current_release=self.attr.current_release, site_base=self.attr.site_base, docs_base=self.attr.docs_base, bb_base=self.attr.bb_base" />
 
 <div id="main-body" class="docs main-body row m-0">
 
