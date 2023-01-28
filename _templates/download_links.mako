@@ -1,4 +1,5 @@
 <%page args="site_base, dropdown"/>
+<%namespace name="tools" file="/tools.mako"/>
 <%
     release_history = zf.config.release_data
     release_milestones = zf.config.release_milestones
@@ -12,10 +13,7 @@ ${release_history[release_milestones[milestone]]['major_version']}</%def>
     %endif
 </%def>
 
-% if not dropdown:
-<ul>
-%endif
-
+% if dropdown:
 % if 'current' in release_milestones:
     <li><a ${attrs()} href="${site_base}/download.html#current">Current Release Series (${major_version("current")})</a></li>
 % endif
@@ -31,6 +29,25 @@ ${release_history[release_milestones[milestone]]['major_version']}</%def>
     <li><a ${attrs()} href="${site_base}/download.html#license">License</a></li>
     <li><a ${attrs()} href="${site_base}/download.html#versions">Version Numbering</a></li>
     <li><a ${attrs()} href="${site_base}/download.html#relstatus">Release Status</a></li>
-% if not dropdown:
-</ul>
-%endif
+%else:
+<%tools:vertical_nav>
+
+% if 'current' in release_milestones:
+    <%tools:vertical_nav_item url="#current" url_text="Current Release Series (${capture(major_version, 'current')})"/>
+% endif
+
+% if 'maintenance' in release_milestones and 'beta' not in release_milestones:
+    <%tools:vertical_nav_item url="#maintenance" url_text="Maintenance Release (${capture(major_version, 'maintenance')})"/>
+% endif
+
+% if 'beta' in release_milestones:
+    <%tools:vertical_nav_item url="#beta" url_text="Beta release (${capture(major_version, 'beta')})"/>
+% endif
+    <%tools:vertical_nav_item url="#development" url_text="Develoment Access"/>
+    <%tools:vertical_nav_item url="#license" url_text="License"/>
+    <%tools:vertical_nav_item url="#versions" url_text="Version Numbering"/>
+    <%tools:vertical_nav_item url="#relstatus" url_text="Release Status"/>
+
+</%tools:vertical_nav>
+
+% endif

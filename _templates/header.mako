@@ -34,6 +34,7 @@
                         features
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark bg-sa-green" aria-labelledby="feature-dropdown">
+                        <li><a class="dropdown-item" href="${site_base}/philosophy.html">Philosophy Statement</a></li>
                         <li><a class="dropdown-item" href="${site_base}/features.html">Feature Overview</a></li>
                         <li><a class="dropdown-item" href="${site_base}/quotes.html">Testimonials</a></li>
                     </ul>

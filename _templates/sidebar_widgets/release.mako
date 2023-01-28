@@ -13,7 +13,7 @@
 
 %>
 
-<%def name="release(milestone, name)"><%
+<%def name="release(milestone, name, pypi=False)"><%
     try:
         release_rec = release_history[release_milestones[milestone]]
     except KeyError:
@@ -29,6 +29,14 @@
         <a href="${latest_rec['changelog']}">changes</a> |
         <a href="${release_rec['migration_url']}">migration notes</a> |
         <a href="${release_rec['docs']}">docs</a>
+
+% if pypi:
+<div class="pypi-badges">
+<a href="https://pypi.org/project/sqlalchemy" alt="PyPI"><img src="https://img.shields.io/pypi/v/sqlalchemy"></a>
+<a href="https://pypi.org/project/sqlalchemy" alt="PyPI - Downloads"><img src="https://img.shields.io/pypi/dm/sqlalchemy"></a>
+<a href="https://pypi.org/project/sqlalchemy" alt="PyPI - Python Version"><img src="https://img.shields.io/pypi/pyversions/sqlalchemy"></a>
+</div>
+% endif
     </div>
 </%def>
 
@@ -38,7 +46,8 @@
     ${release("beta", "Beta Release")}
 % endif
 
-${release(milestone, "Current Release")}
+${release(milestone, "Current Release", pypi=True)}
+
 
 % if 'maintenance' in release_milestones and 'beta' not in release_milestones:
     ${release("maintenance", "Previous Series")}
@@ -58,3 +67,5 @@ ${release(milestone, "Current Release")}
     <a href="${dev_release['docs']}">docs</a>
 </div>
 % endif
+
+

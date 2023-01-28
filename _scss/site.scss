@@ -17,6 +17,10 @@ $narrow-max-screen-width: 980px;
     background: $sa-grey;
 }
 
+.card {
+    margin-bottom: 20px;
+}
+
 .topic-box-header-font {
     font-family: Verdana, "Lucida Grande", sans-serif;
     font-weight: bold;
@@ -169,6 +173,10 @@ div.sidebar {
 
     .release .release-box {
         border-color: #ccc !important;
+
+        .pypi-badges {
+            margin: .5em 0;
+        }
     }
 
     h3 {
@@ -345,12 +353,28 @@ main.content {
         }
         dd {
             border-top: 1px solid #cccccc;
-            padding-left: 130px;
+            padding-left: 140px;
             padding-right: 20px;
             padding-top: 15px;
             padding-bottom: 10px;
             margin-left: 0px;
+
         }
+
+        @media only screen and (max-width: $narrow-max-screen-width) {
+            dt {
+                width: auto;
+            }
+            dd {
+                padding-left: 0;
+                padding-top: 50px;
+
+                > ul {
+                    padding-left: 1em;
+                }
+            }
+        }
+
     }
 
     .tidelift-support img {

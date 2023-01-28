@@ -1,4 +1,4 @@
-<%inherit file="/base.mako"/>
+<%inherit file="/feature_base.mako"/>
 <%!
     section = 'features'
 %>

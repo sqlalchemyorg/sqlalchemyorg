@@ -16,6 +16,8 @@ Download - SQLAlchemy
 
 <h1>Get SQLAlchemy</h1>
 
+<p>Download background and Release Status.</p>
+
 <%include file="download_links.mako" args="site_base=self.attr.site_base, dropdown=False" />
 
 
