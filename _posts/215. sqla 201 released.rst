@@ -1,0 +1,27 @@
+---
+date: 2023/02/01 15:45:02
+title: SQLAlchemy 2.0.1 Released
+author: Mike
+---
+
+SQLAlchemy release 2.0.1 is now available.
+
+The release of 2.0 has been very well received, with about half of
+daily downloads (600K / day) going to the 2.0 series.    The ORM Declarative
+Annotations feature is in particular receiving lots of attention, and the
+focus of 2.0 is improvements and fixes to this new system, as well as
+ongoing improvements and fixes to the general pep-484 typing now applied
+inline within the main source.
+
+The release also repairs one issue within the new "bulk insert" mechanics,
+fixing compilation for complex INSERT statements with nested CTEs that may
+themselves also include INSERT statements.
+
+The release has otherwise so far been very smooth with only a few trivial
+regressions which have been fixed.
+
+
+Links to the detailed changelog for 2.0.1 is at `Changelog </changelog/CHANGES_2_0_1>`_.
+
+SQLAlchemy 2.0.1 is available on the `Download Page </download.html>`_.
+
