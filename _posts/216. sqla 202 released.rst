@@ -1,0 +1,20 @@
+---
+date: 2023/02/06 15:45:02
+title: SQLAlchemy 2.0.2 Released
+author: Mike
+---
+
+SQLAlchemy release 2.0.2 is now available.
+
+After less than a week, another batch of bug fixes and improvements,
+mostly involving new Declarative features is ready to download.
+
+One particular issue in this release was an identified issue with the
+connection pool under asyncio when using the asyncpg database driver;
+the pool would not gracefully report the condition when a pooled connection
+was not correctly returned to the pool, which has been fixed.
+
+Links to the detailed changelog for 2.0.2 is at `Changelog </changelog/CHANGES_2_0_2>`_.
+
+SQLAlchemy 2.0.2 is available on the `Download Page </download.html>`_.
+
