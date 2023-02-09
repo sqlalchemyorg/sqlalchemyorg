@@ -1,0 +1,20 @@
+---
+date: 2023/02/10 15:45:02
+title: SQLAlchemy 2.0.3 Released
+author: Mike
+---
+
+SQLAlchemy release 2.0.3 is now available.
+
+This release fixes a critical regression identified in the SQL expression
+mechanics, where correct parenthesization would fail to be applied to
+individual compound elements of a larger compound expression which featured
+more than two elements joined together by a common operator.
+
+Release 2.0.3 is strongly recommended for all current users of the 2.0
+series.
+
+Links to the detailed changelog for 2.0.3 is at `Changelog </changelog/CHANGES_2_0_3>`_.
+
+SQLAlchemy 2.0.3 is available on the `Download Page </download.html>`_.
+
