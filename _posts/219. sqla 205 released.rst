@@ -1,0 +1,17 @@
+---
+date: 2023/03/06 15:45:02
+title: SQLAlchemy 2.0.5 Released
+slug: sqlalchemy-2.0.5.post1-released
+author: Mike
+---
+
+SQLAlchemy release 2.0.5 is now available.  The release is numbered as
+2.0.5.post1 due to an issue building wheel files.
+
+Release 2.0.5 includes a series of bugfixes across most major components
+inluding the ORM, dialects, and various typing-related issues.
+
+Links to the detailed changelog for 2.0.5.post1 is at `Changelog </changelog/CHANGES_2_0_5_post1>`_.
+
+SQLAlchemy 2.0.5.post1 is available on the `Download Page </download.html>`_.
+
