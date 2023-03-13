@@ -11,7 +11,7 @@ SQLAlchemy release 2.0.5 is now available.  The release is numbered as
 Release 2.0.5 includes a series of bugfixes across most major components
 including the ORM, dialects, and various typing-related issues.
 
-Links to the detailed changelog for 2.0.5.post1 is at `Changelog </changelog/CHANGES_2_0_5_post1>`_.
+Links to the detailed changelog for 2.0.5.post1 is at `Changelog </changelog/CHANGES_2_0_5.post1>`_.
 
 SQLAlchemy 2.0.5.post1 is available on the `Download Page </download.html>`_.
 

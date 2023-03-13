@@ -175,7 +175,7 @@ def _gen_release_data(pypi_data, milestones):
                 'md5_digest': release_rec['md5_digest'],
                 'changelog': (
                     '/changelog/CHANGES_%s' %
-                    str(release).replace('.', "_")),
+                    str(release).replace('.', "_").replace("_post", ".post")),
                 'announcement_url':
                     '/blog/%(year).4d/%(month).2d/%(day).2d/'
                     'sqlalchemy-%(version)s-released/' % {

@@ -17,7 +17,7 @@ Changes - SQLAlchemy
 <script>
 
 	var changelog = location.search;
-    var match_change_file = /.*CHANGES_(\d+)_(\d+)(?:_(\d+))?(beta\d|[a-z]\d|_post\d)?/;
+    var match_change_file = /.*CHANGES_(\d+)_(\d+)(?:_(\d+))?(beta\d|[a-z]\d|.post\d)?/;
 	if (changelog) {
 		match = match_change_file.exec(changelog);
 		if (match) {
@@ -39,7 +39,7 @@ Changes - SQLAlchemy
 			if (point) {
 				newfile += "." + point;
 			}
-			newfile += modifiers.replace("_", ".");
+			newfile += modifiers;
 			//console.log(newfile);
 			document.location.href = newfile;
 		}
