@@ -1,0 +1,21 @@
+---
+date: 2023/03/18 15:45:02
+title: SQLAlchemy 1.4.47 Released
+author: Mike
+---
+
+SQLAlchemy 1.4.47 is now available.
+
+Release 1.4.47 includes a critical bugfix in the SQL caching system, backported
+from version 2.0.7, where SQL expressions that made use of the ``op()`` custom
+operator construct would not be appropriately cached; all applications that
+make use of the ``.op()`` construct are strongly encouraged to upgrade to
+1.4.47 (the same fix is in the 2.0 series at version 2.0.7).
+
+Release 1.4.47 also includes a series of other fixes and backports from the
+2.0 release series.
+
+The complete changelog for 1.4.47 is at `Changelog </changelog/CHANGES_1_4_47>`_.
+
+SQLAlchemy 1.4.47 is available on the `Download Page </download.html>`_.
+

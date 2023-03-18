@@ -1,0 +1,18 @@
+---
+date: 2023/03/18 15:45:02
+title: SQLAlchemy 2.0.7 Released
+author: Mike
+---
+
+SQLAlchemy release 2.0.7 is now available.
+
+Release 2.0.7 includes a critical bugfix in the SQL caching system, where SQL
+expressions that made use of the ``.op()`` custom operator construct would not
+be appropriately cached; all applications that make use of the ``.op()``
+construct are strongly encouraged to upgrade to 2.0.7 (or SQLAlchemy 1.4.47,
+which also includes the same fix).
+
+Links to the detailed changelog for 2.0.7 is at `Changelog </changelog/CHANGES_2_0_7>`_.
+
+SQLAlchemy 2.0.7 is available on the `Download Page </download.html>`_.
+
