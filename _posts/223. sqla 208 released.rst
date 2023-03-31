@@ -1,0 +1,20 @@
+---
+date: 2023/03/31 15:45:02
+title: SQLAlchemy 2.0.8 Released
+author: Mike
+---
+
+SQLAlchemy release 2.0.8 is now available.
+
+Release 2.0.8 includes a wide variety of bugfixes across the Core and ORM
+components. The majority of ORM fixes involve new Declarative features
+including Annotated Declarative as well as Declarative Dataclass Mappings.
+
+Within Core, important fixes include a critical data-oriented fix for the
+PostgreSQL dialects involving LIKE expressions for fixed-length string
+datatypes, which was a regression in the 2.0 series.
+
+Links to the detailed changelog for 2.0.8 is at `Changelog </changelog/CHANGES_2_0_8>`_.
+
+SQLAlchemy 2.0.8 is available on the `Download Page </download.html>`_.
+
