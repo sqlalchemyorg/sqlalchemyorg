@@ -1,0 +1,20 @@
+---
+date: 2023/04/05 15:45:02
+title: SQLAlchemy 2.0.9 Released
+author: Mike
+---
+
+SQLAlchemy release 2.0.9 is now available.
+
+Release 2.0.9 is an emergency release which includes a critical fix for
+SQL Server.  The "insertmanyvalues" feature has been disabled for this
+backend, as a bug has been identified in SQL Server itself which under
+some circumstances will cause the multi-row INSERT statement to insert
+rows in a non-deterministic order vs. the order in which they are
+indicated in the parameter list, which can lead to incorrect persistence
+decisions and possible data corruption.
+
+Links to the detailed changelog for 2.0.9 is at `Changelog </changelog/CHANGES_2_0_9>`_.
+
+SQLAlchemy 2.0.9 is available on the `Download Page </download.html>`_.
+
