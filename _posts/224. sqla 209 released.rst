@@ -7,12 +7,15 @@ author: Mike
 SQLAlchemy release 2.0.9 is now available.
 
 Release 2.0.9 is an emergency release which includes a critical fix for
-SQL Server.  The "insertmanyvalues" feature has been disabled for this
-backend, as a bug has been identified in SQL Server itself which under
+SQL Server.  The "insertmanyvalues" feature has been temporarily disabled for this
+backend, as a behavior has been identified in SQL Server itself which under
 some circumstances will cause the multi-row INSERT statement to insert
 rows in a non-deterministic order vs. the order in which they are
 indicated in the parameter list, which can lead to incorrect persistence
-decisions and possible data corruption.
+decisions specific to the ORM unit of work process.    An upcoming release
+will restore "insertmanyvalues" to SQL Server and also adjust the unit of work
+process to not rely upon the feature in this way; the feature will be fully
+supported for operations such as "bulk insert".
 
 Links to the detailed changelog for 2.0.9 is at `Changelog </changelog/CHANGES_2_0_9>`_.
 
