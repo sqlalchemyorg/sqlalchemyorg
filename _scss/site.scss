@@ -148,7 +148,7 @@ nav.navbar {
     }
 
     &.navigation {
-        background: $sa-green url(../img/navbg1.gif) repeat-x top left;
+        background: $sa-green;
     }
 
     .dropdown-menu {
@@ -159,9 +159,9 @@ nav.navbar {
 /* body ---------------------------------------------------------- */
 
 body {
-    background: #fbfbfb;
+    background: #f4f4f4;
     div.wrap {
-        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
     }
 }
 
@@ -250,8 +250,8 @@ main.docs {
     }
 
     button.copybtn {
-        top: .8rem;
-        right: 1.6rem;
+        top: 5px;
+        right: 1rem;
         width: 2.2rem;
         height: 2.2rem;
     }
@@ -265,12 +265,15 @@ main.docs {
     }
 
     #docs-sidebar {
-        top: 165px;
+        top: 130px;
     }
 
     #docs-container {
         pre {
             font-size: 1.0rem;
+            @media only screen and (max-width: ($mobile-max-screen-width + 1)) {
+                font-size: 0.8rem;
+            }
         }
     }
 
