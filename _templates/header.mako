@@ -14,7 +14,7 @@
             <img src="${site_base}/img/sqla_logo.png" width="240" alt="SQLAlchemy">
         </a>
         <div class="navbar-brand align-self-end dbtoolkit">
-            <img src="${site_base}/img/dbtoolkit6.gif" width="180" height="12" alt="The Database Toolkit for Python">
+            The Database Toolkit for Python
         </div>
     </div>
 </nav>

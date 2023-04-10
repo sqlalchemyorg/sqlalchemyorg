@@ -1,8 +1,9 @@
-$sa-green: #778877;
+$sa-green: #4e735e;
 $sa-grey: #f0f0f0;
-$a-color: #700;
+$a-color: #f00000;
 $a-hover-color: #f00;
 $code-color: #703040;
+$mobile-max-screen-width: 480px;
 $narrow-max-screen-width: 980px;
 
 :root {
@@ -98,6 +99,17 @@ nav.navbar {
         background: #fff url(../img/symbols-bg5.gif) top right no-repeat;
     }
 
+    .navbar-brand {
+        margin-right: 0;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-size: 14px;
+        &.dbtoolkit {
+            color: white;
+        }
+    }
+
     div#navbarNavigation {
         .navbar-nav {
             .nav-link {
@@ -136,7 +148,7 @@ nav.navbar {
     }
 
     &.navigation {
-        background: $sa-green url(../img/navbg1.gif) repeat-x top left;
+        background: $sa-green;
     }
 
     .dropdown-menu {
@@ -147,9 +159,9 @@ nav.navbar {
 /* body ---------------------------------------------------------- */
 
 body {
-    background: #fbfbfb;
+    background: #f4f4f4;
     div.wrap {
-        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
     }
 }
 
@@ -238,8 +250,8 @@ main.docs {
     }
 
     button.copybtn {
-        top: .8rem;
-        right: 1.6rem;
+        top: 5px;
+        right: 1rem;
         width: 2.2rem;
         height: 2.2rem;
     }
@@ -253,12 +265,15 @@ main.docs {
     }
 
     #docs-sidebar {
-        top: 165px;
+        top: 130px;
     }
 
     #docs-container {
         pre {
             font-size: 1.0rem;
+            @media only screen and (max-width: ($mobile-max-screen-width + 1)) {
+                font-size: 0.8rem;
+            }
         }
     }
 
