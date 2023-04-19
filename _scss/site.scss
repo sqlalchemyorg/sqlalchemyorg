@@ -1,12 +1,22 @@
 $sa-green: #778877;
 $sa-grey: #f0f0f0;
-$a-color: #700;
-$a-hover-color: #f00;
+
+// passes:
+// https://webaim.org/resources/linkcontrastchecker/?fcolor=110000&bcolor=FFFFFF&lcolor=BB0000
+
+$color: #110000;
+$a-color: #B00;
+$a-hover-color: #F00;
 $code-color: #703040;
 $narrow-max-screen-width: 980px;
 
 :root {
     --bs-font-sans-serif: "Source Sans Pro", arial, sans-serif;
+    --bs-body-color: #110000;
+}
+
+.row {
+    --bs-gutter-x: 0;
 }
 
 .bg-sa-green {
@@ -56,22 +66,24 @@ $narrow-max-screen-width: 980px;
     padding: 12px;
 }
 
-.main-body a {
-    font-weight: normal;
-    text-decoration: none;
+.main-body {
+    a {
+        font-weight: normal;
+        text-decoration: none;
 
-    &:link {
-        padding: 0 0 1px 0;
-        color: $a-color;
-    }
+        &:link {
+            padding: 0 0 1px 0;
+            color: $a-color;
+        }
 
-    &:visited {
-        color: $a-color;
-    }
+        &:visited {
+            color: $a-color;
+        }
 
-    &:hover {
-        text-decoration: underline;
-        color: $a-hover-color;
+        &:hover {
+            text-decoration: underline;
+            color: $a-hover-color;
+        }
     }
 }
 
