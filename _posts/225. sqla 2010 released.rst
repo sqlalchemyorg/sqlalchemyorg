@@ -1,0 +1,27 @@
+---
+date: 2023/04/21 15:45:02
+title: SQLAlchemy 2.0.10 Released
+author: Mike
+---
+
+SQLAlchemy release 2.0.10 is now available.
+
+Release 2.0.10 revisits the original reason that version 2.0.9 was released
+quickly, involving apparent row ordering when using RETURNING with
+SQLAlchemy 2.0's "insertmanyvalues" feature, which had to be disabled for
+Microsoft SQL Server.
+
+In version 2.0.10, "insertmanyvalues" has gained a new optional RETURNING
+feature called ``sort_by_parameter_order`` which enables a new set of INSERT
+forms and execution models which ensure these ordering guarantees take place
+for each of the supported backends SQL Server, PostgreSQL, SQLite and MariaDB.
+As a result the "insertmanyvalues" performance optimization is re-enabled for
+SQL Server. For other backends, while no row-ordering issues were observed or
+reproduced, the new guarantees change how the feature is implemented as used by
+the ORM. A new documentation section linked from the changelog illustrates the
+feature in depth.
+
+Links to the detailed changelog for 2.0.10 is at `Changelog </changelog/CHANGES_2_0_10>`_.
+
+SQLAlchemy 2.0.10 is available on the `Download Page </download.html>`_.
+
