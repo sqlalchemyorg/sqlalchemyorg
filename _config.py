@@ -7,12 +7,12 @@ docs = controllers.docs
 docs.enabled = True
 docs.priority = 50
 
-#docs_url = "//docs.sqlalchemy.org"
-docs_url = "//localhost:8080/docs"
+docs_url = "//docs.sqlalchemy.org"
+#docs_url = "//localhost:8080/docs"
 
 bb_url = "https://github.com/sqlalchemy/sqlalchemy"
-site_url = "//localhost:8000"
-site.url = "http://localhost:8000"
+site_url = "//www.sqlalchemy.org"
+site.url = "http://www.sqlalchemy.org"
 
 filters.syntax_highlight.style= "manni"
 filters.syntax_highlight.enabled = True
