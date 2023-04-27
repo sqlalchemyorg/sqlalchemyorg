@@ -1,0 +1,21 @@
+---
+date: 2023/04/27 15:45:02
+title: SQLAlchemy 2.0.11 Released
+author: Mike
+---
+
+SQLAlchemy release 2.0.11 is now available.
+
+Release 2.0.11 includes a fix for a critical regression introduced in 2.0.10 as
+a result of the "insertmanyvalues" refactoring, for the PostgreSQL dialects
+using either the psycopg or psycopg2 drivers, which impacted floating point
+data during bulk INSERT statements.
+
+Version 2.0.11 also includes performance enhancements to the ``Row``
+construct as well as other fixes for the ORM, engine, Oracle and MSSQL
+components.
+
+Links to the detailed changelog for 2.0.11 is at `Changelog </changelog/CHANGES_2_0_11>`_.
+
+SQLAlchemy 2.0.11 is available on the `Download Page </download.html>`_.
+
