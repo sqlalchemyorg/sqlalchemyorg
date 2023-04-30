@@ -1,0 +1,19 @@
+---
+date: 2023/04/30 15:45:02
+title: SQLAlchemy 1.4.48 Released
+author: Mike
+---
+
+SQLAlchemy 1.4.48 is now available.
+
+Release 1.4.48 includes a critical bugfix in the SQL caching system, backported
+from version 2.0.12, where SQL expressions that made use of
+``hybrid_property()`` in conjunction with the ORM ``aliased()`` construct would
+not be appropriately cached, leading to memory issues. All applications that
+make use of these constructs are strongly encouraged to upgrade to 1.4.48 (the
+same fix is in the 2.0 series at version 2.0.12).
+
+The complete changelog for 1.4.48 is at `Changelog </changelog/CHANGES_1_4_48>`_.
+
+SQLAlchemy 1.4.48 is available on the `Download Page </download.html>`_.
+

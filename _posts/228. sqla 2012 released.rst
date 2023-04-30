@@ -1,0 +1,18 @@
+---
+date: 2023/04/30 15:45:02
+title: SQLAlchemy 2.0.12 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.12 is now available.
+
+Release 2.0.12 includes a critical bugfix in the SQL caching system, also
+backported to version 1.4.48, where SQL expressions that made use of
+``hybrid_property()`` in conjunction with the ORM ``aliased()`` construct would
+not be appropriately cached, leading to memory issues. All applications that
+make use of these constructs are strongly encouraged to upgrade to 2.0.12.
+
+Links to the detailed changelog for 2.0.12 is at `Changelog </changelog/CHANGES_2_0_12>`_.
+
+SQLAlchemy 2.0.12 is available on the `Download Page </download.html>`_.
+
