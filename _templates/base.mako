@@ -40,14 +40,14 @@ else:
     <meta property="og:type" content="website">
     <meta property="og:title" content="SQLAlchemy">
     <meta property="og:description" content="The Database Toolkit for Python">
-    <meta property="og:image" content="${self.attr.site_base}/img/sqla_og.png">
+    <meta property="og:image" content="https://www.sqlalchemy.org/img/sqla_og.png">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:domain" content="sqlalchemy.org">
     <meta property="twitter:url" content="https://www.sqlalchemy.org">
     <meta name="twitter:title" content="SQLAlchemy">
     <meta name="twitter:description" content="The Database Toolkit for Python">
-    <meta name="twitter:image" content="${self.attr.site_base}/img/sqla_og.png">
+    <meta name="twitter:image" content="https://www.sqlalchemy.org/img/sqla_og.png">
 
         
     <%block name="head">
