@@ -33,7 +33,23 @@ else:
         </%block>
     </title>
 
+    <meta name="description" content="The Database Toolkit for Python">
 
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+    <meta property="og:url" content="https://www.sqlalchemy.org">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SQLAlchemy">
+    <meta property="og:description" content="The Database Toolkit for Python">
+    <meta property="og:image" content="${self.attr.site_base}/img/sqla_og.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="sqlalchemy.org">
+    <meta property="twitter:url" content="https://www.sqlalchemy.org">
+    <meta name="twitter:title" content="SQLAlchemy">
+    <meta name="twitter:description" content="The Database Toolkit for Python">
+    <meta name="twitter:image" content="${self.attr.site_base}/img/sqla_og.png">
+
+        
     <%block name="head">
         <!-- sqlalchemy.org head -->
         <%include file="/head.mako" args="site_base=self.attr.site_base, docs_base=self.attr.docs_base, bb_base=self.attr.bb_base"/>
