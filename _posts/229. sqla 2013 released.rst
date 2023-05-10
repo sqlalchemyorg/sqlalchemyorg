@@ -1,0 +1,20 @@
+---
+date: 2023/05/10 15:45:02
+title: SQLAlchemy 2.0.13 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.13 is now available.
+
+Release 2.0.13 fixes a series of bugs and some regressions related to recent
+changes, and also adds a new feature specific to the ``sqlalchemy.ext.asyncio``
+extension, a utility class ``AsyncAttrs``, which adds a generic attribute
+access namespace to any mapped class ``.awaitable_attrs``, which returns any
+attribute as an awaitable, allowing inline access to collections and other
+attributes that are using lazy loading or other varieties of
+expired/deferred/etc column loading.
+
+Links to the detailed changelog for 2.0.13 is at `Changelog </changelog/CHANGES_2_0_13>`_.
+
+SQLAlchemy 2.0.13 is available on the `Download Page </download.html>`_.
+
