@@ -51,18 +51,21 @@ of test suites and/or staging environments when upgrading to a new version of
 any SQLAlchemy organization software.
 
 
-Minor Releases
-^^^^^^^^^^^^^^
+Significant Minor Releases
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Minor releases in SQLAlchemy are actually kind of "major" events as they
 typically take a year to produce; for related projects, minor releases
-may come less frequently.  A change in minor release
+may come less frequently.  We may refer to them as **Significant Minor Releases**
+to indicate that they are major events, while at the same time not conflating
+them with the name "major" as typically refers to the leftmost digit in the
+versioniong scheme.  A change in minor release
 means that the project includes changes that are **typically backwards compatible
 within the range of not-previously-deprecated APIs and current Python versions,
 with some risk of non-backwards compatibility**, particularly within SQLAlchemy
 itself; this risk is usually unavoidable due to the nature of the changes.
 
-For this reason, a minor release is not really that "minor" for SQLAlchemy itself, and
+For this reason, a "Significant Minor Release" is not really that "minor" for SQLAlchemy itself, and
 there is always
 an `extensive migration notes <https://docs.sqlalchemy.org/latest/changelog/index.html#current-migration-guide>`_ section describing in great detail
 every API adjustment and behavioral change which may need to be identified.
@@ -70,7 +73,7 @@ For other projects, a minor release typically refers to changes in Python versio
 support, such as dropping support for Python 2.6, or Alembic dropping support for
 SQLAlchemy 0.9; a general idea of what's new is in the changelog.
 
-A minor release, particularly in SQLAlchemy itself, will include:
+A Significant Minor Release, particularly in SQLAlchemy itself, will include:
 
 * **Major new features** - new API features and capabilities, as well as structural
   and performance improvements, are part of every minor release for
