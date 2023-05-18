@@ -1,0 +1,17 @@
+---
+date: 2023/05/18 15:45:02
+title: SQLAlchemy 2.0.14 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.14 is now available.
+
+Release 2.0.14 includes bugfixes across the ORM, SQL and dialect-specific
+categories, including one fix against a rare race condition that's been
+reported as occurring with the "joined eager loading" strategy under
+unusual circumstances.
+
+Links to the detailed changelog for 2.0.14 is at `Changelog </changelog/CHANGES_2_0_14>`_.
+
+SQLAlchemy 2.0.14 is available on the `Download Page </download.html>`_.
+
