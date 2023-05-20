@@ -1,0 +1,18 @@
+---
+date: 2023/05/20 15:45:02
+title: SQLAlchemy 2.0.15 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.15 is now available.
+
+Release 2.0.15 adds an additional regression fix related to the series of
+changes for "insertmanyvalues", which uses a new SQL syntax on the
+PostgreSQL backend, this time repairing support for the generic
+``Uuid`` datatype for those cases where multiple ``uuid`` values would
+be INSERTed by the ORM while also using RETURNING.
+
+Links to the detailed changelog for 2.0.15 is at `Changelog </changelog/CHANGES_2_0_15>`_.
+
+SQLAlchemy 2.0.15 is available on the `Download Page </download.html>`_.
+
