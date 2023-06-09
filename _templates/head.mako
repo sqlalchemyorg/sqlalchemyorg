@@ -4,6 +4,7 @@
 % if css:
     <link rel="stylesheet" type="text/css" media="all" href="${site_base}/css/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" media="all" href="${site_base}/css/site.css"/>
+	<link rel="stylesheet" type="text/css" media="all" href="${site_base}/css/carbonads.css"/>
 	<link rel="stylesheet" type="text/css" media="print" href="${site_base}/css/print.css"/>
 % endif
 
