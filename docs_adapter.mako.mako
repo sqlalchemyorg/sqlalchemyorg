@@ -66,9 +66,9 @@ else:
         <!-- end iterate through sphinx environment remote css_files -->
     </%block>
 
-    <%def name="bannerad()">
+    ## <%def name="bannerad()">
     ##    </%text><%include file="/sidebar_widgets/bannerad.mako"/><%text>
-    </%def>
+    ## </%def>
 
     <%block name="headers">
 
