@@ -7,11 +7,11 @@
         </div>
     </div>
 
-    <div class="snd-ad card text-dark bg-sa-grey mb-2">
-        <div class="banner card-body">
-            <%include file="/sidebar_widgets/bannerad.mako"/>
-        </div>
-    </div>
+    ## <div class="snd-ad card text-dark bg-sa-grey mb-2">
+    ##    <div class="banner card-body">
+    ##        <%include file="/sidebar_widgets/bannerad.mako"/>
+    ##    </div>
+    ## </div>
 
     <div class="donate card text-dark bg-sa-grey mb-2">
         <div class="card-body">

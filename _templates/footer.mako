@@ -2,11 +2,11 @@
 
 <div id="footer" class="footer">
     <div class="snd-ad">
-    <div class="box banner">
-        <p>
-        <%include file="/carbonads_bottom.mako"/>
-        </p>
-    </div>
+    ## <div class="box banner">
+    ##    <p>
+    ##    <%include file=""/>
+    ##    </p>
+    ## </div>
     </div>
     <div class="pypowered">
         <a href="http://www.python.org/" title="The Python Language Site">
