@@ -1,0 +1,16 @@
+---
+date: 2023/06/10 15:45:02
+title: SQLAlchemy 2.0.16 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.16 is now available.
+
+Release 2.0.16 includes a variety of bug fixes and use case additions across
+the ORM, Core, asyncio and PostgreSQL areas, as well as small adjustments to
+the Core and test suite to pass all tests on Python 3.12.0b1.
+
+Links to the detailed changelog for 2.0.16 is at `Changelog </changelog/CHANGES_2_0_16>`_.
+
+SQLAlchemy 2.0.16 is available on the `Download Page </download.html>`_.
+
