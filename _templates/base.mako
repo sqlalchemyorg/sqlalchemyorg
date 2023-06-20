@@ -49,7 +49,7 @@ else:
     <meta name="twitter:description" content="The Database Toolkit for Python">
     <meta name="twitter:image" content="https://www.sqlalchemy.org/img/sqla_og.png">
 
-        
+
     <%block name="head">
         <!-- sqlalchemy.org head -->
         <%include file="/head.mako" args="site_base=self.attr.site_base, docs_base=self.attr.docs_base, bb_base=self.attr.bb_base"/>
