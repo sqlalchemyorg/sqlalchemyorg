@@ -54,7 +54,7 @@ else:
 
         <link rel="stylesheet" type="text/css" media="all" href="${site_base}/css/bootstrap.min.css"/>
 	    <link rel="stylesheet" type="text/css" media="all" href="${site_base}/css/site.css"/>
-        <link rel="stylesheet" type="text/css" media="all" href="${site_base}/css/bannerads.css"/>
+        <link rel="stylesheet" type="text/css" media="all" href="${site_base}/css/sidebar_extra.css"/>
         <link rel="stylesheet" type="text/css" media="print" href="${site_base}/css/print.css"/>
 
         <!-- begin iterate through sphinx environment remote css_files -->
