@@ -1,0 +1,16 @@
+---
+date: 2023/06/23 15:45:02
+title: SQLAlchemy 2.0.17 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.17 is now available.
+
+Release 2.0.17 includes a variety of bug fixes within the ORM component as well
+as some typing related fixes, and also adds support for RANGE and MULTIRANGE
+datatypes to the pg8000 dialect.
+
+Links to the detailed changelog for 2.0.17 is at `Changelog </changelog/CHANGES_2_0_17>`_.
+
+SQLAlchemy 2.0.17 is available on the `Download Page </download.html>`_.
+
