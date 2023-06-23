@@ -62,6 +62,10 @@
 
 
 div .ea-content {
-  max-width: 270px !important;
+  max-width: 100% !important;
   display: block !important;
+}
+div .ea-callout {
+  max-width: 100% !important;
+  text-align: center !important;
 }
