@@ -2,7 +2,7 @@
 <script async type="text/javascript" id="_carbonads_js"></script>
 <script async type="text/javascript" id="_eaads_js"></script>
 
-<div data-ea-publisher="sqlalchemyorg" data-ea-type="image" class="adaptive flat vertical"></div>
+<div data-ea-publisher="sqlalchemyorg" data-ea-type="image" class="adaptive flat horizontal"></div>
 
 <script type="text/javascript">
 
