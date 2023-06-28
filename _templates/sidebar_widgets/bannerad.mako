@@ -9,13 +9,13 @@
 var ea = "https://media.ethicalads.io/media/client/ethicalads.min.js";
 var carbon = "//cdn.carbonads.com/carbon.js?serve=CKYILK7Y&placement=sqlalchemyorg";
 
-if (Math.floor(Math.random() * 2) == 1) {
-    carbon_script = document.getElementById("_carbonads_js");
-    carbon_script.setAttribute('src', carbon);
-}
-else {
+if (Math.floor(Math.random() * 10) < 8) {
     ea_script = document.getElementById("_eaads_js");
     ea_script.setAttribute('src', ea);
+}
+else {
+    carbon_script = document.getElementById("_carbonads_js");
+    carbon_script.setAttribute('src', carbon);
 }
 
 </script>
