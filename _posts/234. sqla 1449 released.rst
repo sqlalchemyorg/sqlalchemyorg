@@ -1,0 +1,19 @@
+---
+date: 2023/07/05 15:45:02
+title: SQLAlchemy 1.4.49 Released
+author: Mike
+---
+
+SQLAlchemy 1.4.49 is now available.
+
+Release 1.4.49 establishes compatibility with the upcoming Python 3.12
+release, as well as aligns the mypy plugin for MyPy 1.4 recently released.
+An additional SQL caching related issue involving the ``regexp_match()``
+and ``regexp_replace()`` functions is fixed; for users of these two functions,
+release 1.4.49 fixes a critical issue that prevented the engine-level SQL cache from
+operating effectively when these constructs were in use.
+
+The complete changelog for 1.4.49 is at `Changelog </changelog/CHANGES_1_4_49>`_.
+
+SQLAlchemy 1.4.49 is available on the `Download Page </download.html>`_.
+

@@ -1,0 +1,19 @@
+---
+date: 2023/07/05 15:45:02
+title: SQLAlchemy 2.0.18 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.18 is now available.
+
+Release 2.0.18 includes a variety of bug fixes within the Core and dialect
+components as well as some typing related fixes. An additional SQL caching
+related issue involving the ``regexp_match()`` and ``regexp_replace()``
+functions is fixed; for users of these two functions, release 1.4.49 fixes a
+critical issue that prevented the engine-level SQL cache from operating
+effectively when these constructs were in use.
+
+Links to the detailed changelog for 2.0.18 is at `Changelog </changelog/CHANGES_2_0_18>`_.
+
+SQLAlchemy 2.0.18 is available on the `Download Page </download.html>`_.
+
