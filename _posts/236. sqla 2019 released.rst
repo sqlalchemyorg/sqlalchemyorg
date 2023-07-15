@@ -1,0 +1,17 @@
+---
+date: 2023/07/15 15:45:02
+title: SQLAlchemy 2.0.19 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.19 is now available.
+
+Release 2.0.19 includes fixes within the ORM, engine, and PostgreSQL
+components, including a regression fix for all PostgreSQL dialects which
+prevented URLs of the style used by the "Google Cloud SQL" platform to be
+misinterpreted.
+
+Links to the detailed changelog for 2.0.19 is at `Changelog </changelog/CHANGES_2_0_19>`_.
+
+SQLAlchemy 2.0.19 is available on the `Download Page </download.html>`_.
+
