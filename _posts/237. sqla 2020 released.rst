@@ -1,0 +1,17 @@
+---
+date: 2023/08/15 15:45:02
+title: SQLAlchemy 2.0.20 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.20 is now available.
+
+Release 2.0.20 is a large bug fix release with many fixes in the ORM, engine, SQL and typing
+components of SQLAlchemy, which includes a fix involving propagation
+of execution options with ORM queries as well as a fix involving the
+engine-level "AUTOCOMMIT" isolation level setting.
+
+Links to the detailed changelog for 2.0.20 is at `Changelog </changelog/CHANGES_2_0_20>`_.
+
+SQLAlchemy 2.0.20 is available on the `Download Page </download.html>`_.
+
