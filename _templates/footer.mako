@@ -21,6 +21,7 @@
         huge thanks to the <a href="https://github.com/EnigmaCurry/blogofile">Blogofile</a>
         project.</p>
 
+        <a rel="me" href="https://hachyderm.io/@zzzeek">Mastodon</a>
         <a rel="me" href="https://fosstodon.org/@zzzeek">Mastodon</a>
 
     </div>
