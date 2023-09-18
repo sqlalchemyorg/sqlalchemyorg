@@ -1,0 +1,15 @@
+---
+date: 2023/09/18 15:45:02
+title: SQLAlchemy 2.0.21 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.21 is now available.
+
+Release 2.0.21 includes a series of minor bug fixes in the ORM, engine,
+SQL/schema, typing and PostgreSQL components.
+
+Links to the detailed changelog for 2.0.21 is at `Changelog </changelog/CHANGES_2_0_21>`_.
+
+SQLAlchemy 2.0.21 is available on the `Download Page </download.html>`_.
+
