@@ -1,0 +1,15 @@
+---
+date: 2023/10/12 15:45:02
+title: SQLAlchemy 2.0.22 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.22 is now available.
+
+Release 2.0.22 includes a wide variety of fixes across the ORM, sql, engine,
+MariaDB and MSSQL components as well as some new use case additions in the ORM.
+
+Links to the detailed changelog for 2.0.22 is at `Changelog </changelog/CHANGES_2_0_22>`_.
+
+SQLAlchemy 2.0.22 is available on the `Download Page </download.html>`_.
+
