@@ -96,7 +96,7 @@ else:
 
 <script type="text/javascript" src="${site_base}/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="${site_base}/js/doc_versions.js"></script>
-<%include file="/tracking.mako"/>
+## <%include file="/tracking.mako"/>
 
 <%block name="scripts"/>
 
