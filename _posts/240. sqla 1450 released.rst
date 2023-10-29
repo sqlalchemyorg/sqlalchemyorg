@@ -1,0 +1,19 @@
+---
+date: 2023/10/29 15:45:02
+title: SQLAlchemy 1.4.50 Released
+author: Mike
+---
+
+SQLAlchemy 1.4.50 is now available.
+
+Release 1.4.50 is a late 1.4-series release to keep up with a small number
+of bug fixes that have been backported from the 2.0 series.  It includes a
+fix for a new warning that's being emitted by some MySQL native client
+libraries regarding the argument signature for the ``ping()`` command,
+when the "pool pre-ping" feature of the engine is used.
+
+
+The complete changelog for 1.4.50 is at `Changelog </changelog/CHANGES_1_4_50>`_.
+
+SQLAlchemy 1.4.50 is available on the `Download Page </download.html>`_.
+
