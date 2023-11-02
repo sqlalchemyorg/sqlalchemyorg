@@ -1,0 +1,19 @@
+---
+date: 2023/11/02 15:45:02
+title: SQLAlchemy 2.0.23 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.23 is now available.
+
+Release 2.0.23 has a wide variety of bug fixes across most components,
+including ORM, SQL/engine, PostgreSQL, MySQL/MariaDB, Oracle, and SQL Server.
+In addition, in response to popular demand, an early-access async
+dialect for the combination of ``aioodbc`` with SQL Server has been added.
+The dialect builds on a new internal asyncio framework that is expected to
+be integrated with most other asyncio dialects in SQLAlchemy 2.1.
+
+Links to the detailed changelog for 2.0.23 is at `Changelog </changelog/CHANGES_2_0_23>`_.
+
+SQLAlchemy 2.0.23 is available on the `Download Page </download.html>`_.
+
