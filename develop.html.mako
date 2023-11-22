@@ -18,7 +18,6 @@ Develop - SQLAlchemy
     <li><a href="#documentation">Documentation</a></li>
     <li><a href="#style">Coding Guidelines</a></li>
     <li><a href="#environment">Development Environment</a></li>
-    <li><a href="#sprints">Sprints</a></li>
 </ul>
 
 This section describes where to find information on development and some tips
@@ -27,28 +26,21 @@ on getting started.
 <a name="developers"></a>
 <h2>Development Community</h2>
 
-<p>Where can you find the Developers of SqlAlchemy ?</p>
+<p>Where can you find the Developers of SQLAlchemy ?</p>
 
-<p><em>The Developers of SqlAlchemy kindly request all people participating in
+<p><em>The Developers of SQLAlchemy kindly request all people participating in
 these channels respect the <a href="/codeofconduct.html">Code of Conduct</a> when
 seeking or providing support.</em></p>
 
 <ul>
-    <li>Mailing Lists</li>
+    <li>Github Discussions</li>
     <ul>
-        <li>The <a href="/support.html#mailinglist">main mailing list</a> is the most
-            common - core devs assist users with issues of all kinds. All SqlAlchemy
-            Users and Third-Party Library authors are encouraged to participate here
-            and seek support of any kind.
+        <li>The <a href="/support.html#discussions">Github Discussions</a> forum is the most
+            common - core devs assist users with issues of all kinds. All SQLAlchemy
+            users and third-party library authors are encouraged to seek
+            support here.
             </li>
 
-        <li>A secondary <a href="https://groups.google.com/group/sqlalchemy-devel">
-            development mailing list</a>, also hosted on Google groups, is dedicated
-            to Developer concerns such as: release announcements, architectural and
-            developmental issues, and issues pertaining to Third-Party Library authors.
-            This list is typically low traffic; all posts intended for this channel are
-            welcome on the <a href="/support.html#mailinglist">main mailing list</a> .
-            </li>
     </ul>
     <li>Real-Time Communication</li>
     <ul>
@@ -57,7 +49,7 @@ seeking or providing support.</em></p>
             througout the week. Discussion in this room is intended for users
             who are interested in contributing code, tests, documentation, or other
             developmental resources. This channel is the current preferred real-time
-            discussion medium for SqlAlchemy contributors and hosts the
+            discussion medium for SQLAlchemy contributors and hosts the
             <a href="#scheduled-developer-meetings">Scheduled Developer Meetings</a>.
             Gitter based support is available via the
             <a href="https://gitter.im/sqlalchemy/community">sqlalchemy/community</a> Gitter
@@ -264,14 +256,4 @@ Jenkins interface is available at <a href="https://jenkins.sqlalchemy.org">https
 <p>TLDR; please ensure <a href="https://pre-commit.com ">pre-commit</a> is installed in your environment before beginning work on a Pull Request.
 </p>
 
-
-<a name="sprints"></a>
-<h2>Sprints</h2>
-<p>The SQLAlchemy project has an interest in attracting developers through sprints.   Currently,
-    there are only occasional sprints typically annually at Pycon US, though not always.
-    We are in need of assistance with planning, organizing and running sprints
-    such that new developers are well prepared to contribute and learn about SQLAlchemy.
-    Contributors who are interested in mentoring new developers at sprints or hosting other sprints during
-    the year are encouraged to contact the developers, we would love to have more assistance in this area.
-    </p>
 

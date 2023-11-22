@@ -11,7 +11,6 @@ Support - SQLAlchemy
 <ul>
     <li><a href="#before">Before Requesting Support</a></li>
     <li><a href="#discussions">Github Discussions</a></li>
-    <li><a href="#mailinglist">Mailing List</a></li>
     <li><a href="#real-time">Real-time Channel</a></li>
     <li><a href="#professional">Professional Support with Tidelift</a></li>
 </ul>
@@ -37,12 +36,10 @@ Discussions</a> forum which is fast becoming a primary informational resource.
 <p>SQLAlchemy and its related projects now offer support via the <a
 href="https://github.com/sqlalchemy/sqlalchemy/discussions">Github
 Discussions</a> link on the Github page for each project. This forum-style
-interface allows for discussions more or like that of the mailing list, which
-also remains available, however due to the popularity of Github, the
-discussions forum has become one of several primary avenues for interactive
-support.
+interface allows for discussions more or like that of a mailing list, but
+with better support for illustrating code samples and linking to issues.
 
-When posting on the discussions forum as well as the mailing list,
+When posting on the discussions forum,
 we ask that posters try, to the best of their ability, to
 compose messages are both complete in their description as well as succinct
 with regards to the topic at hand:</p>
@@ -72,26 +69,13 @@ research and thoughtfully describe the issue, you've earned support from us
 !</p>
 
 
-<a name="mailinglist"></a>
-<h2>Mailing List</h2>
-
-<p>Old school users are free to use the mailing list as well.   Guidelines
-for posting are the same as those mentioned for Discussions above, so that
-we can quickly identify the problem and the best way to solve.
-
-<p>The mailing list is hosted at <a
-href="http://groups.google.com/group/sqlalchemy">Google Groups.</a> Google will
-sometimes moderate posts created by new users, so in some cases your first post
-may not appear for up to 24 hours until a moderator can approve it. Once
-approved, subsequent posts should appear immediately.</p>
-
 
 <a name="real-time"></a>
 <h2>Real-time Channels: Gitter, IRC</h2>
 
 <p>There are several real-time options for support.</p>
 
-<p><em>The Developers of SqlAlchemy kindly request all people participating in
+<p><em>The Developers of SQLAlchemy kindly request all people participating in
 these channels respect the <a href="/codeofconduct.html">Code of Conduct</a> when
 seeking or providing support.</em></p>
 
@@ -100,15 +84,14 @@ single them out for individual assistance!  There are usually about 80-100
 members on at any given time - many of which can likely help with your issue.
 If your issue is genuinely more intricate and requiring of more skillful help
 than is currently available on IRC or Gitter, that's when it's time to post
-on the <a href="#discussions">Github Discussions forum</a> or
-<a href="#mailinglist">mailing list</a>.</p>
+on the <a href="#discussions">Github Discussions forum</a>.</p>
 
 <a name="gitter"></a>
 <h3>Gitter Room</h3>
 
 <p>The <a href="https://gitter.im/sqlalchemy/community">sqlalchemy/community</a>
 Gitter room is available for real-time support.  There are usually a handful of
-SqlAlchemy users and developers present and willing to assist.</p>
+SQLAlchemy users and developers present and willing to assist.</p>
 
 <p>Unlike IRC, Gitter offers a browsable public history - so user are not required
 to be constantly logged-in and can review any conversations they have missed.</p>
@@ -119,7 +102,7 @@ to be constantly logged-in and can review any conversations they have missed.</p
 <p>A popular support resource is the IRC channel.   In this forum, users of all
 skill levels can ask short questions, post pastes of code, and discuss
 techniques among other developers who happen to be present.   The usual rules
-of IRC etiquette apply here - not unlike the mailing list, users who've put
+of IRC etiquette apply here.  Users who've put
 some effort into understanding their problem ahead of time will tend to get
 better results.</p>
 
@@ -130,7 +113,7 @@ better results.</p>
 
 <div class="tidelift-support">
 
-<a href="https://tidelift.com/subscription/pkg/pypi-sqlalchemy?utm_source=pypi-sqlalchemy&utm_medium=referral&utm_campaign=website"><img src="/img/tidelift.png"/></a>
+<a href="https://tidelift.com/subscription/pkg/pypi-sqlalchemy?utm_source=pypi-sqlalchemy&utm_medium=referral&utm_campaign=website"><img src="/img/tidelift_sm.png"/></a>
 
 <p>Professional support for SQLAlchemy is available as part of the <a
 href="https://tidelift.com/subscription/pkg/pypi-sqlalchemy?utm_source=pypi-sqlalchemy&utm_medium=referral&utm_campaign=website">Tidelift
