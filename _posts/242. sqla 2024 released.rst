@@ -1,0 +1,20 @@
+---
+date: 2023/12/28 15:45:02
+title: SQLAlchemy 2.0.24 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.24 is now available.
+
+Release 2.0.24 includes a significant number of bug fixes and improvements.
+Changes to be particularly aware of include a fix to the
+``URL.render_as_string()`` method to repair for escaping of particular characters
+that previously would not "round trip" through a URL->string->URL loop,
+full pep-484 typing has been implemented for the ``sqlalchemy.sql.functions``
+module, and the ``async_fallback()`` function used for test suites is now
+deprecated.
+
+Links to the detailed changelog for 2.0.24 is at `Changelog </changelog/CHANGES_2_0_24>`_.
+
+SQLAlchemy 2.0.24 is available on the `Download Page </download.html>`_.
+
