@@ -1,0 +1,22 @@
+---
+date: 2024/01/03 15:45:02
+title: SQLAlchemy 2.0.25 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.25 is now available.
+
+This release includes a fix for an issue found in the asyncio system, where an
+engine that's been disposed using the ``Engine.dispose()`` method, as would
+be done when moving the engine across a process boundary, then used
+again for new connectivity, would inadvertently use a ``threading.Lock``
+internally which can cause deadlocks when used in an asyncio context.
+
+The release also includes a "preview" backport of the asyncio-compatible
+dialect for Oracle using the newly introduced asyncio support in the
+``oracledb`` DBAPI library.
+
+Links to the detailed changelog for 2.0.25 is at `Changelog </changelog/CHANGES_2_0_25>`_.
+
+SQLAlchemy 2.0.25 is available on the `Download Page </download.html>`_.
+
