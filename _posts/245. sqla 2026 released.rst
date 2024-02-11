@@ -1,0 +1,15 @@
+---
+date: 2024/02/11 15:45:02
+title: SQLAlchemy 2.0.26 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.26 is now available.
+
+Release 2.0.26 has a wide array of bugfixes across almost all the dialects,
+the ORM, Core components, as well as typing and example fixes.
+
+Links to the detailed changelog for 2.0.26 is at `Changelog </changelog/CHANGES_2_0_26>`_.
+
+SQLAlchemy 2.0.26 is available on the `Download Page </download.html>`_.
+
