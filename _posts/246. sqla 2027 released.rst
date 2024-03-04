@@ -4,7 +4,7 @@ title: SQLAlchemy 2.0.27 Released
 author: Mike
 ---
 
-SQLAlchemy 2.0.23 is now available.
+SQLAlchemy 2.0.27 is now available.
 
 Release 2.0.27 fixes a single regression caused by a fix for the asyncpg
 dialect, where an exception catch was catching an object reference that

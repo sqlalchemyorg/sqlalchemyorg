@@ -1,0 +1,19 @@
+---
+date: 2024/03/04 15:45:02
+title: SQLAlchemy 2.0.28 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.28 is now available.
+
+Release 2.0.28 includes two ORM related regression fixes, one of which is
+a performance regression regarding ORM "criteria" options such as
+the ``with_expression()`` construct as well as when adding WHERE criteria
+to loader options such as ``selectinload()``.   The replacement approach
+is significantly simpler and may have a noticeable effect for applications
+which encounter this specific codepath / scenario.
+
+Links to the detailed changelog for 2.0.28 is at `Changelog </changelog/CHANGES_2_0_28>`_.
+
+SQLAlchemy 2.0.28 is available on the `Download Page </download.html>`_.
+

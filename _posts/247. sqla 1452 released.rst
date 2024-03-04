@@ -1,0 +1,17 @@
+---
+date: 2024/03/04 15:45:02
+title: SQLAlchemy 1.4.52 Released
+author: Mike
+---
+
+SQLAlchemy 1.4.52 is now available.
+
+This release was made to support a single ORM issue backport from the
+2.0 series, involving a shortcoming in the ``with_loader_criteria()``
+ORM option that is frequently used to limit results based on ACLs and similar
+criteria.
+
+The complete changelog for 1.4.52 is at `Changelog </changelog/CHANGES_1_4_52>`_.
+
+SQLAlchemy 1.4.52 is available on the `Download Page </download.html>`_.
+
