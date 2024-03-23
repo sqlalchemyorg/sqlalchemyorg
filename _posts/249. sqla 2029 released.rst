@@ -1,0 +1,19 @@
+---
+date: 2024/03/23 15:45:02
+title: SQLAlchemy 2.0.29 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.29 is now available.
+
+Release 2.0.29 includes an adjustment to a behavior introdcued in 2.0.10
+regarding the robustness of the new "insertmanyvalues" bulk insert feature.
+This adjustment allows third party libraries that define their own primary-key
+oriented datatypes, like GUID types, to work in this mode without requiring
+special adjustments.  Also included are some ORM Annotated Declarative fixes,
+pep-484 typing fixes and test suite improvements, among other things.
+
+Links to the detailed changelog for 2.0.29 is at `Changelog </changelog/CHANGES_2_0_29>`_.
+
+SQLAlchemy 2.0.29 is available on the `Download Page </download.html>`_.
+
