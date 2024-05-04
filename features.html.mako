@@ -198,19 +198,18 @@ Features - SQLAlchemy
   </dd>
     <dt>Supported Platforms</dt>
     <dd>
-        <p>SQLAlchemy supports Python 2.5 through the latest 3.x versions.
-          Other supported platforms include Jython and Pypy.
+        <p>SQLAlchemy supports Python 3.7+ and Pypy.
     </dd>
      <dt>Supported Databases</dt>
      <dd>
-        <p>SQLAlchemy includes dialects for SQLite, Postgresql, MySQL, Oracle,
-        MS-SQL, Firebird, Sybase and others, most of which support multiple
-        DBAPIs.  Other dialects are published as external projects.  The corresponding <a
+        <p>SQLAlchemy includes dialects for SQLite, Postgresql, MySQL &amp; MariaDB, Oracle,
+        and MS-SQL most of which support multiple DBAPIs.  
+        SQLAlchemy supports both sync and async drivers, alliwing the use with asyncio.
+        Other dialects are published as external projects.  The corresponding <a
         href="http://www.python.org/dev/peps/pep-0249/">DB-API 2.0</a>
         implementation (or sometimes one of several available) is required to
-        use each particular database. <a
-        href="/docs/dialects/">View Current DBAPI
-        Support</a></p>
+        use each particular database.
+        <a href="/docs/dialects/">View Current DBAPI Support</a></p>
     </dd>
 
 </dl>
