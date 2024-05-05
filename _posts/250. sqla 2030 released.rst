@@ -1,0 +1,14 @@
+---
+date: 2024/05/05 15:45:02
+title: SQLAlchemy 2.0.30 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.30 is now available.
+
+Release 2.0.30 includes a wide variety of small ORM and typing fixes.
+
+Links to the detailed changelog for 2.0.30 is at `Changelog </changelog/CHANGES_2_0_30>`_.
+
+SQLAlchemy 2.0.30 is available on the `Download Page </download.html>`_.
+
