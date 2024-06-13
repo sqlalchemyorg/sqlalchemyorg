@@ -4,9 +4,10 @@ date: 2011/09/19 12:01:00
 title: SQLAlchemy at PyGotham
 ---
 This is a talk given at PyGotham 2011 in New York City.   In this talk, I get into
-my latest thinking on SQLAlchemy's usage philosophy and cover a few architectural features 
-that I discuss in my upcoming chapter for the book `Architecture of Open Source Applications <http://www.aosabook.org/>`_.  
-Here's the slides in PDF Form: `SQLAlchemy - an Architectural Retrospective <http://techspot.zzzeek.org/files/2011/sqla_arch_retro.key.pdf>`_.  
+my latest thinking on SQLAlchemy's usage philosophy and cover a few architectural features
+that I discuss in my upcoming chapter for the book `Architecture of Open Source Applications <http://www.aosabook.org/>`_.
+Here's the slides in PDF Form: `SQLAlchemy - an Architectural Retrospective <http://techspot.zzzeek.org/files/2011/sqla_arch_retro.key.pdf>`_.
 
-The video is `available on blip.tv <http://blip.tv/pygotham_2011/sqlalchemy-an-architectural-retrospective-5583765>`_.
+## blip.tv is gone
+## The video is `available on blip.tv <http://blip.tv/pygotham_2011/sqlalchemy-an-architectural-retrospective-5583765>`_.
 
