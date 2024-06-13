@@ -8,6 +8,4 @@ my latest thinking on SQLAlchemy's usage philosophy and cover a few architectura
 that I discuss in my upcoming chapter for the book `Architecture of Open Source Applications <http://www.aosabook.org/>`_.
 Here's the slides in PDF Form: `SQLAlchemy - an Architectural Retrospective <http://techspot.zzzeek.org/files/2011/sqla_arch_retro.key.pdf>`_.
 
-## blip.tv is gone
-## The video is `available on blip.tv <http://blip.tv/pygotham_2011/sqlalchemy-an-architectural-retrospective-5583765>`_.
 
