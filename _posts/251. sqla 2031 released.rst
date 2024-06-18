@@ -1,0 +1,17 @@
+---
+date: 2024/06/18 15:45:02
+title: SQLAlchemy 2.0.31 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.31 is now available.
+
+Release 2.0.31 includes a variety of fixes in the ORM and SQL Core components.
+Fixes include adjustments to ORM eager loading strategies for certain use
+cases, fixes for the `filter()` feature of SQL functions, and preliminary
+support for Python 3.13.
+
+Links to the detailed changelog for 2.0.31 is at `Changelog </changelog/CHANGES_2_0_31>`_.
+
+SQLAlchemy 2.0.31 is available on the `Download Page </download.html>`_.
+
