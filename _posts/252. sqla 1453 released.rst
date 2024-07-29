@@ -1,0 +1,15 @@
+---
+date: 2024/07/29 15:45:02
+title: SQLAlchemy 1.4.53 Released
+author: Mike
+---
+
+SQLAlchemy 1.4.53 is now available.
+
+Release 1.4.53 includes a series of fixes backported from the 2.0 series,
+including repairing support for the upcoming Python 3.13 release.
+
+The complete changelog for 1.4.53 is at `Changelog </changelog/CHANGES_1_4_53>`_.
+
+SQLAlchemy 1.4.53 is available on the `Download Page </download.html>`_.
+
