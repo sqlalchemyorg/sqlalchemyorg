@@ -1,0 +1,15 @@
+---
+date: 2024/06/18 15:45:02
+title: SQLAlchemy 2.0.32 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.32 is now available.
+
+Release 2.0.32 has a wide variety of small fixes as well as some new use
+case additions for the oracledb dialect.
+
+Links to the detailed changelog for 2.0.32 is at `Changelog </changelog/CHANGES_2_0_32>`_.
+
+SQLAlchemy 2.0.32 is available on the `Download Page </download.html>`_.
+
