@@ -1,0 +1,15 @@
+---
+date: 2024/09/03 15:45:02
+title: SQLAlchemy 2.0.33 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.33 is now available.
+
+Release 2.0.33 has a variety of fixes including one that is fairly
+critical for use with the asyncpg PostgreSQL dialect.
+
+Links to the detailed changelog for 2.0.33 is at `Changelog </changelog/CHANGES_2_0_33>`_.
+
+SQLAlchemy 2.0.33 is available on the `Download Page </download.html>`_.
+
