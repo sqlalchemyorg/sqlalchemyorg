@@ -1,0 +1,17 @@
+---
+date: 2024/09/04 15:45:02
+title: SQLAlchemy 2.0.34 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.34 is now available.
+
+Just a day after release 2.0.33, release 2.0.34 fixes two small regressions
+that occurred as a result of release 2.0.33 which occurred in the
+ORM Declarative and SQLite reflection components.  Thanks to the users who
+reported these issues quickly and helped with patches.
+
+Links to the detailed changelog for 2.0.34 is at `Changelog </changelog/CHANGES_2_0_34>`_.
+
+SQLAlchemy 2.0.34 is available on the `Download Page </download.html>`_.
+
