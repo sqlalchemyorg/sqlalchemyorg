@@ -10,7 +10,7 @@ Release 2.0.35 continues to fix regressions due to the recent change to
 CHECK constraint reflection for SQLite, reverting the original change
 entirely until a better DDL parsing solution for SQLite can be proposed.
 
-Links to the detailed changelog for 2.0.35 is at `Changelog </changelog/CHANGES_2_0_34>`_.
+Links to the detailed changelog for 2.0.35 is at `Changelog </changelog/CHANGES_2_0_35>`_.
 
 SQLAlchemy 2.0.35 is available on the `Download Page </download.html>`_.
 
