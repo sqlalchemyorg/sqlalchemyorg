@@ -1,0 +1,15 @@
+---
+date: 2024/10/15 15:45:02
+title: SQLAlchemy 2.0.36 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.36 is now available.
+
+Release 2.0.36 has a large range of ORM fixes as well as fixes for the
+MySQL and PostgreSQL dialects.
+
+Links to the detailed changelog for 2.0.36 is at `Changelog </changelog/CHANGES_2_0_36>`_.
+
+SQLAlchemy 2.0.36 is available on the `Download Page </download.html>`_.
+
