@@ -1,0 +1,14 @@
+---
+date: 2025/01/09 15:45:02
+title: SQLAlchemy 2.0.37 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.37 is now available.
+
+Release 2.0.37 is the first release of 2025.
+
+Links to the detailed changelog for 2.0.37 is at `Changelog </changelog/CHANGES_2_0_37>`_.
+
+SQLAlchemy 2.0.37 is available on the `Download Page </download.html>`_.
+
