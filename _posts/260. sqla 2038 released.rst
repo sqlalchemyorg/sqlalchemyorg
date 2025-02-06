@@ -1,0 +1,15 @@
+---
+date: 2025/02/06 15:45:02
+title: SQLAlchemy 2.0.38 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.38 is now available.
+
+Release 2.0.38 has a series of bug fixes related to engine and SQL components,
+as well as aiosqlite, asyncpg and MySQL/MariaDB.
+
+Links to the detailed changelog for 2.0.38 is at `Changelog </changelog/CHANGES_2_0_38>`_.
+
+SQLAlchemy 2.0.38 is available on the `Download Page </download.html>`_.
+
