@@ -46,7 +46,7 @@ seeking or providing support.</em></p>
     <ul>
         <li>Development discussion continually occurs in the
             <a href="https://gitter.im/sqlalchemy/devel">sqlalchemy/devel</a> Gitter room
-            througout the week. Discussion in this room is intended for users
+            throughout the week. Discussion in this room is intended for users
             who are interested in contributing code, tests, documentation, or other
             developmental resources. This channel is the current preferred real-time
             discussion medium for SQLAlchemy contributors and hosts the
