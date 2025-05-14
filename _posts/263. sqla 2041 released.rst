@@ -1,0 +1,17 @@
+---
+date: 2025/05/14 15:45:02
+title: SQLAlchemy 2.0.41 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.41 is now available.
+
+Release 2.0.41 begins to support the upcoming Python 3.14 release, still in
+beta, introduces support for the Oracle ``VECTOR`` datatype introduced in
+Oracle Database 23ai, and includes fixes for other engine and dialect-specific
+issues.
+
+Links to the detailed changelog for 2.0.41 is at `Changelog </changelog/CHANGES_2_0_41>`_.
+
+SQLAlchemy 2.0.41 is available on the `Download Page </download.html>`_.
+
