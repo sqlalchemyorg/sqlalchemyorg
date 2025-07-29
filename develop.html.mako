@@ -33,9 +33,9 @@ these channels respect the <a href="/codeofconduct.html">Code of Conduct</a> whe
 seeking or providing support.</em></p>
 
 <ul>
-    <li>Github Discussions</li>
+    <li>GitHub Discussions</li>
     <ul>
-        <li>The <a href="/support.html#discussions">Github Discussions</a> forum is the most
+        <li>The <a href="/support.html#discussions">GitHub Discussions</a> forum is the most
             common - core devs assist users with issues of all kinds. All SQLAlchemy
             users and third-party library authors are encouraged to seek
             support here.

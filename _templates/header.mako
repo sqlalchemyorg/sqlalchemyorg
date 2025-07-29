@@ -68,7 +68,7 @@
                         <li><a class="dropdown-item" href="${site_base}/participate.html">Participate</a></li>
                         <li><a class="dropdown-item" href="${site_base}/develop.html">Develop</a></li>
                         <li><a class="dropdown-item" href="${site_base}/codeofconduct.html">Code of Conduct</a></li>
-                        <li><a class="dropdown-item" href="${bb_base}">Github</a></li>
+                        <li><a class="dropdown-item" href="${bb_base}">GitHub</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
