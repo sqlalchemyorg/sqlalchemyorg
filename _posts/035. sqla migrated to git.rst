@@ -8,7 +8,7 @@ The SQLAlchemy source repository has been migrated to Git.
 
 There are now twin repository mirrors for SQLAlchemy hosted
 at `Bitbucket <https://bitbucket.org/zzzeek/sqlalchemy>`_
-and `Github <https://github.com/zzzeek/sqlalchemy>`_.
+and `GitHub <https://github.com/zzzeek/sqlalchemy>`_.
 
 Rationale for the migration includes the following:
 
@@ -34,7 +34,7 @@ Rationale for the migration includes the following:
   for the purposes of collapsing changesets or manipulating branches
   is a first class and widely used feature in Git.
 
-* Largely due to the popularity of Github, Git has achieved a much
+* Largely due to the popularity of GitHub, Git has achieved a much
   higher userbase, to the degree where we regularly have users
   requesting us to move to Git so they can provide pull requests
   (as they don't want to learn Mercurial).
@@ -42,13 +42,13 @@ Rationale for the migration includes the following:
 SQLAlchemy's issue repository will remain hosted on Trac; while a
 Git repository can be mirrored in any number of places, an issue
 repository cannot (for now!  Can someone please create a distributed issue
-tracker?  Should be pretty doable, though getting Github/Bitbucket
+tracker?  Should be pretty doable, though getting GitHub/Bitbucket
 to use it, not so much...), so SQLAlchemy's long history of
 issue discussion remains maintained directly by the project.
 
 While we are favoring Bitbucket as the location of the "primary"
 push repository, users who wish to contribute should feel free
-to provide pull requests from either Bitbucket or Github; we should
+to provide pull requests from either Bitbucket or GitHub; we should
 be able to accommodate both.
 
 The SQLAlchemy Mercurial repository at http://hg.sqlalchemy.org/ will

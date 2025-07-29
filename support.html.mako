@@ -10,7 +10,7 @@ Support - SQLAlchemy
 
 <ul>
     <li><a href="#before">Before Requesting Support</a></li>
-    <li><a href="#discussions">Github Discussions</a></li>
+    <li><a href="#discussions">GitHub Discussions</a></li>
     <li><a href="#real-time">Real-time Channel</a></li>
     <li><a href="#professional">Professional Support with Tidelift</a></li>
 </ul>
@@ -26,16 +26,16 @@ constantly, sometimes dramatically so. Issues with the documentation may be
 reported as bugs (see <a href="/participate.html#bugs">reporting bugs</a>).
 Another approach is to search through the
 <a
-href="https://github.com/sqlalchemy/sqlalchemy/discussions">Github
+href="https://github.com/sqlalchemy/sqlalchemy/discussions">GitHub
 Discussions</a> forum which is fast becoming a primary informational resource.
 </p>
 
 <a name="discussions"></a>
-<h2>Github Discussions</h2>
+<h2>GitHub Discussions</h2>
 
 <p>SQLAlchemy and its related projects now offer support via the <a
-href="https://github.com/sqlalchemy/sqlalchemy/discussions">Github
-Discussions</a> link on the Github page for each project. This forum-style
+href="https://github.com/sqlalchemy/sqlalchemy/discussions">GitHub
+Discussions</a> link on the GitHub page for each project. This forum-style
 interface allows for discussions more or like that of a mailing list, but
 with better support for illustrating code samples and linking to issues.
 
@@ -84,7 +84,7 @@ single them out for individual assistance!  There are usually about 80-100
 members on at any given time - many of which can likely help with your issue.
 If your issue is genuinely more intricate and requiring of more skillful help
 than is currently available on IRC or Gitter, that's when it's time to post
-on the <a href="#discussions">Github Discussions forum</a>.</p>
+on the <a href="#discussions">GitHub Discussions forum</a>.</p>
 
 <a name="gitter"></a>
 <h3>Gitter Room</h3>

@@ -10,10 +10,10 @@ for all issue tracking and wiki pages.
 SQLAlchemy began using Bitbucket some years ago for pull requests, and
 then when the move to Git was made, Bitbucket became the originating point
 for the git main, which remains mirrored on SQLAlchemy's host as well as
-on Github.  However, the issue system has for SQLAlchemy's entire life remained
+on GitHub.  However, the issue system has for SQLAlchemy's entire life remained
 hosted on Trac.
 
-A move from Trac to another system like Github or Bitbucket was not feasable
+A move from Trac to another system like GitHub or Bitbucket was not feasable
 until Bitbucket added an advanced import/export feature which could maintain
 the full history, timestamps, and user accounts of the imported issues.
 When this feature was introduced, the SQLAlchemy project still was reluctant

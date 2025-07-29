@@ -12,7 +12,7 @@ under Python 3 all exceptions that are "chained" to another internal exception
 should have a "cause" linked, to avoid misleading stack traces.   The new
 feature has been tested that it does not create new reference cycles as is a
 common issue with Python 3 exception objects, however users should report
-any regressions encountered on the Github issue tracker.
+any regressions encountered on the GitHub issue tracker.
 
 See the changelog for descriptions of all bug fixes.
 

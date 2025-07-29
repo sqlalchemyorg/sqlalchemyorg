@@ -37,7 +37,7 @@ Participate - SQLAlchemy
 
 <a name="github"></a>
 <h2>GitHub</h2>
-<p>SQLAlchemy uses <a href="https://github.com">Github</a> for bug reporting
+<p>SQLAlchemy uses <a href="https://github.com">GitHub</a> for bug reporting
 and issue tracking, Discussions, Wiki pages, and public source code access.
 </p>
 
@@ -47,7 +47,7 @@ and issue tracking, Discussions, Wiki pages, and public source code access.
 <p>Bugs are reported using GitHub.</p>
 
 <p>We greatly prefer that usage problems are reported as
-<a href="https://github.com/sqlalchemy/sqlalchemy/discussions">Github Discussions</a>
+<a href="https://github.com/sqlalchemy/sqlalchemy/discussions">GitHub Discussions</a>
 first, and not as issues.
 As issues are identified from the description of the problem, SQLAlchemy developers
 will open issues to be fixed as needed.
@@ -109,7 +109,7 @@ emailing us first</strong>, so that proper disclosure steps may be taken.
 <p>SQLAlchemy places great emphasis on polite, thoughtful, and constructive communication between users and developers.
     Rudeness, personal insults, or brusque answers are never appropriate, even for users with unreasonable requests.   See our <a href="codeofconduct.html">Code of Conduct</a> for a full statement.
     We also try to ensure that
-    no message on Github Discussions goes unanswered, even if the answer is simply to politely direct the user towards
+    no message on GitHub Discussions goes unanswered, even if the answer is simply to politely direct the user towards
     the appropriate section of documentation.   The core SQLAlchemy developers would like to encourage all users to help
     with this task - if you see a very basic question sitting on the list for a few days, that's us hoping you'll respond
     to it !  You have our permission :).</p>
