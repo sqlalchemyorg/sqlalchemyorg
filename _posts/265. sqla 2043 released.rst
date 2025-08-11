@@ -1,0 +1,17 @@
+---
+date: 2025/08/11 15:45:02
+title: SQLAlchemy 2.0.43 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.43 is now available.
+
+Release 2.0.43 includes a fix for a regression introduced in the PostgreSQL
+dialect in 2.0.42, some ORM fixes and a new enhancement to "DBAPI autocommit"
+mode that should be useful in particular for MySQL/MariaDB environments that
+make use of this feature.
+
+Links to the detailed changelog for 2.0.43 is at `Changelog </changelog/CHANGES_2_0_43>`_.
+
+SQLAlchemy 2.0.43 is available on the `Download Page </download.html>`_.
+
