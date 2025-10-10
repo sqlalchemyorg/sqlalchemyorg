@@ -1,0 +1,16 @@
+---
+date: 2025/10/10 15:45:02
+title: SQLAlchemy 2.0.44 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.44 is now available.
+
+Release 2.0.44 comes as work on the 2.1 series continues with selected
+issues and enhancements backported.   Of note is this is the first release
+to be tested on free threaded Python versions.
+
+Links to the detailed changelog for 2.0.44 is at `Changelog </changelog/CHANGES_2_0_44>`_.
+
+SQLAlchemy 2.0.44 is available on the `Download Page </download.html>`_.
+
