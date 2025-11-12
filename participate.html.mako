@@ -103,7 +103,7 @@ emailing us first</strong>, so that proper disclosure steps may be taken.
 <h2>User Assistance</h2>
 <p>SQLAlchemy always needs people to help answer questions, particularly from new users.</p>
 
-<p>For links to current IRC / chat areas, see <a href="/support.html#real-time">Real-time channels</a>.</p>
+<p>For links to current chat areas, see <a href="/support.html#real-time">Real-time channels</a>.</p>
 
 
 <p>SQLAlchemy places great emphasis on polite, thoughtful, and constructive communication between users and developers.

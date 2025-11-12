@@ -11,8 +11,7 @@ Support - SQLAlchemy
 <ul>
     <li><a href="#before">Before Requesting Support</a></li>
     <li><a href="#discussions">GitHub Discussions</a></li>
-    <li><a href="#real-time">Real-time Channel</a></li>
-    <li><a href="#professional">Professional Support with Tidelift</a></li>
+    <li><a href="#real-time">Real-time Channels</a></li>
 </ul>
 
 <a name="before"></a> <p>Before requesting support, please try to make use of
@@ -71,58 +70,12 @@ research and thoughtfully describe the issue, you've earned support from us
 
 
 <a name="real-time"></a>
-<h2>Real-time Channels: Gitter, IRC</h2>
-
-<p>There are several real-time options for support.</p>
-
-<p><em>The Developers of SQLAlchemy kindly request all people participating in
-these channels respect the <a href="/codeofconduct.html">Code of Conduct</a> when
-seeking or providing support.</em></p>
-
-<p>Core developers are sometimes present on these channels, but please do not
-single them out for individual assistance!  There are usually about 80-100
-members on at any given time - many of which can likely help with your issue.
-If your issue is genuinely more intricate and requiring of more skillful help
-than is currently available on IRC or Gitter, that's when it's time to post
-on the <a href="#discussions">GitHub Discussions forum</a>.</p>
-
-<a name="gitter"></a>
-<h3>Gitter Room</h3>
+<h2>Real-time Channels: Gitter</h2>
 
 <p>The <a href="https://gitter.im/sqlalchemy/community">sqlalchemy/community</a>
 Gitter room is available for real-time support.  There are usually a handful of
 SQLAlchemy users and developers present and willing to assist.</p>
 
-<p>Unlike IRC, Gitter offers a browsable public history - so user are not required
-to be constantly logged-in and can review any conversations they have missed.</p>
-
-
-<a name="irc"></a><!-- keep #irc for legacy links -->
-<h3>IRC Channel</h3>
-<p>A popular support resource is the IRC channel.   In this forum, users of all
-skill levels can ask short questions, post pastes of code, and discuss
-techniques among other developers who happen to be present.   The usual rules
-of IRC etiquette apply here.  Users who've put
-some effort into understanding their problem ahead of time will tend to get
-better results.</p>
-
-<p>The IRC channel is on the <a href="https://libera.chat/">Libera</a> network as <code>#sqlalchemy</code>.</p>
-
-<a name="professional"></a>
-<h2>Professional support with Tidelift</h2>
-
-<div class="tidelift-support">
-
-<a href="https://tidelift.com/subscription/pkg/pypi-sqlalchemy?utm_source=pypi-sqlalchemy&utm_medium=referral&utm_campaign=website"><img src="/img/tidelift_sm.png"/></a>
-
-<p>Professional support for SQLAlchemy is available as part of the <a
-href="https://tidelift.com/subscription/pkg/pypi-sqlalchemy?utm_source=pypi-sqlalchemy&utm_medium=referral&utm_campaign=website">Tidelift
-Subscription</a>. Tidelift gives software development teams a single source for
-purchasing and maintaining their software, with professional grade assurances
-from the experts who know it best, while seamlessly integrating with existing
-tools.</p>
-
-</div>
 
 <div class="d-flex">
     <span class="flex-grow-1"></span>
