@@ -1,0 +1,13 @@
+---
+date: 2025/12/09 15:45:02
+title: SQLAlchemy 2.0.45 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.45 is now available.
+
+
+Links to the detailed changelog for 2.0.45 is at `Changelog </changelog/CHANGES_2_0_45>`_.
+
+SQLAlchemy 2.0.45 is available on the `Download Page </download.html>`_.
+
