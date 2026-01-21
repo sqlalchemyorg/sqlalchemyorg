@@ -30,13 +30,12 @@ pypi_url_json = "https://pypi.python.org/pypi/SQLAlchemy/json"
 # eol, current, beta
 # eol, current, development
 release_milestones = {
-    'development': '2.1',
+    'beta': '2.1',
     'current': '2.0',
-    'maintenance': '1.4',
-    'eol': '1.3',
+    'eol': '1.4',
 }
 
-lowest_doc_version = '1.3'
+lowest_doc_version = '1.4'
 eol = release_milestones['eol']
 
 # this is the lowest doc version for which
