@@ -1,0 +1,17 @@
+---
+date: 2026/01/21 15:45:02
+title: SQLAlchemy 2.0.46 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.46 is now available.
+
+Release 2.0.46 includes typing improvements for ORM mapped classes and aliased
+entities in result row mappings, several PostgreSQL dialect fixes including
+corrections to JSONB operators and improved unicode support in foreign key
+reflection, and enhancements to the MariaDB, SQLite, and MSSQL dialects.
+
+Links to the detailed changelog for 2.0.46 is at `Changelog </changelog/CHANGES_2_0_46>`_.
+
+SQLAlchemy 2.0.46 is available on the `Download Page </download.html>`_.
+
