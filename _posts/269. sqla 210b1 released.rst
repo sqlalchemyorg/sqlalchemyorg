@@ -1,0 +1,66 @@
+---
+date: 2026/01/21 15:45:02
+title: SQLAlchemy 2.1.0b1 Released
+author: Mike
+---
+
+The first beta release of the **SQLAlchemy 2.1** series is now available.
+
+Nearly two years in development, the 2.1 series builds upon the new Python
+typing-oriented architecture of SQLAlchemy 2.0, introducing a range of
+enhancements and new capabilities across both Core and ORM components, with an
+emphasis on newer Python idioms such as dataclasses, improved pep-484 typing,
+template strings, and continued accommodations for Python free threading.
+
+Key improvements in SQLAlchemy 2.1 include:
+
+* **Python 3.14 Template String Support** - A new ``tstring()`` construct
+  works similarly to the ``text()`` construct, but works with the new
+  ``t''`` syntax added in Python 3.14+, allowing for automatic generation
+  of bound parameters from a fully inline SQL string expression.
+
+* **CREATE VIEW and CREATE TABLE AS Support** - New DDL constructs enable
+  creation of views and table-as-select operations
+
+* **pep-646 typing for SQL SELECT statements, result sets, rows** - The ``Tuple[]``
+  seen in type annotations for selectable statements and results has been
+  replaced by the use of pep-646 ``Unpack`` directly, representing heterogeneous
+  rows and supporting constructs directly without the need to manually
+  unpack results from a tuple for typing of individual unpacked values to work.
+
+* **Refined Dataclass Mapping** - ORM mapped dataclasses no longer populate
+  implicit defaults in ``__dict__``, resolving workflow issues where foreign
+  key values would incorrectly override relationship attributes
+
+* **Default driver updates for PostgreSQL, Oracle** - The default driver for
+  ``postgresql://`` URLs is now ``psycopg``, replacing ``psycopg2``, and the
+  default driver for ``oracle://`` URLs is now ``oracledb``, replacing
+  ``cx_oracle``.  This is the first release in SQLAlchemy's history to revise
+  these default drivers.
+
+* **Support for monotonic server side functions such as PostgreSQL's uuidv7()
+  in batched INSERTs** - SQLAlchemy's "insertmanyvalues" feature introduced
+  in version 2.0 allowed dramatic improvements for INSERT statements as used
+  by the ORM, when primary key values needed to be fetched from newly inserted
+  rows without executing row-at-a-time.   Release 2.1 adds support for the use
+  of monotonically increasing server side functions to be integrated within
+  this system, with PG's uuidv7() construct as the current example.
+
+* **Greenlet is a fully optional dependency** - SQLAlchemy's asyncio support
+  in version 2.1 remains dependent on greenlet to switch between asyncio and
+  synchronous internal logic.   However, as greenlet continues to have sporadic
+  compatibility issues when new Python versions are released, it no longer
+  installs automatically and must be installed separately, typically using the
+  ``sqlalchemy[asyncio]`` target.   This change also supports Python free
+  threading, as greenlet as of this writing is not yet compatible with
+  free-threaded Python builds
+
+SQLAlchemy 2.1 includes **over 90 individual documented changes**, so be sure
+to check out not just the `What's New in SQLAlchemy 2.1?
+<https://docs.sqlalchemy.org/en/21/changelog/migration_21.html>`_ migration
+guide, but the detailed changelog at `Changelog </changelog/CHANGES_2_1_0b1>`_
+as well.
+
+SQLAlchemy 2.1.0b1 by naming convention is a beta release, so only installs
+with pip if the ``--pre`` flag is included. Links to pypi for
+SQLAlchemy 2.1.0b1 are available on the `Download Page </download.html>`_.
