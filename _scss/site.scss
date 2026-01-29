@@ -13,6 +13,7 @@ $narrow-max-screen-width: 980px;
 :root {
     --bs-font-sans-serif: "Source Sans Pro", arial, sans-serif;
     --bs-body-color: #110000;
+    scroll-behavior: auto !important;
 }
 
 .row {
