@@ -1,0 +1,16 @@
+---
+date: 2026/03/02 15:45:02
+title: SQLAlchemy 2.0.48 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.48 is now available.
+
+Release 2.0.48 fixes a single potential concurrency issue which could impact
+custom "on connect" routines, particularly those used by the SQL Server
+dialect.
+
+Links to the detailed changelog for 2.0.48 is at `Changelog </changelog/CHANGES_2_0_47>`_.
+
+SQLAlchemy 2.0.48 is available on the `Download Page </download.html>`_.
+
