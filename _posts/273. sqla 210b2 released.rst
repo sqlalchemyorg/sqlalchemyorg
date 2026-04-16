@@ -1,0 +1,25 @@
+---
+date: 2026/04/16 15:45:02
+title: SQLAlchemy 2.1.0b2 Released
+author: Mike
+---
+
+The second beta release of the **SQLAlchemy 2.1** series is now available.
+
+Release 2.1.0b2 adds new support for the **mssql-python** DBAPI, a driver
+for Microsoft SQL Server produced directly by Microsoft.   A few other features
+and bug fixes are also introduced.
+
+Depending on feedback for release 2.1.0b2, the next release may be 2.1.0 final,
+unless further issues that can benefit from beta testing are added.
+
+
+SQLAlchemy 2.1 includes **over 90 individual documented changes**, so be sure
+to check out not just the `What's New in SQLAlchemy 2.1?
+<https://docs.sqlalchemy.org/en/21/changelog/migration_21.html>`_ migration
+guide, but the detailed changelog at `Changelog </changelog/CHANGES_2_1_0b2>`_
+as well.
+
+SQLAlchemy 2.1.0b2 by naming convention is a beta release, so only installs
+with pip if the ``--pre`` flag is included. Links to pypi for
+SQLAlchemy 2.1.0b2 are available on the `Download Page </download.html>`_.
