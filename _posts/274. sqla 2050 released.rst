@@ -1,0 +1,12 @@
+---
+date: 2026/05/24 15:45:02
+title: SQLAlchemy 2.0.50 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.50 is now available.
+
+Links to the detailed changelog for 2.0.50 is at `Changelog </changelog/CHANGES_2_0_50>`_.
+
+SQLAlchemy 2.0.50 is available on the `Download Page </download.html>`_.
+
