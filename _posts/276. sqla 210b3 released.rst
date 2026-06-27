@@ -14,32 +14,31 @@ targeting end of summer 2026**.
 Highlights of this release include:
 
 * **ORM Loading Performance Improvements** - ORM result row fetching now
-  processes rows as plain tuples rather than constructing :class:`.Row`
+  processes rows as plain tuples rather than constructing ``Row``
   objects, since ORM loaders use position-based access and do not require
-  the :class:`.Row` interface.  Additional optimizations were made to
-  :func:`_orm.selectinload` and :func:`_orm.subqueryload` result handling.
+  the ``Row`` interface.  Additional optimizations were made to
+  ``selectinload`` and ``subqueryload`` result handling.
   Benchmarks show a **3-16% improvement** in ORM entity load times depending
   on query shape.  Thanks to Oliver Parker for this work.
 
-* **selectinload omit_join for Many-to-Many** - The :func:`.selectinload`
+* **selectinload omit_join for Many-to-Many** - The ``selectinload``
   loader strategy now applies the ``omit_join`` optimization automatically
   for many-to-many non-self-referential relationships, selecting from the
   secondary (association) table directly rather than joining back to the
   parent entity, reducing the number of JOINs in the emitted SELECT.
 
-* **SQLite JSONB Type** - A new :class:`_sqlite.JSONB` type supports
+* **SQLite JSONB Type** - A new ``JSONB`` type supports
   SQLite's binary JSON storage format, available as of SQLite version 3.45.0.
   Values are stored and retrieved using the ``jsonb()`` / ``json()`` SQL
   functions while Python-side behavior remains identical to
-  :class:`_sqlite.JSON`.  Thanks to Shamil Abdulaev.
+  ``JSON``.  Thanks to Shamil Abdulaev.
 
-* **selectinload chunksize Parameter** - A new
-  :paramref:`.selectinload.chunksize` parameter allows configuring the number
-  of primary keys sent per IN clause when loading relationships, giving
-  applications control over query size for very large result sets.  Thanks to
-  bekapono.
+* **selectinload chunksize Parameter** - A new ``chunksize`` parameter on
+  ``selectinload`` allows configuring the number of primary keys sent per IN
+  clause when loading relationships, giving applications control over query
+  size for very large result sets.  Thanks to bekapono.
 
-* **Delete.using() for Multi-Table DELETE** - A new :meth:`_sql.Delete.using`
+* **Delete.using() for Multi-Table DELETE** - A new ``Delete.using()``
   method allows explicit FROM expressions to be rendered in backend-specific
   multiple-table DELETE forms, including MySQL/MariaDB ``DELETE .. USING``.
   Thanks to cjc0013.
@@ -51,11 +50,10 @@ Highlights of this release include:
   Oracle dialects.  Thanks to Gaurav Sharma.
 
 * **Session execution_options for Unit of Work Core SQL** - Session-level
-  :paramref:`_orm.Session.execution_options` now take effect for Core-level
-  SQL emitted by unit of work operations, in addition to ORM statement
-  executions.  This allows options such as
-  :paramref:`_engine.Connection.execution_options.schema_translate_map` to
-  be applied to a :class:`.Session` globally.
+  ``execution_options`` now take effect for Core-level SQL emitted by unit
+  of work operations, in addition to ORM statement executions.  This allows
+  options such as ``schema_translate_map`` to be applied to a ``Session``
+  globally.
 
 SQLAlchemy 2.1 includes **over 90 individual documented changes** across all
 betas, so be sure to check out not just the `What's New in SQLAlchemy 2.1?
