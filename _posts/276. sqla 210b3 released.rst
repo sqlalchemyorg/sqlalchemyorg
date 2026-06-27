@@ -1,0 +1,68 @@
+---
+date: 2026/06/27 15:45:02
+title: SQLAlchemy 2.1.0b3 Released
+author: Mike
+---
+
+The third beta release of the **SQLAlchemy 2.1** series is now available.
+
+Release 2.1.0b3 brings a focused set of new features, performance improvements,
+and bug fixes.  With no major regressions reported against 2.1.0b2, we are
+hoping this release will be the last beta before a **final 2.1.0 release,
+targeting end of summer 2026**.
+
+Highlights of this release include:
+
+* **ORM Loading Performance Improvements** - ORM result row fetching now
+  processes rows as plain tuples rather than constructing :class:`.Row`
+  objects, since ORM loaders use position-based access and do not require
+  the :class:`.Row` interface.  Additional optimizations were made to
+  :func:`_orm.selectinload` and :func:`_orm.subqueryload` result handling.
+  Benchmarks show a **3-16% improvement** in ORM entity load times depending
+  on query shape.  Thanks to Oliver Parker for this work.
+
+* **selectinload omit_join for Many-to-Many** - The :func:`.selectinload`
+  loader strategy now applies the ``omit_join`` optimization automatically
+  for many-to-many non-self-referential relationships, selecting from the
+  secondary (association) table directly rather than joining back to the
+  parent entity, reducing the number of JOINs in the emitted SELECT.
+
+* **SQLite JSONB Type** - A new :class:`_sqlite.JSONB` type supports
+  SQLite's binary JSON storage format, available as of SQLite version 3.45.0.
+  Values are stored and retrieved using the ``jsonb()`` / ``json()`` SQL
+  functions while Python-side behavior remains identical to
+  :class:`_sqlite.JSON`.  Thanks to Shamil Abdulaev.
+
+* **selectinload chunksize Parameter** - A new
+  :paramref:`.selectinload.chunksize` parameter allows configuring the number
+  of primary keys sent per IN clause when loading relationships, giving
+  applications control over query size for very large result sets.  Thanks to
+  bekapono.
+
+* **Delete.using() for Multi-Table DELETE** - A new :meth:`_sql.Delete.using`
+  method allows explicit FROM expressions to be rendered in backend-specific
+  multiple-table DELETE forms, including MySQL/MariaDB ``DELETE .. USING``.
+  Thanks to cjc0013.
+
+* **SQL Server Bulk Reflection** - The SQL Server dialect now implements
+  native multi-table reflection methods, issuing a single bulk query per
+  object type against the ``sys.*`` catalog views rather than a per-table
+  round trip loop, matching the pattern already used by the PostgreSQL and
+  Oracle dialects.  Thanks to Gaurav Sharma.
+
+* **Session execution_options for Unit of Work Core SQL** - Session-level
+  :paramref:`_orm.Session.execution_options` now take effect for Core-level
+  SQL emitted by unit of work operations, in addition to ORM statement
+  executions.  This allows options such as
+  :paramref:`_engine.Connection.execution_options.schema_translate_map` to
+  be applied to a :class:`.Session` globally.
+
+SQLAlchemy 2.1 includes **over 90 individual documented changes** across all
+betas, so be sure to check out not just the `What's New in SQLAlchemy 2.1?
+<https://docs.sqlalchemy.org/en/21/changelog/migration_21.html>`_ migration
+guide, but the detailed changelog at `Changelog </changelog/CHANGES_2_1_0b3>`_
+as well.
+
+SQLAlchemy 2.1.0b3 by naming convention is a beta release, so only installs
+with pip if the ``--pre`` flag is included. Links to pypi for
+SQLAlchemy 2.1.0b3 are available on the `Download Page </download.html>`_.
