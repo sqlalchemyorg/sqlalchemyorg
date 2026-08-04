@@ -43,7 +43,7 @@ ${release_history[release_milestones[milestone]]['major_version']}</%def>
 % if 'beta' in release_milestones:
     <%tools:vertical_nav_item url="#beta" url_text="Beta release (${capture(major_version, 'beta')})"/>
 % endif
-    <%tools:vertical_nav_item url="#development" url_text="Develoment Access"/>
+    <%tools:vertical_nav_item url="#development" url_text="Development Access"/>
     <%tools:vertical_nav_item url="#license" url_text="License"/>
     <%tools:vertical_nav_item url="#versions" url_text="Version Numbering"/>
     <%tools:vertical_nav_item url="#relstatus" url_text="Release Status"/>
