@@ -1,0 +1,34 @@
+---
+date: 2026/08/11 15:45:02
+title: SQLAlchemy 2.0.52 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.52 is now available.
+
+This is a larger than usual maintenance release with fixes across the ORM,
+Core, and dialects.  Items of note include:
+
+* **Python 3.15 support** - Python 3.15 is now supported and tested.
+
+* **Literal execute processor audit** - The test suite now exercises literal
+  execute processors, used when ``bindparam(..., literal_execute=True)`` is
+  given, across all datatypes and dialects to ensure string input is either
+  rejected or correctly escaped.  Fixes were made to SQL Server ``Uuid``
+  rendering, the PostgreSQL ``JSONPATH`` type, and the ``Float`` / ``Numeric``
+  family of types.
+
+* **ORM UPDATE with synchronize_session="fetch"** - Fixed a result column
+  misalignment where rows returned by ``.returning()`` could be delivered under
+  incorrect keys, a problem most likely to appear under concurrent workloads.
+
+* **Wildcard loader options and pickling** - Fixed failures unpickling ORM
+  objects loaded with wildcard-based loader options such as ``load_only()`` or
+  ``raiseload("*")``, which could raise ``KeyError`` or ``IndexError`` when the
+  unpickling process had not yet constructed a matching loader path.  This is
+  most likely to be seen with the ``forkserver`` multiprocessing start method,
+  which became the default on POSIX platforms as of Python 3.14.
+
+Links to the detailed changelog for 2.0.52 is at `Changelog </changelog/CHANGES_2_0_52>`_.
+
+SQLAlchemy 2.0.52 is available on the `Download Page </download.html>`_.
