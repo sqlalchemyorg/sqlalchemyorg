@@ -1,0 +1,73 @@
+---
+date: 2026/08/31 15:45:02
+title: SQLAlchemy 2.1.0rc1 Released
+author: Mike
+---
+
+The first release candidate of the **SQLAlchemy 2.1** series is now available.
+
+Version 2.1.0rc1 is hoped to be very close to the final 2.1.0 release, which is
+anticipated **within a week or so**, barring newly reported issues that would
+call for additional release candidates.  Along with a broad set of bug fixes,
+this release includes a small number of remaining behavioral and platform
+changes that were held for the end of the beta cycle.
+
+Highlights of this release include:
+
+* **Python 3.11 is now the minimum Python version** - Support for Python 3.10
+  is dropped, in addition to the drop of Python 3.9, 3.8 and 3.7 that took place
+  in 2.1.0b1.   Python 3.10 reaches EOL in October of 2026, so dropping support
+  now gives the SQLAlchemy 2.1 series an extra year of space to remain on
+  current Python versions.
+
+* **Faster SQL cache key generation** - The traversal that produces the cache
+  key for a SQL construct has been moved into the Cython extension modules, with
+  the set of attributes participating in the key, and the handler for each one,
+  now resolved once at class setup time rather than being rediscovered per
+  attribute, per cache key.  Benchmarks across a range of Core and ORM
+  statements show cache key generation running approximately **1.5 to 2.2 times
+  faster** with the Cython extensions compiled, and 1.05 to 1.2 times faster in
+  a pure Python build, with the generated cache keys themselves unchanged.
+
+* **Fewer round trips for MetaData.create_all()** - A new reflection method
+  ``Inspector.has_multi_table()`` checks for the existence of many tables at
+  once, implemented natively for the PostgreSQL, Oracle and SQL Server dialects
+  and available to third party dialects as well.  ``MetaData.create_all()`` now
+  makes use of this method, greatly reducing the number of round trips when
+  creating a large schema.
+
+* **Deterministic loader options for objects loaded at multiple paths** - Fixed
+  a long-standing issue where an object loaded at more than one path within a
+  single query, such as when a chain of ``joinedload()`` options leads back to
+  an entity also loaded at the top level, would retain the loader options of
+  whichever path the query happened to see last, varying with the loader
+  strategy in use.  As these options are applied to all subsequent lazy loading
+  for that object, an otherwise identical set of options could behave
+  differently.  The shallowest path is now favored, which is deterministic.
+
+* **Readable stack traces for runtime-generated code** - Python source generated
+  at runtime is now compiled against a descriptive filename registered with the
+  ``linecache`` module, so that generated functions on a stack trace render with
+  their source rather than as an opaque ``File "<string>"`` frame, and tools such
+  as ``pdb`` and ``inspect.getsource()`` work with them.
+
+* **Multiple ON CONFLICT clauses for SQLite** - The SQLite ``insert()``
+  construct now accepts more than one ``on_conflict_do_update()`` /
+  ``on_conflict_do_nothing()`` clause against the same statement, rendering in
+  the order established.  Pull request courtesy Diemid Berozkin.
+
+Applications that have not yet tested within the 2.1 series should make sure
+their requirements are pinned within the 2.0 series, as ``pip install`` will
+begin fetching 2.1 by default once the final release occurs.  Upgrades from
+2.0.x to 2.1.x should always be tested.
+
+SQLAlchemy 2.1 includes **over 150 individual documented changes** across all
+betas and this release candidate, so be sure to check out not just the `What's
+New in SQLAlchemy 2.1?
+<https://docs.sqlalchemy.org/en/21/changelog/migration_21.html>`_ migration
+guide, but the detailed changelog at `Changelog </changelog/CHANGES_2_1_0rc1>`_
+as well.
+
+SQLAlchemy 2.1.0rc1 by naming convention is a prerelease, so only installs with
+pip if the ``--pre`` flag is included.  Links to pypi for SQLAlchemy 2.1.0rc1
+are available on the `Download Page </download.html>`_.
