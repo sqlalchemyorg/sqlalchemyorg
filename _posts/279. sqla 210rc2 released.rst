@@ -1,0 +1,31 @@
+---
+date: 2026/09/08 15:45:02
+title: SQLAlchemy 2.1.0rc2 Released
+author: Mike
+---
+
+A second release candidate for the **SQLAlchemy 2.1** series is now available.
+
+Version 2.1.0rc2 is a small release that addresses issues reported against
+2.1.0rc1, most notably a series of memory growth fixes.  The final **2.1.0**
+release is anticipated next, barring any new surprises.
+
+This release includes fixes and improvements to SQLite table reflection,
+an ORM related change which re-targets the ``__declare_first__()`` and
+``__declare_last__()`` hooks to make use of the new ``RegistryEvents``
+feature, and also adds new visiblity into the ``Session.binds`` and
+``AsyncSession.binds`` collections.
+
+Applications that have not yet tested within the 2.1 series should make sure
+their requirements are pinned within the 2.0 series, as ``pip install`` will
+begin fetching 2.1 by default once the final release occurs.  Upgrades from
+2.0.x to 2.1.x should always be tested.
+
+Be sure to check out the `What's New in SQLAlchemy 2.1?
+<https://docs.sqlalchemy.org/en/21/changelog/migration_21.html>`_ migration
+guide, as well as the detailed changelog at `Changelog
+</changelog/CHANGES_2_1_0rc2>`_.
+
+SQLAlchemy 2.1.0rc2 by naming convention is a prerelease, so only installs with
+pip if the ``--pre`` flag is included.  Links to pypi for SQLAlchemy 2.1.0rc2
+are available on the `Download Page </download.html>`_.
