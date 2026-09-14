@@ -1,0 +1,15 @@
+---
+date: 2026/09/14 15:45:02
+title: SQLAlchemy 2.0.53 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.53 is now available.
+
+Release 2.0.53 releases a series of bugfixes are also to be released
+as part of version 2.1.0; some of these fixes have already been released
+in 2.1.0rc1 or 2.1.0rc2.
+
+Links to the detailed changelog for 2.0.53 is at `Changelog </changelog/CHANGES_2_0_53>`_.
+
+SQLAlchemy 2.0.53 is available on the `Download Page </download.html>`_.
