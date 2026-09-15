@@ -1,0 +1,17 @@
+---
+date: 2026/09/15 15:45:02
+title: SQLAlchemy 2.0.54 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.54 is now available.
+
+Release 2.0.54 repairs an issue in the build process where the Python 3.14t
+binary wheels were both not building successfully, while at the same time
+preventing free-threading from being enabled if the Cython extensions
+were built manually.  3.14t wheels should now be available and will be
+fully compatible with free-threading enabled.
+
+Links to the detailed changelog for 2.0.54 is at `Changelog </changelog/CHANGES_2_0_54>`_.
+
+SQLAlchemy 2.0.54 is available on the `Download Page </download.html>`_.
