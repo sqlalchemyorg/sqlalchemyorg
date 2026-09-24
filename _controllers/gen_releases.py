@@ -30,8 +30,8 @@ pypi_url_json = "https://pypi.python.org/pypi/SQLAlchemy/json"
 # eol, current, beta
 # eol, current, development
 release_milestones = {
-    'beta': '2.1',
-    'current': '2.0',
+    'current': '2.1',
+    'maintenance': '2.0',
     'eol': '1.4',
 }
 

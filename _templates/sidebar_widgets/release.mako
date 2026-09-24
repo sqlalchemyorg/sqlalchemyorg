@@ -33,7 +33,7 @@
 % if pypi:
 <div class="pypi-badges">
 <a href="https://pypi.org/project/sqlalchemy" alt="PyPI"><img src="https://img.shields.io/pypi/v/sqlalchemy"></a>
-<a href="https://pypi.org/project/sqlalchemy" alt="PyPI - Downloads"><img src="https://img.shields.io/pypi/dm/sqlalchemy"></a>
+<a href="https://pepy.tech/project/sqlalchemy" alt="PyPI - Downloads"><img src="https://static.pepy.tech/badge/sqlalchemy/month"></a>
 <a href="https://pypi.org/project/sqlalchemy" alt="PyPI - Python Version"><img src="https://img.shields.io/pypi/pyversions/sqlalchemy"></a>
 </div>
 % endif

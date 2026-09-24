@@ -1,0 +1,54 @@
+---
+date: 2026/09/24 15:45:02
+title: SQLAlchemy 2.1.0 Released
+author: Mike
+---
+
+SQLAlchemy 2.1.0, the first production release of **SQLAlchemy 2.1**, is
+now available.
+
+With this release, the default version of SQLAlchemy that will install
+when one runs ``pip install sqlalchemy`` will be version 2.1.
+
+Release 2.1 is decidedly not as dramatic of a change as the original 2.0
+release was, and upgrade paths are not expected to be difficult.  However,
+the release still has a series of "hard" changes that may require adjustments
+in workflow.
+
+Major changes include:
+
+* **The greenlet dependency, used for all asyncio features, no longer installs
+  by default**.  Use ``pip install sqlalchemy[asyncio]`` to include this
+  dependency.
+
+* **New default drivers for PostgreSQL, Oracle** - if using URLs of the form
+  ``postgresql://`` or ``oracle://`` without a specific driver name, the
+  driver selected will be ``psycopg`` (also known as ``psycopg3``) and
+  ``oracledb``, respectively.
+
+* **Python 3.11 is the minimum version** - Python 3.10 is set to be EOL in a
+  little over a week.  Supporting EOL Python versions has become much more
+  difficult over the years as reliance on third party tools like pip, nox,
+  Github Actions, etc. push out older Python versions aggressively.
+
+Marquee-level features added include:
+
+* **Support for T-Strings** - A variant of the ``text()`` construct called
+  ``tstring()`` allows for dynamically indicated bind parameters in plain
+  string SQL statements
+
+* **CREATE VIEW and CREATE TABLE AS support** - this finally adds the ``CreateView``
+  strucutre referred to in recipes for many years
+
+* **Support for Microsoft's SQL Server Driver** - working closely with the Microsoft
+  team, SQLAlchemy 2.1 introduces support for the ``mssql-python`` driver.
+
+The list of changes and improvements is quite long as the SQLAlchemy 2.1 release
+is three years after the 2.0 release.
+
+Be sure to check out the `What's New in SQLAlchemy 2.1?
+<https://docs.sqlalchemy.org/en/21/changelog/migration_21.html>`_ migration
+guide, as well as the detailed changelog at `Changelog
+</changelog/CHANGES_2_1_0>`_.
+
+SQLAlchemy 2.1.0 is available on the `Download Page </download.html>`_.
