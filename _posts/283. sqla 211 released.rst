@@ -1,0 +1,19 @@
+---
+date: 2026/09/25 15:45:02
+title: SQLAlchemy 2.1.1 Released
+author: Mike
+---
+
+SQLAlchemy 2.1.1 is now available.
+
+Release 2.1.1 contains a single fix, addressing the ``uv`` installer's
+stricter handling of ``pyproject.toml`` compared to tools like ``pip``;
+specifically, ``uv`` rejects extra names that are not normalized per
+PEP 685. The change removes a set of legacy "underscore" extra names that
+were previously maintained for backwards compatibility with applications
+that may have been relying on them.
+
+The detailed changelog for 2.1.1 is at `Changelog </changelog/CHANGES_2_1_1>`_.
+
+SQLAlchemy 2.1.1 is available on the `Download Page </download.html>`_.
+
