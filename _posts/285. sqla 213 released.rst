@@ -1,0 +1,14 @@
+---
+date: 2026/10/02 15:45:02
+title: SQLAlchemy 2.1.3 Released
+author: Mike
+---
+
+SQLAlchemy 2.1.3 is now available.
+
+Release 2.1.3 fixes two more smaller regressions that came in since yesterday.
+
+The detailed changelog for 2.1.3 is at `Changelog </changelog/CHANGES_2_1_3>`_.
+
+SQLAlchemy 2.1.3 is available on the `Download Page </download.html>`_.
+
