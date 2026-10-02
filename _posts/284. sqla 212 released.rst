@@ -1,0 +1,17 @@
+---
+date: 2026/10/02 15:45:02
+title: SQLAlchemy 2.1.2 Released
+author: Mike
+---
+
+SQLAlchemy 2.1.2 is now available.
+
+Release 2.1.2 fixes regressions that have been reported since the release
+as well as makes one adjustment to the new t-string feature.    This release
+includes a critical regression fix to the ``selectinload()`` loader strategy;
+all users of the new 2.1 series are encouraged to upgrade to 2.1.2.
+
+The detailed changelog for 2.1.2 is at `Changelog </changelog/CHANGES_2_1_2>`_.
+
+SQLAlchemy 2.1.2 is available on the `Download Page </download.html>`_.
+
