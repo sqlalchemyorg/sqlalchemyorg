@@ -1,0 +1,19 @@
+---
+date: 2026/10/16 15:45:02
+title: SQLAlchemy 2.1.5 Released
+author: Mike
+---
+
+SQLAlchemy 2.1.5 is now available.
+
+Release 2.1.5 contains additional fixes for asyncio task cancellation. As
+mentioned in the release announcement for 2.0.55, we've recently received and
+fixed lots of bug reports involving asyncio and task cancellation, as these
+difficult-to-catch, difficult-to-reproduce bugs are now being reported using
+large language models that are able to isolate each issue into a reproducing
+test case.
+
+The detailed changelog for 2.1.5 is at `Changelog </changelog/CHANGES_2_1_5>`_.
+
+SQLAlchemy 2.1.5 is available on the `Download Page </download.html>`_.
+

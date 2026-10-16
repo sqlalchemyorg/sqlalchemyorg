@@ -1,0 +1,37 @@
+---
+date: 2026/10/16 15:45:02
+title: SQLAlchemy 2.0.55 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.55 is now available.
+
+Release 2.0.55 contains a series of bugfixes backported from the 2.1.x series.
+Of particular note are many fixes involving correct handling of
+asyncio task cancellation with active database connections as well as garbage
+collection surrounding connections (particularly asyncio connections) and
+cursors.
+
+Task-cancellation and garbage collection issues that were previously difficult
+or impossible to reproduce are now being reported by users at a dramatically
+higher rate.  There are two factors at play in this change.  One is that while
+Python asyncio programming is typically straightforward when dealing with IO
+streams and ``await`` keywords, the presence of the ``task.cancel()`` and
+``CancelledError`` constructs adds a deeply complex layer to asyncio
+applications, turning every ``await`` into a potential source of an exception
+that requires context-specific cleanup of all resources and proper
+re-propagation when it occurs.  The other is that these issues were previously
+very difficult to report as they are transient and often nearly impossible to
+reproduce, and when they were reported we were often unable to reproduce them.
+However, with the advent of large language models, users can now isolate report
+these issues with accurate reproduction cases, allowing them to be fixed.
+
+As a result of these new capabilities, SQLAlchemy's internal testing now makes
+use of a test harness that exercises a ``task.cancel()`` scenario at every
+``await`` along an entire chain of operations, ensuring that for each one,
+database connections are not "leaked" whether or not they are marked as
+invalid, and the original ``CancelledError`` is correctly propagated.
+
+The detailed changelog for 2.0.55 is at `Changelog </changelog/CHANGES_2_0_55>`_.
+
+SQLAlchemy 2.0.55 is available on the `Download Page </download.html>`_.
