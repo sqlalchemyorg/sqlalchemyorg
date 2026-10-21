@@ -1,0 +1,20 @@
+---
+date: 2026/10/21 15:45:02
+title: SQLAlchemy 2.1.6 Released
+author: Mike
+---
+
+SQLAlchemy 2.1.6 is now available.
+
+Release 2.1.6 fixes two ORM regressions in the 2.1 series, one involving
+multiple ``with_loader_criteria()`` options that refer to the same entity in
+correlated subqueries, and another where ``.params()`` would not be applied to
+statements created using ``Select.from_statement()`` when the compiled cache
+is not in use.  The release also contains several fixes that are also
+backported to the 2.0.x series including more asyncio fixes as well as
+fixes involving statement caching and dynamic "expanding" parameters for
+"IN" expressions.
+
+The detailed changelog for 2.1.6 is at `Changelog </changelog/CHANGES_2_1_6>`_.
+
+SQLAlchemy 2.1.6 is available on the `Download Page </download.html>`_.
