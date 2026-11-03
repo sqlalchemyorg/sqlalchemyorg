@@ -1,0 +1,19 @@
+---
+date: 2026/11/03 15:45:02
+title: SQLAlchemy 2.0.56 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.56 is now available.
+
+Release 2.0.56 contains a series of bugfixes backported from the 2.1.x series,
+including several more asyncio fixes, among them a regression involving
+cancellation during ``AsyncConnection.close()``, as well as an ORM fix where
+criteria added via ``PropComparator.and_()`` in ``selectinload()`` or
+``lazyload()`` could lose its parenthesization when the statement came from the
+compiled cache, and a fix for "expanding" IN parameters whose generated names
+could collide with other bound parameters in the same statement.
+
+The detailed changelog for 2.0.56 is at `Changelog </changelog/CHANGES_2_0_56>`_.
+
+SQLAlchemy 2.0.56 is available on the `Download Page </download.html>`_.

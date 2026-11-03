@@ -1,0 +1,21 @@
+---
+date: 2026/11/03 15:45:02
+title: SQLAlchemy 2.1.7 Released
+author: Mike
+---
+
+SQLAlchemy 2.1.7 is now available.
+
+Release 2.1.7 fixes a series of regressions in the 2.1 series, mostly in the
+ORM, including issues with ORM-native dataclass mappings, ``selectinload()``
+against aliased many-to-many targets, and execution options applied within
+SAVEPOINTs, as well as a pool regression where garbage collected connections
+were not returned to the pool on Python 3.15.  The release also adds new
+``SessionTransaction.connections`` and ``SessionTransaction.bound_connection()``
+accessors, improves typing so that constructs such as ``Column(Integer)`` may
+be assigned to a wider declared type such as ``Column[int | None]``, and
+includes the fixes that were also released in 2.0.56.
+
+The detailed changelog for 2.1.7 is at `Changelog </changelog/CHANGES_2_1_7>`_.
+
+SQLAlchemy 2.1.7 is available on the `Download Page </download.html>`_.
