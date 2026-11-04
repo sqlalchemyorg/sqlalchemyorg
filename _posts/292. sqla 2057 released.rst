@@ -1,0 +1,17 @@
+---
+date: 2026/11/03 15:45:02
+title: SQLAlchemy 2.0.57 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.57 is now available.
+
+Release 2.0.57 contains no code changes from 2.0.56.  It is the first 2.0
+release where every file published to PyPI, including the source distribution
+as well as all wheels, is uploaded through PyPI's trusted publishing mechanism
+from SQLAlchemy's GitHub Actions workflow with an attestation, so that the
+complete release carries provenance information.
+
+The detailed changelog for 2.0.57 is at `Changelog </changelog/CHANGES_2_0_57>`_.
+
+SQLAlchemy 2.0.57 is available on the `Download Page </download.html>`_.

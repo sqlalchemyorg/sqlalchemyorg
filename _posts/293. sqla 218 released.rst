@@ -1,0 +1,18 @@
+---
+date: 2026/11/03 15:45:02
+title: SQLAlchemy 2.1.8 Released
+author: Mike
+---
+
+SQLAlchemy 2.1.8 is now available.
+
+Release 2.1.8 contains no code changes from 2.1.7.  It is the first 2.1
+release where every file published to PyPI, including the source distribution
+as well as all wheels, is uploaded through PyPI's trusted publishing mechanism
+from SQLAlchemy's GitHub Actions workflow with an attestation, so that the
+complete release carries provenance information.  The same change was also
+made for 2.0.57.
+
+The detailed changelog for 2.1.8 is at `Changelog </changelog/CHANGES_2_1_8>`_.
+
+SQLAlchemy 2.1.8 is available on the `Download Page </download.html>`_.
