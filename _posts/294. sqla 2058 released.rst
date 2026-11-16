@@ -1,0 +1,21 @@
+---
+date: 2026/11/16 15:45:02
+title: SQLAlchemy 2.0.58 Released
+author: Mike
+---
+
+SQLAlchemy 2.0.58 is now available.
+
+Release 2.0.58 contains a series of bugfixes backported from the 2.1.x series,
+mostly in the ORM, where several loader options such as those nested within
+``selectin_polymorphic()`` or ``subqueryload()`` could be skipped when the
+statement came from the compiled cache, along with fixes for joined eager
+loading of inheritance subclasses and for ``post_update`` relationships.  The
+release also fixes cache key issues involving ``Select.correlate()`` and
+``Select.params()``, as well as reflection of the PostgreSQL ``TSQUERY`` and
+``REGCONFIG`` types.  Several of these issues were located using automated
+fuzz testing.
+
+The detailed changelog for 2.0.58 is at `Changelog </changelog/CHANGES_2_0_58>`_.
+
+SQLAlchemy 2.0.58 is available on the `Download Page </download.html>`_.

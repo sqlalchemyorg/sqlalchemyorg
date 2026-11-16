@@ -1,0 +1,21 @@
+---
+date: 2026/11/16 15:45:02
+title: SQLAlchemy 2.1.9 Released
+author: Mike
+---
+
+SQLAlchemy 2.1.9 is now available.
+
+Release 2.1.9 fixes two regressions in the 2.1 series, one where ORM mapped
+dataclasses using ``orm_insert_sentinel()`` or a ``Sequence`` or
+``ColumnDefault`` within ``mapped_column()`` would fail to flush, and one
+where a relationship against a correlated LATERAL subquery would lose its
+correlation when joined eager loaded with DISTINCT or GROUP BY.  The release
+also fixes the same LATERAL issue for the other loader strategies, improves the
+performance of ``Result.mappings()`` when the Cython extensions are in use, and
+includes the fixes that were also released in 2.0.58, several of which
+address issues located using automated fuzz testing.
+
+The detailed changelog for 2.1.9 is at `Changelog </changelog/CHANGES_2_1_9>`_.
+
+SQLAlchemy 2.1.9 is available on the `Download Page </download.html>`_.
